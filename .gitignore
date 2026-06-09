@@ -1,0 +1,6 @@
+.DS_Store
+*.log
+out/
+inbox/
+node_modules/
+__pycache__/
