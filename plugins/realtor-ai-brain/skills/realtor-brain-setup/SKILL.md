@@ -106,15 +106,17 @@ locked in."
 
 ---
 
-## Step 4 — Phase C: How your brand looks (visual)
+## Step 4 — Phase 3: How your brand looks (Brand Guide)
 
-Read `references/interview-visual.md`. Keep it light (3–5 min). If they upload a logo or headshot,
-**save the files to `~/realtor-brain/assets/`** and record the paths. Always write *something* for
-colors and fonts — use the safe defaults (black / dark gold `#B8860B` / white, clean modern fonts) if
-they don't know, so graphic skills never hit an empty file.
+Run the **Brand Guide** skill (`realtor-brand-guide`) — it reads Phases 1–2, designs the visual
+identity (5-colour palette, two fonts, logo, tagline), saves the logo/headshot to `assets/`, writes
+`identity/brand-visual.md`, and renders a brand style guide + Canva brief into `exports/`. This is also
+the brand config the **AI Video Editor** uses. Follow that skill's flow, then return here and
+checkpoint: "Phase 3 done — your visual brand is locked."
 
-Write `identity/brand-visual.md`. If the agent wants a real designed identity, tell them they can run
-the **Brand Guide** skill later — it will update this same file. Save and checkpoint: "Section 3 done."
+*(If the agent has zero interest in branding right now, Brand Guide still writes safe defaults — black /
+dark gold `#B8860B` / white + clean fonts — so graphic skills never hit an empty file. They can re-run
+"build my brand" anytime to upgrade it.)*
 
 ---
 

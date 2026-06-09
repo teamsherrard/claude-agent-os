@@ -2,6 +2,20 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.4.0] — 2026-06-08
+
+Phase 3 (Visual Brand) — the Brain now holds the agent's visual identity.
+
+### Added
+- **`realtor-brand-guide`** skill brought into the plugin and retrofitted: reads the Brain in Step 0A,
+  designs the 5-colour palette + two fonts + logo + tagline, **writes `identity/brand-visual.md` and
+  saves logo/headshot to `assets/`**, and renders the HTML brand guide + Canva brief to `exports/`.
+  This is also the brand config the **AI Video Editor** consumes.
+
+### Changed
+- **Setup conductor** now runs Phase 3 (Brand Guide) as the real skill, replacing the lightweight
+  embedded visual interview (removed `interview-visual.md`). Plugin now bundles 10 skills.
+
 ## [0.3.0] — 2026-06-08
 
 Every skill is now Brain-native, and the producers write the Brain directly.

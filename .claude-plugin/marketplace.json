@@ -9,7 +9,7 @@
     {
       "name": "realtor-ai-brain",
       "source": "./plugins/realtor-ai-brain",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "description": "The Realtor AI Brain — one shared brain (the agent's identity + memory) that powers every skill: setup, market updates, listings, content, and Jarvis. Install once, set up once, and every tool already knows the agent."
     }
   ]
