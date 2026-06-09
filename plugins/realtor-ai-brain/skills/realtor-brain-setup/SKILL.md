@@ -68,12 +68,20 @@ Before anything, check whether `~/realtor-brain/` already exists.
 
 Say something like:
 
-> Welcome — I'm setting up your AI Brain. This is a one-time thing. I'll ask you some questions about
-> your business, then build a "brain" that every tool you use after this already knows. About 30–40
-> minutes if we do it all at once, but we can pause anytime — I save as we go.
+> Welcome — I'm setting up your AI Brain. This is a one-time thing. I'll ask you about your business,
+> then build a "brain" that every tool you use after this already knows. We save as we go, so you can
+> pause anytime.
 >
-> We'll cover four things: **who you are**, **who you serve**, **what you offer**, and **how your
-> brand looks**. Then I'll connect your email and calendar so your assistant can run. Ready?
+> Two options:
+> • **Express (~30 min)** — the essentials: who you are, who you serve, what you offer, how your brand
+>   looks. Enough to start creating immediately.
+> • **Full (~60–75 min)** — all of the above PLUS your real writing samples + proof, your content plan,
+>   how you operate (for your AI admin), and your compliance rules.
+>
+> We can always do Express now and deepen later. Which would you like? Either way, I'll connect your
+> email and calendar at the end. Ready?
+
+Remember their choice — **Express** runs Phases 1–3 then skips to connectors; **Full** runs Phases 1–7.
 
 Then **scaffold the folder structure now** — copy the bundled template
 `references/brain-template/realtor-brain/` to `~/realtor-brain/` (this gives them every subfolder, the
@@ -118,9 +126,30 @@ checkpoint: "Phase 3 done — your visual brand is locked."
 dark gold `#B8860B` / white + clean fonts — so graphic skills never hit an empty file. They can re-run
 "build my brand" anytime to upgrade it.)*
 
+**→ If they chose Express, skip to Step 6 (Connect your tools) now.**
+
 ---
 
-## Step 5 — Phase D: Connect your tools
+## Step 5 — Phases 4–7: Deepen the Brain *(Full only — skipped in Express)*
+
+These four make the brain dramatically richer. Run each as its own skill, in order, returning here
+after each and checkpointing. The agent can stop after any one and resume later.
+
+- **Phase 4 — Voice & Proof** (`realtor-voice-proof`): real writing samples + testimonials/stats →
+  `identity/voice-samples.md`, `proof.md`. *(~5 min — the biggest lever on content quality.)*
+- **Phase 5 — Content Engine** (`realtor-content-engine`): pillars, cadence, hashtags, CTAs, hooks →
+  `identity/content-engine.md`. *(~10 min.)*
+- **Phase 6 — Operations** (`realtor-operations`): hours, signature, booking rules, vendor network,
+  goals → `identity/operations.md`, `vendors.md`, `strategy.md`. *(~15 min — the Jarvis foundation.)*
+- **Phase 7 — Compliance** (`realtor-compliance`): disclaimers, license display, claims to avoid →
+  `identity/compliance.md`. *(~5 min — protects the agent.)*
+
+In Express, tell the agent they can run any of these anytime ("add my writing samples", "set up my
+content engine", "set up my operations", "set up my compliance").
+
+---
+
+## Step 6 — Connect your tools
 
 Open `config.md` and walk the agent through connecting the core connectors, ticking each box as it's
 done:
@@ -136,12 +165,13 @@ up later" rather than blocking setup. Set their **timezone** and pull the **defa
 
 ---
 
-## Step 6 — Phase E: Finalize the Brain
+## Step 7 — Finalize the Brain
 
 1. **Write `brain.md`** — the index. Fill the quick-reference block (name, market, primary avatar,
    voice-in-one-line, primary CTA, brand colors, fonts, booking link, socials) by pulling from the
-   identity files. Keep the "two laws" and the file map intact. This is the file every skill reads
-   first — make the quick-reference genuinely complete so most skills never need to open another file.
+   identity files. Keep the laws (read-first · write-back · stay-compliant) and the file map intact.
+   This is the file every skill reads first — make the quick-reference genuinely complete so most skills
+   never need to open another file.
 2. **Stamp `config.md`** — version, created date, timezone.
 3. **Render a welcome doc** to `exports/` — a short, friendly .docx the agent can keep: "Here's your
    Brain — here's what's in it, and here's what to try first." (Use the docx skill.)
@@ -155,7 +185,8 @@ up later" rather than blocking setup. Set their **timezone** and pull the **defa
 > • "Run my market update" — your first piece of content
 > • "Create content for my new listing" — when you have a listing to launch
 >
-> To change anything later, just say "update my brand" or "update my offer" and I'll edit your Brain.
+> To deepen your brain anytime: "add my writing samples" · "set up my content engine" · "set up my
+> operations" · "set up my compliance". To change anything: "update my brand" or "update my offer".
 
 ---
 

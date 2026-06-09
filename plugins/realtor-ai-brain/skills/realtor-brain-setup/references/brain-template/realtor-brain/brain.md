@@ -11,6 +11,9 @@
    - Anything published or scripted → `memory/content-log.md`
    - Client conversation / note → `memory/clients.md`
    - New deadline or follow-up → `memory/deadlines.md`
+3. **STAY COMPLIANT.** Before publishing anything public-facing, read `identity/compliance.md` — append
+   the required brokerage disclaimer + license #, and avoid the listed "claims to avoid." *(If
+   `compliance.md` is empty, proceed but note it's unset.)*
 
 If `~/realtor-brain/` is missing files, tell the agent to run **Realtor AI Brain — Setup**.
 
@@ -31,6 +34,13 @@ If `~/realtor-brain/` is missing files, tell the agent to run **Realtor AI Brain
 - `identity/voice.md` — full tone rules, never-sounds-like, signature phrases, CTA
 - `identity/offer.md` — services, guarantees, USP, why-hire-me
 - `identity/brand-visual.md` — colors, fonts, logo, tagline
+- `identity/voice-samples.md` — real writing samples (match their actual voice)
+- `identity/proof.md` — testimonials, stats, case studies (reuse as proof)
+- `identity/content-engine.md` — pillars, cadence, hashtags, CTAs, hooks, video style
+- `identity/operations.md` — hours, signature, booking rules, follow-up cadence (Jarvis)
+- `identity/vendors.md` — trusted partner network (Jarvis referrals)
+- `identity/strategy.md` — goals + what they want to be known for
+- `identity/compliance.md` — disclaimers, license display, claims to avoid (read before publishing)
 
 **memory/** — what the agent has done (grows daily)
 - `memory/clients.md` — client ledger (Jarvis)

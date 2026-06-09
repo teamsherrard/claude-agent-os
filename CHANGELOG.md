@@ -2,6 +2,27 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.5.0] — 2026-06-09
+
+The full brain — all 10 identity domains are now capturable. Phases 4–7 added.
+
+### Added
+- **Phase 4 — `realtor-voice-proof`**: real writing samples (authentic voice) + proof library
+  (testimonials, stats, case studies) → `identity/voice-samples.md`, `proof.md`.
+- **Phase 5 — `realtor-content-engine`**: pillars, cadence, platforms, hashtags, CTAs, hooks, video
+  style → `identity/content-engine.md`.
+- **Phase 6 — `realtor-operations`**: working hours, email signature, booking rules, follow-up cadence,
+  vendor network, goals → `identity/operations.md`, `vendors.md`, `strategy.md` (the Jarvis foundation).
+- **Phase 7 — `realtor-compliance`**: brokerage disclaimers, license display, fair-housing, claims to
+  avoid → `identity/compliance.md`.
+- Seven new identity template files; brain.md file-map updated.
+- A **third law** in `brain.md` — **STAY COMPLIANT**: every skill reads `compliance.md` before
+  publishing and appends the required disclaimer + license #. Propagates to all skills via `brain.md`.
+
+### Changed
+- **Setup conductor** now offers **Express (Phases 1–3, ~30 min)** vs **Full (Phases 1–7, ~60–75 min)**
+  and runs Phases 4–7 as their real skills. Plugin now bundles **14 skills**.
+
 ## [0.4.0] — 2026-06-08
 
 Phase 3 (Visual Brand) — the Brain now holds the agent's visual identity.
