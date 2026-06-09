@@ -25,14 +25,18 @@ touch your data.
 
 ## Install (one time)
 
-In **Claude Cowork**, run these two commands:
+In **Claude Cowork** (everything is UI — there are no commands to type):
 
-```
-/plugin marketplace add teamsherrard/realtor-ai-brain
-/plugin install realtor-ai-brain@teamsherrard-realtor
-```
+1. **Customize → Personal Plugins → Browse Plugins**
+2. Click the **＋** next to "Personal" → **Add marketplace**
+3. Paste: **`teamsherrard/realtor-ai-brain`** → Cowork syncs the marketplace
+4. Click **Install** on **Realtor AI Brain**
+5. *(Recommended)* Open the marketplace card → toggle **Sync automatically** so you get future updates
 
 That's it — the whole system is installed.
+
+> Note: this is a Cowork *plugin*, not a clone-and-run repo. You never download or clone anything —
+> Cowork installs it from our public marketplace through the UI above.
 
 ## Set up your Brain (one time, ~30–40 min)
 
@@ -57,16 +61,18 @@ To change anything later: `Update my brand`, `Update my offer`.
 
 ---
 
-## Updates — automatic
+## Updates
 
-When we improve the system, you get it **automatically** on your next Cowork session. Nothing to
-re-download, nothing to manually edit. If you ever want to force the latest:
-
-```
-/plugin update realtor-ai-brain@teamsherrard-realtor
-```
+When we improve the system, you get it by **syncing the marketplace** in Cowork. If you turned on
+**Sync automatically** during install (step 5), updates flow on their own — nothing to re-download,
+nothing to manually edit. To pull the latest manually anytime: open **Personal Plugins → the Realtor
+AI Brain marketplace card → Update**.
 
 Your Brain (`~/realtor-brain/`) is never overwritten by an update — only the tools improve.
+
+> **Maintainer note:** the repo must be **public** for realtors to add it as a personal marketplace in
+> Cowork (private repos can't be added by end users). Org/Enterprise admins can alternatively deploy it
+> workspace-wide.
 
 ---
 

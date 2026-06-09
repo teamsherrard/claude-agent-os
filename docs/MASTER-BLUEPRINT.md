@@ -261,16 +261,20 @@ operational decision.
 ```
 
 - **One repo is both the marketplace and the plugin.** It bundles all skills + the brain template.
-- **Install:** `/plugin marketplace add teamsherrard/realtor-ai-brain` → `/plugin install
-  realtor-ai-brain@teamsherrard-realtor`.
-- **Updates:** we bump the version and push → agents auto-update on next session. **No re-downloads,
-  no "edit your file" to 100 people.** This is the entire reason to use a repo.
+- **The repo is a *plugin*, not a clone-and-run project.** Realtors never clone or download anything —
+  Cowork installs the plugin *from* the repo. (A clone-and-run repo like the AI Video Editor does NOT
+  work in Cowork; a packaged plugin does.)
+- **Install (Cowork is UI — no slash commands):** Customize → Personal Plugins → Add marketplace →
+  paste `teamsherrard/realtor-ai-brain` → Install → toggle **Sync automatically**.
+- **Updates:** we bump the version and push → agents with auto-sync on get it automatically; others
+  click **Update** on the marketplace card. **No re-downloads, no "edit your file" to 100 people.**
 - **Versioned & auditable:** `VERSION`, `CHANGELOG.md`, tagged commits (`v0.4.0 — …`) — same discipline
   as the AI Video Editor repo.
 
-**Open decision:** public repo (zero-friction install, but skills are readable) vs private (protects
-IP, but each agent needs `gh auth login` + access — friction at scale). Because anyone who can install
-can read the source, "private to hide the IP" only works by restricting *who can install*. (See §15.)
+**Resolved by the platform:** Cowork can only add **public** GitHub marketplaces — end users cannot add
+a private repo. So for self-serve realtor install, **the repo must be public** (the only private path is
+Enterprise/org-admin workspace deployment, which individual agents won't have). We accept that the skill
+source is readable; the moat is the system + brand + support + the agent's own brain, not secret prompts.
 
 ---
 
@@ -301,8 +305,8 @@ This scales: 1 agent or 100, the system is identical; only the brains differ.
 
 ```
 1. Get the link from us.
-2. In Cowork:  /plugin marketplace add teamsherrard/realtor-ai-brain
-               /plugin install realtor-ai-brain@teamsherrard-realtor
+2. In Cowork (UI): Customize → Personal Plugins → Add marketplace →
+   paste teamsherrard/realtor-ai-brain → Install → toggle "Sync automatically"
 3. Say:        "Set up my Brain"
 4. Answer the guided questions (phased, ~30–60 min, pause anytime).
    → builds identity/, saves logo + headshot to assets/
@@ -350,7 +354,7 @@ From that point on, every tool already knows them. To change anything: *"update 
 | 7 | Compliance | ⬜ |
 | — | Provisioning workflow (agency) | ⬜ |
 | — | Brain backup/sync + schema-migration system | ⬜ (see §15) |
-| — | Push to GitHub (public vs private) | ⬜ decision |
+| — | Push to **public** GitHub marketplace (Cowork requires public) | ⬜ |
 
 *Current: v0.4.0, 10 skills, committed locally, not yet pushed.*
 
@@ -399,7 +403,9 @@ These are the things to resolve *before* we scale to 100 agents:
    (maybe) a support channel. Needs an owner.
 9. **Compliance liability.** If our compliance module misses a rule and an agent gets fined, what's our
    exposure? Position it as *assistance, not legal advice*, with a disclaimer; agent stays responsible.
-10. **Public vs private repo (unresolved).** Decide the IP-vs-friction tradeoff before launch.
+10. **Public repo is required (platform-decided).** Cowork only installs from *public* marketplaces, so
+    the repo must be public and the skill source is readable. Accept it, or use Enterprise org-deploy for
+    managed workspaces. The earlier "public vs private" debate is effectively settled by the platform.
 11. **Multi-device & teams.** One brain per machine doesn't fit agents on multiple devices or teams
     sharing clients — Drive sync partially solves devices; teams need the brokerage-brain model.
 12. **Business model.** Pricing/packaging/licensing (subscription? bundled with coaching?) — a team

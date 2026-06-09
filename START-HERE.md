@@ -3,11 +3,9 @@
 Welcome to your **Realtor AI Brain**. Three steps and you're running.
 
 ### 1. Install (one time)
-In Claude Cowork:
-```
-/plugin marketplace add teamsherrard/realtor-ai-brain
-/plugin install realtor-ai-brain@teamsherrard-realtor
-```
+In Claude Cowork (all UI — nothing to type):
+**Customize → Personal Plugins → Browse Plugins → ＋ → Add marketplace →** paste
+`teamsherrard/realtor-ai-brain` → **Install** the Realtor AI Brain → toggle **Sync automatically**.
 
 ### 2. Build your Brain (one time)
 Say:
@@ -24,7 +22,8 @@ Run my market update
 
 ---
 
-**That's it.** Your Brain lives at `~/realtor-brain/`. Updates arrive automatically — you never
-re-install. To change your details later, just say *"update my brand"* or *"update my offer."*
+**That's it.** Your Brain lives at `~/realtor-brain/`. With **Sync automatically** on, updates arrive
+on their own — you never re-install. To change your details later, just say *"update my brand"* or
+*"update my offer."*
 
 Questions? See the full [README](README.md).
