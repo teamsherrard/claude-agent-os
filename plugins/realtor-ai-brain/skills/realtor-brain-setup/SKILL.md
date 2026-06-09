@@ -82,37 +82,27 @@ it's created.
 
 ---
 
-## Step 2 — Phase A: Who you are + who you serve (brand interview)
+## Step 2 — Phase 1: Who you are + who you serve (Brand Persona)
 
-Read `references/interview-brand.md`. Run it exactly as written: **one question at a time, warm,
-conversational, dig on vague answers.** This is the longest phase. Use the "Handling Common Vague
-Answers" section when needed.
+Run the **Brand Persona** skill (`realtor-brand-persona`) — it owns this interview and writes
+`identity/profile.md`, `market.md`, `avatars.md`, and `voice.md` directly into the Brain. Follow that
+skill's flow to completion (one question at a time, warm, conversational, dig on vague answers), then
+return here.
 
-As you go, write answers into these files (you can write progressively or at the end of the phase):
+This is the longest phase (~15 min) and a natural checkpoint — the agent can stop after it and resume
+later. When it's done, confirm: "Phase 1 done — the foundation of your Brain is written."
 
-| Interview block | Writes to |
-|---|---|
-| Block 1 (name, city, years, brokerage, buyers/sellers) + property type/niche | `identity/profile.md` |
-| Block 2 (areas, price, niche, secondary market, top/underrated neighbourhoods, why people move) | `identity/market.md` |
-| Block 3 (avatars, pains, feedback, who-NOT, misconceptions, FAQs, hesitation) | `identity/avatars.md` (+ local intelligence → `market.md`) |
-| Block 4 (self-description, differentiator, on-camera style, never-sounds-like, signature phrases, CTA) | `identity/voice.md` |
-| Block 5 (confident topics, topics to avoid, socials, the one thing they wish) | `identity/voice.md` (topics) + `identity/profile.md` (socials) |
-
-Write in **third person** ("She focuses on…", "He sounds like…") so any skill can read the files as
-reference. Be specific — capture city and community names exactly, quote the agent's own language for
-voice and feedback. **Save the four files at the end of this phase** and tell the agent "Section 1
-done — saved to your Brain." This is a checkpoint they can stop at.
+*(The Brain Persona skill is the single source of truth for this interview — don't duplicate its
+questions here.)*
 
 ---
 
-## Step 3 — Phase B: What you offer (offer interview)
+## Step 3 — Phase 2: What you offer (Offer & USP)
 
-Read `references/interview-offer.md`. **First read what Phase A already captured** — do not re-ask
-anything already known. Acknowledge it ("Your brand says you focus on luxury sellers — for this I
-just want the specifics of what they get"). Run the 6 questions, one at a time.
-
-Write the result to `identity/offer.md` (core offer, buyer/seller offers, guarantees, USP, proof).
-Save and checkpoint: "Section 2 done."
+Run the **Offer USP** skill (`realtor-offer-usp`) — it reads what Phase 1 wrote (so it never re-asks),
+runs its 6 questions, writes `identity/offer.md`, and renders a "Why Work With Me" guide into
+`exports/`. Follow that skill's flow, then return here and checkpoint: "Phase 2 done — your offer is
+locked in."
 
 ---
 

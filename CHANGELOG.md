@@ -2,6 +2,26 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.3.0] — 2026-06-08
+
+Every skill is now Brain-native, and the producers write the Brain directly.
+
+### Added
+- **Full brain inventory** defined (10 domains: person, voice+samples, market, avatars, offer+proof,
+  visual+assets, content engine, operations/vendors, strategy, compliance) with a phased-setup roadmap.
+- **All 6 consumer skills** retrofitted to the Brain contract — `realtor-market-update`,
+  `realtor-listing-content-kit`, `realtor-neighbourhood-tour`, `realtor-trending-articles`,
+  `realtor-yt-launch-system`, `realtor-article-greenscreen`: each loads `brain.md` (Step 1) and writes
+  back to `memory/` (content-log; listing-kit also writes `listings.md`). Outputs save to `exports/`.
+- **Both producer skills** retrofitted — `realtor-brand-persona` now writes the four `identity/` files
+  (profile, market, avatars, voice); `realtor-offer-usp` writes `identity/offer.md`. The `.docx`
+  becomes a *render* in `exports/`, not the source of truth. No more "upload to a Claude Project."
+
+### Changed
+- **Setup wizard is now a thin conductor** — it runs the real Brand Persona and Offer USP skills in
+  sequence (single source of truth) instead of carrying duplicate copies of their questions. Removed
+  the embedded `interview-brand.md` / `interview-offer.md`.
+
 ## [0.1.0] — 2026-06-08
 
 First working foundation.
