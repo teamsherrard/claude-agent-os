@@ -250,7 +250,7 @@ operational decision.
    ┌────────────────────────┐                  ┌────────────────────┐
    │  GitHub repo            │   install once   │   Cowork           │
    │  realtor-ai-brain       │ ───────────────► │                    │
-   │  (marketplace + plugin) │                  │  /plugin install   │
+   │  (marketplace + plugin) │                  │  install via UI    │
    └───────────┬────────────┘                  └─────────┬──────────┘
                │  we push an improvement                 │  auto-update
                │  (bump version, commit, push)           │  on next session
