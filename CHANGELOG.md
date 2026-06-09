@@ -2,6 +2,22 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.6.0] — 2026-06-09
+
+Self-maintenance layer — the brain can now audit, back up, and upgrade itself.
+
+### Added
+- **`realtor-brain-health`** — audits brain completeness, scores it, recommends the highest-impact next add.
+- **`realtor-brain-backup`** — backs up / restores the brain to the agent's Google Drive (durability +
+  multi-device); updates "Last backup" in `config.md`.
+- **`realtor-brain-migrate`** — the schema safety net: upgrades older brains to the current structure
+  when we change it, without losing data. Includes a maintainer MIGRATIONS LOG process.
+- **Brain schema version** + **Last backup** fields in `config.md` (the migration/durability anchors).
+
+Plugin now bundles **17 skills**. The brain system is functionally complete — all 10 domains capturable,
+read/write across all skills, and self-maintaining. Remaining: wire the Jarvis skill (needs its source)
+and push to a public GitHub marketplace.
+
 ## [0.5.0] — 2026-06-09
 
 The full brain — all 10 identity domains are now capturable. Phases 4–7 added.

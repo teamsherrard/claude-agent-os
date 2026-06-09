@@ -1,7 +1,7 @@
 {
   "name": "realtor-ai-brain",
   "displayName": "Realtor AI Brain",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "One shared AI Brain for a real estate agent — their identity (brand, market, avatars, voice, offer, visuals) and their memory (clients, listings, content history) — that every skill reads from and writes back to. Run Setup once; every tool already knows you.",
   "author": {
     "name": "Team Sherrard",
