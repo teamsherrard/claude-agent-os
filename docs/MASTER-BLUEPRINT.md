@@ -229,7 +229,7 @@ samples, a compliance disclaimer, etc. A brain that improves itself over time.
 
 | Thing | Lives | Why |
 |---|---|---|
-| The **agent's brain** (their data) | `~/realtor-brain/` on their machine + Drive backup | Private, portable, never in our repo |
+| The **agent's brain** (their data) | **the agent's Google Drive** (`Realtor AI Brain` folder); local `~/realtor-brain/` is a per-session working copy synced from Drive | Private, portable across sessions/devices, never in our repo |
 | The **skills + template** (the system) | our GitHub repo → installed plugin | One source, auto-updates |
 | **Rendered outputs** (docx, video, graphics) | `~/realtor-brain/exports/` | Disposable; regenerated from source |
 | The **agent runs everything** in | **Claude Cowork** (the friendly door) | Non-technical; full power, calm UI |

@@ -43,8 +43,10 @@ defaults and state the assumption. Never re-ask answered questions.
    open house 180m, inspection 60m, closing 60m, else 30m).
 2. **Run Conflict Guard** (below) before creating anything.
 3. Create the event on the Google Calendar connector with a clear title and the address in the
-   location. If a real guest email is known, add them as an attendee so the invite emails out.
-   For virtual meetings, put the link from `operations.md` in the description.
+   location. **If the request names a guest, invite them** — resolve their email (from the Brain /
+   the client record / recent calendar) and add them as an attendee with notifications on, so the
+   invite emails out. Only skip the invite if you genuinely can't resolve an email, or the agent
+   says to just block the time. For virtual meetings, put the link from `operations.md` in the description.
 4. **Write back:** append/update the client's block in `memory/clients.md` (one-line note of the
    booking).
 5. Confirm out loud: "Booked [day] [start]–[end] at [place], [guest] invited."

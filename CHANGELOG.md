@@ -2,6 +2,25 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.10.0] — 2026-06-09
+
+The Brain now lives in Google Drive, so it persists across Cowork sessions, projects, and devices.
+
+### Changed (foundational)
+- **The Brain's permanent home is the realtor's Google Drive** (`Realtor AI Brain` folder), not the
+  local sandbox. Cowork's local storage is wiped between sessions — so the brain syncs from Drive at
+  session start and pushes back after changes. Local `~/realtor-brain/` is now just a working copy.
+- **`realtor-brain-backup` → `realtor-brain-sync`** — two-way Drive⇄local sync (pull at start, push
+  after writes, restore on a new machine). Supersedes one-way backup.
+- **Google Drive is now REQUIRED** in Setup (was optional); Setup pushes the brain to Drive at the end.
+- **SessionStart + Stop hooks** (`hooks/hooks.json`) — pull the brain from Drive at session start so
+  EVERY session (even plain chat) is brain-aware, and push changes back on stop. ⚠️ *Hook firing in
+  Cowork must be verified live — it's the one piece we couldn't test.*
+
+### Added
+- **`docs/BRAIN-CONTRACT.md`** (#6) — how any system (Video Editor, Jarvis, future agents) reads/writes the brain.
+- **Privacy posture** (#10) — the brain (incl. client PII) is the agent's private data, lives only in their Drive; the agency never holds it.
+
 ## [0.9.0] — 2026-06-09
 
 Bug fixes from the full quality sweep.

@@ -2,8 +2,11 @@
 *Last updated: [Month Year] · Realtor AI Brain v[x.y]*
 
 > **This is the index. Every skill reads this file first.**
+> **This Brain lives in the agent's Google Drive (`Realtor AI Brain` folder).** The local copy is synced
+> from Drive each session. After you change anything here, it gets pushed back to Drive (via
+> `realtor-brain-sync`) so it persists.
 
-## How to use this Brain (the two laws)
+## How to use this Brain (the laws)
 1. **READ this first.** For depth on any topic, open the specific file listed under "The files" below.
    Never ask the agent for anything already in the Brain.
 2. **WRITE back what you learn:**

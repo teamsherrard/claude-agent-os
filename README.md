@@ -46,8 +46,13 @@ Just say:
 Set up my Brain
 ```
 
-The wizard will interview you about your business, build your Brain, and connect your email +
-calendar. You can pause anytime — it saves as you go.
+The wizard will interview you about your business, build your Brain, and connect your **Google Drive**
+(where your Brain is saved so it's there in every session, on every device), plus your email + calendar.
+You can pause anytime — it saves as you go.
+
+> **Where your Brain lives:** in *your* Google Drive (a `Realtor AI Brain` folder). It's yours — private,
+> portable, and it follows you across projects and devices. The plugin loads it from your Drive each
+> session. (Connecting Drive during setup is required for this reason.)
 
 ## Use it (every day)
 

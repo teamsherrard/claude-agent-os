@@ -7,8 +7,11 @@ agents). If you're building something new that should "know the realtor," implem
 ---
 
 ## Where the Brain lives
-`~/realtor-brain/` — a folder of plain markdown + assets on the user's machine. One per realtor. Never
-in any repo. Structure:
+**Permanent home: the realtor's Google Drive** (`Realtor AI Brain` folder). Cowork's local sandbox is
+wiped between sessions, so `~/realtor-brain/` is only a **per-session working copy** — synced down from
+Drive at session start and pushed back after changes (via the `realtor-brain-sync` skill / the
+SessionStart+Stop hooks). One brain per realtor. Never in any repo. Structure (mirrored in Drive and the
+local working copy):
 
 ```
 ~/realtor-brain/
@@ -49,6 +52,12 @@ in any repo. Structure:
   `memory/clients.md` + `memory/deadlines.md`.
 - **Any future agent** → declare which `identity/` domains you read and which `memory/` files you write.
   You never re-interview the agent — the Brain already knows them.
+
+## Privacy & ownership
+The Brain — including client names and notes in `memory/clients.md` — is the **agent's private data.**
+It lives only on their machine and in **their own** Google Drive. The system/agency never stores,
+transmits, or holds it. Treat `clients.md` as PII: keep it inside `~/realtor-brain/` + the agent's own
+Drive, never anywhere else.
 
 ## Don't
 - Don't store volatile data in the Brain (live market stats, today's date-sensitive numbers) — fetch

@@ -155,13 +155,16 @@ content engine", "set up my operations", "set up my compliance").
 Open `config.md` and walk the agent through connecting the core connectors, ticking each box as it's
 done:
 
+- **Google Drive** — **REQUIRED. This is where the Brain lives.** Cowork's local storage is wiped
+  between sessions, so the Brain must be saved to the agent's Drive or it disappears next time. Connect
+  this — don't skip it.
 - **Gmail** (required for Jarvis — morning briefing + client emails)
 - **Google Calendar** (required for Jarvis — booking showings/consults)
-- **Google Drive** (optional — Brain backup)
 - **Pexels** (optional — only if they'll use video skills)
 
-If a connector isn't available in their environment, note it in `config.md` as "not connected — set
-up later" rather than blocking setup. Set their **timezone** and pull the **default CTA** from
+If Gmail/Calendar/Pexels aren't available, note "not connected — set up later" in `config.md` and
+proceed. **Drive is the exception — without it the Brain can't be saved** — so if it's missing, help the
+agent connect it before finishing. Set their **timezone** and pull the **default CTA** from
 `identity/voice.md` into `config.md`.
 
 ---
@@ -174,9 +177,12 @@ up later" rather than blocking setup. Set their **timezone** and pull the **defa
    This is the file every skill reads first — make the quick-reference genuinely complete so most skills
    never need to open another file.
 2. **Stamp `config.md`** — version, created date, timezone.
-3. **Render a welcome doc** to `exports/` — a short, friendly .docx the agent can keep: "Here's your
+3. **Save the Brain to Google Drive — do NOT skip.** Use the **realtor-brain-sync** skill to create the
+   `Realtor AI Brain` folder in the agent's Drive and push the whole brain up. This is what makes it
+   persist; the local copy is gone next session. Confirm it's saved before continuing.
+4. **Render a welcome doc** to `exports/` — a short, friendly .docx the agent can keep: "Here's your
    Brain — here's what's in it, and here's what to try first." (Use the docx skill.)
-4. **Confirm and hand off.** Show them the finished structure and tell them what to do next:
+5. **Confirm and hand off.** Show them the finished structure and tell them what to do next:
 
 > 🎉 Your AI Brain is built. From now on, every skill already knows you — you'll never re-explain your
 > market, your voice, or your offer again.
