@@ -46,6 +46,13 @@ first** — don't proceed with a blank slate.
 
 Never ask the agent for anything already in the Brain.
 
+### Step 1b — Before you publish (always)
+- **Compliance:** read `~/realtor-brain/identity/compliance.md`. Append the required brokerage disclaimer
+  + license # to every public-facing output, and never make a claim on its "claims to avoid" list. *(If
+  `compliance.md` is empty/unset, proceed but flag it to the agent.)*
+- **No placeholders:** if any identity file you rely on still contains `[bracketed]` template text, treat
+  that field as missing — ask the agent or skip it. **Never output bracketed placeholder text.**
+
 ### Step 2 — Read Skill Reference Files
 
 1. `references/data-research-guide.md` — where to find market data, search patterns, what to pull

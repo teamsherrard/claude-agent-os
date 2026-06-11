@@ -2,6 +2,18 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.9.0] — 2026-06-09
+
+Bug fixes from the full quality sweep.
+
+### Fixed
+- **Compliance now enforced** — all 6 content skills read `identity/compliance.md` and append the
+  required brokerage disclaimer + license # before publishing, and avoid the "claims to avoid" list.
+  (Previously only `brain.md` mentioned it, which skills didn't reliably act on — content could ship
+  with no disclaimer.)
+- **Placeholder guard** — content skills now detect `[bracketed]` template text from a half-built brain
+  and treat that field as missing (ask or skip) instead of emitting literal brackets in finished content.
+
 ## [0.8.0] — 2026-06-09
 
 Phase 5 (Content Engine) simplified for week-one beginners.

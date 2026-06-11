@@ -48,6 +48,13 @@ background awareness. Specifically:
 **If `~/realtor-brain/` doesn't exist, tell the agent to run _Realtor AI Brain — Setup_ first** — then
 the intake questions below collect only what's video-specific.
 
+### Step 1b — Before you publish (always)
+- **Compliance:** read `~/realtor-brain/identity/compliance.md`. Append the required brokerage disclaimer
+  + license # to every public-facing output, and never make a claim on its "claims to avoid" list. *(If
+  `compliance.md` is empty/unset, proceed but flag it to the agent.)*
+- **No placeholders:** if any identity file you rely on still contains `[bracketed]` template text, treat
+  that field as missing — ask the agent or skip it. **Never output bracketed placeholder text.**
+
 ### Step 2 — Read Skill Reference Files
 Read these in order before generating anything:
 
