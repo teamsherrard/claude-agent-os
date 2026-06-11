@@ -1,42 +1,52 @@
 ---
 name: realtor-content-engine
 description: >
-  Phase 5 of the Realtor AI Brain — defines the agent's content system so every content skill stays
-  consistent: their content pillars, which platforms they prioritize, posting cadence, recurring
-  series, hashtag sets, CTA library, favourite hook styles, and video style preferences. Writes
-  identity/content-engine.md, which the market-update, listing, tour, local, YouTube, and short-form
-  skills all read.
+  Phase 5 of the Realtor AI Brain — sets the agent's simple content plan: pillars, which platforms they
+  focus on, a realistic posting cadence, signature series, and a default video style. Built for week-one
+  beginners: it asks the two things only the agent knows (platforms + capacity), and for everything else
+  it ASKS first but GENERATES a ready-to-use draft the moment the agent is unsure — so nobody freezes on
+  a blank question. Writes identity/content-engine.md. Hashtags and hook styles are NOT stored here — the
+  content skills generate those fresh per piece.
 
-  Trigger on: "set up my content engine", "define my content pillars", "my content strategy",
-  "set my posting schedule", "my hashtags and CTAs", "content system", "phase 5", or any request to
-  define how the agent posts and what themes they own.
+  Trigger on: "set up my content engine", "my content plan", "content pillars", "posting schedule",
+  "what should I post", "phase 5", or any request to define how/what the agent posts.
 ---
 
 # Realtor Content Engine (Brain Phase 5)
 
-Defines *how the agent shows up* so every content skill produces on-brand, non-repetitive content on a
-consistent rhythm. About 10 minutes.
+Sets a simple, durable content plan. Built so a brand-new agent in week one is never overwhelmed.
+~3–5 minutes.
+
+## The golden rule for this skill
+- **Ask each question first.** If the agent gives a real answer, **use it** — never overwrite their
+  input with a guess (that wastes their time and risks being wrong).
+- **Generate only when they're unsure** ("I don't know," "you pick," "not sure"). *Then* propose a draft
+  from their Brain and let them react. Never dump a generated plan on someone who already has an answer.
 
 ## Step 1 — Load the Brain
-Read `~/realtor-brain/brain.md`, plus `identity/avatars.md`, `identity/voice.md`, `identity/market.md`.
-Their avatars and voice shape the pillars and hooks. If `~/realtor-brain/` doesn't exist, tell them to
-run **Realtor AI Brain — Setup** first.
+Read `~/realtor-brain/brain.md`, plus `identity/avatars.md`, `identity/voice.md`, `identity/market.md`,
+`identity/offer.md`, `identity/profile.md`. This is what you generate from *when the agent is stuck*.
+If `~/realtor-brain/` doesn't exist, run **Setup** first.
 
-## The interview (one question at a time, conversational)
-1. **Content pillars** — "What 3–5 themes do you want to be known for?" (If stuck, propose pillars from
-   their avatars + market + offer, e.g. market reads, neighbourhood spotlights, first-time-buyer
-   education, behind-the-scenes.)
-2. **Platforms & priority** — which platforms, ranked.
-3. **Cadence** — realistic posting rhythm per platform.
-4. **Recurring series / formats** — any signature repeatable formats (e.g. "Monthly Market Update").
-5. **Hashtag sets** — their go-to hashtags per platform (offer to draft local ones from their market).
-6. **CTA library** — the calls to action they like (pull the primary from `voice.md`, add others).
-7. **Hook styles** — which hook types feel like them (contrarian, listicle, question, before/after).
-8. **Video style prefs** — captions on/off, music vibe, typical length, b-roll vibe.
+## The two questions only the agent can answer (always ask)
+1. **Platforms** — "Which platforms are you actually on, or want to focus on?" (capture handles → `profile.md`).
+2. **Capacity** — "Realistically, how much can you post right now?" Offer three simple options:
+   - **Light** — ~1 video + 2 short posts / week
+   - **Medium** — ~2 videos + 3–4 short posts / week
+   - **Heavy** — daily
 
-Keep it light — offer smart defaults from the rest of their Brain wherever they're unsure.
+## The rest — ask once, generate only if they're unsure
+For each: ask once. **They know → use it. They don't → generate from the Brain and confirm.**
+- **Content pillars (3–5)** — if unsure, propose pillars from their niche + avatars + market + offer
+  (e.g. new-construction agent → "New-build 101," "Community spotlights," "Market reads," "Buyer
+  myth-busting").
+- **Signature series** — if unsure, propose one obvious recurring format (e.g. "Monthly [city] [niche] Update").
+- **Default video style** — captions on/off, vibe, typical length. If unsure, default from their voice
+  (e.g. calm/clean, captions on, 30–60s).
 
 ## Write + confirm
-Write everything to `~/realtor-brain/identity/content-engine.md`. Confirm: *"Your content engine is
-set — every content skill will now follow your pillars, cadence, hashtags, and style."* If run as
-**Phase 5 of Setup**, hand control back to Setup.
+Write `~/realtor-brain/identity/content-engine.md` — pillars, platforms (+ priority), cadence, signature
+series, default video style. **Do NOT write hashtags or hook lists** (content skills make those per
+piece). Pull the default CTA from `voice.md` — don't re-ask. Confirm: *"Your content plan is set — every
+content skill follows this now. Change it anytime as you find your groove."*
+If run as **Phase 5 of Setup**, hand control back to Setup.

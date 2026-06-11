@@ -115,7 +115,7 @@ The brain holds **three kinds of things**, governed by **one rule**.
 | 4 | **Audience / Avatars** 🟢 | buyer/seller/investor avatars: pains, desires, objections, journey stage | who every piece speaks to |
 | 5 | **Offer, Services & USP** 🟢 + **proof library** 🔵 | buyer/seller offers, guarantees, signature process, vendor value-adds, commission philosophy, lead magnets + testimonials, stats, case studies | listings, lead magnets, "why hire me", Jarvis emails |
 | 6 | **Visual Brand & Assets** 🟢 / 🔵 | colours (hex), fonts, logo variants, multiple headshots, tagline + brand photography, b-roll, music, content + print templates | ALL graphics, thumbnails, **the AI Video Editor**, print |
-| 7 | **Content Engine** 🔵 | content pillars, cadence, platform priority, hashtag sets, CTA library, hooks library, recurring series, video style prefs | consistency + what to post when |
+| 7 | **Content Engine** 🔵 | content pillars, platform priority, realistic cadence, signature series, default video style *(hashtags + hook styles are generated per-piece by the content skills, not stored)* | consistency + what to post when |
 | 8 | **Operations & Admin (Jarvis)** 🔵 | working hours, email templates + signature, booking rules, objection scripts, follow-up sequences, **vendor/partner network** | Jarvis scheduling/emails/follow-ups, referrals |
 | 9 | **Strategy & Goals** 🔵 | annual GCI/transaction goals, what they want to be known for, growth focus | what the AI prioritizes & suggests |
 | 10 | **Compliance & Legal** 🟢 | required disclaimers, license-display rules, fair-housing constraints, claims they can't make, brokerage logo rules | keeps every public output compliant — protects the agent |
@@ -190,7 +190,7 @@ Set up my Brain (conductor)
   Phase 2 → Offer & USP ───→ identity/offer  (+ guide → exports/)        [~10 min]
   Phase 3 → Brand Direction → identity/brand-visual (direction→Claude Design) [~5–10 min]
   Phase 4 → Voice & Proof ─→ identity/voice-samples, proof               [~5 min]
-  Phase 5 → Content Engine → identity/content-engine                     [~10 min]
+  Phase 5 → Content Engine → identity/content-engine                     [~3–5 min]
   Phase 6 → Operations ────→ identity/operations, vendors, strategy      [~15 min]
   Phase 7 → Compliance ────→ identity/compliance                         [~5 min]
   Connect → Gmail · Calendar · (Drive · Pexels)

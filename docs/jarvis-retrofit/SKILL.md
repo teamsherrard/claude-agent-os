@@ -85,7 +85,8 @@ the nearest open slot instead.
    event, or a memory note).
 3. Confirm the recipient address back. The agent approves — nothing sends under their name
    without their OK.
-4. Send via the Gmail connector, signing off with the exact signature block.
+4. Create the reply as a **Gmail draft** (the connector drafts, it does not auto-send), with the
+   exact signature block, for the agent to review and hit send — which is exactly the approval model.
 5. **Write back:** log one line to the client's `clients.md` block; create the action item in
    `deadlines.md` if there is one.
 

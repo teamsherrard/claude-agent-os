@@ -36,7 +36,7 @@ If `~/realtor-brain/` is missing files, tell the agent to run **Realtor AI Brain
 - `identity/brand-visual.md` — brand *direction*: colours, fonts, vibe, logo direction, tagline (feed to Claude Design)
 - `identity/voice-samples.md` — real writing samples (match their actual voice)
 - `identity/proof.md` — testimonials, stats, case studies (reuse as proof)
-- `identity/content-engine.md` — pillars, cadence, hashtags, CTAs, hooks, video style
+- `identity/content-engine.md` — content plan: pillars, platforms, cadence, series, video default
 - `identity/operations.md` — hours, signature, booking rules, follow-up cadence (Jarvis)
 - `identity/vendors.md` — trusted partner network (Jarvis referrals)
 - `identity/strategy.md` — goals + what they want to be known for

@@ -2,6 +2,20 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.8.0] — 2026-06-09
+
+Phase 5 (Content Engine) simplified for week-one beginners.
+
+### Changed
+- **Phase 5 now asks only 2 things** (which platforms + how much they can post) and **generates the rest
+  only when the agent is unsure** — pillars, signature series, and video default are drafted from the
+  Brain and confirmed, never dumped over a real answer. ~3–5 min (was ~10).
+- **Trimmed `content-engine.md`** to durable items only — pillars, platforms, cadence, series, video
+  default. **Hashtags and hook styles are no longer stored** (the content skills generate those per
+  piece; CTAs already live in `voice.md`).
+- Added a system-wide setup principle: **"ask first, generate only when they're stuck"** — don't
+  overwrite a real answer with a guess.
+
 ## [0.7.0] — 2026-06-09
 
 Phase 3 re-scoped: brand **direction**, not design.

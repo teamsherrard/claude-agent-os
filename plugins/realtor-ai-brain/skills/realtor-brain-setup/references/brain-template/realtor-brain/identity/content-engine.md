@@ -1,22 +1,15 @@
 # [Agent] — Content Engine
-*identity · how the agent shows up — pillars, cadence, formats, hashtags, CTAs*
+*identity · the agent's simple content plan — pillars, platforms, cadence, series, video default*
+*(Hashtags + hook styles are NOT stored here — the content skills generate those fresh per piece.)*
 
-**Content pillars (3–5 recurring themes the agent owns):**
-- [Pillar 1 — e.g. monthly market reads]
-- [Pillar 2 — e.g. neighbourhood spotlights]
-- [Pillar 3 — e.g. first-time buyer education]
+**Content pillars (3–5 themes the agent owns):**
+- [Pillar 1]
+- [Pillar 2]
+- [Pillar 3]
 
-**Platforms (priority order):** [e.g. YouTube > Instagram Reels > TikTok]
-**Posting cadence:** [e.g. 1 YouTube/week, 3 Reels/week, 2 stories/day]
-**Recurring series / formats:** [e.g. "Monthly Market Update", "Neighbourhood Fridays", "Mythbuster Mondays"]
+**Platforms (priority order):** [e.g. YouTube > Instagram Reels > TikTok] — handles in `profile.md`
+**Posting cadence:** [Light / Medium / Heavy — e.g. Light = ~1 video + 2 short posts/week]
+**Signature series / recurring format:** [e.g. "Monthly [city] new-construction update"]
+**Default video style:** captions [on/off] · vibe [calm / clean / bold] · typical length [X sec]
 
-**Hashtag sets:**
-- Instagram: [#...]
-- TikTok: [#...]
-
-**CTA library (the agent's go-to calls to action):**
-- [CTA 1]
-- [CTA 2]
-
-**Favourite hook styles:** [contrarian · listicle · question · before/after · myth-buster]
-**Video style prefs:** captions [on/off] · music [vibe] · typical length [X sec] · b-roll [vibe]
+*Default CTA lives in `identity/voice.md` — content skills use it automatically.*

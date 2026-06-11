@@ -137,8 +137,9 @@ after each and checkpointing. The agent can stop after any one and resume later.
 
 - **Phase 4 — Voice & Proof** (`realtor-voice-proof`): real writing samples + testimonials/stats →
   `identity/voice-samples.md`, `proof.md`. *(~5 min — the biggest lever on content quality.)*
-- **Phase 5 — Content Engine** (`realtor-content-engine`): pillars, cadence, hashtags, CTAs, hooks →
-  `identity/content-engine.md`. *(~10 min.)*
+- **Phase 5 — Content Engine** (`realtor-content-engine`): a simple content plan — pillars, platforms,
+  cadence, series, video default → `identity/content-engine.md`. Asks just 2 things (platforms +
+  capacity); generates the rest *only if the agent's unsure*. *(~3–5 min.)*
 - **Phase 6 — Operations** (`realtor-operations`): hours, signature, booking rules, vendor network,
   goals → `identity/operations.md`, `vendors.md`, `strategy.md`. *(~15 min — the Jarvis foundation.)*
 - **Phase 7 — Compliance** (`realtor-compliance`): disclaimers, license display, claims to avoid →
@@ -195,6 +196,9 @@ up later" rather than blocking setup. Set their **timezone** and pull the **defa
 - **One question at a time. Always.** Never dump a list of questions.
 - **Save progressively.** The Brain is on disk — checkpoint after each phase so a pause never loses work.
 - **Never re-ask what's known.** Each phase reads what earlier phases wrote.
+- **Ask first, generate only when they're stuck.** If the agent gives a real answer, use it — never
+  overwrite their input with a guess. When they don't know, propose a draft from the Brain and let them
+  react. (Applies to every phase — it's why beginners aren't overwhelmed and experts aren't second-guessed.)
 - **Specific over generic.** Real city names, real client language, real differentiators.
 - **Beginner-friendly.** Many agents are new. Offer defaults, reassure, keep momentum.
 - **The Brain is the product.** Everything you write here powers every future session. Make it good.
