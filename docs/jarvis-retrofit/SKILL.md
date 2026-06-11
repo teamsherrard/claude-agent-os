@@ -46,7 +46,10 @@ defaults and state the assumption. Never re-ask answered questions.
    location. **If the request names a guest, invite them** — resolve their email (from the Brain /
    the client record / recent calendar) and add them as an attendee with notifications on, so the
    invite emails out. Only skip the invite if you genuinely can't resolve an email, or the agent
-   says to just block the time. For virtual meetings, put the link from `operations.md` in the description.
+   says to just block the time. **For virtual meetings, attach a video link automatically — NEVER ask
+   the agent for one:** create a Zoom meeting via the Zoom connector and put its join link in the event;
+   if Zoom isn't connected, generate a Google Meet link instead (`addGoogleMeetUrl`). A virtual booking
+   must never go out without a link. (Realtors connect Zoom at onboarding alongside Gmail/Calendar/Drive.)
 4. **Write back:** append/update the client's block in `memory/clients.md` (one-line note of the
    booking).
 5. Confirm out loud: "Booked [day] [start]–[end] at [place], [guest] invited."

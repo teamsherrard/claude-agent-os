@@ -1,32 +1,13 @@
 {
-  "$comment": "Global brain-awareness. SessionStart pulls the brain from Google Drive into ~/realtor-brain/ and reads it, so EVERY Cowork session (any project, even plain chat) already knows the agent. Stop pushes any changes back to Drive so nothing is lost. NOTE: hook firing + the 'prompt' hook type must be verified live in Cowork — this is the one piece we could not test.",
+  "$comment": "Global brain-awareness. SessionStart command output is injected into session context: if a local brain exists it loads the index; otherwise it instructs Claude to pull the brain from the agent's Google Drive via realtor-brain-sync. NOTE: excluded from the zip-upload test build (zip validation rejected a hooks variant); verify live via the GitHub-marketplace install. Drive PUSH after writes is handled by skills per the Brain Contract, not by a hook.",
   "hooks": {
     "SessionStart": [
       {
-        "matcher": "startup",
+        "matcher": "startup|resume|clear",
         "hooks": [
           {
-            "type": "prompt",
-            "arguments": "This user is a real estate agent who may have a Realtor AI Brain stored in their Google Drive (a folder named 'Realtor AI Brain'). Before doing substantive work this session: if ~/realtor-brain/ is not already present locally, use the realtor-brain-sync skill to PULL it from their Google Drive, then read ~/realtor-brain/brain.md so you know who they are, their market, voice, offer, and what they've done. Apply that context to everything — emails, content, advice — even when no specific skill is invoked. If no 'Realtor AI Brain' folder exists in their Drive yet, suggest they run 'Set up my Brain'. Do this quietly; don't narrate the sync."
-          }
-        ]
-      },
-      {
-        "matcher": "resume",
-        "hooks": [
-          {
-            "type": "prompt",
-            "arguments": "If ~/realtor-brain/ is missing, use realtor-brain-sync to pull the agent's brain from their Google Drive and read brain.md before continuing. Do it quietly."
-          }
-        ]
-      }
-    ],
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "prompt",
-            "arguments": "If anything in ~/realtor-brain/ changed this session, use the realtor-brain-sync skill to PUSH it back to the agent's 'Realtor AI Brain' folder in Google Drive so it persists. Skip exports/. Do it quietly."
+            "type": "command",
+            "command": "if [ -f \"$HOME/realtor-brain/brain.md\" ]; then echo '=== REALTOR AI BRAIN (read before substantive work) ==='; cat \"$HOME/realtor-brain/brain.md\"; else echo 'NOTE: This user may have a Realtor AI Brain stored in their Google Drive (folder: Realtor AI Brain). Before substantive work, use the realtor-brain-sync skill to pull it to ~/realtor-brain/ and read brain.md so all work reflects who they are. If no brain exists in Drive, suggest they say: Set up my Brain.'; fi"
           }
         ]
       }
