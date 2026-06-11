@@ -33,7 +33,7 @@ If `~/realtor-brain/` is missing files, tell the agent to run **Realtor AI Brain
 - `identity/avatars.md` — target client types and their pains
 - `identity/voice.md` — full tone rules, never-sounds-like, signature phrases, CTA
 - `identity/offer.md` — services, guarantees, USP, why-hire-me
-- `identity/brand-visual.md` — colors, fonts, logo, tagline
+- `identity/brand-visual.md` — brand *direction*: colours, fonts, vibe, logo direction, tagline (feed to Claude Design)
 - `identity/voice-samples.md` — real writing samples (match their actual voice)
 - `identity/proof.md` — testimonials, stats, case studies (reuse as proof)
 - `identity/content-engine.md` — pillars, cadence, hashtags, CTAs, hooks, video style

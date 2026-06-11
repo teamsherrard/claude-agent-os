@@ -35,7 +35,7 @@ today is an island, disconnected from the brand knowledge.
 | What | Who the agent *is* | What the agent has *done* |
 | Examples | brand, voice, market, avatars, offer, colors | clients, listings, published content, deadlines |
 | Changes | Once at setup; rarely after (rebrand) | Every single day |
-| Written by | The setup wizard + brand/offer/brand-guide skills | Every content skill + Jarvis, automatically |
+| Written by | The setup wizard + brand/offer/brand-direction skills | Every content skill + Jarvis, automatically |
 | Read by | Every skill | Skills that need to avoid repeats or recall context |
 
 ---
@@ -179,7 +179,7 @@ should produce. Mapping proves the fit:
 |---|---|---|
 | **brand-persona** *(setup)* | — | `identity/profile, market, avatars, voice` |
 | **offer-usp** *(setup)* | profile, avatars | `identity/offer.md` |
-| **brand-guide** *(setup)* | profile, voice | `identity/brand-visual.md` + `assets/` |
+| **brand-direction** *(setup)* | profile, voice, avatars | `identity/brand-visual.md` (direction → Claude Design) |
 | **market-update** | market, voice, brand-visual | `memory/content-log.md` |
 | **listing-content-kit** | voice, offer, brand-visual | `memory/listings.md`, `content-log.md` |
 | **neighbourhood-tour** | market, avatars, voice | `content-log.md` |

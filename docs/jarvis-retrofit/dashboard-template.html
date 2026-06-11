@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--
+  AI ADMIN DASHBOARD — Brain-native live artifact template
+  Before creating the artifact, the Admin must:
+   1. Read ~/realtor-brain/brain.md and fill %%ASSISTANT_NAME%%, %%AGENT_FIRST%%, %%MARKET%%
+      from the Brain quick-reference (never ask the agent).
+   2. Populate the MEMORY constant by PARSING the Brain memory files:
+        - ~/realtor-brain/memory/deadlines.md  -> items of type "deadline" / "followup"
+        - ~/realtor-brain/memory/clients.md    -> items of type "note" (recent client updates)
+      Map each into { date, client, type, note, due, status } (see shape below).
+   3. Fill fetchTodayEvents() and fetchInboxCount() with REAL probed connector calls via
+      window.cowork.callMcpTool(name, args). Results are wrapped:
+      use r.structuredContent ?? JSON.parse(r.content[0].text).
+   4. Put %%BRIEFING_TASK_ID%% (from ~/realtor-brain/config.md) into BRIEFING_TASK_ID.
+   5. List every connector tool used in the artifact's mcp_tools.
+  Keep current: on every Brain memory change, update_artifact with a freshly re-parsed MEMORY.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Admin Dashboard</title>
+<style>
+  :root { --gold:#d8b36a; --gold-dim:rgba(216,179,106,.32); --ivory:#f3ecdd;
+    --bg:#0a0e13; --jade:#5fd6a4; --red:#e06a7e; --amber:#e8974f;
+    --serif:"Playfair Display", Georgia, serif; --sans:"Jost","Segoe UI",sans-serif; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:linear-gradient(180deg,#0c1117, var(--bg) 60%); color:var(--ivory);
+    font-family:var(--sans); min-height:100vh; padding:1.4rem; }
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Jost:wght@300;400;500&display=swap');
+  header { display:flex; justify-content:space-between; align-items:baseline;
+    border-bottom:1px solid var(--gold-dim); padding-bottom:.9rem; margin-bottom:1.2rem; flex-wrap:wrap; gap:.5rem; }
+  h1 { font-family:var(--serif); font-size:1.25rem; letter-spacing:.18em; color:var(--ivory); text-transform:uppercase; }
+  h1 small { display:block; font-family:var(--sans); font-size:.6rem; letter-spacing:.4em; color:var(--gold); opacity:.8; margin-top:.3rem; }
+  #dateLine { font-size:.78rem; letter-spacing:.2em; color:var(--gold); text-transform:uppercase; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:1rem; }
+  .card { background:rgba(243,236,221,.035); border:1px solid var(--gold-dim);
+    border-radius:12px; padding:1rem 1.1rem; }
+  .card h2 { font-size:.66rem; letter-spacing:.32em; text-transform:uppercase;
+    color:var(--gold); margin-bottom:.8rem; font-weight:500; }
+  .row { display:flex; gap:.7rem; padding:.45rem 0; border-bottom:1px dashed rgba(216,179,106,.14);
+    font-size:.88rem; font-weight:300; align-items:baseline; }
+  .row:last-child { border-bottom:none; }
+  .row .t { color:var(--gold); font-size:.74rem; letter-spacing:.06em; min-width:64px; }
+  .row.urgent .t { color:var(--red); }
+  .row.fup .t { color:var(--amber); }
+  .muted { opacity:.55; font-size:.8rem; font-weight:300; padding:.4rem 0; }
+  .err { color:var(--red); font-size:.78rem; opacity:.85; }
+  .pill { display:inline-block; border:1px solid var(--gold-dim); border-radius:999px;
+    padding:.45rem 1.05rem; font-size:.68rem; letter-spacing:.22em; text-transform:uppercase;
+    color:var(--gold); cursor:pointer; background:transparent; transition:.25s; font-family:var(--sans); }
+  .pill:hover { border-color:var(--gold); background:rgba(216,179,106,.1); }
+  #stats { display:flex; gap:1.4rem; margin:.2rem 0 1.2rem; flex-wrap:wrap; }
+  .stat { font-size:.78rem; letter-spacing:.08em; font-weight:300; opacity:.9; }
+  .stat b { font-family:var(--serif); font-size:1.3rem; color:var(--gold); margin-right:.35rem; font-weight:600; }
+  footer { margin-top:1.3rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:.6rem; }
+  footer span { font-size:.62rem; letter-spacing:.3em; text-transform:uppercase; opacity:.4; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>%%ASSISTANT_NAME%% — AI Admin<small>%%AGENT_FIRST%% · %%MARKET%%</small></h1>
+    <div id="dateLine"></div>
+  </header>
+
+  <div id="stats">
+    <div class="stat"><b id="stAppt">–</b>appointments today</div>
+    <div class="stat"><b id="stUrgent">–</b>urgent</div>
+    <div class="stat"><b id="stFup">–</b>follow-ups due</div>
+    <div class="stat"><b id="stUnread">–</b>unread emails</div>
+  </div>
+
+  <div class="grid">
+    <div class="card"><h2>Today's Schedule</h2><div id="today"><div class="muted">Loading…</div></div></div>
+    <div class="card"><h2>Urgent — Deadlines</h2><div id="urgent"><div class="muted">Loading…</div></div></div>
+    <div class="card"><h2>Follow-Ups Due</h2><div id="fups"><div class="muted">Loading…</div></div></div>
+    <div class="card"><h2>Recent Client Notes</h2><div id="notes"><div class="muted">Loading…</div></div></div>
+  </div>
+
+  <footer>
+    <button class="pill" id="runBrief">Run my briefing now</button>
+    <span>Private Client System — kept current by %%ASSISTANT_NAME%%</span>
+  </footer>
+
+<script>
+// ===== memory snapshot — parsed from the Brain (~/realtor-brain/memory/*.md) =====
+// The Admin re-parses deadlines.md + clients.md into this shape on every change (update_artifact).
+// item: { date:"YYYY-MM-DD HH:mm", client:"Name|General", type:"deadline|followup|note",
+//         note:"…", due:"YYYY-MM-DD"|"", status:"open|done" }
+const MEMORY = { "items": [] };
+const BRIEFING_TASK_ID = "%%BRIEFING_TASK_ID%%";
+
+// ===== fetchers — filled with REAL probed connector calls =====
+async function fetchTodayEvents() {
+  // call the Google Calendar connector for today's events.
+  // return shape: [{ time:"2:00 PM", title:"Showing — 123 Main", where:"123 Main St" }]
+  return [];
+}
+async function fetchInboxCount() {
+  // call the Gmail connector to count unread inbox messages; return a number.
+  return null;
+}
+
+// ===== rendering =====
+const $ = id => document.getElementById(id);
+const esc = s => { const d = document.createElement("div"); d.textContent = s ?? ""; return d.innerHTML; };
+const today = new Date();
+$("dateLine").textContent = today.toLocaleDateString([], { weekday:"long", month:"long", day:"numeric" });
+
+function daysUntil(d) {
+  if (!d) return Infinity;
+  return Math.floor((new Date(d + "T23:59:59") - today) / 86400000);
+}
+function rows(el, items, cls, emptyMsg) {
+  el.innerHTML = items.length
+    ? items.map(i => `<div class="row ${cls}"><span class="t">${esc(i.t)}</span><span>${esc(i.x)}</span></div>`).join("")
+    : `<div class="muted">${emptyMsg}</div>`;
+}
+
+(function renderMemory() {
+  const open = (MEMORY.items || []).filter(i => i.status === "open");
+  const urgent = open.filter(i => i.type === "deadline" && daysUntil(i.due) <= 2)
+    .sort((a,b) => (a.due||"") < (b.due||"") ? -1 : 1)
+    .map(i => ({ t: i.due || "soon", x: (i.client !== "General" ? i.client + " — " : "") + i.note }));
+  const fups = open.filter(i => i.type === "followup" && daysUntil(i.due) <= 0)
+    .map(i => ({ t: i.due || "due", x: i.client + " — " + i.note }));
+  const notes = (MEMORY.items || []).slice(-6).reverse()
+    .map(i => ({ t: (i.date || "").slice(5, 10), x: i.client + " — " + i.note }));
+  rows($("urgent"), urgent, "urgent", "Nothing urgent. Clear runway.");
+  rows($("fups"), fups, "fup", "All caught up.");
+  rows($("notes"), notes, "", "No notes yet — tell " + "%%ASSISTANT_NAME%%" + " about your clients.");
+  $("stUrgent").textContent = urgent.length;
+  $("stFup").textContent = fups.length;
+})();
+
+(async function renderLive() {
+  try {
+    const ev = await fetchTodayEvents();
+    rows($("today"), ev.map(e => ({ t: e.time, x: e.title + (e.where ? " · " + e.where : "") })), "", "Calendar is clear today.");
+    $("stAppt").textContent = ev.length;
+  } catch (e) {
+    $("today").innerHTML = '<div class="err">Couldn\'t reach your calendar — reopen the dashboard or reconnect Google in Settings.</div>';
+    $("stAppt").textContent = "?";
+  }
+  try {
+    const n = await fetchInboxCount();
+    $("stUnread").textContent = (n === null || n === undefined) ? "–" : n;
+  } catch { $("stUnread").textContent = "–"; }
+})();
+
+$("runBrief").addEventListener("click", () => {
+  try { window.cowork.runScheduledTask(BRIEFING_TASK_ID);
+    $("runBrief").textContent = "Briefing on its way to your inbox";
+  } catch { $("runBrief").textContent = "Ask %%ASSISTANT_NAME%% for your briefing in chat"; }
+});
+</script>
+</body>
+</html>

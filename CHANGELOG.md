@@ -2,6 +2,19 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.7.0] — 2026-06-09
+
+Phase 3 re-scoped: brand **direction**, not design.
+
+### Changed
+- **Phase 3 is now `realtor-brand-direction`** (was `realtor-brand-guide`). It captures the brand
+  *direction* only — colours, vibe, font + logo direction, tagline → `identity/brand-visual.md`. It no
+  longer designs anything (no logo, no HTML brand guide, no Canva brief, no `assets/` generation). The
+  agent takes the direction into **Claude Design (claude.ai/design)** to build the actual visuals.
+- Removed the heavy design references (color-strategy, font-pairings, skylines, canva-handoff, etc.) —
+  the old full-design version stays in git history.
+- Updated conductor, brain template, `brain.md` index, and docs to match. Still 17 skills.
+
 ## [0.6.0] — 2026-06-09
 
 Self-maintenance layer — the brain can now audit, back up, and upgrade itself.

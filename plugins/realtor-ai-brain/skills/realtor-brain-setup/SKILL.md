@@ -7,7 +7,7 @@ description: >
   Brain, walks them through connecting Gmail + Calendar, and hands them a finished, working Brain
   that every other skill (Jarvis, YouTube, market updates, listings) reads automatically.
 
-  This replaces running brand-persona, then offer-usp, then brand-guide separately. One door,
+  This replaces running brand-persona, then offer-usp, then brand-direction separately. One door,
   one session, done. It is resumable — if a Brain already exists it picks up where they left off
   or updates a single section.
 
@@ -114,17 +114,17 @@ locked in."
 
 ---
 
-## Step 4 — Phase 3: How your brand looks (Brand Guide)
+## Step 4 — Phase 3: Your brand direction (Brand Direction)
 
-Run the **Brand Guide** skill (`realtor-brand-guide`) — it reads Phases 1–2, designs the visual
-identity (5-colour palette, two fonts, logo, tagline), saves the logo/headshot to `assets/`, writes
-`identity/brand-visual.md`, and renders a brand style guide + Canva brief into `exports/`. This is also
-the brand config the **AI Video Editor** uses. Follow that skill's flow, then return here and
-checkpoint: "Phase 3 done — your visual brand is locked."
+Run the **Brand Direction** skill (`realtor-brand-direction`) — it reads Phases 1–2 and captures the
+agent's brand **direction** (colours, vibe, font + logo direction, tagline) → `identity/brand-visual.md`.
+**It does NOT design anything** — the agent takes this direction into **Claude Design (claude.ai/design)**
+to build the actual logo and visuals. The colours + fonts also feed the **AI Video Editor**. Follow that
+skill's flow, then checkpoint: "Phase 3 done — your brand direction is set."
 
-*(If the agent has zero interest in branding right now, Brand Guide still writes safe defaults — black /
-dark gold `#B8860B` / white + clean fonts — so graphic skills never hit an empty file. They can re-run
-"build my brand" anytime to upgrade it.)*
+*(If the agent has no clue on branding, the skill proposes 2–3 directions to react to, or writes safe
+defaults — black / dark gold `#B8860B` / white — so nothing downstream hits an empty file. They can
+re-run "set my brand direction" anytime.)*
 
 **→ If they chose Express, skip to Step 6 (Connect your tools) now.**
 

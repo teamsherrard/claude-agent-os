@@ -188,7 +188,7 @@ own part of the brain. Resumable — they can stop after any phase and continue 
 Set up my Brain (conductor)
   Phase 1 → Brand Persona ─→ identity/profile, market, avatars, voice   [~15 min]
   Phase 2 → Offer & USP ───→ identity/offer  (+ guide → exports/)        [~10 min]
-  Phase 3 → Brand Guide ───→ identity/brand-visual + assets/             [~15 min]
+  Phase 3 → Brand Direction → identity/brand-visual (direction→Claude Design) [~5–10 min]
   Phase 4 → Voice & Proof ─→ identity/voice-samples, proof               [~5 min]
   Phase 5 → Content Engine → identity/content-engine                     [~10 min]
   Phase 6 → Operations ────→ identity/operations, vendors, strategy      [~15 min]
@@ -346,7 +346,7 @@ From that point on, every tool already knows them. To change anything: *"update 
 | Pkg | Plugin + marketplace repo, auto-update | ✅ done |
 | 1 | Foundations — Brand Persona → identity | ✅ done |
 | 2 | Offer & USP → identity/offer | ✅ done |
-| 3 | Visual Brand — Brand Guide → brand-visual + assets | ✅ done |
+| 3 | Brand Direction → brand-visual (direction, feeds Claude Design) | ✅ done |
 | — | All 6 content skills retrofitted (read + write-back) | ✅ done |
 | 4 | Voice samples + Proof library | ⬜ next |
 | 5 | Content Engine | ⬜ |
