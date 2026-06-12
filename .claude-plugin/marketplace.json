@@ -17,6 +17,12 @@
       "source": "./plugins/realtor-jarvis",
       "version": "0.1.1",
       "description": "PLUGIN 2 \u2014 the AI Admin (The Agent Leverage OS). Books the calendar, drafts email in the agent's voice, sorts the inbox, remembers every client, briefs them at 7am. Requires Plugin 1 (the Brain) set up first."
+    },
+    {
+      "name": "realtor-youtube-system",
+      "source": "./plugins/realtor-youtube-system",
+      "version": "0.3.0",
+      "description": "PLUGIN 3 \u2014 the YouTube System. An always-on YouTube brain: ideation, research, SEO, scripting in the agent's own voice, lead magnets, repurposing, analytics, and coaching. Requires Plugin 1 (the Brain) set up first."
     }
   ]
 }

@@ -34,6 +34,8 @@ In **Claude Cowork** (everything is UI — there are no commands to type):
    **Plugin 1 — Realtor AI Brain** now; install the others as you reach them in your training:
    - **Plugin 1 · Realtor AI Brain** — install first, always (the foundation)
    - **Plugin 2 · Realtor Jarvis — AI Admin** — install when you start the AI Admin module
+   - **Plugin 3 · Realtor YouTube System** — install when you start the YouTube module
+   - *(Plugin 4 · Short-Form OS — joins this same shelf when it ships)*
 5. *(Recommended)* Open the marketplace card → toggle **Sync automatically** so you get future updates
 
 That's it — the whole system is installed.

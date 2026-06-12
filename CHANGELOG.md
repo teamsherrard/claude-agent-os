@@ -2,6 +2,15 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.14.0] — 2026-06-12
+
+### Added
+- **Realtor YouTube System joins the shelf as Plugin 3** (`plugins/realtor-youtube-system/`, v0.3.0,
+  16 skills) — vendored from its standalone build; display name numbered; marketplace + README
+  updated. Anyone who previously installed it as a Local-uploads zip should REMOVE that copy and
+  install Plugin 3 from this marketplace instead (duplicate skill names would collide), gaining
+  auto-updates. Plugin 4 (Short-Form OS) joins this same shelf when built.
+
 ## [0.13.1] — 2026-06-12
 
 ### Changed

@@ -1,0 +1,32 @@
+---
+name: youtube-consistency
+description: The Consistency Engine for the Realtor YouTube System — solves the real reason most realtor channels die: they quit. Provides batch-day mode (plan one filming day = several ready scripts + the smartest filming order), streak tracking + gentle momentum nudges, and a guided 30/60/90-day ramp so beginners don't drown. Reads the AI Brain (cadence, goal), the Videos folders + channel (what's shipped), and uses Google Calendar for filming/batch days and reminders. Triggers on "plan a batch day", "help me film a batch", "set up my filming day", "keep me consistent", "what's my 30/60/90 plan", "am I on track", "plan my month".
+---
+
+# Consistency Engine
+
+Most channels don't fail on content — they fail because the agent stops. Keep them going. Apply `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
+
+## Batch-day mode (on demand)
+The realtor films best in batches. Given the top ranked ideas:
+- Pick the next N (default 4) and ensure each has a ready script (call Script Studio if needed).
+- Produce a **filming order + run-of-show**: same-outfit/same-setup groupings, shortest setup changes,
+  intros/CTAs to record together, and a simple shot checklist per video.
+- Offer to drop a "Filming Day" block on their **Google Calendar**.
+
+## Check-ins (when they show up or ask "am I on track?")
+- Compare what's actually shipped (Videos folders + channel) vs the Brain's target cadence.
+- If they return after a gap, one gentle, encouraging line: "Good to see you — it's been a couple weeks;
+  want to pick an idea and knock one out? ~30 minutes." Never guilt-trip; momentum over pressure.
+
+## Plan my month (light planning)
+On "plan my month": pull the latest ranked ideas, spread them across their cadence (e.g., 4 long-form +
+shorts), suggest a batch-filming day, offer to put real dates on Google Calendar, and offer to script the
+first one. A simple plan in chat — never a spreadsheet.
+
+## 30/60/90 ramp (for new channels)
+A staged plan so beginners aren't overwhelmed: first 30 days = find footing (foundational pillar videos),
+60 = rhythm (batch + repurpose), 90 = optimize (lean into what's working). Deliver the relevant stage.
+
+## Modes
+On-demand (batch day, month plan, ramp, "am I on track?") + Calendar blocks when they want them.
