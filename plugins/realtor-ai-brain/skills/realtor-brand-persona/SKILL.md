@@ -8,7 +8,7 @@ description: >
   and their voice. This is Phase 1 of Brain setup — it powers everything else.
 
   Trigger on: "build my brand persona", "set up my knowledge file", "create my agent profile",
-  "build my target market profile", "set up my brain", "who is my target market",
+  "build my target market profile", "who is my target market",
   "brand persona skill", "set up my profile", "agent knowledge base", "build my Claude profile",
   or any request where the agent wants to define who they are, who they serve, or set up the
   foundation of their Realtor AI Brain.
@@ -168,7 +168,11 @@ docx skill) so the agent has a human-readable copy. The `.docx` is a *render* �
 
 ---
 
-## Phase 5: Confirm
+## Phase 5: Push to Drive + Confirm
+
+> **Push to Drive first** — run `realtor-brain-sync` (PUSH) so the files you just wrote survive the
+> session. The local copy is wiped when the session ends; an unsynced write is a lost write. (If this
+> ran inside full Brain Setup, Setup's finalize step also pushes — pushing here too is safe.)
 
 After writing the files, confirm simply — there is no "upload to a Project" step anymore:
 

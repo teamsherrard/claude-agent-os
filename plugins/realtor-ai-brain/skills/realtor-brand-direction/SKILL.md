@@ -38,7 +38,10 @@ from the brokerage's brand colours (e.g. eXp blue). If `~/realtor-brain/` doesn'
 
 When they're unsure, **propose and let them react** — never hand them a blank. (Same move as the offer phase.)
 
-## Write + hand off
+## Write + push to Drive + hand off
+
+> **Push to Drive after writing** — run `realtor-brain-sync` (PUSH). The local copy is wiped when the
+> session ends; an unsynced write is a lost write.
 Write everything to `~/realtor-brain/identity/brand-visual.md` as **direction** — colours (with hex),
 fonts, vibe, logo direction, tagline. Then tell them plainly:
 

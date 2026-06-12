@@ -10,6 +10,22 @@
   the Brain (`config.md`).
 - Sibling products keep their own names: the future AI CRM VA, the content/marketing suite.
 
+## The Mike Test (the acceptance gate — every workflow must pass)
+From Mike Sherrard's review: *"It has to be EASIER and FASTER than going to the calendar and doing it
+manually... if it adds time or effort compared to doing it themselves, we are NOT doing it."* The real
+enemy is the **explanation tax** — the reason agents still do things themselves instead of delegating.
+
+Rules every workflow must obey:
+1. **One message in → one one-line confirmation out.** No clarifying questions in the common case —
+   act on Brain defaults and state the assumption.
+2. **Confirmation embeds the proof** (what/when/who) so the agent never opens the calendar to verify.
+3. **One Recommended draft first;** variants only on request. Three options every time = slower.
+4. **Pre-authorize tool permissions at setup** — a booking must not be a gauntlet of permission taps.
+5. **Beat manual or get cut.** A workflow that loses the speed test ships in no version.
+6. **Automations are the trump card** — they cost the agent zero time, so they're immune to the bar.
+   Lead the pitch with them.
+The Brain is what kills the explanation tax: the agent explains their business once, ever.
+
 ## The 5 core outcomes (the sales/marketing layer)
 Everything the product does ladders up to one of these. Lead with these in marketing, not features.
 1. Manage communication faster

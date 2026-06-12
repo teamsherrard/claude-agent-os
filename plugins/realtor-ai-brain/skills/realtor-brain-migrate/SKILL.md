@@ -6,9 +6,11 @@ description: >
   reshape itself — this skill safely migrates an older brain to the current schema (renaming files,
   adding new sections, moving fields) without losing any of the agent's content.
 
-  Trigger on: "update my brain", "upgrade my brain", "migrate my brain", "is my brain up to date",
-  "my brain looks out of date", "fix my brain structure", or run this after a plugin update if a skill
-  reports the brain schema is behind.
+  Trigger on: "upgrade my brain", "upgrade my brain structure", "migrate my brain", "is my brain up to
+  date", "my brain looks out of date", "fix my brain structure", or run this after a plugin update if a
+  skill reports the brain schema is behind. Do NOT trigger when the agent wants to change their
+  information ("update my offer", "update my brand", "update my profile") — those edit identity
+  content via the phase skills, not the brain's structure.
 ---
 
 # Realtor Brain Migration
@@ -52,4 +54,4 @@ here describing the exact transformation. Each entry is idempotent and safe to r
 This is the safety net that lets us evolve the brain structure across hundreds of installed agents.
 **Process when changing brain structure:** (1) change the template + skills, (2) bump "current schema"
 in this skill, (3) add a MIGRATIONS LOG entry with the exact transform, (4) bump plugin version + ship.
-Agents run "update my brain" (or a skill prompts them) and upgrade safely.
+Agents run "upgrade my brain" (or a skill prompts them) and upgrade safely.

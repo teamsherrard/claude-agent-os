@@ -38,7 +38,10 @@ mover): name, contact, and why they recommend them. These power Jarvis referrals
 Capture this year's goals (GCI / transactions), what they want to be known for, growth focus, current
 #1 priority, and capacity constraints.
 
-## Write + confirm
+## Write + push to Drive + confirm
+
+> **Push to Drive after writing** — run `realtor-brain-sync` (PUSH). The local copy is wiped when the
+> session ends; an unsynced write is a lost write.
 Write all three files. Confirm: *"Your operations, vendors, and goals are in your Brain. When you set
 up Jarvis next, it already knows your hours, your signature, your booking rules, and who you refer."*
 If run as **Phase 6 of Setup**, hand control back to Setup, then point them to **"Set up my Jarvis."**

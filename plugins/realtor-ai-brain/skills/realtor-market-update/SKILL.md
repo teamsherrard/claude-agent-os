@@ -465,6 +465,9 @@ Then tell the agent plainly: *"Logged to your Brain — next month I'll pick fre
 repeats."* If the agent later publishes, they (or Jarvis) can update Status to `Published` and add the
 link.
 
+**Then push to Drive:** run `realtor-brain-sync` (PUSH) so this write survives the session — the local
+copy is wiped when the session ends; an unsynced write is a lost write.
+
 ### Data
 - [ ] All data from named, credible sources (real estate board, major publication, government)
 - [ ] All data from the most recent available reporting period

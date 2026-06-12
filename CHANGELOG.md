@@ -2,6 +2,33 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.11.0] — 2026-06-12
+
+Critical fixes from the full pre-GitHub sweep.
+
+### Fixed
+- **Writes now survive the session (durability).** Every skill that writes to the Brain — all 7
+  producers and all 6 content skills — now pushes to Drive via `realtor-brain-sync` immediately after
+  writing, and the write law in `brain.md` carries the rule ("an unsynced write is a lost write").
+  Previously only Setup's finalize step pushed, so standalone runs (e.g. "update my offer", a content
+  skill's log write) were silently lost when Cowork wiped the sandbox.
+- **Setup Step 0 now pulls from Drive before deciding fresh vs returning.** Checking only the local
+  folder would re-onboard a returning agent (local is always empty at session start) and overwrite
+  their real Brain in Drive with a fresh empty one. Rebuild-from-scratch now also requires explicit
+  confirmation.
+- **Trigger collisions resolved** — removed "set up my brain" from `realtor-brand-persona` (belongs to
+  Setup); `realtor-brain-migrate` no longer claims "update my brain" (now "upgrade my brain", with an
+  explicit do-not-trigger note for content edits like "update my offer/brand").
+
+## [0.10.1] — 2026-06-10
+
+### Fixed
+- **Cowork zip-upload validation failure.** Diffed against a known-valid plugin zip: the experimental
+  `"prompt"`-type hooks file and extra manifest fields (`skills`, `hooks`, `repository`) were the
+  difference. `plugin.json` reduced to the proven minimal shape (skills auto-discover); hooks excluded
+  from the zip build; `hooks/hooks.json` rewritten to the documented `command` type (ships via the
+  GitHub install, pending live verification).
+
 ## [0.10.0] — 2026-06-09
 
 The Brain now lives in Google Drive, so it persists across Cowork sessions, projects, and devices.

@@ -42,7 +42,10 @@ Collect, conversationally:
 
 Write to `~/realtor-brain/identity/proof.md`.
 
-## Confirm
+## Push to Drive + confirm
+
+> **Push to Drive after writing** — run `realtor-brain-sync` (PUSH). The local copy is wiped when the
+> session ends; an unsynced write is a lost write.
 Tell them: *"Added to your Brain — your real voice and your proof. Now every script sounds more like
 you, and every listing/lead magnet can pull in real testimonials and stats."* If run as **Phase 4 of
 Setup**, hand control back to Setup.

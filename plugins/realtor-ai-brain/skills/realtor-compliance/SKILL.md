@@ -33,7 +33,10 @@ Read `~/realtor-brain/brain.md` and `identity/profile.md` (for brokerage, licens
    Offer the common real-estate list and let them confirm/add.
 6. **Brokerage logo / co-brand rules** — eXp blue, RE/MAX co-brand zone, KW constraints, independent.
 
-## Write + confirm
+## Write + push to Drive + confirm
+
+> **Push to Drive after writing** — run `realtor-brain-sync` (PUSH). The local copy is wiped when the
+> session ends; an unsynced write is a lost write.
 Write `~/realtor-brain/identity/compliance.md`. Confirm: *"Your compliance rules are in your Brain —
 every content skill will append your disclaimer and license #, and avoid claims you can't make."*
 Remind them once: this is a safety net, not legal advice. If run as **Phase 7 of Setup**, hand control

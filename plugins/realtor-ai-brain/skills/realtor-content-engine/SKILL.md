@@ -44,7 +44,10 @@ For each: ask once. **They know → use it. They don't → generate from the Bra
 - **Default video style** — captions on/off, vibe, typical length. If unsure, default from their voice
   (e.g. calm/clean, captions on, 30–60s).
 
-## Write + confirm
+## Write + push to Drive + confirm
+
+> **Push to Drive after writing** — run `realtor-brain-sync` (PUSH). The local copy is wiped when the
+> session ends; an unsynced write is a lost write.
 Write `~/realtor-brain/identity/content-engine.md` — pillars, platforms (+ priority), cadence, signature
 series, default video style. **Do NOT write hashtags or hook lists** (content skills make those per
 piece). Pull the default CTA from `voice.md` — don't re-ask. Confirm: *"Your content plan is set — every

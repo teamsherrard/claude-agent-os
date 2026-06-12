@@ -307,6 +307,9 @@ Status `Scripted`:
 
 Then tell the agent: *"Logged this launch to your Brain — the video and its Reels are on record."*
 
+**Then push to Drive:** run `realtor-brain-sync` (PUSH) so this write survives the session — the local
+copy is wiped when the session ends; an unsynced write is a lost write.
+
 ---
 
 ## Quality Checklist (Run Before Delivering)

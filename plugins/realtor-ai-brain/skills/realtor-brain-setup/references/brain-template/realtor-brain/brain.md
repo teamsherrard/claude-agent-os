@@ -14,6 +14,8 @@
    - Anything published or scripted → `memory/content-log.md`
    - Client conversation / note → `memory/clients.md`
    - New deadline or follow-up → `memory/deadlines.md`
+   - **Then PUSH to Drive** (`realtor-brain-sync`) — the local copy is wiped when the session ends;
+     an unsynced write is a lost write.
 3. **STAY COMPLIANT.** Before publishing anything public-facing, read `identity/compliance.md` — append
    the required brokerage disclaimer + license #, and avoid the listed "claims to avoid." *(If
    `compliance.md` is empty, proceed but note it's unset.)*

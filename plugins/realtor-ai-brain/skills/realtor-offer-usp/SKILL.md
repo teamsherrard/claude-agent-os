@@ -126,7 +126,10 @@ or hands to clients at consultations. Render it to `~/realtor-brain/exports/` (e
 
 ---
 
-## Phase 5: Confirm and Deliver
+## Phase 5: Push to Drive, Confirm and Deliver
+
+> **Push to Drive first** — run `realtor-brain-sync` (PUSH) so `identity/offer.md` survives the
+> session. The local copy is wiped when the session ends; an unsynced write is a lost write.
 
 After writing the offer and rendering the guide:
 

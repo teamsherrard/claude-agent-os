@@ -50,17 +50,26 @@ Fixed home: **`~/realtor-brain/`**. The empty scaffold ships with this skill at
 
 ---
 
-## Step 0 — Check for an existing Brain (resumability)
+## Step 0 — Pull from Drive FIRST, then check for an existing Brain
 
-Before anything, check whether `~/realtor-brain/` already exists.
+**Never trust the local folder to tell you whether this agent has a Brain.** The local sandbox is wiped
+between sessions — a fully onboarded agent will still show an empty `~/realtor-brain/` at session
+start. Checking only locally would re-onboard a returning agent and **overwrite their real Brain in
+Drive with a fresh empty one** at the finalize push. So:
 
-- **No Brain →** fresh setup. Go to Step 1.
-- **Brain exists but incomplete** (some `identity/` files are still template placeholders) → tell the
-  agent "Looks like we started this before — want to pick up where we left off?" and skip the phases
-  already complete.
-- **Brain exists and complete** → ask what they want: "Your Brain's already set up. Want to **update
-  one part** (brand, market, offer, visuals), **review it**, or **rebuild from scratch**?" Then run
-  only the relevant phase. Never silently overwrite a complete Brain.
+1. **Pull first.** Use the **realtor-brain-sync** skill to look for a `Realtor AI Brain` folder in the
+   agent's Google Drive and pull it to `~/realtor-brain/`. (If the Drive connector isn't connected,
+   ask them to connect it now — it's required for the Brain anyway.)
+2. **Then decide:**
+   - **No Brain in Drive (and none locally) →** fresh setup. Go to Step 1.
+   - **Brain exists but incomplete** (some `identity/` files are still template placeholders) → tell the
+     agent "Looks like we started this before — want to pick up where we left off?" and skip the phases
+     already complete.
+   - **Brain exists and complete** → ask what they want: "Your Brain's already set up. Want to **update
+     one part** (brand, market, offer, visuals), **review it**, or **rebuild from scratch**?" Then run
+     only the relevant phase. **Never silently overwrite a complete Brain — and never push a fresh
+     empty Brain over a real one in Drive.** Rebuild-from-scratch requires the agent's explicit
+     confirmation after you tell them their existing Brain will be replaced.
 
 ---
 

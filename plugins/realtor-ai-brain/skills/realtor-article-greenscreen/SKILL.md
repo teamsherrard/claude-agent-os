@@ -357,6 +357,9 @@ Repeat for all 5 videos. Present all backgrounds using the present_files tool.
 ```
 (One row per video.) Then tell the agent: *"Logged this batch to your Brain."*
 
+**Then push to Drive:** run `realtor-brain-sync` (PUSH) so this write survives the session — the local
+copy is wiped when the session ends; an unsynced write is a lost write.
+
 ---
 
 ## Quality Checklist (Run Before Delivering)

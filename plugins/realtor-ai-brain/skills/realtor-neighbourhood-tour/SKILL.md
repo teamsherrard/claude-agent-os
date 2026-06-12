@@ -434,6 +434,9 @@ tour YouTube video + the 3 short-form concepts — Status `Scripted`, Listing/Ar
 
 Then tell the agent: *"Logged your [neighbourhood] tour to your Brain."*
 
+**Then push to Drive:** run `realtor-brain-sync` (PUSH) so this write survives the session — the local
+copy is wiped when the session ends; an unsynced write is a lost write.
+
 ---
 
 ## Quality Checklist

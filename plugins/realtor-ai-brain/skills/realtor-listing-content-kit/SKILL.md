@@ -471,6 +471,9 @@ walkthrough + the 3 Reels), Status `Scripted`, Listing/Area = the address:
 Then tell the agent: *"Logged [address] to your Brain — walkthrough + 3 Reels recorded so we won't
 duplicate them."*
 
+**Then push to Drive:** run `realtor-brain-sync` (PUSH) so this write survives the session — the local
+copy is wiped when the session ends; an unsynced write is a lost write.
+
 ---
 
 ## Quality Checklist

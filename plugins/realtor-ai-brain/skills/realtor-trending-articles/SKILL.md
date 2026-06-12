@@ -340,6 +340,9 @@ Aim for 30-60 seconds per video. Post to Instagram Reels and TikTok.
 ```
 (5 rows — one per video package.) Then tell the agent: *"Logged this week's 5 article videos to your Brain."*
 
+**Then push to Drive:** run `realtor-brain-sync` (PUSH) so this write survives the session — the local
+copy is wiped when the session ends; an unsynced write is a lost write.
+
 ---
 
 ## Quality Checklist (Run Before Delivering)
