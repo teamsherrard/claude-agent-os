@@ -4,7 +4,30 @@ All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`
 
 ## [0.11.0] — 2026-06-12
 
-Critical fixes from the full pre-GitHub sweep.
+Critical fixes from the full pre-GitHub sweep — and **Jarvis (the AI Admin) ships in the plugin**.
+
+### Added
+- **`realtor-jarvis` skill** (The Agent Leverage OS, v1: Scheduling · Inbox · Client Memory):
+  auto-booking with conflict guard + guest invites + automatic video links (Zoom → standing link →
+  Google Meet — never asks), client self-booking with graceful degradation (Cal.com → own booking
+  link → proposed times), rescheduling, route optimizer, email drafts in the agent's voice
+  (draft-only by design — the approval model), thread summary, total client recall, silent
+  auto-logging, and task/promise follow-ups. Obeys the **Mike Test** speed rules: one message in →
+  one one-line confirmation with embedded proof, no clarifying questions in the common case.
+- **"Set up my Jarvis" one-time flow**: connector checks (incl. Zoom create-capability probe),
+  permission smoothing ("Always allow"), Gmail label taxonomy, dashboard artifact, and two
+  scheduled automations — **Morning Briefing** (7am; delivered as the task's own output since the
+  Gmail connector cannot send) and **Daily Inbox Sweep** (weekdays 8:30am: triage + auto-label +
+  waiting-on + declutter in one pass). Runtime ids live in the brain's `config.md`.
+- Jarvis follows the Drive-sync law: pull-if-missing at Step 0 (and ALWAYS in scheduled tasks),
+  push after every memory write. `clients.md` treated as PII (stays in the agent's brain + their
+  own Drive only).
+- Brain template: `config.md` gains Zoom/Cal.com connector rows + a Jarvis runtime section;
+  `realtor-operations` now captures a standing virtual-meeting link; Setup Step 6 lists Zoom
+  (recommended) and Cal.com (optional).
+- Docs: `jarvis-v2-parking.md` (meeting notes, transaction coordinator, document/file systems);
+  `product-framing.md` (the Mike Test acceptance gate + 5 outcomes) moved into `docs/`; the
+  drifted `docs/jarvis-retrofit/` staging folder is gone — the skill is the single source of truth.
 
 ### Fixed
 - **Writes now survive the session (durability).** Every skill that writes to the Brain — all 7

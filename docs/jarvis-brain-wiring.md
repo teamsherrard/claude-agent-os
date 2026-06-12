@@ -1,7 +1,14 @@
 # Jarvis (AI Admin) — Brain Wiring
 
-*How the AI Admin reads/writes the Realtor AI Brain. Companion to `brain-spec.md` §5–§7.
-This is the retrofit contract for dropping the `realtor-jarvis` skill into the plugin.*
+*How the AI Admin reads/writes the Realtor AI Brain. Companion to `brain-spec.md` §5–§7 and
+`BRAIN-CONTRACT.md`. **Status: SHIPPED** — the skill lives at
+`plugins/realtor-ai-brain/skills/realtor-jarvis/` (with the briefing, inbox-sweep, and dashboard
+templates in its `references/`). This doc remains the wiring contract.*
+
+**Drive sync (v0.10+):** the Brain's permanent home is the agent's Google Drive; `~/realtor-brain/`
+is a per-session working copy. Jarvis PULLS the Brain if the local copy is missing (Step 0) and
+PUSHES after every `memory/`/`config.md` write, batched once per turn — an unsynced write is a lost
+write. Scheduled tasks (briefing, inbox sweep) always start with a PULL: they run in fresh sessions.
 
 ## Principle
 

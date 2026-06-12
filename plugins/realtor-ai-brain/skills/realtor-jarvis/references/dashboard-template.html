@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <!--
-  AI ADMIN DASHBOARD — Brain-native live artifact template
-  Before creating the artifact, the Admin must:
-   1. Read ~/realtor-brain/brain.md and fill %%ASSISTANT_NAME%%, %%AGENT_FIRST%%, %%MARKET%%
-      from the Brain quick-reference (never ask the agent).
+  AI ADMIN DASHBOARD — Brain-native live artifact template (Drive-backed brain)
+  Built ONCE during "Set up my Jarvis" (SKILL.md setup step 5). Before creating the artifact:
+   1. Load the Brain (pull from Drive if the local copy is missing). Fill %%ASSISTANT_NAME%%,
+      %%AGENT_FIRST%%, %%MARKET%% from brain.md — never ask the agent.
    2. Populate the MEMORY constant by PARSING the Brain memory files:
-        - ~/realtor-brain/memory/deadlines.md  -> items of type "deadline" / "followup"
-        - ~/realtor-brain/memory/clients.md    -> items of type "note" (recent client updates)
-      Map each into { date, client, type, note, due, status } (see shape below).
+        - memory/deadlines.md  -> items of type "deadline" / "followup"
+        - memory/clients.md    -> items of type "note" (recent client updates)
+      Map each into { date, client, type, note, due, status } (shape below).
    3. Fill fetchTodayEvents() and fetchInboxCount() with REAL probed connector calls via
       window.cowork.callMcpTool(name, args). Results are wrapped:
       use r.structuredContent ?? JSON.parse(r.content[0].text).
-   4. Put %%BRIEFING_TASK_ID%% (from ~/realtor-brain/config.md) into BRIEFING_TASK_ID.
+      (Verify these artifact APIs exist in the client's Cowork — fallbacks below degrade politely.)
+   4. Put the briefing task id (saved in config.md at setup step 6) into BRIEFING_TASK_ID;
+      save THIS artifact's id back into config.md (dashboard artifact id).
    5. List every connector tool used in the artifact's mcp_tools.
-  Keep current: on every Brain memory change, update_artifact with a freshly re-parsed MEMORY.
+  Keep current: after every Brain memory write, update_artifact with a freshly re-parsed MEMORY.
 -->
 <html lang="en">
 <head>

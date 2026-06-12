@@ -45,8 +45,11 @@ Everything the product does ladders up to one of these. Lead with these in marke
 
 **Vocabulary** — Systems contain **Workflows** (agent-triggered) and **Automations** (self-running).
 
-**Connectors** — native only: Gmail · Google Calendar · Google Drive · Cal.com · Zoom for Claude.
-No Zapier. The inbox itself is a zero-config integration (lead, lender, and transaction emails already arrive there).
+**Connectors** — native only, no Zapier. Required: Gmail (note: draft-only — it cannot send; that IS
+the approval model) · Google Calendar · Google Drive (the Brain's permanent home). Recommended: Zoom
+(auto meeting links on virtual bookings; Google Meet is the automatic fallback). Optional: Cal.com
+(self-booking; falls back to the agent's own booking link, then to proposing times by email). The
+inbox itself is a zero-config integration (lead, lender, and transaction emails already arrive there).
 
 **Scope boundary** — productivity only. Leads / nurture / pipeline → the **AI CRM VA**.
 Content / marketing → the existing realtor skill suite. The Admin hands off to both.
@@ -121,11 +124,18 @@ Full detail in `jarvis-brain-wiring.md`.
 
 ## 7. Build status & roadmap
 
-- Brain spec + template — done.
-- **Phase 1 (brain-native foundation)** — proven against the sample brain (load-no-interview + write-back).
-- **Phase 2 (persona, dashboard, 7am briefing)** — built, brain-native, staged in `jarvis-retrofit/`.
-- **Pending go-live** — seed the real Brain (profile / voice / operations) + connect accounts → live test (booking + briefing).
-- **Then** — package into the Cowork plugin + new-client provisioning + update path.
+- Brain spec + template + Drive-backed sync — done (plugin v0.10–0.11).
+- **v1 skill SHIPPED into the plugin** (`skills/realtor-jarvis/`): Scheduling + Inbox + Client
+  Memory workflows, one-time "Set up my Jarvis" flow, Drive pull/push, Mike Test speed rules,
+  graceful degradation (Zoom→standing link→Meet; Cal.com→booking link→proposed times).
+- **Two scheduled automations authored** (`references/`): Morning Briefing (7am daily; delivered as
+  the task's own output — Gmail cannot send) and Daily Inbox Sweep (weekdays 8:30am: triage + label
+  + waiting-on + declutter in one pass).
+- Live-tested on a real account: booking, conflict guard, guest invites, recall, triage, voice-true
+  drafting. NOT yet live-tested: the two scheduled automations firing on their own, Zoom
+  meeting-creation, dashboard artifact APIs in a client install.
+- **Next gate: the Mike Pilot** — Mike's own instance, ~7-day speed trial (track reverts-to-manual)
+  → fix or cut → THEN push the marketplace repo public + one real Cowork install test → clients.
 
 ---
 

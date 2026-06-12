@@ -167,11 +167,15 @@ done:
 - **Google Drive** — **REQUIRED. This is where the Brain lives.** Cowork's local storage is wiped
   between sessions, so the Brain must be saved to the agent's Drive or it disappears next time. Connect
   this — don't skip it.
-- **Gmail** (required for Jarvis — morning briefing + client emails)
+- **Gmail** (required for Jarvis — inbox sweep + client email drafts; note: draft-only, it cannot send)
 - **Google Calendar** (required for Jarvis — booking showings/consults)
+- **Zoom** (recommended for Jarvis — auto-creates meeting links on virtual bookings; Google Meet is the
+  automatic fallback, so this can be added later)
+- **Cal.com** (optional — client self-booking links; Jarvis falls back to their own booking link or to
+  proposing times by email)
 - **Pexels** (optional — only if they'll use video skills)
 
-If Gmail/Calendar/Pexels aren't available, note "not connected — set up later" in `config.md` and
+If Gmail/Calendar/Zoom/Cal.com/Pexels aren't available, note "not connected — set up later" in `config.md` and
 proceed. **Drive is the exception — without it the Brain can't be saved** — so if it's missing, help the
 agent connect it before finishing. Set their **timezone** and pull the **default CTA** from
 `identity/voice.md` into `config.md`.

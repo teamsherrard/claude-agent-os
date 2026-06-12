@@ -27,6 +27,9 @@ Conversationally capture:
 - **Email signature** — exact block (pull name/title/brokerage/booking link from `profile.md`; confirm).
 - **Booking rules** — showing duration + buffers; buyer/seller consult duration + in-person/virtual;
   open-house defaults.
+- **Standing virtual-meeting link** — their personal Zoom room (or Meet link) if they have one. Jarvis
+  attaches video links to virtual bookings automatically (Zoom connector → this standing link → Google
+  Meet), so capturing it here means Jarvis never has to ask at booking time.
 - **Follow-up cadence** — new lead / active client / past client sequences.
 - **Standard scripts** (optional) — objection handling, follow-up templates, or "none yet."
 

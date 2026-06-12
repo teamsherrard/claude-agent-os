@@ -20,6 +20,13 @@ Just ask. Everything already knows you:
 Run my market update
 ```
 
+Want your AI admin too? Say:
+```
+Set up my Jarvis
+```
+It books your calendar (conflict-checked, guests invited, video link attached), drafts your email
+in your voice, sorts your inbox every morning, remembers every client, and briefs you at 7am.
+
 ---
 
 **That's it.** Your Brain lives at `~/realtor-brain/`. With **Sync automatically** on, updates arrive
