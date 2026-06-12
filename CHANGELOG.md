@@ -2,6 +2,21 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.13.0] — 2026-06-12
+
+**Jarvis is now its own plugin** — the marketplace becomes the numbered cohort journey.
+
+### Changed
+- **`realtor-jarvis` split out of the Brain plugin into Plugin 2** (`plugins/realtor-jarvis/`,
+  starts at v0.1.0). Product decision: one system = one plugin = one training module — the agent
+  installs Plugin 1 (Brain), completes it, then installs Plugin 2 (AI Admin) when they reach that
+  module. Same single marketplace link; the marketplace now lists plugins numbered in journey order
+  (YouTube System and Short-Form OS join the same shelf as Plugins 3–4 when shipped).
+- Jarvis's missing-Brain message now routes to installing Plugin 1 + "Set up my Brain" (it still
+  never interviews). Brain plugin description, README, START-HERE, Brain Contract, and blueprint
+  updated to the two-plugin journey.
+- `scripts/build-plugin-zip.sh` now builds a zip per plugin on the marketplace.
+
 ## [0.12.0] — 2026-06-12
 
 Public release prep — first version pushed to GitHub.

@@ -58,8 +58,9 @@ system plugs into it and never re-interviews the agent.
   row per published long-form + its shorts) so the Brain — and every other system — knows what content
   exists. Boundary: the YouTube System owns YouTube ideation/scripting/SEO/repurposing; the Brain
   plugin's built-in `realtor-yt-launch-system` defers to it when installed.
-- **Jarvis / AI admin** (ships in the Brain plugin) → reads `identity/operations.md` (hours, signature,
-  booking rules), `identity/vendors.md` (referrals), `identity/voice.md` (email tone),
+- **Jarvis / AI admin** (its own plugin — `realtor-jarvis`, Plugin 2 on this same marketplace;
+  requires the Brain plugin installed + set up first) → reads `identity/operations.md` (hours,
+  signature, booking rules), `identity/vendors.md` (referrals), `identity/voice.md` (email tone),
   `identity/offer.md`; writes to `memory/clients.md` + `memory/deadlines.md`.
 - **AI Video Editor** → reads `identity/brand-visual.md` for colours (hex) + fonts, and `assets/` for the
   logo/headshot. That's the "brand config." (Requires running on the same machine as `~/realtor-brain/`.)

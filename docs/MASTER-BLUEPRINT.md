@@ -351,7 +351,7 @@ From that point on, every tool already knows them. To change anything: *"update 
 | 4 | Voice samples + Proof library | ✅ done (v0.5) |
 | 5 | Content Engine | ✅ done (v0.5/0.8) |
 | 6 | Operations into the brain (+ vendors) | ✅ done (v0.5/0.6) |
-| 6b | **Jarvis skill ships in-plugin** (Scheduling · Inbox · Client Memory + briefing & inbox-sweep automations) | ✅ done (v0.11) |
+| 6b | **Jarvis ships as its OWN plugin** on the same marketplace (Scheduling · Inbox · Client Memory + briefing & inbox-sweep automations) — Plugin 2 in the cohort journey | ✅ done (v0.11, split v0.13) |
 | 7 | Compliance | ✅ done (v0.6/0.9) |
 | — | Brain backup/sync (Drive-backed) + schema-migration system | ✅ done (v0.10) |
 | — | Provisioning workflow (agency) | ⬜ |

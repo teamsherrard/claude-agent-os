@@ -30,7 +30,10 @@ In **Claude Cowork** (everything is UI — there are no commands to type):
 1. **Customize → Personal Plugins → Browse Plugins**
 2. Click the **＋** next to "Personal" → **Add marketplace**
 3. Paste: **`teamsherrard/realtor-ai-brain`** → Cowork syncs the marketplace
-4. Click **Install** on **Realtor AI Brain**
+4. You'll see the plugins on this marketplace, numbered in order. Click **Install** on
+   **Plugin 1 — Realtor AI Brain** now; install the others as you reach them in your training:
+   - **Plugin 1 · Realtor AI Brain** — install first, always (the foundation)
+   - **Plugin 2 · Realtor Jarvis — AI Admin** — install when you start the AI Admin module
 5. *(Recommended)* Open the marketplace card → toggle **Sync automatically** so you get future updates
 
 That's it — the whole system is installed.
@@ -60,8 +63,9 @@ Once your Brain is set up, just ask for what you want. The tools already know yo
 
 - `Run my market update`
 - `Create content for my new listing`
-- `Set up my Jarvis` — your AI admin: books your calendar (conflict-checked, guests invited, video
-  link attached), drafts email in your voice, sorts your inbox every morning, and briefs you at 7am
+- `Set up my Jarvis` — your AI admin *(Plugin 2 — install it from the same marketplace first)*: books
+  your calendar (conflict-checked, guests invited, video link attached), drafts email in your voice,
+  sorts your inbox every morning, and briefs you at 7am
 
 To change anything later: `Update my brand`, `Update my offer`.
 

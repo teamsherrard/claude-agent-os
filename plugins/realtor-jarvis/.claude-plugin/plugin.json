@@ -1,0 +1,20 @@
+{
+  "name": "realtor-jarvis",
+  "displayName": "Realtor Jarvis — AI Admin",
+  "version": "0.1.0",
+  "description": "The Agent Leverage OS — a real estate agent's AI admin. Books the calendar (conflict-checked, guests invited, video link attached), drafts email in the agent's voice, sorts the inbox every morning, remembers every client, and delivers a 7am briefing. REQUIRES the Realtor AI Brain plugin (same marketplace): install it and run 'Set up my Brain' first — Jarvis reads everything from the Brain and never re-interviews the agent.",
+  "author": {
+    "name": "Team Sherrard"
+  },
+  "homepage": "https://github.com/teamsherrard/realtor-ai-brain",
+  "license": "UNLICENSED",
+  "keywords": [
+    "real estate",
+    "realtor",
+    "ai-admin",
+    "jarvis",
+    "scheduling",
+    "inbox",
+    "assistant"
+  ]
+}

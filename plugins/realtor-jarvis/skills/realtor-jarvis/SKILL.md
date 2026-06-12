@@ -31,7 +31,9 @@ The Admin exists only if it's FASTER than the agent doing it manually:
 1. If `~/realtor-brain/` exists locally, use it. If NOT: **pull it from the agent's Google
    Drive** (`Realtor AI Brain` folder) per the **realtor-brain-sync** skill — Cowork's local
    copy is wiped between sessions; Drive is the Brain's permanent home.
-2. Only if Drive has no brain either → tell the agent to run **Realtor AI Brain — Setup**, stop.
+2. Only if Drive has no brain either → the Brain isn't built yet: tell the agent to install the
+   **Realtor AI Brain plugin** (Plugin 1 on this same marketplace) if missing and run **"Set up my
+   Brain"** first, then stop. Jarvis never interviews — the Brain is its only source of identity.
 3. Read `brain.md`, then open only what the task needs:
    - `identity/operations.md` — hours, timezone, **email signature (exact block)**, **booking
      rules** (durations, buffers, standing virtual-meeting link), follow-up cadence

@@ -126,7 +126,8 @@ Full detail in `jarvis-brain-wiring.md`.
 ## 7. Build status & roadmap
 
 - Brain spec + template + Drive-backed sync — done (plugin v0.10–0.11).
-- **v1 skill SHIPPED into the plugin** (`skills/realtor-jarvis/`): Scheduling + Inbox + Client
+- **v1 SHIPPED as its own plugin** (`plugins/realtor-jarvis/` — Plugin 2 on the marketplace,
+  requires the Brain plugin set up first): Scheduling + Inbox + Client
   Memory workflows, one-time "Set up my Jarvis" flow, Drive pull/push, Mike Test speed rules,
   graceful degradation (Zoom→standing link→Meet; Cal.com→booking link→proposed times).
 - **Two scheduled automations authored** (`references/`): Morning Briefing (7am daily; delivered as
