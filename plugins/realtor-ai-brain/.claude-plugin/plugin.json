@@ -1,13 +1,13 @@
 {
   "name": "realtor-ai-brain",
   "displayName": "Realtor AI Brain",
-  "version": "0.11.2",
+  "version": "0.12.0",
   "description": "One shared AI Brain for a real estate agent — their identity (brand, market, avatars, voice, offer, visuals) and their memory (clients, listings, content history) — that every skill reads from and writes back to. Run Setup once; every tool already knows you.",
   "author": {
     "name": "Team Sherrard"
   },
   "homepage": "https://github.com/teamsherrard/realtor-ai-brain",
-  "license": "UNLICENSED",
+  "license": "SEE LICENSE IN LICENSE.md",
   "keywords": [
     "real estate",
     "realtor",

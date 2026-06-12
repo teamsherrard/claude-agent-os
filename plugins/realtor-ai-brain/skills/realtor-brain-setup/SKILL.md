@@ -29,24 +29,30 @@ smart onboarding — not a form. They are often beginners. Encourage honesty ove
 
 ## The Brain you are building
 
-Fixed home: **`~/realtor-brain/`**. The empty scaffold ships with this skill at
-`references/brain-template/realtor-brain/` — you copy it into place, then fill it. Exact structure:
+**Permanent home: the agent's Google Drive** (`Realtor AI Brain` folder). The local `~/realtor-brain/`
+is just the session's working copy — it syncs from Drive and pushes back (the sandbox is wiped between
+sessions). The empty scaffold ships with this skill at `references/brain-template/realtor-brain/` —
+you copy it into place, fill it through the phases, then push it to Drive. Exact structure:
 
 ```
-~/realtor-brain/
-├── brain.md                  # index — quick-reference + map + the two laws (you write this LAST)
-├── identity/                 # filled from the interviews
-│   ├── profile.md  market.md  avatars.md  voice.md  offer.md  brand-visual.md
+~/realtor-brain/   (mirrored in Drive)
+├── brain.md                  # index — quick-reference + map + the laws (you write this LAST)
+├── identity/                 # filled by the phase skills
+│   ├── profile.md  market.md  avatars.md  voice.md  offer.md  brand-visual.md     (Phases 1–3)
+│   ├── voice-samples.md  proof.md  content-engine.md                              (Phases 4–5)
+│   └── operations.md  vendors.md  strategy.md  compliance.md                      (Phases 6–7)
 ├── memory/                   # scaffolded empty — skills fill these over time
-│   ├── clients.md  listings.md  content-log.md  deadlines.md
-├── assets/                   # logo, headshot, fonts (saved during the visual step)
-├── config.md                 # connectors, timezone, defaults, version
-└── exports/                  # rendered welcome doc + future lead magnets (not source of truth)
+│   └── clients.md  listings.md  content-log.md  deadlines.md
+├── assets/                   # logo, headshot, fonts
+├── config.md                 # connectors, timezone, Brain schema version
+└── exports/                  # deliverables archive — synced to Drive (outputs, not source)
 ```
 
-**The two laws every skill obeys — state these to no one, but build the Brain so they hold:**
+**The laws every skill obeys — state these to no one, but build the Brain so they hold:**
 1. Skills READ `brain.md` first.
-2. Skills WRITE back to `memory/` as the agent works.
+2. Skills WRITE back to `memory/` as the agent works — **then PUSH to Drive** (an unsynced write is a
+   lost write).
+3. Skills STAY COMPLIANT — read `identity/compliance.md` before publishing.
 
 ---
 

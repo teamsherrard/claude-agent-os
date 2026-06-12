@@ -12,7 +12,8 @@ Say:
 ```
 Set up my Brain
 ```
-Answer the questions. ~30–40 minutes, and you can pause anytime — it saves as you go.
+Answer the questions — **Express (~30 min)** for the essentials or **Full (~60–75 min)** for the whole
+brain. You can pause anytime — it saves as you go.
 
 ### 3. Use it
 Just ask. Everything already knows you:
@@ -29,8 +30,9 @@ in your voice, sorts your inbox every morning, remembers every client, and brief
 
 ---
 
-**That's it.** Your Brain lives at `~/realtor-brain/`. With **Sync automatically** on, updates arrive
-on their own — you never re-install. To change your details later, just say *"update my brand"* or
-*"update my offer."*
+**That's it.** Your Brain lives in **your Google Drive** (`Realtor AI Brain` folder) — it follows you
+across every project and device, and everything we make for you lands there too. With **Sync
+automatically** on, updates arrive on their own — you never re-install. To change your details later,
+just say *"update my brand"* or *"update my offer."*
 
 Questions? See the full [README](README.md).

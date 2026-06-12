@@ -2,6 +2,23 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.12.0] — 2026-06-12
+
+Public release prep — first version pushed to GitHub.
+
+### Added
+- **LICENSE.md** — proprietary, source-visible: public only to enable Cowork marketplace install;
+  licensed clients may use it for their own business; no redistribution/resale/derivatives. The
+  agent's Brain data is theirs and not covered by the license.
+
+### Changed
+- **Docs swept to the Drive-era reality:** Setup's "Brain you are building" map now shows the permanent
+  Drive home, all 13 identity files, and the three laws (incl. push-after-write); brain-spec's old
+  "fixed local home" decision marked superseded (BRAIN-CONTRACT is the authority); migrate uses sync
+  language; README/START-HERE state the Brain lives in the agent's Google Drive and show Express/Full
+  timings; maintainer contract pointer now targets BRAIN-CONTRACT.md.
+- Removed the v0.1-era `test/sample-brain` fixture (stale schema; git history keeps it).
+
 ## [0.11.2] — 2026-06-12
 
 Everything the agent produces now persists to their Google Drive — the desktop is never the destination.

@@ -24,8 +24,9 @@ move a field), the new *skills* arrive automatically via the marketplace — but
 2. The **current schema this skill targets is: `1`** *(maintainers: bump this line when you add a migration below)*.
 3. **If brain schema == current →** tell the agent "Your brain is up to date — nothing to migrate." Stop.
 4. **If brain schema < current →** apply each migration below in order, from the brain's version up to current.
-5. **Always back up first:** before changing anything, run a Drive backup (or copy `~/realtor-brain/`
-   to `~/realtor-brain.bak/`). Never migrate without a safety copy.
+5. **Always protect first:** before changing anything, push the current brain to Drive via
+   `realtor-brain-sync` (and optionally copy `~/realtor-brain/` to `~/realtor-brain.bak/`). Never
+   migrate without a safety copy in Drive.
 
 ## Step 2 — Apply migrations (in order)
 Apply only the steps newer than the brain's current schema. After each, update **Brain schema** in

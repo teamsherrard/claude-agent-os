@@ -207,8 +207,10 @@ This flips today's model, where the `.docx` *is* the knowledge and nothing can r
 ## 9. Decisions — LOCKED (2026-06-08)
 
 1. **File granularity** — ✅ **Split** `identity/` into 6 files (maps to how skills think).
-2. **Folder location** — ✅ Fixed home **`~/realtor-brain/`** (absolute, session-independent; every
-   skill resolves the same path every run).
+2. **Folder location** — ⚠️ SUPERSEDED (2026-06-09): the Brain's permanent home is the **agent's
+   Google Drive** (`Realtor AI Brain` folder); `~/realtor-brain/` is the per-session working copy,
+   synced by `realtor-brain-sync`. (Cowork's sandbox is wiped between sessions.) See
+   `docs/BRAIN-CONTRACT.md` — the current authority on where the Brain lives and how to read/write it.
 3. **Memory format** — ✅ **Markdown** tables/blocks (human-readable + parseable).
 4. **Product name** — ✅ **Realtor AI Brain** (folder slug `realtor-brain/`).
 

@@ -14,12 +14,12 @@ This is the foundation everything else plugs into. Install it first.
 
 | | |
 |---|---|
-| 🧠 **Your Brain** | A private folder at `~/realtor-brain/` holding your **identity** (brand, market, avatars, voice, offer, visuals) and your **memory** (clients, listings, content you've made). |
+| 🧠 **Your Brain** | A private folder in **your Google Drive** (`Realtor AI Brain`) holding your **identity** (brand, market, avatars, voice, offer, visuals), your **memory** (clients, listings, content you've made), and every **deliverable** we create for you. |
 | 🪄 **One-time Setup** | A guided wizard builds your whole Brain in one session. |
 | 📈 **Skills that use it** | Every skill reads your Brain automatically and writes back what it makes — so the system gets smarter every time you use it. |
 
-Your Brain is **yours** — it lives on your machine, never in this repo. Updates to the system never
-touch your data.
+Your Brain is **yours** — it lives in *your* Google Drive, never in this repo and never on our servers.
+Updates to the system never touch your data.
 
 ---
 
@@ -38,7 +38,7 @@ That's it — the whole system is installed.
 > Note: this is a Cowork *plugin*, not a clone-and-run repo. You never download or clone anything —
 > Cowork installs it from our public marketplace through the UI above.
 
-## Set up your Brain (one time, ~30–40 min)
+## Set up your Brain (one time — Express ~30 min, or Full ~60–75 min)
 
 Just say:
 
@@ -74,7 +74,7 @@ When we improve the system, you get it by **syncing the marketplace** in Cowork.
 nothing to manually edit. To pull the latest manually anytime: open **Personal Plugins → the Realtor
 AI Brain marketplace card → Update**.
 
-Your Brain (`~/realtor-brain/`) is never overwritten by an update — only the tools improve.
+Your Brain (in your Google Drive) is never overwritten by an update — only the tools improve.
 
 > **Maintainer note:** the repo must be **public** for realtors to add it as a personal marketplace in
 > Cowork (private repos can't be added by end users). Org/Enterprise admins can alternatively deploy it
@@ -90,10 +90,9 @@ This repo is **both** the marketplace and the plugin.
   *and* the matching entry in `.claude-plugin/marketplace.json` → update `VERSION` + `CHANGELOG.md` →
   commit as `vX.Y.Z — summary` → push. Agents auto-update on next session.
 - **Add a skill:** drop it in `plugins/realtor-ai-brain/skills/<name>/SKILL.md`. It ships on next release.
-- **The contract every skill follows:** see [`docs/brain-spec.md`](docs/brain-spec.md). Two laws —
-  read `~/realtor-brain/brain.md` first; write back to `memory/`.
+- **The contract every skill follows:** see [`docs/BRAIN-CONTRACT.md`](docs/BRAIN-CONTRACT.md). Three
+  laws — read `brain.md` first; write back to `memory/` then push to Drive; stay compliant.
 - **Reference retrofit pattern:** [`realtor-market-update`](plugins/realtor-ai-brain/skills/realtor-market-update/SKILL.md)
-  shows how a consumer skill loads the Brain (Step 1) and writes back (Phase 7).
-- **Test fixture:** [`test/sample-brain/`](test/sample-brain) is a fully-filled example Brain.
+  shows how a consumer skill loads the Brain (Step 1) and writes back + syncs (Phase 7).
 
 Current version: see [`VERSION`](VERSION).
