@@ -45,13 +45,23 @@ local working copy):
 - Save finished deliverables to `exports/` (disposable). Source of truth always stays in `identity/`/`memory/`.
 
 ## For EXTERNAL systems specifically
-- **AI Video Editor** → read `identity/brand-visual.md` for colours (hex) + fonts, and `assets/` for the
+
+The Brain is the realtor's FIRST system — they build it before anything else. Every other Team Sherrard
+system plugs into it and never re-interviews the agent.
+
+- **Realtor YouTube System** (separate plugin) → reads `identity/profile, market, avatars, voice, offer,
+  content-engine, brand-visual, compliance` at its setup and per-video (its `youtube-setup` skill reads
+  the Brain instead of re-asking). SHOULD write published videos back to `memory/content-log.md` (one
+  row per published long-form + its shorts) so the Brain — and every other system — knows what content
+  exists. Boundary: the YouTube System owns YouTube ideation/scripting/SEO/repurposing; the Brain
+  plugin's built-in `realtor-yt-launch-system` defers to it when installed.
+- **Jarvis / AI admin** (ships in the Brain plugin) → reads `identity/operations.md` (hours, signature,
+  booking rules), `identity/vendors.md` (referrals), `identity/voice.md` (email tone),
+  `identity/offer.md`; writes to `memory/clients.md` + `memory/deadlines.md`.
+- **AI Video Editor** → reads `identity/brand-visual.md` for colours (hex) + fonts, and `assets/` for the
   logo/headshot. That's the "brand config." (Requires running on the same machine as `~/realtor-brain/`.)
-- **Jarvis / AI admin** → read `identity/operations.md` (hours, signature, booking rules),
-  `identity/vendors.md` (referrals), `identity/voice.md` (email tone), `identity/offer.md`; write to
-  `memory/clients.md` + `memory/deadlines.md`.
-- **Any future agent** → declare which `identity/` domains you read and which `memory/` files you write.
-  You never re-interview the agent — the Brain already knows them.
+- **Short-Form System & any future system** → same pattern: declare which `identity/` domains you read
+  and which `memory/` files you write. You never re-interview the agent — the Brain already knows them.
 
 ## Privacy & ownership
 The Brain — including client names and notes in `memory/clients.md` — is the **agent's private data.**

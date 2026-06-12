@@ -204,6 +204,9 @@ agent connect it before finishing. Set their **timezone** and pull the **default
 > • "Set up my Jarvis" — your AI admin (uses the email + calendar you just connected)
 > • "Run my market update" — your first piece of content
 > • "Create content for my new listing" — when you have a listing to launch
+> • Have the Realtor YouTube System installed? Say "set up my YouTube system" — it reads this Brain,
+>   so it already knows your market, niche, and voice. (Same for the Short-Form System and any other
+>   Team Sherrard system — the Brain you just built powers all of them.)
 >
 > To deepen your brain anytime: "add my writing samples" · "set up my content engine" · "set up my
 > operations" · "set up my compliance". To change anything: "update my brand" or "update my offer".

@@ -2,6 +2,21 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.11.1] — 2026-06-12
+
+The Brain is the hub — ecosystem boundaries made explicit (decision: do NOT slim the Brain plugin).
+
+### Changed
+- **Brain Contract** now defines the ecosystem: the Brain is the realtor's FIRST system; the Realtor
+  YouTube System (separate plugin) reads the Brain at setup + per-video and should write published
+  videos back to `memory/content-log.md`; Jarvis ships in-plugin; Video Editor + Short-Form System
+  follow the same read/write pattern.
+- **`realtor-yt-launch-system` defers to the dedicated YouTube System when installed** — removed the
+  colliding "realtor YouTube system" trigger phrase; it remains the built-in quick launcher for agents
+  without the full system.
+- **Setup hand-off** now points to the ecosystem: after the Brain is built, it suggests "set up my
+  YouTube system" (and notes the Brain powers every other Team Sherrard system).
+
 ## [0.11.0] — 2026-06-12
 
 Critical fixes from the full pre-GitHub sweep — and **Jarvis (the AI Admin) ships in the plugin**.

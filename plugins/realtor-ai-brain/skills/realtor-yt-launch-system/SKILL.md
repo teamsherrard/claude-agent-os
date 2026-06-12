@@ -9,9 +9,11 @@ description: >
   agents who are beginners — every output is word-for-word ready to use. Reads the agent's Brain
   automatically if present (brand, market, persona) so nothing needs to be re-entered each run.
 
-  Trigger on: "launch my video", "repurpose this video", "YouTube launch package", "create content from
-  my video", "YouTube repurposing", "make reels from my video", "video launch kit", "realtor YouTube
-  system", or any time an agent shares a video topic, outline, or transcript and wants content created from it.
+  Trigger on: "launch my video", "YouTube launch package", "video launch kit", or any time an agent
+  shares a video topic, outline, or transcript and wants launch content created from it. BOUNDARY: if
+  the dedicated Realtor YouTube System plugin is installed, defer to it for YouTube ideation, scripting,
+  SEO, and repurposing ("what should I film", "make this video", "repurpose this") — this skill is the
+  built-in quick launcher for agents who don't have the full YouTube System.
 ---
 
 # Realtor YouTube Launch System
