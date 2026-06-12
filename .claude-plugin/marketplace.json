@@ -9,13 +9,13 @@
     {
       "name": "realtor-ai-brain",
       "source": "./plugins/realtor-ai-brain",
-      "version": "0.13.1",
+      "version": "0.13.2",
       "description": "PLUGIN 1 \u2014 install first. The Realtor AI Brain: one shared brain (the agent's identity + memory) that powers every other system. Run 'Set up my Brain' once, and every tool already knows the agent."
     },
     {
       "name": "realtor-jarvis",
       "source": "./plugins/realtor-jarvis",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "description": "PLUGIN 2 \u2014 the AI Admin (The Agent Leverage OS). Books the calendar, drafts email in the agent's voice, sorts the inbox, remembers every client, briefs them at 7am. Requires Plugin 1 (the Brain) set up first."
     }
   ]
