@@ -29,7 +29,7 @@ In **Claude Cowork** (everything is UI — there are no commands to type):
 
 1. **Customize → Personal Plugins → Browse Plugins**
 2. Click the **＋** next to "Personal" → **Add marketplace**
-3. Paste: **`teamsherrard/realtor-ai-brain`** → Cowork syncs the marketplace
+3. Paste: **`teamsherrard/claude-agent-os`** → Cowork syncs the marketplace
 4. You'll see the plugins on this marketplace, numbered in order. Click **Install** on
    **Plugin 1 — Realtor AI Brain** now; install the others as you reach them in your training:
    - **Plugin 1 · Realtor AI Brain** — install first, always (the foundation)

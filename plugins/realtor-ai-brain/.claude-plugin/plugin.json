@@ -1,12 +1,12 @@
 {
   "name": "realtor-ai-brain",
   "displayName": "Realtor AI Brain",
-  "version": "0.13.0",
+  "version": "0.13.1",
   "description": "One shared AI Brain for a real estate agent \u2014 their identity (brand, market, avatars, voice, offer, visuals) and their memory (clients, listings, content history) \u2014 that every skill reads from and writes back to. Run Setup once; every tool already knows you. (The Jarvis AI Admin is its own plugin on this same marketplace.)",
   "author": {
     "name": "Team Sherrard"
   },
-  "homepage": "https://github.com/teamsherrard/realtor-ai-brain",
+  "homepage": "https://github.com/teamsherrard/claude-agent-os",
   "license": "SEE LICENSE IN LICENSE.md",
   "keywords": [
     "real estate",

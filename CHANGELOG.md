@@ -2,6 +2,14 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.13.1] — 2026-06-12
+
+### Changed
+- **Repo renamed: `teamsherrard/realtor-ai-brain` → `teamsherrard/claude-agent-os`** — the one
+  marketplace link clients paste. GitHub redirects the old slug, so existing installs keep syncing;
+  all docs and plugin homepages now point at the new name. (Brand note: the marketed product name is
+  "Agent OS" — "built on Claude" goes in copy, not in the product name.)
+
 ## [0.13.0] — 2026-06-12
 
 **Jarvis is now its own plugin** — the marketplace becomes the numbered cohort journey.

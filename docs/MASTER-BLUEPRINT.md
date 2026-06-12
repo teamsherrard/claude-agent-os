@@ -265,7 +265,7 @@ operational decision.
   Cowork installs the plugin *from* the repo. (A clone-and-run repo like the AI Video Editor does NOT
   work in Cowork; a packaged plugin does.)
 - **Install (Cowork is UI — no slash commands):** Customize → Personal Plugins → Add marketplace →
-  paste `teamsherrard/realtor-ai-brain` → Install → toggle **Sync automatically**.
+  paste `teamsherrard/claude-agent-os` → Install → toggle **Sync automatically**.
 - **Updates:** we bump the version and push → agents with auto-sync on get it automatically; others
   click **Update** on the marketplace card. **No re-downloads, no "edit your file" to 100 people.**
 - **Versioned & auditable:** `VERSION`, `CHANGELOG.md`, tagged commits (`v0.4.0 — …`) — same discipline
@@ -306,7 +306,7 @@ This scales: 1 agent or 100, the system is identical; only the brains differ.
 ```
 1. Get the link from us.
 2. In Cowork (UI): Customize → Personal Plugins → Add marketplace →
-   paste teamsherrard/realtor-ai-brain → Install → toggle "Sync automatically"
+   paste teamsherrard/claude-agent-os → Install → toggle "Sync automatically"
 3. Say:        "Set up my Brain"
 4. Answer the guided questions (phased, ~30–60 min, pause anytime).
    → builds identity/, saves logo + headshot to assets/
