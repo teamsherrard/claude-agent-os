@@ -198,7 +198,7 @@ onto `identity/`. The right column is the upgrade: today all of these write noth
 | Thing | Status |
 |---|---|
 | `identity/*.md`, `memory/*.md` | **Source of truth.** Canonical. What skills parse. |
-| `.docx` knowledge file, offer guidebook, lead magnets, dashboard | **Renders.** Live in `exports/`. Regenerated from source. Disposable. |
+| `.docx` knowledge file, offer guidebook, lead magnets, dashboard | **Renders.** Live in `exports/`, synced to the agent's Drive as their deliverables archive. Regenerable from source. |
 
 This flips today's model, where the `.docx` *is* the knowledge and nothing can reliably parse it.
 

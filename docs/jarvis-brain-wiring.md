@@ -62,7 +62,7 @@ If `~/realtor-brain/` is missing → tell the agent to run **Realtor AI Brain �
 | Transaction Coordinator | vendors, operations | deadlines, clients |
 | Document & File | profile, brand-visual | (Drive) |
 
-## Retrofit checklist (when the jarvis skill source lands in the plugin)
+## Retrofit checklist (COMPLETED — all items implemented in the shipped skill; kept for history)
 
 1. Replace Jarvis's "Step 1 — interview / read profile.json" with the Load-the-Brain block above.
 2. Replace all `jarvis/memory.json` reads/writes with `memory/clients.md` + `memory/deadlines.md`.

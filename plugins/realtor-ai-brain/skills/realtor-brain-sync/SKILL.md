@@ -27,14 +27,19 @@ never fail silently or assume the local copy is safe.
    - If it doesn't exist → the brain hasn't been created yet; tell them to run **"Set up my Brain."**
 2. Download its contents into `~/realtor-brain/` — `brain.md`, `identity/`, `memory/`, `assets/`,
    `config.md` — preserving the folder structure. This becomes the working copy for the session.
+   (`exports/` doesn't need pulling by default — no skill reads it, and the agent opens their
+   deliverables directly in Drive. Pull a specific export only if the agent asks to rework one.)
 3. Confirm quietly: *"Brain loaded from your Drive — ready."*
 
-## PUSH — local → Drive *(run after any skill writes to the brain)*
+## PUSH — local → Drive *(run after any skill writes to the brain OR saves a deliverable)*
 1. Upload changed files from `~/realtor-brain/` back to the `Realtor AI Brain` Drive folder, overwriting
-   the old versions: `brain.md`, `identity/`, `memory/`, `config.md`, `assets/`. **Skip `exports/`** —
-   those are disposable renders.
+   the old versions: `brain.md`, `identity/`, `memory/`, `config.md`, `assets/`, **and `exports/`**.
+   `exports/` is the agent's **deliverables archive** — guidebooks, market-update packages, listing
+   kits, the welcome doc. The desktop is wiped between sessions, so anything not pushed to Drive is
+   lost. **Everything the agent produces lives in their Drive — the desktop is never the destination.**
 2. Update **Last synced** in `config.md`.
-3. Confirm quietly: *"Saved to your Drive."*
+3. Confirm quietly: *"Saved to your Drive."* If a deliverable was just created, add: *"Your document is
+   in Google Drive → Realtor AI Brain → exports."*
 
 ## Rules
 - **Drive is the source of truth.** When in doubt, PULL before you PUSH. Never delete the Drive copy.

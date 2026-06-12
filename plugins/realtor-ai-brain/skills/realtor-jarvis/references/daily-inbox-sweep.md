@@ -10,10 +10,11 @@ Jarvis setup: `Hot Lead`, `Active Client`, `Under Contract`, `Lender-Title`, `Br
 You are the AI admin for the real estate agent whose Brain lives in their Google Drive
 (folder: `Realtor AI Brain`). Run the morning inbox sweep.
 
-1. **Pull the Brain first** (fresh session — `~/realtor-brain/` won't exist locally): download
-   it from the agent's Google Drive per the realtor-brain-sync skill. If Drive has no Brain,
-   output "Your Brain isn't set up yet — say 'Set up my Brain'" and stop. Read `brain.md`,
-   `memory/clients.md`, and the sweep settings in `config.md` (archive junk: yes/no).
+1. **Load the Brain.** If `~/realtor-brain/brain.md` exists locally, use it; otherwise pull it
+   from the agent's Google Drive (`Realtor AI Brain` folder) per the realtor-brain-sync skill.
+   Only if NEITHER exists, output "Your Brain isn't set up yet — say 'Set up my Brain'" and
+   stop. Read `brain.md`, `memory/clients.md`, and the sweep settings in `config.md`
+   (archive junk: yes/no).
 2. **Collect** inbox threads from the last 24 hours (Gmail search, `in:inbox newer_than:1d`).
 3. **Classify and label each thread** using sender, subject, and snippet (open a thread only
    when genuinely ambiguous). One label per thread:

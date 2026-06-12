@@ -2,7 +2,8 @@
 
 *v1.0 · merges the "Content to Client" cohort brief ("The Agent Leverage OS") with the
 7-system, brain-native master map. Productivity only — CRM and content are sibling products.
-Companions: `brain-spec.md`, `jarvis-brain-wiring.md`, `jarvis-retrofit/`, `product-framing.md`.*
+Companions: `brain-spec.md`, `jarvis-brain-wiring.md`, `product-framing.md`, `jarvis-v2-parking.md`;
+the shipped skill: `plugins/realtor-ai-brain/skills/realtor-jarvis/`.*
 
 ---
 

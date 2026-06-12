@@ -60,7 +60,8 @@ Once your Brain is set up, just ask for what you want. The tools already know yo
 
 - `Run my market update`
 - `Create content for my new listing`
-- `Set up my Jarvis` *(coming soon — your AI admin)*
+- `Set up my Jarvis` — your AI admin: books your calendar (conflict-checked, guests invited, video
+  link attached), drafts email in your voice, sorts your inbox every morning, and briefs you at 7am
 
 To change anything later: `Update my brand`, `Update my offer`.
 

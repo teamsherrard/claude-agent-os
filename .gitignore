@@ -4,3 +4,4 @@ out/
 inbox/
 node_modules/
 __pycache__/
+dist/

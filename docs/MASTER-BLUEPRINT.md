@@ -138,7 +138,7 @@ The brain holds **three kinds of things**, governed by **one rule**.
 │   ├── clients.md   listings.md   content-log.md   deadlines.md
 ├── assets/                       ← logo variants, headshots, fonts, b-roll, templates
 ├── config.md                     ← connectors, timezone, brain schema version
-└── exports/                      ← rendered .docx/HTML/PDF (NOT source — disposable)
+└── exports/                      ← deliverables archive, synced to Drive (outputs, not source)
 ```
 
 ---
@@ -231,7 +231,7 @@ samples, a compliance disclaimer, etc. A brain that improves itself over time.
 |---|---|---|
 | The **agent's brain** (their data) | **the agent's Google Drive** (`Realtor AI Brain` folder); local `~/realtor-brain/` is a per-session working copy synced from Drive | Private, portable across sessions/devices, never in our repo |
 | The **skills + template** (the system) | our GitHub repo → installed plugin | One source, auto-updates |
-| **Rendered outputs** (docx, video, graphics) | `~/realtor-brain/exports/` | Disposable; regenerated from source |
+| **Rendered outputs** (docx, video, graphics) | `~/realtor-brain/exports/` → synced to the agent's Drive | The deliverables archive — persists with the brain; regenerable from source |
 | The **agent runs everything** in | **Claude Cowork** (the friendly door) | Non-technical; full power, calm UI |
 | **We build/publish** in | **Claude Code** (the workbench) | Developer surface; agents never see it |
 
@@ -348,13 +348,15 @@ From that point on, every tool already knows them. To change anything: *"update 
 | 2 | Offer & USP → identity/offer | ✅ done |
 | 3 | Brand Direction → brand-visual (direction, feeds Claude Design) | ✅ done |
 | — | All 6 content skills retrofitted (read + write-back) | ✅ done |
-| 4 | Voice samples + Proof library | ⬜ next |
-| 5 | Content Engine | ⬜ |
-| 6 | Operations + Jarvis into the brain (+ vendors) | ⬜ |
-| 7 | Compliance | ⬜ |
+| 4 | Voice samples + Proof library | ✅ done (v0.5) |
+| 5 | Content Engine | ✅ done (v0.5/0.8) |
+| 6 | Operations into the brain (+ vendors) | ✅ done (v0.5/0.6) |
+| 6b | **Jarvis skill ships in-plugin** (Scheduling · Inbox · Client Memory + briefing & inbox-sweep automations) | ✅ done (v0.11) |
+| 7 | Compliance | ✅ done (v0.6/0.9) |
+| — | Brain backup/sync (Drive-backed) + schema-migration system | ✅ done (v0.10) |
 | — | Provisioning workflow (agency) | ⬜ |
-| — | Brain backup/sync + schema-migration system | ⬜ (see §15) |
-| — | Push to **public** GitHub marketplace (Cowork requires public) | ⬜ |
+| — | **Mike Pilot** (7-day speed trial on Mike's own instance — the gate before clients) | ⬜ next |
+| — | Push to **public** GitHub marketplace (Cowork requires public) + real Cowork install test | ⬜ |
 
 *Current: v0.4.0, 10 skills, committed locally, not yet pushed.*
 

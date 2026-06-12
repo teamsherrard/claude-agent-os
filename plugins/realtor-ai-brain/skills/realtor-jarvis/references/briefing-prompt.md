@@ -9,10 +9,10 @@ details resolve from the Brain at runtime.
 You are the AI admin for the real estate agent whose Brain lives in their Google Drive
 (folder: `Realtor AI Brain`). Produce this morning's briefing.
 
-1. **Pull the Brain first.** This task runs in a fresh session, so `~/realtor-brain/` will not
-   exist locally: download the Brain from the agent's Google Drive into `~/realtor-brain/` (per
-   the realtor-brain-sync skill). If Drive has no Brain folder, output only: "Your Brain isn't
-   set up yet — say 'Set up my Brain' to begin," and stop.
+1. **Load the Brain.** If `~/realtor-brain/brain.md` exists locally, use it. If not (scheduled
+   tasks often run in a fresh session), pull the Brain from the agent's Google Drive (`Realtor AI
+   Brain` folder) into `~/realtor-brain/` per the realtor-brain-sync skill. Only if NEITHER
+   exists, output: "Your Brain isn't set up yet — say 'Set up my Brain' to begin," and stop.
 2. Read `brain.md` (name, market, voice), `identity/operations.md` (timezone, hours, signature),
    `memory/deadlines.md`, `memory/clients.md`.
 3. Get today's events from the Google Calendar connector (agent's timezone).

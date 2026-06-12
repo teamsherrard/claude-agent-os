@@ -2,6 +2,19 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.11.2] — 2026-06-12
+
+Everything the agent produces now persists to their Google Drive — the desktop is never the destination.
+
+### Fixed
+- **`exports/` now syncs to Drive.** Deliverables (offer guidebook, market-update packages, listing
+  kits, the welcome doc) were saved locally and skipped by sync — wiped with the sandbox unless the
+  agent downloaded them in-session. `realtor-brain-sync` PUSH now includes `exports/` as the agent's
+  **deliverables archive** (`Realtor AI Brain → exports` in their Drive); PULL skips it by default
+  (no skill reads exports — agents open deliverables directly in Drive). Sync confirms where the
+  document landed. Contract + blueprint + exports README updated; the principle is now a contract
+  rule: *brain data, memory, and deliverables all sync — the local sandbox is always disposable.*
+
 ## [0.11.1] — 2026-06-12
 
 The Brain is the hub — ecosystem boundaries made explicit (decision: do NOT slim the Brain plugin).

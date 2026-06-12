@@ -21,7 +21,7 @@ local working copy):
 ├── memory/           ← what they've done (clients, listings, content-log, deadlines)
 ├── assets/           ← logo, headshot, fonts
 ├── config.md         ← connectors, timezone, Brain schema version
-└── exports/          ← rendered docs — DISPOSABLE, never source of truth
+└── exports/          ← the agent's DELIVERABLES ARCHIVE (synced to Drive) — outputs, never source of truth
 ```
 
 ## The 3 laws (every system obeys)
@@ -42,7 +42,10 @@ local working copy):
 
 ## The write protocol
 - Append to `memory/` files in their existing format (tables/blocks). Don't rewrite history; add to it.
-- Save finished deliverables to `exports/` (disposable). Source of truth always stays in `identity/`/`memory/`.
+- Save finished deliverables to `exports/`, then push — `exports/` syncs to the agent's Drive as their
+  deliverables archive. Source of truth always stays in `identity/`/`memory/`.
+- **Everything the agent's work produces persists to their Google Drive — the desktop is never the
+  destination.** Brain data, memory, and deliverables all sync; the local sandbox is always disposable.
 
 ## For EXTERNAL systems specifically
 
