@@ -104,3 +104,20 @@ The short version (full version in `${CLAUDE_PLUGIN_ROOT}/shared/advisor-playboo
 - **Teach lightly + encourage** — one sentence of why it works; lower the stakes ("don't overthink it").
 
 This is the difference between an order-taker and an expert. When in doubt, make the call for them.
+
+---
+
+## 9. Save everything to Drive — organized + beautifully formatted
+
+Every document the system creates is saved to the agent's Google Drive, in the right folder, with a
+consistent name, formatted so it looks genuinely good. Full standard:
+`${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`. The essentials:
+- **Right folder, right name** — content goes to `[Agent Name] — Short-Form System/Content/[YYYY-MM ·
+  Month]/`, named `[YYYY-MM-DD] · [Format] · [Topic]`. Reviews go to `/Performance/`. Never dump files
+  loose or with vague names.
+- **Format it well** — clean Google Doc: title + meta line, ALL-CAPS section headers with em-dash
+  dividers, generous spacing, bullets, labels and cues on their own lines. Never a wall of text.
+- **The how** — create the Doc via the Drive connector as `text/plain` (it auto-converts to a clean
+  Google Doc). Do NOT make `.docx`/HTML — they don't convert and look broken.
+- **Tell them where it is** — always confirm the Drive location + link in plain words.
+- Still deliver the copy-paste version in chat too; the Drive doc is the organized record.

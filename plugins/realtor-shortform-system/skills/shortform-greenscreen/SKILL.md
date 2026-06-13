@@ -172,16 +172,21 @@ offer to schedule it at the best time, following `${CLAUDE_PLUGIN_ROOT}/shared/p
 
 ---
 
-## Phase 6 — Write back to the Brain (second law)
+## Phase 6 — Save to Drive + log to the Brain
 
-Append one row to `~/realtor-brain/memory/content-log.md`, then push to Drive per `brain.md`:
+1. **Save the formatted doc to Drive** following `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`:
+   build the green-screen package as a clean, well-spaced Google Doc (the same content from Phase 5,
+   structured per the standard), and save it to
+   `[Agent Name] — Short-Form System/Content/[YYYY-MM · Month]/` named
+   `[YYYY-MM-DD] · Green Screen · [Short Topic]`. Tell the agent where it landed + the link.
+2. **Log it:** append one row to `~/realtor-brain/memory/content-log.md`, then push the Brain to Drive
+   per `brain.md`:
+   ```
+   | [date] | Reels/TikTok/Shorts | Green screen | [article angle] | [city/area] | Scripted | [article URL] |
+   ```
 
-```
-| [date] | Reels/TikTok/Shorts | Green screen | [article angle] | [city/area] | Scripted | [article URL] |
-```
-
-Then tell the agent: *"Logged today's green screen to your Brain."* (Reminder: an unsynced write is a
-lost write — push to Drive.)
+Then: *"Saved today's green screen to your Drive (Short-Form System → Content → [month]) and logged it."*
+(An unsynced write is a lost write — push to Drive.)
 
 ---
 

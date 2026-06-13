@@ -95,12 +95,18 @@ bullet), the video assets, and the three platform blocks. Keep the chat around i
 If the agent has connected a posting tool (`identity/publishing.md`), offer to schedule the batch at their
 best times per `${CLAUDE_PLUGIN_ROOT}/shared/publishing-guide.md` — only with explicit approval.
 
-## Phase 6 — Write back to the Brain (second law)
-For each scripted video, append a row to `~/realtor-brain/memory/content-log.md`, then push to Drive:
-```
-| [date] | Reels/TikTok/Shorts | Talking head | [topic / angle] | [city/area] | Scripted | |
-```
-Then a simple: *"Saved these to your Brain so we don't repeat them."*
+## Phase 6 — Save to Drive + log to the Brain
+For **each** scripted video:
+1. **Save the formatted doc** following `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md` — a clean
+   Google Doc (topic + the chosen-length script with teleprompter & bullet versions + video assets + the
+   three platform blocks) in `[Agent Name] — Short-Form System/Content/[YYYY-MM · Month]/`, named
+   `[YYYY-MM-DD] · Talking Head · [Short Topic]`.
+2. **Log it:** append a row to `~/realtor-brain/memory/content-log.md`:
+   ```
+   | [date] | Reels/TikTok/Shorts | Talking head | [topic / angle] | [city/area] | Scripted | |
+   ```
+Push the Brain to Drive. Then: *"Saved your [N] talking heads to your Drive (Short-Form System → Content →
+[month]) and logged them so we don't repeat topics."*
 
 ---
 

@@ -93,11 +93,17 @@ If the agent has connected a posting tool (`identity/publishing.md`), offer to s
 built the slides, per `${CLAUDE_PLUGIN_ROOT}/shared/publishing-guide.md` (carousels usually use the
 hybrid path — caption + time scheduled, agent adds the built slides) — only with explicit approval.
 
-## Phase 6 — Write back to the Brain (second law)
-Append a row to `~/realtor-brain/memory/content-log.md`, then push to Drive:
-```
-| [date] | Instagram/Facebook | Carousel | [topic / angle] | [city/area] | Drafted | |
-```
+## Phase 6 — Save to Drive + log to the Brain
+1. **Save the formatted doc** following `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md` — a clean
+   Google Doc with the cover hook, SLIDE 1 / SLIDE 2 … copy, DESIGN DIRECTION, and the IG+FB caption —
+   in `[Agent Name] — Short-Form System/Content/[YYYY-MM · Month]/`, named
+   `[YYYY-MM-DD] · Carousel · [Short Topic]`. (This is the doc the agent copies into claude.ai/design.)
+2. **Log it:** append a row to `~/realtor-brain/memory/content-log.md`, then push the Brain to Drive:
+   ```
+   | [date] | Instagram/Facebook | Carousel | [topic / angle] | [city/area] | Drafted | |
+   ```
+Then: *"Saved your carousel to your Drive (Short-Form System → Content → [month]) — open it, copy the
+slides into claude.ai/design, and you're set."*
 
 ---
 

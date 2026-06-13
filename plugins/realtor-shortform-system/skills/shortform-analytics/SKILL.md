@@ -73,7 +73,11 @@ For "run my 2-week review" / "review my performance" (and the natural cadence of
 3. **Write it to the Brain** — append a dated block to `~/realtor-brain/memory/performance.md` (create the
    file if it doesn't exist), then push to Drive. This is what makes the system get smarter: the planner
    and the content workflows read the latest `performance.md` so the next round leans on what worked.
-4. Tell the agent the 3-sentence version + the one thing to do more of next.
+4. **Save the readable report to Drive** following `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md` — a
+   clean Google Doc of the review in `[Agent Name] — Short-Form System/Performance/`, named
+   `[YYYY-MM-DD–DD] · Performance Review`. (The `performance.md` block is the machine-readable memory; this
+   Doc is the readable one the agent + their VA review.)
+5. Tell the agent the 3-sentence version + the one thing to do more of next, and where the report saved.
 
 ---
 

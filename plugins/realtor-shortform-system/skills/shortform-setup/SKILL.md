@@ -85,10 +85,15 @@ mechanics — Metricool's one-click sign-in, GoHighLevel's token — are in
 works behind the scenes* invisible — for Metricool it's literally "create a free Metricool account,
 connect your socials there once, then sign in when I ask." Reassure them it's quick and they only do it once.
 
-## Step 5 — Save the short-form layer (a thin file)
-Save a small note to the Brain at `~/realtor-brain/identity/publishing.md` with: platforms + priority,
-posting cadence, posting method (which tool, or "manual"), and lead-magnet list if newly captured. Then
-push to Drive. This references the Brain for everything else — the Brain stays the one source of truth.
+## Step 5 — Save the short-form layer + set up their Drive folder
+1. Save a small note to the Brain at `~/realtor-brain/identity/publishing.md` with: platforms + priority,
+   posting cadence, posting method (which tool, or "manual"), and lead-magnet list if newly captured.
+   Push the Brain to Drive. The Brain stays the one source of truth.
+2. **Provision their content folder in Google Drive** (so everything they make has an organized home),
+   following `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`: create
+   `[Agent Name] — Short-Form System/` with a `Content/` and a `Performance/` folder inside. Don't
+   pre-create month folders — those get made the first time content is saved. Share the folder link so
+   they know where their content will live.
 
 ## Step 6 — Explain how it works (3 simple formats) + first post
 Explain it the way they'll actually use it — plainly:

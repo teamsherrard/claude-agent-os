@@ -2,6 +2,25 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.21.0] — 2026-06-13
+
+### Short-Form System (Plugin 4) → v0.7.0 — organized Drive output + great formatting
+- **`shared/output-standard.md`** — every document the system makes now saves to the agent's Google Drive,
+  in the right folder, with a consistent name, formatted to look genuinely good:
+  - **Folder structure:** `[Agent Name] — Short-Form System/Content/[YYYY-MM · Month]/` for content +
+    `/Performance/` for reviews (own library, parallel to the YouTube System folder).
+  - **Naming convention:** content = `[YYYY-MM-DD] · [Format] · [Topic]`; reviews =
+    `[YYYY-MM-DD–DD] · Performance Review`. ISO dates sort themselves; month folders made on demand.
+  - **Formatting (the fix for the ugly docs):** Cowork's Drive connector only converts `text/plain`→Google
+    Doc (`.docx`/HTML don't convert), so docs are built as **well-structured plain text** — title + meta
+    line, ALL-CAPS headers with em-dash dividers, generous spacing, bullets, cues on their own lines.
+    Clean and scannable, never a wall of text. (Mirrors the proven YouTube-System approach.)
+- Wired the save step into green screen, talking head, carousel, and the analytics 2-week review; setup
+  now provisions the Drive folder; house-rules §9 makes "save organized + well-formatted" universal.
+
+### Brain (Plugin 1) → v0.16.0
+- `brain.md` template now indexes `identity/publishing.md` (companion to the 0.19.0 `memory/performance.md`).
+
 ## [0.20.0] — 2026-06-13
 
 ### Short-Form System (Plugin 4) → v0.6.0 — wired to the real Metricool tools
