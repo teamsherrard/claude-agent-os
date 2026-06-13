@@ -5,7 +5,7 @@ description: >
   AI Brain in a single guided session: scaffolds ~/realtor-brain/, interviews them about who they
   are, who they serve, what they offer, and how their brand looks, writes all of it into their
   Brain, walks them through connecting Gmail + Calendar, and hands them a finished, working Brain
-  that every other skill (Jarvis, YouTube, market updates, listings) reads automatically.
+  that every other skill (AI Admin, YouTube, market updates, listings) reads automatically.
 
   This replaces running brand-persona, then offer-usp, then brand-direction separately. One door,
   one session, done. It is resumable — if a Brain already exists it picks up where they left off
@@ -156,7 +156,7 @@ after each and checkpointing. The agent can stop after any one and resume later.
   cadence, series, video default → `identity/content-engine.md`. Asks just 2 things (platforms +
   capacity); generates the rest *only if the agent's unsure*. *(~3–5 min.)*
 - **Phase 6 — Operations** (`realtor-operations`): hours, signature, booking rules, vendor network,
-  goals → `identity/operations.md`, `vendors.md`, `strategy.md`. *(~15 min — the Jarvis foundation.)*
+  goals → `identity/operations.md`, `vendors.md`, `strategy.md`. *(~15 min — the AI Admin foundation.)*
 - **Phase 7 — Compliance** (`realtor-compliance`): disclaimers, license display, claims to avoid →
   `identity/compliance.md`. *(~5 min — protects the agent.)*
 
@@ -173,11 +173,11 @@ done:
 - **Google Drive** — **REQUIRED. This is where the Brain lives.** Cowork's local storage is wiped
   between sessions, so the Brain must be saved to the agent's Drive or it disappears next time. Connect
   this — don't skip it.
-- **Gmail** (required for Jarvis — inbox sweep + client email drafts; note: draft-only, it cannot send)
-- **Google Calendar** (required for Jarvis — booking showings/consults)
-- **Zoom** (recommended for Jarvis — auto-creates meeting links on virtual bookings; Google Meet is the
+- **Gmail** (required for AI Admin — inbox sweep + client email drafts; note: draft-only, it cannot send)
+- **Google Calendar** (required for AI Admin — booking showings/consults)
+- **Zoom** (recommended for AI Admin — auto-creates meeting links on virtual bookings; Google Meet is the
   automatic fallback, so this can be added later)
-- **Cal.com** (optional — client self-booking links; Jarvis falls back to their own booking link or to
+- **Cal.com** (optional — client self-booking links; AI Admin falls back to their own booking link or to
   proposing times by email)
 - **Pexels** (optional — only if they'll use video skills)
 
@@ -207,7 +207,7 @@ agent connect it before finishing. Set their **timezone** and pull the **default
 > market, your voice, or your offer again.
 >
 > Try these next:
-> • "Set up my Jarvis" — your AI admin (uses the email + calendar you just connected)
+> • "Set up my AI Admin" — your AI admin (uses the email + calendar you just connected)
 > • "Run my market update" — your first piece of content
 > • "Create content for my new listing" — when you have a listing to launch
 > • Have the Realtor YouTube System installed? Say "set up my YouTube system" — it reads this Brain,

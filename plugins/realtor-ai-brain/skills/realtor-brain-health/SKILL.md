@@ -38,7 +38,7 @@ Present:
 - **🟡 Could be richer:** thin ones, with what to add.
 - **⬜ Missing — biggest wins first:** ordered by impact. Always surface these high-leverage gaps if
   empty: **writing samples** (voice quality), **proof** (reused everywhere), **compliance** (safety),
-  **headshot/logo** (graphics), **operations** (Jarvis).
+  **headshot/logo** (graphics), **operations**.
 - **One recommended next action:** the single highest-impact thing, with the exact phrase to trigger it
   (e.g. *'add my writing samples'*).
 

@@ -462,7 +462,7 @@ Use the existing table format. Status is `Scripted` (these are scripts the agent
 ```
 
 Then tell the agent plainly: *"Logged to your Brain — next month I'll pick fresh angles so nothing
-repeats."* If the agent later publishes, they (or Jarvis) can update Status to `Published` and add the
+repeats."* If the agent later publishes, they (or AI Admin) can update Status to `Published` and add the
 link.
 
 **Then push to Drive:** run `realtor-brain-sync` (PUSH) so this write survives the session — the local

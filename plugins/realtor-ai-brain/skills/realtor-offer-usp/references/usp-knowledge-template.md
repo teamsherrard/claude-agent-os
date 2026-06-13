@@ -171,6 +171,26 @@ Outcome: [The result — specific if possible]
 
 ---
 
+## 9B. LEAD MAGNETS
+
+The agent's free resources — guides, checklists, reports they give away. Content skills (especially
+short-form) route CTAs to these (e.g. "DM me 'BUYER' for the guide"). Capture each as:
+
+```
+[Lead magnet name]: for [audience] — DM keyword "[KEYWORD]" — [one line on what's inside]
+```
+
+Examples:
+- First-Time Buyer Guide: for first-time buyers — keyword "BUYER" — step-by-step from pre-approval to keys.
+- Seller's Net Sheet: for sellers — keyword "SELLER" — what they actually walk away with after costs.
+- Relocation Guide: for out-of-area buyers — keyword "RELOCATION" — neighbourhoods, schools, the remote-buy process.
+- [City] Monthly Market Report: for everyone — keyword "REPORT" — the latest local numbers + what they mean.
+
+If the agent has none yet, write "No lead magnets yet — recommend creating at least a buyer and a seller
+guide" so other skills know to suggest one rather than invent it.
+
+---
+
 ## 10. USAGE NOTES FOR OTHER SKILLS
 
 *Read before generating any content that involves the agent's offer or credibility.*

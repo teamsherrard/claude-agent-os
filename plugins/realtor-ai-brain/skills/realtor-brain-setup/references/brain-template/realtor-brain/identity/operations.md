@@ -1,5 +1,5 @@
 # [Agent] — Operations
-*identity · how the agent runs day-to-day — Jarvis (the AI admin) reads this*
+*identity · how the agent runs day-to-day — the AI admin reads this*
 
 **Working hours:** [e.g. Mon–Fri 9–6, Sat 10–2] · **Timezone:** [e.g. America/Edmonton]
 **Response-time commitment:** [e.g. same-day on weekdays, next-day weekends]

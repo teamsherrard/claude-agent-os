@@ -169,6 +169,22 @@ deal, just the one where you know you really helped someone?"
 
 ---
 
+### Q7 — Lead Magnets (free resources)
+
+**"Last one — do you have any free guides, checklists, or resources you give people?
+Like a first-time buyer guide, a seller's checklist, a relocation guide, or a monthly
+market report? These are what your content points people to."**
+
+Quick capture, not a deep dive. For each one, get: what it's called, who it's for, and
+(if they want) a DM keyword (e.g. "BUYER", "SELLER", "RELOCATION"). This is what lets
+every content skill say "DM me 'BUYER' for the guide" and point to something real.
+
+*If they have none:* "No problem — that's worth building soon, even a simple one-pager.
+For now I'll note you don't have one yet, so your content won't promise something that
+doesn't exist." Capture "none yet" rather than inventing one.
+
+---
+
 ## Handling Common Vague Answers
 
 **"I provide full-service real estate"**

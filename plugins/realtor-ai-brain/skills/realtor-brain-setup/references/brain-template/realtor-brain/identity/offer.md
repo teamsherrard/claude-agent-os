@@ -12,6 +12,13 @@
 - **[Offer item]:** [...]
 - **[Offer item]:** [...]
 
+## Lead magnets *(free guides/checklists the agent gives away — content CTAs point to these)*
+*Each: name · who it's for · the DM keyword (if any). Skills route CTAs here (e.g. DM "BUYER" → the buyer guide).*
+- **[Lead magnet name]** — for [buyers/sellers/relocators/etc.] · keyword: "[KEYWORD]"
+- [e.g. "First-Time Buyer Guide — for first-time buyers · keyword: BUYER"]
+- [e.g. "Seller's Net Sheet — for sellers · keyword: SELLER"]
+- [or "none yet" — if blank, content skills will suggest creating one]
+
 ## Guarantees / risk-reversals
 - [e.g. "Cancel-anytime listing agreement"]
 

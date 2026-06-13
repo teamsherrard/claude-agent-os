@@ -14,16 +14,16 @@
 *The setup wizard walks the agent through connecting these. A skill that needs one and finds it
 missing should tell the agent to connect it rather than failing silently.*
 
-- [ ] **Gmail** — Jarvis email drafts, inbox sweep, briefing *(required for Jarvis; draft-only — it cannot send)*
-- [ ] **Google Calendar** — booking showings / consults *(required for Jarvis)*
+- [ ] **Gmail** — AI Admin email drafts, inbox sweep, briefing *(required for AI Admin; draft-only — it cannot send)*
+- [ ] **Google Calendar** — booking showings / consults *(required for AI Admin)*
 - [ ] **Google Drive** — **REQUIRED: the Brain's permanent home** (syncs every session)
 - [ ] **Zoom** — auto-creates meeting links on virtual bookings *(recommended; Google Meet is the automatic fallback)* — can create meetings: [yes/no/untested]
 - [ ] **Cal.com** — client self-booking links *(optional; falls back to the agent's own booking link, then to proposing times by email)*
 - [ ] **Pexels** — stock footage for video skills *(optional)*
 - [ ] [other]
 
-## Jarvis (AI Admin) runtime
-*Written by "Set up my Jarvis" — leave blank until then.*
+## AI Admin runtime
+*Written by "Set up my AI Admin" — leave blank until then.*
 - **Dashboard artifact id:** [blank]
 - **Morning Briefing task id:** [blank] · runs daily 7:00am (agent timezone)
 - **Daily Inbox Sweep task id:** [blank] · runs weekdays 8:30am (agent timezone)

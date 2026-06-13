@@ -2,7 +2,7 @@
 
 The **Brain** is the single source of truth for one real estate agent: everything Claude needs to
 know about who they are, who they serve, and what they've done. Every skill and every agent
-(Jarvis, the YouTube agent, the short-form agent, market updates, future systems) reads from it and
+(AI Admin, the YouTube agent, the short-form agent, market updates, future systems) reads from it and
 writes back to it. Skills become interchangeable apps; the Brain is the product.
 
 This document locks the *contract* — the exact folder, every file's job, and the read/write rules —
@@ -27,7 +27,7 @@ the Brain gets smarter every time the agent uses it.
 
 ## 2. Identity vs. Memory — the core split
 
-The Brain has two halves with different update cadences. Conflating them is why Jarvis's memory
+The Brain has two halves with different update cadences. Conflating them is why AI Admin's memory
 today is an island, disconnected from the brand knowledge.
 
 | | **Identity** | **Memory** |
@@ -35,7 +35,7 @@ today is an island, disconnected from the brand knowledge.
 | What | Who the agent *is* | What the agent has *done* |
 | Examples | brand, voice, market, avatars, offer, colors | clients, listings, published content, deadlines |
 | Changes | Once at setup; rarely after (rebrand) | Every single day |
-| Written by | The setup wizard + brand/offer/brand-direction skills | Every content skill + Jarvis, automatically |
+| Written by | The setup wizard + brand/offer/brand-direction skills | Every content skill + AI Admin, automatically |
 | Read by | Every skill | Skills that need to avoid repeats or recall context |
 
 ---
@@ -57,7 +57,7 @@ realtor-brain/
 │   └── brand-visual.md       # colors (hex), fonts, logo path, tagline, monogram
 │
 ├── memory/                   # grows every day
-│   ├── clients.md            # per-client ledger (Jarvis owns this) — stage, notes, next action
+│   ├── clients.md            # per-client ledger (AI Admin owns this) — stage, notes, next action
 │   ├── listings.md           # active + sold; key facts; which content has been made
 │   ├── content-log.md        # everything published — date, platform, topic — prevents repeats
 │   └── deadlines.md          # upcoming deadlines & follow-ups
@@ -115,7 +115,7 @@ This is the only file a skill is *required* to read. It does three jobs:
 - identity/voice.md     — full tone rules + never-sounds-like + signature phrases
 - identity/offer.md     — services, guarantees, USP
 - identity/brand-visual.md — colors, fonts, logo, tagline
-- memory/clients.md     — client ledger (Jarvis)
+- memory/clients.md     — client ledger
 - memory/listings.md    — listings + content-made status
 - memory/content-log.md — everything published (avoid repeats)
 - memory/deadlines.md   — what's due
@@ -160,7 +160,7 @@ Memory files use append-friendly, machine-parseable formats so any skill can saf
 *The listing-content-kit checks "Content made" so it never re-scripts what's done, and ticks the box
 after.*
 
-**`memory/clients.md`** — one block per client (Jarvis is the primary writer).
+**`memory/clients.md`** — one block per client (AI Admin is the primary writer).
 ```markdown
 ## Sarah & Tom — Buyers — Stage: Touring
 - Looking: $600–700k, NW Calgary, 3bd
@@ -185,8 +185,8 @@ should produce. Mapping proves the fit:
 | **neighbourhood-tour** | market, avatars, voice | `content-log.md` |
 | **trending/local-content** | profile (city), avatars, voice | `content-log.md` |
 | **yt-launch-system** | profile, avatars, voice | `content-log.md` |
-| **article-greenscreen** | profile, voice, brand-visual | `content-log.md` |
-| **Jarvis** | profile, voice, offer | `memory/clients, deadlines` |
+| **Short-Form System (Plugin 4)** | profile, market, avatars, voice, voice-samples, offer (lead magnets), content-engine, compliance | `content-log.md`, `publishing.md` |
+| **AI Admin** | profile, voice, offer | `memory/clients, deadlines` |
 
 Every skill's existing "look for the brand personality file / market file / offer file" maps cleanly
 onto `identity/`. The right column is the upgrade: today all of these write nothing back.
@@ -222,6 +222,6 @@ This flips today's model, where the `.docx` *is* the knowledge and nothing can r
   order, and connects Gmail/Calendar.
 - Retrofit the 3 setup skills to write canonical markdown into `identity/`.
 - Retrofit the content skills with the §5 read block and §6 write-back.
-- Fold Jarvis's `memory.json` into `memory/`.
+- Fold AI Admin's `memory.json` into `memory/`.
 - Package everything as one Cowork plugin.
 ```

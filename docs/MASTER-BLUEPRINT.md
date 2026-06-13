@@ -53,7 +53,7 @@ The whole system rests on separating three things we currently treat as one pile
 ├─────────────────────────────────────────────────────────────┤
 │  LAYER 2 — THE SKILLS    (the apps that do the work)         │
 │  Setup · Brand · Offer · Market · Listings · YouTube ·       │
-│  Short-form · Jarvis · Video Editor …  = the installed apps  │
+│  Short-form · AI Admin · Video Editor …  = the installed apps  │
 ├─────────────────────────────────────────────────────────────┤
 │  LAYER 1 — THE BRAIN     (the agent's data — THE PRODUCT)    │
 │  Identity + Memory + Assets at ~/realtor-brain/              │
@@ -109,17 +109,17 @@ The brain holds **three kinds of things**, governed by **one rule**.
 
 | # | Domain | What's in it | Powers |
 |---|---|---|---|
-| 1 | **Person & Business** 🟢 | name, preferred name, title, license #, brokerage, years, designations, awards, production stats, contact, booking link, socials, languages | every CTA/bio, SEO, Jarvis signature |
+| 1 | **Person & Business** 🟢 | name, preferred name, title, license #, brokerage, years, designations, awards, production stats, contact, booking link, socials, languages | every CTA/bio, SEO, AI Admin signature |
 | 2 | **Voice & Personality** 🟢 + **writing samples** 🔵 | tone, never-sounds-like, signature phrases, sign-offs, humor + 3–5 real past captions/emails | every script & caption (samples = authentic voice) |
 | 3 | **Market & Local Intelligence** 🟢 | communities, price ranges, property types, niche, secondary market, schools, hidden gems, why people move/leave, misconceptions, which board to pull | market updates, tours, listings, local SEO |
 | 4 | **Audience / Avatars** 🟢 | buyer/seller/investor avatars: pains, desires, objections, journey stage | who every piece speaks to |
-| 5 | **Offer, Services & USP** 🟢 + **proof library** 🔵 | buyer/seller offers, guarantees, signature process, vendor value-adds, commission philosophy, lead magnets + testimonials, stats, case studies | listings, lead magnets, "why hire me", Jarvis emails |
+| 5 | **Offer, Services & USP** 🟢 + **proof library** 🔵 | buyer/seller offers, guarantees, signature process, vendor value-adds, commission philosophy, lead magnets + testimonials, stats, case studies | listings, lead magnets, "why hire me", AI Admin emails |
 | 6 | **Visual Brand & Assets** 🟢 / 🔵 | colours (hex), fonts, logo variants, multiple headshots, tagline + brand photography, b-roll, music, content + print templates | ALL graphics, thumbnails, **the AI Video Editor**, print |
 | 7 | **Content Engine** 🔵 | content pillars, platform priority, realistic cadence, signature series, default video style *(hashtags + hook styles are generated per-piece by the content skills, not stored)* | consistency + what to post when |
-| 8 | **Operations & Admin (Jarvis)** 🔵 | working hours, email templates + signature, booking rules, objection scripts, follow-up sequences, **vendor/partner network** | Jarvis scheduling/emails/follow-ups, referrals |
+| 8 | **Operations & Admin** 🔵 | working hours, email templates + signature, booking rules, objection scripts, follow-up sequences, **vendor/partner network** | AI Admin scheduling/emails/follow-ups, referrals |
 | 9 | **Strategy & Goals** 🔵 | annual GCI/transaction goals, what they want to be known for, growth focus | what the AI prioritizes & suggests |
 | 10 | **Compliance & Legal** 🟢 | required disclaimers, license-display rules, fair-housing constraints, claims they can't make, brokerage logo rules | keeps every public output compliant — protects the agent |
-| — | **Memory** (accumulates) 🟢 | clients (ledger), listings/deals + buyer search criteria, content-log, deadlines, interaction history | no repeats, Jarvis recall, matching, pipeline awareness |
+| — | **Memory** (accumulates) 🟢 | clients (ledger), listings/deals + buyer search criteria, content-log, deadlines, interaction history | no repeats, AI Admin recall, matching, pipeline awareness |
 
 ### Where it physically sits
 
@@ -156,7 +156,7 @@ needs. This is the dependency map:
                           └──────────┬───────────┘
         ┌──────────┬───────────┬─────┴─────┬───────────┬──────────┐
         ▼          ▼           ▼           ▼           ▼          ▼
-   Market      Listing     YouTube /    Jarvis     AI Video    Lead
+   Market      Listing     YouTube /    AI Admin     AI Video    Lead
    Update       Kit       Short-form   (admin)     Editor     Magnets
    reads:      reads:      reads:       reads:      reads:     reads:
    market      voice       profile      profile    visual +   offer
@@ -206,7 +206,7 @@ Never ask what the brain already knows. If the brain is missing, the skill says 
 ### 7.3 GROW — write-back (every skill, every run)
 After a skill produces work, it logs to memory: a published video → `content-log.md`; a new listing →
 `listings.md`; a client note → `clients.md`. **This is what makes the system compound** — next month's
-content avoids last month's angles; Jarvis remembers every client.
+content avoids last month's angles; AI Admin remembers every client.
 
 ### 7.4 UPDATE / ENRICH — change one thing
 "Update my offer", "add this testimonial", "I rebranded", "new headshot" → edits one domain; everything
@@ -314,7 +314,7 @@ This scales: 1 agent or 100, the system is identical; only the brains differ.
 6. Done. A welcome doc lands in exports/.
 7. Immediately try:  "Run my market update"
                      "Create content for my new listing"
-                     "Set up my Jarvis"
+                     "Set up my AI Admin"
 ```
 From that point on, every tool already knows them. To change anything: *"update my brand."*
 
@@ -324,8 +324,8 @@ From that point on, every tool already knows them. To change anything: *"update 
 
 | Connector | Purpose | Tier |
 |---|---|---|
-| **Gmail** | Jarvis: morning briefing, client emails in their voice | 🟢 core |
-| **Google Calendar** | Jarvis: book showings/consults/open houses | 🟢 core |
+| **Gmail** | AI Admin: morning briefing, client emails in their voice | 🟢 core |
+| **Google Calendar** | AI Admin: book showings/consults/open houses | 🟢 core |
 | **Google Drive** | Brain backup + portability | 🔵 strongly recommended |
 | **Pexels / stock** | B-roll for video skills | ⚪ if using video |
 | **AI Video Editor** | Consumes `brand-visual` + `assets` as its brand config | 🔵 (their other product) |
@@ -351,7 +351,7 @@ From that point on, every tool already knows them. To change anything: *"update 
 | 4 | Voice samples + Proof library | ✅ done (v0.5) |
 | 5 | Content Engine | ✅ done (v0.5/0.8) |
 | 6 | Operations into the brain (+ vendors) | ✅ done (v0.5/0.6) |
-| 6b | **Jarvis ships as its OWN plugin** on the same marketplace (Scheduling · Inbox · Client Memory + briefing & inbox-sweep automations) — Plugin 2 in the cohort journey | ✅ done (v0.11, split v0.13) |
+| 6b | **AI Admin ships as its OWN plugin** on the same marketplace (Scheduling · Inbox · Client Memory + briefing & inbox-sweep automations) — Plugin 2 in the cohort journey | ✅ done (v0.11, split v0.13) |
 | 7 | Compliance | ✅ done (v0.6/0.9) |
 | — | Brain backup/sync (Drive-backed) + schema-migration system | ✅ done (v0.10) |
 | — | Provisioning workflow (agency) | ⬜ |

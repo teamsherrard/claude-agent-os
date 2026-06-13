@@ -1,12 +1,12 @@
 # The Agent Leverage OS — Product Framing
 
 *Working product name + the sales/marketing layer. Companion to the master map and
-`jarvis-brain-wiring.md`. Sourced partly from the "Content to Client" cohort brief.*
+`ai-admin-brain-wiring.md`. Sourced partly from the "Content to Client" cohort brief.*
 
 ## Product name (working)
 **The Agent Leverage OS** — the AI Admin product (productivity). Easy to change.
 - The product / system name = "The Agent Leverage OS."
-- Each agent's assistant instance still gets a configurable name (default "Jarvis"), stored in
+- Each agent's assistant instance still gets a configurable name (default "AI Admin"), stored in
   the Brain (`config.md`).
 - Sibling products keep their own names: the future AI CRM VA, the content/marketing suite.
 

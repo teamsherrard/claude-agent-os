@@ -1,5 +1,5 @@
 # [Agent] — Vendor & Partner Network
-*identity · trusted partners Jarvis can refer to clients + co-marketing content can feature*
+*identity · trusted partners AI Admin can refer to clients + co-marketing content can feature*
 
 | Role | Name | Contact | Why the agent recommends them |
 |------|------|---------|-------------------------------|

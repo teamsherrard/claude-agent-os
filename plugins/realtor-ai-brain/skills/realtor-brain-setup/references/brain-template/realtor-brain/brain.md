@@ -14,6 +14,7 @@
    - Anything published or scripted → `memory/content-log.md`
    - Client conversation / note → `memory/clients.md`
    - New deadline or follow-up → `memory/deadlines.md`
+   - Content performance review → `memory/performance.md` (read it back before planning new content)
    - **Then PUSH to Drive** (`realtor-brain-sync`) — the local copy is wiped when the session ends;
      an unsynced write is a lost write.
 3. **STAY COMPLIANT.** Before publishing anything public-facing, read `identity/compliance.md` — append
@@ -42,15 +43,17 @@ If `~/realtor-brain/` is missing files, tell the agent to run **Realtor AI Brain
 - `identity/voice-samples.md` — real writing samples (match their actual voice)
 - `identity/proof.md` — testimonials, stats, case studies (reuse as proof)
 - `identity/content-engine.md` — content plan: pillars, platforms, cadence, series, video default
-- `identity/operations.md` — hours, signature, booking rules, follow-up cadence (Jarvis)
-- `identity/vendors.md` — trusted partner network (Jarvis referrals)
+- `identity/publishing.md` — how the agent posts short-form (platforms, cadence, posting tool) — written by the Short-Form System
+- `identity/operations.md` — hours, signature, booking rules, follow-up cadence
+- `identity/vendors.md` — trusted partner network (AI Admin referrals)
 - `identity/strategy.md` — goals + what they want to be known for
 - `identity/compliance.md` — disclaimers, license display, claims to avoid (read before publishing)
 
 **memory/** — what the agent has done (grows daily)
-- `memory/clients.md` — client ledger (Jarvis)
+- `memory/clients.md` — client ledger
 - `memory/listings.md` — listings + which content has been made
 - `memory/content-log.md` — everything published (check before creating, to avoid repeats)
+- `memory/performance.md` — what's working in content (written by the 2-week review; read before planning)
 - `memory/deadlines.md` — what's due and when
 
 **config.md** — connectors, timezone, defaults, version

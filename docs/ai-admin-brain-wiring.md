@@ -1,12 +1,12 @@
-# Jarvis (AI Admin) — Brain Wiring
+# AI Admin — Brain Wiring
 
 *How the AI Admin reads/writes the Realtor AI Brain. Companion to `brain-spec.md` §5–§7 and
-`BRAIN-CONTRACT.md`. **Status: SHIPPED as its own plugin** — `plugins/realtor-jarvis/` (Plugin 2 on
+`BRAIN-CONTRACT.md`. **Status: SHIPPED as its own plugin** — `plugins/realtor-ai-admin/` (Plugin 2 on
 the marketplace; the skill + briefing, inbox-sweep, and dashboard templates in its `references/`).
 Requires the Brain plugin (Plugin 1) installed and set up. This doc remains the wiring contract.*
 
 **Drive sync (v0.10+):** the Brain's permanent home is the agent's Google Drive; `~/realtor-brain/`
-is a per-session working copy. Jarvis PULLS the Brain if the local copy is missing (Step 0) and
+is a per-session working copy. AI Admin PULLS the Brain if the local copy is missing (Step 0) and
 PUSHES after every `memory/`/`config.md` write, batched once per turn — an unsynced write is a lost
 write. Scheduled tasks (briefing, inbox sweep) always start with a PULL: they run in fresh sessions.
 
@@ -14,9 +14,9 @@ write. Scheduled tasks (briefing, inbox sweep) always start with a PULL: they ru
 
 The Admin asks the realtor **nothing** the Brain already knows. **No interview.** It loads
 identity from the Brain and writes client activity back to the Brain. The old standalone
-`jarvis/profile.json` + `memory.json` silo is **retired** (folds into the Brain per spec §10).
+the old per-skill JSON silo is **retired** (folds into the Brain per spec §10).
 
-## READ — Step 1: Load the Brain (replaces Jarvis's old interview)
+## READ — Step 1: Load the Brain (replaces AI Admin's old interview)
 
 Read `~/realtor-brain/brain.md` first (quick-reference: name, market, voice one-liner, CTA,
 booking link). Then open as needed:
@@ -34,7 +34,7 @@ If `~/realtor-brain/` is missing → tell the agent to run **Realtor AI Brain �
 
 ## WRITE — after every booking, email, and client update (spec §6)
 
-- `memory/clients.md` — one block per client (Jarvis is the primary writer):
+- `memory/clients.md` — one block per client (AI Admin is the primary writer):
   ```markdown
   ## [Client] — [Buyer/Seller] — Stage: [..]
   - Looking: [..]
@@ -43,7 +43,7 @@ If `~/realtor-brain/` is missing → tell the agent to run **Realtor AI Brain �
   ```
 - `memory/deadlines.md` — every promised follow-up + transaction date (financing, inspection,
   appraisal, walkthrough, closing).
-- Listings belong to the content skills; Jarvis only touches `clients` + `deadlines`.
+- Listings belong to the content skills; AI Admin only touches `clients` + `deadlines`.
 
 ## Admin runtime state → `config.md` (NOT a silo)
 
@@ -64,8 +64,8 @@ If `~/realtor-brain/` is missing → tell the agent to run **Realtor AI Brain �
 
 ## Retrofit checklist (COMPLETED — all items implemented in the shipped skill; kept for history)
 
-1. Replace Jarvis's "Step 1 — interview / read profile.json" with the Load-the-Brain block above.
-2. Replace all `jarvis/memory.json` reads/writes with `memory/clients.md` + `memory/deadlines.md`.
+1. Replace AI Admin's "Step 1 — interview / read profile.json" with the Load-the-Brain block above.
+2. Replace all the old per-skill JSON-silo reads/writes with `memory/clients.md` + `memory/deadlines.md`.
 3. Move `dashboard_artifact_id` + `briefing_task_id` into `config.md`.
 4. Booking durations come from `operations.md` booking rules (fallback to defaults only if absent).
 5. Email sign-off = `operations.md` signature block, verbatim.

@@ -2,8 +2,8 @@
 
 *v1.0 · merges the "Content to Client" cohort brief ("The Agent Leverage OS") with the
 7-system, brain-native master map. Productivity only — CRM and content are sibling products.
-Companions: `brain-spec.md`, `jarvis-brain-wiring.md`, `product-framing.md`, `jarvis-v2-parking.md`;
-the shipped skill: `plugins/realtor-ai-brain/skills/realtor-jarvis/`.*
+Companions: `brain-spec.md`, `ai-admin-brain-wiring.md`, `product-framing.md`, `ai-admin-v2-parking.md`;
+the shipped skill: `plugins/realtor-ai-brain/skills/realtor-ai-admin/`.*
 
 ---
 
@@ -22,7 +22,7 @@ Three principles separate it from a pile of prompts:
 3. **Automated, not just reactive** — the highest-value work runs on a schedule, in the background.
 
 **Product vs. persona:** the product is *The Agent Leverage OS*; each agent's assistant has its
-own name (default *Jarvis*), stored in the Brain.
+own name (default *AI Admin*), stored in the Brain.
 
 ---
 
@@ -102,7 +102,7 @@ Content / marketing → the existing realtor skill suite. The Admin hands off to
 Two laws: **read `brain.md` first; write back what you learn.** The Admin reads
 `identity/{operations, profile, voice, offer, vendors, compliance}` and writes
 `memory/{clients, deadlines}`. **No interview, ever** — identity comes from the Brain.
-Full detail in `jarvis-brain-wiring.md`.
+Full detail in `ai-admin-brain-wiring.md`.
 
 ---
 
@@ -126,9 +126,9 @@ Full detail in `jarvis-brain-wiring.md`.
 ## 7. Build status & roadmap
 
 - Brain spec + template + Drive-backed sync — done (plugin v0.10–0.11).
-- **v1 SHIPPED as its own plugin** (`plugins/realtor-jarvis/` — Plugin 2 on the marketplace,
+- **v1 SHIPPED as its own plugin** (`plugins/realtor-ai-admin/` — Plugin 2 on the marketplace,
   requires the Brain plugin set up first): Scheduling + Inbox + Client
-  Memory workflows, one-time "Set up my Jarvis" flow, Drive pull/push, Mike Test speed rules,
+  Memory workflows, one-time "Set up my AI Admin" flow, Drive pull/push, Mike Test speed rules,
   graceful degradation (Zoom→standing link→Meet; Cal.com→booking link→proposed times).
 - **Two scheduled automations authored** (`references/`): Morning Briefing (7am daily; delivered as
   the task's own output — Gmail cannot send) and Daily Inbox Sweep (weekdays 8:30am: triage + label

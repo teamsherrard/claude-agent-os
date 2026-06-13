@@ -2,6 +2,135 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.20.0] — 2026-06-13
+
+### Short-Form System (Plugin 4) → v0.6.0 — wired to the real Metricool tools
+- With Metricool connected, hardened the publish + analytics skills to call the **actual Metricool MCP
+  tools by name** (referenced bare, since the per-connection server-id prefix varies): `getBrandSettings`,
+  `getBestTimeToPostByNetwork`, `createScheduledPost`, `getScheduledPosts`, `updateScheduledPost`,
+  `getAnalyticsAvailableMetrics`, `getAnalyticsDataByMetrics`.
+- **Video confirmed:** `createScheduledPost.info.media` accepts public URLs to image *or video* files, so
+  Reels/TikToks/Shorts schedule fully hands-off (Path A). Per-network rules encoded (Reels need video,
+  IG/TikTok need media, YouTube needs title + madeForKids, X ≤280, Bluesky ≤300). Hybrid path kept only
+  for videos not at a shareable URL.
+- Analytics flow set to Metricool's real shape: `getBrandSettings` → `getAnalyticsAvailableMetrics`
+  (discover metric IDs, incl. ads) → `getAnalyticsDataByMetrics` (brandId + date range + metric IDs).
+- Brain: `identity/publishing.md` now scaffolded in the template + listed in `brain.md` (companion to the
+  `memory/performance.md` added in 0.19.0).
+
+## [0.19.0] — 2026-06-13
+
+### Short-Form System (Plugin 4) → v0.5.0 — Metricool scheduling + analytics live
+With the agent's **Metricool MCP connected**, the system now does the full publish + measure loop in
+plain language:
+- **`shortform-publish`** — "schedule this for tomorrow at 10am," "post these at my best times,"
+  "post this to Instagram and TikTok." Confirms, schedules through the connected tool (Metricool /
+  GoHighLevel / Buffer), uses best-time slots when no time is given, handles video (full-attach or
+  hybrid), logs to the Brain. Never auto-posts without a clear go-ahead.
+- **`shortform-analytics`** (+ `references/metrics-guide.md`) — the data brain. Handles any "analyze my
+  last 10 posts / analyze my ads / how did my reels do / what's my data" by pulling real numbers from the
+  connected tool and **interpreting them like a coach** (what's working, the weak link + why, the fix) —
+  never a number dump. Also runs the **2-week performance review** and writes it to
+  `memory/performance.md`, which the content workflows read so each round leans on what worked (the
+  improvement loop is now closed).
+- Both connector-agnostic (Metricool default, GoHighLevel for agents who have it) and screenshot-fallback
+  for analytics if no connector.
+
+### Brain (Plugin 1) → v0.15.0
+- Added **`memory/performance.md`** to the Brain (template + `brain.md` index + write-back law) — the home
+  for content performance, written by the 2-week review and read before planning new content.
+
+## [0.18.0] — 2026-06-13
+
+### Short-Form System (Plugin 4) → v0.4.0 — publishing wired
+- **`shared/publishing-guide.md`** — the system can now schedule/post once the agent connects a tool,
+  connector-agnostic: **Metricool** (default), **GoHighLevel** (Social Planner, for agents who have it),
+  **Buffer** (fallback), or **manual**. Golden rule baked in: **never post without showing the post and
+  getting explicit approval.** Handles best-time scheduling, the free-plan 20-post guardrail, and the
+  media/video fallback (Path A full-attach vs Path B hybrid: schedule caption+slot, agent drops the video).
+- Wired into green screen, talking head, and carousel (their "offer to schedule" step) + setup's connect step.
+- **Metricool MCP endpoint verified** (`https://ai.metricool.com/mcp`): live, standard OAuth 2.1 with
+  Dynamic Client Registration + PKCE (scopes `mcp:read`/`mcp:write`) → one-click sign-in in Cowork, no
+  tokens. Can view brands, pull analytics, and create/schedule posts; works on the free plan (20-post
+  cap). Only open item: confirm video-on-schedule live (both paths are handled either way). Details +
+  the ~10-min live check in `docs/shortform-publishing-layer.md`.
+
+## [0.17.0] — 2026-06-13
+
+### Short-Form System (Plugin 4) → v0.3.0 — the advisor
+- **`shared/advisor-playbook.md`** + house-rules #8: the system now acts as the agent's **short-form
+  expert** when they're unsure. Realtors often say *"I don't know,"* *"what do you think?"*, *"you pick,"*
+  or *"is this any good?"* — the skills now **lead with a confident, data-grounded recommendation** (never
+  bounce the question back, never dump a menu on an overwhelmed agent), default to action, and give honest
+  expert feedback with a spine. Includes the real short-form-for-realtors point of view (hook is 90%,
+  local+timely beats generic, consistency > perfection, 80/20 reach, don't sell every post) and decision
+  heuristics for the common "I'm not sure" moments.
+- Wired into every workflow at its decision point (setup, green screen, talking head, carousel) so the
+  advisor move fires exactly where agents hesitate.
+
+## [0.16.0] — 2026-06-13
+
+### Short-Form System (Plugin 4) → v0.2.0 — the three workflows + onboarding
+- **`shortform-talkinghead`** — batched value videos: an 80/20 topic list (80% broad reach, 20% niche)
+  → scripts with 15/30/45-second cuts + a teleprompter version + a bullet version → per-platform
+  packaging. (Absorbs the doc's "Script Builder.")
+- **`shortform-carousel`** — no-film value posts, **spec only**: cover hook + 6–9 slides of copy +
+  design direction in words + Instagram/Facebook caption. The agent builds slides in claude.ai/design;
+  nothing is rendered here.
+- **`shortform-setup`** — one-time onboarding mirroring the YouTube setup pattern: reads the Brain,
+  re-asks nothing, captures only short-form specifics (platforms, cadence, lead magnets if missing,
+  posting method), explains the system plainly, and gets the agent to their first post.
+- **`shared/house-rules.md`** — the plugin's standard, applied by every skill: **talk to the agent
+  plain and warm, never technical** (realtors aren't developers and overwhelm fast); read the Brain
+  first / never re-ask; map-don't-design; stay compliant; earn the "why not just use ChatGPT" test.
+- **Optimizer hardened** (from the QA sweep): now also outputs **cover/thumbnail text + on-screen text**
+  for video formats, and carries the **full CTA map** (DM "BUYER"/"SELLER"/"RELOCATION", market report,
+  neighbourhood guide) routed to real lead magnets. All workflows read the full Brain (added `offer.md`
+  + `voice-samples.md`).
+- **Posting is bring-your-own-platform:** GoHighLevel (its official MCP Social Planner) for agents who
+  already use it, Metricool as the easy default, Buffer as a fallback, or manual — never forced onto a
+  new platform. (Publish + 2-week analytics loop wired in a later release; see
+  `docs/shortform-publishing-layer.md`.)
+
+### Brain (Plugin 1) → v0.14.0
+- **Lead magnets are now first-class Brain data.** Added a "Lead magnets" section to the `offer.md`
+  template + a capture step (Q7) in `realtor-offer-usp` (interview guide + USP knowledge template), so
+  the agent's free guides/checklists (with DM keywords) are stored at setup. This is what content CTAs
+  point to — and it closes the "don't make the agent re-answer" gap the QA sweep found.
+- **Removed `realtor-article-greenscreen`** — fully superseded by `shortform-greenscreen` (its only
+  unique value was PNG green-screen backgrounds, which are dropped under the map-don't-design rule).
+  Brain plugin is now 16 skills.
+
+## [0.15.0] — 2026-06-13
+
+### Added
+- **Realtor Short-Form System joins the shelf as Plugin 4** (`plugins/realtor-shortform-system/`,
+  v0.1.0) — the first slice of the routine-based short-form OS (sibling to the YouTube System).
+  Ships two skills:
+  - `shortform-greenscreen` — the **Daily Green Screen** workflow: finds the single most timely local
+    article and delivers a word-for-word hook + 4–6 talking points (deliberately NOT a script, for
+    natural reactive delivery) + on-screen text + per-platform captions. Reactive/daily by design;
+    never batched. **Text only — no PNG backgrounds or designs** (agent holds the article on their
+    phone or builds a background in claude.ai/design).
+  - `shortform-optimizer` — the **shared Platform Optimizer** every short-form workflow calls: one
+    post → Instagram+Facebook (caption + hashtags), TikTok (one-line caption, no line breaks),
+    YouTube Shorts (title + description + tags). Canonical platform rules in
+    `references/platform-rules.md`; reads voice/market/compliance from the Brain.
+- Design principle locked across the system: **map, don't design** — short-form skills output copy,
+  frameworks, and direction as text; claude.ai/design renders. Consequence: `realtor-article-greenscreen`
+  (Plugin 1) is superseded by `shortform-greenscreen` and slated for retirement (its only unique value
+  was PNG generation, now dropped).
+- Architecture: the agent thinks in **formats**; Claude silently maintains the **4-3-2-1 funnel
+  balance** and **80/20 reach split**. Full build spec in `docs/shortform-os-build.md`; publish +
+  analytics layer (Metricool MCP) in `docs/shortform-publishing-layer.md`.
+
+### Notes
+- Plugin 1 (the Brain) is unchanged in this release (no version bump); the short-form skills live in
+  Plugin 4, not the Brain.
+- Coming next: talking-head + carousel (spec-only) workflows, the weekly menu/balance tracker, and
+  `shortform-analytics` (the 2-week performance loop). Pending: the 30-min Metricool Cowork connector
+  test before publish wiring.
+
 ## [0.14.0] — 2026-06-12
 
 ### Added

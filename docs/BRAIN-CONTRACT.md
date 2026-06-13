@@ -1,7 +1,7 @@
 # The Brain Contract
 
 **How any system reads and writes a realtor's AI Brain.** Every skill in this plugin follows it — and
-so should every *external* system that wants to be brain-powered (the AI Video Editor, Jarvis, future
+so should every *external* system that wants to be brain-powered (the AI Video Editor, AI Admin, future
 agents). If you're building something new that should "know the realtor," implement this and you're done.
 
 ---
@@ -58,7 +58,7 @@ system plugs into it and never re-interviews the agent.
   row per published long-form + its shorts) so the Brain — and every other system — knows what content
   exists. Boundary: the YouTube System owns YouTube ideation/scripting/SEO/repurposing; the Brain
   plugin's built-in `realtor-yt-launch-system` defers to it when installed.
-- **Jarvis / AI admin** (its own plugin — `realtor-jarvis`, Plugin 2 on this same marketplace;
+- **AI Admin** (its own plugin — `realtor-ai-admin`, Plugin 2 on this same marketplace;
   requires the Brain plugin installed + set up first) → reads `identity/operations.md` (hours,
   signature, booking rules), `identity/vendors.md` (referrals), `identity/voice.md` (email tone),
   `identity/offer.md`; writes to `memory/clients.md` + `memory/deadlines.md`.

@@ -14,28 +14,64 @@ All vendor facts below verified 2026-06-12 against official docs.
 
 ## 1. The decision
 
+**Bring-your-own-platform — never force a new tool.** Pick the rail per agent:
+
 | Role | Tool | Why |
 |---|---|---|
-| **Default rail** | **Metricool** | Official remote MCP works on every plan incl. Free; richest analytics in Claude (per-post metrics, best-time-to-post, competitor tracking); realtors already know the brand; Starter $20–25/mo is the realistic tier; Advanced ≈ $3/client/mo if we ever run posting for clients |
-| Optional add-on | **Blotato** ($29/mo) | AI faceless-video generation (~178 videos/mo) for agents who won't film. NOT the backbone: analytics not exposed to MCP yet; weak agency model |
-| Fallback | **Buffer** | Official MCP (since 2026-05-27), OAuth, free plan works, $5/channel/mo. Use only if Metricool's connector fails in Cowork. Thin analytics |
-| Watchlist | **Zernio** (ex-Late) | Full white-label + per-account pricing (~$6/acct) + deepest analytics MCP — the rail for a future branded "Social OS" product |
+| **For agents who already use it** | **GoHighLevel** | Official MCP **now includes the Social Planner** (6 tools: create/edit/get post(s), get-account, get-statistics) → IG/FB/TikTok/YouTube/GBP/LinkedIn/X, video/Reels supported, GHL handles the platform app-review. Analytics via `get-social-media-statistics`. Many realtors already pay for GHL → zero new platform. (See §7.) |
+| **Default for everyone else** | **Metricool** | Official remote MCP works on every plan incl. Free; richest analytics in Claude (per-post metrics, best-time-to-post, competitor tracking); realtors know the brand; Starter $20–25/mo realistic; Advanced ≈ $3/client/mo if we run posting for clients |
+| Optional add-on | **Blotato** ($29/mo) | AI faceless-video generation (~178 videos/mo) for agents who won't film. NOT a backbone: analytics not in MCP yet; weak agency model |
+| Fallback | **Buffer** | Official MCP (since 2026-05-27), OAuth, free plan works, $5/channel/mo. Thin analytics |
+| Manual | none | Claude hands over copy-paste-ready posts; agent posts themselves. Always available |
+| Watchlist | **Zernio** (ex-Late) | Full white-label + per-account pricing (~$6/acct) + deepest analytics MCP — for a future branded "Social OS" product |
 
 Ruled out: Zapier/Make (no TikTok posting), direct Meta/TikTok/YouTube APIs (per-developer app
 review + business verification; unaudited TikTok apps can only post private videos), Meta/TikTok
 official MCPs (ads-only as of spring 2026), Hootsuite/Sprout (no posting MCP / enterprise pricing).
 
+> **GoHighLevel — verified 2026-06-13.** Official MCP `https://services.leadconnectorhq.com/mcp/`,
+> **36 tools incl. 6 Social Planner tools** (Social Planner MCP support marked Complete 2025-10-14).
+> Auth = **Private Integration Token (PIT) + Location ID**, created in the sub-account's Settings →
+> Private Integrations with `socialplanner/*` scopes — **not clean OAuth yet**, so in Cowork the agent
+> pastes the PIT + Location ID into chat (token-in-prompt), or we later host a thin OAuth-fronting
+> wrapper for one-click. API/MCP access is reliable on the **Unlimited ($297) plan or higher** (Starter
+> $97 = "limited" API — UNVERIFIED whether PIT/MCP works there). Social Planner itself is included on
+> all plans. Community GHL MCPs (BusyBee3333 520+ tools, mastanley13, drausal) exist if we ever need
+> more than the official set. Net: "post through your existing GoHighLevel" is offerable today.
+
 ---
 
-## 2. The gate: 30-minute verification test (run BEFORE building)
+## 2. The gate: verification test
 
-Metricool documents Claude Desktop and Claude Code — **not Cowork's connector flow**. It should
-work (remote HTTP + OAuth 2.1 is exactly what Cowork custom connectors expect), but we verify
-before wiring it into the cohort. Two unknowns to kill:
+**Endpoint VERIFIED 2026-06-13** by probing `https://ai.metricool.com/mcp` directly:
+- Live; returns a proper `www-authenticate: Bearer` challenge → standard MCP **OAuth 2.1**.
+- Discovery (`/.well-known/oauth-protected-resource` + `/.well-known/oauth-authorization-server`) is
+  fully formed: scopes `mcp:read` / `mcp:write`; **Dynamic Client Registration** (`/oauth/register`),
+  `authorization_code` + `refresh_token`, **PKCE S256**, public-client (`none`) supported. This is exactly
+  what Claude custom connectors auto-handle → **one-click browser sign-in, no API keys/tokens.**
+- Official capabilities (Metricool help doc): "view and manage brands + social connections," "view and
+  download metrics/analytics," **"view, create, and publish posts (scheduled and published)."**
+- Plan: any, incl. **free** (free = 20 scheduled posts cap + 3-month analytics window).
 
-1. Does the OAuth connector flow complete inside Cowork?
-2. **Can the MCP schedule tool attach video media?** (Reels/TikToks are videos — text-only
-   scheduling isn't enough. This is the #1 open question; research could not verify it.)
+**Both gates now RESOLVED** (connected 2026-06-13; tool schemas inspected directly):
+
+1. ~~Does the OAuth connector flow complete?~~ → **Resolved** — standard OAuth DCR+PKCE; connected fine.
+2. ~~Can the schedule tool attach VIDEO?~~ → **Resolved — YES.** `createScheduledPost`'s `info.media`
+   field "accepts public URLs to image or video files," and the tool enforces per-network video rules
+   (Reels/Facebook Reels need a video; IG/TikTok need ≥1 image or video; YouTube needs a video). So
+   **Path A (full hands-off) is the default** — schedule a Reel/TikTok/Short with the agent's video by
+   URL. Path B (hybrid) only applies if the video isn't at a shareable URL.
+
+**Verified tool surface (Metricool MCP):** `getBrandSettings` (brandId + timezone), `getBestTimeToPostByNetwork`,
+`createScheduledPost`, `getScheduledPosts`, `updateScheduledPost`, `getAnalyticsAvailableMetrics`,
+`getAnalyticsDataByMetrics` (brandId + from/to + Data-Studio metric IDs). Wired by name into
+`shared/publishing-guide.md` and `shortform-analytics` (bare names — the connection's server-id prefix
+varies per user, so skills reference the tools by name only).
+
+### Quick live check (≈10 min in Cowork, once connected)
+Add custom connector → `https://ai.metricool.com/mcp` → sign in. Then: "list my Metricool brands" →
+"best time to post on Instagram this week" → "schedule a TikTok for tomorrow 10am with this video: [URL]"
+(← the media test) → "pull my Instagram metrics, last 30 days" → delete the test post in Metricool.
 
 ### Setup (10 min)
 1. Create a free Metricool account (or use an existing one) → add one **test brand**.

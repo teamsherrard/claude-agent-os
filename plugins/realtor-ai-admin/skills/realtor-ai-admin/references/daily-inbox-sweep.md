@@ -2,7 +2,7 @@
 
 One automation, one morning pass. Create as a scheduled task on weekdays at 8:30am IN THE
 AGENT'S TIMEZONE. Save the task id in `config.md`. Requires the label taxonomy created at
-Jarvis setup: `Hot Lead`, `Active Client`, `Under Contract`, `Lender-Title`, `Brokerage`,
+AI Admin setup: `Hot Lead`, `Active Client`, `Under Contract`, `Lender-Title`, `Brokerage`,
 `Personal`, `Promotions`.
 
 ---

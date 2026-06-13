@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
   AI ADMIN DASHBOARD — Brain-native live artifact template (Drive-backed brain)
-  Built ONCE during "Set up my Jarvis" (SKILL.md setup step 5). Before creating the artifact:
+  Built ONCE during "Set up my AI Admin" (SKILL.md setup step 5). Before creating the artifact:
    1. Load the Brain (pull from Drive if the local copy is missing). Fill %%ASSISTANT_NAME%%,
       %%AGENT_FIRST%%, %%MARKET%% from brain.md — never ask the agent.
    2. Populate the MEMORY constant by PARSING the Brain memory files:
@@ -34,26 +34,26 @@
   h1 { font-family:var(--serif); font-size:1.25rem; letter-spacing:.18em; color:var(--ivory); text-transform:uppercase; }
   h1 small { display:block; font-family:var(--sans); font-size:.6rem; letter-spacing:.4em; color:var(--gold); opacity:.8; margin-top:.3rem; }
   #dateLine { font-size:.78rem; letter-spacing:.2em; color:var(--gold); text-transform:uppercase; }
-  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:1rem; }
-  .card { background:rgba(243,236,221,.035); border:1px solid var(--gold-dim);
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:1rem; }
+.card { background:rgba(243,236,221,.035); border:1px solid var(--gold-dim);
     border-radius:12px; padding:1rem 1.1rem; }
-  .card h2 { font-size:.66rem; letter-spacing:.32em; text-transform:uppercase;
+.card h2 { font-size:.66rem; letter-spacing:.32em; text-transform:uppercase;
     color:var(--gold); margin-bottom:.8rem; font-weight:500; }
-  .row { display:flex; gap:.7rem; padding:.45rem 0; border-bottom:1px dashed rgba(216,179,106,.14);
+.row { display:flex; gap:.7rem; padding:.45rem 0; border-bottom:1px dashed rgba(216,179,106,.14);
     font-size:.88rem; font-weight:300; align-items:baseline; }
-  .row:last-child { border-bottom:none; }
-  .row .t { color:var(--gold); font-size:.74rem; letter-spacing:.06em; min-width:64px; }
-  .row.urgent .t { color:var(--red); }
-  .row.fup .t { color:var(--amber); }
-  .muted { opacity:.55; font-size:.8rem; font-weight:300; padding:.4rem 0; }
-  .err { color:var(--red); font-size:.78rem; opacity:.85; }
-  .pill { display:inline-block; border:1px solid var(--gold-dim); border-radius:999px;
+.row:last-child { border-bottom:none; }
+.row .t { color:var(--gold); font-size:.74rem; letter-spacing:.06em; min-width:64px; }
+.row.urgent .t { color:var(--red); }
+.row.fup .t { color:var(--amber); }
+.muted { opacity:.55; font-size:.8rem; font-weight:300; padding:.4rem 0; }
+.err { color:var(--red); font-size:.78rem; opacity:.85; }
+.pill { display:inline-block; border:1px solid var(--gold-dim); border-radius:999px;
     padding:.45rem 1.05rem; font-size:.68rem; letter-spacing:.22em; text-transform:uppercase;
     color:var(--gold); cursor:pointer; background:transparent; transition:.25s; font-family:var(--sans); }
-  .pill:hover { border-color:var(--gold); background:rgba(216,179,106,.1); }
+.pill:hover { border-color:var(--gold); background:rgba(216,179,106,.1); }
   #stats { display:flex; gap:1.4rem; margin:.2rem 0 1.2rem; flex-wrap:wrap; }
-  .stat { font-size:.78rem; letter-spacing:.08em; font-weight:300; opacity:.9; }
-  .stat b { font-family:var(--serif); font-size:1.3rem; color:var(--gold); margin-right:.35rem; font-weight:600; }
+.stat { font-size:.78rem; letter-spacing:.08em; font-weight:300; opacity:.9; }
+.stat b { font-family:var(--serif); font-size:1.3rem; color:var(--gold); margin-right:.35rem; font-weight:600; }
   footer { margin-top:1.3rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:.6rem; }
   footer span { font-size:.62rem; letter-spacing:.3em; text-transform:uppercase; opacity:.4; }
 </style>
@@ -121,12 +121,12 @@ function rows(el, items, cls, emptyMsg) {
 (function renderMemory() {
   const open = (MEMORY.items || []).filter(i => i.status === "open");
   const urgent = open.filter(i => i.type === "deadline" && daysUntil(i.due) <= 2)
-    .sort((a,b) => (a.due||"") < (b.due||"") ? -1 : 1)
-    .map(i => ({ t: i.due || "soon", x: (i.client !== "General" ? i.client + " — " : "") + i.note }));
+.sort((a,b) => (a.due||"") < (b.due||"") ? -1 : 1)
+.map(i => ({ t: i.due || "soon", x: (i.client !== "General" ? i.client + " — " : "") + i.note }));
   const fups = open.filter(i => i.type === "followup" && daysUntil(i.due) <= 0)
-    .map(i => ({ t: i.due || "due", x: i.client + " — " + i.note }));
+.map(i => ({ t: i.due || "due", x: i.client + " — " + i.note }));
   const notes = (MEMORY.items || []).slice(-6).reverse()
-    .map(i => ({ t: (i.date || "").slice(5, 10), x: i.client + " — " + i.note }));
+.map(i => ({ t: (i.date || "").slice(5, 10), x: i.client + " — " + i.note }));
   rows($("urgent"), urgent, "urgent", "Nothing urgent. Clear runway.");
   rows($("fups"), fups, "fup", "All caught up.");
   rows($("notes"), notes, "", "No notes yet — tell " + "%%ASSISTANT_NAME%%" + " about your clients.");

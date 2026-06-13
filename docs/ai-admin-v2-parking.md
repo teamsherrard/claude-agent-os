@@ -1,7 +1,7 @@
-# Jarvis v2 — Parked Systems (not in the shipped skill)
+# AI Admin v2 — Parked Systems (not in the shipped skill)
 
 *Scope deferred from v1 (locked 2026-06-09). The v1 skill is `plugins/realtor-ai-brain/skills/
-realtor-jarvis/` — Scheduling, Inbox, Client Memory + the two scheduled automations. These come next.*
+realtor-ai-admin/` — Scheduling, Inbox, Client Memory + the two scheduled automations. These come next.*
 
 ## Meeting System — the Note-Taker (Automation)
 After any call or meeting (buyer/seller consult, listing appt, client update, vendor, team), turn

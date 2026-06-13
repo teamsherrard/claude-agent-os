@@ -444,7 +444,7 @@ Save the final .docx to `~/realtor-brain/exports/` (named e.g. `listing-kit-[add
 ## Phase 7: Write Back to the Brain
 
 **The second law — do not skip it.** This listing and its content now become part of the agent's
-memory so other skills (and Jarvis) know about it and nothing gets re-made.
+memory so other skills (and AI Admin) know about it and nothing gets re-made.
 
 **1. Update `~/realtor-brain/memory/listings.md`.** If a block for this address exists, update it;
 otherwise add one. Tick the content you just produced:

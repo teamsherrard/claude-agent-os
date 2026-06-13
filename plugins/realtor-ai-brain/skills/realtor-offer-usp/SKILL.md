@@ -76,7 +76,7 @@ Let's go.
 
 **Read:** `references/interview-guide.md`
 
-Ask all 6 questions in order. One question at a time — never stack them.
+Ask all 6 questions in order, plus the quick lead-magnet question (Q7). One question at a time — never stack them.
 Use follow-up prompts from the interview guide when answers are vague or surface-level.
 The goal is specificity. Generic answers produce a generic guidebook. Push for the real details.
 
@@ -114,8 +114,9 @@ Build both outputs from the interview answers combined with everything already i
 **Read:** `references/usp-knowledge-template.md` for the structure.
 
 Write the structured offer into `~/realtor-brain/identity/offer.md` — third person, detailed and
-specific: core offer, buyer/seller offers, guarantees, signature process, USP, and proof. **This is
-what every other skill reads.** If `~/realtor-brain/identity/` doesn't exist yet, create it.
+specific: core offer, buyer/seller offers, **lead magnets** (with their DM keywords), guarantees,
+signature process, USP, and proof. **This is what every other skill reads** — the lead magnets are what
+content CTAs point to. If `~/realtor-brain/identity/` doesn't exist yet, create it.
 
 ### Output 2 — Public-Facing Guidebook (rendered to exports/)
 **Read:** `references/guidebook-template.md`
@@ -137,7 +138,7 @@ After writing the offer and rendering the guide:
 Done — two things:
 
 1. Your offer is now in your Brain (identity/offer.md). Every skill — listing content,
-   lead magnets, Jarvis emails — now knows exactly what you offer and why clients hire you.
+   lead magnets, AI Admin emails — now knows exactly what you offer and why clients hire you.
 
 2. Your "Why Work With Me" guide is saved to exports/ — send it to prospects, use it as a
    lead magnet, or share it at consultations.

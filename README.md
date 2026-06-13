@@ -3,7 +3,7 @@
 **One AI Brain that powers every tool you use as a real estate agent.**
 
 Set it up once. From then on, every skill — your market updates, your listing content, your AI admin
-Jarvis, everything we build next — already knows who you are, who you serve, how you sound, and what
+AI Admin, everything we build next — already knows who you are, who you serve, how you sound, and what
 you've already done. You never re-explain yourself again.
 
 This is the foundation everything else plugs into. Install it first.
@@ -33,7 +33,7 @@ In **Claude Cowork** (everything is UI — there are no commands to type):
 4. You'll see the plugins on this marketplace, numbered in order. Click **Install** on
    **Plugin 1 — Realtor AI Brain** now; install the others as you reach them in your training:
    - **Plugin 1 · Realtor AI Brain** — install first, always (the foundation)
-   - **Plugin 2 · Realtor Jarvis — AI Admin** — install when you start the AI Admin module
+   - **Plugin 2 · Realtor AI Admin** — install when you start the AI Admin module
    - **Plugin 3 · Realtor YouTube System** — install when you start the YouTube module
    - *(Plugin 4 · Short-Form OS — joins this same shelf when it ships)*
 5. *(Recommended)* Open the marketplace card → toggle **Sync automatically** so you get future updates
@@ -65,7 +65,7 @@ Once your Brain is set up, just ask for what you want. The tools already know yo
 
 - `Run my market update`
 - `Create content for my new listing`
-- `Set up my Jarvis` — your AI admin *(Plugin 2 — install it from the same marketplace first)*: books
+- `Set up my AI Admin` — your AI admin *(Plugin 2 — install it from the same marketplace first)*: books
   your calendar (conflict-checked, guests invited, video link attached), drafts email in your voice,
   sorts your inbox every morning, and briefs you at 7am
 

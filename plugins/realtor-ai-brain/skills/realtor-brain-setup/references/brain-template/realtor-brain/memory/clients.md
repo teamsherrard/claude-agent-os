@@ -1,5 +1,5 @@
 # Clients
-*memory · the client ledger — Jarvis is the primary writer, but any skill may read it*
+*memory · the client ledger — AI Admin is the primary writer, but any skill may read it*
 
 > **One block per client.** Update "Last contact" and "Next action" whenever something happens.
 
@@ -9,6 +9,6 @@
 - Looking for / selling: [price range, area, beds — or property being sold]
 - Last contact: [date] · Next action: [what + by when]
 - Key deadlines: [inspection, financing, closing — dates]
-- Notes: [pre-approval, motivation, personal context Jarvis should remember]
+- Notes: [pre-approval, motivation, personal context AI Admin should remember]
 
 -->
