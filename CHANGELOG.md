@@ -2,6 +2,18 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.22.0] — 2026-06-13
+
+### Brain (Plugin 1) → v0.17.0 — deliverables save as clean Google Docs + housekeeping
+- **`shared/doc-formatting.md`** — the Brain's document standard. Cowork's Drive connector only converts
+  `text/plain` into a clean Google Doc (`.docx`/HTML land as broken files), so deliverables (offer
+  guidebook, market updates, listing kits, welcome doc) are built as well-structured plain text and saved
+  as clean Google Docs in the agent's Drive. Wired into the producer + content skills.
+- **"Jarvis" → "AI Admin"** naming aligned across the Brain skills (matches Plugin 2).
+- Trigger/boundary + formatting tidy-ups across brain-setup, brand-persona, offer-usp, market-update,
+  listing-content-kit, neighbourhood-tour, and yt-launch-system (net simplification).
+- Added `docs/SYSTEM-MAP.md` — full inventory of all 4 plugins / 39 skills.
+
 ## [0.21.0] — 2026-06-13
 
 ### Short-Form System (Plugin 4) → v0.7.0 — organized Drive output + great formatting

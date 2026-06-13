@@ -5,7 +5,7 @@ description: >
   city, communities, and niche, then generates a complete monthly market update package including:
   a visual market update report (for screen share and email distribution), a 15-minute word-for-word
   YouTube script built around the data, and 3 short-form video concepts (article-based, green screen
-  background-based, and talking head opinion). Everything is compiled into a single branded .docx.
+  background-based, and talking head opinion). Everything is compiled into a single clean Google Doc.
 
   Trigger on: "run my market update", "create my market update", "market update for [month]",
   "build my market update package", "monthly market update", "market update video", "generate
@@ -19,7 +19,7 @@ When triggered, research live market data for the agent's specific city and comm
 complete visual market update report, write a 15-minute YouTube script the agent reads while screen
 sharing the report, and generate 3 short-form video concepts ready to record.
 
-Everything compiles into one branded .docx the agent uses on camera, sends to their list, and
+Everything compiles into one clean Google Doc the agent uses on camera, sends to their list, and
 repurposes into short-form content.
 
 ---
@@ -373,9 +373,12 @@ Produce:
 
 ---
 
-## Phase 6: Compile into .docx
+## Phase 6: Save as a clean Google Doc
 
-**Read the docx skill first** before writing any code.
+**Read `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` first.** Build this as well-structured plain text
+and create it as a Google Doc via the Drive connector — do NOT render a `.docx` (it won't convert in
+Cowork and lands as a broken file). The infographic PNG (Phase 5) is a separate image deliverable and is
+unaffected.
 
 ### Document Structure
 
@@ -416,31 +419,19 @@ DATA SOURCES
   List of all sources used with URLs and retrieval dates
 ```
 
-### Content Formatting Rules
-- Separate paragraphs with blank lines
-- Bullet items start with `- ` on their own line
-- Numbered items each on their own line
-- Script lines each on their own line — never run dialogue together
-- [SCREEN CUE] and [BRACKET] directions on their own line in the script
-- Checklist items start with `- [ ] `
-- Never use `\n` — use separate Paragraph elements
+### Formatting (per the doc-formatting standard)
+- Title + meta line (city · agent · month-year), then ALL-CAPS section headers each with an em-dash
+  divider line above and a blank line below.
+- Separate paragraphs with blank lines; `•` bullets, one per line; numbered items each on their own line.
+- Script lines each on their own line — never run dialogue together; `[SCREEN CUE]` / `[BRACKET]`
+  directions on their own line.
+- Stat callouts: the number on its own line with the label under it.
+- Script sections can't be shaded in plain text — set each off with a clear label + a divider above and
+  below so it stands out.
+- No brand colours/fonts — a `text/plain` Google Doc can't carry them (brand lives in the design tool).
 
-### Document Setup
-- Page size: US Letter (12240 x 15840 DXA)
-- Margins: 1440 DXA (1 inch) all sides
-- Default font: Arial 11pt
-- Section headers: Heading1, bold, primary brand color
-- Sub-headers: Heading2, accent color
-- Script sections: light gray shaded boxes to distinguish from report content
-- Stat callouts in report: large bold numbers with label below
-
-### Brand Colors
-1. Pull from `~/realtor-brain/identity/brand-visual.md` (colors + fonts)
-2. Pull from intake if provided
-3. Fallback: Black (#111111) headers, Dark gold (#B8973A) accents, White background,
-   Light gray (#F5F5F5) for script boxes
-
-Save the final .docx to `~/realtor-brain/exports/` (named e.g. `market-update-[city]-[month-year].docx`).
+Create the Google Doc in the agent's Drive **`Realtor AI Brain` → `exports`**, named
+`Market Update · [City] · [Month Year]`, and tell the agent the location + link.
 
 ---
 

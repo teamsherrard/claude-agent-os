@@ -39,7 +39,7 @@ agent shares.
 
 **Total conversation target:** 15 minutes. Not longer.
 **Output:** The four identity files (`profile`, `market`, `avatars`, `voice`) written into
-`~/realtor-brain/identity/` — plus an optional polished `.docx` keepsake in `~/realtor-brain/exports/`.
+`~/realtor-brain/identity/` — plus an optional clean Google Doc keepsake in `~/realtor-brain/exports/`.
 
 ---
 
@@ -162,9 +162,10 @@ are reference documents for Claude, not for the agent to read about themselves.
 Each file must be specific and complete enough that any other skill — market update, YouTube launch,
 trending articles — runs with zero additional intake beyond what's video- or campaign-specific.
 
-**Optional keepsake:** render a polished combined `.docx` to `~/realtor-brain/exports/` (using the
-docx skill) so the agent has a human-readable copy. The `.docx` is a *render* — the markdown in
-`identity/` is the source of truth skills actually read.
+**Optional keepsake:** save a clean combined Google Doc to the agent's Drive `Realtor AI Brain → exports`
+(per `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` — structured plain text, not `.docx`) so the agent
+has a human-readable copy. The Doc is a *render* — the markdown in `identity/` is the source of truth
+skills actually read.
 
 ---
 

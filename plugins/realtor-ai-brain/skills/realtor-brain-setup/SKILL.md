@@ -199,8 +199,9 @@ agent connect it before finishing. Set their **timezone** and pull the **default
 3. **Save the Brain to Google Drive — do NOT skip.** Use the **realtor-brain-sync** skill to create the
    `Realtor AI Brain` folder in the agent's Drive and push the whole brain up. This is what makes it
    persist; the local copy is gone next session. Confirm it's saved before continuing.
-4. **Render a welcome doc** to `exports/` — a short, friendly .docx the agent can keep: "Here's your
-   Brain — here's what's in it, and here's what to try first." (Use the docx skill.)
+4. **Save a welcome doc** to the agent's Drive `Realtor AI Brain → exports` — a short, friendly Google
+   Doc the agent can keep: "Here's your Brain — here's what's in it, and here's what to try first."
+   (A clean Google Doc per `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` — structured plain text, not `.docx`.)
 5. **Confirm and hand off.** Show them the finished structure and tell them what to do next:
 
 > 🎉 Your AI Brain is built. From now on, every skill already knows you — you'll never re-explain your

@@ -6,7 +6,7 @@ description: >
   walkthrough script (room by room), full YouTube SEO package (title, description, tags,
   hashtags), and 3 short-form Reel/TikTok scripts (just listed announcement, top 3 features,
   neighbourhood angle) each with a ready-to-post caption. Everything compiled into one
-  branded .docx. Agent inputs the address, key features, price, neighbourhood, and target
+  clean Google Doc. Agent inputs the address, key features, price, neighbourhood, and target
   buyer type — Claude does the rest.
 
   Trigger on: "listing content kit", "new listing content", "create content for my listing",
@@ -36,7 +36,7 @@ The agent provides the listing details. Claude builds the content.
 - `~/realtor-brain/identity/voice.md` — tone, voice characteristics, what they never want to sound like
 - `~/realtor-brain/identity/avatars.md` — buyer profiles, to target the listing content
 - `~/realtor-brain/identity/offer.md` — services/guarantees worth mentioning in listing content
-- `~/realtor-brain/identity/brand-visual.md` — colors/fonts for the .docx
+- `~/realtor-brain/identity/brand-visual.md` — brand context (the Doc itself is clean plain text)
 - `~/realtor-brain/memory/listings.md` — **has this address been worked before? what content already
   exists for it?** Don't re-script content already marked done.
 
@@ -373,9 +373,11 @@ Caption: Neighbourhood-first hook + 3 named local highlights + listing details +
 
 ---
 
-## Phase 6: Compile into .docx
+## Phase 6: Save as a clean Google Doc
 
-**Read the docx skill first** before writing any code.
+**Read `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` first.** Build this as well-structured plain text
+and create it as a Google Doc via the Drive connector — do NOT render a `.docx` (it won't convert in
+Cowork and lands as a broken file).
 
 ### Document Structure
 
@@ -420,24 +422,18 @@ DATA SOURCES
   Research sources used with URLs
 ```
 
-### Formatting Rules
-- Hook and closing line in shaded boxes — visually distinct
-- Room labels as sub-headers throughout the walkthrough
-- [POINT CAMERA AT] directions in italics inside brackets
-- Reel scripts in shaded boxes with clear Reel 1 / 2 / 3 headers
-- Captions separated from scripts with a clear divider
-- Brand colors/fonts from `~/realtor-brain/identity/brand-visual.md` — fallback to black/dark gold/white
+### Formatting (per the doc-formatting standard)
+- Title + meta line ([Address] · agent · date · price), then ALL-CAPS section headers each with an
+  em-dash divider above and a blank line below.
+- Hook and closing line set off with a clear label + dividers above and below (plain text can't shade) so
+  they're visually distinct and obviously word-for-word.
+- Room labels as their own lines through the walkthrough; `[POINT CAMERA AT]` directions on their own line.
+- Reel scripts each under a clear `REEL 1 / 2 / 3` label; captions separated from scripts by a divider.
+- `•` bullets, one per line; generous blank-line spacing between blocks.
+- No brand colours/fonts — a `text/plain` Google Doc can't carry them (brand lives in the design tool).
 
-### Document Setup
-- Page size: US Letter (12240 x 15840 DXA)
-- Margins: 1440 DXA (1 inch)
-- Default font: Arial 11pt
-- Section headers: Heading1, bold, primary brand color
-- Room/reel headers: Heading2, accent color
-- Hook/closing/script boxes: light gray shaded
-- Never use `\n` — separate Paragraph elements only
-
-Save the final .docx to `~/realtor-brain/exports/` (named e.g. `listing-kit-[address-slug].docx`).
+Create the Google Doc in the agent's Drive **`Realtor AI Brain` → `exports`**, named
+`Listing Kit · [Address]`, and tell the agent the location + link.
 
 ---
 

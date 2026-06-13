@@ -7,7 +7,7 @@ description: >
   schools, amenities, restaurants, and local stats automatically, then delivers a hybrid
   YouTube script (word-for-word hook and closing line, structured talking points at each stop,
   natural transition lines between locations) plus 3 short-form video concepts pulled from the
-  tour content. Everything compiled into a single branded .docx.
+  tour content. Everything compiled into a single clean Google Doc.
 
   Trigger on: "neighbourhood tour script", "neighbourhood tour video", "build a tour script",
   "filming a neighbourhood", "drive and talk script", "community tour video", "neighbourhood
@@ -358,9 +358,11 @@ compelling stop — ideally somewhere that shows the neighbourhood's character.
 
 ---
 
-## Phase 5: Compile into .docx
+## Phase 5: Save as a clean Google Doc
 
-**Read the docx skill first** before writing any code.
+**Read `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` first.** Build this as well-structured plain text
+and create it as a Google Doc via the Drive connector — do NOT render a `.docx` (it won't convert in
+Cowork and lands as a broken file).
 
 ### Document Structure
 
@@ -400,25 +402,18 @@ DATA SOURCES
   List of sources used with URLs
 ```
 
-### Formatting Rules
-- Hook and closing line in shaded boxes — visually distinct from talking points
-- Stop cards clearly separated with a divider between each
-- Stats cheat sheet formatted to look like something you'd screenshot on a phone —
-  clean, minimal, all key info visible without scrolling
-- Short-form scripts in shaded boxes like the YouTube scripts
-- Transition lines in italics to distinguish from stop content
-- Brand colors/fonts from `~/realtor-brain/identity/brand-visual.md` — fallback to black/dark gold/white default
+### Formatting (per the doc-formatting standard)
+- Title + meta line ([Neighbourhood] · agent · date · target buyer), then ALL-CAPS section headers each
+  with an em-dash divider above and a blank line below.
+- Hook and closing line set off with a label + dividers above and below (plain text can't shade) so
+  they're clearly word-for-word.
+- Stop cards clearly separated with a divider between each; transition lines on their own line, labelled.
+- Stats cheat sheet kept clean and minimal — all key info in a tight block the agent can screenshot.
+- `•` bullets, one per line; generous blank-line spacing.
+- No brand colours/fonts — a `text/plain` Google Doc can't carry them (brand lives in the design tool).
 
-### Document Setup
-- Page size: US Letter (12240 x 15840 DXA)
-- Margins: 1440 DXA (1 inch)
-- Default font: Arial 11pt
-- Section headers: Heading1, bold, primary brand color
-- Stop headers: Heading2, accent color
-- Script/hook boxes: light gray shaded
-- Never use `\n` — separate Paragraph elements only
-
-Save the final .docx to `~/realtor-brain/exports/` (named e.g. `tour-[neighbourhood]-[city].docx`).
+Create the Google Doc in the agent's Drive **`Realtor AI Brain` → `exports`**, named
+`Tour · [Neighbourhood] · [City]`, and tell the agent the location + link.
 
 ---
 

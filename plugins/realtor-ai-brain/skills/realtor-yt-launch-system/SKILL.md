@@ -3,7 +3,7 @@ name: realtor-yt-launch-system
 description: >
   Realtor YouTube Launch System — takes a YouTube video topic or transcript from a real estate agent
   and generates every written deliverable needed to launch and repurpose the video. Produces a single
-  branded .docx containing: YouTube SEO package (titles, description, tags), two launch emails
+  clean Google Doc containing: YouTube SEO package (titles, description, tags), two launch emails
   (launch-day + 3-day follow-up), 3 short-form Reel/TikTok scripts with captions, platform captions
   for Instagram, TikTok, Facebook, and LinkedIn, and a launch checklist. Designed for real estate
   agents who are beginners — every output is word-for-word ready to use. Reads the agent's Brain
@@ -19,8 +19,8 @@ description: >
 # Realtor YouTube Launch System
 
 One-shot generation engine for real estate agents. When triggered, you produce every written deliverable
-needed to launch a YouTube video AND repurpose it into short-form content — compiled into a single .docx
-the agent can hand directly to a VA or use themselves.
+needed to launch a YouTube video AND repurpose it into short-form content — compiled into a single clean
+Google Doc the agent can hand directly to a VA or use themselves.
 
 This skill is built for beginners. Every output must be word-for-word ready to copy, paste, or read.
 No agent should have to figure anything out after receiving this document.
@@ -36,7 +36,7 @@ the agent for anything already in the Brain:
 - `~/realtor-brain/identity/profile.md` — name, city/market, booking link, social handles, credentials
 - `~/realtor-brain/identity/avatars.md` — ideal client, neighbourhoods, buyer/seller pain points
 - `~/realtor-brain/identity/voice.md` — tone, what they never want to sound like, tagline, signature phrases
-- `~/realtor-brain/identity/brand-visual.md` — colors/fonts for the .docx
+- `~/realtor-brain/identity/brand-visual.md` — brand context (the Doc itself is clean plain text)
 - `~/realtor-brain/memory/content-log.md` — what's already been launched/repurposed, to avoid overlap
 
 **Applying what you find:** apply this context actively across every single deliverable — not just as
@@ -93,8 +93,8 @@ Extract everything you can directly from it. Only ask for what's genuinely missi
 
 Generate deliverables in this exact order. Each section builds on the ones before it.
 
-**Formatting rule for ALL sections:** Every section ends up in a .docx. Format output so that each
-paragraph, bullet, and label is on its own line separated by line breaks. No walls of text.
+**Formatting rule for ALL sections:** Every section ends up in a clean Google Doc. Format output so that
+each paragraph, bullet, and label is on its own line separated by line breaks. No walls of text.
 See Phase 3 for full formatting rules.
 
 ---
@@ -227,72 +227,29 @@ ONGOING
 
 ---
 
-## Phase 3: Compile into .docx
+## Phase 3: Save as a clean Google Doc
 
-After all sections are generated, compile into a single branded .docx.
+After all sections are generated, save them as one clean Google Doc.
 
-**Read the docx skill first** before writing any code — it contains critical formatting rules.
+**Read `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` first.** Build this as well-structured plain text
+and create it as a Google Doc via the Drive connector — do NOT render a `.docx` (it won't convert in
+Cowork and lands as a broken file).
 
-### Content Formatting Rules (Critical)
+### Formatting (per the doc-formatting standard)
+- Title + meta line (video title · agent · date · "YouTube Launch Package"), then ALL-CAPS section
+  headers each with an em-dash divider above and a blank line below.
+- Separate paragraphs with blank lines; `•` bullets one per line; numbered items each on their own line
+  (never inline — e.g. title variations stacked, not run together); checklist items as `— [ ]` on their
+  own line.
+- Script lines each on their own line — never run dialogue together; **bold labels** like `Subject Line:`
+  on their own line.
+- Script/email sections set off with a clear label + dividers above and below (plain text can't shade)
+  so they're visually distinct from the copy.
+- Omit any section that doesn't apply.
+- No brand colours/fonts — a `text/plain` Google Doc can't carry them (brand lives in the design tool).
 
-- **Separate paragraphs** with a blank line — each becomes its own Word paragraph
-- **Bullet items** start with `- ` on their own line
-- **Sub-headers** start with `## ` or `### ` on their own line
-- **Numbered items** start with `1. `, `2. `, etc. each on their own line — NEVER inline
-- **Checklist items** start with `- [ ] ` on their own line
-- **Script lines** each on their own line — never run dialogue together in one paragraph
-- **Bold labels** like `Subject Line:` on their own line
-- **Never use `\n`** for line breaks — use separate Paragraph elements
-
-BAD (numbered items inline):
-```
-Title options: 1. Buying a Home in Calgary 2026 2. First-Time Buyer Guide Calgary 3. How to Buy a Home in Calgary
-```
-
-GOOD (each on its own line):
-```
-### Title Variations
-
-1. Buying a Home in Calgary 2026: What Nobody Tells You
-2. First-Time Buyer Guide: Calgary Real Estate in 2026
-3. How to Buy a Home in Calgary (Step-by-Step for 2026)
-```
-
-### Document Setup
-
-- Page size: US Letter (12240 x 15840 DXA)
-- Margins: 1440 DXA (1 inch) all sides
-- Default font: Arial 11pt
-- Define paragraph styles with exact IDs ("Heading1", "Heading2") with `outlineLevel`
-- Define numbering config with `LevelFormat.BULLET` — never unicode bullet characters
-
-### Formatting Rules
-
-- **Title page:** Video title centered, agent name, date, "YouTube Launch Package"
-- **Section headers:** Heading1, bold, primary brand color (see Brand Colors section), with a colored bottom border
-- **Sub-headers:** Heading2, bold, accent color
-- **Body text:** Arial 11pt, 1.15 line spacing
-- **Script sections:** Use a light gray shaded table or box to visually separate scripts from copy
-- **Bullets/Checklists:** Use proper numbering config — never unicode `•` or `☐`
-- **Page breaks:** Between major sections
-- **Never use unicode dividers** (═, ─) — use paragraph `border.bottom` instead
-- **Conditional sections:** Omit entirely if not applicable
-
-### Brand Colors
-
-**Priority order:**
-1. Pull brand colors/fonts from `~/realtor-brain/identity/brand-visual.md` (if it exists)
-2. If the agent provided colors during intake, use those
-3. If neither exists, fall back to these clean neutral defaults:
-
-Default colors:
-- Black (#111111) for section headers and primary text
-- Dark gold (#B8973A) for sub-headers and accent borders only — used sparingly
-- White (#FFFFFF) for page background
-- Light gray (#F5F5F5) for script boxes and callout areas
-- Medium gray (#888888) for metadata, dates, and secondary text
-
-Save the final .docx to `~/realtor-brain/exports/` (named e.g. `yt-launch-[video-topic-slug].docx`).
+Create the Google Doc in the agent's Drive **`Realtor AI Brain` → `exports`**, named
+`YouTube Launch · [Video Topic]`, and tell the agent the location + link.
 
 ---
 
