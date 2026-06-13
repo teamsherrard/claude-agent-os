@@ -26,8 +26,10 @@ THE OFFER & DISTRIBUTION: the hook · where it lives (video description + pinned
 video's topic — e.g. a "buy-and-sell timeline" guide for the two-mortgage fear. Engineered for HER buyer's
 pain, never a random freebie. The in-video CTA should use the **early warm CTA** style (friendly, value-first;
 see `${CLAUDE_PLUGIN_ROOT}/skills/youtube-script/references/script-framework.md`), not a generic close.
-Match it to the agent's offer/USP/CTA. Save as a **Lead Magnet Map** Google Doc in the video's folder. (No
-visual design — that's the agent's tool.)
+Match it to the agent's offer/USP/CTA. Save as a **Lead Magnet Map** Google Doc in the video's folder, using
+the Lead Magnet Map skeleton in `${CLAUDE_PLUGIN_ROOT}/shared/doc-format.md` and the "resolve, never
+duplicate" rule in `${CLAUDE_PLUGIN_ROOT}/skills/youtube-setup/references/drive-structure.md`. (No visual
+design — that's the agent's tool.)
 
 ## Open question it respects
 Where the opt-in lives (their site/form/CRM) varies — note it from the Brain; if unknown, use a

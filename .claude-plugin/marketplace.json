@@ -21,7 +21,7 @@
     {
       "name": "realtor-youtube-system",
       "source": "./plugins/realtor-youtube-system",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "description": "PLUGIN 3 \u2014 the YouTube System. An always-on YouTube brain: ideation, research, SEO, scripting in the agent's own voice, lead magnets, repurposing, analytics, and coaching. Requires Plugin 1 (the Brain) set up first."
     },
     {

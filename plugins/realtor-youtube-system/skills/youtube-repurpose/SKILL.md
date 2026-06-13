@@ -29,7 +29,9 @@ The video's script (or its key points) + the AI Brain (voice, avatars, CTA, comm
 - Use the agent's real communities and **reuse the same sourced facts** from the video — never re-invent stats.
 
 ## Save
-A single **Repurposing Pack** Google Doc in the video's folder (`Videos/{month}/{video}/`), clearly sectioned.
+A single **Repurposing Pack** Google Doc in the video's folder, built from the Repurposing Pack skeleton in
+`${CLAUDE_PLUGIN_ROOT}/shared/doc-format.md` (heavy `═` bands per channel) and placed per the "resolve, never
+duplicate" rule in `${CLAUDE_PLUGIN_ROOT}/skills/youtube-setup/references/drive-structure.md`.
 
 ## Modes
 On-demand ("repurpose Tuesday's video"). Note: writing only — no video editing or posting.

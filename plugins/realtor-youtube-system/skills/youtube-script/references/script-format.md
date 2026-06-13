@@ -12,6 +12,11 @@
 - When unsure, speak in ranges or principles, not invented precision. The agent must never say something false.
 
 ## Long-form structure (clean sections + chapters)
+> **When you SAVE the script, render it in the house band style** — CAPS section headers inside `─` divider
+> bands, `═` heavy bands for Chapters + the Short, cues on their own indented lines (`>> ON SCREEN:`,
+> `[PAUSE]`, `FACT:`), and a sourcing/compliance footer. Exact look + skeleton:
+> `${CLAUDE_PLUGIN_ROOT}/shared/doc-format.md`. The outline below is the content ORDER; doc-format.md is how
+> it looks on the page.
 ```
 TITLE: {final title}
 Runtime: ~{N} min  ·  target ~{N×140} words  ·  Audience: {avatar}

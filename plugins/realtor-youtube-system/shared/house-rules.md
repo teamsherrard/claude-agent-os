@@ -21,13 +21,24 @@ Scrub every script, title, description, post, and lead magnet BEFORE delivering:
   (e.g., video descriptions).
 - If something is legally risky, rewrite it or flag it — never ship it.
 
-## 3. Formatting (avoid ugly output)
-- Tabular/operational data → never dump as a plain-text Doc. (And per product decision, the system
-  doesn't create tracker spreadsheets at all — it delivers in chat/briefing and reads state live.)
-- Documents (scripts, SEO packages, lead-magnet maps, repurposing packs) → clean Google Docs with clear
-  section labels and generous spacing. Readable first.
-- Branded, client-facing DESIGN (the finished lead-magnet PDF) is the agent's design tool's job — we
-  produce the MAP/copy, not the visual.
+## 3. Formatting (clean, structured docs — NEVER a flat wall)
+Every saved doc is a native Google Doc created from text (`contentMimeType: text/plain` → Doc). Plain text
+is the ONLY format that reliably lands as a clean, editable Google Doc — `.docx`/HTML uploads do not convert
+and can corrupt — so the quality comes entirely from how we STRUCTURE the text. Never write an unbroken wall.
+Every doc MUST have:
+- A clear **title line** at the top, then a one-line meta line (e.g. `Runtime ~8 min · Calgary buyers · Jun 13`).
+- **Section headers** that stand out — ALL-CAPS with a label/timestamp, set off by an em-dash divider line,
+  e.g. `──────── HOOK · 0:00 ────────`.
+- **Generous spacing** — a blank line between every section and around stage cues. Whitespace IS the format.
+- **Stage cues / on-screen notes on their own lines**, clearly marked: `>> ON SCREEN: ...`, `[PAUSE]`, `FACT: ...`.
+- **Bullets** as real list lines (`•` or `—`); **chapters/timestamps** laid out one per line.
+- Build hierarchy from line breaks, CAPS, dividers, and symbols (`•  —  >>  ·`) — NOT bold/colour (text
+  import can't carry them) and NOT indentation (it can collapse on import).
+Tabular/operational data → never a plain-text dump; and the system creates no tracker spreadsheets at all
+(it delivers in chat/briefing and reads state live). Branded, client-facing DESIGN (the finished lead-magnet
+PDF) is the agent's design tool's job — we produce the MAP/copy, not the visual. Truly branded documents
+(real headings/colour) would need the team's later Google-Docs integration — a backend upgrade, not V1.
+The exact house style + a fill-in skeleton for every doc type live in `${CLAUDE_PLUGIN_ROOT}/shared/doc-format.md` — follow it.
 
 ## 4. State (the system is essentially stateless)
 - Don't ask the agent to maintain trackers. Read state live: Videos folders (what's made), their YouTube

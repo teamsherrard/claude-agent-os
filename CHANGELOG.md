@@ -2,6 +2,21 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.23.0] — 2026-06-13
+
+### YouTube System (Plugin 3) → v0.4.0 — structured Google Doc output + organized Drive
+- **`shared/doc-format.md`** (new) — the document house style + a fill-in skeleton for every saved doc
+  (Script, SEO Package, Lead Magnet Map, Repurposing Pack). Cowork's Drive connector only converts
+  `text/plain` into a clean Google Doc (`.docx`/HTML/Markdown land as broken or raw files — verified), so
+  every doc is built as well-structured plain text: title + meta line, CAPS section bands with em-dash
+  dividers, generous spacing, cues on their own lines. Clean and scannable, never a wall.
+- **Organized Drive output** — `youtube-setup/references/drive-structure.md` now defines an exact naming
+  convention (`{Agent} — YouTube System / Videos / YYYY-MM · Month / YYYY-MM-DD · Title /`), nests the
+  workspace inside the agent's master Drive, and a "resolve, never duplicate" save rule (find-or-create the
+  right folder; never scatter copies). Wired into setup + make-video.
+- Formatting + save rules wired into house-rules §3 and the script / SEO / leads / repurpose skills.
+- (Mirrors the Short-Form System output standard from 0.21.0 and the Brain's doc standard from 0.22.0.)
+
 ## [0.22.0] — 2026-06-13
 
 ### Brain (Plugin 1) → v0.17.0 — deliverables save as clean Google Docs + housekeeping

@@ -20,7 +20,20 @@ they're redundant with data the system can read live.)
 └── Setup/
       └── YouTube Layer                  (Doc — channel, goal, cadence, pillars, voice; references AI Brain)
 ```
-No spreadsheets. Two folders.
+No spreadsheets. Two folders. **This workspace lives INSIDE the agent's existing master Drive (the one
+their AI Brain / realtor system already uses) — never an orphan folder elsewhere.** Record the top
+folder's ID in the YouTube Layer so every skill saves to the same place.
+
+## Naming convention (use these EXACT names — predictable, sortable, never ad-hoc)
+- **Top workspace:** `{Agent Name} — YouTube System`
+- **Month bucket:** `{YYYY-MM} · {Month}`  →  e.g. `2026-06 · June`
+- **Video folder:** `{YYYY-MM-DD} · {Video Title}`  →  e.g. `2026-06-13 · BoC Holds Rates`
+  (date = film/created date; Title Case; strip emojis and slashes from the title)
+- **Docs inside a video folder — FIXED names:** `Script` · `SEO Package` · `Lead Magnet Map` · `Repurposing Pack`
+- **Setup doc:** `YouTube Layer`
+- A **monthly market report** is just a normal video (the agent records it): a `{date} · {Month} Market Update`
+  video folder with its own `Script` + `SEO Package`.
+Dates are ALWAYS `YYYY-MM-DD` so folders sort chronologically. Same name, same spot, every time.
 
 ## Where state lives (the system is essentially stateless)
 Never ask the realtor to maintain a tracker. Derive everything live:
@@ -39,11 +52,32 @@ Finished content lands in the Videos folders. There is nothing to maintain.
 
 ## How to create folders/docs (connector notes)
 - Folder: create_file with `mimeType: application/vnd.google-apps.folder`; capture the `id` for `parentId`.
-- Doc:    create_file with `contentMimeType: text/plain` + `textContent`.
+- Doc:    create_file with `contentMimeType: text/plain` + `textContent` → lands as a clean native Google
+  Doc. (ONLY text/plain converts; `.docx`/HTML uploads stay as raw files and can corrupt. So make it look
+  good by STRUCTURING the text per house-rules §3: title + meta line, ALL-CAPS section headers with em-dash
+  dividers, blank-line spacing, cues on their own lines, `•`/`—` bullets. Never save an unstructured wall.)
 - Create a per-video folder ONLY when that video is being made. Don't pre-create empty folders.
 
+## Saving content — resolve, never duplicate (this is what keeps Drive organized)
+The system is stateless, so it RE-FINDS the structure every time instead of remembering it:
+1. From the YouTube Layer, get the top-workspace folder ID (the anchor).
+2. Find the month bucket inside `Videos/` by name; if missing, create it.
+3. Find this video's folder by name inside the month; if missing, create it.
+4. Save the doc into that folder under its FIXED name. Before creating, check the folder for a doc of
+   that name — if it already exists (a re-run), save the new one as `{Name} — v2` (the connector can't
+   overwrite) and tell the agent, so we never silently scatter duplicates.
+5. Always confirm the location in plain words: *"Saved in June ▸ BoC Holds Rates ▸ Script."*
+Every video's docs live together in that one video folder — nothing loose, nothing orphaned.
+
+> Only CONTENT files are saved to Drive (Script, SEO Package, Lead Magnet Map, Repurposing Pack, YouTube
+> Layer, market-report script). Live analysis — research brief, idea list, analytics read — stays in chat
+> by design; it's regenerated fresh, never stored. That's the stateless model, not a gap.
+
 ## At setup
-1. Create the top folder, a `Videos/` folder, and a `Setup/` folder.
+1. Locate the agent's existing master Drive workspace (their AI Brain / realtor-system folder) and create
+   `{Agent Name} — YouTube System` INSIDE it (only fall back to Drive root if no master workspace exists
+   yet), then a `Videos/` and a `Setup/` folder. **Record the top-workspace folder ID in the YouTube
+   Layer** — it's the anchor every other skill uses to save in the right place.
 2. Write the **YouTube Layer** doc into Setup (channel, goal, cadence, pillars derived from the AI
    Brain, voice notes).
 3. Do NOT create any tracker spreadsheets.

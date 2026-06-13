@@ -62,7 +62,7 @@ realtor-youtube-system/
 │   ├── seo-knowledge-base.md      #   2026 SEO: intent, titles, tags, keyword library
 │   └── idea-templates.md          #   plug-and-play video idea templates
 ├── skills/                        # ★ = the two realtor-facing workflows; the rest are the engine they call
-│   ├── youtube-ideation/          # ★ Workflow 1 — Ideation (the entry point; includes the idea engine)
+│   ├── youtube-ideation/          # ★ Workflow 1 — Ideation (the entry point; ranks + packages ideas)
 │   ├── youtube-make-video/        # ★ Workflow 2 — Make This Video (one chat = one video)
 │   ├── youtube-setup/             # onboarding: reads AI Brain, captures voice, provisions Drive
 │   ├── youtube-research/          # Research Engine (market · news · trends — fresh at ask-time)

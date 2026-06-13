@@ -12,8 +12,12 @@ all at once. Everything saves to this video's folder. Apply `${CLAUDE_PLUGIN_ROO
 > a lead magnet, just repurposing — let them jump straight to that skill; don't force the whole sequence.
 
 ## Step 0 — Set up the video
-Confirm the idea/title. Create the video's folder: `Videos/{YYYY-MM · Month}/{YYYY-MM-DD · Title}/`.
-Everything produced in this chat saves there. Suggest the agent name this chat after the video.
+Confirm the idea/title. Then resolve the save location per
+`${CLAUDE_PLUGIN_ROOT}/skills/youtube-setup/references/drive-structure.md` ("Saving content — resolve,
+never duplicate"): from the YouTube Layer get the workspace anchor, find-or-create the month bucket
+`{YYYY-MM · Month}`, then find-or-create this video's folder `{YYYY-MM-DD · Title}`. EVERYTHING in this
+chat saves there under its fixed name (Script · SEO Package · Lead Magnet Map · Repurposing Pack). Confirm
+the spot in plain words and suggest the agent name this chat after the video.
 
 ## Step 1 — Lock the packaging (quick, before the script)
 Confirm or refine the final **Title**, the **Hook**, and **3 short thumbnail text options** (pulled from

@@ -65,8 +65,11 @@ Guide the agent to connect each, with a one-line "why":
 If a connector isn't available, tell them how to add it.
 
 ## Step 5 — Provision the Drive workspace (minimal)
-Using the Google Drive connector, create the simple structure in `references/drive-structure.md`: the
-top folder, a `Videos/` folder, and a `Setup/` folder. **Do NOT create tracker spreadsheets** — no
+Using the Google Drive connector, create the structure in `references/drive-structure.md`: the top
+workspace **nested inside the agent's existing master Drive** (never an orphan folder), plus a `Videos/`
+and a `Setup/` folder — following the exact naming convention there. **Record the top-workspace folder ID
+into the YouTube Layer** so every later skill saves to the same organized place. **Do NOT create tracker
+spreadsheets** — no
 Idea Bank, Content Map, Content Calendar, Keyword Map, or Performance Log. The system is briefing-driven
 and reads state live. Generate the first set of ranked video ideas (from the AI Brain + a quick city/
 niche scan) and **present them to the agent directly in chat** — do not store them as a sheet.

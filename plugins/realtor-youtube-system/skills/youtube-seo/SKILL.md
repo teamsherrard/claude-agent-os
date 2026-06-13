@@ -45,8 +45,10 @@ Make the video rank — on YouTube search and Google. Apply `${CLAUDE_PLUGIN_ROO
    this package should rank for her. Justify it — never a generic tag dump.
 
 ## Step 3 — Save
-Save as an **SEO Package** Google Doc inside the video's folder (`Videos/{month}/{video}/`). Clean,
-labeled sections.
+Save as an **SEO Package** Google Doc inside the video's folder, using the SEO Package skeleton in
+`${CLAUDE_PLUGIN_ROOT}/shared/doc-format.md` (CAPS section bands, clean labelled blocks), and place it per
+the "resolve, never duplicate" rule in
+`${CLAUDE_PLUGIN_ROOT}/skills/youtube-setup/references/drive-structure.md`.
 
 ## Modes
 On-demand, and bundled into the weekly briefing for the #1 idea so it's publish-ready.
