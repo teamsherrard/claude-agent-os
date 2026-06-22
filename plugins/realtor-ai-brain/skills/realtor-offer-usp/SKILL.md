@@ -25,6 +25,10 @@ Takes under 10 minutes. Produces two documents — one for prospects, one for Cl
 
 ## Before You Start
 
+*Follow `${CLAUDE_PLUGIN_ROOT}/shared/ask-once-default.md` — if the agent is unsure, propose a strong
+offer/USP draft from their Brain and let them react; honour "skip" / "use defaults". Defaults stay
+full-quality and specific, never thin.*
+
 ### Step 1 — Load the Brain
 
 Before asking anything, **read `~/realtor-brain/brain.md`** and the identity files Phase 1 (Brand

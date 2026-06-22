@@ -18,6 +18,7 @@ Sets a simple, durable content plan. Built so a brand-new agent in week one is n
 ~3–5 minutes.
 
 ## The golden rule for this skill
+*(This phase is the model the whole Brain follows — see `${CLAUDE_PLUGIN_ROOT}/shared/ask-once-default.md`.)*
 - **Ask each question first.** If the agent gives a real answer, **use it** — never overwrite their
   input with a guess (that wastes their time and risks being wrong).
 - **Generate only when they're unsure** ("I don't know," "you pick," "not sure"). *Then* propose a draft

@@ -45,7 +45,10 @@ agent shares.
 
 ## Before You Start
 
-Read `references/interview-guide.md` — this contains the full question bank, follow-up
+Follow `${CLAUDE_PLUGIN_ROOT}/shared/ask-once-default.md`: if the agent is unsure on any question, offer
+a sensible default drawn from what they've already told you and let them confirm; honour "skip" / "use
+defaults" — never let them stall on a blank. (Keep the interview's depth — defaults are full-quality, not
+shortcuts.) Then read `references/interview-guide.md` — this contains the full question bank, follow-up
 prompts, and guidance on how to handle common agent responses.
 
 ---

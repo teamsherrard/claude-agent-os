@@ -17,6 +17,9 @@ description: >
 Two quick, high-leverage additions to the Brain: **how the agent actually writes** and **proof they
 get results.** Light — about 5 minutes. Mostly paste-and-go.
 
+*Follow `${CLAUDE_PLUGIN_ROOT}/shared/ask-once-default.md` — writing samples + proof are optional; if the
+agent has none handy, let them "skip" and add later. Never present this as homework.*
+
 ## Step 1 — Load the Brain
 Read `~/realtor-brain/brain.md`, plus `identity/profile.md`, `identity/voice.md`, `identity/offer.md`.
 You already know their described voice and offer — this phase adds *real examples* and *proof*. If

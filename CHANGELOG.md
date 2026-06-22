@@ -2,6 +2,25 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.27.0] — 2026-06-13
+
+### Brain (Plugin 1) -> v0.18.0 — setup made far less overwhelming (from live-test feedback)
+- **New `shared/ask-once-default.md`** — the Brain-wide setup principle: ask once; use a real answer
+  verbatim; the moment the agent is unsure, generate a full-quality default from their Brain; honour
+  "use defaults" / "skip" / "do this later" at any point. **Quality guardrail (non-negotiable): a
+  default is never a thin stub — accepting defaults yields the same detailed, strategic file as
+  answering every question.** Wired into every phase skill.
+- **Operations (Phase 6)** — opens with a one-shot accept (proven booking rules + follow-up cadence),
+  pre-fills the email signature from `profile.md`, every field default-able. ~3 min instead of ~15.
+- **Vendors** — genuinely optional ("add as you build your network"); never homework; friendly
+  placeholder on skip.
+- **Compliance (Phase 7)** — reassurance + auto-defaults: auto-infers the regulator from market,
+  pre-accepts the standard claims-to-avoid list, skip-and-flag a missing disclaimer / license #
+  (never invents one). ~2 min.
+- **Restructured first-run** — **Express is the recommended default**; **Operations + Vendors pulled
+  OUT of first-run**, run just before "Set up my AI Admin." Full = Phases 1-5 + 7. Cuts first
+  onboarding from ~75 min toward ~30.
+
 ## [0.26.0] — 2026-06-13
 
 ### YouTube System (Plugin 3) → v0.5.0 — NEW: the YouTube Game Plan (the flagship first deliverable)

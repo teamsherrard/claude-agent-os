@@ -20,6 +20,9 @@ their logo, brand kit, and templates.
 
 **This skill never designs, renders, or produces any visual or file. Direction only.**
 
+*Follow `${CLAUDE_PLUGIN_ROOT}/shared/ask-once-default.md` — propose 2–3 directions when the agent's
+unsure (this skill already does), and honour "skip" / "use defaults" with a safe, on-brand default.*
+
 ## Step 1 — Load the Brain
 Read `~/realtor-brain/brain.md`, plus `identity/voice.md`, `identity/avatars.md`, `identity/profile.md`.
 Their voice (calm vs bold), avatars, and niche should shape the directions you propose. Note the

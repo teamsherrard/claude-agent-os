@@ -83,20 +83,24 @@ Drive with a fresh empty one** at the finalize push. So:
 
 Say something like:
 
-> Welcome — I'm setting up your AI Brain. This is a one-time thing. I'll ask you about your business,
-> then build a "brain" that every tool you use after this already knows. We save as we go, so you can
-> pause anytime.
+> Welcome — I'm setting up your AI Brain. One time, and from then on every tool already knows you. We
+> save as we go, so you can pause anytime.
 >
-> Two options:
-> • **Express (~30 min)** — the essentials: who you are, who you serve, what you offer, how your brand
->   looks. Enough to start creating immediately.
-> • **Full (~60–75 min)** — all of the above PLUS your real writing samples + proof, your content plan,
->   how you operate (for your AI admin), and your compliance rules.
+> I'd recommend **Express (~30 min)** — the essentials: who you are, who you serve, what you offer, and
+> your brand direction. That's enough for every content tool to start working for you *today*. You can
+> deepen it later, one quick piece at a time.
 >
-> We can always do Express now and deepen later. Which would you like? Either way, I'll connect your
-> email and calendar at the end. Ready?
+> Or go **Full (~45 min)** — Express PLUS your real writing samples + proof and your content plan. *(Two
+> more pieces — how you operate and your compliance rules — we set up later, right when you need them, so
+> we don't overload you now.)*
+>
+> Either way I'll connect your Google Drive, email, and calendar at the end. **Express to get creating
+> today, or Full to go deeper now?**
 
-Remember their choice — **Express** runs Phases 1–3 then skips to connectors; **Full** runs Phases 1–7.
+Default to **Express** if they're unsure or just say "get started." Remember their choice — **Express**
+runs Phases 1–3 then connectors; **Full** runs Phases 1–5 + 7. **Operations (Phase 6) and Vendors are NOT
+part of first-run setup** — they run just before "Set up my AI Admin," the only thing that needs them.
+This keeps onboarding short and stops new agents stalling on decisions they haven't made yet.
 
 Then **scaffold the folder structure now** — copy the bundled template
 `references/brain-template/realtor-brain/` to `~/realtor-brain/` (this gives them every subfolder, the
@@ -145,23 +149,24 @@ re-run "set my brand direction" anytime.)*
 
 ---
 
-## Step 5 — Phases 4–7: Deepen the Brain *(Full only — skipped in Express)*
+## Step 5 — Deepen the Brain *(Full only — skipped in Express)*
 
-These four make the brain dramatically richer. Run each as its own skill, in order, returning here
-after each and checkpointing. The agent can stop after any one and resume later.
+Run these as their own skills, in order, checkpointing after each. The agent can stop after any one and
+resume later — every one **defaults gracefully** if they're unsure (per `shared/ask-once-default.md`).
 
 - **Phase 4 — Voice & Proof** (`realtor-voice-proof`): real writing samples + testimonials/stats →
-  `identity/voice-samples.md`, `proof.md`. *(~5 min — the biggest lever on content quality.)*
-- **Phase 5 — Content Engine** (`realtor-content-engine`): a simple content plan — pillars, platforms,
-  cadence, series, video default → `identity/content-engine.md`. Asks just 2 things (platforms +
-  capacity); generates the rest *only if the agent's unsure*. *(~3–5 min.)*
-- **Phase 6 — Operations** (`realtor-operations`): hours, signature, booking rules, vendor network,
-  goals → `identity/operations.md`, `vendors.md`, `strategy.md`. *(~15 min — the AI Admin foundation.)*
-- **Phase 7 — Compliance** (`realtor-compliance`): disclaimers, license display, claims to avoid →
-  `identity/compliance.md`. *(~5 min — protects the agent.)*
+  `identity/voice-samples.md`, `proof.md`. *(~5 min — biggest lever on content quality; fully skippable.)*
+- **Phase 5 — Content Engine** (`realtor-content-engine`): a simple content plan → `identity/content-engine.md`.
+  Asks just 2 things; generates the rest if the agent's unsure. *(~3–5 min.)*
+- **Phase 7 — Compliance** (`realtor-compliance`): brokerage disclaimer, license display, claims to avoid →
+  `identity/compliance.md`. *(~2 min — mostly confirming safe defaults.)*
 
-In Express, tell the agent they can run any of these anytime ("add my writing samples", "set up my
-content engine", "set up my operations", "set up my compliance").
+**Operations (Phase 6) + Vendors are deliberately NOT here** — they're only needed by the AI Admin, so
+they run just before **"Set up my AI Admin"** (mostly one-click defaults, ~3 min). Leaving them out of
+first-run keeps onboarding short.
+
+Tell the agent they can deepen anytime — "add my writing samples", "set up my content engine", "set up my
+compliance" — and "set up my operations" when they're ready for their AI Admin.
 
 ---
 
@@ -208,7 +213,8 @@ agent connect it before finishing. Set their **timezone** and pull the **default
 > market, your voice, or your offer again.
 >
 > Try these next:
-> • "Set up my AI Admin" — your AI admin (uses the email + calendar you just connected)
+> • "Set up my AI Admin" — your AI assistant (uses the email + calendar you just connected). It takes
+>   ~3 quick minutes first to learn how you operate — hours, booking rules — mostly just confirming defaults.
 > • "Run my market update" — your first piece of content
 > • "Create content for my new listing" — when you have a listing to launch
 > • Have the Realtor YouTube System installed? Say "set up my YouTube system" — it reads this Brain,
