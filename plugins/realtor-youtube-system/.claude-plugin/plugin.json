@@ -1,8 +1,8 @@
 {
   "name": "realtor-youtube-system",
   "displayName": "Realtor YouTube System (Plugin 3)",
-  "version": "0.4.0",
-  "description": "An always-on YouTube brain for real estate agents \u2014 ideation, research, SEO, scripting in the agent's own voice, lead magnets, repurposing, analytics, and coaching. Handles everything around the camera; never films, edits, or designs.",
+  "version": "0.5.0",
+  "description": "An always-on YouTube brain for real estate agents \u2014 starts with a complete YouTube Game Plan (built on Mike Sherrard's frameworks), then ideation, research, SEO, scripting in the agent's own voice, lead magnets, repurposing, analytics, and coaching. Handles everything around the camera; never films, edits, or designs.",
   "author": {
     "name": "Mike Sherrard"
   },

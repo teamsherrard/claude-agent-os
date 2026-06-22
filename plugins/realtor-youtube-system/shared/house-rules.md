@@ -67,3 +67,15 @@ Every output must be something a free chatbot couldn't produce:
 - **Justify recommendations with a real signal** — a trend, a sourced stat, a competitor outlier, a coverage gap.
 - **Stay honest** — verified facts only; flag what you can't confirm; never fabricate numbers or search volumes.
 If an output could have come from ChatGPT with no knowledge of *this* agent, it isn't good enough — redo it.
+
+## 8. The credibility stamp (flagship strategy deliverables)
+The flagship strategy deliverables — the **YouTube Game Plan** and the **Monthly Market Report** — carry a
+credibility stamp, so the agent feels the expertise behind the system (something they couldn't get by
+prompting Claude themselves):
+- A **byline under the title:** `Powered by Mike Sherrard's frameworks & strategies`
+- The **same line as the final footer credit.**
+
+Placement rule: the stamp is the system's credit to the AGENT on their strategy doc. It must **NEVER** sit
+inside copy the agent publishes to their own audience — a video title, description, script line, or social
+post. Keep it as a separate byline/footer only. (Working docs like scripts and SEO packages may carry it as
+a plain bottom-of-doc footer credit — never inside a copy block the agent pastes out.)

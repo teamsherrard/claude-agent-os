@@ -21,8 +21,8 @@
     {
       "name": "realtor-youtube-system",
       "source": "./plugins/realtor-youtube-system",
-      "version": "0.4.0",
-      "description": "PLUGIN 3 \u2014 the YouTube System. An always-on YouTube brain: ideation, research, SEO, scripting in the agent's own voice, lead magnets, repurposing, analytics, and coaching. Requires Plugin 1 (the Brain) set up first."
+      "version": "0.5.0",
+      "description": "PLUGIN 3 \u2014 the YouTube System. Starts with a complete YouTube Game Plan (built on Mike Sherrard's frameworks) \u2014 channel audit, 3 high-intent pillars, ~50 exact titles, goal-math, and a 90-day plan \u2014 then ideation, research, SEO, scripting in the agent's own voice, lead magnets, repurposing, analytics, and coaching. Requires Plugin 1 (the Brain) set up first."
     },
     {
       "name": "realtor-shortform-system",

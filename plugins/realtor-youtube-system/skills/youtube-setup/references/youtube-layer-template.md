@@ -31,8 +31,9 @@ Listed only so you know what's already available. Source mapping: see `ai-brain-
 ## Part C — Generated at setup (NOT stored as spreadsheets)
 - **Content pillars** — 4–5, derived from the AI Brain's niche + avatars, confirmed with the agent, and
   stored here in the YouTube Layer. They keep idea-generation strategic — invisibly. (No Content Map file.)
-- **First ranked ideas** — generated from a quick city + niche scan and delivered to the agent directly
-  (chat / first briefing). NOT saved as an Idea Bank sheet — the system regenerates ideas live each week.
+- **The YouTube Game Plan** — the agent's first deliverable, built at setup (audit + 3 pillars + exact
+  titles + goal-math + 90-day calendar) and saved as a Doc at the workspace root. Ideas are regenerated live
+  thereafter — never an Idea Bank sheet.
 - **CTA library** — 3–5 CTA variations generated from the agent's offer + lead magnets, stored here, so every
   video doesn't repeat the identical close. The writing skills (SEO / Script / Lead / Repurpose) rotate through them.
 

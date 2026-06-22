@@ -1,13 +1,13 @@
 ---
 name: youtube-setup
-description: One-time onboarding for the Realtor YouTube System. READS everything from the agent's existing Realtor AI Brain (identity, market, niche, avatars, offer, voice) and only captures what's genuinely YouTube-specific — channel, goals, posting cadence — never re-asking what the AI Brain already knows. Then connects Google and provisions a clean Google Drive workspace (Videos + Setup), delivering the agent's first ranked ideas in chat — no YouTube connection needed (V1 analytics come from their YouTube Studio export). Use when a real estate agent wants to set up / build / start / onboard their YouTube system or connect their channel. Triggers on "set up my YouTube system", "build my YouTube system", "start my YouTube system", "onboard me", "connect my YouTube channel".
+description: One-time onboarding for the Realtor YouTube System. READS everything from the agent's existing Realtor AI Brain (identity, market, niche, avatars, offer, voice) and only captures what's genuinely YouTube-specific — channel, goals, posting cadence — never re-asking what the AI Brain already knows. Then connects Google, provisions a clean Google Drive workspace (Videos + Setup), and delivers the agent's full YouTube Game Plan (built on Mike Sherrard's frameworks) as their first deliverable — no YouTube connection needed (V1 analytics come from their YouTube Studio export). Use when a real estate agent wants to set up / build / start / onboard their YouTube system or connect their channel. Triggers on "set up my YouTube system", "build my YouTube system", "start my YouTube system", "onboard me", "connect my YouTube channel".
 ---
 
 # Realtor YouTube System — Setup
 
 One-time onboarding that stands up the agent's YouTube System as a **layer on top of their existing
 AI Brain**. By the end the agent has: a YouTube Layer linked to their AI Brain, connected tools, a clean Google
-Drive workspace (Videos + Setup), and their first batch of ranked ideas in chat.
+Drive workspace (Videos + Setup), and their full **YouTube Game Plan** — the first epic deliverable.
 
 ## ⭐ THE #1 RULE: ONE BRAIN, NEVER TWO
 The agent's **identity, market, niche, avatars, offer, and voice already live in the shared Realtor
@@ -43,7 +43,10 @@ Set the tone that this will be quick because you already know them:
 ## Step 3 — Capture ONLY the YouTube layer
 Ask only for what's YouTube-specific and not already in the AI Brain (see `youtube-layer-template.md`):
 - **Channel:** YouTube channel URL (or "none yet"); if it exists, note video count + best/worst performers.
-- **YouTube goals:** their 12-month subscriber / lead target *for YouTube*.
+- **YouTube goal (a concrete target):** their 12-month YouTube target — a real number if they have one
+  (e.g. "1,000 subscribers," "10 leads a month") and by when. (Their underlying *business* goal — deals/year,
+  income — is read live from the Brain's `strategy.md` for the Game Plan's goal-math; only capture the
+  YouTube-specific target here.)
 - **Cadence:** the realistic posting commitment + filming time they can give.
 - **Competitor channels:** 3–7 local/niche YouTube channels to track (feeds the Outlier engine) — only if
   the AI Brain doesn't already name them.
@@ -71,8 +74,8 @@ and a `Setup/` folder — following the exact naming convention there. **Record 
 into the YouTube Layer** so every later skill saves to the same organized place. **Do NOT create tracker
 spreadsheets** — no
 Idea Bank, Content Map, Content Calendar, Keyword Map, or Performance Log. The system is briefing-driven
-and reads state live. Generate the first set of ranked video ideas (from the AI Brain + a quick city/
-niche scan) and **present them to the agent directly in chat** — do not store them as a sheet.
+and reads state live. (The agent's first deliverable — their full YouTube Game Plan, which includes their
+pillars + a starter slate of ideas — is built next, in Step 7.)
 
 ## Step 6 — Save the YouTube Layer (a thin file, not a brain copy)
 Save a small **YouTube Layer** that stores ONLY channel, goals, cadence, pillars, and any optional
@@ -80,9 +83,16 @@ voice refinement — and that *references* the AI Brain for everything else. Mir
 the "YouTube Layer" Doc in their folder. The AI Brain stays the single source of truth; when it
 updates, the YouTube System reflects it automatically with no re-onboarding.
 
-## Step 7 — Confirm & hand off
-Share the Drive folder link, summarize what was created, and point them to "what should I film this
-week?" or their first Monday Briefing.
+## Step 7 — Deliver the YouTube Game Plan (the first epic win)
+This is the moment that makes setup feel worth it. Immediately build the agent's **YouTube Game Plan** by
+running `${CLAUDE_PLUGIN_ROOT}/skills/youtube-gameplan/SKILL.md`: their channel audit (scaled to however many
+videos they have), 3 high-intent pillars, ~50 exact ready-to-film titles, the goal-math that ties it to
+their business goal, and a 90-day plan — in one premium Doc stamped "Powered by Mike Sherrard's frameworks,"
+saved to their workspace. Share the Drive link, then hand off:
+> "Open your Game Plan — it's your whole channel mapped out. Then pick any title from Pillar 1 and say
+> 'make this video,' and I'll script it, optimize it, and the rest."
+
+This is the system's "wow" — lead with it, don't bury it.
 
 ---
 
@@ -92,5 +102,5 @@ week?" or their first Monday Briefing.
 - [ ] Voice inherited from AI Brain (optionally refined with transcripts)
 - [ ] Google connected (Drive/Docs, Calendar; Gmail optional) — no YouTube connection needed (V1 uses their Studio export)
 - [ ] Drive set up (Videos + Setup only — NO tracker spreadsheets)
-- [ ] First ranked ideas generated and delivered to the agent in chat (not stored as a sheet)
+- [ ] **YouTube Game Plan** built (audit + 3 pillars + exact titles + goal-math + 90-day calendar) and saved to the workspace
 - [ ] Folder link shared

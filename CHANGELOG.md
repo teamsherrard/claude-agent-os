@@ -2,6 +2,25 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.26.0] — 2026-06-13
+
+### YouTube System (Plugin 3) → v0.5.0 — NEW: the YouTube Game Plan (the flagship first deliverable)
+- **New skill `youtube-gameplan`**, built on **Mike Sherrard's frameworks**: an honest channel audit, 3
+  high-intent content pillars, ~15–20 EXACT search-optimized titles per pillar (annotated by search intent +
+  lead type, ordered broad→niche), the four strategic shifts, the 4-part video structure, a 90-day calendar,
+  and a success-metrics block — assembled into one premium Google Doc.
+- **Scales to any experience level** — full audit for a 100-video veteran, lighter for ~10, minimal for 1–2,
+  a pure launch plan for a brand-new/empty channel. Channel data is mostly public (URL research); deeper
+  watch-time/CTR via an optional screenshot or CSV export. No "connect YouTube" step required.
+- **Goal-math (the confidence engine)** — reverse-engineers the agent's business goal (from the Brain's
+  `strategy.md`) into the content plan: stated assumptions, framed as a credible path — never a guarantee.
+- **Orchestrates the existing engines** (Analytics, Outliers, Research, Ideation, Script framework) rather
+  than reinventing them.
+- **Credibility stamp** — flagship strategy docs (Game Plan + Market Report) now carry "Powered by Mike
+  Sherrard's frameworks & strategies" (house rules §8) as a byline + footer, never inside published copy.
+- **Setup now delivers the Game Plan as the first deliverable** (replacing "first ranked ideas") and captures
+  a concrete 12-month YouTube target; the business goal is read live from the Brain.
+
 ## [0.25.0] — 2026-06-13
 
 ### Lead Capture System (Plugin 5) → v0.2.0 — brand-led magnets, not just single-audience
