@@ -15,7 +15,7 @@ Read the AI Brain + YouTube Layer for:
 - Country (US vs Canada) → picks the right data sources
 - Niche + **price band** (only research relevant segments)
 - Avatars — their questions, fears, and where they're moving from
-- Content pillars
+- The **active Game Plan pillars + goal** (from the YouTube Layer) — scope research to advance those (house rules #9)
 Research is ALWAYS scoped to this agent. Never return generic national filler.
 
 ## Step 2 — Gather across three lanes

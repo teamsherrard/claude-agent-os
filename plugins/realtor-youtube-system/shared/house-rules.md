@@ -79,3 +79,16 @@ Placement rule: the stamp is the system's credit to the AGENT on their strategy 
 inside copy the agent publishes to their own audience — a video title, description, script line, or social
 post. Keep it as a separate byline/footer only. (Working docs like scripts and SEO packages may carry it as
 a plain bottom-of-doc footer credit — never inside a copy block the agent pastes out.)
+
+## 9. Everything aligns to the Game Plan (no random advice)
+The agent's **YouTube Game Plan** + their **AI Brain** are the two sources of truth for strategy. Every
+recommendation — video topics, market research, scripts, SEO, competitor scans, the calendar, coaching —
+must advance the agent's **active content pillars, goal, and cadence** from the Game Plan. Never hand out
+generic, one-off advice that drifts from their plan.
+- **Read the active plan first:** the pillars + goal + cadence live in the **YouTube Layer**; the full title
+  backlog + 90-day calendar live in the **YouTube Game Plan** Doc at the workspace root — open it when you
+  need that detail.
+- **Off-plan is allowed, but tied back:** if the agent asks for something off-plan, or a strong timely signal
+  appears, do it — then connect it to a pillar, or offer to fold it into the plan / refresh the plan.
+- If no Game Plan exists yet, build it first (`youtube-gameplan`) — it's the strategy everything else follows.
+The Game Plan is the channel's operating strategy. Keep everything coherent with it + the Brain.

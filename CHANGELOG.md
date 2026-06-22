@@ -2,6 +2,21 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.28.0] — 2026-06-13
+
+### YouTube System (Plugin 3) → v0.6.0 — the Game Plan becomes the channel's operating strategy
+- **Everything now aligns to the Game Plan** (new house rules §9). Video topics, market research, scripts,
+  SEO, competitor scans, the calendar, and coaching all read the agent's active pillars + goal + cadence and
+  advance THAT plan — no more random one-off advice. Off-plan ideas are allowed, but tied back to a pillar.
+- **The Game Plan writes its anchors into the YouTube Layer** (3 pillars + playlists, goal, cadence) so every
+  skill reads them cheaply; the full Doc holds the title backlog + 90-day calendar, opened on demand.
+- Wired explicitly into **Ideation** (draws the batch from the pillars + planned title backlog) and
+  **Research** (scoped to advance the pillars + goal).
+- **QA fixes:** corrected a broken reference path in `youtube-gameplan` (drive-structure.md now points to
+  youtube-setup's copy); tightened the "no guarantees" citations to compliance §2 + honesty §5. Full sweep
+  green — all 16 skills' frontmatter, every `${CLAUDE_PLUGIN_ROOT}` + skill-relative path, and house-rules
+  numbering verified.
+
 ## [0.27.0] — 2026-06-13
 
 ### Brain (Plugin 1) -> v0.18.0 — setup made far less overwhelming (from live-test feedback)

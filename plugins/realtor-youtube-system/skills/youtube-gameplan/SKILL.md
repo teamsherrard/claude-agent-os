@@ -89,7 +89,7 @@ proxies; keep them factual and safe, since titles ship publicly.
 Reverse-engineer their **business goal** (from `strategy.md`) into the content plan, per the framework:
 `goal (deals/income) ÷ close rate → leads needed ÷ conversion → views/reach → cadence + pillars → 90-day
 milestones.` Show the numbers, **state the assumptions**, and frame it as a **credible path — NEVER a
-guarantee** (house rules #5). Reframe gently: subscribers are a vanity metric unless they convert — tie
+guarantee** (house rules #2 + #5). Reframe gently: subscribers are a vanity metric unless they convert — tie
 subs → leads → deals. This is the section that makes them believe *"this is genuinely possible."*
 
 ## Phase 5 — The 4 Strategic Shifts + Video Structure + Playlists
@@ -113,8 +113,14 @@ subs → leads → deals. This is the section that makes them believe *"this is 
    no guarantees.
 3. **Deliver in chat** — a warm, plain-language summary (not the whole doc): *"Here's your YouTube Game Plan
    — your 3 pillars, ~50 ready-to-film titles, and the 90-day plan to hit [their goal]. It's in your Drive."*
-4. **Save to Drive** at the workspace root as **`YouTube Game Plan — [Agent]`** (per the output standard /
-   `references/drive-structure.md`) so it's the first thing they see. Confirm the location plainly.
+4. **Save to Drive** at the workspace root as **`YouTube Game Plan — [Agent]`** (workspace per
+   `${CLAUDE_PLUGIN_ROOT}/skills/youtube-setup/references/drive-structure.md`, formatted as the Game Plan
+   skeleton in `${CLAUDE_PLUGIN_ROOT}/shared/doc-format.md`) so it's the first thing they see. Confirm the
+   location plainly. **Then
+   make it the operating strategy (house rules #9):** write the plan's anchors — the **3 pillars + playlists,
+   the goal, and the cadence** — into the **YouTube Layer** (`Setup/`), so every other skill (ideation,
+   research, scripts, the calendar, the coach) reads them and stays aligned. The full Doc holds the title
+   backlog + 90-day calendar; skills open it for that detail.
 5. **Optional premium PDF** — offer a ready-to-paste **claude.ai/design** prompt to turn it into a designed
    showpiece (brand colours/fonts from `brand-visual.md`). Words only — never a render.
 6. **Hand off:** *"Pick any title from Pillar 1 and say 'make this video' — I'll script it, SEO it, and the
@@ -128,7 +134,7 @@ subs → leads → deals. This is the section that makes them believe *"this is 
 - [ ] 3 pillars, each chosen by lead type with a "why it generates leads" + a named playlist
 - [ ] 15–20 EXACT search-optimized titles per pillar, annotated (intent + lead type), broad→niche
 - [ ] **Every title Fair-Housing-safe + compliant** (house rules #2)
-- [ ] Goal-math present, assumptions stated, framed as a credible path — **no guarantees** (house rules #5)
+- [ ] Goal-math present, assumptions stated, framed as a credible path — **no guarantees** (house rules #2 + #5)
 - [ ] 4 shifts + 4-part video structure + playlists + 90-day calendar + metrics-as-milestones
 - [ ] Built in the agent's voice; local and specific (why-not-ChatGPT)
 - [ ] **Credibility stamp** present (byline + footer, house rules #8)

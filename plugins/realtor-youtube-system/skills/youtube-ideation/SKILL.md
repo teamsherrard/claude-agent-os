@@ -15,14 +15,20 @@ Find the scope in one friendly question:
 > two this week, or do you want to batch a few — say 4, so you film two now and two next week?"
 
 ## Step 2 — Gather FRESH signals (invisibly, right now)
-Pull at ask-time so everything is current: the **AI Brain** (market, clientele, niche), **fresh research**
-(market data + local news + trends), **local-event triggers**, the **outlier scan** (if it's been ~a week
-since the last one), and the **live coverage read** (Videos folders + channel — what's already made).
+**Start from the Game Plan (house rules #9):** read the agent's active pillars + goal (YouTube Layer) and
+their planned title backlog (the **YouTube Game Plan** Doc) — the next ideas should advance THAT strategy,
+not random topics. Then pull, at ask-time so everything's current: the **AI Brain** (market, clientele,
+niche), **fresh research** (market data + local news + trends), **local-event triggers**, the **outlier
+scan** (if it's been ~a week since the last one), and the **live coverage read** (Videos folders + channel —
+what's already made).
 The agent only sees one plain line: *"Give me a sec — I'm checking what's happening in your market."*
 
 ## Step 3 — Generate the batch (blend + gaps baked in)
 Run the engine in `references/idea-method.md` (rubric scored silently, packaging-first), using
 `${CLAUDE_PLUGIN_ROOT}/shared/idea-templates.md` + `${CLAUDE_PLUGIN_ROOT}/shared/seo-knowledge-base.md`:
+- **Aligned to the Game Plan first (house rules #9):** draw the batch from the agent's active pillars + the
+  planned title backlog — advance the strategy and fill its next gaps, not random topics. A timely/off-plan
+  idea is fine when a real signal warrants it — tie it to a pillar, or offer to fold it into the plan.
 - **A BLEND, always:** broad general/relocation/comparison ideas + niche-specific ideas from their specialty.
 - **Coverage gaps are baked into the batch automatically** — if a neighbourhood or pillar is uncovered, one
   of the ideas simply IS that gap (with its "why"). **Never run a separate "gap" conversation or second

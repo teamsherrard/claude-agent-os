@@ -125,7 +125,7 @@ Business goal (deals or income)
   **clearly-labelled, conservative assumption** the agent can adjust — never a hidden guess.
 - **Show the chain** so it's believable, then translate to milestones: *"That's ~X booked conversations a
   month once you're consistent — your first 90 days get you to [milestone] on the way there."*
-- **Honest framing — NEVER a guarantee** (house rules #5). *"Here's how this is genuinely possible"* — not
+- **Honest framing — NEVER a guarantee** (house rules #2 + #5). *"Here's how this is genuinely possible"* — not
   *"you WILL make 20 deals."* Confidence comes from realistic math + small achievable milestones.
 - **Reframe vanity metrics:** subscribers only matter if they convert — always connect subs → leads → deals,
   keeping their eye on the business goal.
