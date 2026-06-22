@@ -2,7 +2,8 @@
 name: realtor-operations
 description: >
   Phase 6 of the Realtor AI Brain — captures how the agent operates so their AI Admin can run: working
-  hours, response-time, email signature, booking rules, follow-up cadence, vendor network, and goals.
+  hours, response-time, email signature, booking rules, follow-up cadence, vendor network, goals
+  (business / YouTube / life / personal), and the competitors they admire.
   Writes identity/operations.md, identity/vendors.md, identity/strategy.md. Built so a brand-new agent
   finishes in ~3 minutes by accepting proven defaults (it only gets long if they choose to customize),
   and never gets stuck on decisions they haven't made yet. Runs right before "Set up my AI Admin" — it
@@ -13,7 +14,7 @@ description: >
   "prep for AI Admin", "phase 6", or any request to capture how the agent works day-to-day.
 ---
 
-# Realtor Operations + Vendors + Goals (Brain Phase 6)
+# Realtor Operations + Vendors + Goals + Competitors (Brain Phase 6)
 
 Captures the operational truth the **AI Admin** needs to book showings, email in the agent's voice, and
 make referrals. **Most agents finish in ~3 minutes by accepting smart defaults** — it only gets long if
@@ -65,9 +66,18 @@ problem at all; most agents add these as they meet them, and we can do that anyt
 - **None / "skip" →** write `vendors.md` with a friendly "add these as you build your network" note. The
   empty table stays as a prompt for *later* — never present it as something to fill in now. Never block.
 
-## Phase C — Goals → `identity/strategy.md`
-Light and default-able: this year's GCI / transaction goal, what they want to be known for, growth focus.
-If unsure, infer a sensible goal from their market + niche and let them confirm in one word.
+## Phase C — Goals + Competitors → `identity/strategy.md`
+Light and default-able (ask-once-default). Capture, in one friendly pass:
+- **Business goals** — this year's GCI / transaction goal.
+- **YouTube / content goals** — subscriber + lead targets (the YouTube Game Plan reads these). No channel
+  yet? A sensible default ("steady growth + a few leads a month") is fine.
+- **Life + personal goals** — the bigger "why" (more time with family, financial freedom, a personal
+  milestone). One light line each; skippable.
+- **What they want to be known for, growth focus, #1 priority, capacity.**
+- **Competitors they admire / follow** in their local market — agents or YouTube channels they look up to.
+  This feeds the YouTube Outlier engine + content strategy, so it's captured once here and never re-asked in
+  the YouTube System. None yet? Leave the friendly placeholder — the system finds local outliers automatically.
+If unsure on any of it, infer a sensible default from their market + niche and let them confirm in one word.
 
 ## Write + push to Drive + confirm
 > **Push to Drive after writing** — run `realtor-brain-sync` (PUSH). An unsynced write is a lost write.

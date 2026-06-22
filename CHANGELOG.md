@@ -2,6 +2,17 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.31.0] — 2026-06-13
+
+### Brain (Plugin 1) → v0.19.0 — capture richer goals + competitors (so downstream plugins never re-ask)
+- **`identity/strategy.md` now captures four goal types** — business, YouTube/content, life, and personal —
+  plus a **"competitors they admire/follow" list** (local agents/channels). Captured once in the Brain, read
+  everywhere.
+- `realtor-operations` Phase C expanded to capture these (ask-once-default — full-quality defaults, never a
+  stub; all skippable).
+- Why: the YouTube System (v0.6.2) now reads goals + competitors from the Brain instead of re-asking at setup.
+  The agent fills the Brain once; nothing downstream re-asks.
+
 ## [0.30.0] — 2026-06-13
 
 ### YouTube System (Plugin 3) → v0.6.2 — setup stops re-asking what the Brain already knows (live-test feedback)
