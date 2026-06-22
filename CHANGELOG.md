@@ -2,6 +2,22 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.24.0] — 2026-06-13
+
+### Lead Capture System (Plugin 5) → v0.1.0 — NEW: the conversion layer
+- **New plugin `realtor-lead-capture`.** Turns the agent's offer into captured leads. Two skills, run in order:
+  - **`leadcapture-magnet`** — builds a lead magnet (a buyer or seller guide) straight from the offer in the
+    Brain: the full, genuinely useful guide content + a paste-ready claude.ai/design prompt.
+  - **`leadcapture-funnel`** — reads the finished magnet, then maps the opt-in page section by section
+    (Hero → About the agent → The offer → The opt-in) with full converting copy + a design prompt.
+- **Alignment is enforced:** the funnel reads the magnet so the page's promise = the guide's payoff, end to end.
+- **Copywriting KB** (`shared/copywriting-kb.md`) trains both skills to write genuinely good, on-brand,
+  high-converting copy (clear > clever, benefit > feature, specific > vague, "you" > "I", proof everywhere).
+- **Boundaries:** maps copy + structure only — never designs or hosts (claude.ai/design + the agent's host do
+  that); **lead capture only — no call booking** (deliberate, avoids calendar integration); reads the Brain,
+  never re-asks. Outputs save as clean Google Docs in `[Agent] — Lead Capture System/` (text/plain → Doc).
+- Closes the loop: P3/P4 drive traffic → **P5 captures the lead.**
+
 ## [0.23.0] — 2026-06-13
 
 ### YouTube System (Plugin 3) → v0.4.0 — structured Google Doc output + organized Drive

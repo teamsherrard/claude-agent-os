@@ -29,6 +29,12 @@
       "source": "./plugins/realtor-shortform-system",
       "version": "0.7.0",
       "description": "PLUGIN 4 \u2014 the Short-Form System. A routine-based short-form OS: daily green-screen reactions, talking-head value, and carousels, each optimized for Instagram/Facebook, TikTok, and YouTube Shorts. The agent thinks in formats; Claude keeps the funnel balanced. Text only \u2014 never films or designs. Requires Plugin 1 (the Brain) set up first."
+    },
+    {
+      "name": "realtor-lead-capture",
+      "source": "./plugins/realtor-lead-capture",
+      "version": "0.1.0",
+      "description": "PLUGIN 5 \u2014 the Lead Capture System. Turns the agent's offer into a lead magnet (a buyer or seller guide) and maps the opt-in funnel that gives it away \u2014 two aligned documents they take to claude.ai/design to build. Text only: it writes the copy and structure, never designs or hosts; lead capture only, no call booking. Requires Plugin 1 (the Brain) set up first."
     }
   ]
 }

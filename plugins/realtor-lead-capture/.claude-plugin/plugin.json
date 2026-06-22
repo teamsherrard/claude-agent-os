@@ -1,0 +1,21 @@
+{
+  "name": "realtor-lead-capture",
+  "displayName": "Realtor Lead Capture (Plugin 5)",
+  "version": "0.1.0",
+  "description": "Turns the agent's offer into a lead-capture machine. It writes a lead magnet (a buyer or seller guide built straight from their offer) and maps the opt-in funnel that gives it away — two perfectly aligned documents the agent takes to claude.ai/design to build. Text only: it writes the copy and structure, it never designs or hosts. Lead capture only — no call booking. Requires Plugin 1 (the Brain) set up first.",
+  "author": {
+    "name": "Mike Sherrard"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "real estate",
+    "realtor",
+    "lead generation",
+    "lead magnet",
+    "funnel",
+    "landing page",
+    "copywriting",
+    "conversion"
+  ],
+  "homepage": "https://github.com/teamsherrard/claude-agent-os"
+}
