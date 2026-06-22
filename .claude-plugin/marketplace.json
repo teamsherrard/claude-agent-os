@@ -35,6 +35,12 @@
       "source": "./plugins/realtor-lead-capture",
       "version": "0.2.0",
       "description": "PLUGIN 5 \u2014 the Lead Capture System. Turns the agent's offer into a lead magnet (a brand-led guide for their whole audience, or a focused buyer/seller guide) and maps the opt-in funnel that gives it away \u2014 two aligned documents they take to claude.ai/design to build. Text only: it writes the copy and structure, never designs or hosts; lead capture only, no call booking. Requires Plugin 1 (the Brain) set up first."
+    },
+    {
+      "name": "realtor-ai-editor",
+      "source": "./plugins/realtor-ai-editor",
+      "version": "0.1.0",
+      "description": "PLUGIN 6 — the AI Editor. The agent talks in plain English; Claude directs Descript (their own account) to do the real editing — long-form and short-form in one tool — while they watch it happen live. Claude adds the multi-source B-roll Descript can't source itself (the agent's own footage, listing photos, free stock libraries), and a navigator skill turns vague or messy requests into one clear plan so the agent is never overwhelmed. Requires Plugin 1 (the Brain) set up first, plus a Descript connection."
     }
   ]
 }

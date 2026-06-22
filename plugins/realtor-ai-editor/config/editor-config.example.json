@@ -1,0 +1,28 @@
+{
+  "_comment": "Saved to ~/realtor-brain/editor/config.json by editor-setup. Only Descript is required; everything else is optional.",
+  "descript": {
+    "connected_via": "mcp-oauth",
+    "note": "Connected in the Claude desktop app. No API key is stored here."
+  },
+  "brand_source": "~/realtor-brain/identity/brand-visual.md",
+  "own_footage": {
+    "google_drive_folder": "",
+    "local_folder": "",
+    "per_video_uploads": "ask each time",
+    "use_listing_photos_for_property_videos": true
+  },
+  "platforms": ["youtube", "instagram"],
+  "caption_style": "karaoke-gold",
+  "publish": "needs-approval",
+  "stock_sources": {
+    "pexels":   { "enabled": false, "api_key": "" },
+    "pixabay":  { "enabled": false, "api_key": "" },
+    "coverr":   { "enabled": false, "api_key": "" },
+    "unsplash": { "enabled": false, "api_key": "" }
+  },
+  "real_place_sources": {
+    "wikimedia":         { "enabled": true,  "note": "no key needed" },
+    "google_streetview": { "enabled": false, "api_key": "" }
+  },
+  "ai_broll": { "enabled": false, "max_per_video": 2 }
+}

@@ -2,6 +2,23 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.32.0] — 2026-06-22
+
+### AI Editor (Plugin 6) → v0.1.0 — new plugin: chat-driven video editing on Descript
+- **New plugin: the AI Editor.** The agent talks in plain English; Claude *directs* Descript (on the
+  agent's own account) to do the actual editing — long-form and short-form in one tool — while they watch
+  it happen live. Claude is the director, not the editor (quality stays high; the agent stays in control).
+- **Six skills:** `editor-setup` (connect Descript, pull brand from the Brain, optional free stock keys),
+  `editor-navigator` (the friendly front door — turns vague/messy requests into one clear plan, never
+  overwhelms the agent), `edit-longform`, `edit-shortform`, `edit-listing` (property/home tours using the
+  agent's own footage or the listing photos), and `editor-broll` (multi-source B-roll).
+- **Multi-source B-roll** so it stops recycling the same clips: the agent's own footage (a Google Drive
+  library or per-video uploads), listing photos as motion stills, Descript's built-in stock, and several
+  free stock libraries (Pexels, Pixabay, Coverr, Unsplash) — all optional. Real places stay real (never AI-faked).
+- **One tool, fewest steps:** the only required connection is Descript (OAuth); settings live in the Brain.
+- Requires Plugin 1 (the Brain) set up first.
+- Status: v0.1 scaffold — pending the first live Descript test.
+
 ## [0.31.0] — 2026-06-13
 
 ### Brain (Plugin 1) → v0.19.0 — capture richer goals + competitors (so downstream plugins never re-ask)

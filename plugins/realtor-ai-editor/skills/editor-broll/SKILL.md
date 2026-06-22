@@ -1,0 +1,32 @@
+---
+name: editor-broll
+description: The B-roll brain for the Realtor AI Editor. Descript can host B-roll but won't go find it — so this skill sources footage and images from MULTIPLE places (the agent's own footage, Descript's built-in stock, and several free stock libraries) so the B-roll matches what's being said and never recycles the same clips. It then imports the chosen media into Descript via the connector and places it on the exact words. Real places stay real (no AI-faked landmarks). Trigger on: "add b-roll", "add some footage", "add the skyline", "make it less boring", or whenever an edit needs cutaways. Usually called inside edit-longform or edit-shortform.
+---
+
+# Editor B-roll brain
+
+Claude finds the footage; Descript holds the timeline. Read `${CLAUDE_PLUGIN_ROOT}/shared/broll-ladder.md` for the full rules. Goal: footage that **matches the words** and stays **varied** (never the same clip twice in a video).
+
+## Source ladder (try in order; query the stock sources together for variety)
+
+1. **The agent's own footage** (always preferred — authentic, free, accurate). It can come from three places: a **Google Drive B-roll folder** they keep, **files they upload for this video** (e.g. a listing's kitchen, backyard, drone), and — for property videos — the **listing photos** as motion stills. Tag each clip and match it to the right moment. See `${CLAUDE_PLUGIN_ROOT}/shared/footage-intake.md` for gathering it and the has-all / has-some / has-none branches.
+2. **Descript's built-in stock** — zero setup, already in their account.
+3. **Free stock libraries** (whichever keys are set — all optional). Query them **in parallel and de-duplicate** so you get variety instead of Pexels' same five clips:
+   - **Pexels** — photos + video
+   - **Pixabay** — photos + video (different library → big variety boost)
+   - **Coverr** — video
+   - **Unsplash** — high-quality photos (for Ken-Burns stills)
+4. **Real-place imagery** (for actual neighbourhoods/landmarks): the agent's footage → **Wikimedia Commons** real photos → **Google Street View / map** of the exact spot. See the local-realism rule below.
+5. **AI-generated** — last resort only, capped at 1–2 per video, and never for a real place. Warn about the credit cost first.
+
+## The rules
+
+- **Topical first** — derive search terms from the transcript so the footage matches what's actually being said (a kitchen line gets a kitchen, not a generic skyline).
+- **Local realism** — agents talk about real places their audience knows. Use real imagery (own footage / Wikimedia / Street View). **Never** use AI or generic foreign stock to fake a specific local landmark — it erodes trust and is a compliance risk.
+- **Variety** — every cutaway in a video is unique; never reuse a clip.
+- **Placement** — 2.5–5s each; on the exact words; never cover the hook, the face, or the CTA.
+- **Licensing** — prefer the no-attribution, commercial-OK sources (Pexels, Pixabay, Coverr, Unsplash). If a source needs attribution (some Wikimedia/CC items), either add it to the description automatically or skip the item. Default to the agent's own footage when in doubt.
+
+## Handoff to Descript
+
+Import the chosen media into the Descript project via the connector (import-media), then instruct Descript to place each clip at its transcript moment. The agent sees it appear live. Verify nothing covers the face before moving on.
