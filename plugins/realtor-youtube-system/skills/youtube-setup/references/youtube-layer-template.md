@@ -15,18 +15,20 @@ Listed only so you know what's already available. Source mapping: see `ai-brain-
 - Voice & brand tone
 - Brand kit (colors/fonts/logo) — used for the design-tool handoff
 - Existing lead magnets
+- **Goals — YouTube, business, life, personal** (`identity/strategy.md`) — drive the Game Plan's goal-math
+- **Competitors they admire/follow** in their local market — feed the Outlier engine
+- **Posting cadence** (`identity/content-engine.md`)
 
-## Part B — The YouTube Layer (the ONLY things setup captures)
-- **Channel URL:** (or "none yet")
-- **Existing performance context:** video count, best performers, worst performers (if any)
-- **YouTube goal (12-month):** subscribers / leads target *for YouTube*
-- **Posting cadence:** realistic commitment (e.g. 1 long-form/week + 3 shorts)
-- **Filming time available:** (e.g. one batch day/month)
-- **Competitor channels:** 3–7 channels to track (feeds the Outlier engine)
-- **Neighbourhood coverage list:** communities to cover systematically (from the AI Brain) — the coverage read tracks progress against this
-- **On-camera voice refinement (optional):** spoken cadence captured from video transcripts, layered
-  ON TOP of the AI Brain voice — never replacing it
-- **YouTube compliance notes:** channel/brokerage-specific disclaimers for descriptions
+## Part B — The YouTube Layer (the ONLY things setup captures — everything else is read from the Brain)
+- **Channel URL + status:** active / empty / none (the one question setup asks)
+- **Existing performance context:** video count, best/worst performers (if any) — for the Game Plan audit
+- **On-camera voice refinement (optional):** spoken cadence from transcripts, layered ON TOP of the AI Brain
+  voice — never replacing it
+- **YouTube compliance notes:** channel/brokerage-specific disclaimers for descriptions (only if different from the Brain)
+
+**Read live from the Brain — NOT captured here** (the #1 rule): goals (YouTube/business/life/personal),
+competitors they admire/follow, posting cadence, niche, neighbourhoods, avatars, voice, offer, lead magnets.
+If one's missing from the Brain, point the agent to add it *there*, not in YouTube.
 
 ## Part C — Generated at setup (NOT stored as spreadsheets)
 - **Active Game Plan anchors** — the **3 content pillars + playlists, the goal, and the cadence** set by the

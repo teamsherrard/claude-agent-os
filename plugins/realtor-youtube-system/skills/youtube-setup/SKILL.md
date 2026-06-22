@@ -45,23 +45,28 @@ Set the tone that this will be quick because you already know them:
    here is what makes your videos *yours* and not generic"), and point to the 1–2 additions that would help
    most. A thin Brain = generic output = no better than ChatGPT. Add anything missing to the AI Brain, centrally.
 
-## Step 3 — Capture ONLY the YouTube layer
-Ask only for what's YouTube-specific and not already in the AI Brain (see `youtube-layer-template.md`):
-- **Channel:** YouTube channel URL (or "none yet"); if it exists, note video count + best/worst performers.
-- **YouTube goal:** ask once, lightly — *"what would make this worth it: more leads, or growing the channel?"*
-  If they give a number, great; **if they're unsure, don't push for one — default to "steady growth + a few
-  leads a month" and move on.** (Their real business goal — deals/year, income — is read live from the Brain's
-  `strategy.md` for the Game Plan's math; you don't need a precise YouTube number here.)
-- **Cadence:** the realistic posting commitment + filming time they can give.
-- **Competitor channels:** 3–7 local/niche YouTube channels to track (feeds the Outlier engine) — only if
-  the AI Brain doesn't already name them.
-- **Neighbourhood coverage list:** the communities they want to cover systematically (usually already in the
-  AI Brain — pull from there; only ask if missing). Ideation's coverage read tracks progress against it.
-- **(Optional) on-camera voice refinement:** the AI Brain already has their voice. ONLY if they want
-  an extra-tight match, offer to read 2–3 video transcripts to layer in their spoken on-camera cadence.
-  Skip without hesitation — the AI Brain voice is enough. (See `voice-profile-guide.md`.)
+## Step 3 — The ONE thing that's truly YouTube-specific: their channel
+Almost everything is already in the AI Brain — goals, competitors, cadence, niche, neighbourhoods, voice,
+offer. They spent real time building it; **read it, never re-ask it** (the #1 rule). The only thing the Brain
+doesn't have is their channel. So ask **just this one question**:
+> "Last thing — do you already have a YouTube channel? Paste the link, or just tell me you're starting fresh."
 
-That's the whole interview. Do not collect anything else at the brain level.
+Capture **channel URL + status** (active / empty / none); if it exists, note the video count + best/worst
+performers (the Game Plan audits the channel from there).
+
+**Everything else, read from the Brain — never ask it here:**
+- **Goals** (YouTube, business, life, personal) → `identity/strategy.md`. The Game Plan's math uses these.
+- **Competitors they admire/follow locally** → the Brain. If none are there, the Outlier engine finds them
+  later — don't ask at setup.
+- **Posting cadence** → `identity/content-engine.md`.
+- **Niche, neighbourhoods, avatars, voice, offer, lead magnets** → the Brain.
+
+If any of those are genuinely missing from the Brain, **don't re-ask them here.** Note it once, kindly, and
+point the agent to add it in their Brain (*"that lives in your Brain so every tool gets it — worth adding
+there"*), then default and keep moving so setup never stalls. (Optional: if they want an extra-tight on-camera
+voice match, offer to read 2–3 transcripts — `voice-profile-guide.md` — but skip without hesitation.)
+
+That's the whole interview: one question about their channel. Nothing the Brain already knows.
 
 ## Step 4 — Tools (don't make them choose — default and move on)
 **Drive is already connected** (it's the Brain's home) — and that's everything the YouTube System needs to
@@ -106,7 +111,7 @@ This is the system's "wow" — lead with it, don't bury it.
 
 ## Completion checklist
 - [ ] AI Brain located, read, and mapped — **nothing re-asked**
-- [ ] YouTube Layer captured (channel, goals, cadence) — only the delta
+- [ ] Channel captured (the one question) — goals, competitors, cadence all read from the Brain, never re-asked
 - [ ] Voice inherited from AI Brain (optionally refined with transcripts)
 - [ ] Drive confirmed connected (it's all that's needed) — Calendar/Gmail deferred to point-of-need; no YouTube connection (V1 = Studio export)
 - [ ] Drive set up (Videos + Setup only — NO tracker spreadsheets)

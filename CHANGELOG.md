@@ -2,6 +2,18 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.30.0] — 2026-06-13
+
+### YouTube System (Plugin 3) → v0.6.2 — setup stops re-asking what the Brain already knows (live-test feedback)
+- **Setup now asks exactly ONE question — their channel.** Goals, competitors, posting cadence, niche,
+  neighbourhoods, voice, and offer are all read live from the AI Brain (the #1 rule: one Brain, never two).
+  The agent spent hours building their Brain — re-asking goals/competitors in YouTube was friction.
+- Removed the 12-month-goal question (read from `strategy.md`) and the competitor-channels question (read from
+  the Brain; the Outlier engine finds them if absent). If something's missing from the Brain, setup points the
+  agent to add it *there* — never re-asking in YouTube.
+- (Companion Brain change — capture YouTube/business/life/personal goals + admired competitors in the Brain —
+  handed to the Brain plugin as its own task.)
+
 ## [0.29.0] — 2026-06-13
 
 ### YouTube System (Plugin 3) → v0.6.1 — setup stops asking confusing questions (live-test feedback)
