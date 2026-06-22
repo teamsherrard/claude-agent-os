@@ -19,6 +19,11 @@ and only captures the few things that are genuinely YouTube-specific.
 
 ## Golden rules
 - Warm guide, not a form. This should feel *fast* precisely because most of it is already known.
+- **Never ask a question the agent can't easily answer.** They're a busy, non-technical realtor — techy or
+  open-ended questions ("which tools should I connect?", "what's your subscriber target?") make them freeze
+  and feel dumb. **Default-if-unsure:** the moment they hesitate, pick a smart default, tell them what you
+  picked, and move on — they can change anything later. Ask ONLY what genuinely can't be defaulted, one thing
+  at a time. (Mirrors the Brain's ask-once-default principle.)
 - The AI Brain is the source of truth; the YouTube Layer points back to it and never copies it.
 - Confirm before creating Drive files. Everything is created in the agent's own account.
 
@@ -43,10 +48,10 @@ Set the tone that this will be quick because you already know them:
 ## Step 3 — Capture ONLY the YouTube layer
 Ask only for what's YouTube-specific and not already in the AI Brain (see `youtube-layer-template.md`):
 - **Channel:** YouTube channel URL (or "none yet"); if it exists, note video count + best/worst performers.
-- **YouTube goal (a concrete target):** their 12-month YouTube target — a real number if they have one
-  (e.g. "1,000 subscribers," "10 leads a month") and by when. (Their underlying *business* goal — deals/year,
-  income — is read live from the Brain's `strategy.md` for the Game Plan's goal-math; only capture the
-  YouTube-specific target here.)
+- **YouTube goal:** ask once, lightly — *"what would make this worth it: more leads, or growing the channel?"*
+  If they give a number, great; **if they're unsure, don't push for one — default to "steady growth + a few
+  leads a month" and move on.** (Their real business goal — deals/year, income — is read live from the Brain's
+  `strategy.md` for the Game Plan's math; you don't need a precise YouTube number here.)
 - **Cadence:** the realistic posting commitment + filming time they can give.
 - **Competitor channels:** 3–7 local/niche YouTube channels to track (feeds the Outlier engine) — only if
   the AI Brain doesn't already name them.
@@ -58,14 +63,17 @@ Ask only for what's YouTube-specific and not already in the AI Brain (see `youtu
 
 That's the whole interview. Do not collect anything else at the brain level.
 
-## Step 4 — Connect tools
-Guide the agent to connect each, with a one-line "why":
-- **Google Drive/Docs** — the home base where all their content lands.
-- **Google Calendar** — filming/batch days.
-- **Gmail** — optional; only needed if they later turn on the optional Monday Kickoff email.
-- **YouTube — no connection needed.** Analytics come from their YouTube Studio export (a few clicks,
-  whenever they want a review); competitor scans run via the web. Never ask them for API keys.
-If a connector isn't available, tell them how to add it.
+## Step 4 — Tools (don't make them choose — default and move on)
+**Drive is already connected** (it's the Brain's home) — and that's everything the YouTube System needs to
+run. **Do NOT ask the agent "which tools should I set up?"** — it's a techy question they can't answer, and
+it stalls them. Just confirm Drive's good and keep moving. One plain line is plenty:
+> "Your Drive's already connected, so we're good to go — I'll handle the rest."
+- **Calendar + Gmail are optional add-ons** for two specific features only: putting filming days on their
+  calendar, and the optional Monday email. **Never ask about them up front.** Only when the agent later
+  actually wants one of those ("put my filming days on my calendar," "send me a weekly email") do you say
+  *"one-time connect for that — takes a sec"* and set it up then, at the point of need.
+- **YouTube — no connection needed** (analytics via their Studio export; competitor scans via the web).
+  Never ask them for API keys.
 
 ## Step 5 — Provision the Drive workspace (minimal)
 Using the Google Drive connector, create the structure in `references/drive-structure.md`: the top
@@ -100,7 +108,7 @@ This is the system's "wow" — lead with it, don't bury it.
 - [ ] AI Brain located, read, and mapped — **nothing re-asked**
 - [ ] YouTube Layer captured (channel, goals, cadence) — only the delta
 - [ ] Voice inherited from AI Brain (optionally refined with transcripts)
-- [ ] Google connected (Drive/Docs, Calendar; Gmail optional) — no YouTube connection needed (V1 uses their Studio export)
+- [ ] Drive confirmed connected (it's all that's needed) — Calendar/Gmail deferred to point-of-need; no YouTube connection (V1 = Studio export)
 - [ ] Drive set up (Videos + Setup only — NO tracker spreadsheets)
 - [ ] **YouTube Game Plan** built (audit + 3 pillars + exact titles + goal-math + 90-day calendar) and saved to the workspace
 - [ ] Folder link shared

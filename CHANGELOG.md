@@ -2,6 +2,18 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.29.0] — 2026-06-13
+
+### YouTube System (Plugin 3) → v0.6.1 — setup stops asking confusing questions (live-test feedback)
+- **Removed the "which tools should I set up?" question.** A non-technical realtor can't answer "Calendar vs
+  Gmail vs Drive," so it stalled them. Drive (already connected — the Brain's home) is all the system needs to
+  run; Calendar + Gmail now connect only at point-of-need (when the agent actually wants filming days on their
+  calendar or the optional weekly email).
+- **Softened the YouTube-goal question** to default-if-unsure ("steady growth + a few leads a month") instead
+  of pressing for a number — the real business goal is read from the Brain's `strategy.md` for the math anyway.
+- **New setup golden rule:** never ask a question the agent can't easily answer — default smartly, say what
+  you picked, and move on (mirrors the Brain's ask-once-default principle).
+
 ## [0.28.0] — 2026-06-13
 
 ### YouTube System (Plugin 3) → v0.6.0 — the Game Plan becomes the channel's operating strategy
