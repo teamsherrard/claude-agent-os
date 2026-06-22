@@ -52,16 +52,19 @@ Read `~/realtor-brain/brain.md` first, then:
 
 ---
 
-## Phase 1 — Confirm what it's selling
+## Phase 1 — Confirm what it's selling (and match its scope)
 In one line, confirm the magnet this page gives away (its name + promise), so the agent sees the page and the
 guide are the same story. If they want a different angle on the headline, note it — but the promise must
-still match what the guide delivers.
+still match what the guide delivers. **Match the magnet's scope:** if it's **brand-led** (whole audience),
+write the page to the agent's **personal brand and broad audience** of buyers and sellers; if it's
+**audience-specific**, speak to that one reader. The page is always as general or as focused as the magnet.
 
 ## Phase 2 — Map the page (the four sections, full copy)
 Following `references/funnel-guide.md` + the copywriting KB, write the **complete copy** for each section,
 in the agent's voice, compliance-safe. Every section flows toward the opt-in:
 
-1. **HERO** — the **headline** (= the magnet's core promise, benefit-led, for this audience in this market),
+1. **HERO** — the **headline** (= the magnet's core promise, benefit-led, for its audience — or the agent's
+   whole brand if the magnet is brand-led — in this market),
    a **subhead** (expand the promise + who it's for + remove doubt), and the **primary CTA button**
    ("Send me the free guide"). This is 90% of whether they stay.
 2. **ABOUT THE AGENT** — three beats, all framed for the reader: **what makes them amazing** (their niche +

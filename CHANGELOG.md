@@ -2,6 +2,17 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.25.0] — 2026-06-13
+
+### Lead Capture System (Plugin 5) → v0.2.0 — brand-led magnets, not just single-audience
+- The magnet/funnel no longer defaults to a buyer-only, single-avatar guide. Phase 1 now offers two shapes
+  and recommends by Brain: **(A) Brand-led (general)** — one comprehensive on-brand guide for the agent's
+  whole audience (buyers AND sellers) + full offer suite, the new default for generalist/brand-led agents;
+  **(B) Audience-specific (niche)** — the focused buyer/seller guide, for agents with one dominant niche. The
+  funnel matches the magnet's scope (a brand-led page speaks to the personal brand + broad audience).
+  "General" stays comprehensive and valuable, never vague. (From live-test feedback: lead capture should
+  reflect the realtor's personal brand + all their offers, not just buyers.)
+
 ## [0.24.0] — 2026-06-13
 
 ### Lead Capture System (Plugin 5) → v0.1.0 — NEW: the conversion layer

@@ -20,7 +20,7 @@ folders). One folder per campaign, so a magnet and the funnel that gives it away
       └── Lead Capture Funnel — New-Build Buyer Guide   (Doc — built second, sells the magnet)
 ```
 
-A "campaign" = one audience + one magnet + the one funnel that markets it. Build several over time (a buyer
+A "campaign" = one magnet (brand-led or audience-specific) + the one funnel that markets it. Build several over time (a buyer
 campaign, a seller campaign) — each gets its own dated folder. Find-or-create; never duplicate a folder.
 
 ## 2. Naming convention (use everywhere — no exceptions)

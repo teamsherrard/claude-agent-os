@@ -1,14 +1,14 @@
 ---
 name: leadcapture-magnet
 description: >
-  Step 1 of the Lead Capture System — builds the agent's lead magnet (a buyer or seller guide) straight from
-  the offer in their AI Brain. Produces the full, genuinely useful guide content as clean copyable text, in
+  Step 1 of the Lead Capture System — builds the agent's lead magnet (a brand-led guide for their whole
+  audience of buyers AND sellers, or a focused buyer/seller guide) straight from the offer in their AI Brain. Produces the full, genuinely useful guide content as clean copyable text, in
   the agent's voice, plus a ready-to-paste claude.ai/design prompt to build the PDF. Saves it as a Google
   Doc in the campaign folder, then hands off to the funnel that gives it away. SPEC ONLY — it writes the
   content + design direction; it NEVER designs the PDF.
 
   Trigger on: "build my lead magnet", "create a lead magnet", "lead magnet for my offer", "make my buyer
-  guide", "make my seller guide", "set up my lead capture", "build my lead capture system", "I need a free
+  guide", "make my seller guide", "make my brand guide", "set up my lead capture", "build my lead capture system", "I need a free
   guide to give away", or any request to create the downloadable freebie an opt-in gives away.
 ---
 
@@ -45,15 +45,25 @@ stop and tell the agent kindly that the magnet is only as strong as the offer be
 
 ---
 
-## Phase 1 — Pick the magnet (one audience, one promise)
-Decide who this campaign serves: a **buyer guide**, a **seller guide**, or a niche cut of one (e.g. a
-new-build buyer guide, a first-time-buyer guide, a downsizer's seller guide) — matched to the agent's
-strongest avatar + offer. **One magnet = one audience** (so the funnel can speak to one person).
+## Phase 1 — Pick the magnet's focus (the shape that fits their brand)
+A magnet can take one of two shapes. **Present both and let the agent choose** — they fit different brands:
 
-If the agent named it, use it. If not, or if they're unsure, **advise (house rules #9):** recommend the ONE
-that best fits their offer + the avatar they most want, in one line of why — then offer 1–2 alternatives.
-Lock the **single core promise** of the guide (this becomes the funnel's headline later). Confirm in one
-friendly line.
+- **A. Brand-led (general) — the default for most agents.** ONE comprehensive, on-brand guide that speaks to
+  the agent's **whole audience and full offer suite** (buyers, sellers, relocations) and gives any prospect
+  real value — built around their **personal brand**, not a single avatar. E.g. *"The Complete [City] Buying
+  & Selling Playbook," "[Agent]'s [City] Market Insider Guide," "Thinking of Buying or Selling in [City]?
+  Start Here."* It still needs **ONE clear brand-level promise** (so the funnel has a headline) — e.g. *"everything
+  you need to make your next move in [City] with confidence."* General must stay genuinely valuable and
+  **comprehensive — never vague filler.**
+- **B. Audience-specific (niche) — when the agent has one dominant focus.** A focused buyer, seller, or niche
+  guide (first-time buyer, new-build buyer, downsizer seller) matched to their strongest avatar + offer.
+  Converts hardest for that one person; best when the agent genuinely leans into one niche.
+
+**Advise (house rules #9):** read the Brain and recommend. If their brand/offer spans buyers AND sellers, or
+they're generalist / brand-led → recommend **A**. If `avatars.md`/`offer.md` show one dominant niche →
+recommend **B**. Lead with the ONE you'd pick + one line of why, and offer the other. If the agent named a
+focus, use it. Lock the **single core promise** (brand-level or audience-level) — it becomes the funnel
+headline. Confirm in one friendly line. *(Whatever they pick, the funnel in Step 2 matches that same scope.)*
 
 ## Phase 2 — Build the guide content
 Following `references/magnet-guide.md` + the copywriting KB, produce as clean copyable text:
@@ -64,7 +74,8 @@ Following `references/magnet-guide.md` + the copywriting KB, produce as clean co
 - **How the agent helps next** — a soft, no-pressure close in their voice: where they are now, how the
   agent makes the next step easy, and where to reach them. **No call booking** (house rules #4) — just a
   warm "here's where to find me."
-- Weave the offer + one real proof point in naturally near the end — never a hard sell.
+- Weave in the relevant offer (the **full offer suite** for a brand-led guide, or the matching offer for a
+  specific one) + one real proof point naturally near the end — never a hard sell.
 
 ## Phase 3 — The design prompt (claude.ai/design)
 Write a **ready-to-paste claude.ai/design prompt** to build the guide as a clean branded PDF: the page
@@ -87,7 +98,7 @@ applies, strip any guarantees or Fair-Housing proxies, keep claims honest. Flag 
 
 ## Quality checklist
 - [ ] Brain read; offer used as the anchor; nothing re-asked
-- [ ] One audience, one clear core promise (ready to become the funnel's headline)
+- [ ] One clear core promise — brand-led (whole audience) OR audience-specific — ready to become the funnel's headline
 - [ ] 5–9 pages of REAL, local, specific value — worth an email, not a tease (house rules #8)
 - [ ] Offer + one real proof woven in near the end; soft close, **no call booking**
 - [ ] Voice matches `voice.md` + `voice-samples.md`
