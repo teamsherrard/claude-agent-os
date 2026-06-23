@@ -16,9 +16,10 @@ The one-page rulebook for editing a realtor's video. The detailed refs back each
 - DO put light text on dark, dark text on light — always high contrast.
 - DON'T ever put a colour on the same-family background (e.g. light-blue text on a blue panel) — it disappears and looks broken.
 
-## Premium & minimal — never over-edited
+## Premium & minimal — but never BARE
 - DO keep it clean, modern, restrained. A few strong touches beat ten cheap ones.
-- DON'T pile on effects/overlays/frames until it looks tacky. Curate by video type (see effects-menu.md).
+- DO add *purposeful* creativity — match the effect to the words (price drop → down arrow, big number → count-up, "tight" → squeeze). **Minimal ≠ bare**: a flat, static talking-head with nothing happening is *also* a bad edit. Talking-heads need gentle punch-ins, keyword pops, and a little motion.
+- DON'T pile on RANDOM effects/overlays/frames until it looks tacky. The enemy is clutter, not creativity. Curate by video type (see effects-menu.md).
 
 ## Captions & graphics
 - DO make captions big and phone-legible (~90pt+), white with a black outline, active word in the brand accent.
@@ -36,5 +37,6 @@ The one-page rulebook for editing a realtor's video. The detailed refs back each
 ## Respect their money (credits)
 - DO offer a lean (cheaper) or full-polish (more credits) option, and say roughly what a pass costs.
 - DO verify each paid step actually landed before saying it's done; never blind-retry; report the cost.
+- DO make sure the audio actually improved — Studio Sound can silently stay OFF if buried in a multi-part pass. Apply it as its own step and confirm it's on (bad audio kills a video).
 - DON'T burn credits experimenting — get a yes first.
 - DON'T create duplicate copies of their video — edit the **original** in place (copies clutter and confuse their Descript). Descript's undo is the safety net.

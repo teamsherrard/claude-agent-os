@@ -34,8 +34,8 @@ After any import, `wait_for_job`; Descript auto-transcribes on import (don't re-
 2. `prompt_project_agent`: **open on the hook** (cut the settling-in / "let's go" / throat-clearing intro so it starts on the first real line), then remove filler words (conservative). Verify first 40s.
 3. Remove silences > ~1.5s (avoid harsh cuts).
 4. Cut false starts / bad takes — review before applying; restore good bits.
-5. Studio Sound (~80%).
-6. B-roll (via `editor-broll` → import by URL, place on the words); sparse emphasis + chapters. No captions by default.
+5. **Studio Sound — its OWN step, and VERIFY it actually turned on** (it can silently stay off if buried in a multi-part prompt). ~80%; push to ~90% for echoey / reverb-y rooms.
+6. B-roll (via `editor-broll`, on the words) + a **purposeful creative layer** — gentle punch-ins on key lines, keyword pops, contextual animations matched to the words, a few tasteful SFX, chapters. Minimal ≠ bare (`${CLAUDE_PLUGIN_ROOT}/shared/effects-menu.md`). No captions by default.
 7. `publish_project` (on approval) → share + download URL + a title/description.
 
 ## Playbook B — short-form / pull shorts

@@ -2,6 +2,18 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.42.0] — 2026-06-22
+
+### AI Editor (Plugin 6) → v0.6.0 — minimal ≠ bare: purposeful long-form creativity + audio verified
+- **"Minimal ≠ bare."** Live miss: the long-form came out flat (no punch-ins, pops, SFX, or contextual motion).
+  New principle across the plugin — the enemy is RANDOM clutter, not creativity. Use **purposeful, contextual**
+  touches that MATCH THE WORDS (a "price drop" → a downward arrow; a big number → count-up; "inventory tight" →
+  a squeeze). Talking-head (reels AND long-form) needs energy: gentle punch-ins, keyword pops, contextual
+  animations, a few tasteful SFX. (`effects-menu.md`, `edit-longform`, `descript-playbooks.md`, `dos-and-donts.md`)
+- **Studio Sound is its own verified step.** Live miss: it silently stayed OFF because it was buried in a 5-part
+  mega-pass. Now: apply it on its own, verify it actually turned on, push to ~90% for echoey rooms. Reinforces
+  "one instruction at a time." (`descript-playbooks.md`, `dos-and-donts.md`)
+
 ## [0.41.0] — 2026-06-22
 
 ### AI Editor (Plugin 6) → v0.5.2 — "open on the hook" (cut the settle-in intro)
