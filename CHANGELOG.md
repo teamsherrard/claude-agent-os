@@ -2,6 +2,13 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.44.3] — 2026-06-23
+
+### AI Editor (Plugin 6) → v0.8.3 — split-screen speaker framing (live fix)
+- `layouts.md`: when using split-screen, **reframe the speaker to FIT his band** (clean head-and-shoulders,
+  centred, headroom) — never just crop his full-frame shot into a half-height band (it slices off the head and
+  chin). Give the speaker band more height if the face won't fit. (Caught live on the Seattle reel.)
+
 ## [0.44.2] — 2026-06-23
 
 ### AI Editor (Plugin 6) → v0.8.2 — cross-reference cleanup (autonomous audit)
