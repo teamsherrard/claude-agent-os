@@ -2,6 +2,19 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.33.0] — 2026-06-22
+
+### AI Editor (Plugin 6) → v0.2.0 — live-test fix: import video by URL (no more big-file upload timeouts)
+- **Wired to Descript's real MCP tools** — `list_projects`/`get_project`, `import_media`, `prompt_project_agent`,
+  `publish_project`, `wait_for_job` — confirmed against the live connector.
+- **Import the video by URL, not byte-upload.** The first live test stalled trying to push a 260 MB local file
+  through the sandbox (timed out; the background process died between turns). Descript's `import_media` natively
+  pulls from **Google Drive / Dropbox / direct links**, server-side — so the plugin now imports the agent's video
+  (and B-roll) by URL, with no upload and no size limit. Local-only files: drop them in Drive first.
+- Playbooks now `wait_for_job` after every async step and use `publish_project` for export (share + download URL).
+- Setup now notes the Descript connector must be enabled for **Cowork / the workspace**, not just chat (the first
+  connection gotcha from live testing).
+
 ## [0.32.0] — 2026-06-22
 
 ### AI Editor (Plugin 6) → v0.1.0 — new plugin: chat-driven video editing on Descript

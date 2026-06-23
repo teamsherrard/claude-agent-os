@@ -12,14 +12,16 @@ Goal: get the agent editing in about five minutes, with the **fewest possible st
 Descript is the one tool that does everything. Walk them through it simply:
 
 1. They need the **Claude desktop app** (not the browser). If they don't have it, point them to download it.
-2. In Claude: Settings → Connectors → add a custom connector.
-3. Name it `Descript`, and paste Descript's remote MCP server URL. The current URL is on Descript's help page "Connect Descript to Claude" (`api.descript.com/v2/mcp` at time of writing — confirm against the help page, since it can change).
+2. In Claude: Settings → Connectors → add **Descript** from the connector library (easiest), or "add custom connector" and paste `api.descript.com/v2/mcp` (confirm on Descript's "Connect Descript to Claude" help page).
+3. **Enable it for Cowork / this workspace, not just chat** — a connector that's only on for chat won't appear where the editor runs (the agent's other connectors already work there).
 4. A browser window opens → they click **Allow** to sign in to their own Descript account. Done — no API key to copy.
 5. Set permissions: leave **Publish** on **"needs approval"** (so nothing ever posts without them saying yes). Everything else can be "always allow."
 
 If they don't have a Descript account yet, tell them any **paid** plan includes the API/connector at no extra cost, and the connection uses their own account's credits.
 
-Confirm the connection works (find one of their existing projects) before moving on.
+Confirm the connection works (`list_projects` finds their projects) before moving on.
+
+**Tip worth giving them now:** the easiest way to edit is to keep videos in their **Google Drive** — Descript imports straight from a Drive link, with no slow uploads and no file-size limit.
 
 ## Step 2 — Brand (pull it, don't ask)
 

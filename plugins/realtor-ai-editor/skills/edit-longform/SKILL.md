@@ -15,7 +15,7 @@ You are the director. Descript does the editing; the agent watches and approves.
 
 ## The recipe (one pass at a time — verify after each)
 
-1. **Import** the video → Descript auto-transcribes. Don't re-transcribe later.
+1. **Import the video by URL** — a Google Drive / Dropbox / direct link (never a big local upload — see the playbook's "Getting the video IN"). Descript fetches it server-side and auto-transcribes. Don't re-transcribe later.
 2. **Remove filler words** — conservative (ums/uhs; leave natural speech). Verify the first ~40 seconds reads clean before continuing.
 3. **Remove long silences / dead air** (the single biggest quality lift). Avoid harsh cuts.
 4. **Cut bad takes / false starts** — review the proposed cuts before applying; restore anything good it removed.
