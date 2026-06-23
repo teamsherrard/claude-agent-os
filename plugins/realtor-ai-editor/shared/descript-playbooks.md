@@ -22,7 +22,7 @@ After any import, `wait_for_job`; Descript auto-transcribes on import (don't re-
 
 ## General habits (always)
 
-- Work on a copy; seed proper nouns first; **one `prompt_project_agent` instruction at a time**, verify after each (catches overreach).
+- Work on the **original** composition in place — never create duplicate copies (they clutter the agent's Descript and confuse them about which version is which). Descript's own undo / version history is the safety net. Seed proper nouns first; **one `prompt_project_agent` instruction at a time**, verify after each (catches overreach).
 - **Clean starts & ends.** Trim the camera-on fumble / dead air at the very start and the camera-off reach / dead air at the very end — but NEVER cut into the spoken hook or the CTA. The end should land the instant the last word finishes.
 - **Verify each step landed** via the job result (`status: success`, `project_changed: true`) — not the project's `updated_at` (which doesn't move for in-clip edits like captions). Have the agent eyeball visible changes.
 - **Publishing is gated** — never `publish_project` without the agent's yes (keep the connector's Publish on "needs approval").

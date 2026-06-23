@@ -2,6 +2,14 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.40.0] — 2026-06-22
+
+### AI Editor (Plugin 6) → v0.5.1 — edit the original in place (no duplicate copies)
+- **Reversed the "work on a copy" rule.** For realtors in Descript a duplicate composition just clutters and
+  confuses (which version is which?), so edit the **original in place**; Descript's own undo / version history is
+  the safety net. (The copy-first habit came from the file-based HyperFrames era and doesn't fit Descript.)
+  (`descript-playbooks.md`, `edit-longform`, `dos-and-donts.md`)
+
 ## [0.39.0] — 2026-06-22
 
 ### AI Editor (Plugin 6) → v0.5.0 — credit tiers (balanced quality vs cost; Standard is the default)

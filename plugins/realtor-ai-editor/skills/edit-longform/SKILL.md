@@ -9,7 +9,7 @@ You are the director. Descript does the editing; the agent watches and approves.
 
 ## Before you touch anything
 
-1. **Work on a copy** of the composition, never the original.
+1. **Work on the original composition in place** — don't create duplicate copies (it clutters the agent's Descript and confuses them). Descript's undo / version history is the safety net if they want to revert.
 2. **Seed proper nouns** first (agent name, brokerage, city, street names) so captions/edits don't misspell them.
 3. Confirm the one-line plan with the agent, then go.
 

@@ -37,3 +37,4 @@ The one-page rulebook for editing a realtor's video. The detailed refs back each
 - DO offer a lean (cheaper) or full-polish (more credits) option, and say roughly what a pass costs.
 - DO verify each paid step actually landed before saying it's done; never blind-retry; report the cost.
 - DON'T burn credits experimenting — get a yes first.
+- DON'T create duplicate copies of their video — edit the **original** in place (copies clutter and confuse their Descript). Descript's undo is the safety net.
