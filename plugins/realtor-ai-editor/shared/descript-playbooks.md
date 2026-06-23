@@ -12,13 +12,13 @@ Descript does the editing; Claude issues the instructions and verifies. These us
 
 ## Getting the video IN — read this first (it's where edits fail)
 
-**Import by URL. Never stream a big local file through the sandbox.**
+**Get the video to Descript without uploading it through the sandbox.** In order of preference:
 
-- Best path: the agent's video lives in **Google Drive** (their Brain already lives there). Get an "anyone with the link can view" share link and pass it to `import_media` as the `url`. Descript fetches it server-side — **no upload, no time limit**, even for a 500 MB file.
-- Also fine: Dropbox links, any direct-download link, and Pexels/Pixabay B-roll URLs.
-- **Big-file rule:** raw realtor videos are often 100–500 MB. Do **not** PUT the bytes from the sandbox — it exceeds the shell time limit and the process dies between turns (this was the #1 failure in live testing). Put the file in Drive and import the link.
-- Local-only with no link? Ask the agent to drop it in their Google Drive first — faster than any upload.
-- After import, `wait_for_job`; Descript auto-transcribes on import (don't re-transcribe).
+1. **Is it already in Descript?** Best of all. If the agent recorded in Descript or dropped the file into the Descript app, don't import anything — use `list_projects` / `get_project` to find it and edit that project. Just ask: *"Is the video already in your Descript?"*
+2. **Import by URL** — a **Google Drive** / Dropbox / direct link. Pass it to `import_media` as the `url`; Descript fetches it server-side, **no upload and no size limit**, even for a 500 MB file. (Drive link = "anyone with the link can view.") Same for Pexels/Pixabay B-roll.
+3. **Never PUT a big local file's bytes from the sandbox** — it exceeds the shell time limit and the process dies between turns (the #1 live-test failure). **Compressing first doesn't fix it** — it still has to upload. Put the file in Drive (or drop it into Descript) instead.
+
+After any import, `wait_for_job`; Descript auto-transcribes on import (don't re-transcribe).
 
 ## General habits (always)
 

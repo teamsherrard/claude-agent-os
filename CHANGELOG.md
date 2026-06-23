@@ -2,6 +2,14 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.34.0] — 2026-06-22
+
+### AI Editor (Plugin 6) → v0.2.1 — simplest-path-first for getting the video in
+- Playbook now prefers, in order: (1) the video is **already in Descript** (just find the project — no import
+  at all), (2) **import by URL** (Google Drive / Dropbox / direct link), (3) never upload big local bytes —
+  and **compressing first doesn't help, it still has to upload**. Clarified after a live session burned time
+  trying to compress + upload a 1080p file.
+
 ## [0.33.0] — 2026-06-22
 
 ### AI Editor (Plugin 6) → v0.2.0 — live-test fix: import video by URL (no more big-file upload timeouts)
