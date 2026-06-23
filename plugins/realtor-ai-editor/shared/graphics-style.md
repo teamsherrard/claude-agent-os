@@ -10,11 +10,18 @@ Descript's default text/graphics look flat and cheap ("Fiverr") unless you direc
 - **Depth** — a drop shadow or a clean background panel so it pops off the footage.
 - **On-brand** — colours/fonts from `brand.json`; never a tool default (it once defaulted to green).
 - **Clean & modern** — not a thin centred line on a plain dark bar.
+- **High contrast** — text must pop against its panel AND the footage. NEVER the same colour family on the same background (light-blue text on a blue panel vanishes). White-on-navy or navy-on-white — not blue-on-blue.
+- **Reveal, don't just appear** — every card/pop-up animates in (slide / pop / swoosh) and out; nothing should blink onto screen.
 
 ## Placement
 
 - Hook/title card in the first ~1.5s, over B-roll or a clean frame — never over the face mid-sentence.
 - Number/stat cards land on the exact line they refer to.
+- **Clean frame:** no black bars, letterboxing, or broken-looking edges — especially in the first second. The opening must look intentional, never glitchy.
+
+## Premium & minimal (don't over-edit)
+
+A few strong, clean touches beat a pile of effects — over-editing looks cheap and tacky. Curate by video type (`${CLAUDE_PLUGIN_ROOT}/shared/effects-menu.md`). And every video ends with the agent's CTA on screen (`${CLAUDE_PLUGIN_ROOT}/shared/cta-pack.md`).
 
 ## Be explicit with Descript
 

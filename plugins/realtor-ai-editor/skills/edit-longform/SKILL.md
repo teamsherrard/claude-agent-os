@@ -5,7 +5,7 @@ description: Edit a long-form / YouTube video end to end, by directing Descript 
 
 # Edit long-form
 
-You are the director. Descript does the editing; the agent watches and approves. Read the Brain (`identity/`) and `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` first. Use the long-form recipe in `${CLAUDE_PLUGIN_ROOT}/shared/descript-playbooks.md` (Playbook A), plus `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md` and `${CLAUDE_PLUGIN_ROOT}/shared/footage-look.md` for cards, colour, and flattering treatment. Work plainly and quietly — speak only at the moments house-rules allows.
+You are the director. Descript does the editing; the agent watches and approves. Read the Brain (`identity/`) and `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` first. Use the long-form recipe in `${CLAUDE_PLUGIN_ROOT}/shared/descript-playbooks.md` (Playbook A), plus `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md` and `${CLAUDE_PLUGIN_ROOT}/shared/footage-look.md` for cards, colour, and flattering treatment. Start from `${CLAUDE_PLUGIN_ROOT}/shared/dos-and-donts.md`; use `${CLAUDE_PLUGIN_ROOT}/shared/effects-menu.md` (sparingly) and `${CLAUDE_PLUGIN_ROOT}/shared/cta-pack.md` (end with the CTA). Work plainly and quietly — speak only at the moments house-rules allows.
 
 ## Before you touch anything
 
@@ -22,7 +22,8 @@ You are the director. Descript does the editing; the agent watches and approves.
 5. **Studio Sound** for clean audio (default ~80%, not 100%).
 6. **B-roll** — hand off to `editor-broll` to source and place footage on the exact words (multi-source, topical, real places stay real).
 7. **Sparse emphasis + chapters** — key-phrase pops (~1 per 60–90s), stat/number cards, named lower-third, CTA. Make any cards big/bold/animated and on-brand (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`), not flat text. Captions stay **off by default** for long-form (`${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md`).
-8. **Export a web review link** and send it to the agent.
+8. **End with the CTA** — close on the agent's call-to-action with an on-screen CTA pop-up (`${CLAUDE_PLUGIN_ROOT}/shared/cta-pack.md`).
+9. **Export a web review link** and send it to the agent.
 
 ## Deliver
 

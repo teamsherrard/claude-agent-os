@@ -2,6 +2,23 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.37.0] — 2026-06-22
+
+### AI Editor (Plugin 6) → v0.4.0 — full revision-loop hardening (communication, contrast, restraint, CTA)
+- **Talk like a human editor, not AI.** Realtor-facing communication overhauled: short, warm, plain — no
+  jargon / tool-names / fluff, feel like texting your editor. (`house-rules.md`, `plain-language.md`)
+- **New `dos-and-donts.md`** — one-page rulebook capping every lesson from the live revision loop.
+- **Contrast rule** — never same-colour-family text on same-colour background (the unreadable blue-on-navy
+  pop-up); always high contrast. (`caption-style.md`, `graphics-style.md`)
+- **Premium & minimal** — new `effects-menu.md` catalogues Descript's effects / overlays / frames /
+  annotations and, crucially, WHEN to use each by video type, with a hard "don't over-edit" restraint rule.
+- **Clean frame** — no black bars / broken-looking edges, especially in the first second. **Reveal animations**
+  — cards/pop-ups animate in, never just appear. (`graphics-style.md`)
+- **Always end with the CTA** — new `cta-pack.md`: every video closes with the agent's on-screen CTA; build a
+  branded CTA pop-up pack ONCE via the graphics engine (subscribe / DM / link in bio / call / website) and
+  recycle it into Descript. Both edit skills now have a CTA step.
+- **Credit control** — offer a lean (cheap) vs full-polish (more credits) option and report cost. (`house-rules.md`)
+
 ## [0.36.0] — 2026-06-22
 
 ### AI Editor (Plugin 6) → v0.3.1 — flattering treatment + safe colour grade (live feedback)
