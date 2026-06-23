@@ -42,100 +42,111 @@ The two docs share the same Guide Name so the pair is unmistakable.
 - **Find-or-create:** before creating the top folder or a campaign folder, list the parent and reuse it if
   it already exists. The funnel doc saves into the **same campaign folder** the magnet created.
 
-## 4. Formatting — make it look good (within what actually converts)
+## 4. Formatting — make the brief genuinely clean (within what actually converts)
 
-**The hard constraint (verified):** the Drive connector only turns **`text/plain`** into a Google Doc.
-`.docx` and HTML uploads do **not** convert (they land as raw/broken files), and a base64 `.docx` corrupts.
-There's no API to add bold/colour/headings after creation. **So we make plain text look great by structuring
-it well.** Every time:
-- **Title line** at the top, then a light **meta line** (agent · city · date), then a blank line.
-- **Section headers in ALL CAPS**, each preceded by an em-dash divider line and followed by a blank line.
-- **Generous blank-line spacing** between blocks — let it breathe.
-- **Bullets** with `•`; beats/sub-points with `—`. One idea per line.
-- **Labels and copy-blocks on their own lines** (e.g. `HERO HEADLINE:` then the headline on the next line),
-  so the agent can grab each piece to paste into claude.ai/design.
-- **No** Markdown symbols (`#`, `**`, backticks), no tables — plain-text import drops or mangles them.
-  Structure with caps, dividers, spacing, and bullets only.
+**The hard constraint (verified — not a plugin limit):** the Drive connector only turns **`text/plain`** into a
+Google Doc. `.docx`/HTML uploads don't convert; there's no API to add colour, fonts, or real headings. **A
+Google Doc can only ever be well-structured text. The *designed* version is what the agent builds in
+claude.ai/design — that's the premium output; this doc is the clean brief that feeds it.** So make the brief
+genuinely clean and well-organized:
+- **Title line**, a light **meta line** (agent · city · date), then **a one-line PURPOSE line** so the agent
+  instantly knows what this is and what to do with it — e.g. *"Your page copy + a brief to build the page in
+  claude.ai/design. The designed version is what you build there."* Then a blank line.
+- **Section headers in ALL CAPS**, wrapped in a clean **box-drawing rule** `────────────` (U+2500) — NOT
+  em-dashes; the solid line reads far cleaner. Use a **heavy rule** `════════════` (U+2550) only for the big
+  structural break into the appendix.
+- **Keep the deliverable clean; push the build-prompt + compliance to the END as a clearly-labelled appendix**
+  (under a heavy `═` rule: `▸ NEXT — BUILD THIS IN CLAUDE.AI/DESIGN` and `▸ COMPLIANCE`). The reader should
+  read the actual content top-to-bottom without tripping over instructions — it reads as a finished piece, not
+  a mix of content + how-to.
+- **Generous blank-line spacing**; **bullets** with `•`, one idea per line; real prices/numbers as digits so they pop.
+- For the **funnel**, label each piece (`Headline:`, `Subhead:`, `CTA:`) so the agent can grab and paste — but
+  keep labels minimal and the copy prominent.
+- **No** Markdown (`#`, `**`, backticks) or tables — plain-text import mangles them. Caps, rules, spacing, bullets only.
 
 ## 5. The two document skeletons
 
-**Lead Magnet doc** — the full guide content the agent builds into a PDF:
+**Lead Magnet doc** — the guide content (the agent builds the designed PDF in claude.ai/design):
 ```
 LEAD MAGNET — [GUIDE NAME]
 [Agent Name] · [City] · [Date]
+Your guide content + a brief to build it in claude.ai/design. The designed PDF is what you build there.
 
-———————————————————————————————
+────────────────────────────────────────────
 THE PROMISE
 What this guide delivers, in one or two lines · who it's for.
 
-———————————————————————————————
-THE GUIDE  (page by page)
+────────────────────────────────────────────
+THE GUIDE   (page by page)
 PAGE 1 — [title]
-   • ...the actual, genuinely useful content...
+   •  ...the actual, genuinely useful content...
 PAGE 2 — [title]
-   • ...
+   •  ...
 (5–9 pages of real value — never a tease)
 
-———————————————————————————————
+────────────────────────────────────────────
 HOW [AGENT] HELPS NEXT
 A soft, no-pressure close in the agent's voice — where to reach them. (No call booking.)
 
-———————————————————————————————
-BUILD IT IN CLAUDE.AI/DESIGN
-[paste-ready design prompt — layout + brand colours/fonts from brand-visual.md]
+════════════════════════════════════════════
+▸ NEXT — BUILD THIS IN CLAUDE.AI/DESIGN
+[paste-ready design prompt — layout + brand colours/fonts from brand-visual.md + which photos to upload]
 
-———————————————————————————————
-Compliance: [disclaimer + license # if the rule applies]
+════════════════════════════════════════════
+▸ COMPLIANCE
+[disclaimer + license # if the rule applies]
 ```
 
-**Lead Capture Funnel doc** — the full opt-in page copy, section by section:
+**Lead Capture Funnel doc** — the opt-in page copy, section by section:
 ```
 LEAD CAPTURE FUNNEL — [GUIDE NAME]
 [Agent Name] · [City] · [Date]   ·   Sells: [the magnet above]
+Your page copy + a brief to build the page in claude.ai/design. The designed page is what you build there.
 
-———————————————————————————————
+────────────────────────────────────────────
 SECTION 1 — HERO
 Headline: ...        (= the magnet's promise)
 Subhead: ...
 CTA button: "Send me the free guide"
 
-———————————————————————————————
+────────────────────────────────────────────
 SECTION 2 — ABOUT [AGENT]
 What makes them amazing: ...
 Wins / proof: ...
 Their process: ...
 
-———————————————————————————————
+────────────────────────────────────────────
 SECTION 3 — THE LOCAL MARKET (your communities)
 Communities I serve: ...   (real areas/neighbourhoods from market.md, by name)
 What's distinct (facts): ...   (price bands, new-build communities, schools by name, commute — no FH proxies)
 Why my local depth matters to you: ...
 
-———————————————————————————————
+────────────────────────────────────────────
 SECTION 4 — WHY WORK WITH [AGENT]  (offer + USP)
 What I offer: ...   (the real services, as outcomes — from offer.md)
 My USP / why me: ...   (what I do differently, tied to your fear)
 The transformation: ...
 Proof: ...
 
-———————————————————————————————
+────────────────────────────────────────────
 SECTION 5 — THE OPT-IN
 What you'll get:
-   • ...   (matches the guide's pages exactly)
+   •  ...   (matches the guide's pages exactly)
 Form: Name + Email
 Reassurance: Free. Instant. No spam.
 CTA button: "Send me the free guide"
 Thank-you state: ...
 
-———————————————————————————————
-BUILD IT IN CLAUDE.AI/DESIGN
+════════════════════════════════════════════
+▸ NEXT — BUILD THIS IN CLAUDE.AI/DESIGN
 [paste-ready design prompt — page layout, section order, brand colours/fonts]
 📷 Upload these photos in the chat:  community/area shots → Local Market · headshot → About ·
    guide cover → hero · logo → header/footer.   (Real places only.)
 Host it: build the page in claude.ai/design, then publish on your site / GoHighLevel / Carrd.
 
-———————————————————————————————
-Compliance: [disclaimer + license # if the rule applies]
+════════════════════════════════════════════
+▸ COMPLIANCE
+[disclaimer + license # if the rule applies]
 ```
 
 ## 6. The save flow

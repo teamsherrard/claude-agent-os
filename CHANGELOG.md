@@ -2,6 +2,17 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.46.0] — 2026-06-23
+
+### Lead Capture System (Plugin 5) → v0.3.1 — cleaner, better-organized output docs (live-test feedback)
+- The saved Google Docs (lead magnet + funnel) were a confusing mix of content + build-instructions +
+  compliance in crude em-dash dividers. Now: a one-line **purpose line** up top (what it is / what to do with
+  it), clean **box-drawing section rules** (`────`), and the **build-in-Design prompt + compliance moved to a
+  clearly-labelled appendix** (`▸ NEXT` / `▸ COMPLIANCE` under a heavy `═` rule) — so the deliverable reads as
+  a finished piece, not a worksheet.
+- Honest framing baked in: a Google Doc can only be structured text; the *designed* PDF/page is what the agent
+  builds in claude.ai/design — this doc is the clean brief that feeds it.
+
 ## [0.45.0] — 2026-06-23
 
 ### Lead Capture System (Plugin 5) → v0.3.0 — funnel is value-led now, not salesy (live-test feedback)
