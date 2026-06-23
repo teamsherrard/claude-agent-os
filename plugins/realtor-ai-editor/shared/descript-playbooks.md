@@ -15,7 +15,8 @@ Descript does the editing; Claude issues the instructions and verifies. These us
 **Get the video to Descript without uploading it through the sandbox.** In order of preference:
 
 1. **Is it already in Descript?** Best of all. If the agent recorded in Descript or dropped the file into the Descript app, don't import anything — use `list_projects` / `get_project` to find it and edit that project. Just ask: *"Is the video already in your Descript?"*
-2. **Import by URL** — a **Google Drive** / Dropbox / direct link. Pass it to `import_media` as the `url`; Descript fetches it server-side, **no upload and no size limit**, even for a 500 MB file. (Drive link = "anyone with the link can view.") Same for Pexels/Pixabay B-roll.
+2. **Import by URL** — a **Google Drive** / Dropbox / direct link, fetched server-side with **no sandbox upload**. Works for normal videos (reels, typical YouTube files up to ~1–2 GB). For Drive, pass the direct-download form `https://drive.usercontent.google.com/download?id=FILE_ID&export=download&confirm=t` (not the `/view` page), shared "anyone with the link." Same for Pexels/Pixabay B-roll.
+   - **Very large files (multi-GB 4K, ~10 GB+) won't import by link** — Google serves a "can't virus-scan" page instead of the file (you'll see *"returned an HTML page"*). Fix: have the agent **drag it into the Descript desktop app** (handles big local files), **export a 1080p copy first** (~2 GB, identical on YouTube), or host it on **Dropbox** (`?dl=1`).
 3. **Never PUT a big local file's bytes from the sandbox** — it exceeds the shell time limit and the process dies between turns (the #1 live-test failure). **Compressing first doesn't fix it** — it still has to upload. Put the file in Drive (or drop it into Descript) instead.
 
 After any import, `wait_for_job`; Descript auto-transcribes on import (don't re-transcribe).

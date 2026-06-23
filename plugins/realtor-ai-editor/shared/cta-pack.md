@@ -10,12 +10,12 @@ Realtors reuse the same handful of CTAs on every video:
 
 - Subscribe · Comment below · Send me a DM · Link in bio · Call/text me · Visit my website · Follow on YouTube · Book a call
 
-These should be **branded animated pop-ups** (the agent's colours, font, logo) that slide/pop in cleanly. **Descript's own text boxes can't design these well** — so split the job:
+These should be **clean, branded CTA pop-ups** (the agent's colours, font, logo) that slide/pop in. Two ways to do it:
 
-- **Build the pack ONCE** with the graphics engine (HyperFrames or a template renderer): a small set of transparent, animated CTA clips in the agent's brand → saved in their B-roll library.
-- **Reuse every time:** import the right CTA clip into Descript as an overlay and drop it on the CTA line. No re-designing, no per-video design cost.
+- **Today (default):** have Descript place a **clean, branded, single CTA card** on the closing line — the agent's colours/font with a tasteful pop-in (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`). Descript does a single animated card well.
+- **Optional upgrade (premium pack):** for fully designed, multi-element animated CTA clips, build a small set **ONCE** via the optional **graphics-engine handoff** (a template renderer) → transparent animated clips in the agent's brand, saved in their B-roll library → reused every video by importing the clip and dropping it on the CTA line. No per-video design cost. (This is the future handoff noted in the README — not required for v1.)
 
-This is the clean split the whole plugin is built on: the **graphics engine makes premium branded assets once; Descript just places them.** It fills the most common gap (no CTA on screen) and stays cheap because it's recycled.
+The design anticipates this clean split for premium assets: a graphics engine makes branded assets once; Descript places them. Either way, it fills the most common gap (no CTA on screen) and stays cheap because the asset is recycled.
 
 ## Keep it simple for the agent
 

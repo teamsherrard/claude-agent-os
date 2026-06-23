@@ -52,4 +52,4 @@ Runs at a credit-smart **Standard** tier by default (~90% of full-polish quality
 
 ## Status
 
-v0.7.0 — hardened through live editing of real realtor videos (short-form and long-form). In: directing Descript for long + short form, multi-source B-roll, brand + captions, credit tiers, automatic Studio Sound, split-screen layouts, contextual graphics, and a full do's-&-don'ts rulebook. Next: the optional premium graphics-engine / branded CTA-pack handoff.
+v0.8.7 — finalized and audited; hardened through live editing of real realtor videos (short-form and long-form). In: directing Descript for long + short form, multi-source B-roll, brand + captions, credit tiers, automatic Studio Sound, split-screen layouts (with speaker reframing), contextual graphics, captions pinned safely below the face, clean frames (no black bars or ugly boxes), gentle and flattering treatment of people, honest human visual-QA, and a full do's-&-don'ts rulebook. Next: the optional premium graphics-engine / branded CTA-pack handoff.

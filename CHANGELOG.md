@@ -2,6 +2,21 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.44.7] — 2026-06-23
+
+### AI Editor (Plugin 6) → v0.8.7 — finalization QA pass (full audit, v1-ready)
+Full deep-dive audit of the whole plugin (6 skills, 17 shared refs, config, README). All cross-references
+resolve, Brain paths are consistent with Plugin 1, and there are no orphaned files. Issues found and fixed:
+- **Caption-on-face bug at the source.** `edit-shortform` recipe step 5 still instructed captions to be
+  "center" — the exact thing that puts them on the face. Now pinned to the lower third, below the face.
+- **Accurate import limits.** Drive-by-URL import does NOT work for very large files (multi-GB 4K, ~10 GB+) —
+  Google blocks the download behind a virus-scan page. Documented the real limit + the fixes (Descript-desktop
+  drag, 1080p export, Dropbox). (`descript-playbooks.md`, `editor-setup`)
+- **Removed dropped-engine reference.** `cta-pack.md` still named HyperFrames (dropped); reframed to the v1
+  default (Descript places a clean branded CTA card) vs. the optional graphics-engine handoff.
+- **README status refreshed** to v0.8.7 with the v0.8.x hardening (captions below face, clean frames, speaker
+  reframing, honest human visual-QA).
+
 ## [0.44.6] — 2026-06-23
 
 ### AI Editor (Plugin 6) → v0.8.6 — force captions low (Descript defaults them onto the face)

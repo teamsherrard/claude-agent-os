@@ -21,7 +21,7 @@ If they don't have a Descript account yet, tell them any **paid** plan includes 
 
 Confirm the connection works (`list_projects` finds their projects) before moving on.
 
-**Tip worth giving them now:** the easiest way to edit is to keep videos in their **Google Drive** — Descript imports straight from a Drive link, with no slow uploads and no file-size limit.
+**Tip worth giving them now:** the easiest way to edit is to keep videos in their **Google Drive** — Descript imports straight from a Drive link, with no slow uploads. (One exception: very large 4K files, ~10 GB+, are blocked by Google's large-file download page — for those, a 1080p export or dragging the file into the Descript app works better.)
 
 ## Step 2 — Brand (pull it, don't ask)
 
