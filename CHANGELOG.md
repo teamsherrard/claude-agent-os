@@ -2,6 +2,13 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.44.2] — 2026-06-23
+
+### AI Editor (Plugin 6) → v0.8.2 — cross-reference cleanup (autonomous audit)
+- `editor-broll` now references `layouts.md` (split-screen for horizontal b-roll on a vertical reel — the gap
+  behind the over-zoomed b-roll) plus `house-rules` / `dos-and-donts`, and has an explicit vertical-reel framing rule.
+- `editor-navigator` now references `dos-and-donts.md`.
+
 ## [0.44.1] — 2026-06-23
 
 ### AI Editor (Plugin 6) → v0.8.1 — edit-listing brought to parity (autonomous audit fix)

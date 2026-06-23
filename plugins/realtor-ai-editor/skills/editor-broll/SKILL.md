@@ -5,7 +5,7 @@ description: The B-roll brain for the Realtor AI Editor. Descript can host B-rol
 
 # Editor B-roll brain
 
-Claude finds the footage; Descript holds the timeline. Read `${CLAUDE_PLUGIN_ROOT}/shared/broll-ladder.md` for the full rules. Goal: footage that **matches the words** and stays **varied** (never the same clip twice in a video).
+Claude finds the footage; Descript holds the timeline. Follow `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` and `${CLAUDE_PLUGIN_ROOT}/shared/dos-and-donts.md`, and read `${CLAUDE_PLUGIN_ROOT}/shared/broll-ladder.md` for the full sourcing rules. Goal: footage that **matches the words** and stays **varied** (never the same clip twice in a video).
 
 ## Source ladder (try in order; query the stock sources together for variety)
 
@@ -25,6 +25,7 @@ Claude finds the footage; Descript holds the timeline. Read `${CLAUDE_PLUGIN_ROO
 - **Local realism** — agents talk about real places their audience knows. Use real imagery (own footage / Wikimedia / Street View). **Never** use AI or generic foreign stock to fake a specific local landmark — it erodes trust and is a compliance risk.
 - **Variety** — every cutaway in a video is unique; never reuse a clip.
 - **Placement** — 2.5–5s each; on the exact words; never cover the hook, the face, or the CTA.
+- **Framing (vertical reels)** — horizontal b-roll on a 9:16 reel → **split-screen or clean full-bleed, never over-zoomed or floating** (an over-cropped clip becomes an unreadable close-up). See `${CLAUDE_PLUGIN_ROOT}/shared/layouts.md`.
 - **Licensing** — prefer the no-attribution, commercial-OK sources (Pexels, Pixabay, Coverr, Unsplash). If a source needs attribution (some Wikimedia/CC items), either add it to the description automatically or skip the item. Default to the agent's own footage when in doubt.
 
 ## Handoff to Descript
