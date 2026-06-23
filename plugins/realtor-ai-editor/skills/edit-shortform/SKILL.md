@@ -18,10 +18,10 @@ If recycling, read the transcript and choose moments the way a good editor would
 
 1. **Pick the moment** — must stand alone, start with a hook, end on a payoff/CTA.
 2. **Reframe to 9:16**, keep the face centred with headroom.
-3. **Cut hard** — zero dead air (cut tighter than long-form). **Clean start & end:** trim any camera-on fumble at the very start and the camera-off reach / dead air at the very end — but never cut the hook or the CTA.
+3. **Cut hard + clean the audio** — zero dead air (cut tighter than long-form), and **always apply Studio Sound (~90%, automatic — agents record on phones)**. **Clean start & end:** open on the hook, trim the camera-off reach / dead air at the end, never end mid-sentence — but never cut the hook or the CTA.
 4. **Hook in the first ~1.5s** — 3–5 words, a claim or a number. Make the hook CARD big, bold, and animated (pop-in), never a flat static text box — see `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`.
 5. **Captions on, always** — center, karaoke, brand accent on the active word (`${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md`).
-6. **B-roll** — `editor-broll`, on the words, never over the hook/face/CTA (3–5 on the key lines, not every line — Standard).
+6. **B-roll** — `editor-broll`, on the words, never over the hook/face/CTA (3–5 on the key lines — Standard). Horizontal b-roll → split-screen or clean full-bleed, never over-zoomed/floating (`${CLAUDE_PLUGIN_ROOT}/shared/layouts.md`).
 7. **Punch-ins** on a few key beats (subtle ~1.06–1.08 zoom), not every scene. Keep pop-ups to 2–3 max, SFX to 1–2, transitions at major changes only (Standard — `${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md`).
 8. **Music** ducked under the voice.
 9. **End with the CTA** — close on the agent's call-to-action with an on-screen CTA pop-up (`${CLAUDE_PLUGIN_ROOT}/shared/cta-pack.md`), not just spoken words.

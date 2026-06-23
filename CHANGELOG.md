@@ -2,6 +2,15 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.43.0] — 2026-06-22
+
+### AI Editor (Plugin 6) → v0.7.0 — automatic Studio Sound, split-screen b-roll, fit/no-overlap captions, proper endings (live revision batch)
+- **Studio Sound now MANDATORY + automatic on every video.** Agents record on phones — audio always needs it. ~90% default (100% for echoey rooms); it's a render-time effect (judge on playback, not the scrub preview). Added the missing Studio Sound step to the short-form recipe. Honest ceiling: a bad mic/room has limits → recommend agents a cheap lav mic. (`descript-playbooks.md`, both edit skills, `dos-and-donts.md`)
+- **New `layouts.md` — horizontal b-roll on a vertical reel.** Don't blind cover-fill (over-zooms — a money shot becomes a fingernail). Use **split-screen** (speaker + b-roll-in-full) via Descript's Layout, or full-bleed only when the subject still reads. Never floating/letterboxed/over-zoomed.
+- **Text fits its box + no overlaps.** Text never overflows its panel (padding); captions/pops/cards/CTA never collide or stack (stagger them). Use a polished caption style, not the basic boxy default. (`caption-style.md`, `graphics-style.md`, `dos-and-donts.md`)
+- **Proper ending — never mid-sentence.** End on a complete thought + an outro/CTA. (`descript-playbooks.md`, both edit skills, `dos-and-donts.md`)
+- **SFX subtle + low.** A few, quiet, purposeful — never loud or random. (`effects-menu.md`, `dos-and-donts.md`)
+
 ## [0.42.0] — 2026-06-22
 
 ### AI Editor (Plugin 6) → v0.6.0 — minimal ≠ bare: purposeful long-form creativity + audio verified

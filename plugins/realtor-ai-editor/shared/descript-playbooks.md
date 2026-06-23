@@ -23,7 +23,8 @@ After any import, `wait_for_job`; Descript auto-transcribes on import (don't re-
 ## General habits (always)
 
 - Work on the **original** composition in place — never create duplicate copies (they clutter the agent's Descript and confuse them about which version is which). Descript's own undo / version history is the safety net. Seed proper nouns first; **one `prompt_project_agent` instruction at a time**, verify after each (catches overreach).
-- **Clean starts & ends — OPEN ON THE HOOK.** Cut the getting-settled / throat-clearing intro (adjusting in the chair, rubbing hands, "okay let's go", "let's do this", throat-clears) so the first frame is the first real line of content. Trim the camera-off reach / dead air at the end too — but NEVER cut into the hook itself or the CTA. The end lands the instant the last word finishes.
+- **Clean starts & ends — OPEN ON THE HOOK.** Cut the getting-settled / throat-clearing intro (adjusting in the chair, rubbing hands, "okay let's go", "let's do this", throat-clears) so the first frame is the first real line of content. Trim the camera-off reach / dead air at the end too — but NEVER cut into the hook itself or the CTA. The end lands the instant the last word finishes — and **never end mid-sentence**; end on a complete thought, then an outro / CTA.
+- **Studio Sound is MANDATORY on every video — automatic, non-negotiable.** Agents record on phones, so the audio always needs it. ~90% default (100% for echoey rooms), as its own step. It's a render-time effect — confirm via the track flag (and on *playback*, not the scrub preview), never assume. Honest ceiling: a bad mic + reverberant room has limits, so suggest a cheap lav mic at the source.
 - **Verify each step landed** via the job result (`status: success`, `project_changed: true`) — not the project's `updated_at` (which doesn't move for in-clip edits like captions). Have the agent eyeball visible changes.
 - **Publishing is gated** — never `publish_project` without the agent's yes (keep the connector's Publish on "needs approval").
 - **"Unable to reach Descript" is usually a timeout, not a failure** — check with `list_projects` / `get_project` before retrying. Never blind-retry a paid job; stop after 1–2 failures and ask.
@@ -34,8 +35,8 @@ After any import, `wait_for_job`; Descript auto-transcribes on import (don't re-
 2. `prompt_project_agent`: **open on the hook** (cut the settling-in / "let's go" / throat-clearing intro so it starts on the first real line), then remove filler words (conservative). Verify first 40s.
 3. Remove silences > ~1.5s (avoid harsh cuts).
 4. Cut false starts / bad takes — review before applying; restore good bits.
-5. **Studio Sound — its OWN step, and VERIFY it actually turned on** (it can silently stay off if buried in a multi-part prompt). ~80%; push to ~90% for echoey / reverb-y rooms.
-6. B-roll (via `editor-broll`, on the words) + a **purposeful creative layer** — gentle punch-ins on key lines, keyword pops, contextual animations matched to the words, a few tasteful SFX, chapters. Minimal ≠ bare (`${CLAUDE_PLUGIN_ROOT}/shared/effects-menu.md`). No captions by default.
+5. **Studio Sound — ALWAYS, its own step, ~90% (100% for echoey rooms).** Mandatory on every video; confirm it's on (render-time effect — judge on playback, not the scrub preview).
+6. B-roll (via `editor-broll`, on the words) + a **purposeful creative layer** — gentle punch-ins on key lines, keyword pops, contextual animations matched to the words, a few **subtle, low-volume** SFX, chapters. Horizontal b-roll on a vertical reel → **split-screen, never over-zoomed** (`${CLAUDE_PLUGIN_ROOT}/shared/layouts.md`). Minimal ≠ bare (`${CLAUDE_PLUGIN_ROOT}/shared/effects-menu.md`). No captions by default.
 7. `publish_project` (on approval) → share + download URL + a title/description.
 
 ## Playbook B — short-form / pull shorts

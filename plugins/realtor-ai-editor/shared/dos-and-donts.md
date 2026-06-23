@@ -12,6 +12,10 @@ The one-page rulebook for editing a realtor's video. The detailed refs back each
 - DO keep zooms gentle, keep good headroom, keep skin natural and flattering.
 - DON'T push in tight on anyone's face. DON'T harshen brightness/contrast on a face. (Many agents are self-conscious on camera.)
 
+## Sound (always clean the audio)
+- DO apply Studio Sound automatically on EVERY video — agents record on phones, so the audio always needs it (~90%, 100% for echoey rooms). It renders on *playback*, not the scrub preview.
+- DON'T ship raw/echoey audio. If the source is genuinely bad (mic + room), tell the agent — a cheap lav mic fixes it at the source.
+
 ## Readable, always (contrast)
 - DO put light text on dark, dark text on light — always high contrast.
 - DON'T ever put a colour on the same-family background (e.g. light-blue text on a blue panel) — it disappears and looks broken.
@@ -20,15 +24,20 @@ The one-page rulebook for editing a realtor's video. The detailed refs back each
 - DO keep it clean, modern, restrained. A few strong touches beat ten cheap ones.
 - DO add *purposeful* creativity — match the effect to the words (price drop → down arrow, big number → count-up, "tight" → squeeze). **Minimal ≠ bare**: a flat, static talking-head with nothing happening is *also* a bad edit. Talking-heads need gentle punch-ins, keyword pops, and a little motion.
 - DON'T pile on RANDOM effects/overlays/frames until it looks tacky. The enemy is clutter, not creativity. Curate by video type (see effects-menu.md).
+- DON'T use loud or random SFX — a few, subtle, low-volume, and purposeful only.
 
 ## Captions & graphics
 - DO make captions big and phone-legible (~90pt+), white with a black outline, active word in the brand accent.
 - DO make hook/section/number cards big, bold, animated (pop-in / reveal), on-brand, with depth.
 - DON'T leave a flat static text box (the "Fiverr look"). DON'T use a default colour (no random green).
+- DO make text FIT its box (even padding, never overflowing the panel) and use a polished caption style — not the plain boxy default.
+- DON'T let elements overlap — captions, pops, cards, and the CTA must never collide or stack (stagger them).
+- DON'T paste a horizontal b-roll over-zoomed onto a vertical reel (a money shot becomes a fingernail) — split-screen it, or full-bleed only if it still reads (see layouts.md).
 
 ## Clean frame, clean start, clean end
 - DO start clean — **open on the hook** (cut the settling-in / "let's go" / throat-clearing intro), no black bars in the first second — and end the instant the last word finishes.
 - DON'T leave camera-on fumbles, dead air, or the camera-off reach. NEVER cut the hook or the CTA.
+- DON'T end mid-sentence — end on a complete thought, then the CTA.
 - DON'T let a zoom or a repositioned clip expose the frame edge (black bars). Zoom IN only, keep footage filling the frame, verify no canvas gaps.
 
 ## Always end with their call-to-action

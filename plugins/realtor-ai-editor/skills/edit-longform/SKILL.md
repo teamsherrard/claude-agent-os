@@ -19,10 +19,10 @@ You are the director. Descript does the editing; the agent watches and approves.
 2. **Remove filler words** — conservative (ums/uhs; leave natural speech). Verify the first ~40 seconds reads clean before continuing.
 3. **Remove long silences / dead air** (the single biggest quality lift). Avoid harsh cuts. **Clean start & end — OPEN ON THE HOOK:** cut the settling-in / "let's go" / throat-clearing intro so it starts on the first real line; trim the camera-off reach at the end — never cut the hook itself or the CTA.
 4. **Cut bad takes / false starts** — review the proposed cuts before applying; restore anything good it removed.
-5. **Studio Sound** for clean audio (default ~80%, not 100%).
+5. **Studio Sound — ALWAYS, automatic, every video** (agents record on phones). ~90% (100% for echoey rooms); it renders on playback, so verify the flag, not the scrub preview.
 6. **B-roll** — hand off to `editor-broll` to source and place footage on the exact words (multi-source, topical, real places stay real).
 7. **Purposeful emphasis + chapters (minimal ≠ bare).** A talking-head goes flat without energy, so add: gentle **punch-ins** on key lines, **keyword pop-ups** on the punchy phrases, **contextual animations matched to the words** (e.g. "prices dropping" → a downward arrow; a big number → count-up; "inventory tight" → a squeeze), stat/number cards, and a few **tasteful SFX** on transitions. Big/bold/animated/high-contrast (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`, `${CLAUDE_PLUGIN_ROOT}/shared/effects-menu.md`) — never flat, never cluttered. Captions stay **off by default** for long-form (`${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md`).
-8. **End with the CTA** — close on the agent's call-to-action with an on-screen CTA pop-up (`${CLAUDE_PLUGIN_ROOT}/shared/cta-pack.md`).
+8. **End properly** — never end mid-sentence; end on a complete thought, then the agent's on-screen CTA pop-up (`${CLAUDE_PLUGIN_ROOT}/shared/cta-pack.md`).
 9. **Export a web review link** and send it to the agent.
 
 ## Deliver

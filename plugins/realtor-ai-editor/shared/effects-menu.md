@@ -18,7 +18,7 @@ Descript has far more than cuts and captions. The skill is knowing what NOT to u
 
 ## When to use what (by video type)
 
-- **Talking-head (reels AND long-form YouTube):** this format goes flat without energy — give it gentle punch-ins on the key lines, keyword pop-ups on the punchy phrases, contextual animations matched to the words, clean section/stat cards, a few tasteful SFX on transitions, and a subtle grade. Purposeful, not constant. (A bare talking-head is the most common under-edit.)
+- **Talking-head (reels AND long-form YouTube):** this format goes flat without energy — give it gentle punch-ins on the key lines, keyword pop-ups on the punchy phrases, contextual animations matched to the words, clean section/stat cards, a few **subtle, low-volume** SFX on transitions (never loud or jarring), and a subtle grade. Purposeful, not constant. (A bare talking-head is the most common under-edit.)
 - **Listing / property tour:** smooth room-to-room transitions, clean lower-thirds (address/price), the agent's own footage. No gimmicky overlays.
 - **Market update / data:** clean number/stat cards (count-up on the figures), punch-ins on the key stats, a contextual animation where it fits (price drop → down arrow), maybe a thin progress bar. Restrained but not bare.
 - **Hype / promo:** a touch more energy is OK — a light leak on a transition, slightly punchier — but still tasteful.
