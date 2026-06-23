@@ -2,6 +2,15 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.44.1] — 2026-06-23
+
+### AI Editor (Plugin 6) → v0.8.1 — edit-listing brought to parity (autonomous audit fix)
+- A consistency audit found `edit-listing` lagging the other edit skills — it was written early and never picked
+  up the later hardening. Added: starts from `dos-and-donts.md`; a cleanup step (open on the hook, **Studio Sound
+  mandatory**, never end mid-sentence); horizontal b-roll → split-screen (`layouts.md`); brand cards per
+  `graphics-style.md` (fit / contrast / no-overlap); runs `final-check.md` before delivery; defaults to Standard
+  tier. Now consistent with edit-longform / edit-shortform.
+
 ## [0.44.0] — 2026-06-23
 
 ### AI Editor (Plugin 6) → v0.8.0 — final-check QA gate + content-types + music (autonomous pass)
