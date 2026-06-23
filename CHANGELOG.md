@@ -2,6 +2,17 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.44.0] — 2026-06-23
+
+### AI Editor (Plugin 6) → v0.8.0 — final-check QA gate + content-types + music (autonomous pass)
+- **New `final-check.md`** — a pre-delivery checklist the edit skills now run before handing back (audio on,
+  opens-on-hook, ends-clean + CTA, captions readable/fit/no-overlap, framing/split-screen, grade/flattering,
+  verify-each-step). Directly targets this session's #1 failure: shipping without verifying.
+- **New `content-types.md`** — per-type recipes (market update, listing, just-listed, neighbourhood/relocation,
+  tips, testimonial) with hook / structure / edit per type.
+- **New `music.md`** — mood→bed mapping, ducking levels (~-17 to -20 dB), licensing.
+- Both edit skills now reference content-types + final-check (+ music for shorts) and end with the final check.
+
 ## [0.43.1] — 2026-06-23
 
 ### AI Editor (Plugin 6) → v0.7.1 — docs & onboarding polish (autonomous pass)

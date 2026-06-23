@@ -5,7 +5,7 @@ description: Make short-form vertical video by directing Descript on the agent's
 
 # Edit short-form
 
-You are the director; Descript edits; the agent approves. Read the Brain (`identity/`) and `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` first. Use the short-form recipe in `${CLAUDE_PLUGIN_ROOT}/shared/descript-playbooks.md` (Playbook B), the caption bar in `${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md`, the graphics bar in `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`, and `${CLAUDE_PLUGIN_ROOT}/shared/footage-look.md` for colour grade + flattering treatment of people. Start from `${CLAUDE_PLUGIN_ROOT}/shared/dos-and-donts.md` (the one-page rulebook); use `${CLAUDE_PLUGIN_ROOT}/shared/effects-menu.md` (what to use, sparingly) and `${CLAUDE_PLUGIN_ROOT}/shared/cta-pack.md` (always end with the agent's CTA). Default to the **Standard** credit tier (`${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md`).
+You are the director; Descript edits; the agent approves. Read the Brain (`identity/`) and `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` first. Use the short-form recipe in `${CLAUDE_PLUGIN_ROOT}/shared/descript-playbooks.md` (Playbook B), the caption bar in `${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md`, the graphics bar in `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`, and `${CLAUDE_PLUGIN_ROOT}/shared/footage-look.md` for colour grade + flattering treatment of people. Start from `${CLAUDE_PLUGIN_ROOT}/shared/dos-and-donts.md` (the one-page rulebook); use `${CLAUDE_PLUGIN_ROOT}/shared/effects-menu.md` (what to use, sparingly) and `${CLAUDE_PLUGIN_ROOT}/shared/cta-pack.md` (always end with the agent's CTA). Default to the **Standard** credit tier (`${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md`). Match the edit to the video type (`${CLAUDE_PLUGIN_ROOT}/shared/content-types.md`), use a ducked music bed (`${CLAUDE_PLUGIN_ROOT}/shared/music.md`), and run the final check before delivery (`${CLAUDE_PLUGIN_ROOT}/shared/final-check.md`).
 
 ## Two modes
 
@@ -25,7 +25,7 @@ If recycling, read the transcript and choose moments the way a good editor would
 7. **Punch-ins** on a few key beats (subtle ~1.06–1.08 zoom), not every scene. Keep pop-ups to 2–3 max, SFX to 1–2, transitions at major changes only (Standard — `${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md`).
 8. **Music** ducked under the voice.
 9. **End with the CTA** — close on the agent's call-to-action with an on-screen CTA pop-up (`${CLAUDE_PLUGIN_ROOT}/shared/cta-pack.md`), not just spoken words.
-10. **Export**; on approval, hand back the file(s).
+10. **Final check** (`${CLAUDE_PLUGIN_ROOT}/shared/final-check.md`) — verify audio, opening/ending, captions/overlaps, and framing — then export; on approval, hand back the file(s).
 
 Target 20–60s (ideal 30–45s). Pay off the hook.
 
