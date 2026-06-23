@@ -26,7 +26,7 @@ The one-page rulebook for editing a realtor's video. The detailed refs back each
 - DON'T leave a flat static text box (the "Fiverr look"). DON'T use a default colour (no random green).
 
 ## Clean frame, clean start, clean end
-- DO start clean — no black bars or broken-looking frame in the first second — and end the instant the last word finishes.
+- DO start clean — **open on the hook** (cut the settling-in / "let's go" / throat-clearing intro), no black bars in the first second — and end the instant the last word finishes.
 - DON'T leave camera-on fumbles, dead air, or the camera-off reach. NEVER cut the hook or the CTA.
 - DON'T let a zoom or a repositioned clip expose the frame edge (black bars). Zoom IN only, keep footage filling the frame, verify no canvas gaps.
 

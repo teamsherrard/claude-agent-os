@@ -17,7 +17,7 @@ You are the director. Descript does the editing; the agent watches and approves.
 
 1. **Get the video into Descript** — if it's already there, just find the project; otherwise import it **by URL** (a Google Drive / Dropbox / direct link — never a big local upload; see the playbook's "Getting the video IN"). Descript auto-transcribes on import. Don't re-transcribe later.
 2. **Remove filler words** — conservative (ums/uhs; leave natural speech). Verify the first ~40 seconds reads clean before continuing.
-3. **Remove long silences / dead air** (the single biggest quality lift). Avoid harsh cuts. **Clean start & end:** trim the camera-on fumble at the start and the camera-off reach at the end — never cut the hook or the CTA.
+3. **Remove long silences / dead air** (the single biggest quality lift). Avoid harsh cuts. **Clean start & end — OPEN ON THE HOOK:** cut the settling-in / "let's go" / throat-clearing intro so it starts on the first real line; trim the camera-off reach at the end — never cut the hook itself or the CTA.
 4. **Cut bad takes / false starts** — review the proposed cuts before applying; restore anything good it removed.
 5. **Studio Sound** for clean audio (default ~80%, not 100%).
 6. **B-roll** — hand off to `editor-broll` to source and place footage on the exact words (multi-source, topical, real places stay real).

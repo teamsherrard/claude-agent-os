@@ -23,7 +23,7 @@ After any import, `wait_for_job`; Descript auto-transcribes on import (don't re-
 ## General habits (always)
 
 - Work on the **original** composition in place — never create duplicate copies (they clutter the agent's Descript and confuse them about which version is which). Descript's own undo / version history is the safety net. Seed proper nouns first; **one `prompt_project_agent` instruction at a time**, verify after each (catches overreach).
-- **Clean starts & ends.** Trim the camera-on fumble / dead air at the very start and the camera-off reach / dead air at the very end — but NEVER cut into the spoken hook or the CTA. The end should land the instant the last word finishes.
+- **Clean starts & ends — OPEN ON THE HOOK.** Cut the getting-settled / throat-clearing intro (adjusting in the chair, rubbing hands, "okay let's go", "let's do this", throat-clears) so the first frame is the first real line of content. Trim the camera-off reach / dead air at the end too — but NEVER cut into the hook itself or the CTA. The end lands the instant the last word finishes.
 - **Verify each step landed** via the job result (`status: success`, `project_changed: true`) — not the project's `updated_at` (which doesn't move for in-clip edits like captions). Have the agent eyeball visible changes.
 - **Publishing is gated** — never `publish_project` without the agent's yes (keep the connector's Publish on "needs approval").
 - **"Unable to reach Descript" is usually a timeout, not a failure** — check with `list_projects` / `get_project` before retrying. Never blind-retry a paid job; stop after 1–2 failures and ask.
@@ -31,7 +31,7 @@ After any import, `wait_for_job`; Descript auto-transcribes on import (don't re-
 ## Playbook A — long-form cleanup
 
 1. Find/create the project; `import_media` the video **by URL**; `wait_for_job` (auto-transcribes).
-2. `prompt_project_agent`: remove filler words (conservative). Verify first 40s.
+2. `prompt_project_agent`: **open on the hook** (cut the settling-in / "let's go" / throat-clearing intro so it starts on the first real line), then remove filler words (conservative). Verify first 40s.
 3. Remove silences > ~1.5s (avoid harsh cuts).
 4. Cut false starts / bad takes — review before applying; restore good bits.
 5. Studio Sound (~80%).

@@ -2,6 +2,14 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.41.0] — 2026-06-22
+
+### AI Editor (Plugin 6) → v0.5.2 — "open on the hook" (cut the settle-in intro)
+- **Sharpened the clean-start rule to "OPEN ON THE HOOK."** Live miss: the cleanup left a messy ~4-sec intro
+  (getting settled, rubbing hands, "let's go" / "let's do this"). The cleanup pass must now explicitly cut the
+  settling-in / throat-clearing intro so the video starts on the first real line of content — never the hook
+  itself. (`descript-playbooks.md` general habits + Playbook A, `dos-and-donts.md`, `edit-longform`)
+
 ## [0.40.0] — 2026-06-22
 
 ### AI Editor (Plugin 6) → v0.5.1 — edit the original in place (no duplicate copies)
