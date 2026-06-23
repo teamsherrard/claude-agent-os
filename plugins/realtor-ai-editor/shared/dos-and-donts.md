@@ -28,6 +28,7 @@ The one-page rulebook for editing a realtor's video. The detailed refs back each
 ## Clean frame, clean start, clean end
 - DO start clean — no black bars or broken-looking frame in the first second — and end the instant the last word finishes.
 - DON'T leave camera-on fumbles, dead air, or the camera-off reach. NEVER cut the hook or the CTA.
+- DON'T let a zoom or a repositioned clip expose the frame edge (black bars). Zoom IN only, keep footage filling the frame, verify no canvas gaps.
 
 ## Always end with their call-to-action
 - DO close every video with the agent's CTA on screen — subscribe / DM me / link in bio / call / website (see cta-pack.md).

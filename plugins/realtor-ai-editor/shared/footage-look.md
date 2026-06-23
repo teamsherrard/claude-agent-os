@@ -17,3 +17,10 @@ Many agents — **especially women in the cohort** — are self-conscious on cam
 - Natural, flattering skin; never harsh brightness or contrast on a face.
 - When unsure, prioritise making the person look good over a "punchier" edit.
 - Never comment on or try to "fix" someone's appearance — just frame and grade them kindly.
+
+## Zooms & framing — never expose the edge
+
+- Every clip must FILL the frame (cover, not "fit") — no black bars or letterboxing anywhere, especially the first second.
+- Zooms / punch-ins are **zoom-IN only** — stay at or above the full-fill scale (≥100%). Never scale below fill; never pan footage off-frame.
+- **A position offset must stay small relative to the zoom.** A shift bigger than the zoom's headroom pushes past the source edge and creates a black bar (a 7.5% vertical offset at 1.05–1.08× zoom exposed the top edge in testing). Keep footage centred unless there's a reason, and stay within the safe range.
+- After any zoom or reframe, verify there are **zero canvas gaps** (no black showing) across the whole timeline before calling it done.

@@ -2,6 +2,14 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.38.0] — 2026-06-22
+
+### AI Editor (Plugin 6) → v0.4.1 — zoom/framing safety (never expose the frame edge)
+- **Zooms must never cut off the frame.** Live bug: a global ~7.5% vertical position offset combined with
+  1.05–1.08× punch-ins pushed the footage past the top edge → black bars. Rule added: clips always FILL the
+  frame; zooms are zoom-IN only (≥ full-fill scale); position offsets stay within the zoom's safe headroom;
+  verify zero canvas gaps after any zoom/reframe. (`footage-look.md`, `dos-and-donts.md`)
+
 ## [0.37.0] — 2026-06-22
 
 ### AI Editor (Plugin 6) → v0.4.0 — full revision-loop hardening (communication, contrast, restraint, CTA)
