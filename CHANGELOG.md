@@ -2,6 +2,15 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.44.6] — 2026-06-23
+
+### AI Editor (Plugin 6) → v0.8.6 — force captions low (Descript defaults them onto the face)
+- **Caption position must be set explicitly.** Discovered live: Descript defaults added captions to dead-centre
+  (vertical position ≈ 0.50) — directly on the speaker's face — which is why caption-on-face kept recurring.
+  `caption-style.md` now requires always setting the vertical position low yourself (≈ 0.84–0.88: below the chin,
+  above the bottom ~12% UI strip) and never trusting the default; in split-screen, push captions to the bottom of
+  the speaker's band. (Caught + fixed on the Seattle reel — 3 captions were sitting at y=0.50, dead-centre.)
+
 ## [0.44.5] — 2026-06-23
 
 ### AI Editor (Plugin 6) → v0.8.5 — captions NEVER over the face + honest visual-QA limits
