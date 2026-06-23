@@ -106,13 +106,20 @@ Wins / proof: ...
 Their process: ...
 
 ———————————————————————————————
-SECTION 3 — THE OFFER
+SECTION 3 — THE LOCAL MARKET (your communities)
+Communities I serve: ...   (real areas/neighbourhoods from market.md, by name)
+What's distinct (facts): ...   (price bands, new-build communities, schools by name, commute — no FH proxies)
+Why my local depth matters to you: ...
+
+———————————————————————————————
+SECTION 4 — WHY WORK WITH [AGENT]  (offer + USP)
+What I offer: ...   (the real services, as outcomes — from offer.md)
+My USP / why me: ...   (what I do differently, tied to your fear)
 The transformation: ...
-Why [Agent]: ...
 Proof: ...
 
 ———————————————————————————————
-SECTION 4 — THE OPT-IN
+SECTION 5 — THE OPT-IN
 What you'll get:
    • ...   (matches the guide's pages exactly)
 Form: Name + Email
@@ -122,7 +129,9 @@ Thank-you state: ...
 
 ———————————————————————————————
 BUILD IT IN CLAUDE.AI/DESIGN
-[paste-ready design prompt — one-page opt-in layout, section order, brand colours/fonts]
+[paste-ready design prompt — page layout, section order, brand colours/fonts]
+📷 Upload these photos in the chat:  community/area shots → Local Market · headshot → About ·
+   guide cover → hero · logo → header/footer.   (Real places only.)
 Host it: build the page in claude.ai/design, then publish on your site / GoHighLevel / Carrd.
 
 ———————————————————————————————

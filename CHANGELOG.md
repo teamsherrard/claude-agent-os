@@ -2,6 +2,19 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.45.0] — 2026-06-23
+
+### Lead Capture System (Plugin 5) → v0.3.0 — funnel is value-led now, not salesy (live-test feedback)
+- **New funnel section: "The Local Market — your communities."** Pulls the agent's real communities from the
+  Brain's `market.md` (named areas, price bands, new-build communities, facts) — the un-fakeable local
+  authority that makes the page read like value, not a pitch. The design prompt now cues the agent to upload
+  real community/area photos in claude.ai/design (+ headshot, guide cover, logo — a "📷 upload these" checklist).
+- **Strengthened "Why Work With [Agent]" section** — the full offer + USP + the real why-hire-them, straight
+  from `offer.md` (not just the guide's process). The section most agents' pages were missing.
+- **Value-led, not salesy** — the copywriting KB + funnel guide now lead with genuine local depth + a real
+  offer; a thin all-pitch page reads salesy, a substantive one reads like an expert.
+- Funnel is now 5 sections: Hero · About · Local Market · Why-Work-With-Me · Opt-in (skeleton + KB updated).
+
 ## [0.44.7] — 2026-06-23
 
 ### AI Editor (Plugin 6) → v0.8.7 — finalization QA pass (full audit, v1-ready)

@@ -8,8 +8,9 @@ like the agent, not like a generic marketer or AI. If a line fails one of the pr
 
 ## The 9 principles (non-negotiable)
 
-1. **One job per page.** The funnel has exactly one goal: the opt-in. Every section, sentence, and button
-   moves the reader toward giving their name + email. Cut anything that doesn't.
+1. **One job, earned with value.** The funnel's one goal is the opt-in — but it EARNS it by being genuinely
+   useful (real local-market depth + a real offer), never by pushing. **A thin, all-pitch page reads salesy;
+   a substantive one reads like an expert.** Every section moves toward the opt-in by adding value, not hype.
 2. **Clarity beats cleverness.** A confused reader leaves. In 5 seconds the visitor must know: what this is,
    who it's for, and what they get. Never sacrifice clarity for a cute headline.
 3. **Benefit beats feature.** Lead with what the reader GETS, not what the agent does. Not "I do buyer
@@ -84,10 +85,21 @@ Tone: humble-confident and human. Always close the loop back to the reader — "
 
 ---
 
-## The Offer section — present it as a transformation, not a service list
+## The Local Market section — the un-fakeable value (named communities)
 
-Read `identity/offer.md` and present the offer as the **outcome the reader gets**, never a bullet list of
-tasks. Structure:
+The section that flips the page from "salesy" to "valuable," and the strongest answer to "why not just Google
+it / use ChatGPT." Pull `identity/market.md`:
+- **Name the communities/areas they serve** and what's genuinely distinct about each in FACTS (price bands,
+  the new-build communities, schools by name, commute, amenities). Never "good area" / "family-friendly"
+  proxies (Fair Housing). This is the local depth only they have.
+- **Tie it to the reader** — "the communities I know inside out" → so you don't overpay or pick the wrong one.
+- **Real photos** — the agent uploads their own community/area shots in claude.ai/design. Real places only.
+
+## The Offer / Why-Work-With-Me section — the real "why hire me" (most pages miss this)
+
+Read `identity/offer.md` and present the **full offer + USP + why-work-with-them** — their real services (as
+outcomes, not a task list), what they do differently than any other agent, and the concrete reasons to choose
+them. Structure:
 - **The transformation** — where they are now → where the agent gets them ("from overwhelmed and worried
   about overpaying → to confident, informed, and in the right home at the right price").
 - **Why this agent** — the USP, tied to the reader's fear. What they do differently that de-risks the
@@ -122,12 +134,13 @@ Repeat the CTA in the hero AND the opt-in section — same promise both times.
 
 ## Flow & structure — the page must move
 
-The four sections answer the reader's questions in the order they ask them, each building toward the opt-in:
+The five sections answer the reader's questions in the order they ask them, each building toward the opt-in:
 
 ```
 HERO        →  "What is this and is it for me?"   (promise + who + CTA)
 ABOUT       →  "Why should I trust this person?"  (expertise + wins + process)
-OFFER       →  "What's it actually like to work with them?"  (transformation + why them)
+MARKET      →  "Do they really know MY area?"     (named communities + local depth + photos)
+WHY ME      →  "What do they offer + why hire them?"  (full offer + USP + why-work-with-them)
 OPT-IN      →  "Okay — what do I get and how?"    (the magnet + the email + CTA)
 ```
 Momentum rules: short sentences, short paragraphs (1–3 lines), one idea per block, sub-headers and bullets so
