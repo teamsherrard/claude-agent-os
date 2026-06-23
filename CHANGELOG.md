@@ -2,6 +2,18 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.39.0] — 2026-06-22
+
+### AI Editor (Plugin 6) → v0.5.0 — credit tiers (balanced quality vs cost; Standard is the default)
+- **New `credit-tiers.md`** — Lean / **Standard (default)** / Full. Standard is the credit-smart, premium-minimal
+  everyday look: ~90% of full quality at roughly half the credits, via deliberate caps (a few punch-ins not every
+  scene, 3–5 B-roll, 2–3 pop-ups max, 1–2 SFX, transitions at major changes only, light grade). Doing one-less is
+  both cheaper AND cleaner. Lean = essentials only; Full = hero/case-study videos.
+- Both edit skills now default to Standard; house-rules updated (batch passes, never iterate 15×, repurpose
+  shorts from a long edit to skip re-import/transcribe).
+- Why: a balanced realtor (~2 long + 3–4 shorts/week on Standard) fits a Creator/Business plan (~$35–65/mo)
+  instead of the $150+ that full-polish-everything implied.
+
 ## [0.38.0] — 2026-06-22
 
 ### AI Editor (Plugin 6) → v0.4.1 — zoom/framing safety (never expose the frame edge)
