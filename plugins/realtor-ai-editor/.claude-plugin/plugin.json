@@ -1,7 +1,7 @@
 {
   "name": "realtor-ai-editor",
   "displayName": "Realtor AI Editor (Plugin 6)",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "The AI Editor. The agent talks to Claude in plain English; Claude directs Descript (on the agent's own account) to do the actual editing — long-form and short-form, all in one tool — while they watch it happen live. Claude is the director, not the editor. It adds the multi-source B-roll Descript can't source itself (the agent's own footage, listing photos, and free stock libraries), and a navigator skill turns vague or messy requests into one clear plan so the agent is never overwhelmed. Requires Plugin 1 (the Brain) set up first, plus a Descript connection.",
   "author": {
     "name": "Mike Sherrard"

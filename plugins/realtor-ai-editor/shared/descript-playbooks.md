@@ -23,8 +23,10 @@ After any import, `wait_for_job`; Descript auto-transcribes on import (don't re-
 ## General habits (always)
 
 - Work on a copy; seed proper nouns first; **one `prompt_project_agent` instruction at a time**, verify after each (catches overreach).
+- **Clean starts & ends.** Trim the camera-on fumble / dead air at the very start and the camera-off reach / dead air at the very end — but NEVER cut into the spoken hook or the CTA. The end should land the instant the last word finishes.
+- **Verify each step landed** via the job result (`status: success`, `project_changed: true`) — not the project's `updated_at` (which doesn't move for in-clip edits like captions). Have the agent eyeball visible changes.
 - **Publishing is gated** — never `publish_project` without the agent's yes (keep the connector's Publish on "needs approval").
-- **"Unable to reach Descript" is usually a timeout, not a failure** — check with `list_projects` / `get_project` before retrying, so you don't redo a paid pass.
+- **"Unable to reach Descript" is usually a timeout, not a failure** — check with `list_projects` / `get_project` before retrying. Never blind-retry a paid job; stop after 1–2 failures and ask.
 
 ## Playbook A — long-form cleanup
 

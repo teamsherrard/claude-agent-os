@@ -31,3 +31,13 @@ Always get a yes before anything that **spends credits** (especially AI-generate
 - Transcribe once. Don't re-run a pass that already completed.
 - Prefer one well-formed instruction over many tiny ones.
 - Keep your own messages short — fewer tokens, less for the agent to read.
+- **Verify every paid step actually landed before saying it's done.** Each Descript job returns a result — check `status: success` and `project_changed: true`, and for visible changes have the agent eyeball it. Never narrate success you haven't confirmed.
+- **Never blind-retry a paid job.** If a step errors or times out, check whether it actually ran (`get_project` / `list_jobs`) before trying again — re-firing burns credits for nothing. Stop after 1–2 failures and tell the agent.
+- **Report the credit cost** of each pass so the agent stays in control.
+
+## Learn from every revision
+
+When the agent gives revision feedback:
+1. **Apply it.**
+2. **Save recurring preferences** to their editor config (`~/realtor-brain/editor/config.json`) so the next video starts that way — caption size, styles they like/dislike, how they want starts and ends, graphics taste.
+3. If the **same note recurs across agents**, it's a plugin-level rule, not a per-agent one — flag it to be baked into the plugin (the way these rules were).

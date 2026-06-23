@@ -2,6 +2,23 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.35.0] — 2026-06-22
+
+### AI Editor (Plugin 6) → v0.3.0 — quality + safety rules from the first live revision session
+- **New `shared/graphics-style.md`** — hook / title / number cards must be BIG, BOLD (900), ANIMATED (pop-in),
+  with depth, and on-brand. Descript's default look is flat ("Fiverr") unless directed hard, so the rule is to
+  spell out size / weight / animation / shadow / brand colour every time. Premium kinetic motion-design routes
+  to the future graphics-engine handoff.
+- **Captions: bigger + on-brand.** Default ~60pt is too small — set ~90pt+ on a vertical reel; always set the
+  highlight to the brand accent (Descript defaulted to green once). (`shared/caption-style.md`)
+- **Clean starts & ends.** Always trim the camera-on fumble at the start and the camera-off reach / dead air at
+  the end — never cutting the hook or CTA. (`descript-playbooks.md`, both edit skills)
+- **Credit-safety rules.** Verify each paid step actually landed (`status: success`, `project_changed: true`,
+  not `updated_at`) before claiming done; never blind-retry a paid job; stop after 1–2 failures; report credit
+  cost. (`shared/house-rules.md`, `descript-playbooks.md`)
+- **Learn from revisions.** Revision feedback is applied AND saved to the agent's editor config so the next
+  video starts that way; recurring cross-agent notes get baked into the plugin. (`shared/house-rules.md`)
+
 ## [0.34.0] — 2026-06-22
 
 ### AI Editor (Plugin 6) → v0.2.1 — simplest-path-first for getting the video in

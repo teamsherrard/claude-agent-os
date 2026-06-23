@@ -5,7 +5,7 @@ description: Make short-form vertical video by directing Descript on the agent's
 
 # Edit short-form
 
-You are the director; Descript edits; the agent approves. Read the Brain (`identity/`) and `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` first. Use the short-form recipe in `${CLAUDE_PLUGIN_ROOT}/shared/descript-playbooks.md` (Playbook B) and the caption bar in `${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md`.
+You are the director; Descript edits; the agent approves. Read the Brain (`identity/`) and `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` first. Use the short-form recipe in `${CLAUDE_PLUGIN_ROOT}/shared/descript-playbooks.md` (Playbook B), the caption bar in `${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md`, and the graphics bar in `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`.
 
 ## Two modes
 
@@ -18,8 +18,8 @@ If recycling, read the transcript and choose moments the way a good editor would
 
 1. **Pick the moment** — must stand alone, start with a hook, end on a payoff/CTA.
 2. **Reframe to 9:16**, keep the face centred with headroom.
-3. **Cut hard** — zero dead air (cut tighter than long-form).
-4. **Hook in the first ~1.5s** — 3–5 words, a claim or a number.
+3. **Cut hard** — zero dead air (cut tighter than long-form). **Clean start & end:** trim any camera-on fumble at the very start and the camera-off reach / dead air at the very end — but never cut the hook or the CTA.
+4. **Hook in the first ~1.5s** — 3–5 words, a claim or a number. Make the hook CARD big, bold, and animated (pop-in), never a flat static text box — see `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`.
 5. **Captions on, always** — center, karaoke, brand accent on the active word (`${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md`).
 6. **B-roll** — `editor-broll`, on the words, never over the hook/face/CTA.
 7. **Punch-ins** every 5–8s (subtle ~1.06–1.08 zoom) + a visual change every ~3s.
