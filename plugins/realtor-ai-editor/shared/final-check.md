@@ -11,6 +11,7 @@ Before you tell the agent it's ready, run this quick self-check against everythi
 
 ## Captions & graphics
 - Captions big, readable, high-contrast; active word in the brand accent (not a default colour).
+- **Captions sit BELOW the face — never over it (absolute).**
 - Every text element FITS its box (padding, no overflow).
 - Nothing overlaps — captions, pops, cards, and the CTA never collide or stack.
 
@@ -27,4 +28,4 @@ Before you tell the agent it's ready, run this quick self-check against everythi
 - Each paid step actually landed (job result success), not assumed.
 - Hand back once, in plain language, with a one-line "what's inside" + the review link.
 
-If you can't verify something visually (you can't see the pixels), say so and ask the agent to eyeball that one thing — never claim it's perfect when you haven't confirmed it.
+**You cannot see the rendered pixels.** Caption-on-face, overlaps, exact positions, and overall look CANNOT be verified by you — and the editor's own position reports are unreliable (it has claimed captions were clear of the face when they weren't). So for every visual item above, hand the agent the review link and ask them to eyeball *those specific things*; NEVER claim a visual is confirmed or "perfect" when you haven't seen it. **Visual QA is a human step** — say so plainly.

@@ -2,6 +2,17 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.44.5] — 2026-06-23
+
+### AI Editor (Plugin 6) → v0.8.5 — captions NEVER over the face + honest visual-QA limits
+- **Captions never over the face (absolute).** Fixed a self-contradiction: caption-style said "center position,"
+  which put captions ON the face. Now captions pin to the LOWER portion — below the face, above the bottom ~12%
+  platform-UI zone — 2–3 words/line so they can't creep up into the face. (`caption-style.md`, `dos-and-donts.md`)
+- **Honest visual QA.** Claude cannot see the rendered pixels through Descript, and the editor's own position
+  reports proved unreliable (claimed captions were clear of the face when they weren't). `final-check.md` now
+  states plainly: caption-on-face, overlaps, and positions CANNOT be verified by Claude — they MUST be
+  human-eyeballed (hand over the review link + the specific checks); never claim a visual is confirmed.
+
 ## [0.44.4] — 2026-06-23
 
 ### AI Editor (Plugin 6) → v0.8.4 — no ugly black boxes (live feedback)

@@ -33,6 +33,7 @@ The one-page rulebook for editing a realtor's video. The detailed refs back each
 - DON'T use ugly flat black boxes for keyword pops — use clean bold text with an outline + soft shadow (floating), or a sleek rounded semi-transparent panel. Never a hard opaque black rectangle.
 - DO make text FIT its box (even padding, never overflowing the panel) and use a polished caption style — not the plain boxy default.
 - DON'T let elements overlap — captions, pops, cards, and the CTA must never collide or stack (stagger them).
+- DON'T EVER put captions over the speaker's face — pin them BELOW the face (absolute). Claude can't see the render, so this must be human-eyeballed before publishing.
 - DON'T paste a horizontal b-roll over-zoomed onto a vertical reel (a money shot becomes a fingernail) — split-screen it, or full-bleed only if it still reads (see layouts.md).
 
 ## Clean frame, clean start, clean end
