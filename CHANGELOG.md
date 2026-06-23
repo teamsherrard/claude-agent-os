@@ -2,6 +2,15 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.36.0] — 2026-06-22
+
+### AI Editor (Plugin 6) → v0.3.1 — flattering treatment + safe colour grade (live feedback)
+- **New `shared/footage-look.md`** — (1) colour grade is subtle/natural ONLY, with hard guardrails: never
+  over-saturate, over-brighten, crush blacks, or go harsh/pixelated; skin tones stay flattering. (2) **Treat
+  people flatteringly** — gentle zooms only, never a tight push-in on a face, good headroom, no harsh light on
+  faces. Flagged as especially important for self-conscious agents (notably women in the cohort).
+- Referenced from both edit skills, plus a "treat people flatteringly" rule added to `house-rules.md`.
+
 ## [0.35.0] — 2026-06-22
 
 ### AI Editor (Plugin 6) → v0.3.0 — quality + safety rules from the first live revision session

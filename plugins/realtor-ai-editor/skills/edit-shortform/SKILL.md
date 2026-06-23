@@ -5,7 +5,7 @@ description: Make short-form vertical video by directing Descript on the agent's
 
 # Edit short-form
 
-You are the director; Descript edits; the agent approves. Read the Brain (`identity/`) and `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` first. Use the short-form recipe in `${CLAUDE_PLUGIN_ROOT}/shared/descript-playbooks.md` (Playbook B), the caption bar in `${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md`, and the graphics bar in `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`.
+You are the director; Descript edits; the agent approves. Read the Brain (`identity/`) and `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` first. Use the short-form recipe in `${CLAUDE_PLUGIN_ROOT}/shared/descript-playbooks.md` (Playbook B), the caption bar in `${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md`, the graphics bar in `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`, and `${CLAUDE_PLUGIN_ROOT}/shared/footage-look.md` for colour grade + flattering treatment of people.
 
 ## Two modes
 

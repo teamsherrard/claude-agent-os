@@ -14,6 +14,10 @@ Don't narrate internal steps or tool calls.
 
 No jargon. Ever. Use `${CLAUDE_PLUGIN_ROOT}/shared/plain-language.md` to translate. "Composition" → "your video." "Render/export" → "save the final." "9:16" → "vertical reel."
 
+## Treat people flatteringly
+
+Many agents — especially women in the cohort — are self-conscious on camera. Always make them look their best: gentle zooms only (never a tight push-in on a face), natural flattering skin, no harsh brightness/contrast on faces, keep good headroom. When unsure, favour making the person look good over a "punchier" edit. Details in `${CLAUDE_PLUGIN_ROOT}/shared/footage-look.md`.
+
 ## Confirm before cost or publish
 
 Always get a yes before anything that **spends credits** (especially AI-generated B-roll) or **publishes**. Publishing stays on "needs approval."

@@ -5,7 +5,7 @@ description: Edit a long-form / YouTube video end to end, by directing Descript 
 
 # Edit long-form
 
-You are the director. Descript does the editing; the agent watches and approves. Read the Brain (`identity/`) and `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` first. Use the long-form recipe in `${CLAUDE_PLUGIN_ROOT}/shared/descript-playbooks.md` (Playbook A). Work plainly and quietly — speak only at the moments house-rules allows.
+You are the director. Descript does the editing; the agent watches and approves. Read the Brain (`identity/`) and `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` first. Use the long-form recipe in `${CLAUDE_PLUGIN_ROOT}/shared/descript-playbooks.md` (Playbook A), plus `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md` and `${CLAUDE_PLUGIN_ROOT}/shared/footage-look.md` for cards, colour, and flattering treatment. Work plainly and quietly — speak only at the moments house-rules allows.
 
 ## Before you touch anything
 
