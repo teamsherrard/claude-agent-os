@@ -2,6 +2,15 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.43.1] — 2026-06-23
+
+### AI Editor (Plugin 6) → v0.7.1 — docs & onboarding polish (autonomous pass)
+- README un-stale'd (it still said "v0.1 — core scaffold"); added the credit-tier + Code-mode notes.
+- Setup: reconciled the connector step to **Code mode** (best for editing); added a **CTA question** to the
+  questionnaire so every video ends with the agent's real call-to-action (the gap that left Adam's video without
+  one); reassurance that audio is auto-cleaned and nothing publishes without approval.
+- Navigator: now defaults to the **Standard** credit tier.
+
 ## [0.43.0] — 2026-06-22
 
 ### AI Editor (Plugin 6) → v0.7.0 — automatic Studio Sound, split-screen b-roll, fit/no-overlap captions, proper endings (live revision batch)

@@ -47,6 +47,7 @@ If something isn't specified, use the Brain + these defaults and move:
 - Captions: on for shorts, off for long-form (see `${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md`).
 - B-roll: their own footage first, then stock (see `${CLAUDE_PLUGIN_ROOT}/shared/broll-ladder.md`).
 - Brand: from `brand.json`.
+- Credit tier: **Standard** by default (offer Lean or Full only if they ask — see `${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md`).
 Announce the plan in one sentence, then go.
 
 ## Tricky-situation playbook

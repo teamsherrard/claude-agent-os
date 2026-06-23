@@ -13,7 +13,7 @@ Descript is the one tool that does everything. Walk them through it simply:
 
 1. They need the **Claude desktop app** (not the browser). If they don't have it, point them to download it.
 2. In Claude: Settings → Connectors → add **Descript** from the connector library (easiest), or "add custom connector" and paste `api.descript.com/v2/mcp` (confirm on Descript's "Connect Descript to Claude" help page).
-3. **Enable it for Cowork / this workspace, not just chat** — a connector that's only on for chat won't appear where the editor runs (the agent's other connectors already work there).
+3. **Enable it for the mode you'll edit in — Code is best for editing** (the desktop app's Cowork / Code / Chat toggle; Code is more robust for long Descript jobs than Cowork). Make sure the connector is on there, not just in chat.
 4. A browser window opens → they click **Allow** to sign in to their own Descript account. Done — no API key to copy.
 5. Set permissions: leave **Publish** on **"needs approval"** (so nothing ever posts without them saying yes). Everything else can be "always allow."
 
@@ -35,8 +35,11 @@ Ask these one at a time, each with a recommended default they can just accept:
 2. **Do you have your own footage?** Two ways to use it: a **Google Drive folder** where you keep reusable B-roll (drone, exteriors, neighbourhood), and/or **uploading clips per video** (e.g. a listing's kitchen, backyard, drone). If they keep a Drive folder, get its name/location. If not, that's fine — stock and (for listings) the listing photos cover it. See `${CLAUDE_PLUGIN_ROOT}/shared/footage-intake.md`.
 3. **Caption look** for shorts → show 2–3 sample styles (see `${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md`) and let them point at one.
 4. **Publishing** → confirm they want to approve before anything posts (recommended yes).
+5. **Your call-to-action** → what should viewers do, and the details? (e.g. "DM me COST", "call 555-1234", "link in bio", "subscribe"). Save it so **every video ends with their CTA on screen** — never a missing or generic ending.
 
 That's the whole questionnaire. Don't add more.
+
+*(Reassure them: their audio is cleaned automatically on every video, and nothing publishes without their okay — so they never have to think about either.)*
 
 ## Step 4 — B-roll sources (all optional, more = more variety)
 

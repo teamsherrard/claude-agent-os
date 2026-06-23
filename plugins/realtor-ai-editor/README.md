@@ -42,8 +42,14 @@ Descript does **both** long-form (YouTube) and short-form (Reels/Shorts/TikTok).
 
 Run `editor-setup`. The only required connection is **Descript** (a free, guided OAuth step in the Claude desktop app). Stock B-roll keys are **optional** — Descript's own stock library and the agent's own footage work with zero keys.
 
+Heavy editing runs best in **Code mode** (the desktop app's Cowork / Code / Chat toggle) — it's more robust for long Descript jobs than Cowork. Same plugin, same login.
+
 Settings are saved in the agent's Realtor AI Brain (`~/realtor-brain/editor/`) so they persist and sync like everything else.
+
+## Cost-smart by default
+
+Runs at a credit-smart **Standard** tier by default (~90% of full-polish quality at roughly half the credits). **Lean** for routine daily posts, **Full** for hero/case-study videos. Studio Sound is applied automatically on every video (agents shoot on phones).
 
 ## Status
 
-v0.1 — core scaffold. See the project game plan in memory for the build phases.
+v0.7.0 — hardened through live editing of real realtor videos (short-form and long-form). In: directing Descript for long + short form, multi-source B-roll, brand + captions, credit tiers, automatic Studio Sound, split-screen layouts, contextual graphics, and a full do's-&-don'ts rulebook. Next: the optional premium graphics-engine / branded CTA-pack handoff.
