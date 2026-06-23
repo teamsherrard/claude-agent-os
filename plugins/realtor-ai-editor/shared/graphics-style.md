@@ -10,6 +10,7 @@ Descript's default text/graphics look flat and cheap ("Fiverr") unless you direc
 - **Depth** — a drop shadow or a clean background panel so it pops off the footage.
 - **On-brand** — colours/fonts from `brand.json`; never a tool default (it once defaulted to green).
 - **Clean & modern** — not a thin centred line on a plain dark bar.
+- **No ugly flat black boxes.** Keyword pops and emphasis text should be clean bold text with a thick outline + a soft drop shadow (text floats on the video), OR a sleek rounded semi-transparent panel — NEVER a hard, opaque, flat black rectangle (it reads cheap, and it's been a recurring complaint). Only use a panel when legibility truly needs it, and even then make it rounded + semi-transparent, not solid black.
 - **High contrast** — text must pop against its panel AND the footage. NEVER the same colour family on the same background (light-blue text on a blue panel vanishes). White-on-navy or navy-on-white — not blue-on-blue.
 - **Reveal, don't just appear** — every card/pop-up animates in (slide / pop / swoosh) and out; nothing should blink onto screen.
 - **Text fits its box** — even padding around the text; it never overflows the panel (a two-word term must not spill past the edges).

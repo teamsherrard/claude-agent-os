@@ -2,6 +2,13 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.44.4] — 2026-06-23
+
+### AI Editor (Plugin 6) → v0.8.4 — no ugly black boxes (live feedback)
+- Keyword pops / emphasis text must use a premium style — clean bold text with outline + soft shadow (floating),
+  or a sleek rounded semi-transparent panel — NEVER a hard opaque flat black rectangle (recurring complaint).
+  (`graphics-style.md`, `dos-and-donts.md`)
+
 ## [0.44.3] — 2026-06-23
 
 ### AI Editor (Plugin 6) → v0.8.3 — split-screen speaker framing (live fix)
