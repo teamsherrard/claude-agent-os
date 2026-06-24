@@ -46,19 +46,19 @@ The two docs share the same Guide Name so the pair is unmistakable.
 
 **The hard constraint (verified — not a plugin limit):** the Drive connector only turns **`text/plain`** into a
 Google Doc. `.docx`/HTML uploads don't convert; there's no API to add colour, fonts, or real headings. **A
-Google Doc can only ever be well-structured text. The *designed* version is what the agent builds in
-claude.ai/design — that's the premium output; this doc is the clean brief that feeds it.** So make the brief
-genuinely clean and well-organized:
+Google Doc can only ever be well-structured text — and that's fine: this skill's job is the *copy + structure
++ strategy*, not the design. The designed version is built separately (a dedicated design skill).** So make
+this brief genuinely clean and well-organized:
 - **Title line**, a light **meta line** (agent · city · date), then **a one-line PURPOSE line** so the agent
-  instantly knows what this is and what to do with it — e.g. *"Your page copy + a brief to build the page in
-  claude.ai/design. The designed version is what you build there."* Then a blank line.
+  instantly knows what this is and what to do with it — e.g. *"Your page copy + structure, ready for your
+  design step. This doc is the words; the page is built separately."* Then a blank line.
 - **Section headers in ALL CAPS**, wrapped in a clean **box-drawing rule** `────────────` (U+2500) — NOT
   em-dashes; the solid line reads far cleaner. Use a **heavy rule** `════════════` (U+2550) only for the big
   structural break into the appendix.
-- **Keep the deliverable clean; push the build-prompt + compliance to the END as a clearly-labelled appendix**
-  (under a heavy `═` rule: `▸ NEXT — BUILD THIS IN CLAUDE.AI/DESIGN` and `▸ COMPLIANCE`). The reader should
-  read the actual content top-to-bottom without tripping over instructions — it reads as a finished piece, not
-  a mix of content + how-to.
+- **Keep the deliverable clean; push the handoff + compliance to the END as a clearly-labelled appendix**
+  (under a heavy `═` rule: `▸ NEXT — HAND TO YOUR DESIGN STEP` and `▸ COMPLIANCE`). The reader should read the
+  actual content top-to-bottom without tripping over instructions — it reads as a finished piece, not a mix of
+  content + how-to. **No design prompt — that's a separate skill;** the appendix just names the assets to gather.
 - **Generous blank-line spacing**; **bullets** with `•`, one idea per line; real prices/numbers as digits so they pop.
 - For the **funnel**, label each piece (`Headline:`, `Subhead:`, `CTA:`) so the agent can grab and paste — but
   keep labels minimal and the copy prominent.
@@ -66,11 +66,11 @@ genuinely clean and well-organized:
 
 ## 5. The two document skeletons
 
-**Lead Magnet doc** — the guide content (the agent builds the designed PDF in claude.ai/design):
+**Lead Magnet doc** — the guide content (the designed PDF is built separately at the design step):
 ```
 LEAD MAGNET — [GUIDE NAME]
 [Agent Name] · [City] · [Date]
-Your guide content + a brief to build it in claude.ai/design. The designed PDF is what you build there.
+Your guide content, ready for your design step. This doc is the words; the PDF is built separately.
 
 ────────────────────────────────────────────
 THE PROMISE
@@ -89,8 +89,9 @@ HOW [AGENT] HELPS NEXT
 A soft, no-pressure close in the agent's voice — where to reach them. (No call booking.)
 
 ════════════════════════════════════════════
-▸ NEXT — BUILD THIS IN CLAUDE.AI/DESIGN
-[paste-ready design prompt — layout + brand colours/fonts from brand-visual.md + which photos to upload]
+▸ NEXT — HAND TO YOUR DESIGN STEP
+This doc is the guide content. Your design step turns it into the branded PDF.
+Assets to gather:  logo · headshot · any photos for the guide.
 
 ════════════════════════════════════════════
 ▸ COMPLIANCE
@@ -101,7 +102,7 @@ A soft, no-pressure close in the agent's voice — where to reach them. (No call
 ```
 LEAD CAPTURE FUNNEL — [GUIDE NAME]
 [Agent Name] · [City] · [Date]   ·   Sells: [the magnet above]
-Your page copy + a brief to build the page in claude.ai/design. The designed page is what you build there.
+Your page copy + structure, ready for your design step. This doc is the words; the page is built separately.
 
 ────────────────────────────────────────────
 SECTION 1 — HERO
@@ -138,11 +139,11 @@ CTA button: "Send me the free guide"
 Thank-you state: ...
 
 ════════════════════════════════════════════
-▸ NEXT — BUILD THIS IN CLAUDE.AI/DESIGN
-[paste-ready design prompt — page layout, section order, brand colours/fonts]
-📷 Upload these photos in the chat:  community/area shots → Local Market · headshot → About ·
-   guide cover → hero · logo → header/footer.   (Real places only.)
-Host it: build the page in claude.ai/design, then publish on your site / GoHighLevel / Carrd.
+▸ NEXT — HAND TO YOUR DESIGN STEP
+This doc is the copy + structure. Your design step turns it into the built page; then host it
+(your site / GoHighLevel / Carrd).
+Assets to gather:  community/area photos (Local Market) · headshot (About) · guide cover (hero) ·
+   logo (header/footer).   Real places only.
 
 ════════════════════════════════════════════
 ▸ COMPLIANCE
@@ -157,5 +158,5 @@ Host it: build the page in claude.ai/design, then publish on your site / GoHighL
 4. Confirm in plain language + give the location:
    *"Saved to your Drive → Lead Capture System → [campaign]. Here's the doc: [link]."*
 
-Deliver the copy in chat too — the agent often pastes into claude.ai/design right away. The Drive docs are
+Deliver the copy in chat too — the agent often takes it straight to their design step. The Drive docs are
 the organized record they (and their VA) can always find.

@@ -2,6 +2,18 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.47.0] — 2026-06-23
+
+### Lead Capture System (Plugin 5) → v0.4.0 — copy + strategy focus; design prompt removed (a separate skill owns it)
+- **Refocused the whole plugin on copy + structure + strategy.** The design prompt is gone — a dedicated
+  design skill now owns turning the copy into the built page/PDF. Both skills, the output standard, house
+  rules #3, the copywriting KB, and the README all updated to match (no more brand-visual reads, no design briefs).
+- **New "strategy underneath" layer in the funnel guide** — the real lever on conversion, read FIRST: one big
+  idea · lead with the avatar's deepest desire + most acute fear · dissolve the 3 reasons they won't opt in ·
+  the emotional arc · "specificity IS the proof."
+- Docs now end in a clean **"▸ NEXT — hand to your design step"** appendix (just the assets to gather) + the
+  compliance footer — no design brief cluttering the deliverable.
+
 ## [0.46.0] — 2026-06-23
 
 ### Lead Capture System (Plugin 5) → v0.3.1 — cleaner, better-organized output docs (live-test feedback)

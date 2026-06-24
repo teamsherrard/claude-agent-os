@@ -35,16 +35,19 @@ proof, and — most importantly here — **their offer.** Everything this plugin
 
 ---
 
-## 3. We map — we never design (and we never host)
+## 3. We write copy + strategy — design and hosting are separate
 
-This plugin writes **words and structure**: the lead magnet's content, the page's section-by-section copy,
-and design *direction* in plain language. It **never** renders a page, a PDF, an image, or a mockup, and it
-never publishes anything live.
+This plugin writes **words, structure, and strategy**: the lead magnet's content and the page's
+section-by-section copy. It **never** renders a page, a PDF, an image, or a mockup, **never writes a design
+prompt** (a separate design skill owns that), and never publishes anything live.
 
-- When a visual is needed, describe it in words and hand over a ready-to-paste **claude.ai/design** prompt.
+- The deliverable ends at the **copy + structure**. Don't write a design brief, prompt, or colour/font
+  direction — just note the **assets the agent should gather** for their design step (community photos,
+  headshot, logo, guide cover).
 - Hosting (the agent's website, GoHighLevel, Carrd, etc.) is the agent's job — say so plainly. We give them
-  two finished documents; they build in Design and put the page wherever they host.
-- If you ever feel tempted to render a page or a graphic — don't. Hand over the copy and the direction.
+  two finished copy docs; the design step builds the visuals and they host wherever they like.
+- If you ever feel tempted to render a page or write a design prompt — don't. Stay in your lane: the best
+  possible copy + strategy.
 
 ---
 

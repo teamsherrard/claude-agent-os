@@ -3,9 +3,8 @@ name: leadcapture-magnet
 description: >
   Step 1 of the Lead Capture System — builds the agent's lead magnet (a brand-led guide for their whole
   audience of buyers AND sellers, or a focused buyer/seller guide) straight from the offer in their AI Brain. Produces the full, genuinely useful guide content as clean copyable text, in
-  the agent's voice, plus a ready-to-paste claude.ai/design prompt to build the PDF. Saves it as a Google
-  Doc in the campaign folder, then hands off to the funnel that gives it away. SPEC ONLY — it writes the
-  content + design direction; it NEVER designs the PDF.
+  the agent's voice. Saves it as a Google Doc in the campaign folder, then hands off to the funnel that gives
+  it away. CONTENT ONLY — it writes the guide's content (the design is a separate skill); it NEVER designs the PDF.
 
   Trigger on: "build my lead magnet", "create a lead magnet", "lead magnet for my offer", "make my buyer
   guide", "make my seller guide", "make my brand guide", "set up my lead capture", "build my lead capture system", "I need a free
@@ -19,8 +18,8 @@ with them — and so the funnel (Step 2) has something specific and real to sell
 
 **Apply house rules** (`${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`).
 
-> **We map; we never design (house rules #3).** This writes the guide's *content* and a design *direction* —
-> never the PDF. The agent builds the visual in **claude.ai/design** from what you hand them.
+> **We write the content; we never design (house rules #3).** This produces the guide's *words* — the design
+> (the built PDF) is a **separate skill**. Pour the effort here into making the guide genuinely valuable.
 
 ---
 
@@ -32,7 +31,6 @@ Read `~/realtor-brain/brain.md` first, then:
 - `identity/voice.md` + `identity/voice-samples.md` — write it in their real voice.
 - `identity/market.md` — city, communities, price bands, local specifics (the magnet is full of these).
 - `identity/profile.md` — name, niche, credentials, where to reach them.
-- `identity/brand-visual.md` — colours/fonts/vibe, for the design prompt only (words, not a render).
 - `identity/compliance.md` — the disclaimer/claims rules (house rules #5).
 
 **Read the Brain; never re-ask what it knows (house rules #2).** If `identity/offer.md` is thin or empty,
@@ -77,17 +75,17 @@ Following `references/magnet-guide.md` + the copywriting KB, produce as clean co
 - Weave in the relevant offer (the **full offer suite** for a brand-led guide, or the matching offer for a
   specific one) + one real proof point naturally near the end — never a hard sell.
 
-## Phase 3 — The design prompt (claude.ai/design)
-Write a **ready-to-paste claude.ai/design prompt** to build the guide as a clean branded PDF: the page
-order, the cover (title + promise), the agent's brand colours/fonts/vibe from `brand-visual.md`, and a note
-to keep it simple and readable. Words only — never a rendered example.
+## Phase 3 — Note the assets, then hand off (design is a SEPARATE skill)
+This skill ends at the **guide content** — that's the whole deliverable. **Do NOT write a design prompt;** a
+separate design skill turns it into the branded PDF. Just close with a short, plain **"assets to gather"**
+line: their logo, headshot, and any photos they want in the guide. Then hand off.
 
 ## Phase 4 — Compliance pass (house rules #5)
 Run the whole guide through `~/realtor-brain/identity/compliance.md`: disclaimer + license # where the rule
 applies, strip any guarantees or Fair-Housing proxies, keep claims honest. Flag once if `compliance.md` is empty.
 
 ## Phase 5 — Deliver, save, hand off
-1. **Deliver in chat** — the full guide content + the design prompt, cleanly laid out.
+1. **Deliver in chat** — the full guide content, cleanly laid out and ready to use.
 2. **Save to Drive** following `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`: create
    `[Agent Name] — Lead Capture System/[YYYY-MM-DD · Guide Name]/` and save `Lead Magnet — [Guide Name]`
    (`text/plain` → clean Google Doc). Confirm the location in plain words.
@@ -102,7 +100,7 @@ applies, strip any guarantees or Fair-Housing proxies, keep claims honest. Flag 
 - [ ] 5–9 pages of REAL, local, specific value — worth an email, not a tease (house rules #8)
 - [ ] Offer + one real proof woven in near the end; soft close, **no call booking**
 - [ ] Voice matches `voice.md` + `voice-samples.md`
-- [ ] Design prompt is paste-ready and uses their real brand colours/fonts — words only, no render
+- [ ] No design prompt written (design is a separate skill); assets-to-gather noted instead
 - [ ] Compliance pass done
 - [ ] Saved to the campaign folder (output standard); location confirmed in plain words
 - [ ] Handed off to the funnel

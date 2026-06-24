@@ -4,8 +4,8 @@ description: >
   Step 2 of the Lead Capture System — maps the opt-in funnel (the landing page) that gives the lead magnet
   away. Reads the finished lead magnet so the page sells exactly what the guide delivers, then writes the
   full page copy section by section — Hero, About the agent, The offer, The opt-in — in the agent's voice,
-  built to convert, plus a ready-to-paste claude.ai/design prompt. Lead capture ONLY — name + email, never a
-  call booking. SPEC ONLY — it writes the copy + design direction; it NEVER designs or hosts the page.
+  built to convert. Lead capture ONLY — name + email, never a call booking. COPY + STRATEGY ONLY — it writes
+  the page's copy and structure (the design is a separate skill); it NEVER designs or hosts the page.
 
   Trigger on: "build my funnel", "map my funnel", "lead capture funnel", "opt-in page", "opt-in funnel",
   "landing page copy", "build my lead capture page", "the page that gives away my lead magnet", or any
@@ -19,9 +19,9 @@ toward that — and nothing else (house rules #4: **no call booking, ever**).
 
 **Apply house rules** (`${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`).
 
-> **We map; we never design or host (house rules #3).** This writes the page's *copy* and a design
-> *direction* — never the page itself. The agent builds it in **claude.ai/design** and hosts it on their own
-> site / GoHighLevel / Carrd.
+> **We write the copy + strategy; we never design or host (house rules #3).** This produces the page's *words
+> and structure* — the design (turning it into a built page) is a **separate skill**, and hosting is the
+> agent's own tool. Pour 100% of the effort here into making the copy + strategy genuinely great.
 
 ---
 
@@ -43,14 +43,15 @@ Read `~/realtor-brain/brain.md` first, then:
 - `identity/voice.md` + `identity/voice-samples.md` — write the whole page in their real voice.
 - `identity/market.md` — the **LOCAL MARKET** section: the real communities + areas they serve, price bands,
   new-build communities, local depth. The un-fakeable authority that makes the page feel like value, not a pitch.
-- `identity/brand-visual.md` — colours/fonts/vibe for the design prompt (words only).
 - `identity/compliance.md` — disclaimer/claims rules (house rules #5).
 
 **Read the Brain; never re-ask (house rules #2).**
 
-## Step 3 — Read the references
-- `references/funnel-guide.md` — the section-by-section structure, what converts in each, and the flow.
-- `${CLAUDE_PLUGIN_ROOT}/shared/copywriting-kb.md` — how to write each section so it actually converts.
+## Step 3 — Read the references (this is where the quality comes from)
+- `references/funnel-guide.md` — **read "The strategy underneath" FIRST** (the one big idea, desire + fear,
+  the 3 objections to dissolve, the emotional arc), then the section-by-section structure. The strategy is
+  what separates an "okay" page from one that converts.
+- `${CLAUDE_PLUGIN_ROOT}/shared/copywriting-kb.md` — how to write each line so it persuades, not just informs.
 
 ---
 
@@ -79,7 +80,7 @@ communities from `market.md`, the full offer + USP from `offer.md`, real proof f
    specific **communities/areas they serve**, what's genuinely distinct about each in FACTS (price bands, the
    new-build communities, schools by name, commute, amenities — never "good area"/"family-friendly" proxies,
    Fair Housing), and the local depth only they have ("the deep-south new-build communities I know inside
-   out"). This is VALUE, not a pitch. **Cue the agent to add real community photos** (see Phase 3).
+   out"). This is VALUE, not a pitch. (Real community photos belong here once it's designed — note that in the assets line.)
 4. **WHY WORK WITH [AGENT] — the offer + USP** — the real "why hire me," straight from `offer.md`, NOT just
    the guide's process. Make it substantive: their **actual services/offer** (how they work with clients),
    their **USP** (what they do differently than any other agent), and the concrete **reasons to choose them**,
@@ -91,18 +92,11 @@ communities from `market.md`, the full offer + USP from `offer.md`, real proof f
    spam."), and the **CTA button** (same as the hero). Then the **thank-you state** copy (warm confirmation
    + "check your inbox, your guide's on the way" in their voice). **No call booking** — follow-up is theirs.
 
-## Phase 3 — The design prompt (claude.ai/design) + the photos to upload
-Write a **ready-to-paste claude.ai/design prompt** for the page: the section order above, the hero + form
-layout, where the CTA repeats, and the agent's brand colours/fonts/vibe from `brand-visual.md`.
-**Tell the agent exactly which real photos to upload in the claude.ai/design chat, and where each goes** —
-list it as a short **"📷 upload these"** checklist inside the prompt:
-- **Community / area photos → the LOCAL MARKET section** — a few real shots of the neighbourhoods they serve
-  (their own listing/area photos, drone shots, local landmarks). Real places only (Fair Housing + honesty).
-- **Their headshot → the ABOUT section.**
-- **The guide cover / mockup → the hero**, beside the form.
-- **Logo / brokerage mark → header + footer.**
-Then the plain hosting note: build in claude.ai/design, then publish on their site / GoHighLevel / Carrd.
-Words only — never a render.
+## Phase 3 — Note the assets, then hand off (design is a SEPARATE skill)
+This skill ends at the **copy + strategy** — that's the whole deliverable. **Do NOT write a design prompt;**
+a separate design skill turns the copy into the built page. Just close with a short, plain **"assets to
+gather"** line for that next step: real community/area photos (for the Local Market section), their headshot,
+the guide cover, and their logo. That's it — then hand off.
 
 ## Phase 4 — Compliance pass (house rules #5)
 Run the full page through `~/realtor-brain/identity/compliance.md`: brokerage disclaimer + license # as a
@@ -110,13 +104,12 @@ footer line where the rule applies, strip guarantees and Fair-Housing proxies, k
 backed. Flag once if `compliance.md` is empty.
 
 ## Phase 5 — Deliver + save (paired with the magnet)
-1. **Deliver in chat** — all the sections of copy + the design prompt, cleanly laid out, ready to paste.
+1. **Deliver in chat** — all the sections of copy, cleanly laid out and ready to use.
 2. **Save to Drive** following `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`: into the **same campaign
    folder** as the magnet, save `Lead Capture Funnel — [Guide Name]` (`text/plain` → clean Google Doc).
    Confirm the location in plain words.
-3. **Close the loop:** *"That's your full lead-capture set — the guide and the page that gives it away.
-   Take both docs to claude.ai/design to build them, then host the page wherever you like. After someone
-   opts in, the follow-up's all yours."*
+3. **Close the loop:** *"That's your funnel copy — every section, ready to go. Next, your design step turns it
+   into the built page; then host it wherever you like. After someone opts in, the follow-up's all yours."*
 
 ---
 
@@ -125,10 +118,11 @@ backed. Flag once if `compliance.md` is empty.
 - [ ] All five sections present (Hero · About · Local Market · Why-Work-With-Me · Opt-in), value-led not salesy
 - [ ] Hero headline is clear, benefit-led, specific, no hype; CTA repeats in hero + opt-in
 - [ ] About uses real wins/proof from the Brain (nothing invented); framed for the reader
-- [ ] LOCAL MARKET section pulls real communities from market.md (authority, not a pitch); agent cued to upload community photos
+- [ ] **Strategy applied first** (one big idea · desire + fear · the 3 objections dissolved · the emotional arc)
+- [ ] LOCAL MARKET section pulls real communities from market.md (authority, not a pitch)
 - [ ] WHY-WORK-WITH-ME section pulls the full offer + USP from offer.md (the real why-hire-them, not just the guide); no guarantees
 - [ ] Opt-in asks for name + email only; reassurance present; **no call booking** (house rules #4)
 - [ ] Voice matches `voice.md` + `voice-samples.md`; local and specific (why-not-ChatGPT)
-- [ ] Design prompt paste-ready with real brand colours/fonts; hosting note included — words only, no render
+- [ ] No design prompt written (design is a separate skill); assets-to-gather noted instead
 - [ ] Compliance pass done
 - [ ] Saved into the same campaign folder as the magnet; location confirmed in plain words

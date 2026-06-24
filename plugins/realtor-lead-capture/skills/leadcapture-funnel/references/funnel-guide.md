@@ -19,6 +19,27 @@ bullets, white space. **A thin page reads salesy; this depth is what makes it re
 
 ---
 
+## The strategy underneath (lock this BEFORE writing — it's what makes copy persuade, not just inform)
+The difference between an "okay" page and one that converts is strategy, not adjectives:
+- **One big idea.** The page rides on a single sharp angle, not a feature list — e.g. for a new-build
+  specialist, *"the buyer's advocate who reads the builder's contract for what it really says."* Every section
+  reinforces that one idea.
+- **Lead with the deepest desire + the most acute fear** (from `avatars.md`), named early and plainly.
+  (New-build buyer: desire = the right home at a price that holds, with confidence; fear = overpaying,
+  picking the wrong community, being outmatched by the builder's rep.) The whole page moves them from the
+  fear to the desire.
+- **Dissolve the 3 real reasons they WON'T opt in:** (1) *"I don't trust agents / this feels salesy"* →
+  honesty, specifics, zero pressure; (2) *"I can just Google this"* → the local insider depth Google can't
+  give (the Local Market section + real numbers); (3) *"I'm not ready yet"* → the guide is FOR the
+  not-ready-yet stage and lowers the stakes. Hit each one somewhere on the page.
+- **The emotional arc:** worried/overwhelmed (hero + about) → *"oh, they actually know my market"* (local
+  market) → *"and they'd protect me on the biggest purchase of my life"* (why-work-with-me) → *"this is the
+  easy, no-risk next step"* (opt-in). Each section earns the next feeling.
+- **Specificity IS the proof.** Every claim carries a real number, community, or result. Vague = salesy;
+  specific = expert — the single biggest lever on whether it reads "okay" or "great."
+
+---
+
 ## SECTION 1 — HERO (90% of the result)
 The first screen. If it's vague, they leave. Three parts:
 - **Headline** — the magnet's core promise, benefit-led, for this audience in this market. Clear over clever.
@@ -48,8 +69,8 @@ Pull the agent's real market from `market.md`:
   commute, amenities. Never "good area" / "family-friendly" proxies (Fair Housing).
 - **Why their local knowledge matters to the reader** — "the deep-south new-build communities I know inside
   out" → so you don't overpay or pick the wrong one. Tie the depth back to the reader's benefit.
-- **Real photos** — cue the agent to upload their own community/area shots in claude.ai/design (Phase 3 of the
-  skill). Real places only.
+- **Real photos** — the agent adds their own community/area shots at the design step; note it in the
+  assets line. Real places only.
 Pure value + authority — it's the strongest answer to "why not just Google it / use ChatGPT."
 
 ## SECTION 4 — WHY WORK WITH [AGENT] (the offer + USP — the section most pages are missing)

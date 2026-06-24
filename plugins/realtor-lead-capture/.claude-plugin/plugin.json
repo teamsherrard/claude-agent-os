@@ -1,8 +1,8 @@
 {
   "name": "realtor-lead-capture",
   "displayName": "Realtor Lead Capture (Plugin 5)",
-  "version": "0.3.1",
-  "description": "Turns the agent's offer into a lead-capture machine. It writes a lead magnet (a brand-led guide for their whole audience, or a focused buyer/seller guide built straight from their offer) and maps the opt-in funnel that gives it away \u2014 two perfectly aligned documents the agent takes to claude.ai/design to build. Text only: it writes the copy and structure, it never designs or hosts. Lead capture only \u2014 no call booking. Requires Plugin 1 (the Brain) set up first.",
+  "version": "0.4.0",
+  "description": "Turns the agent's offer into a lead-capture machine. It writes a lead magnet (a brand-led guide for their whole audience, or a focused buyer/seller guide built straight from their offer) and maps the opt-in funnel that gives it away \u2014 two perfectly aligned documents: the copy, structure, and conversion strategy. Text only: it writes the words and the strategy (a separate design skill builds the visuals); it never hosts. Lead capture only \u2014 no call booking. Requires Plugin 1 (the Brain) set up first.",
   "author": {
     "name": "Mike Sherrard"
   },

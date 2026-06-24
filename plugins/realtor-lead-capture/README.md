@@ -2,8 +2,8 @@
 
 **The conversion layer.** The agent's other systems drive traffic (YouTube, short-form) — this turns that
 attention into **captured leads.** It writes a **lead magnet** from the agent's offer, then maps the
-**opt-in funnel** that gives it away — two aligned documents the agent takes to **claude.ai/design** to
-build. It writes the words and the structure; it never designs or hosts, and it never books calls.
+**opt-in funnel** that gives it away — two aligned documents: the **copy, structure, and strategy**. It writes
+the words; a **separate design skill** builds the visuals; it never hosts, and it never books calls.
 
 Requires **Plugin 1 (the Realtor AI Brain)** — it reads the agent's offer, avatars, proof, and voice from
 there and never re-asks.
@@ -12,21 +12,22 @@ there and never re-asks.
 
 **One campaign = one magnet + one funnel that sell each other.**
 
-1. **Build the lead magnet** (`leadcapture-magnet`) — pick a buyer or seller guide, built from the offer in
-   the Brain. Output: a clean Google Doc with the full guide content + a paste-ready claude.ai/design prompt.
+1. **Build the lead magnet** (`leadcapture-magnet`) — pick a brand-led guide (whole audience) or a focused
+   buyer/seller guide, built from the offer in the Brain. Output: a clean Google Doc with the full guide content.
 2. **Map the funnel** (`leadcapture-funnel`) — it reads the magnet from step 1 so the page sells *exactly*
-   what the guide delivers, then maps the opt-in page section by section. Output: a clean Google Doc with
-   the full page copy + a paste-ready claude.ai/design prompt.
+   what the guide delivers, then writes the opt-in page section by section, applying the funnel strategy.
+   Output: a clean Google Doc with the full page copy + structure.
 
-The agent takes both docs to claude.ai/design, builds the guide PDF + the page, and hosts the page in their
+The agent takes both docs to their design step, builds the guide PDF + the page, and hosts the page in their
 own tool (their site, GoHighLevel, Carrd, etc.).
 
 ## The funnel sections (fixed, in this order)
 
 1. **Hero** — the hook headline (= the magnet's promise) + subhead + the opt-in CTA.
 2. **About the agent** — what makes them amazing, their wins, their process — framed around the reader.
-3. **The offer** — their offer, properly presented as the outcome the reader gets.
-4. **The opt-in** — present the magnet, the short form (name + email), and the final CTA.
+3. **The local market** — the real communities they serve, in facts (the un-fakeable, value-led section).
+4. **Why work with them** — the full offer + USP, the real "why hire me" (the section most pages miss).
+5. **The opt-in** — present the magnet, the short form (name + email), and the final CTA.
 
 **Goal = lead capture only.** After someone opts in, follow-up is the agent's job. The funnel never books a
 call or touches a calendar — that's deliberate (keeps it simple and reliable).
@@ -47,7 +48,7 @@ realtor-lead-capture/
 
 ## Boundaries
 
-- **Maps copy + structure only — never designs.** claude.ai/design builds the visuals.
+- **Writes copy + structure + strategy only — never designs.** A separate design skill builds the visuals.
 - **Lead capture only — never books calls** or integrates a calendar.
-- **Doesn't host or publish.** The agent builds in Design and hosts in their own tool.
+- **Doesn't host or publish.** The agent builds at the design step and hosts in their own tool.
 - **Reads the Brain — never re-asks** the offer or identity.

@@ -93,7 +93,7 @@ it / use ChatGPT." Pull `identity/market.md`:
   the new-build communities, schools by name, commute, amenities). Never "good area" / "family-friendly"
   proxies (Fair Housing). This is the local depth only they have.
 - **Tie it to the reader** — "the communities I know inside out" → so you don't overpay or pick the wrong one.
-- **Real photos** — the agent uploads their own community/area shots in claude.ai/design. Real places only.
+- **Real photos** — the agent adds their own community/area shots at the design step. Real places only.
 
 ## The Offer / Why-Work-With-Me section — the real "why hire me" (most pages miss this)
 
