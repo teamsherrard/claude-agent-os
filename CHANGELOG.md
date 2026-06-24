@@ -2,6 +2,16 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.51.0] — 2026-06-24
+
+### Lead Capture System (Plugin 5) → v0.6.1 — guide is an INSTANT DOWNLOAD, never email delivery
+- Hard rule (house rules #4): the lead magnet is delivered as an **instant download on the thank-you page,
+  NEVER by email**. The plugin sets up no email automation, so "check your inbox / your guide's on the way"
+  is a broken promise — removed from all funnel copy (thank-you state + reassurance now say instant download).
+- The funnel skill must **never ask the agent how to deliver the guide** and never offer an email-delivery
+  option — it's always the instant download. (The email is captured for the agent's own follow-up only.)
+- Fixed across house-rules, funnel-guide, the funnel skill, copywriting KB, and the output-standard skeleton.
+
 ## [0.50.0] — 2026-06-24
 
 ### AI Editor (Plugin 6) → v0.9.0 — guardrails from the first full long-form edit (Mike's "New Era" video)

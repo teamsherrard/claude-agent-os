@@ -51,14 +51,19 @@ prompt** (a separate design skill owns that), and never publishes anything live.
 
 ---
 
-## 4. Lead capture only — never book a call
+## 4. Lead capture only — never book a call · instant download, never email delivery
 
 The entire goal of the funnel is **one action: opt into the lead magnet** (name + email). That's it.
 
 - **Never** add a "book a call," "schedule a consult," or calendar step to the funnel. No appointment
   integration — it's deliberately out of scope (it's where these things break).
-- After the opt-in, the page says a warm thank-you and tells them the guide is on its way. **Follow-up is
-  the agent's job** — the funnel hands them the lead and stops there.
+- **The guide is delivered as an INSTANT DOWNLOAD on the thank-you page — NEVER by email.** The plugin sets up
+  no email automation, so "check your inbox / your guide's on the way" would be a broken promise. The
+  thank-you state hands them the guide right there (a download button / the PDF on the page). **Never write
+  "check your inbox"-style copy, and never ask the agent how they want to deliver the guide — it is ALWAYS the
+  instant download.** (The email is captured for the agent's own follow-up, not to deliver the guide.)
+- After the opt-in: a warm thank-you + the instant download. **Follow-up is the agent's job** — the funnel
+  hands them the lead and stops there.
 - Every section of the page should push toward the opt-in, and nothing else.
 
 ---

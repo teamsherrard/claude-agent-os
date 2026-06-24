@@ -169,9 +169,11 @@ The opt-in section presents the magnet and asks for the email:
 - **A quick recap — top 3 "what you'll get" bullets** (the full value-stack is up in the Guide section; here
   just the highlights). These MUST match what the guide delivers (house rules #7).
 - **The form:** name + email only. Nothing else.
-- **Friction reducers** right by the button: "Free. Instant. No spam — unsubscribe anytime."
-- **The thank-you state** (after submit): warm confirmation + "check your inbox, your guide is on its way" +
-  a human line in the agent's voice. No call booking — just the handoff.
+- **Friction reducers** right by the button: "Free. Instant download. No spam — unsubscribe anytime."
+- **The thank-you state** (after submit): warm confirmation + **the guide as an instant download right on the
+  page** ("You're in — grab your guide below"), in the agent's voice. **Instant download, NEVER email delivery
+  — no "check your inbox" copy, and never ask how to deliver it** (house rules #4). No call booking — just the
+  handoff.
 
 **CTA button copy** — specific and first-person beats generic:
 - ✅ "Send me the free guide" · "Get the Calgary buyer's guide" · "Yes, send me the guide"

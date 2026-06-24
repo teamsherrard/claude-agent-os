@@ -158,9 +158,9 @@ Follow for more free value: ...   (esp. YouTube; real follower counts if worth s
 SECTION 9 — THE OPT-IN
 Top 3 you'll get: ...   (quick recap — full stack is in §3)
 Form: Name + Email
-Reassurance: Free. Instant. No spam.
+Reassurance: Free. Instant download. No spam.
 CTA button: "Send me the free guide"
-Thank-you state: ...
+Thank-you state: ...   (warm confirmation + the guide as an INSTANT DOWNLOAD on this page — NEVER "check your inbox" / email delivery)
 
 ════════════════════════════════════════════
 ▸ NEXT — HAND TO YOUR DESIGN STEP

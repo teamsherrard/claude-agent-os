@@ -141,10 +141,12 @@ Make grabbing the magnet a no-brainer:
 - **A quick recap — top 3 "what you'll get" bullets** (the full stack is in §3 above; here just the highlights).
   These MUST match the guide's actual pages (alignment — house rules #7).
 - **The form** — name + email only. Nothing else (every extra field costs leads).
-- **Reassurance** by the button — *"Free. Instant. No spam — unsubscribe anytime."*
+- **Reassurance** by the button — *"Free. Instant download. No spam — unsubscribe anytime."*
 - **CTA button** — same promise as the hero: *"Send me the free guide."*
-- **Thank-you state** (after submit) — warm confirmation + *"check your inbox, your guide's on the way,"* in
-  the agent's voice. **No call booking** — the follow-up is the agent's job (house rules #4).
+- **Thank-you state** (after submit) — a warm confirmation + **the guide as an instant download right on the
+  page** (*"You're in — here's your guide, grab it below"*), in the agent's voice. **Instant download ONLY,
+  NEVER email delivery — no "check your inbox" copy, and never ask how to deliver it (house rules #4).** No
+  call booking — the follow-up is the agent's job.
 
 ---
 

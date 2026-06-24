@@ -102,8 +102,9 @@ communities from `market.md`, the full offer + USP from `offer.md`, real proof f
    secondary trust signal, not a competing button.
 9. **THE OPT-IN** — name the magnet + a one-line promise, a **quick recap of the top 3 "what you'll get"** (the
    full stack is in §3), the **form (name + email only)**, the **reassurance** ("Free. Instant. No spam."),
-   and the **CTA button** (same as the hero). Then the **thank-you state** (warm confirmation + "check your
-   inbox, your guide's on the way" in their voice). **No call booking** — follow-up is theirs.
+   and the **CTA button** (same as the hero). Then the **thank-you state** — a warm confirmation + **the guide
+   as an instant download right on the page** (never "check your inbox"). **Instant download ONLY, never email
+   delivery; never ask how to deliver it (house rules #4).** **No call booking** — follow-up is theirs.
 
 ## Phase 3 — Note the assets, then hand off (design is a SEPARATE skill)
 This skill ends at the **copy + strategy** — that's the whole deliverable. **Do NOT write a design prompt;**
