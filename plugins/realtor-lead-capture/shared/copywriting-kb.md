@@ -77,14 +77,18 @@ Right after the hero, name the reader's pain so they feel understood before you 
 - **Turn the corner** — one line: there's a better way, and this guide is it (bridges into What's Inside).
 Keep it tight (3–5 lines). Empathy + stakes, not a pitch — it's what makes the rest of the page land.
 
-## The What's-Inside section — the value-stack that earns the email
+## The Guide section — what's inside + its value, shown with the mockup
 
-Show the guide is the answer and make the free thing feel genuinely valuable. From the magnet's actual pages:
+This is where the email gets earned: make the free guide feel genuinely valuable AND show it. Pair the copy
+with the **guide mockup / cover on the left or right** (note the placement — the design step renders it).
+From the magnet's actual pages:
 - **"Here's exactly what you'll get" — 4–7 concrete bullets**, each a real outcome from a page ("which 6
   deep-south communities give you the most home per dollar — with entry prices"), never a vague tease.
-- **One line on why it beats the generic advice** they'd find by Googling.
+- **The mockup beside it** — note that the cover/mockup sits left or right: visual proof the guide is real
+  and substantial.
+- **One line on why it's worth more than free** / beats the generic advice they'd Google.
 - **Repeat the CTA** here (mid-page) — some readers are already sold.
-Specificity is everything here: this section is the reason they hand over an email.
+Specificity + the visual is what makes them hand over an email.
 
 ---
 
@@ -118,7 +122,8 @@ it / use ChatGPT." Pull `identity/market.md`:
 
 ## The Offer / Why-Work-With-Me section — the real "why hire me" (most pages miss this)
 
-Read `identity/offer.md` and present the **full offer + USP + why-work-with-them** — their real services (as
+This is **WHAT they offer** — a distinct section from the About section's **WHO they are**. Read
+`identity/offer.md` and present the **full offer + USP + why-work-with-them** — their real services (as
 outcomes, not a task list), what they do differently than any other agent, and the concrete reasons to choose
 them. Structure:
 - **The transformation** — where they are now → where the agent gets them ("from overwhelmed and worried
@@ -142,6 +147,18 @@ A standalone proof section beats proof sprinkled in passing — it's the biggest
 Tie it straight to the reader's fear: "people who felt exactly what you're feeling — here's how it went." If
 proof is thin, keep it small and honest; never pad with fake reviews (house rules #5).
 
+## The Socials section — their YouTube + socials (ONLY if they have any)
+
+**Conditional.** Include this only if the agent actually has channels (`identity/profile.md` /
+`identity/content-engine.md`). If they have none, **leave it out entirely** — never write an empty or
+placeholder socials block. When they do have a presence, it's strong trust + authority (especially YouTube for
+a content-driven agent):
+- **Their real channels** — handles/links only, from the Brain (never invented). YouTube, Instagram, TikTok…
+- **"Follow for more free value"** — frame it as proof they give value constantly; real follower/subscriber
+  counts if worth showing. The guide reads as a sample of much more.
+- **Opt-in stays the ONE primary CTA.** Socials are a *secondary* trust signal — modest links, not a big rival
+  button that competes with the email.
+
 ---
 
 ## The opt-in & CTA — make grabbing the magnet a no-brainer
@@ -149,8 +166,8 @@ proof is thin, keep it small and honest; never pad with fake reviews (house rule
 The opt-in section presents the magnet and asks for the email:
 - **Name the magnet** + a one-line promise ("The Calgary New-Build Buyer's Guide — everything you need
   before you sign").
-- **A quick recap — top 3 "what you'll get" bullets** (the full value-stack is up in the What's-Inside
-  section; here just the highlights). These MUST match what the guide delivers (house rules #7).
+- **A quick recap — top 3 "what you'll get" bullets** (the full value-stack is up in the Guide section; here
+  just the highlights). These MUST match what the guide delivers (house rules #7).
 - **The form:** name + email only. Nothing else.
 - **Friction reducers** right by the button: "Free. Instant. No spam — unsubscribe anytime."
 - **The thank-you state** (after submit): warm confirmation + "check your inbox, your guide is on its way" +
@@ -159,26 +176,28 @@ The opt-in section presents the magnet and asks for the email:
 **CTA button copy** — specific and first-person beats generic:
 - ✅ "Send me the free guide" · "Get the Calgary buyer's guide" · "Yes, send me the guide"
 - ❌ "Submit" · "Sign up" · "Download" (cold, generic)
-Repeat the CTA ~3× — hero, mid-page (What's Inside), and the opt-in — same promise each time.
+Repeat the CTA ~3× — hero, mid-page (the Guide), and the opt-in — same promise each time.
 
 ---
 
 ## Flow & structure — the page must move
 
-The eight sections answer the reader's questions in the order they ask them, each building toward the opt-in:
+The sections answer the reader's questions in the order they ask them, each building toward the opt-in (the
+Socials section is optional — only if they have channels):
 
 ```
 HERO          →  "What is this, is it for me?"        (promise + who + CTA)
 THE PROBLEM   →  "Ugh, that's my worry."              (name + agitate the fear)
-WHAT'S INSIDE →  "Oh — this solves it."               (value-stack + mid CTA)
-ABOUT         →  "Can I trust this person?"           (expertise + process)
+THE GUIDE     →  "Oh — and look how good it is."      (value-stack + mockup + mid CTA)
+ABOUT (WHO)   →  "Can I trust this person?"           (who they are: expertise + process)
+WHY ME        →  "What's the offer + why hire them?"  (the offer + USP)
 MARKET        →  "Do they know MY area?"              (named communities + local depth)
-WHY ME        →  "What's the offer + why hire them?"  (full offer + USP)
 PROOF         →  "Has it worked for people like me?"  (real testimonials + results)
+SOCIALS *     →  "Are they legit + worth following?"  (YouTube + socials — * only if any)
 OPT-IN        →  "Okay — what do I get and how?"      (the magnet + the email + CTA)
 ```
 Momentum rules: short sentences, short paragraphs (1–3 lines), one idea per block, sub-headers and bullets so
-it's skimmable, generous white space, and the CTA repeated ~3×. Nobody reads a wall of text on a landing page.
+it's skimmable, generous white space, and ONE primary CTA repeated ~3×. Nobody reads a wall of text on a page.
 
 ---
 
@@ -194,5 +213,6 @@ it's skimmable, generous white space, and the CTA repeated ~3×. Nobody reads a 
 
 ## Hard "don'ts"
 Hype words and fake urgency · clickbait that the magnet doesn't pay off · "me/we"-heavy bragging · vague
-benefits · jargon · walls of text · invented testimonials or stats · guarantees of price/savings/sale ·
-Fair-Housing proxies ("family-friendly," "good area") · any "book a call" step · rendering a design.
+benefits · jargon · walls of text · invented testimonials or stats · invented or empty socials · a socials
+"follow me" button that competes with the opt-in · guarantees of price/savings/sale · Fair-Housing proxies
+("family-friendly," "good area") · any "book a call" step · rendering a design.

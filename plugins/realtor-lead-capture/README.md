@@ -21,16 +21,17 @@ there and never re-asks.
 The agent takes both docs to their design step, builds the guide PDF + the page, and hosts the page in their
 own tool (their site, GoHighLevel, Carrd, etc.).
 
-## The funnel sections (fixed, in this order)
+## The funnel sections (in order)
 
 1. **Hero** — the hook headline (= the magnet's promise) + subhead + the opt-in CTA.
 2. **The problem** — names and agitates the reader's real fear before any pitch.
-3. **What's inside the guide** — the value-stack that earns the email (+ a mid-page CTA).
-4. **About the agent** — what makes them amazing + why they're qualified + their process.
-5. **The local market** — the real communities they serve, in facts (the un-fakeable, value-led section).
-6. **Why work with them** — the full offer + USP, the real "why hire me" (the section most pages miss).
+3. **The guide** — what's inside + its value, shown with the magnet mockup (left/right) + a mid-page CTA.
+4. **About the agent (WHO)** — what makes them amazing + why they're qualified + their process.
+5. **Why work with them (OFFER + USP)** — the full offer + USP, the real "why hire me" (most pages miss this).
+6. **The local market** — the real communities they serve, in facts (the un-fakeable, value-led section).
 7. **Proof / results** — a dedicated block of real testimonials and numbers.
-8. **The opt-in** — present the magnet, the short form (name + email), and the final CTA.
+8. **As seen on / follow along** — their YouTube + socials, *only if they have any* (a trust signal, not a rival CTA).
+9. **The opt-in** — present the magnet, the short form (name + email), and the final CTA.
 
 **Goal = lead capture only.** After someone opts in, follow-up is the agent's job. The funnel never books a
 call or touches a calendar — that's deliberate (keeps it simple and reliable).

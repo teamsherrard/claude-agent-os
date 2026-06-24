@@ -117,29 +117,30 @@ What it costs to get wrong: ...
 There's a better way: ...   (one line that bridges into the guide)
 
 ────────────────────────────────────────────
-SECTION 3 — WHAT'S INSIDE THE GUIDE
+SECTION 3 — THE GUIDE  (what's inside + value · mockup left or right)
+[ guide mockup / cover sits LEFT or RIGHT of this stack ]
 What you'll get:
    •  ...   (4–7 concrete outcomes, one per guide page — never teases)
-Why it beats the generic advice: ...
+Why it's worth more than free: ...
 CTA button: "Send me the free guide"   (mid-page repeat)
 
 ────────────────────────────────────────────
-SECTION 4 — ABOUT [AGENT]
+SECTION 4 — ABOUT [AGENT]  (WHO they are)
 What makes them amazing: ...
 Why I'm qualified: ...   (one credibility line — testimonials live in Proof)
 My process: ...   (3 steps max)
 
 ────────────────────────────────────────────
-SECTION 5 — THE LOCAL MARKET (your communities)
-Communities I serve: ...   (real areas/neighbourhoods from market.md, by name)
-What's distinct (facts): ...   (price bands, new-build communities, schools by name, commute — no FH proxies)
-Why my local depth matters to you: ...
-
-────────────────────────────────────────────
-SECTION 6 — WHY WORK WITH [AGENT]  (offer + USP)
+SECTION 5 — WHY WORK WITH [AGENT]  (the OFFER + USP)
 What I offer: ...   (the real services, as outcomes — from offer.md)
 My USP / why me: ...   (what I do differently, tied to your fear)
 The transformation: ...
+
+────────────────────────────────────────────
+SECTION 6 — THE LOCAL MARKET (your communities)
+Communities I serve: ...   (real areas/neighbourhoods from market.md, by name)
+What's distinct (facts): ...   (price bands, new-build communities, schools by name, commute — no FH proxies)
+Why my local depth matters to you: ...
 
 ────────────────────────────────────────────
 SECTION 7 — PROOF / RESULTS
@@ -148,7 +149,13 @@ The numbers: ...   (homes sold, $ saved, years in the niche)
 Tied to your fear: ...
 
 ────────────────────────────────────────────
-SECTION 8 — THE OPT-IN
+SECTION 8 — AS SEEN ON / FOLLOW ALONG   (socials + YouTube — ONLY if they have any; else delete this section)
+Channels: ...   (real handles/links from profile.md / content-engine.md — YouTube, IG, TikTok…)
+Follow for more free value: ...   (esp. YouTube; real follower counts if worth showing)
+(Opt-in stays the primary CTA — these are secondary trust links, not a rival button.)
+
+────────────────────────────────────────────
+SECTION 9 — THE OPT-IN
 Top 3 you'll get: ...   (quick recap — full stack is in §3)
 Form: Name + Email
 Reassurance: Free. Instant. No spam.
@@ -159,8 +166,8 @@ Thank-you state: ...
 ▸ NEXT — HAND TO YOUR DESIGN STEP
 This doc is the copy + structure. Your design step turns it into the built page; then host it
 (your site / GoHighLevel / Carrd).
-Assets to gather:  community/area photos (Local Market) · headshot (About) · guide cover (hero) ·
-   logo (header/footer).   Real places only.
+Assets to gather:  guide mockup/cover (The Guide §3, left/right) · community/area photos (Local Market) ·
+   headshot (About) · social/channel handles (Socials, if used) · logo (header/footer).   Real places only.
 
 ════════════════════════════════════════════
 ▸ COMPLIANCE

@@ -2,6 +2,20 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.49.0] — 2026-06-23
+
+### Lead Capture System (Plugin 5) → v0.6.0 — funnel to 9 sections: mockup, WHO/OFFER split, conditional socials
+- **The Guide section (§3)** now sells the magnet's value *with the cover mockup placed left/right* (was a
+  plain "what's inside" list).
+- **WHO and OFFER/USP are now an explicit adjacent pair:** About (§4 — WHO the agent is) → Why Work With (§5 —
+  the OFFER + USP), two distinct, clearly-labelled sections.
+- **New conditional Socials section (§8) — "As Seen On / Follow Along":** showcases the agent's YouTube +
+  socials, but ONLY if they actually have channels (reads `profile.md` / `content-engine.md`; skipped entirely
+  otherwise). Framed as a trust signal — the opt-in stays the one primary CTA, never a competing button.
+- New order: Hero → Problem → The Guide → About → Why Work With → Local Market → Proof → Socials* → Opt-in.
+  Updated across funnel-guide, the funnel skill (Step 2 socials read + Phase 2 + assets + checklist), the
+  copywriting KB, the output-standard skeleton, and the README.
+
 ## [0.48.0] — 2026-06-23
 
 ### Lead Capture System (Plugin 5) → v0.5.0 — funnel expanded 5 → 8 sections (a more complete, higher-converting page)
