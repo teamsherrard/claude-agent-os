@@ -3,7 +3,7 @@
 Before you tell the agent it's ready, run this quick self-check against everything we've learned. If something fails, fix it. Don't deliver broken work, and don't over-report.
 
 ## Audio
-- Studio Sound is ON (every video) — confirmed on the track, not assumed.
+- Audio is clean AND natural — Studio Sound matched to the source (light/off on a real mic; it must not brighten/thin the voice). If a separate high-quality mic track was provided, it's synced in and in lip-sync.
 
 ## Opening & ending
 - Opens ON THE HOOK — no settling-in, "let's go", or silent lead-in.
@@ -11,12 +11,15 @@ Before you tell the agent it's ready, run this quick self-check against everythi
 
 ## Captions & graphics
 - Captions big, readable, high-contrast; active word in the brand accent (not a default colour).
-- **Captions sit BELOW the face — never over it (absolute).**
+- **Captions AND cards/graphics sit BELOW the face — never over it (absolute).**
+- **Graphics are clean — not cramped, overlapping, or broken** (no tiny multi-box grids / quadrants with colliding text).
 - Every text element FITS its box (padding, no overflow).
 - Nothing overlaps — captions, pops, cards, and the CTA never collide or stack.
 
 ## Framing & footage
 - Footage fills the frame — no black bars; zooms are zoom-in only (no exposed edges).
+- **His real background is intact — NOT accidentally removed / black** (no green-screen / background-removal on a talking-head).
+- **B-roll is actually present** — every long-form has at least some (Descript stock minimum); never a bare talking-head.
 - Horizontal b-roll on a vertical reel is split-screen or clean full-bleed — never over-zoomed / floating.
 - B-roll matches the words, is unique (no repeats), and never covers the face / hook / CTA.
 

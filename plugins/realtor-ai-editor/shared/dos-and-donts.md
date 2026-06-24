@@ -12,9 +12,9 @@ The one-page rulebook for editing a realtor's video. The detailed refs back each
 - DO keep zooms gentle, keep good headroom, keep skin natural and flattering.
 - DON'T push in tight on anyone's face. DON'T harshen brightness/contrast on a face. (Many agents are self-conscious on camera.)
 
-## Sound (always clean the audio)
-- DO apply Studio Sound automatically on EVERY video — agents record on phones, so the audio always needs it (~90%, 100% for echoey rooms). It renders on *playback*, not the scrub preview.
-- DON'T ship raw/echoey audio. If the source is genuinely bad (mic + room), tell the agent — a cheap lav mic fixes it at the source.
+## Sound (clean the audio — match the source)
+- DO clean the audio on every video — but match Studio Sound intensity to the SOURCE: phone audio (most realtors) ~80–90%; a real external mic is already clean, so go LIGHT (~30–40%) or OFF (high intensity brightens/thins the voice — especially a deep voice — and sounds artificial). If a separate high-quality mic recording exists, sync it in and skip Studio Sound. Renders on *playback*, not scrub.
+- DON'T blast ~90% Studio Sound onto good mic audio. DON'T ship raw/echoey audio either — if the source is genuinely bad, a cheap lav mic fixes it at the source.
 
 ## Readable, always (contrast)
 - DO put light text on dark, dark text on light — always high contrast.
@@ -23,8 +23,9 @@ The one-page rulebook for editing a realtor's video. The detailed refs back each
 ## Premium & minimal — but never BARE
 - DO keep it clean, modern, restrained. A few strong touches beat ten cheap ones.
 - DO add *purposeful* creativity — match the effect to the words (price drop → down arrow, big number → count-up, "tight" → squeeze). **Minimal ≠ bare**: a flat, static talking-head with nothing happening is *also* a bad edit. Talking-heads need gentle punch-ins, keyword pops, and a little motion.
+- DO put B-ROLL in every video — ALWAYS at least a little, even from Descript's built-in stock (zero setup). Never deliver a long-form with zero b-roll.
 - DON'T pile on RANDOM effects/overlays/frames until it looks tacky. The enemy is clutter, not creativity. Curate by video type (see effects-menu.md).
-- DON'T use loud or random SFX — a few, subtle, low-volume, and purposeful only.
+- DON'T use loud or random SFX — a few, subtle, low-volume, and purposeful only. DON'T lean on count-up animations — they're the most expensive effect; use static stat cards by default (count-ups for hero moments only).
 
 ## Captions & graphics
 - DO make captions big and phone-legible (~90pt+), white with a black outline, active word in the brand accent.
@@ -33,7 +34,9 @@ The one-page rulebook for editing a realtor's video. The detailed refs back each
 - DON'T use ugly flat black boxes for keyword pops — use clean bold text with an outline + soft shadow (floating), or a sleek rounded semi-transparent panel. Never a hard opaque black rectangle.
 - DO make text FIT its box (even padding, never overflowing the panel) and use a polished caption style — not the plain boxy default.
 - DON'T let elements overlap — captions, pops, cards, and the CTA must never collide or stack (stagger them).
-- DON'T EVER put captions over the speaker's face — pin them BELOW the face (absolute). Claude can't see the render, so this must be human-eyeballed before publishing.
+- DON'T EVER put captions OR cards/graphics over the speaker's face — pin them BELOW the face (absolute). Descript defaults text to centre/on-face, so set it low explicitly. Claude can't see the render, so this must be human-eyeballed before publishing.
+- DON'T build cramped multi-box graphics (a tiny 2×2 "quadrant", a packed grid) — Descript renders them broken (overlapping, cut-off text). Use clean sequential cards or a simple list; only do a grid full-size and clean.
+- DON'T enable background removal / green-screen on a normal talking-head — it blacks out the room behind them.
 - DON'T paste a horizontal b-roll over-zoomed onto a vertical reel (a money shot becomes a fingernail) — split-screen it, or full-bleed only if it still reads (see layouts.md).
 
 ## Clean frame, clean start, clean end

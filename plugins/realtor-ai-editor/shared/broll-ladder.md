@@ -2,6 +2,8 @@
 
 The point of going multi-source: stop recycling the same five clips. Query several free libraries together, de-duplicate, and prefer variety.
 
+**B-ROLL IS NOT OPTIONAL — every long-form / YouTube video ALWAYS gets at least some B-roll.** Even with no agent footage and no stock keys, use **Descript's built-in stock library** (zero setup, already in their account) for a few topical cutaways. Never deliver a long-form as a bare talking-head with zero cutaways — it reads flat and unfinished. (Short-form reels get b-roll on the key lines too; the always-a-minimum rule is non-negotiable for long-form.)
+
 ## Sources
 
 | Source | Gives you | Key needed | Commercial use | Attribution |

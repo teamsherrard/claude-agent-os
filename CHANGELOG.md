@@ -2,6 +2,25 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.50.0] — 2026-06-24
+
+### AI Editor (Plugin 6) → v0.9.0 — guardrails from the first full long-form edit (Mike's "New Era" video)
+Hardening from live revision feedback on a real long-form YouTube edit — six rules baked in so the blind-editing
+mistakes Claude can't see stop happening at the source:
+- **B-roll is now REQUIRED on every long-form** — at minimum a few topical clips from Descript's built-in stock
+  (zero setup). Never deliver a bare talking-head with no cutaways. (`broll-ladder`, `edit-longform`, `final-check`, `dos-and-donts`)
+- **Graphics & cards NEVER over the face** (not just captions) — Descript defaults text to centre/on-face, so pin
+  every card to the lower third explicitly. (`graphics-style`, `final-check`, `dos-and-donts`)
+- **No cramped multi-box grids** — Descript renders a small 2×2 "quadrant" broken (overlapping, cut-off text);
+  use clean sequential cards or a simple list instead. (`graphics-style`, `final-check`, `dos-and-donts`)
+- **NEVER background-removal / green-screen on a talking-head** — it blacks out the room (it got toggled on
+  accidentally via a side-by-side request and rendered a black void). (`descript-playbooks`, `final-check`, `dos-and-donts`)
+- **Studio Sound by SOURCE** — phone audio ~80–90%; a real external mic is already clean, so light (~30–40%) or
+  off (high intensity brightens/thins the voice — especially a deep voice). Sync a separate high-quality mic
+  track instead of forcing Studio Sound. (`descript-playbooks`, `edit-longform`, `final-check`, `dos-and-donts`)
+- **Count-ups are the most expensive effect** (~167 credits in one pass) — default to static stat cards;
+  count-ups for hero moments only. (`credit-tiers`, `dos-and-donts`)
+
 ## [0.49.0] — 2026-06-23
 
 ### Lead Capture System (Plugin 5) → v0.6.0 — funnel to 9 sections: mockup, WHO/OFFER split, conditional socials

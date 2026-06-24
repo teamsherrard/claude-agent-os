@@ -15,10 +15,12 @@ Descript's default text/graphics look flat and cheap ("Fiverr") unless you direc
 - **Reveal, don't just appear** — every card/pop-up animates in (slide / pop / swoosh) and out; nothing should blink onto screen.
 - **Text fits its box** — even padding around the text; it never overflows the panel (a two-word term must not spill past the edges).
 - **No collisions** — no two elements (card, pop-up, caption, CTA) overlap or stack. Stagger their timing or positions.
+- **Keep graphics SIMPLE — no cramped multi-box grids.** Descript renders complex multi-element graphics (a 2×2 "quadrant", a packed grid) BROKEN — overlapping boxes, colliding and cut-off text — especially when shrunk small or pushed into a corner. For a multi-part concept (a 4-part framework, a quadrant, a checklist), use clean **sequential cards** (one item at a time, as he says each) or a simple stacked list — NEVER a tiny grid. If a multi-part graphic is truly needed, keep it full-size and clean; never shrink it.
 
 ## Placement
 
 - Hook/title card in the first ~1.5s, over B-roll or a clean frame — never over the face mid-sentence.
+- **Cards & graphics sit LOW — below the face, like captions — and NEVER cover the face (absolute).** Descript defaults text/cards to CENTRE (right on the face), so pin every card to the lower third explicitly (vertical centre ~0.82–0.9 of the frame, fully below the face) and never trust the default. Claude can't see the render → human-eyeball it before publishing.
 - Number/stat cards land on the exact line they refer to.
 - **Clean frame:** no black bars, letterboxing, or broken-looking edges — especially in the first second. The opening must look intentional, never glitchy.
 - **Horizontal b-roll on a vertical reel → split-screen or clean full-bleed, never over-zoomed or floating** (see `${CLAUDE_PLUGIN_ROOT}/shared/layouts.md`).
