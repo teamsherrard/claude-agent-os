@@ -70,27 +70,33 @@ reads salesy; a substantive one reads like an expert** — so pull the RICH stuf
 communities from `market.md`, the full offer + USP from `offer.md`, real proof from `proof.md`. The sections:
 
 1. **HERO** — the **headline** (= the magnet's core promise, benefit-led, for its audience — or the agent's
-   whole brand if brand-led — in this market), a **subhead** (expand the promise + who it's for + remove
-   doubt), and the **primary CTA button** ("Send me the free guide"). 90% of whether they stay.
-2. **ABOUT THE AGENT** — three beats, framed for the reader: **what makes them amazing** (niche + why it
-   matters to this reader), **their wins** (real proof from `proof.md`), **their process** (3 steps max).
+   whole brand if brand-led), a **subhead** (expand the promise + who + remove doubt), and the **CTA button**
+   ("Send me the free guide"). 90% of whether they stay.
+2. **THE PROBLEM** — name the reader's single most acute fear from `avatars.md` and agitate it honestly (the
+   real cost of getting it wrong), then turn the corner: there's a better way, and this guide is it. Empathy
+   + stakes, not a pitch.
+3. **WHAT'S INSIDE THE GUIDE** — the value-stack: 4–7 concrete "here's exactly what you'll get" bullets pulled
+   from the magnet's pages (real outcomes, never teases) + one line on why it beats generic advice. Repeat the
+   CTA here (mid-page).
+4. **ABOUT THE AGENT** — **what makes them amazing** (niche + why it matters to this reader), **why they're
+   qualified** (one credibility line — save testimonials for Proof), **their process** (3 steps max).
    Humble-confident, human, specific.
-3. **THE LOCAL MARKET — "your communities"** — the section that makes the page feel local and un-fakeable, and
-   the strongest answer to "why not just Google it." Pull the agent's real market from `market.md`: name the
-   specific **communities/areas they serve**, what's genuinely distinct about each in FACTS (price bands, the
-   new-build communities, schools by name, commute, amenities — never "good area"/"family-friendly" proxies,
-   Fair Housing), and the local depth only they have ("the deep-south new-build communities I know inside
-   out"). This is VALUE, not a pitch. (Real community photos belong here once it's designed — note that in the assets line.)
-4. **WHY WORK WITH [AGENT] — the offer + USP** — the real "why hire me," straight from `offer.md`, NOT just
-   the guide's process. Make it substantive: their **actual services/offer** (how they work with clients),
-   their **USP** (what they do differently than any other agent), and the concrete **reasons to choose them**,
-   each tied to the reader's fear (overpaying, mispricing, the unknown), plus one more real proof point.
-   Present it as the transformation they get — never a guarantee (house rules #5). **This is the section most
-   agents' pages are missing.**
-5. **THE OPT-IN** — name the magnet + a one-line promise, **3–5 "what you'll get" bullets that match the
-   guide's pages exactly**, the **form (name + email only)**, the **reassurance** ("Free. Instant. No
-   spam."), and the **CTA button** (same as the hero). Then the **thank-you state** copy (warm confirmation
-   + "check your inbox, your guide's on the way" in their voice). **No call booking** — follow-up is theirs.
+5. **THE LOCAL MARKET — "your communities"** — the un-fakeable section, the strongest answer to "why not just
+   Google it." From `market.md`: the specific **communities/areas they serve** by name, what's distinct in
+   FACTS (price bands, the new-build communities, schools by name, commute — never "good area"/"family-friendly"
+   proxies, Fair Housing), and why their local depth protects the reader. VALUE, not a pitch. (Real community
+   photos go here at the design step — note it in the assets line.)
+6. **WHY WORK WITH [AGENT] — the offer + USP** — the real "why hire me," straight from `offer.md`, NOT just the
+   guide's process: their **actual services** (as outcomes), their **USP** (what they do differently, tied to
+   the reader's fear), and the **transformation** they get. Never a guarantee (house rules #5). **The section
+   most pages are missing.**
+7. **PROOF / RESULTS** — a **dedicated** proof block from `proof.md` (real only): 2–4 short testimonials/results
+   (name + situation + outcome), hard numbers, maybe a one-line case story — all tied back to the reader's fear.
+   If proof is thin, keep it small and honest; **never invent** (house rules #5).
+8. **THE OPT-IN** — name the magnet + a one-line promise, a **quick recap of the top 3 "what you'll get"** (the
+   full stack is in §3), the **form (name + email only)**, the **reassurance** ("Free. Instant. No spam."),
+   and the **CTA button** (same as the hero). Then the **thank-you state** (warm confirmation + "check your
+   inbox, your guide's on the way" in their voice). **No call booking** — follow-up is theirs.
 
 ## Phase 3 — Note the assets, then hand off (design is a SEPARATE skill)
 This skill ends at the **copy + strategy** — that's the whole deliverable. **Do NOT write a design prompt;**
@@ -114,13 +120,15 @@ backed. Flag once if `compliance.md` is empty.
 ---
 
 ## Quality checklist
-- [ ] Read the actual magnet first; **page promise = magnet promise = opt-in bullets = what's delivered** (house rules #7)
-- [ ] All five sections present (Hero · About · Local Market · Why-Work-With-Me · Opt-in), value-led not salesy
-- [ ] Hero headline is clear, benefit-led, specific, no hype; CTA repeats in hero + opt-in
-- [ ] About uses real wins/proof from the Brain (nothing invented); framed for the reader
+- [ ] Read the actual magnet first; **page promise = magnet promise = what's delivered** (house rules #7)
 - [ ] **Strategy applied first** (one big idea · desire + fear · the 3 objections dissolved · the emotional arc)
-- [ ] LOCAL MARKET section pulls real communities from market.md (authority, not a pitch)
-- [ ] WHY-WORK-WITH-ME section pulls the full offer + USP from offer.md (the real why-hire-them, not just the guide); no guarantees
+- [ ] All **8 sections** present, in order (Hero · Problem · What's Inside · About · Local Market · Why-Work-With · Proof · Opt-in)
+- [ ] Hero headline clear, benefit-led, specific, no hype; **CTA repeats ~3× (hero · mid-page · opt-in)**
+- [ ] PROBLEM names + agitates the avatar's real fear (from avatars.md) before any pitch
+- [ ] WHAT'S INSIDE value-stacks the guide's pages (concrete outcomes, not teases)
+- [ ] LOCAL MARKET pulls real communities from market.md (authority, not a pitch)
+- [ ] WHY-WORK-WITH pulls the full offer + USP from offer.md (the real why-hire-them); no guarantees
+- [ ] PROOF is a dedicated block from proof.md — real only, nothing invented
 - [ ] Opt-in asks for name + email only; reassurance present; **no call booking** (house rules #4)
 - [ ] Voice matches `voice.md` + `voice-samples.md`; local and specific (why-not-ChatGPT)
 - [ ] No design prompt written (design is a separate skill); assets-to-gather noted instead

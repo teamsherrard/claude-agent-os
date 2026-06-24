@@ -67,6 +67,27 @@ readable in one breath. It must match the magnet exactly (house rules #7).
 
 ---
 
+## The Problem section — agitate the fear before you pitch
+
+Right after the hero, name the reader's pain so they feel understood before you offer anything. From
+`identity/avatars.md`, take their **single most acute fear** and make it concrete and honest:
+- **Name it in their words** — the specific thing that goes wrong ("negotiating against the builder's own rep,
+  alone, and overpaying by $20–40K on upgrades that add nothing to resale").
+- **Agitate honestly** — the real cost (money, stress, the wrong home for years). Real stakes, never fake doom.
+- **Turn the corner** — one line: there's a better way, and this guide is it (bridges into What's Inside).
+Keep it tight (3–5 lines). Empathy + stakes, not a pitch — it's what makes the rest of the page land.
+
+## The What's-Inside section — the value-stack that earns the email
+
+Show the guide is the answer and make the free thing feel genuinely valuable. From the magnet's actual pages:
+- **"Here's exactly what you'll get" — 4–7 concrete bullets**, each a real outcome from a page ("which 6
+  deep-south communities give you the most home per dollar — with entry prices"), never a vague tease.
+- **One line on why it beats the generic advice** they'd find by Googling.
+- **Repeat the CTA** here (mid-page) — some readers are already sold.
+Specificity is everything here: this section is the reason they hand over an email.
+
+---
+
 ## The About section — build trust fast (this is where opt-ins are won or lost)
 
 People don't hand their email to a stranger. The About section earns it. Three beats, all framed for the
@@ -75,9 +96,9 @@ reader:
 - **What makes them amazing (position, don't brag).** Their niche + why it matters to this reader. "I only
   do new builds in Calgary — so I know which builders cut corners and which incentives are actually worth
   it." Specific expertise > generic "top agent."
-- **Their wins (proof, real only).** Pull from `identity/proof.md`: real numbers, client results,
-  testimonials, years/transactions. "Helped 120+ Calgary families into the right new build." If proof is
-  thin, use what's real and lean on specificity of process instead — never invent a result.
+- **Why they're qualified (one credibility line).** Their focus, experience, or a credential/number —
+  "Helped 120+ Calgary families into the right new build." Keep the full testimonials for the dedicated Proof
+  section; here it's one line of credibility, not the whole proof dump. Never invent a result.
 - **Their process (make the scary thing safe).** A simple "here's how I make this easy" — 3 steps max. This
   is reassurance: it shows the reader the path and that the agent has done it many times.
 
@@ -104,12 +125,22 @@ them. Structure:
   about overpaying → to confident, informed, and in the right home at the right price").
 - **Why this agent** — the USP, tied to the reader's fear. What they do differently that de-risks the
   decision.
-- **Proof again** — one more concrete result or testimonial.
 - **Compliance-safe** — no guarantees of price/savings/sale; describe the experience and approach, not a
-  promised number.
+  promised number. (Save the testimonials for the dedicated Proof section, next.)
 
 The offer section makes the agent the obvious choice — so that when the reader grabs the free guide, they're
 already warm.
+
+## The Proof section — let other people do the convincing (dedicated block)
+
+A standalone proof section beats proof sprinkled in passing — it's the biggest trust lever on the page. From
+`identity/proof.md` (real only — never invent):
+- **2–4 short testimonials or results** — name/initials + situation + outcome ("Relocated from Toronto, bought
+  in Mahogany $15K under the builder's first number — Samantha R.").
+- **Hard numbers** if they have them — homes sold, $ saved, years in the niche, communities covered.
+- **A one-line case story** if there's a strong one.
+Tie it straight to the reader's fear: "people who felt exactly what you're feeling — here's how it went." If
+proof is thin, keep it small and honest; never pad with fake reviews (house rules #5).
 
 ---
 
@@ -118,8 +149,8 @@ already warm.
 The opt-in section presents the magnet and asks for the email:
 - **Name the magnet** + a one-line promise ("The Calgary New-Build Buyer's Guide — everything you need
   before you sign").
-- **"What you'll get" — 3–5 bullets** of the concrete, specific value inside. These bullets MUST match what
-  the guide actually delivers (house rules #7). Specificity sells the opt-in.
+- **A quick recap — top 3 "what you'll get" bullets** (the full value-stack is up in the What's-Inside
+  section; here just the highlights). These MUST match what the guide delivers (house rules #7).
 - **The form:** name + email only. Nothing else.
 - **Friction reducers** right by the button: "Free. Instant. No spam — unsubscribe anytime."
 - **The thank-you state** (after submit): warm confirmation + "check your inbox, your guide is on its way" +
@@ -128,23 +159,26 @@ The opt-in section presents the magnet and asks for the email:
 **CTA button copy** — specific and first-person beats generic:
 - ✅ "Send me the free guide" · "Get the Calgary buyer's guide" · "Yes, send me the guide"
 - ❌ "Submit" · "Sign up" · "Download" (cold, generic)
-Repeat the CTA in the hero AND the opt-in section — same promise both times.
+Repeat the CTA ~3× — hero, mid-page (What's Inside), and the opt-in — same promise each time.
 
 ---
 
 ## Flow & structure — the page must move
 
-The five sections answer the reader's questions in the order they ask them, each building toward the opt-in:
+The eight sections answer the reader's questions in the order they ask them, each building toward the opt-in:
 
 ```
-HERO        →  "What is this and is it for me?"   (promise + who + CTA)
-ABOUT       →  "Why should I trust this person?"  (expertise + wins + process)
-MARKET      →  "Do they really know MY area?"     (named communities + local depth + photos)
-WHY ME      →  "What do they offer + why hire them?"  (full offer + USP + why-work-with-them)
-OPT-IN      →  "Okay — what do I get and how?"    (the magnet + the email + CTA)
+HERO          →  "What is this, is it for me?"        (promise + who + CTA)
+THE PROBLEM   →  "Ugh, that's my worry."              (name + agitate the fear)
+WHAT'S INSIDE →  "Oh — this solves it."               (value-stack + mid CTA)
+ABOUT         →  "Can I trust this person?"           (expertise + process)
+MARKET        →  "Do they know MY area?"              (named communities + local depth)
+WHY ME        →  "What's the offer + why hire them?"  (full offer + USP)
+PROOF         →  "Has it worked for people like me?"  (real testimonials + results)
+OPT-IN        →  "Okay — what do I get and how?"      (the magnet + the email + CTA)
 ```
 Momentum rules: short sentences, short paragraphs (1–3 lines), one idea per block, sub-headers and bullets so
-it's skimmable, generous white space. Nobody reads a wall of text on a landing page.
+it's skimmable, generous white space, and the CTA repeated ~3×. Nobody reads a wall of text on a landing page.
 
 ---
 

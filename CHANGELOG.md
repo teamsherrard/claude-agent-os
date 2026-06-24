@@ -2,6 +2,19 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.48.0] — 2026-06-23
+
+### Lead Capture System (Plugin 5) → v0.5.0 — funnel expanded 5 → 8 sections (a more complete, higher-converting page)
+- The opt-in funnel was a 5-section trust backbone; added the 3 highest-converting blocks it was missing:
+  **The Problem** (agitate the avatar's real fear before any pitch), **What's Inside the Guide** (a concrete
+  value-stack that earns the email, with a mid-page CTA), and **Proof / Results** (a *dedicated* social-proof
+  block instead of proof sprinkled in passing).
+- New order: Hero → The Problem → What's Inside → About → Local Market → Why Work With → Proof → Opt-in.
+  CTA repeats ~3× (hero · mid-page · opt-in); About slims to one credibility line; the opt-in recaps the top 3
+  (full value-stack lives in What's Inside). (Chose 8 over the full 9 — skipped a standalone FAQ.)
+- Updated across funnel-guide, the funnel skill (Phase 2 + checklist), copywriting KB (flow + new section
+  craft notes for Problem / What's-Inside / Proof), the output-standard skeleton, and the README.
+
 ## [0.47.0] — 2026-06-23
 
 ### Lead Capture System (Plugin 5) → v0.4.0 — copy + strategy focus; design prompt removed (a separate skill owns it)

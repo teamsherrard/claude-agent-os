@@ -111,28 +111,45 @@ Subhead: ...
 CTA button: "Send me the free guide"
 
 ────────────────────────────────────────────
-SECTION 2 — ABOUT [AGENT]
-What makes them amazing: ...
-Wins / proof: ...
-Their process: ...
+SECTION 2 — THE PROBLEM
+The fear, named: ...   (the avatar's most acute fear, in their words — from avatars.md)
+What it costs to get wrong: ...
+There's a better way: ...   (one line that bridges into the guide)
 
 ────────────────────────────────────────────
-SECTION 3 — THE LOCAL MARKET (your communities)
+SECTION 3 — WHAT'S INSIDE THE GUIDE
+What you'll get:
+   •  ...   (4–7 concrete outcomes, one per guide page — never teases)
+Why it beats the generic advice: ...
+CTA button: "Send me the free guide"   (mid-page repeat)
+
+────────────────────────────────────────────
+SECTION 4 — ABOUT [AGENT]
+What makes them amazing: ...
+Why I'm qualified: ...   (one credibility line — testimonials live in Proof)
+My process: ...   (3 steps max)
+
+────────────────────────────────────────────
+SECTION 5 — THE LOCAL MARKET (your communities)
 Communities I serve: ...   (real areas/neighbourhoods from market.md, by name)
 What's distinct (facts): ...   (price bands, new-build communities, schools by name, commute — no FH proxies)
 Why my local depth matters to you: ...
 
 ────────────────────────────────────────────
-SECTION 4 — WHY WORK WITH [AGENT]  (offer + USP)
+SECTION 6 — WHY WORK WITH [AGENT]  (offer + USP)
 What I offer: ...   (the real services, as outcomes — from offer.md)
 My USP / why me: ...   (what I do differently, tied to your fear)
 The transformation: ...
-Proof: ...
 
 ────────────────────────────────────────────
-SECTION 5 — THE OPT-IN
-What you'll get:
-   •  ...   (matches the guide's pages exactly)
+SECTION 7 — PROOF / RESULTS
+Testimonials / results: ...   (2–4, real only from proof.md — name · situation · outcome)
+The numbers: ...   (homes sold, $ saved, years in the niche)
+Tied to your fear: ...
+
+────────────────────────────────────────────
+SECTION 8 — THE OPT-IN
+Top 3 you'll get: ...   (quick recap — full stack is in §3)
 Form: Name + Email
 Reassurance: Free. Instant. No spam.
 CTA button: "Send me the free guide"
