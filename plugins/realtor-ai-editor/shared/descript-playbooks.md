@@ -38,7 +38,7 @@ After any import, `wait_for_job`; Descript auto-transcribes on import (don't re-
 3. Remove silences > ~1.5s (avoid harsh cuts).
 4. Cut false starts / bad takes — review before applying; restore good bits.
 5. **Studio Sound — ALWAYS, its own step, ~90% (100% for echoey rooms).** Mandatory on every video; confirm it's on (render-time effect — judge on playback, not the scrub preview).
-6. B-roll (via `editor-broll`, on the words) + a **purposeful creative layer** — gentle punch-ins on key lines, keyword pops, contextual animations matched to the words, a few **subtle, low-volume** SFX, chapters. Horizontal b-roll on a vertical reel → **split-screen, never over-zoomed** (`${CLAUDE_PLUGIN_ROOT}/shared/layouts.md`). Minimal ≠ bare (`${CLAUDE_PLUGIN_ROOT}/shared/effects-menu.md`). No captions by default.
+6. **Colour grade (always)** + B-roll (via `editor-broll`, on the words — **curated on long-form, never reused**) + Descript's **motion** layer — gentle punch-ins on key lines, contextual animations matched to the words (price drop → down arrow; "tight" → a squeeze), a few **subtle, low-volume** SFX, chapters. Horizontal b-roll on a vertical reel → **split-screen, never over-zoomed** (`${CLAUDE_PLUGIN_ROOT}/shared/layouts.md`). Minimal ≠ bare (`${CLAUDE_PLUGIN_ROOT}/shared/effects-menu.md`). **The premium TEXT graphics — hook title, section chips, stat/number cards, keyword pops, lower-thirds, CTA — are NOT drawn in Descript; they render via the graphics engine (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-engine.md` + `${CLAUDE_PLUGIN_ROOT}/shared/graphics-templates.md`) composited over the export, and every long-form MUST hit the graphics-coverage floor (hook + a chip per point + a stat card on every number + keyword pops throughout + CTA).** No captions by default.
 7. `publish_project` (on approval) → share + download URL + a title/description.
 
 ## Playbook B — short-form / pull shorts
@@ -46,7 +46,7 @@ After any import, `wait_for_job`; Descript auto-transcribes on import (don't re-
 1. Find/import as above (by URL).
 2. `prompt_project_agent`: pick stand-alone moments (hook → idea → payoff/CTA); make a 9:16 composition per clip.
 3. Reframe (face centred), cut hard, hook in first ~1.5s.
-4. Karaoke captions on (brand style); B-roll on the words; punch-ins; ducked music.
+4. Karaoke captions on (brand style, big ~90pt+, below the face); B-roll on the words (**3–5 TOTAL, never reused, never over the face**); punch-ins; ducked music. **The premium TEXT graphics — hook title, section chips, stat cards, keyword pops, lower-thirds, CTA — are NOT drawn in Descript; they render via the graphics engine (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-engine.md` + `${CLAUDE_PLUGIN_ROOT}/shared/graphics-templates.md`) composited over the export, and every reel MUST hit the short-form coverage floor (hook + ≥3 chips + ≥1 stat card + ≥2 keyword pops + CTA).**
 5. `publish_project` the set.
 
 ## Playbook C — build from a prompt (optional)

@@ -2,8 +2,9 @@
 
 How the footage — and the people in it — should look. Subtle and flattering always beats "punchy."
 
-## Colour grade — subtle and natural only
+## Colour grade — ALWAYS applied, subtle and natural only
 
+- **A colour grade is REQUIRED on every video — never deliver ungraded, flat footage.** Even when the lift is tiny, apply one: ungraded raw footage reads cheap and unfinished. The mistake to avoid is BOTH directions — no grade at all, AND an over-cooked grade.
 - A gentle lift is fine: slight contrast, a touch of warmth, balanced brightness. It should look crisp, never "filtered."
 - **Hard guardrails (these have gone wrong before):** never over-saturate, never over-brighten, never crush the blacks, never anything neon / harsh / pixelated. Skin tones stay natural and flattering — never orange, never washed out.
 - Tiny tweaks only. When in doubt, do less — and offer to dial it back.

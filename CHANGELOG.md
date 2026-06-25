@@ -2,6 +2,34 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.56.0] — 2026-06-25
+
+### AI Editor (Plugin 6) → v0.11.0 — graphics engine wired plugin-wide; recurring mistakes locked out
+A multi-agent audit + adversarial re-verify found the rules existed but weren't wired into every skill, and that
+the legacy files still told Descript to draw the premium cards. Now every skill and ref agrees and the recurring
+edit complaints (no captions, captions too small, bad contrast, too much b-roll, no grade, sparse graphics) each
+have an explicit, enforced rule in the path that produces them.
+
+- **NEW `shared/graphics-templates.md`** — copy-ready json2video template library: 9 graphic types (hook title,
+  lower-third, upper-third, numbered chip, stat card, icon/bubble popup, keyword callout, CTA, framework/list
+  reveal), each a complete `type:html` element that already obeys the hard rules (contrast panel, big sizes,
+  animated, on-brand, off-face). Use the templates — don't hand-improvise graphics.
+- **Rewritten `shared/graphics-engine.md`** — the authoritative graphics skill: hybrid division of labour, the
+  hard rules, a countable GRAPHICS COVERAGE floor, mandatory frame-QA, honest economics, json2video-only
+  (Remotion parked as a future scale-swap, no licence).
+- **Wired the engine into EVERY edit skill** — edit-longform + edit-listing now route premium overlays through
+  the graphics engine + templates (they previously fell back to Descript's flat output — the root cause of
+  sparse/ugly graphics on the highest-stakes formats).
+- **Reconciled the contradiction across the LEGACY files too** — `descript-playbooks.md` (the operative recipe),
+  `effects-menu.md`, `content-types.md`, and `dos-and-donts.md` no longer tell Descript to draw stat cards /
+  keyword pops / count-ups; those are graphics-engine overlays. `graphics-style.md` is the visual STANDARD.
+  Every file now says the same thing: json2video owns the premium overlays; Descript does the edit + captions.
+- **`final-check.md`** (the universal gate) now counts graphics coverage, checks captions-present/size, and
+  requires json2video frame-QA before delivery.
+- **B-roll cap at source** — `editor-broll/SKILL.md` + `broll-ladder.md`: 3–5 clips max on short-form, never
+  reused anywhere (not just back-to-back), with a stop-rule.
+- **Colour grade is now an explicit recipe step** in long-form + listing (was only caught after the fact).
+
 ## [0.55.0] — 2026-06-25
 
 ### AI Editor (Plugin 6) → v0.10.1 — caption highlight must be coloured TEXT, not a box

@@ -5,7 +5,7 @@ description: Edit a property / home / listing tour video by directing Descript o
 
 # Edit a listing / home tour
 
-A listing tour is *about a specific property*, so its footage rules differ: property moments need property footage — never generic stock for the home (a compliance + trust issue). Start from `${CLAUDE_PLUGIN_ROOT}/shared/dos-and-donts.md`, and read `${CLAUDE_PLUGIN_ROOT}/shared/footage-intake.md`, `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`, and `identity/compliance.md` (price/claims, fair housing) first. You direct Descript; the agent watches and approves. Default to the **Standard** tier (`${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md`).
+A listing tour is *about a specific property*, so its footage rules differ: property moments need property footage — never generic stock for the home (a compliance + trust issue). Start from `${CLAUDE_PLUGIN_ROOT}/shared/dos-and-donts.md`, and read `${CLAUDE_PLUGIN_ROOT}/shared/footage-intake.md`, `${CLAUDE_PLUGIN_ROOT}/shared/footage-look.md` (always grade), the **graphics engine** (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-engine.md` + `${CLAUDE_PLUGIN_ROOT}/shared/graphics-templates.md`) for the premium info cards, `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`, and `identity/compliance.md` (price/claims, fair housing) first. You direct Descript; the agent watches and approves. Default to the **Standard** tier (`${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md`).
 
 ## Step 1 — Footage check (one simple question)
 
@@ -13,7 +13,7 @@ Find out what they have, plainly: "Do you have footage of the home — clips you
 
 ## Step 2 — Clean it up first
 
-Open ON THE HOOK (cut any settling-in / "let's go" intro), remove dead air and bad takes, and **always apply Studio Sound** (~90%, automatic — agents shoot on phones). Never end mid-sentence.
+Open ON THE HOOK (cut any settling-in / "let's go" intro), remove dead air and bad takes, and **always apply Studio Sound** (~90%, automatic — agents shoot on phones). **Apply a subtle colour grade — always** (`${CLAUDE_PLUGIN_ROOT}/shared/footage-look.md`); never ship flat, ungraded footage. Never end mid-sentence.
 
 ## Step 3 — Structure the tour
 
@@ -31,4 +31,4 @@ Kitchen clip on the kitchen line, backyard clip on the yard mention, drone over 
 
 ## Step 6 — Brand cards, captions, deliver
 
-Add brand info cards (address, price, beds/baths, key features) — big, bold, animated, on-brand, high-contrast, text fitting the box, nothing overlapping (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`). Captions: **on** for social listing reels (often watched on mute), off for a long YouTube tour unless asked (`${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md`). End on the book-a-showing CTA. **Run the final check** (`${CLAUDE_PLUGIN_ROOT}/shared/final-check.md`), then export + hand over a title/description with the address. Deliver once.
+Add the brand info cards (address, price, beds/baths, key features) — these are premium graphic overlays, so they render through the **graphics engine** (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-engine.md` + the copy-ready `${CLAUDE_PLUGIN_ROOT}/shared/graphics-templates.md`): **json2video**, on a contrast panel, on-brand, big, synced to the line (the price card on the price line), OFF the face — composited over the Descript export. Descript draws none of these; `graphics-style.md` is the visual standard they meet. **GRAPHICS COVERAGE (count before delivery):** a listing reel MUST carry at minimum an address/title card, a **price stat card**, a beds-baths/feature chip, and the closing CTA — a bare tour with no cards is a fail. Captions on a social listing reel are **mandatory** (watched on mute): big (~90pt+), below the face, high-contrast, brand accent on the active word (`${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md`); off only for a long YouTube tour unless asked. End on the book-a-showing CTA. **Run the final check** (`${CLAUDE_PLUGIN_ROOT}/shared/final-check.md`), then export + hand over a title/description with the address. Deliver once.

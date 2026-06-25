@@ -1,6 +1,8 @@
 # Graphics & hook cards (quality bar)
 
-Descript's default text/graphics look flat and cheap ("Fiverr") unless you direct them hard. So **always** spell out size, weight, animation, depth, and brand colour — it won't do it on its own.
+> **Where graphics are rendered:** the premium graphic OVERLAYS — hook title, section chips, stat/number cards, keyword pop-ups, lower-thirds, framework/list reveals, CTA — are rendered by the **graphics engine** (json2video), NOT Descript. See `${CLAUDE_PLUGIN_ROOT}/shared/graphics-engine.md` + the copy-ready `${CLAUDE_PLUGIN_ROOT}/shared/graphics-templates.md`. **This file is the VISUAL STANDARD** every one of those overlays must meet. Descript does the edit + captions; it does NOT draw the premium cards (it rendered them flat / on the face / as broken grids).
+
+These cards are NOT drawn in Descript — they render via the **graphics engine** (json2video). This file is the visual STANDARD they must meet: always big, bold, animated, deep, high-contrast, on-brand. The engine's templates (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-templates.md`) already ship every one of these specs — use them.
 
 ## Every hook card, title card, and number/stat card must be:
 
@@ -10,7 +12,7 @@ Descript's default text/graphics look flat and cheap ("Fiverr") unless you direc
 - **Depth** — a drop shadow or a clean background panel so it pops off the footage.
 - **On-brand** — colours/fonts from `brand.json`; never a tool default (it once defaulted to green).
 - **Clean & modern** — not a thin centred line on a plain dark bar.
-- **No ugly flat black boxes.** Keyword pops and emphasis text should be clean bold text with a thick outline + a soft drop shadow (text floats on the video), OR a sleek rounded semi-transparent panel — NEVER a hard, opaque, flat black rectangle (it reads cheap, and it's been a recurring complaint). Only use a panel when legibility truly needs it, and even then make it rounded + semi-transparent, not solid black.
+- **Every text element on a CONTRAST PANEL (rounded, semi-transparent, soft shadow) — NEVER a hard flat black rectangle, and NEVER bare floating text.** Bare text (even with an outline) vanishes on a bright sky or busy footage — that's the recurring contrast complaint. The panel guarantees legibility on any background; make it rounded + brand-tinted/semi-transparent, never a solid black box. (This matches the engine's hard rule #1 — the templates already ship the panel.)
 - **High contrast** — text must pop against its panel AND the footage. NEVER the same colour family on the same background (light-blue text on a blue panel vanishes). White-on-navy or navy-on-white — not blue-on-blue.
 - **Reveal, don't just appear** — every card/pop-up animates in (slide / pop / swoosh) and out; nothing should blink onto screen.
 - **Text fits its box** — even padding around the text; it never overflows the panel (a two-word term must not spill past the edges).
@@ -25,14 +27,14 @@ Descript's default text/graphics look flat and cheap ("Fiverr") unless you direc
 - **Clean frame:** no black bars, letterboxing, or broken-looking edges — especially in the first second. The opening must look intentional, never glitchy.
 - **Horizontal b-roll on a vertical reel → split-screen or clean full-bleed, never over-zoomed or floating** (see `${CLAUDE_PLUGIN_ROOT}/shared/layouts.md`).
 
-## Premium & minimal (don't over-edit)
+## Premium & minimal (don't over-edit) — but NEVER sparse
 
-A few strong, clean touches beat a pile of effects — over-editing looks cheap and tacky. Curate by video type (`${CLAUDE_PLUGIN_ROOT}/shared/effects-menu.md`). And every video ends with the agent's CTA on screen (`${CLAUDE_PLUGIN_ROOT}/shared/cta-pack.md`).
+A few strong, clean touches beat a pile of effects — over-editing looks cheap and tacky. Curate by video type (`${CLAUDE_PLUGIN_ROOT}/shared/effects-menu.md`). **But minimal NEVER means sparse:** every video must still hit the graphics-coverage floor (hook + chips + stat card + keyword pops + CTA — see `${CLAUDE_PLUGIN_ROOT}/shared/graphics-engine.md`). A flat clip with one lonely title is a FAIL, same as a cluttered one. And every video ends with the agent's CTA on screen (`${CLAUDE_PLUGIN_ROOT}/shared/cta-pack.md`).
 
-## Be explicit with Descript
+## Be explicit with the engine (use the templates)
 
-Out of the box it makes a small static box. Told exactly what to do, it will go big and animated (e.g. ~148px, weight 900, drop shadow, 0.35s ease-out-back pop-in). So put those specifics in the instruction every time.
+Every overlay must hit these specs: big (title ≥ 80px, often ~140px on a reel), heaviest weight (800–900), a drop shadow / depth, a ~0.35s pop-in, on a contrast panel, on-brand. The json2video templates in `${CLAUDE_PLUGIN_ROOT}/shared/graphics-templates.md` already ship all of this — use the templates; don't hand-build cards and don't ask Descript to draw them.
 
-## The ceiling (when to reach for the graphics engine)
+## The engine renders the premium overlays (the default, not the ceiling)
 
-Descript can do big/bold/animated *single* cards, but not true multi-element kinetic motion-design. If the agent wants premium animated graphics beyond that, that's the separate **graphics-engine handoff** (a rendered clip imported as B-roll) — flag it; don't burn credits asking Descript for what it can't do.
+The premium graphic overlays are rendered by the **graphics engine** (json2video) and composited over the Descript export — see `${CLAUDE_PLUGIN_ROOT}/shared/graphics-engine.md` + `${CLAUDE_PLUGIN_ROOT}/shared/graphics-templates.md`. This is the DEFAULT path for every hook title, chip, stat card, keyword pop, lower-third, framework reveal, and CTA — not a last resort. Descript does the edit + captions and does NOT draw these cards (it renders them flat / on the face / as broken grids). Don't burn credits asking Descript for premium motion-design it can't do — use the engine's templates.

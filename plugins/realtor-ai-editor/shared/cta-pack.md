@@ -10,12 +10,11 @@ Realtors reuse the same handful of CTAs on every video:
 
 - Subscribe · Comment below · Send me a DM · Link in bio · Call/text me · Visit my website · Follow on YouTube · Book a call
 
-These should be **clean, branded CTA pop-ups** (the agent's colours, font, logo) that slide/pop in. Two ways to do it:
+These should be **clean, branded CTA pop-ups** (the agent's colours, font, logo) that slide/pop in.
 
-- **Today (default):** have Descript place a **clean, branded, single CTA card** on the closing line — the agent's colours/font with a tasteful pop-in (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`). Descript does a single animated card well.
-- **Premium (the graphics engine — now BUILT):** the CTA card is rendered by the **json2video graphics engine** (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-engine.md`) — on a contrast panel, on-brand, composited over the closing footage for ~free. Same engine that renders the hook / section / stat cards. Every text element on a contrast panel, big, synced to the exact closing line.
+The CTA card is a premium text overlay, so — like every hook / section / stat card — it is rendered by the **json2video graphics engine** (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-engine.md`, template 8 in `${CLAUDE_PLUGIN_ROOT}/shared/graphics-templates.md`): on a contrast panel, on-brand, big, animated, composited over the closing footage for ~free, synced to the exact closing line. **Descript does NOT draw the CTA card** (it once rendered flat boxes / cards on the face). Set the brand values once and reuse them on every video.
 
-The design anticipates this clean split for premium assets: a graphics engine makes branded assets once; Descript places them. Either way, it fills the most common gap (no CTA on screen) and stays cheap because the asset is recycled.
+It fills the most common gap (no CTA on screen) and stays cheap because the graphics engine renders it for ~free and the brand asset is reused.
 
 ## Keep it simple for the agent
 

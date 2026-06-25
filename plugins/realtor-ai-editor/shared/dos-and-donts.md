@@ -22,16 +22,16 @@ The one-page rulebook for editing a realtor's video. The detailed refs back each
 
 ## Premium & minimal — but never BARE
 - DO keep it clean, modern, restrained. A few strong touches beat ten cheap ones.
-- DO add *purposeful* creativity — match the effect to the words (price drop → down arrow, big number → count-up, "tight" → squeeze). **Minimal ≠ bare**: a flat, static talking-head with nothing happening is *also* a bad edit. Talking-heads need gentle punch-ins, keyword pops, and a little motion.
+- DO add *purposeful* creativity — match the effect to the words (price drop → down arrow, "tight" → squeeze, in Descript). **Minimal ≠ bare**: a flat, static talking-head with nothing happening is *also* a bad edit. Talking-heads need gentle punch-ins, a little motion, AND the engine's text overlays (hook title, chips, stat cards, keyword pops, CTA — see below).
 - DO put B-ROLL in every video — ALWAYS at least a little, even from Descript's built-in stock (zero setup). Never deliver a long-form with zero b-roll.
 - DON'T pile on RANDOM effects/overlays/frames until it looks tacky. The enemy is clutter, not creativity. Curate by video type (see effects-menu.md).
-- DON'T use loud or random SFX — a few, subtle, low-volume, and purposeful only. DON'T lean on count-up animations — they're the most expensive effect; use static stat cards by default (count-ups for hero moments only).
+- DON'T use loud or random SFX — a few, subtle, low-volume, and purposeful only. DON'T ask Descript for count-up animations — they're its most expensive effect; numbers become **stat cards in the graphics engine** (json2video, cheap) instead.
 
 ## Captions & graphics
 - DO make captions big and phone-legible (~90pt+), white with a black outline, active word in the brand accent.
-- DO make hook/section/number cards big, bold, animated (pop-in / reveal), on-brand, with depth.
+- DO render hook/section/number cards, keyword pops, lower-thirds, and the CTA through the **graphics engine** (json2video — `${CLAUDE_PLUGIN_ROOT}/shared/graphics-engine.md` + `${CLAUDE_PLUGIN_ROOT}/shared/graphics-templates.md`), NOT Descript: big, bold, animated, on a contrast panel, on-brand, synced to the word, off the face. Every video must hit the graphics-coverage floor (hook + chips + stat card + keyword pops + CTA).
 - DON'T leave a flat static text box (the "Fiverr look"). DON'T use a default colour (no random green).
-- DON'T use ugly flat black boxes for keyword pops — use clean bold text with an outline + soft shadow (floating), or a sleek rounded semi-transparent panel. Never a hard opaque black rectangle.
+- DON'T use ugly flat black boxes for keyword pops — and DON'T rely on bare floating text either (it vanishes on bright/busy footage). Every pop sits on a rounded, semi-transparent, brand-tinted contrast panel (the engine templates already do this). Never a hard opaque black rectangle.
 - DO make text FIT its box (even padding, never overflowing the panel) and use a polished caption style — not the plain boxy default.
 - DON'T let elements overlap — captions, pops, cards, and the CTA must never collide or stack (stagger them).
 - DON'T EVER put captions OR cards/graphics over the speaker's face — pin them BELOW the face (absolute). Descript defaults text to centre/on-face, so set it low explicitly. Claude can't see the render, so this must be human-eyeballed before publishing.
