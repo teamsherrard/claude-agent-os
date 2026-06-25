@@ -15,8 +15,8 @@
     {
       "name": "realtor-ai-admin",
       "source": "./plugins/realtor-ai-admin",
-      "version": "0.2.0",
-      "description": "PLUGIN 2 \u2014 the AI Admin (The Agent Leverage OS). Books the calendar, drafts email in the agent's voice, sorts the inbox, remembers every client, briefs them at 7am. Requires Plugin 1 (the Brain) set up first."
+      "version": "0.3.0",
+      "description": "PLUGIN 2 \u2014 the AI Admin (The Agent Leverage OS). Books the calendar, drafts email in the agent's voice, sorts the inbox, remembers every client, briefs them at 7am. Requires Plugin 1 (the Brain) set up first. Plus on-the-go Dispatch: talk while driving and it logs, reminds, and drafts for you."
     },
     {
       "name": "realtor-youtube-system",
@@ -40,7 +40,7 @@
       "name": "realtor-ai-editor",
       "source": "./plugins/realtor-ai-editor",
       "version": "0.11.0",
-      "description": "PLUGIN 6 — the AI Editor. The agent talks in plain English; Claude directs Descript (their own account) to do the real editing — long-form and short-form in one tool — while they watch it happen live. Claude adds the multi-source B-roll Descript can't source itself (the agent's own footage, listing photos, free stock libraries), and a navigator skill turns vague or messy requests into one clear plan so the agent is never overwhelmed. Requires Plugin 1 (the Brain) set up first, plus a Descript connection."
+      "description": "PLUGIN 6 \u2014 the AI Editor. The agent talks in plain English; Claude directs Descript (their own account) to do the real editing \u2014 long-form and short-form in one tool \u2014 while they watch it happen live. Claude adds the multi-source B-roll Descript can't source itself (the agent's own footage, listing photos, free stock libraries), and a navigator skill turns vague or messy requests into one clear plan so the agent is never overwhelmed. Requires Plugin 1 (the Brain) set up first, plus a Descript connection."
     }
   ]
 }

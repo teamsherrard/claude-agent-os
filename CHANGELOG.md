@@ -2,6 +2,20 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.57.0] — 2026-06-25
+
+### AI Admin (Plugin 2) → v0.3.0 — Dispatch / On-the-Go Capture (a new mode, no new systems)
+- Hands-free lane for when the agent is mobile (driving, showings, open houses): they just talk
+  ("remember this", "remind me to…", "draft a quick email to…", "just showed the Lees 14 Oak…") and the
+  Admin parses every intent, acts, and reports back in one glance. Capture-first (never loses a thought),
+  act-don't-ask (real ambiguity is queued to the briefing), safe-by-default (emails = drafts, bookings =
+  conflict-guarded). Reuses Scheduling / Inbox / Client Memory — no new systems.
+- **Name-resolution ladder**: a name the Brain doesn't know resolves against live Google sources the
+  Admin already has — Gmail search, Calendar, Google Contacts — then creates the record from real data.
+  clients.md is the active working set, not the address book; no CRM, no CSV.
+- New references/dispatch-capture.md; SKILL.md gains the Dispatch section + ladder + on-the-go triggers;
+  the 7am briefing surfaces memory/capture-log.md (safety net). Spec at docs/dispatch-spec.md.
+
 ## [0.56.0] — 2026-06-25
 
 ### AI Editor (Plugin 6) → v0.11.0 — graphics engine wired plugin-wide; recurring mistakes locked out
