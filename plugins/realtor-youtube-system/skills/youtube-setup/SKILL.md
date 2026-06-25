@@ -100,7 +100,7 @@ updates, the YouTube System reflects it automatically with no re-onboarding.
 This is the moment that makes setup feel worth it. Immediately build the agent's **YouTube Game Plan** by
 running `${CLAUDE_PLUGIN_ROOT}/skills/youtube-gameplan/SKILL.md`: their channel audit (scaled to however many
 videos they have), 3 high-intent pillars, ~50 exact ready-to-film titles, the goal-math that ties it to
-their business goal, and a 90-day plan — in one premium Doc stamped "Powered by Mike Sherrard's frameworks,"
+their business goal, and a 90-day plan — in one premium Doc stamped "Powered by Mike Sherrard Coaching Inc Frameworks,"
 saved to their workspace. Share the Drive link, then hand off:
 > "Open your Game Plan — it's your whole channel mapped out. Then pick any title from Pillar 1 and say
 > 'make this video,' and I'll script it, optimize it, and the rest."

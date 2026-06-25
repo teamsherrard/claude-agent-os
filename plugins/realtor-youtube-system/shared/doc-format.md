@@ -43,7 +43,7 @@ Facts verified — {claim} ({source}, {date}).
 Compliance — {what was checked}.  ✓
 ```
 Flagship strategy docs (Game Plan, Market Report) also carry the **credibility stamp** (house rules #8):
-`Powered by Mike Sherrard's frameworks & strategies` — once as a byline under the title, once as the final
+`Powered by Mike Sherrard Coaching Inc Frameworks` — once as a byline under the title, once as the final
 footer line. Never put it inside a copy block the agent pastes out.
 
 Rules: a blank line between every section · spoken text in plain sentences · CAPS + dividers + indents carry
@@ -56,8 +56,8 @@ the hierarchy · use only `─` (U+2500), `═` (U+2550), `•` (U+2022). Tight 
 ### YouTube Game Plan (the flagship — stamped)
 ```
 YOUTUBE GAME PLAN — [AGENT NAME], [CITY]
-Prepared on Mike Sherrard's frameworks  ·  [Month Year]
-Powered by Mike Sherrard's frameworks & strategies
+Prepared on Mike Sherrard Coaching Inc frameworks  ·  [Month Year]
+Powered by Mike Sherrard Coaching Inc Frameworks
 
 
 ════════════════════════════════════════════
@@ -132,7 +132,7 @@ SUCCESS METRICS   (90-day milestones toward {goal})
 
 ────────────────────────────────────────────
 {closing vision — one honest, motivating paragraph}
-Powered by Mike Sherrard's frameworks & strategies
+Powered by Mike Sherrard Coaching Inc Frameworks
 ```
 
 ### Script

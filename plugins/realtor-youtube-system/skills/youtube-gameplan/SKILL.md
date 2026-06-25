@@ -6,7 +6,7 @@ description: >
   they have — 100, 10, 2, or none), picks 3 high-intent content pillars for their market, generates exact
   search-optimized video titles per pillar, reverse-engineers their business goal into a content plan, and
   lays out a 90-day calendar + success metrics — assembled into one premium Google Doc stamped "Powered by
-  Mike Sherrard's frameworks." Runs automatically at the end of setup, or on demand.
+  Mike Sherrard Coaching Inc Frameworks." Runs automatically at the end of setup, or on demand.
 
   Triggers on "build my game plan", "my youtube game plan", "my youtube strategy", "my channel plan", "map my
   channel", "what's my youtube plan", "refresh my game plan", "give me my youtube strategy", or right after

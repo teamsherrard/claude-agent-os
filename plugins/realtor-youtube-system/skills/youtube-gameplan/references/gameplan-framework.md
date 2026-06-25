@@ -12,8 +12,8 @@ visual design.
 **1. Title + stamp**
 ```
 YOUTUBE GAME PLAN — [Agent Name], [City]
-Prepared on Mike Sherrard's frameworks  ·  [Month Year]
-Powered by Mike Sherrard's frameworks & strategies
+Prepared on Mike Sherrard Coaching Inc frameworks  ·  [Month Year]
+Powered by Mike Sherrard Coaching Inc Frameworks
 ```
 
 **2. Executive Summary** — the strategist's overview, in 4 beats:
@@ -62,7 +62,7 @@ mixing pillars, front-loading the broadest-reach titles first. Concrete titles i
 duration 40%+, CTR 4–8%, +50 subs/mo, 2–5 leads or booked calls/mo, top-5 for local search terms.
 
 **10. Closing vision + footer** — one short, honest, motivating paragraph (*"stay consistent and here's where
-this puts you in 12 months"*), then the footer credit: `Powered by Mike Sherrard's frameworks & strategies`.
+this puts you in 12 months"*), then the footer credit: `Powered by Mike Sherrard Coaching Inc Frameworks`.
 
 ---
 

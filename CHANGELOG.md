@@ -2,6 +2,14 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.52.0] — 2026-06-25
+
+### YouTube System (Plugin 3) → v0.6.3 — credibility stamp reworded
+- The stamp on every flagship document now reads **"Powered by Mike Sherrard Coaching Inc Frameworks"**
+  (was "Powered by Mike Sherrard's frameworks & strategies"). The byline updated to match
+  ("Prepared on Mike Sherrard Coaching Inc frameworks"). Applied across `doc-format.md`, house rules,
+  the gameplan framework reference, and the gameplan + setup skills.
+
 ## [0.51.0] — 2026-06-24
 
 ### Lead Capture System (Plugin 5) → v0.6.1 — guide is an INSTANT DOWNLOAD, never email delivery
