@@ -15,31 +15,31 @@
     {
       "name": "realtor-ai-admin",
       "source": "./plugins/realtor-ai-admin",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "description": "PLUGIN 2 \u2014 the AI Admin (The Agent Leverage OS). Books the calendar, drafts email in the agent's voice, sorts the inbox, remembers every client, briefs them at 7am. Requires Plugin 1 (the Brain) set up first. Plus on-the-go Dispatch: talk while driving and it logs, reminds, and drafts for you."
     },
     {
       "name": "realtor-youtube-system",
       "source": "./plugins/realtor-youtube-system",
-      "version": "0.7.0",
+      "version": "0.7.1",
       "description": "PLUGIN 3 \u2014 the YouTube System. Starts with a complete YouTube Game Plan (built on Mike Sherrard's frameworks) \u2014 channel audit, 3 high-intent pillars, ~50 exact titles, goal-math, and a 90-day plan \u2014 then ideation, research, SEO, scripting in the agent's own voice, lead magnets, repurposing, analytics, and coaching. Requires Plugin 1 (the Brain) set up first."
     },
     {
       "name": "realtor-shortform-system",
       "source": "./plugins/realtor-shortform-system",
-      "version": "0.8.0",
+      "version": "0.8.1",
       "description": "PLUGIN 4 \u2014 the Short-Form System. A routine-based short-form OS: daily green-screen reactions, talking-head value, and carousels, each optimized for Instagram/Facebook, TikTok, and YouTube Shorts. The agent thinks in formats; Claude keeps the funnel balanced. Text only \u2014 never films or designs. Requires Plugin 1 (the Brain) set up first."
     },
     {
       "name": "realtor-lead-capture",
       "source": "./plugins/realtor-lead-capture",
-      "version": "0.7.0",
+      "version": "0.7.1",
       "description": "PLUGIN 5 \u2014 the Lead Capture System. Turns the agent's offer into a lead magnet (a brand-led guide for their whole audience, or a focused buyer/seller guide) and maps the opt-in funnel that gives it away \u2014 two aligned documents: the copy, structure, and conversion strategy. Text only: it writes the words and the strategy (a separate design skill builds the visuals), never hosts; lead capture only, no call booking. Requires Plugin 1 (the Brain) set up first."
     },
     {
       "name": "realtor-ai-editor",
       "source": "./plugins/realtor-ai-editor",
-      "version": "0.11.0",
+      "version": "0.11.1",
       "description": "PLUGIN 6 \u2014 the AI Editor. The agent talks in plain English; Claude directs Descript (their own account) to do the real editing \u2014 long-form and short-form in one tool \u2014 while they watch it happen live. Claude adds the multi-source B-roll Descript can't source itself (the agent's own footage, listing photos, free stock libraries), and a navigator skill turns vague or messy requests into one clear plan so the agent is never overwhelmed. Requires Plugin 1 (the Brain) set up first, plus a Descript connection."
     }
   ]

@@ -2,6 +2,18 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.59.0] — 2026-06-25
+
+### Capture layer — consume side: the content systems now read the backlog
+- The creative skills read `memory/ideas.md` at their planning step, so an idea captured on the go
+  surfaces exactly when the agent sits down to create — then gets marked Used:
+  - **YouTube ideation** (v0.7.1) — pulls captured `youtube` ideas into the batch first.
+  - **Short-Form talking-head** (v0.8.1) — captured `shortform` topics go to the top of the list.
+  - **Lead Capture magnet** (v0.7.1) — builds from captured `leadmagnet` ideas first.
+  - **AI Editor navigator** (v0.11.1) — folds captured `edit` notes for that video into the plan.
+- **AI Admin** (v0.3.1) — dispatch defers knowledge captures (ideas/wins/vendors/intel) to the
+  Brain's `realtor-capture`, keeping a clean boundary (the Admin handles client actions).
+
 ## [0.58.0] — 2026-06-25
 
 ### Brain (Plugin 1) → v0.21.0 — the system-wide Capture layer (`realtor-capture`)

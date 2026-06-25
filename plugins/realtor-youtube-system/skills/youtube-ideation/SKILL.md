@@ -20,7 +20,8 @@ their planned title backlog (the **YouTube Game Plan** Doc) — the next ideas s
 not random topics. Then pull, at ask-time so everything's current: the **AI Brain** (market, clientele,
 niche), **fresh research** (market data + local news + trends), **local-event triggers**, the **outlier
 scan** (if it's been ~a week since the last one), and the **live coverage read** (Videos folders + channel —
-what's already made).
+what's already made). Also read the agent's **captured idea backlog** (`memory/ideas.md`, tag `youtube`) —
+their own on-the-go ideas; bring these into the batch FIRST, and mark each Used once it becomes a video.
 The agent only sees one plain line: *"Give me a sec — I'm checking what's happening in your market."*
 
 ## Step 3 — Generate the batch (blend + gaps baked in)

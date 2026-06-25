@@ -15,7 +15,7 @@ To start any edit you only need:
 2. **Long-form or short-form?** (a YouTube-style video, or a vertical reel/clips)
 3. **What outcome?** (clean it up, make it punchy, make shorts from it, etc.)
 
-Get these from context and the Brain first. Ask only what's genuinely missing — and never more than one thing at a time.
+Get these from context and the Brain first. Ask only what's genuinely missing — and never more than one thing at a time. Once you know which video, check `memory/ideas.md` (tag `edit`) for any edit notes the agent captured on the go for it ("add the skyline b-roll", "chart on the rates part") and fold them into the plan; mark each Used.
 
 For a **listing / home tour**, also check what **footage** they have (a Google Drive folder, files to upload, or just the listing photos) and route to `edit-listing` — property videos use their real footage, never generic stock.
 

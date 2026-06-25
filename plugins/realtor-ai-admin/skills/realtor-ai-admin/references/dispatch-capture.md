@@ -6,6 +6,11 @@ Your job: parse it, do the right thing(s), and report back in one glance. Never 
 and never ask them to answer (they're busy). This lane reuses the existing systems (Scheduling,
 Inbox, Client Memory) — it adds no new ones.
 
+**Boundary:** *knowledge* captures — content/video ideas, wins for the proof library, new vendors,
+market intel — belong to the Brain's **`realtor-capture`** skill, not this lane. This lane is for client
+*actions*: book, draft, reschedule, remind, debrief, open-house leads. If the Brain capture skill is
+present, let it take the knowledge captures; don't double-handle.
+
 ## The five rules (non-negotiable in dispatch)
 1. **Capture-first — never lose a thought.** If you can't fully act, still save the raw note to
    `memory/capture-log.md` so nothing evaporates. A lost capture is the only true failure.

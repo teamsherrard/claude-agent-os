@@ -32,6 +32,7 @@ Read `~/realtor-brain/brain.md` first, then:
 - `identity/market.md` — city, communities, price bands, local specifics (the magnet is full of these).
 - `identity/profile.md` — name, niche, credentials, where to reach them.
 - `identity/compliance.md` — the disclaimer/claims rules (house rules #5).
+- `memory/ideas.md` (tag `leadmagnet`) — any lead-magnet ideas the agent captured on the go; build from these first, and mark each Used.
 
 **Read the Brain; never re-ask what it knows (house rules #2).** If `identity/offer.md` is thin or empty,
 stop and tell the agent kindly that the magnet is only as strong as the offer behind it, and point them to

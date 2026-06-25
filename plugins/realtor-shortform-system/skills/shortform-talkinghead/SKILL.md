@@ -37,6 +37,7 @@ Read `~/realtor-brain/brain.md` first (follow its laws), then:
 - `identity/content-engine.md` — their content pillars (topics should ladder up to these) + platform priority
 - `identity/compliance.md` — the third law
 - `memory/content-log.md` — what they've already covered, so topics stay fresh
+- `memory/ideas.md` (tag `shortform`) — reel/topic ideas the agent captured on the go; put these at the TOP of the list, and mark each Used once scripted
 
 **Read the Brain; never re-ask what it knows** (house rules #2). If `~/realtor-brain/` is missing, send
 them to **Realtor AI Brain — Setup**.
