@@ -2,6 +2,25 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.54.0] — 2026-06-25
+
+### AI Editor (Plugin 6) → v0.10.0 — the json2video graphics-engine skill (premium graphics, enforced rules)
+New `shared/graphics-engine.md` encodes the Descript-edits + json2video-graphics hybrid, learned from a full live
+build of Daniel's Dallas reel. The split: **Descript** does cut, audio, b-roll, color grade, reframe/zoom,
+transitions, SFX, AND **captions**; **json2video** renders only the premium graphic overlays (hook/section/stat/
+CTA cards) — on-brand, for ~free. Hard, enforced rules so the recurring mistakes stop:
+- **Every json2video text element on a CONTRAST PANEL** — never bare text over footage (fixes white-on-sky /
+  invisible-blue), big enforced minimum sizes, synced to the EXACT word (not the paragraph → no lag).
+- **Captions = DESCRIPT** (json2video subtitle sizing is unreliable / renders tiny). (`caption-style.md`)
+- **B-roll: short-form = 3–5 clips TOTAL** (not 40–50%), full-cover never-over-the-face, **NEVER the same clip
+  twice in a row**. (`broll-ladder.md`, `edit-shortform`)
+- **Color grade always; reframe the speaker.**
+- **Frame-QA before delivery** — render → extract frames → verify contrast / size / sync / no-dup / captions.
+- **Honest economics:** the saving vs a good Descript edit is the graphics+captions portion (~20–30%), not 6×;
+  the real win is graphics quality + control. The iteration/over-correction loop is the true credit drain —
+  follow the rules the first time. (`credit-tiers.md`)
+- `cta-pack.md` now points to the built engine.
+
 ## [0.53.0] — 2026-06-25
 
 ### Document rollout — every plugin now renders deliverables as a clean, formatted `.docx` (was flat `text/plain`)

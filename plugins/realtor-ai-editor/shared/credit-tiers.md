@@ -7,7 +7,7 @@ Doing **less, but well, is both cheaper AND more premium** — over-editing is e
 - **Cheap + high impact (always do):** cuts / filler removal, captions (~10), Studio Sound, a light colour grade (~6).
 - **Expensive (cost scales with QUANTITY — so cap it):** lots of SFX, a transition on every cut, a punch-in on every scene, many pop-ups, many elaborate cards. (One session's motion pass with 11 SFX + transitions on all 16 cuts cost ~69; a graphics pass with 5 pop-ups + 3 cards cost ~42.)
 - **Count-up number animations are the SINGLE most expensive effect** — built as dozens of sequential frames; one pass of 2 count-ups + a few cards cost ~167 credits. **Default to STATIC stat cards** (~10 credits, ~90% the impact); reserve count-ups for Full / hero moments only, and only a couple.
-- **Biggest hidden cost:** iterating / re-running — most of it from fixing things you can't see (graphics on the face, accidental background removal). Get the safe defaults right the first time. Do it in 2–3 batched passes, not 15.
+- **Biggest hidden cost:** iterating / re-running — including **OVER-CORRECTING** (too little b-roll → swing to too much; tiny captions → guess again). Each swing is a paid pass, and the back-and-forth is the real credit drain. Get the safe defaults right the FIRST time (follow the rules, don't swing), and **frame-QA before delivering** so you're not fixing things you couldn't see (graphics on the face, background removal, wrong caption size, duplicated b-roll). Do it in 2–3 batched passes, not 15.
 
 ## The three modes
 

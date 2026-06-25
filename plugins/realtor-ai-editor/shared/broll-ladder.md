@@ -31,8 +31,8 @@ Always prefer the agent's own footage — from a Google Drive library, per-video
 1. **Try the ladder in order:** own footage → Descript stock → free stock libraries (queried together + de-duped) → real-place imagery → AI-generated (last resort, capped, warn first).
 2. **Topical first** — search terms come from the transcript so footage matches the words.
 3. **Local realism** — real places use real imagery (own footage / Wikimedia / Street View). Never AI-fake or use generic foreign stock for a specific local landmark.
-4. **Variety** — every cutaway in a video is unique. De-dupe across all sources; track what's been used.
-5. **Placement** — 2.5–5s; on the exact words; never over the hook, face, or CTA.
+4. **Variety** — every cutaway in a video is unique; **NEVER the same clip twice in a row** (a duplicated back-to-back clip looks broken — it plays, cuts, replays — and wastes credits). De-dupe across all sources; track what's been used.
+5. **Placement & amount** — 2.5–5s each, on the exact words; **full-cover cutaways — NEVER a partial clip floating over the speaker's face**; never over the hook or CTA. **Amount: a short-form reel gets 3–5 clips TOTAL (not more — over-b-roll drains credits and clutters); long-form gets more, but curated, not constant.**
 6. **Licensing** — prefer no-attribution sources. If a CC-BY item is used, auto-add attribution to the description or skip it. When unsure, fall back to the agent's own footage.
 
 ## Adding more later

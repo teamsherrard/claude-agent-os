@@ -20,6 +20,9 @@
 - Emphasis (a bright pop) reserved for numbers, money, and the punchline — not every word.
 - Run a proper-noun corrections pass (name, brokerage, city, streets) so nothing is misspelled.
 
+## Captions are done in DESCRIPT (not the graphics engine)
+Even when premium graphics are rendered by the json2video graphics engine (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-engine.md`), **captions stay in Descript.** Descript's caption sizing is reliable and big; json2video's subtitle sizing is not (it renders tiny and ignores font-size). So: **Descript = captions; json2video = graphic overlays only.**
+
 ## Closing the gap vs. dedicated caption apps
 
 Descript's captions are good and fully brandable with the above. If an agent wants the absolute flashiest kinetic look and already pays for a captions tool, that can be an optional add-on later — but it is never required, and one tool stays the default.
