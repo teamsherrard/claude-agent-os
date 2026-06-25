@@ -15,6 +15,8 @@
    - Client conversation / note → `memory/clients.md`
    - New deadline or follow-up → `memory/deadlines.md`
    - Content performance review → `memory/performance.md` (read it back before planning new content)
+   - On-the-go idea / win / vendor / market note → **realtor-capture** files it into `memory/ideas.md`,
+     `identity/proof.md`, `identity/vendors.md`, or `identity/market.md`
    - **Then PUSH to Drive** (`realtor-brain-sync`) — the local copy is wiped when the session ends;
      an unsynced write is a lost write.
 3. **STAY COMPLIANT.** Before publishing anything public-facing, read `identity/compliance.md` — append
@@ -55,5 +57,6 @@ If `~/realtor-brain/` is missing files, tell the agent to run **Realtor AI Brain
 - `memory/content-log.md` — everything published (check before creating, to avoid repeats)
 - `memory/performance.md` — what's working in content (written by the 2-week review; read before planning)
 - `memory/deadlines.md` — what's due and when
+- `memory/ideas.md` — content ideas + backlog captured on the go (read before generating new ideas; mark Used)
 
 **config.md** — connectors, timezone, defaults, version

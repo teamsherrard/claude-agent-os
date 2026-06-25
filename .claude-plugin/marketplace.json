@@ -9,8 +9,8 @@
     {
       "name": "realtor-ai-brain",
       "source": "./plugins/realtor-ai-brain",
-      "version": "0.20.0",
-      "description": "PLUGIN 1 \u2014 install first. The Realtor AI Brain: one shared brain (the agent's identity + memory) that powers every other system. Run 'Set up my Brain' once, and every tool already knows the agent."
+      "version": "0.21.0",
+      "description": "PLUGIN 1 \u2014 install first. The Realtor AI Brain: one shared brain (the agent's identity + memory) that powers every other system. Run 'Set up my Brain' once, and every tool already knows the agent. Plus a system-wide Capture layer: talk on the go and your ideas, wins, vendors, and market notes file themselves into the Brain."
     },
     {
       "name": "realtor-ai-admin",

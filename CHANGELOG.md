@@ -2,6 +2,20 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.58.0] — 2026-06-25
+
+### Brain (Plugin 1) → v0.21.0 — the system-wide Capture layer (`realtor-capture`)
+- Dispatch graduates from an AI Admin feature to a universal, always-present capture layer. The agent
+  talks on the go ("video idea: …", "just closed the Hendersons $50k under ask", "add a vendor — Sarah
+  at RBC", "note: new school in Tuscany") and it files each into the right Brain file, then confirms in
+  one line. Capture-first, act-don't-ask, parse-every-intent, voice-tolerant.
+- Router: content ideas → new `memory/ideas.md` (tagged youtube/shortform/leadmagnet/edit); wins →
+  `identity/proof.md`; intel → `identity/market.md`; vendors → `identity/vendors.md`; offer angles →
+  `identity/offer.md`; client/booking/email actions → handed to the AI Admin; ambiguous → capture-log.
+- New `memory/ideas.md` (the content backlog the creative systems read before generating fresh ideas);
+  brain.md indexes it + the capture law. Lives in the Brain so it works for any plugin mix. Spec at
+  docs/system-capture-spec.md. (Next increment: the content plugins read the backlog.)
+
 ## [0.57.0] — 2026-06-25
 
 ### AI Admin (Plugin 2) → v0.3.0 — Dispatch / On-the-Go Capture (a new mode, no new systems)
