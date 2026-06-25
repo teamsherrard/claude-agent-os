@@ -88,7 +88,7 @@ applies, strip any guarantees or Fair-Housing proxies, keep claims honest. Flag 
 1. **Deliver in chat** — the full guide content, cleanly laid out and ready to use.
 2. **Save to Drive** following `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`: create
    `[Agent Name] — Lead Capture System/[YYYY-MM-DD · Guide Name]/` and save `Lead Magnet — [Guide Name]`
-   (`text/plain` → clean Google Doc). Confirm the location in plain words.
+   (rendered to a styled `.docx` via the shared renderer). Confirm the location in plain words.
 3. **Hand off to Step 2:** *"That's your free guide done. Want me to map the page that gives it away — the
    opt-in funnel? It'll sell this exact guide."* (runs `leadcapture-funnel`).
 

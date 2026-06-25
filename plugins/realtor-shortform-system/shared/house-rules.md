@@ -115,9 +115,9 @@ consistent name, formatted so it looks genuinely good. Full standard:
 - **Right folder, right name** — content goes to `[Agent Name] — Short-Form System/Content/[YYYY-MM ·
   Month]/`, named `[YYYY-MM-DD] · [Format] · [Topic]`. Reviews go to `/Performance/`. Never dump files
   loose or with vague names.
-- **Format it well** — clean Google Doc: title + meta line, ALL-CAPS section headers with em-dash
-  dividers, generous spacing, bullets, labels and cues on their own lines. Never a wall of text.
-- **The how** — create the Doc via the Drive connector as `text/plain` (it auto-converts to a clean
-  Google Doc). Do NOT make `.docx`/HTML — they don't convert and look broken.
+- **Format it well** — structure the text: title + meta line, ALL-CAPS section headers with divider rules,
+  generous spacing, bullets, labels and cues on their own lines. Never a wall of text.
+- **The how** — render the structured text to a styled `.docx` via the shared renderer (`render_doc.py`,
+  see `shared/output-standard.md`), then upload that `.docx` to Drive. One clean neutral house style for every client.
 - **Tell them where it is** — always confirm the Drive location + link in plain words.
 - Still deliver the copy-paste version in chat too; the Drive doc is the organized record.

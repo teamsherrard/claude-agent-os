@@ -1,11 +1,31 @@
-# Document Format — the house style for EVERY saved Google Doc
+# Document Format — the house style for EVERY saved document
 
-Every doc the system saves is a native Google Doc made from **plain text** (`contentMimeType: text/plain`).
-Plain text is the only format that reliably converts to a clean Doc — so the polish comes entirely from
-STRUCTURE. This file is the exact look to reproduce. Never save an unstructured wall; never rely on
-bold/colour/markdown (plain-text import drops them).
+Every deliverable is rendered to a **clean, formatted `.docx`** in one neutral house style — the same look for
+every client (no colour, no per-client branding). The skill writes the **structured text** defined below
+(CAPS section bands, `•` bullets, `Label:` lead-ins, simple aligned tables); the shared renderer turns that
+into real Word formatting — headings, bullet lists, tables — automatically. **Do NOT save flat `text/plain`.**
 
-## The visual grammar (reproduce these exact patterns)
+## Saving — render the structured text to a styled `.docx`
+1. Assemble the doc as structured text (the skeletons below); write it to a temp file, e.g. `/tmp/doc.txt`.
+2. Render it:
+   `python3 "${CLAUDE_PLUGIN_ROOT}/shared/render_doc.py" /tmp/doc.txt "[Doc Name].docx" --title "[Title]" --subtitle "[Agent · City]"`
+   → produces the house style automatically: **Arial**, **pure-black** text, real **headings** (from the
+   bands), real **bullet lists** and **tables**, thin light-grey rules. *(If `python-docx` is missing:
+   `pip install python-docx`; if that's not possible, build the same `.docx` with the **docx skill**, matching
+   the look below.)*
+3. Upload the **`.docx`** to the agent's Drive folder — the structured text was only the renderer's input; the
+   deliverable is the `.docx`.
+
+## The look the renderer produces (match it if you ever build by hand)
+- **Arial** everywhere (installed on every platform — never a serif). **Pure black** titles / headings / body;
+  **dark grey (#333)** only for the small byline + stamp.
+- Section headings: bold black + a thin light-grey underline. **Real** bullet lists. **Real** tables: near-black
+  header row (white text) + light alternating rows. **No colour, no client branding** — one standard for all.
+- Flagship strategy docs carry `Powered by Mike Sherrard Coaching Inc Frameworks` (top byline + footer).
+
+---
+
+## The structured text the renderer reads (write the doc in this grammar)
 
 **Title line** — first line, the doc's name in CAPS. Then a **meta line** of ` · `-separated facts, blank line:
 ```

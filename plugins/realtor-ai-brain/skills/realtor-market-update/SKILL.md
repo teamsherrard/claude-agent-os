@@ -428,7 +428,7 @@ DATA SOURCES
 - Stat callouts: the number on its own line with the label under it.
 - Script sections can't be shaded in plain text — set each off with a clear label + a divider above and
   below so it stands out.
-- No brand colours/fonts — a `text/plain` Google Doc can't carry them (brand lives in the design tool).
+- No brand colours — every doc renders to one clean neutral standard (visual brand design lives in the agent's design tool).
 
 Create the Google Doc in the agent's Drive **`Realtor AI Brain` → `exports`**, named
 `Market Update · [City] · [Month Year]`, and tell the agent the location + link.

@@ -121,8 +121,8 @@ backed. Flag once if `compliance.md` is empty.
 ## Phase 5 — Deliver + save (paired with the magnet)
 1. **Deliver in chat** — all the sections of copy, cleanly laid out and ready to use.
 2. **Save to Drive** following `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`: into the **same campaign
-   folder** as the magnet, save `Lead Capture Funnel — [Guide Name]` (`text/plain` → clean Google Doc).
-   Confirm the location in plain words.
+   folder** as the magnet, save `Lead Capture Funnel — [Guide Name]` (rendered to a styled `.docx` via the
+   shared renderer). Confirm the location in plain words.
 3. **Close the loop:** *"That's your funnel copy — every section, ready to go. Next, your design step turns it
    into the built page; then host it wherever you like. After someone opts in, the follow-up's all yours."*
 

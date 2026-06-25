@@ -2,6 +2,24 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.53.0] — 2026-06-25
+
+### Document rollout — every plugin now renders deliverables as a clean, formatted `.docx` (was flat `text/plain`)
+The approved look is now the system-wide standard: **Arial**, **pure-black** text, real headings / bullet
+lists / tables, light-grey rules — **one neutral standard for every client** (no colour, no per-client branding).
+- **New shared renderer `shared/render_doc.py`** (shipped, identical, to all 4 doc-producing plugins): turns
+  the house-style structured text every skill already writes into a styled `.docx` automatically — headings
+  from the section bands, real bullet lists, real tables. Robust across every plugin's divider style
+  (`═` / `─` / `—`, wrapped or above-only) and tells a section header apart from a footer line.
+- **Doc standards rewritten** from "save flat `text/plain` Google Doc" → "render the structured text to a
+  styled `.docx` and upload that": YouTube `doc-format.md`, Brain `doc-formatting.md`, Lead-Capture +
+  Short-Form `output-standard.md`, plus the save-steps + house-rules in their skills. Skills keep producing
+  the same content; only the final save step changes.
+- Flagship docs keep the `Powered by Mike Sherrard Coaching Inc Frameworks` stamp.
+- Plugins bumped: **Brain 0.20.0 · YouTube 0.7.0 · Lead Capture 0.7.0 · Short-Form 0.8.0**.
+- First Cowork run of each doc type should be verified: the renderer needs `python-docx`; if it's absent the
+  skill falls back to the **docx skill** matching the same look.
+
 ## [0.52.0] — 2026-06-25
 
 ### YouTube System (Plugin 3) → v0.6.3 — credibility stamp reworded

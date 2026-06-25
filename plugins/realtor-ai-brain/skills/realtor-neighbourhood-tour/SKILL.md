@@ -410,7 +410,7 @@ DATA SOURCES
 - Stop cards clearly separated with a divider between each; transition lines on their own line, labelled.
 - Stats cheat sheet kept clean and minimal — all key info in a tight block the agent can screenshot.
 - `•` bullets, one per line; generous blank-line spacing.
-- No brand colours/fonts — a `text/plain` Google Doc can't carry them (brand lives in the design tool).
+- No brand colours — every doc renders to one clean neutral standard (visual brand design lives in the agent's design tool).
 
 Create the Google Doc in the agent's Drive **`Realtor AI Brain` → `exports`**, named
 `Tour · [Neighbourhood] · [City]`, and tell the agent the location + link.

@@ -246,7 +246,7 @@ Cowork and lands as a broken file).
 - Script/email sections set off with a clear label + dividers above and below (plain text can't shade)
   so they're visually distinct from the copy.
 - Omit any section that doesn't apply.
-- No brand colours/fonts — a `text/plain` Google Doc can't carry them (brand lives in the design tool).
+- No brand colours — every doc renders to one clean neutral standard (visual brand design lives in the agent's design tool).
 
 Create the Google Doc in the agent's Drive **`Realtor AI Brain` → `exports`**, named
 `YouTube Launch · [Video Topic]`, and tell the agent the location + link.

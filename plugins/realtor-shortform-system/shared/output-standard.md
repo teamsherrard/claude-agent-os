@@ -41,19 +41,20 @@ soup. Dates are ISO (`YYYY-MM-DD`) so files sort chronologically on their own.
 ## 3. How to create folders + docs (Cowork Google Drive connector)
 - **Folder:** `create_file` with `mimeType: application/vnd.google-apps.folder` and the right `parentId`;
   capture the returned `id` to use as the parent for what goes inside it.
-- **Document:** `create_file` with **`contentMimeType: text/plain`** + `textContent`. The connector
-  auto-converts `text/plain` into a clean Google Doc.
+- **Document:** write the structured text to a temp file, render it to a styled `.docx`, and upload that:
+  `python3 "${CLAUDE_PLUGIN_ROOT}/shared/render_doc.py" /tmp/doc.txt "[Doc Name].docx" --title "[Title]" --subtitle "[Agent · City]"`,
+  then `create_file` the resulting **`.docx`**. The structured text is only the renderer's input.
 - Find-or-create: before creating a folder, list the parent and reuse the folder if it already exists —
   never make duplicate "June" folders.
 
-## 4. Formatting — make it look good (within what actually converts)
+## 4. Formatting — the renderer makes it a clean, formatted `.docx`
 
-**The hard constraint (verified):** the Drive connector only turns **`text/plain`** into a Google Doc.
-`.docx` and HTML uploads do **not** convert (they land as ugly raw files), and a base64 `.docx` corrupts.
-There is no API to add bold/colour/headings after creation. **So we make plain text look great by
-structuring it well** — that's what produces a clean, readable Doc.
+The skill writes the **structured text** below; the shared renderer (`render_doc.py`) turns it into a clean,
+formatted Word doc — real headings, bullet lists, light-grey rules — in **one neutral house style** (Arial,
+pure-black text, no colour, no per-client branding). *(If `python-docx` is unavailable, build the same `.docx`
+with the **docx skill**, matching that look.)*
 
-Do this, every time:
+Write the structured text like this, every time:
 - **Title line** at the top, then a light **meta line** (agent · city · date). Then a blank line.
 - **Section headers in ALL CAPS**, each preceded by a divider line of em dashes
   (`———————————————————————————————`) and followed by a blank line.
@@ -63,11 +64,11 @@ Do this, every time:
   next line). Captions and scripts never run together as a paragraph blob.
 - **Copy blocks the agent will paste** (captions, hashtags) sit under a clear label so they're easy to
   grab.
-- **No** Markdown symbols (`#`, `**`, backticks), no tables, no emoji walls — plain-text import drops or
-  mangles them. Structure with caps, dividers, spacing, and bullets only.
+- **No** Markdown symbols (`#`, `**`, backticks) or emoji walls in the body — the renderer applies the
+  formatting from the structure (caps headers, dividers, `•` bullets, `Label:` lead-ins).
 
-(Truly branded, designed documents are a future backend upgrade — and visual *design* is always the
-agent's design tool's job, per house rules #3. These are clean working documents, done excellently.)
+(Every doc renders to a clean, formatted `.docx` in one neutral standard. Visual *brand design* is still the
+agent's design tool's job, per house rules #3 — these are clean, well-formatted working documents.)
 
 ## 5. The canonical document skeleton
 Every content doc follows this shape (fill with what the workflow already produced for chat):
@@ -109,9 +110,10 @@ Tags:
 review structure from `metrics-guide.md`. Same formatting rules throughout.)
 
 ## 6. The save flow (end of every content workflow)
-1. Build the doc text following §4–§5 (same content you delivered in chat, structured for the page).
+1. Build the doc's structured text following §4–§5; write it to a temp file (e.g. `/tmp/doc.txt`).
 2. Find-or-create `[Agent Name] — Short-Form System/Content/[YYYY-MM · Month]/` (or `/Performance/`).
-3. Create the Google Doc with the §2 name (`text/plain`).
+3. **Render** the text to a styled `.docx` via `${CLAUDE_PLUGIN_ROOT}/shared/render_doc.py` (§3), then upload
+   that `.docx` with the §2 name into the folder.
 4. Confirm in plain language + give the location:
    *"Saved to your Drive → Short-Form System → Content → June. Here's the doc: [link]."*
 5. The content-log row (the workflow already writes it) is the index; the Doc is the readable copy.

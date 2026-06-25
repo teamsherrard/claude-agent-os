@@ -126,7 +126,8 @@ and offer the better move.
 
 Both documents are saved to the agent's Drive, in the right folder, with a consistent name, formatted so
 they look genuinely good. Full standard: `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`. The essentials:
-the magnet and its funnel live together in one campaign folder; docs are created as `text/plain` (the only
-format that converts to a clean Google Doc — never `.docx`/HTML); structure with a title + meta line,
-ALL-CAPS section headers with em-dash dividers, generous spacing, and bullets — never a wall of text. Always
-tell the agent where it is in plain words, and deliver the copy in chat too.
+the magnet and its funnel live together in one campaign folder; each doc is **rendered to a formatted `.docx`**
+(via the shared renderer) in one clean neutral house style — structure the text with a title + meta line,
+ALL-CAPS section headers with divider rules, generous spacing, and bullets, and the renderer turns it into
+real headings, bullet lists, and tables. Always tell the agent where it is in plain words, and deliver the
+copy in chat too.

@@ -37,32 +37,30 @@ The two docs share the same Guide Name so the pair is unmistakable.
 ## 3. How to create folders + docs (Cowork Google Drive connector)
 - **Folder:** `create_file` with `mimeType: application/vnd.google-apps.folder` and the right `parentId`;
   capture the returned `id` to use as the parent for what goes inside it.
-- **Document:** `create_file` with **`contentMimeType: text/plain`** + `textContent`. The connector
-  auto-converts `text/plain` into a clean Google Doc.
+- **Document:** write the structured text to a temp file, then render it to a styled `.docx` and upload that:
+  `python3 "${CLAUDE_PLUGIN_ROOT}/shared/render_doc.py" /tmp/doc.txt "[Doc Name].docx" --title "[Title]" --subtitle "[Agent · City]"`,
+  then `create_file` the resulting **`.docx`** into the campaign folder. The structured text is only the
+  renderer's input; the deliverable is the `.docx`.
 - **Find-or-create:** before creating the top folder or a campaign folder, list the parent and reuse it if
   it already exists. The funnel doc saves into the **same campaign folder** the magnet created.
 
-## 4. Formatting — make the brief genuinely clean (within what actually converts)
+## 4. Formatting — the renderer makes it a clean, formatted `.docx`
 
-**The hard constraint (verified — not a plugin limit):** the Drive connector only turns **`text/plain`** into a
-Google Doc. `.docx`/HTML uploads don't convert; there's no API to add colour, fonts, or real headings. **A
-Google Doc can only ever be well-structured text — and that's fine: this skill's job is the *copy + structure
-+ strategy*, not the design. The designed version is built separately (a dedicated design skill).** So make
-this brief genuinely clean and well-organized:
+The skill writes the **structured text** below; the shared renderer (`render_doc.py`) turns it into a clean,
+formatted Word doc — real headings, bullet lists, light-grey rules — in **one neutral house style** (Arial,
+pure-black text, no colour, no per-client branding). *(If `python-docx` is unavailable, build the same `.docx`
+with the **docx skill**, matching that look.)* Write the structured text like this:
 - **Title line**, a light **meta line** (agent · city · date), then **a one-line PURPOSE line** so the agent
   instantly knows what this is and what to do with it — e.g. *"Your page copy + structure, ready for your
   design step. This doc is the words; the page is built separately."* Then a blank line.
-- **Section headers in ALL CAPS**, wrapped in a clean **box-drawing rule** `────────────` (U+2500) — NOT
-  em-dashes; the solid line reads far cleaner. Use a **heavy rule** `════════════` (U+2550) only for the big
-  structural break into the appendix.
+- **Section headers in ALL CAPS**, each wrapped by a divider rule (`────────────────────────────────────────────`);
+  use a **heavy rule** (`════════════════════════════════════════════`) for the big break into the appendix.
+  *(The renderer turns these into real headings.)*
 - **Keep the deliverable clean; push the handoff + compliance to the END as a clearly-labelled appendix**
-  (under a heavy `═` rule: `▸ NEXT — HAND TO YOUR DESIGN STEP` and `▸ COMPLIANCE`). The reader should read the
-  actual content top-to-bottom without tripping over instructions — it reads as a finished piece, not a mix of
-  content + how-to. **No design prompt — that's a separate skill;** the appendix just names the assets to gather.
-- **Generous blank-line spacing**; **bullets** with `•`, one idea per line; real prices/numbers as digits so they pop.
-- For the **funnel**, label each piece (`Headline:`, `Subhead:`, `CTA:`) so the agent can grab and paste — but
-  keep labels minimal and the copy prominent.
-- **No** Markdown (`#`, `**`, backticks) or tables — plain-text import mangles them. Caps, rules, spacing, bullets only.
+  (`▸ NEXT — HAND TO YOUR DESIGN STEP` and `▸ COMPLIANCE`). The reader goes top-to-bottom without tripping over
+  instructions. **No design prompt — that's a separate skill;** the appendix just names the assets to gather.
+- **Generous blank-line spacing**; **bullets** with `•`, one idea per line; real prices/numbers as digits.
+- For the **funnel**, label each piece (`Headline:`, `Subhead:`, `CTA:`) on its own line — the renderer bolds the labels.
 
 ## 5. The two document skeletons
 
@@ -175,10 +173,11 @@ Assets to gather:  guide mockup/cover (The Guide §3, left/right) · community/a
 ```
 
 ## 6. The save flow
-1. Build the doc text following §4–§5.
+1. Build the doc's structured text following §4–§5; write it to a temp file (e.g. `/tmp/doc.txt`).
 2. Find-or-create `[Agent Name] — Lead Capture System/` then the campaign folder `YYYY-MM-DD · [Guide Name]/`.
    (The funnel saves into the same campaign folder the magnet made.)
-3. Create the Google Doc with the §2 name (`text/plain`).
+3. **Render** the text to a styled `.docx` via `${CLAUDE_PLUGIN_ROOT}/shared/render_doc.py` (§3), then upload
+   that `.docx` with the §2 name into the campaign folder.
 4. Confirm in plain language + give the location:
    *"Saved to your Drive → Lead Capture System → [campaign]. Here's the doc: [link]."*
 

@@ -21,11 +21,10 @@ Scrub every script, title, description, post, and lead magnet BEFORE delivering:
   (e.g., video descriptions).
 - If something is legally risky, rewrite it or flag it — never ship it.
 
-## 3. Formatting (clean, structured docs — NEVER a flat wall)
-Every saved doc is a native Google Doc created from text (`contentMimeType: text/plain` → Doc). Plain text
-is the ONLY format that reliably lands as a clean, editable Google Doc — `.docx`/HTML uploads do not convert
-and can corrupt — so the quality comes entirely from how we STRUCTURE the text. Never write an unbroken wall.
-Every doc MUST have:
+## 3. Formatting (clean, formatted docs — NEVER a flat wall)
+Every saved doc is **rendered to a formatted `.docx`** in one neutral house style (see `shared/doc-format.md`):
+the skill writes structured text, and the shared renderer turns it into real headings, bullet lists, and
+tables. Never write an unbroken wall. Every doc MUST have:
 - A clear **title line** at the top, then a one-line meta line (e.g. `Runtime ~8 min · Calgary buyers · Jun 13`).
 - **Section headers** that stand out — ALL-CAPS with a label/timestamp, set off by an em-dash divider line,
   e.g. `──────── HOOK · 0:00 ────────`.

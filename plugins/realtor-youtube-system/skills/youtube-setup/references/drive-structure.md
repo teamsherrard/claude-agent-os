@@ -52,10 +52,10 @@ Finished content lands in the Videos folders. There is nothing to maintain.
 
 ## How to create folders/docs (connector notes)
 - Folder: create_file with `mimeType: application/vnd.google-apps.folder`; capture the `id` for `parentId`.
-- Doc:    create_file with `contentMimeType: text/plain` + `textContent` → lands as a clean native Google
-  Doc. (ONLY text/plain converts; `.docx`/HTML uploads stay as raw files and can corrupt. So make it look
-  good by STRUCTURING the text per house-rules §3: title + meta line, ALL-CAPS section headers with em-dash
-  dividers, blank-line spacing, cues on their own lines, `•`/`—` bullets. Never save an unstructured wall.)
+- Doc:    write the structured text, render it to a styled `.docx` via `shared/render_doc.py`, then
+  `create_file` that `.docx` into the folder (see `shared/doc-format.md`). Structure the text per house-rules
+  §3: title + meta line, ALL-CAPS section headers with divider rules, blank-line spacing, cues on their own
+  lines, `•` bullets — the renderer turns that into real headings, bullet lists, and tables.
 - Create a per-video folder ONLY when that video is being made. Don't pre-create empty folders.
 
 ## Saving content — resolve, never duplicate (this is what keeps Drive organized)

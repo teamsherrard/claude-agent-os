@@ -430,7 +430,7 @@ DATA SOURCES
 - Room labels as their own lines through the walkthrough; `[POINT CAMERA AT]` directions on their own line.
 - Reel scripts each under a clear `REEL 1 / 2 / 3` label; captions separated from scripts by a divider.
 - `•` bullets, one per line; generous blank-line spacing between blocks.
-- No brand colours/fonts — a `text/plain` Google Doc can't carry them (brand lives in the design tool).
+- No brand colours — every doc renders to one clean neutral standard (visual brand design lives in the agent's design tool).
 
 Create the Google Doc in the agent's Drive **`Realtor AI Brain` → `exports`**, named
 `Listing Kit · [Address]`, and tell the agent the location + link.
