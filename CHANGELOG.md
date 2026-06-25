@@ -2,6 +2,13 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.55.0] — 2026-06-25
+
+### AI Editor (Plugin 6) → v0.10.1 — caption highlight must be coloured TEXT, not a box
+- Live on Daniel's reel, Descript's karaoke "classic" rendered the active-word accent as a solid **box that
+  covered/hid the word**. `caption-style.md` now requires the highlight to recolour the WORD's text (not a filled
+  background box) and to verify on a frame that the word stays readable.
+
 ## [0.54.0] — 2026-06-25
 
 ### AI Editor (Plugin 6) → v0.10.0 — the json2video graphics-engine skill (premium graphics, enforced rules)

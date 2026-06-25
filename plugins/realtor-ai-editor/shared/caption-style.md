@@ -9,6 +9,7 @@
 
 - Brand caption style from `brand.json` (`brand.caption`): font, accent colour, weight, animation.
 - Default look: heavy sans, thick black outline, white text, the **active word** in the brand accent (e.g. gold). No colored chips with dark text.
+- **The active-word highlight must be the WORD itself recoloured (text colour) — NOT a filled colour BOX/background behind the word.** Descript's karaoke "classic" can render a solid accent box that *covers and hides* the word (seen live on Daniel's reel). Pick the karaoke style where the active word's TEXT changes colour, and verify on a frame that the word is still readable, not boxed-over.
 - **Size: big and phone-legible.** Descript's default (~60pt) is too small — set captions large (~90pt+ on a vertical reel), and bump them up if they look small in preview.
 - **Set the accent colour explicitly** to the agent's brand accent. If you don't, Descript picks its own (it defaulted to green once) — never ship an off-brand highlight.
 - **Contrast is non-negotiable.** The highlight must be clearly readable against the footage — never the same colour family as what's behind it (light-blue on a blue panel disappears). White text always carries the caption; the accent is for the active word only and must pop.
