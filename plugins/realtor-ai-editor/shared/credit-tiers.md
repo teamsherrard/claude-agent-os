@@ -24,7 +24,7 @@ That clean core is the whole job. Everything past it is the agent's 20%.
 
 ## The HARD CAPS — never exceed (this is what stops credit drain)
 
-- **B-roll — short-form (≤ ~2 min): MAXIMUM 3 clips.** Long-form: a few per section, curated, never wall-to-wall. **If the agent wants more B-roll, they add it themselves by hand** (free). Do not exceed the cap to be "thorough."
+- **B-roll — scale to length.** Short-form (≤ ~2 min): **MAXIMUM 3 clips.** Long-form: **~1 cutaway per ~1.5–2 min — a 10-min video ≈ 5–7 clips**, curated, never wall-to-wall. **If the agent wants more, they add it themselves by hand** (free). Don't carpet the video to be "thorough."
 - **Graphics — MINIMAL: a hook card + a CTA card (2, maybe 3 cards total).** The karaoke captions already carry the keyword emphasis, so you almost never need separate keyword-pop cards. **Cards are the single most credit-expensive thing in Descript** (one card pass can cost 40–80 credits) — keep them few. More cards = the agent adds them manually.
 - **NO count-up number animations** — Descript's most expensive effect (a single pass can cost ~167 credits). If a number matters, it's a static card, or just let the caption say it.
 - **NO heavy AI effects** — background removal / green screen, eye contact, AI generation, AI-generated B-roll. Warn and skip.

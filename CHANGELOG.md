@@ -2,6 +2,14 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.60.1] — 2026-06-26
+
+### AI Editor (Plugin 6) → v0.12.1 — long-form B-roll scales with length
+- The long-form B-roll rule was vague ("a few per section"). Now concrete and **scaled to length: ~1 cutaway per
+  ~1.5–2 min of finished video → a ~10-min video ≈ 5–7 clips** (on the key lines + section changes), curated, never
+  wall-to-wall. Short-form stays a hard **MAX 3**. Applied consistently across `broll-ladder.md`, `editor-broll`,
+  `edit-longform`, `credit-tiers.md`, and `final-check.md`.
+
 ## [0.60.0] — 2026-06-26
 
 ### AI Editor (Plugin 6) → v0.12.0 — Descript-MCP-only, locked + credit-disciplined

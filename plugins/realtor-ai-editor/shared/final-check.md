@@ -30,7 +30,7 @@ Before you tell the agent it's ready, run this quick self-check against everythi
 - **His real background is intact — NOT accidentally removed / black** (no green-screen / background-removal on a talking-head).
 - **B-roll is actually present** — every long-form has at least some (Descript stock minimum); never a bare talking-head.
 - Horizontal b-roll on a vertical reel is split-screen or clean full-bleed — never over-zoomed / floating.
-- B-roll matches the words, is unique (**no repeats anywhere — not just back-to-back**), **within the cap (short-form ≤ 3 clips total — count them; long-form curated, never wall-to-wall)**, and never covers the face / hook / CTA.
+- B-roll matches the words, is unique (**no repeats anywhere — not just back-to-back**), **within the cap (short-form ≤ 3 clips total — count them; long-form scaled to length ~1 per 1.5–2 min, e.g. ~5–7 on a 10-min video, curated, never wall-to-wall)**, and never covers the face / hook / CTA.
 
 ## Look & feel
 - Purposeful creativity (minimal ≠ bare) but not cluttered; the mandatory energy (zoom punch-ins + swoosh, smooth transitions, a couple of SFX) is present but on KEY beats only, never every scene; SFX subtle + low.
