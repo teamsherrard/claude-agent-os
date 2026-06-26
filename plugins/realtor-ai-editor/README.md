@@ -6,7 +6,7 @@ An AI video editor for real estate agents. The agent talks to Claude in plain En
 
 **Claude directs · Descript edits · the agent approves.**
 
-Claude is not the editor — it's the director. It plans the edit, sources the B-roll, applies the agent's brand, and gives Descript tested instructions. Descript does the cutting, captions, audio, b-roll, grade, and rendering; the **json2video graphics engine** renders the premium on-screen graphics (hook titles, chips, stat cards, keyword pops, CTA) on-brand for ~free — and the agent watches it happen and approves before anything publishes. This keeps the quality high (a purpose-built editor does the editing, a dedicated engine does the graphics) and the agent in control.
+Claude is not the editor — it's the director. It plans the edit, sources the B-roll, applies the agent's brand, and gives Descript tested instructions. Descript does it all — the cutting, captions, audio, b-roll, grade, minimal on-brand graphics (a hook card + CTA), and rendering — and the agent watches it happen and approves before anything publishes. Claude does the high-value 80% in Descript; the agent finishes the last 20% (extra B-roll, extra graphics, tweaks) by hand, for free. This keeps the quality high and the agent in control.
 
 ## One tool, one subscription
 
@@ -14,7 +14,7 @@ Descript does **both** long-form (YouTube) and short-form (Reels/Shorts/TikTok).
 
 ## What it does
 
-- Edits long-form videos: removes dead air, filler words, and bad takes; cleans up audio; adds B-roll, a colour grade, chapters, and premium on-brand graphics (hook/section/stat cards, keyword pops, CTA — via the graphics engine); exports with a ready-to-paste title and description.
+- Edits long-form videos: removes dead air, filler words, and bad takes; cleans up audio; adds B-roll, a colour grade, chapters, and minimal on-brand graphics (a hook card + CTA, done natively in Descript); exports with a ready-to-paste title and description.
 - Makes short-form: recycles one long video into several vertical clips (or edits a standalone reel) with a hook, branded captions, and music.
 - Adds **B-roll** Descript can't source on its own — the agent's own footage (a Google Drive library or per-video uploads), listing photos as motion stills, Descript's built-in stock, and several free stock libraries queried together so it doesn't recycle the same clips.
 - Applies the agent's brand automatically (colors, fonts, logo, caption style) from their Realtor AI Brain.
@@ -24,7 +24,7 @@ Descript does **both** long-form (YouTube) and short-form (Reels/Shorts/TikTok).
 
 - Edit fully on its own — it directs Descript; the agent reviews and approves.
 - Frame-perfect, surgical edits — Descript's AI is fast but approximate, so there's always a review step.
-- Hollywood-grade motion VFX / 3D — out of scope; the graphics engine covers premium 2D overlays (titles, chips, stat cards, pops, CTA, list reveals), not full motion design.
+- Hollywood-grade motion VFX / 3D / heavy motion design — out of scope; graphics are minimal, clean, Descript-native cards (a hook card + CTA), not full motion design.
 - Publish without permission — publishing is gated to "needs approval" by default.
 
 ## The skills
@@ -46,10 +46,10 @@ Heavy editing runs best in **Code mode** (the desktop app's Cowork / Code / Chat
 
 Settings are saved in the agent's Realtor AI Brain (`~/realtor-brain/editor/`) so they persist and sync like everything else.
 
-## Cost-smart by default
+## Cost-smart by default — the 80/20 rule
 
-Runs at a credit-smart **Standard** tier by default (~90% of full-polish quality at roughly half the credits). **Lean** for routine daily posts, **Full** for hero/case-study videos. Studio Sound is applied automatically on every video (agents shoot on phones).
+Descript AI credits are the agent's money, so the editor does the high-value **80%** brilliantly and then **stops**: a clean cut, Studio Sound (~55% default), a bare-minimum colour grade, karaoke captions, a little energy (a couple of zoom punch-ins + swoosh, smooth transitions, a couple of SFX), a hook card + CTA, and up to **3** B-roll. The agent finishes the last **20%** — extra B-roll, extra cards, tweaks — **by hand in Descript, which costs no AI credits.** Hard caps keep credits safe: short-form B-roll max 3, ≤2–3 graphic cards, no count-up animations, no heavy AI effects. (Full rule: `shared/credit-tiers.md`.)
 
 ## Status
 
-v0.11.0 — the **json2video graphics engine** is the current, mandatory graphics layer (not a future handoff): premium on-brand overlays (hook titles, lower-thirds, section chips, stat cards, keyword pops, CTA, list reveals) on contrast panels, synced to the spoken word, composited over the Descript export — with a copy-ready template library and a countable graphics-coverage floor wired into every skill. Plus: directing Descript for long + short form, multi-source B-roll (capped + de-duped), brand + captions (big, below the face), always-on colour grade, credit tiers, automatic Studio Sound, split-screen layouts (with speaker reframing), clean frames, flattering treatment of people, json2video frame-QA + honest human visual-QA, and a full do's-&-don'ts rulebook.
+**Descript-MCP-only.** Claude directs Descript for clean, professional edits — long + short form — and does the high-value 80%, leaving the agent the manual 20%. Includes: multi-source B-roll (capped at 3 on short-form + de-duped), brand + captions (big, below the face, brand-accent active word), minimal on-brand graphics (a hook card + CTA, done natively in Descript), always-on colour grade and Studio Sound, the 80/20 credit discipline, split-screen layouts (with speaker reframing), clean frames, flattering treatment of people, honest human visual-QA, and a full do's-&-don'ts rulebook.

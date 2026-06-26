@@ -15,14 +15,14 @@
 - **Contrast is non-negotiable.** The highlight must be clearly readable against the footage — never the same colour family as what's behind it (light-blue on a blue panel disappears). White text always carries the caption; the accent is for the active word only and must pop.
 - **NEVER over the face — absolute.** Captions sit below the speaker's face at every moment. If a line would reach the face, move it lower or shorten it; never let captions cover the face. **Descript defaults added captions to dead-centre (vertical position ≈ 0.50) — right on the face — so ALWAYS set the vertical position low yourself (≈ 0.84–0.88 of the frame: below the chin, above the bottom ~12% UI strip) and never trust the default.** In a split-screen the speaker sits in the lower band, so push captions to the bottom of that band — still below his face.
 - **Text must FIT its box.** Any background panel/pill has even padding around the text; the text never overflows or misaligns past the edges. A long phrase → widen the box or wrap cleanly, never let it spill over.
-- **No overlapping elements.** Captions, keyword pops, stat cards, and the CTA must NEVER collide or stack on each other — stagger their timing or positions so only one occupies a zone at a time. (A CTA box landing on top of the captions looks broken.)
+- **No overlapping elements.** Captions, the hook card, and the CTA card must NEVER collide or stack on each other — stagger their timing or positions so only one occupies a zone at a time. (A CTA card landing on top of the captions looks broken.)
 - **Use a polished caption style**, not a plain text-on-a-black-bar look — pick a clean caption template and brand it. The basic boxy default reads cheap.
 - Perfect word-level sync (±1 frame). Zero jitter — only colour/transform animate, never layout.
 - Emphasis (a bright pop) reserved for numbers, money, and the punchline — not every word.
 - Run a proper-noun corrections pass (name, brokerage, city, streets) so nothing is misspelled.
 
-## Captions are done in DESCRIPT (not the graphics engine)
-Even when premium graphics are rendered by the json2video graphics engine (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-engine.md`), **captions stay in Descript.** Descript's caption sizing is reliable and big; json2video's subtitle sizing is not (it renders tiny and ignores font-size). So: **Descript = captions; json2video = graphic overlays only.**
+## Captions are done in DESCRIPT
+Captions are done in **Descript** — its caption sizing is reliable and big, and it's fully brandable with the bar above. Captions and the minimal Descript cards (hook + CTA, see `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`) all live in Descript; there's no separate render step.
 
 ## Closing the gap vs. dedicated caption apps
 

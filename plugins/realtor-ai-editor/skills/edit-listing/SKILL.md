@@ -5,7 +5,11 @@ description: Edit a property / home / listing tour video by directing Descript o
 
 # Edit a listing / home tour
 
-A listing tour is *about a specific property*, so its footage rules differ: property moments need property footage — never generic stock for the home (a compliance + trust issue). Start from `${CLAUDE_PLUGIN_ROOT}/shared/dos-and-donts.md`, and read `${CLAUDE_PLUGIN_ROOT}/shared/footage-intake.md`, `${CLAUDE_PLUGIN_ROOT}/shared/footage-look.md` (always grade), the **graphics engine** (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-engine.md` + `${CLAUDE_PLUGIN_ROOT}/shared/graphics-templates.md`) for the premium info cards, `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`, and `identity/compliance.md` (price/claims, fair housing) first. You direct Descript; the agent watches and approves. Default to the **Standard** tier (`${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md`).
+A listing tour is *about a specific property*, so its footage rules differ: property moments need property footage — never generic stock for the home (a compliance + trust issue). Start from `${CLAUDE_PLUGIN_ROOT}/shared/dos-and-donts.md`, and read `${CLAUDE_PLUGIN_ROOT}/shared/footage-intake.md`, `${CLAUDE_PLUGIN_ROOT}/shared/footage-look.md` (always grade), the minimal native graphics guide `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md` for the on-brand info cards, `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`, and `identity/compliance.md` (price/claims, fair housing) first. You direct Descript; the agent watches and approves. Follow the 80/20 credit discipline (`${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md`) — do the basics brilliantly, then stop.
+
+## The always-done core (the 80% — never skip)
+
+Every listing reel ALWAYS gets: a **clean cut**, **open ON THE HOOK**, a **clean ending**, **Studio Sound (~55% default, higher for phone/echoey)**, a **colour grade (bare-minimum, never over-saturated)**, **karaoke captions** (brand-accent active word, mandatory on a social reel), a **reframe to 9:16**, the property B-roll matched room-to-room (capped — see below), **energy on key beats (a couple of zoom-in/out punch-ins with a swoosh SFX, smooth transitions, a couple of SFX)**, the brand info cards (kept minimal), and the closing CTA. Anything beyond it is the agent's manual 20% — added by hand in Descript for free.
 
 ## Step 1 — Footage check (one simple question)
 
@@ -13,7 +17,7 @@ Find out what they have, plainly: "Do you have footage of the home — clips you
 
 ## Step 2 — Clean it up first
 
-Open ON THE HOOK (cut any settling-in / "let's go" intro), remove dead air and bad takes, and **always apply Studio Sound** (~90%, automatic — agents shoot on phones). **Apply a subtle colour grade — always** (`${CLAUDE_PLUGIN_ROOT}/shared/footage-look.md`); never ship flat, ungraded footage. Never end mid-sentence.
+Open ON THE HOOK (cut any settling-in / "let's go" intro), remove dead air and bad takes, and **always apply Studio Sound** — **~80–90% for phone audio (most agents shoot on phones)**, **~55% for a decent mic**; never so low it leaves a fishbowl echo (judge on playback). **Apply a subtle, bare-minimum colour grade — always** (`${CLAUDE_PLUGIN_ROOT}/shared/footage-look.md`); never over-saturate, never ship flat ungraded footage. Never end mid-sentence.
 
 ## Step 3 — Structure the tour
 
@@ -21,7 +25,7 @@ Intro / exterior (drone or hero shot + address) → room by room → outdoor / y
 
 ## Step 4 — Match footage to the moment
 
-Kitchen clip on the kitchen line, backyard clip on the yard mention, drone over the intro and the address reveal. One clip per spot; don't reuse. Any horizontal b-roll on a vertical listing reel → **split-screen, never over-zoomed** (`${CLAUDE_PLUGIN_ROOT}/shared/layouts.md`).
+Kitchen clip on the kitchen line, backyard clip on the yard mention, drone over the intro and the address reveal. One clip per spot; don't reuse. On a short-form listing reel keep B-roll to the **hard cap of MAXIMUM 3 clips** (a longer YouTube tour can carry the room-by-room footage); if they want more, they add it by hand. Any horizontal b-roll on a vertical listing reel → **split-screen, never over-zoomed** (`${CLAUDE_PLUGIN_ROOT}/shared/layouts.md`).
 
 ## Step 5 — Has all / some / none
 
@@ -31,4 +35,4 @@ Kitchen clip on the kitchen line, backyard clip on the yard mention, drone over 
 
 ## Step 6 — Brand cards, captions, deliver
 
-Add the brand info cards (address, price, beds/baths, key features) — these are premium graphic overlays, so they render through the **graphics engine** (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-engine.md` + the copy-ready `${CLAUDE_PLUGIN_ROOT}/shared/graphics-templates.md`): **json2video**, on a contrast panel, on-brand, big, synced to the line (the price card on the price line), OFF the face — composited over the Descript export. Descript draws none of these; `graphics-style.md` is the visual standard they meet. **GRAPHICS COVERAGE (count before delivery):** a listing reel MUST carry at minimum an address/title card, a **price stat card**, a beds-baths/feature chip, and the closing CTA — a bare tour with no cards is a fail. Captions on a social listing reel are **mandatory** (watched on mute): big (~90pt+), below the face, high-contrast, brand accent on the active word (`${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md`); off only for a long YouTube tour unless asked. End on the book-a-showing CTA. **Run the final check** (`${CLAUDE_PLUGIN_ROOT}/shared/final-check.md`), then export + hand over a title/description with the address. Deliver once.
+Add the brand info cards **natively in Descript**, kept minimal (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`): an address/title card, a price card, and the closing CTA — beds/baths and key features can ride in the captions or one small card rather than a card each. Each card on a rounded brand panel, on-brand, big, synced to the line (the price card on the price line), animated, OFF the face — never a flat box on the face. Captions on a social listing reel are **mandatory** (watched on mute): big (~90pt+), below the face, high-contrast, brand accent on the active word (`${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md`); off only for a long YouTube tour unless asked. End on the book-a-showing CTA. **Run the final check** (`${CLAUDE_PLUGIN_ROOT}/shared/final-check.md`), then export + hand over a title/description with the address. Deliver once.

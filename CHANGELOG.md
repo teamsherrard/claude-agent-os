@@ -2,6 +2,28 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.60.0] — 2026-06-26
+
+### AI Editor (Plugin 6) → v0.12.0 — Descript-MCP-only, locked + credit-disciplined
+- **Dropped json2video / the "graphics engine" entirely** (deleted `graphics-engine.md` + `graphics-templates.md`).
+  The editor is now **one tool: Descript MCP** — no second account, no render service, no hosting. (HyperFrames /
+  Remotion never shipped and stay out.)
+- **Graphics are native to Descript and MINIMAL** (`graphics-style.md`): a hook card + a CTA card (≤2–3 total) on a
+  rounded brand panel, **OFF the face** (top edge above the head, or timed over a B-roll moment). The karaoke captions
+  carry the keyword emphasis — no separate keyword-pop cards by default.
+- **The 80/20 credit-discipline rule** (`credit-tiers.md`, the centerpiece): the editor does the high-value 80%
+  basics; the agent finishes the last 20% (extra B-roll, extra cards, tweaks) **by hand, for free** (manual Descript
+  edits cost no AI credits). Hard caps protect their credits: **short-form B-roll MAX 3**, graphics ≤2–3 cards, **no
+  count-up animations**, no heavy AI effects, effects on key beats not every scene.
+- **The mandatory 80% (always done, every video)** now explicitly includes: clean cut · open-on-hook · clean ending ·
+  **Studio Sound (~55% default — fixes the fishbowl echo from the old "light/off on a good mic"; ~80–90% for
+  phone/echoey)** · **bare-minimum colour grade (never over-saturated → no pale/orange/yellow skin)** · karaoke
+  captions · 9:16 reframe · an **energy layer (a couple of zoom-in/out punch-ins with a swoosh SFX + smooth
+  transitions + a couple of SFX, on key beats)** · hook card + CTA + ≤3 B-roll.
+- Reconciled every file (skills, descript-playbooks, effects-menu, footage-look, content-types, dos-and-donts,
+  cta-pack, caption-style, final-check, README, broll-ladder) to this canon; hardened with a multi-agent revert pass
+  + a 4-lens adversarial QA.
+
 ## [0.59.0] — 2026-06-25
 
 ### Capture layer — consume side: the content systems now read the backlog

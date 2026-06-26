@@ -1,40 +1,39 @@
-# Graphics & hook cards (quality bar)
+# Graphics in Descript — minimal, clean, off the face
 
-> **Where graphics are rendered:** the premium graphic OVERLAYS — hook title, section chips, stat/number cards, keyword pop-ups, lower-thirds, framework/list reveals, CTA — are rendered by the **graphics engine** (json2video), NOT Descript. See `${CLAUDE_PLUGIN_ROOT}/shared/graphics-engine.md` + the copy-ready `${CLAUDE_PLUGIN_ROOT}/shared/graphics-templates.md`. **This file is the VISUAL STANDARD** every one of those overlays must meet. Descript does the edit + captions; it does NOT draw the premium cards (it rendered them flat / on the face / as broken grids).
+Graphics are done **natively in Descript**, and kept **MINIMAL** — cards are the most credit-expensive thing Descript does, so a clean reel uses just a couple. The **karaoke captions** (with the brand-accent active word) already carry the keyword emphasis, so you rarely need extra text cards. (See `${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md` for the credit rationale.)
 
-These cards are NOT drawn in Descript — they render via the **graphics engine** (json2video). This file is the visual STANDARD they must meet: always big, bold, animated, deep, high-contrast, on-brand. The engine's templates (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-templates.md`) already ship every one of these specs — use them.
+## What to add — and ONLY this, by default
 
-## Every hook card, title card, and number/stat card must be:
+- **A hook card** — first ~1.5–2.5s: the claim or number.
+- **A CTA card** — at the end: the agent's call-to-action (`${CLAUDE_PLUGIN_ROOT}/shared/cta-pack.md`).
+- **(Optional, only if it truly adds value)** ONE stat/number card on a key figure, or numbered chips on a clear list/ranking video.
 
-- **Big** — fill a large part of the frame (title text ~140px+ on a vertical reel, not 60–70px).
-- **Bold** — heaviest weight (800–900).
-- **Animated** — a punchy entrance (scale-up / pop-in with a slight overshoot, ~0.3–0.4s) plus a subtle emphasis. Never a static box that just appears.
-- **Depth** — a drop shadow or a clean background panel so it pops off the footage.
-- **On-brand** — colours/fonts from `brand.json`; never a tool default (it once defaulted to green).
-- **Clean & modern** — not a thin centred line on a plain dark bar.
-- **Every text element on a CONTRAST PANEL (rounded, semi-transparent, soft shadow) — NEVER a hard flat black rectangle, and NEVER bare floating text.** Bare text (even with an outline) vanishes on a bright sky or busy footage — that's the recurring contrast complaint. The panel guarantees legibility on any background; make it rounded + brand-tinted/semi-transparent, never a solid black box. (This matches the engine's hard rule #1 — the templates already ship the panel.)
-- **High contrast** — text must pop against its panel AND the footage. NEVER the same colour family on the same background (light-blue text on a blue panel vanishes). White-on-navy or navy-on-white — not blue-on-blue.
-- **Reveal, don't just appear** — every card/pop-up animates in (slide / pop / swoosh) and out; nothing should blink onto screen.
-- **Text fits its box** — even padding around the text; it never overflows the panel (a two-word term must not spill past the edges).
-- **No collisions** — no two elements (card, pop-up, caption, CTA) overlap or stack. Stagger their timing or positions.
-- **Keep graphics SIMPLE — no cramped multi-box grids.** Descript renders complex multi-element graphics (a 2×2 "quadrant", a packed grid) BROKEN — overlapping boxes, colliding and cut-off text — especially when shrunk small or pushed into a corner. For a multi-part concept (a 4-part framework, a quadrant, a checklist), use clean **sequential cards** (one item at a time, as he says each) or a simple stacked list — NEVER a tiny grid. If a multi-part graphic is truly needed, keep it full-size and clean; never shrink it.
+That's it — **2, maybe 3 cards total.** More than that = the agent adds them by hand (credit discipline). Never sparse-panic into piling on cards; the captions are doing the emphasis work.
 
-## Placement
+## Every card must be (the quality bar)
 
-- Hook/title card in the first ~1.5s, over B-roll or a clean frame — never over the face mid-sentence.
-- **Cards & graphics sit LOW — below the face, like captions — and NEVER cover the face (absolute).** Descript defaults text/cards to CENTRE (right on the face), so pin every card to the lower third explicitly (vertical centre ~0.82–0.9 of the frame, fully below the face) and never trust the default. Claude can't see the render → human-eyeball it before publishing.
-- Number/stat cards land on the exact line they refer to.
-- **Clean frame:** no black bars, letterboxing, or broken-looking edges — especially in the first second. The opening must look intentional, never glitchy.
-- **Horizontal b-roll on a vertical reel → split-screen or clean full-bleed, never over-zoomed or floating** (see `${CLAUDE_PLUGIN_ROOT}/shared/layouts.md`).
+- **On a rounded, brand-coloured panel** with a soft drop shadow — **NEVER a flat hard black box, and NEVER bare text floating on the footage** (bare text vanishes on bright/busy footage — the recurring contrast complaint).
+- **OFF THE FACE — absolute** (see placement below).
+- **Big & bold** — fill a real part of the frame, heaviest weight (800–900).
+- **On-brand** — colours/fonts from the Brain (`brand-wiring.md`); never a tool default (it once defaulted to green). One accent colour, used for the one thing the eye should land on.
+- **Animated in** (pop / slide ~0.3s) and out; nothing blinks on.
+- **Text fits its panel** (even padding, no overflow); **no collisions** with captions, other cards, or the CTA.
+- **No cramped multi-box grids** — Descript renders 2×2 quadrants / packed grids BROKEN (overlapping, cut-off). For a multi-part idea use **sequential cards** (one at a time) or a simple stacked list, full-size.
 
-## Premium & minimal (don't over-edit) — but NEVER sparse
+## OFF THE FACE — how (this is the rule that kept getting broken)
 
-A few strong, clean touches beat a pile of effects — over-editing looks cheap and tacky. Curate by video type (`${CLAUDE_PLUGIN_ROOT}/shared/effects-menu.md`). **But minimal NEVER means sparse:** every video must still hit the graphics-coverage floor (hook + chips + stat card + keyword pops + CTA — see `${CLAUDE_PLUGIN_ROOT}/shared/graphics-engine.md`). A flat clip with one lonely title is a FAIL, same as a cluttered one. And every video ends with the agent's CTA on screen (`${CLAUDE_PLUGIN_ROOT}/shared/cta-pack.md`).
+On a vertical 9:16 talking-head the speaker's head sits **HIGH**, so a card in the upper third lands **on the face**. To keep it off:
 
-## Be explicit with the engine (use the templates)
+- **Pin the card to the EXTREME TOP edge, above the hairline**, OR
+- **Time the card OVER a B-roll moment** (the speaker's face isn't on screen then — the safest option), OR
+- Place it in a genuinely clear area.
+- **Never** over the face, and **never** over the bottom captions.
+- **Frame-QA every card**: read the exported frame and confirm nothing touches the face. Claude can't see the live render — verify on a frame, and the agent eyeballs it before posting.
 
-Every overlay must hit these specs: big (title ≥ 80px, often ~140px on a reel), heaviest weight (800–900), a drop shadow / depth, a ~0.35s pop-in, on a contrast panel, on-brand. The json2video templates in `${CLAUDE_PLUGIN_ROOT}/shared/graphics-templates.md` already ship all of this — use the templates; don't hand-build cards and don't ask Descript to draw them.
+## Be explicit with Descript
 
-## The engine renders the premium overlays (the default, not the ceiling)
+Out of the box Descript makes a small flat centred box (right on the face). Tell it exactly what to do every time: rounded brand panel, big size, weight 900, drop shadow, ~0.3s pop-in, and the **exact off-face position**. It won't do it on its own.
 
-The premium graphic overlays are rendered by the **graphics engine** (json2video) and composited over the Descript export — see `${CLAUDE_PLUGIN_ROOT}/shared/graphics-engine.md` + `${CLAUDE_PLUGIN_ROOT}/shared/graphics-templates.md`. This is the DEFAULT path for every hook title, chip, stat card, keyword pop, lower-third, framework reveal, and CTA — not a last resort. Descript does the edit + captions and does NOT draw these cards (it renders them flat / on the face / as broken grids). Don't burn credits asking Descript for premium motion-design it can't do — use the engine's templates.
+## Premium & minimal — and that's the point, not a compromise
+
+A couple of strong, clean, on-brand cards + great karaoke captions + good B-roll = a premium-feeling reel. This is the deliberate, credit-smart, Descript-only look: clean and professional. (Fancier animated motion-design isn't a Descript capability — and that's fine; it's the agent's optional manual 20%, or simply out of scope.)

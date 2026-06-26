@@ -1,32 +1,42 @@
-# Credit tiers — quality vs cost (default to Standard)
+# Credit discipline — the 80/20 rule (READ FIRST — this protects the agent's Descript credits)
 
-Doing **less, but well, is both cheaper AND more premium** — over-editing is expensive *and* tacky. So the credit-smart edit and the best-looking edit are the same edit. Three modes; default to **Standard**.
+Descript AI credits are the agent's **money**. The #1 rule of this editor: **do the high-value basics brilliantly, then STOP.** Never burn the agent's credits on extras they can add themselves, by hand, for free. Doing **less, but well, is both cheaper AND more premium** — the credit-smart edit and the best-looking edit are the same edit.
 
-> **What costs Descript credits vs what doesn't:** the credit caps below are about **Descript** operations (SFX, transitions, punch-ins, b-roll, grade, Studio Sound). The premium **text graphics** — hook title, section chips, stat cards, keyword pops, lower-thirds, CTA — render in the **json2video graphics engine** (a separate, cheap render budget — ~free per graphic), NOT as Descript passes. So **graphics coverage is never a Descript-credit decision** — never cap the graphics-coverage floor to "save credits."
+## The 80/20 split (the core promise)
 
-## Where credits actually go (observed)
+- **The editor (Claude + Descript) does the 80%** — the credit-worthy basics that turn raw footage into a clean, professional, ready-to-post reel. These are ALWAYS done, every video.
+- **The agent does the last 20% by hand** — extra B-roll, extra graphics, fine tweaks. **Manual edits in Descript cost ZERO AI credits**, so this is where the agent adds personal flair for free.
+- This is exactly what we tell them in training: *"The editor gets you 80% of the way there — here's the 20% you finish by hand."*
 
-- **Cheap + high impact (always do):** cuts / filler removal, captions (~10), Studio Sound, a light colour grade (~6).
-- **Expensive in Descript (cost scales with QUANTITY — so cap it):** lots of SFX, a transition on every cut, a punch-in on every scene. (One session's motion pass with 11 SFX + transitions on all 16 cuts cost ~69.)
-- **Never ask Descript for count-up number animations** — they were its single most expensive effect (one pass of 2 count-ups + a few cards cost ~167 credits). Numbers are ALWAYS **static stat cards in the json2video graphics engine** (~free, full impact); Descript count-ups are banned (cross-ref `${CLAUDE_PLUGIN_ROOT}/shared/dos-and-donts.md`, `${CLAUDE_PLUGIN_ROOT}/shared/graphics-engine.md`).
-- **Biggest hidden cost:** iterating / re-running — including **OVER-CORRECTING** (too little b-roll → swing to too much; tiny captions → guess again). Each swing is a paid pass, and the back-and-forth is the real credit drain. Get the safe defaults right the FIRST time (follow the rules, don't swing), and **frame-QA before delivering** so you're not fixing things you couldn't see (graphics on the face, background removal, wrong caption size, duplicated b-roll). Do it in 2–3 batched passes, not 15.
+## The 80% — ALWAYS do these (this is the value; never skip one)
 
-## The three modes
+1. **Clean cut** — remove filler words, dead air, bad takes, false starts.
+2. **Clean open — ON THE HOOK** (cut the settling-in / "let's go" / throat-clear).
+3. **Clean end** — finish on a complete thought, never mid-sentence.
+4. **Studio Sound** — clean the audio (default **~55%**; **~80–90% for phone / echoey rooms**; never so low it leaves a fishbowl/room echo, never so high it thins the voice).
+5. **Colour grade** — subtle, natural, flattering. Always.
+6. **Karaoke captions** — big, below the face, active word in the brand accent.
+7. **Reframe to 9:16** (short-form), face centred.
+8. **A bit of energy (mandatory minimum, KEY beats only):** a couple of zoom-in/out punch-ins (each with a swoosh SFX), smooth transitions at scene changes, and a couple of SFX.
+9. **The graphics essentials only:** a hook card, the CTA, and up to 3 B-roll on the key lines.
 
-The three modes scale the **Descript effects layer** (SFX, transitions, punch-ins, b-roll). The **graphics-coverage floor is the same in every mode** — it renders ~free in the engine, so even Lean keeps its hook / chips / stat card / keyword pops / CTA.
+That clean core is the whole job. Everything past it is the agent's 20%.
 
-**Lean** (cheapest — routine daily posts): cut + tighten, captions, Studio Sound, a light grade, 1–2 B-roll on the key lines, the CTA. No SFX, minimal/auto transitions, fewer Descript punch-ins.
+## The HARD CAPS — never exceed (this is what stops credit drain)
 
-**Standard** (DEFAULT — the everyday premium look): Lean **plus** gentle punch-ins on a FEW key beats (not every scene), 3–5 B-roll total on the important lines, **1–2 SFX**, transitions only at major scene changes. ≈90% of "Full" quality at roughly half the Descript credits. (Graphics: the full coverage floor — hook + ≥3 chips/lower-thirds + ≥1 stat card + ≥2 keyword pops + CTA — rendered ~free in the engine, never capped to save credits.)
+- **B-roll — short-form (≤ ~2 min): MAXIMUM 3 clips.** Long-form: a few per section, curated, never wall-to-wall. **If the agent wants more B-roll, they add it themselves by hand** (free). Do not exceed the cap to be "thorough."
+- **Graphics — MINIMAL: a hook card + a CTA card (2, maybe 3 cards total).** The karaoke captions already carry the keyword emphasis, so you almost never need separate keyword-pop cards. **Cards are the single most credit-expensive thing in Descript** (one card pass can cost 40–80 credits) — keep them few. More cards = the agent adds them manually.
+- **NO count-up number animations** — Descript's most expensive effect (a single pass can cost ~167 credits). If a number matters, it's a static card, or just let the caption say it.
+- **NO heavy AI effects** — background removal / green screen, eye contact, AI generation, AI-generated B-roll. Warn and skip.
+- **Punch-ins / SFX / transitions — a few on key beats, never every scene.**
 
-**Full** (hero / case-study videos only): the works — punch-ins throughout, transitions everywhere, music + multiple SFX, the richest graphics layer. Most Descript credits (the effects, not the graphics). Use sparingly.
+## Don't waste credits (the hidden drains)
 
-## How to keep Standard cheap
+- **Batch into 2–3 passes**, not 15 tiny ones — every `prompt_project_agent` call costs credits. (e.g. one "clean + audio + grade + captions" pass, one "B-roll + a couple cards + CTA" pass.)
+- **Frame-QA before delivering** (read the exported frames) so you're not re-running to fix things you couldn't see.
+- **The biggest drain is OVER-CORRECTING** — too-little-B-roll → swing to too-much; tiny-caption → guess again. Each swing is a paid pass. Follow the safe defaults the FIRST time; don't swing.
+- **NEVER blind-retry** a paid pass — if "unable to reach Descript," check the project first; the edit usually landed.
 
-- **Batch** into a few passes (one "clean + audio + captions + grade," one "B-roll + motion," then the json2video graphics composite). Fewer Descript calls = fewer credits.
-- The caps are deliberate for **Descript effects**: each "one less" SFX / transition / punch-in saves credits AND looks cleaner. When unsure, do one fewer — but NEVER drop below the graphics-coverage floor (that's free).
-- For shorts, **repurpose from an existing long edit** when possible — no re-import / re-transcribe.
+## Tell the agent (the 20% hand-off)
 
-## Tell the agent
-
-Default to Standard silently. Only if they ask, offer in plain words: *"Want the quick version (cheaper) or the full polish (more)?"* Standard is the right answer for almost everything.
+Default silently — just deliver the clean 80%. If they want more, say it plainly: *"I've done the clean core. You can add more B-roll, extra graphics, or tweak anything yourself in Descript with no extra credit cost — want me to show you the 20%?"* That manual 20% is theirs, and it keeps their credits safe.

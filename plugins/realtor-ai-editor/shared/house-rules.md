@@ -38,7 +38,7 @@ Always get a yes before anything that **spends credits** (especially AI-generate
 - **Verify every paid step actually landed before saying it's done.** Each Descript job returns a result — check `status: success` and `project_changed: true`, and for visible changes have the agent eyeball it. Never narrate success you haven't confirmed.
 - **Never blind-retry a paid job.** If a step errors or times out, check whether it actually ran (`get_project` / `list_jobs`) before trying again — re-firing burns credits for nothing. Stop after 1–2 failures and tell the agent.
 - **Report the credit cost** of each pass so the agent stays in control.
-- **Default to the Standard tier** (`${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md`) — the credit-smart, premium-minimal everyday look (~90% of full quality at ~half the credits). Offer **Lean** (cheaper) or **Full** (hero videos) only if the agent asks. Doing one-less (pop-up / SFX / B-roll) saves credits AND looks cleaner. Batch into a few passes; never iterate 15 times.
+- **Follow the 80/20 credit discipline** (`${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md`) — do the high-value 80% basics brilliantly, then stop; the agent finishes the last 20% (extra B-roll, extra cards, tweaks) by hand for free. Doing one-less (card / SFX / B-roll) saves credits AND looks cleaner. Batch into a few passes; never iterate 15 times.
 
 ## Learn from every revision
 
