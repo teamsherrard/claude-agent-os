@@ -9,7 +9,7 @@ A listing tour is *about a specific property*, so its footage rules differ: prop
 
 ## The always-done core (the 80% — never skip)
 
-Every listing reel ALWAYS gets: a **clean cut**, **open ON THE HOOK**, a **clean ending**, **Studio Sound (~55% default, higher for phone/echoey)**, a **colour grade (bare-minimum, never over-saturated)**, **karaoke captions** (brand-accent active word, mandatory on a social reel), a **reframe to 9:16**, the property B-roll matched room-to-room (capped — see below), **energy on key beats (a couple of zoom-in/out punch-ins with a swoosh SFX, smooth transitions, a couple of SFX)**, the brand info cards (kept minimal), and the closing CTA. Anything beyond it is the agent's manual 20% — added by hand in Descript for free.
+Every listing video ALWAYS gets: a **clean cut**, **open ON THE HOOK**, a **clean ending**, **Studio Sound (~55% default, higher for phone/echoey)**, a **colour grade (bare-minimum, never over-saturated)**, the property B-roll matched room-to-room (capped — see below), **energy on key beats (a couple of zoom-in/out punch-ins with a swoosh SFX, smooth transitions, a couple of SFX)**, the brand info cards (kept minimal), and the closing CTA. **For a SHORT social reel:** also **reframe to 9:16** + **karaoke captions** (brand-accent active word, mandatory — watched on mute). **For a LONG YouTube tour:** keep **16:9**, **NO word-by-word karaoke** — the info cards plus an occasional emphasis pop-up carry the on-screen text (per Step 6). Anything beyond this is the agent's manual 20% — added by hand in Descript for free.
 
 ## Step 1 — Footage check (one simple question)
 

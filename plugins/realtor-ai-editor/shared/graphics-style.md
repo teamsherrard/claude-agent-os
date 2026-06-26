@@ -1,6 +1,6 @@
 # Graphics in Descript — minimal, clean, off the face
 
-Graphics are done **natively in Descript**, and kept **MINIMAL** — cards are the most credit-expensive thing Descript does, so a clean reel uses just a couple. The **karaoke captions** (with the brand-accent active word) already carry the keyword emphasis, so you rarely need extra text cards. (See `${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md` for the credit rationale.)
+Graphics are done **natively in Descript**, and kept **MINIMAL** — cards are the most credit-expensive thing Descript does, so use just what each format needs. On a **short-form reel** the karaoke captions (with the brand-accent active word) already carry the keyword emphasis, so you rarely need extra text cards. On **long-form** there's no karaoke — so the emphasis lives in **pop-up cards every ~2–3 min** (a key-phrase callout; ~3–5 on a 10-min video; see below). (See `${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md` for the credit rationale.)
 
 ## What to add — and ONLY this, by default
 

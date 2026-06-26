@@ -22,9 +22,9 @@ Descript has far more than cuts and captions. The skill is knowing what NOT to u
 
 ## When to use what (by video type)
 
-- **Talking-head (reels AND long-form YouTube):** this format goes flat without energy — give it gentle punch-ins on the key lines, contextual animations matched to the words (price drop → down arrow, "tight" → squeeze), a few **subtle, low-volume** SFX on transitions (never loud or jarring), and a subtle grade — PLUS the minimal Descript text cards (a hook card and a CTA card — see the scope note). Purposeful, not constant. (A bare talking-head is the most common under-edit.)
+- **Talking-head (reels AND long-form YouTube):** this format goes flat without energy — give it gentle punch-ins on the key lines, contextual animations matched to the words (price drop → down arrow, "tight" → squeeze), a few **subtle, low-volume** SFX on transitions (never loud or jarring), and a subtle grade — PLUS the minimal Descript text cards (a hook card and a CTA card; on **long-form** also an **emphasis pop-up every ~2–3 min** since there's no karaoke — see the scope note). Purposeful, not constant. (A bare talking-head is the most common under-edit.)
 - **Listing / property tour:** smooth room-to-room transitions, a clean address/price card on a brand panel (off the face), the agent's own footage. No gimmicky overlays.
-- **Market update / data:** punch-ins on the key stats, a contextual animation where it fits (price drop → down arrow, in Descript), maybe a thin progress bar, and an optional single stat card on the one headline figure (on a brand panel, off the face). Let the karaoke captions carry the rest of the numbers. Restrained but not bare.
+- **Market update / data:** punch-ins on the key stats, a contextual animation where it fits (price drop → down arrow, in Descript), maybe a thin progress bar, and an optional single stat card on the one headline figure (on a brand panel, off the face). Let the captions (short-form) or an emphasis pop-up every ~2–3 min (long-form) carry the rest of the numbers. Restrained but not bare.
 - **Hype / promo:** a touch more energy is OK — a light leak on a transition, slightly punchier — but still tasteful.
 
 ## The hard rule

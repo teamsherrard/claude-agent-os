@@ -2,6 +2,21 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.60.3] — 2026-06-26
+
+### AI Editor (Plugin 6) → v0.12.3 — full-QC pass: scope the karaoke/cards framing to short-form
+- A full quality check (mechanical + 3-lens adversarial) found the **"karaoke carries the emphasis / ≤2–3 cards"
+  framing** — correct for short-form — leaking into long-form contexts where there's no karaoke. Fixed the 4 spots:
+  - `edit-longform` credit footer no longer says "keep cards to 2–3 max" (it would have silently capped the long-form
+    emphasis pop-ups out of existence); it now names the pop-ups as part of the always-done core.
+  - `graphics-style.md` lede is now format-split (short-form karaoke vs long-form pop-ups) instead of a blanket
+    karaoke claim — it's the file every edit skill loads.
+  - `edit-listing` core is now **conditional**: a short social reel = 9:16 + karaoke; a long YouTube tour = 16:9 +
+    no karaoke (info cards + occasional pop-up).
+  - `effects-menu` talking-head + market-update rows now note the long-form emphasis pop-ups.
+- Mechanical QC clean: JSON valid, versions aligned, all 17 cross-refs resolve, zero json2video/HyperFrames/Remotion
+  leaks, all 6 skills have valid frontmatter.
+
 ## [0.60.2] — 2026-06-26
 
 ### AI Editor (Plugin 6) → v0.12.2 — long-form uses emphasis pop-ups, not karaoke captions
