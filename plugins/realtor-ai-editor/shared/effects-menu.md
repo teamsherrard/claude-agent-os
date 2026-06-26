@@ -6,7 +6,7 @@ Descript has far more than cuts and captions. The skill is knowing what NOT to u
 
 **Mandatory energy minimum — EVERY video (on KEY beats, never every scene):** a couple of **zoom-in/out punch-ins** (each with a **swoosh SFX**), **smooth transitions** at scene changes, and **at least a couple of SFX**. These are part of the always-done 80%, not optional flair — a flat reel with none of them is a fail. The opposite fail is an effect on every single cut (cheap-looking + credit-draining). Place them only where they land a beat.
 
-**Scope — what this menu is:** these are DESCRIPT's own effects (grade, punch-ins, transitions, contextual motion like arrows/squeeze, SFX, annotations, progress bar). The few **TEXT cards** — a hook card and a CTA card (and at most one optional stat card) — are also done natively in Descript, but kept MINIMAL and on a rounded brand panel, off the face: see `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`. The karaoke captions carry the keyword emphasis, so there are no separate keyword-pop cards by default.
+**Scope — what this menu is:** these are DESCRIPT's own effects (grade, punch-ins, transitions, contextual motion like arrows/squeeze, SFX, annotations, progress bar). The few **TEXT cards** — a hook card and a CTA card (and at most one optional stat card) — are also done natively in Descript, kept on a rounded brand panel, off the face: see `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`. On **short-form** the karaoke captions carry the keyword emphasis, so there are no separate keyword-pop cards. On **long-form** there's no word-by-word karaoke — add an **emphasis pop-up every ~2–3 min** (a key phrase from the transcript) as the emphasis layer.
 
 ## What's available (Properties + Elements)
 

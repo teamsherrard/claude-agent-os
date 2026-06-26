@@ -2,6 +2,18 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.60.2] — 2026-06-26
+
+### AI Editor (Plugin 6) → v0.12.2 — long-form uses emphasis pop-ups, not karaoke captions
+- **Long-form YouTube edits no longer get word-by-word karaoke captions** (too long; YouTube auto-captions cover
+  accessibility). Instead: an **emphasis pop-up every ~2–3 min** — a punchy callout of a key phrase from the
+  transcript, on a brand panel, off the face (~3–5 on a 10-min video). These are the long-form emphasis layer (the
+  role karaoke plays on short-form). Full word-by-word captioning only if the agent asks.
+- Scoped the "karaoke carries the emphasis / no keyword-pop cards / ≤2–3 cards" rules to **short-form only**;
+  long-form's pop-ups ARE its on-screen text + emphasis layer. Reconciled across `caption-style`, `edit-longform`,
+  `editor-navigator`, `credit-tiers`, `graphics-style`, `final-check`, `descript-playbooks`, `content-types`,
+  `effects-menu`, `dos-and-donts`, and `edit-listing`.
+
 ## [0.60.1] — 2026-06-26
 
 ### AI Editor (Plugin 6) → v0.12.1 — long-form B-roll scales with length

@@ -15,7 +15,7 @@ Descript AI credits are the agent's **money**. The #1 rule of this editor: **do 
 3. **Clean end** — finish on a complete thought, never mid-sentence.
 4. **Studio Sound** — clean the audio (default **~55%**; **~80–90% for phone / echoey rooms**; never so low it leaves a fishbowl/room echo, never so high it thins the voice).
 5. **Colour grade** — subtle, natural, flattering. Always.
-6. **Karaoke captions** — big, below the face, active word in the brand accent.
+6. **Captions / on-screen text** — short-form: **karaoke** (big, below the face, active word in the brand accent). Long-form: **no word-by-word karaoke — an emphasis pop-up every ~2–3 min** (key phrase, off the face) instead.
 7. **Reframe to 9:16** (short-form), face centred.
 8. **A bit of energy (mandatory minimum, KEY beats only):** a couple of zoom-in/out punch-ins (each with a swoosh SFX), smooth transitions at scene changes, and a couple of SFX.
 9. **The graphics essentials only:** a hook card, the CTA, and up to 3 B-roll on the key lines.
@@ -25,7 +25,7 @@ That clean core is the whole job. Everything past it is the agent's 20%.
 ## The HARD CAPS — never exceed (this is what stops credit drain)
 
 - **B-roll — scale to length.** Short-form (≤ ~2 min): **MAXIMUM 3 clips.** Long-form: **~1 cutaway per ~1.5–2 min — a 10-min video ≈ 5–7 clips**, curated, never wall-to-wall. **If the agent wants more, they add it themselves by hand** (free). Don't carpet the video to be "thorough."
-- **Graphics — MINIMAL: a hook card + a CTA card (2, maybe 3 cards total).** The karaoke captions already carry the keyword emphasis, so you almost never need separate keyword-pop cards. **Cards are the single most credit-expensive thing in Descript** (one card pass can cost 40–80 credits) — keep them few. More cards = the agent adds them manually.
+- **Graphics — keep them purposeful (cards are the single most credit-expensive thing in Descript — ~40–80 credits a pass).** Short-form: a hook card + a CTA card (**≤2–3 cards**) — the karaoke captions already carry the keyword emphasis, so no separate keyword-pop cards. Long-form: a hook card + the CTA + **an emphasis pop-up every ~2–3 min** (these replace karaoke as the emphasis layer; ~3–5 on a 10-min video). Beyond that, the agent adds more by hand.
 - **NO count-up number animations** — Descript's most expensive effect (a single pass can cost ~167 credits). If a number matters, it's a static card, or just let the caption say it.
 - **NO heavy AI effects** — background removal / green screen, eye contact, AI generation, AI-generated B-roll. Warn and skip.
 - **Punch-ins / SFX / transitions — a few on key beats, never every scene.**

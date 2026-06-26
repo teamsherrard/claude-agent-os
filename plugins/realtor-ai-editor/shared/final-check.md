@@ -13,12 +13,12 @@ Before you tell the agent it's ready, run this quick self-check against everythi
 - **Colour grade applied** — subtle, bare-minimum, natural, flattering; **never over-saturated / over-bright** (skin never pale, orange, or yellow).
 - **Studio Sound applied AND confirmed on** — at the right level (**~55% default; ~80–90% for phone/echoey**); not so low it leaves echo, not so high it thins the voice. Verify it didn't silently stay off.
 - **Energy present (mandatory minimum)** — a couple of zoom-in/out punch-ins (each with a swoosh SFX), smooth transitions at scene changes, and a couple of SFX — on KEY beats, not every scene. A flat reel with none is a fail.
-- **Karaoke captions present** — big (~90pt+, not the tiny default), readable, high-contrast; active word in the brand accent set explicitly (not a default colour like green).
+- **Captions / on-screen text right for the format** — SHORT-FORM: karaoke captions present, big (~90pt+, not the tiny default), readable, high-contrast, active word in the brand accent set explicitly (not green). LONG-FORM: no word-by-word karaoke — instead an emphasis pop-up every ~2–3 min (key phrase, brand panel, off the face; ~3–5 on a 10-min video).
 - **Clean cut** — filler words, dead air, bad takes, and false starts removed.
 - **Clean open ON THE HOOK** and **clean ending** on a complete thought (covered below).
 
 ## Captions & graphics
-- **Graphics are MINIMAL and Descript-native** — a hook card + a CTA card (2, maybe 3 cards total); the karaoke captions carry the keyword emphasis, so no separate keyword-pop cards by default. Don't sparse-panic into piling on cards (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`).
+- **Graphics are purposeful and Descript-native** — short-form: a hook card + a CTA card (≤2–3 cards), the karaoke captions carry the keyword emphasis (no separate pop cards); long-form: hook + CTA + an emphasis pop-up every ~2–3 min (these ARE the emphasis layer). Don't sparse-panic OR pile on (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`).
 - **Cards sit on a rounded brand panel** — never a flat black box, never bare floating text.
 - **Captions AND cards/graphics sit BELOW the face — never over it (absolute)** — or a card is timed over a B-roll moment.
 - **Graphics are clean — not cramped, overlapping, or broken** (no tiny multi-box grids / quadrants with colliding text).

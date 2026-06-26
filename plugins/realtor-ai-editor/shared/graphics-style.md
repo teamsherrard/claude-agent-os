@@ -8,7 +8,7 @@ Graphics are done **natively in Descript**, and kept **MINIMAL** — cards are t
 - **A CTA card** — at the end: the agent's call-to-action (`${CLAUDE_PLUGIN_ROOT}/shared/cta-pack.md`).
 - **(Optional, only if it truly adds value)** ONE stat/number card on a key figure, or numbered chips on a clear list/ranking video.
 
-That's it — **2, maybe 3 cards total.** More than that = the agent adds them by hand (credit discipline). Never sparse-panic into piling on cards; the captions are doing the emphasis work.
+On a **short-form reel** that's **2, maybe 3 cards total** — the karaoke captions do the emphasis work, so don't pile on more. On **long-form**, also add an **emphasis pop-up every ~2–3 min** — a key-phrase callout from the transcript (long-form has no word-by-word karaoke, so these ARE the emphasis layer; ~3–5 on a 10-min video). Beyond that, the agent adds more by hand (credit discipline). Never sparse-panic into piling on cards.
 
 ## Every card must be (the quality bar)
 

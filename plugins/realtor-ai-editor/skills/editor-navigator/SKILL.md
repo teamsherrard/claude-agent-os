@@ -44,7 +44,7 @@ If they don't answer or seem unsure, **pick the recommended default and proceed*
 
 If something isn't specified, use the Brain + these defaults and move:
 - Aspect ratio from where they post (reels = 9:16, YouTube = 16:9).
-- Captions: on for shorts, off for long-form (see `${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md`).
+- Captions: full karaoke on for shorts; long-form gets **emphasis pop-ups every ~2–3 min** (a key-phrase callout — no word-by-word karaoke) — see `${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md`.
 - B-roll: their own footage first, then stock (see `${CLAUDE_PLUGIN_ROOT}/shared/broll-ladder.md`).
 - Brand: from `brand.json`.
 - Credit discipline: the **80/20 core** by default — do the 80% basics; the agent finishes the 20% by hand for free (see `${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md`).

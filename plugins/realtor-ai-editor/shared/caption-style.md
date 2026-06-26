@@ -3,7 +3,7 @@
 ## When captions are on
 
 - **Short-form: always on.** Positioned in the LOWER portion — **below the speaker's face, above the bottom ~12%** (where the platform UI sits). 2–3 words per line (kept short so they can't grow up into the face), karaoke (active word in the brand accent). **NEVER centered over the face.**
-- **Long-form: off by default.** Captioning a whole long video adds a slow render pass and YouTube auto-captions anyway. Only add if the agent asks, as a separate final pass.
+- **Long-form: NO word-by-word karaoke captions** (too long, and YouTube auto-captions cover accessibility). Instead, an **emphasis pop-up every ~2–3 minutes** — a short, punchy text callout of a key phrase from the transcript, on a rounded brand panel, **OFF the face**, animated in/out (a ~10-min video ≈ 3–5 pop-ups). These do the emphasis job that karaoke does on a reel. Full word-by-word captioning only if the agent explicitly asks (a separate, slow render pass).
 
 ## The bar (every caption)
 

@@ -22,14 +22,14 @@ The one-page rulebook for editing a realtor's video. The detailed refs back each
 
 ## Premium & minimal — but never BARE
 - DO keep it clean, modern, restrained. A few strong touches beat ten cheap ones.
-- DO add *purposeful* creativity — match the effect to the words (price drop → down arrow, "tight" → squeeze, in Descript). **Minimal ≠ bare**: a flat, static talking-head with nothing happening is *also* a bad edit. Talking-heads need gentle punch-ins, a little motion, a hook card, and the CTA card (the karaoke captions carry the keyword emphasis — see below).
+- DO add *purposeful* creativity — match the effect to the words (price drop → down arrow, "tight" → squeeze, in Descript). **Minimal ≠ bare**: a flat, static talking-head with nothing happening is *also* a bad edit. Talking-heads need gentle punch-ins, a little motion, a hook card, and the CTA card (emphasis comes from the captions — short-form karaoke, or a long-form emphasis pop-up every ~2–3 min — see below).
 - DO put B-ROLL in every video — ALWAYS at least a little, even from Descript's built-in stock (zero setup). Never deliver a long-form with zero b-roll.
 - DON'T pile on RANDOM effects/overlays/frames until it looks tacky. The enemy is clutter, not creativity. Curate by video type (see effects-menu.md).
 - DON'T use loud or random SFX — a few, subtle, low-volume, and purposeful only. DON'T ask Descript for count-up animations — they're its most expensive effect; if a number matters, make it a static card or just let the caption say it.
 
 ## Captions & graphics
-- DO make captions big and phone-legible (~90pt+), white with a black outline, active word in the brand accent. The karaoke captions carry the keyword emphasis — so you almost never need separate keyword-pop cards.
-- DO keep graphics MINIMAL and Descript-native: a hook card + a CTA card (2, maybe 3 cards total — see `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`). Big, bold, animated, on a rounded brand panel, on-brand, synced to the word, OFF the face. Cards are the most credit-expensive thing Descript does — never sparse-panic into piling on more.
+- DO make SHORT-FORM captions big and phone-legible (~90pt+), white with a black outline, active word in the brand accent — the karaoke captions carry the keyword emphasis, so you almost never need separate keyword-pop cards. **LONG-FORM has NO word-by-word karaoke — instead use an emphasis pop-up every ~2–3 min** (a key phrase from the transcript, on a brand panel, off the face).
+- DO keep graphics purposeful and Descript-native: short-form a hook card + a CTA card (**≤2–3 cards**); long-form a hook + CTA + an emphasis pop-up every ~2–3 min (see `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`). Big, bold, animated, on a rounded brand panel, on-brand, synced to the word, OFF the face. Cards are the most credit-expensive thing Descript does — never sparse-panic into piling on more.
 - DON'T leave a flat static text box (the "Fiverr look"). DON'T use a default colour (no random green).
 - DON'T use ugly flat black boxes for cards — and DON'T rely on bare floating text either (it vanishes on bright/busy footage). Every card sits on a rounded, semi-transparent, brand-tinted contrast panel. Never a hard opaque black rectangle.
 - DO make text FIT its box (even padding, never overflowing the panel) and use a polished caption style — not the plain boxy default.
