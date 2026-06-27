@@ -29,6 +29,7 @@ On a vertical 9:16 talking-head the speaker's head sits **HIGH**, so a card in t
 - Place it in a genuinely clear area.
 - **Never** over the face, and **never** over the bottom captions.
 - **Frame-QA every card**: read the exported frame and confirm nothing touches the face. Claude can't see the live render — verify on a frame, and the agent eyeballs it before posting.
+- **Stay inside the platform safe zones too**: keep every card/panel out of the right ~12% icon rail and the top/bottom UI bars; **centre-align, never flush-right** — widen a panel by shrinking the text, not by extending into the right rail (`${CLAUDE_PLUGIN_ROOT}/shared/layouts.md`).
 
 ## Be explicit with Descript
 

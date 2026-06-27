@@ -27,6 +27,7 @@ Before you tell the agent it's ready, run this quick self-check against everythi
 
 ## Framing & footage
 - Footage fills the frame — no black bars; zooms are zoom-in only (no exposed edges).
+- **Text/cards inside the platform safe zones** — nothing in the right ~12% icon rail or the bottom ~15% UI bar; text centre-aligned, never flush-right. (The feed UI isn't in the export — verify by rule + have the agent eyeball it in-app: `${CLAUDE_PLUGIN_ROOT}/shared/layouts.md`.)
 - **His real background is intact — NOT accidentally removed / black** (no green-screen / background-removal on a talking-head).
 - **B-roll is actually present** — every long-form has at least some (Descript stock minimum); never a bare talking-head.
 - Horizontal b-roll on a vertical reel is split-screen or clean full-bleed — never over-zoomed / floating.

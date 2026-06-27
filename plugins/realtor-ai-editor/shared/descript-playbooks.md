@@ -31,6 +31,14 @@ After any import, `wait_for_job`; Descript auto-transcribes on import (don't re-
 - **Publishing is gated** — never `publish_project` without the agent's yes (keep the connector's Publish on "needs approval").
 - **"Unable to reach Descript" is usually a timeout, not a failure** — check with `list_projects` / `get_project` before retrying. Never blind-retry a paid job; stop after 1–2 failures and ask.
 
+## Query budget & batching (long-form especially)
+
+Descript enforces a hard per-session ceiling — **"Query count exceeded limit of 100."** A heavy long-form (lots of `prompt_project_agent` calls) can hit it and die **mid-edit, with credits already spent.** To stay under it:
+
+- Keep the **early, sensitive passes one-at-a-time** (filler removal, dead-air, bad-takes — you review each before the next).
+- **BATCH the later, additive passes** into single instructions: e.g. one pass for "colour grade + punch-ins + transitions + SFX," one pass for "all the cards + emphasis pop-ups." Target **~6–10 `prompt_project_agent` calls total** for a long-form — not 30.
+- If you see **"Query count exceeded limit of 100"**: STOP — do NOT blind-retry (it wastes a paid call). The work so far is saved in the project; continue the remaining passes in a fresh continuation, picking up where you left off (use `get_project` to see current state first).
+
 ## Playbook A — long-form cleanup
 
 1. Find/create the project; `import_media` the video **by URL**; `wait_for_job` (auto-transcribes).

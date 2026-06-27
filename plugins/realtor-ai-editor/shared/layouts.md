@@ -18,3 +18,12 @@ Descript has a **Layout** feature (Properties → Layout) — use it. The classi
 ## Other layout uses
 
 Split-screen / picture-in-picture is also good for screen-shares (keep the face in a corner) and side-by-side comparisons. Same rule: the agent should almost always stay visible on a talking-head reel.
+
+## Platform safe zones (where the feed UI eats the frame)
+
+On IG / TikTok / YouTube Shorts the app overlays its own UI **on top of** your vertical video — so keep ALL text, cards, and panels inside a **centre-safe box**:
+
+- **Right ~12% — the icon rail** (like / comment / share / profile). Keep text + panels OUT of it. **Centre-align text; NEVER flush-right.** If a panel runs too wide, **shrink the text — don't extend it into the right rail.**
+- **Bottom ~15% — the handle / caption / CTA bar.** Captions sit ABOVE it (≈0.82–0.86 of the frame, below the face); the CTA card sits above it too.
+- **Top ~8–10% — platform chrome** (TikTok's top tabs, etc.). Pin the hook card just INSIDE this margin (a small gap from the very top), still above the head.
+- **Why this is easy to miss:** Claude frame-QAs the CLEAN export with NO UI overlaid, so it literally cannot see these collisions. Apply the margins by RULE, and have the agent eyeball it in the app before posting. A right-biased CTA or a full-width panel that looks perfect in Descript gets half-buried under the icons in the actual feed.

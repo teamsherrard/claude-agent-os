@@ -2,6 +2,18 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.61.0] — 2026-06-26
+
+### AI Editor (Plugin 6) → v0.13.0 — platform safe zones + query-budget batching
+- **Vertical safe zones** (from the gap-analysis): keep all text/cards out of the **right ~12% icon rail** and the
+  top/bottom UI bars that IG/TikTok/Shorts overlay on the frame — the #1 "looks fine in the editor, broke in the feed"
+  failure, and invisible to frame-QA (the export has no UI). Full spec added to `layouts.md`; one-line rules wired
+  into `caption-style.md`, `graphics-style.md`, and a `final-check.md` check. Centre-align, never flush-right.
+- **Query budget & batching**: guard against Descript's hard **"Query count exceeded limit of 100"** session ceiling
+  — batch the additive long-form passes (~6–10 calls total), recognize the error, and resume instead of blind-retrying,
+  so a heavy long-form edit doesn't die mid-way with credits spent. Added to `descript-playbooks.md`; referenced from
+  `edit-longform`.
+
 ## [0.60.3] — 2026-06-26
 
 ### AI Editor (Plugin 6) → v0.12.3 — full-QC pass: scope the karaoke/cards framing to short-form
