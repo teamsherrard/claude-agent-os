@@ -2,6 +2,33 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.62.0] — 2026-06-26
+
+### AI Editor (Plugin 6) → v0.14.0 — production hardening for scale (zero-refund pass, part 1)
+A 5-lens production-readiness sweep (what causes complaints/refunds at 1000 agents) → a prioritized backlog →
+the 6 BUILD-NOW items, built by file-partitioned agents and adversarially verified (ship_ready: true):
+- **Compliance gate** — `identity/compliance.md` is now read before any on-screen text by edit-longform,
+  edit-shortform, edit-listing, and the navigator, AND is a non-negotiable blocker in `final-check.md` (no
+  banned/superlative/guarantee claims, required disclaimer + license #, fair-housing-safe language). Closes a
+  licensing risk that's worse than a refund. Assistance, not legal advice.
+- **Repurpose batch process (long → N shorts)** — the thin "Recycle" mode is now an exact 7-step process: scope+lock
+  N (default 3, cap 5/session) · one shared import+transcribe · score every candidate span 0–2 on 5 criteria ·
+  pick top N distinct (reject overlap/same-topic; say so if fewer exist) · pre-flight batch query-budget (stay under
+  Descript's 100-query ceiling, split sessions if near 80) · build clips sequentially each-to-done with per-clip
+  checkpoints · frame-QA each · deliver all N at once labelled by hook. Mirrored in Playbook B.
+- **Checkpoint log + resume** — a tiny per-project log (`~/realtor-brain/editor/jobs/<id>.md`, one line per landed
+  pass) lets a long edit resume without re-running (re-charging) passes; plus a graceful "credits/quota exhausted →
+  stop, work is saved, resume later" rule. In descript-playbooks, house-rules, edit-longform, edit-listing.
+- **Hard final-check gate** — `final-check.md` is now a real PASS/FAIL gate (BLOCKERS vs POLISH), and every visual
+  blocker's PASS must cite an actually-read frame timestamp (the editor had falsely claimed off-face before). Any
+  unfixable blocker → STOP, don't deliver.
+- **Connection preflight + cold-start fixes** — navigator does one cheap `list_projects` preflight (auth error →
+  plain "lost connection, reconnecting" + route to setup; empty list = connected); setup no longer reports "failed"
+  on a zero-project (new) account, plus plain-language connect/import troubleshooting.
+- **Expectation-setting** — a one-time kickoff paragraph (clean-and-branded, ~80% to polished, in-house-editor-not-
+  Hollywood, you review before publish) + every hand-back standardized as a REVIEW DRAFT with the human-eyeball asks
+  and the required 80/20 hand-off.
+
 ## [0.61.0] — 2026-06-26
 
 ### AI Editor (Plugin 6) → v0.13.0 — platform safe zones + query-budget batching

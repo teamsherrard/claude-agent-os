@@ -19,6 +19,15 @@ Get these from context and the Brain first. Ask only what's genuinely missing �
 
 For a **listing / home tour**, also check what **footage** they have (a Google Drive folder, files to upload, or just the listing photos) and route to `edit-listing` — property videos use their real footage, never generic stock.
 
+## Connection-health preflight (one cheap check before you route)
+
+Before handing off to an editing skill, do **one** cheap `list_projects` to confirm the editor is actually connected to Descript.
+
+- **If it returns an auth / not-connected / tool-not-found error:** do **not** show the agent the raw error. Say in plain words: *"Looks like the editor lost its connection to Descript — give me 60 seconds to reconnect,"* and route to `editor-setup` (Step 1, reconnect).
+- **An empty project list with no error = connected fine.** Don't treat "no projects yet" as a problem; carry on.
+
+This is one call, not a budget drain — it saves the agent from a confusing failure mid-edit.
+
 ## The one-question rule
 
 When you must ask, ask **one** simple question, in plain words, with **2–3 concrete choices and a recommended default** they can accept with a single word. Never present a wall of options or open-ended questions.
@@ -47,6 +56,7 @@ If something isn't specified, use the Brain + these defaults and move:
 - Captions: full karaoke on for shorts; long-form gets **emphasis pop-ups every ~2–3 min** (a key-phrase callout — no word-by-word karaoke) — see `${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md`.
 - B-roll: their own footage first, then stock (see `${CLAUDE_PLUGIN_ROOT}/shared/broll-ladder.md`).
 - Brand: from `brand.json`.
+- **Before writing ANY on-screen text** (hook card, CTA, emphasis pop-up, captions, lower-thirds), read `~/realtor-brain/identity/compliance.md` first. It carries the agent's brokerage disclaimer, license-number display, fair-housing rules, and the claims they legally can't make — so the words you put on screen stay safe. This is assistance to keep them out of trouble, not legal advice. If something looks risky, soften it and flag it for their eyeball; never invent a disclaimer.
 - Credit discipline: the **80/20 core** by default — do the 80% basics; the agent finishes the 20% by hand for free (see `${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md`).
 Announce the plan in one sentence, then go.
 

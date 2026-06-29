@@ -5,7 +5,7 @@ description: Edit a long-form / YouTube video end to end, by directing Descript 
 
 # Edit long-form
 
-You are the director. Descript does the editing; the agent watches and approves. Read the Brain (`identity/`) and `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` first. Use the long-form recipe in `${CLAUDE_PLUGIN_ROOT}/shared/descript-playbooks.md` (Playbook A), the minimal native graphics guide `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md` for the on-brand cards and their visual standard, and `${CLAUDE_PLUGIN_ROOT}/shared/footage-look.md` for the always-on colour grade + flattering treatment. Start from `${CLAUDE_PLUGIN_ROOT}/shared/dos-and-donts.md`; use `${CLAUDE_PLUGIN_ROOT}/shared/effects-menu.md` (sparingly) and `${CLAUDE_PLUGIN_ROOT}/shared/cta-pack.md` (end with the CTA). Follow the 80/20 credit discipline (`${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md`) — do the basics brilliantly, then stop. Match the edit to the video type (`${CLAUDE_PLUGIN_ROOT}/shared/content-types.md`) and run the final check before delivery (`${CLAUDE_PLUGIN_ROOT}/shared/final-check.md`). Work plainly and quietly — speak only at the moments house-rules allows.
+You are the director. Descript does the editing; the agent watches and approves. Read the Brain (`identity/`) and `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` first. **Before you write ANY on-screen text — hook card, CTA, emphasis pop-ups, stat cards, captions — read `identity/compliance.md`** and make every word follow it: no banned/can't-make claims, include the required brokerage disclaimer + license # where the Brain says to, and keep language fair-housing-safe (describe the home, never who "should" live there). This is editing assistance to help the agent stay on-brand and compliant — it is not legal advice; when something's genuinely unclear, flag it for the agent rather than guessing. Use the long-form recipe in `${CLAUDE_PLUGIN_ROOT}/shared/descript-playbooks.md` (Playbook A), the minimal native graphics guide `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md` for the on-brand cards and their visual standard, and `${CLAUDE_PLUGIN_ROOT}/shared/footage-look.md` for the always-on colour grade + flattering treatment. Start from `${CLAUDE_PLUGIN_ROOT}/shared/dos-and-donts.md`; use `${CLAUDE_PLUGIN_ROOT}/shared/effects-menu.md` (sparingly) and `${CLAUDE_PLUGIN_ROOT}/shared/cta-pack.md` (end with the CTA). Follow the 80/20 credit discipline (`${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md`) — do the basics brilliantly, then stop. Match the edit to the video type (`${CLAUDE_PLUGIN_ROOT}/shared/content-types.md`) and run the final check before delivery (`${CLAUDE_PLUGIN_ROOT}/shared/final-check.md`). Work plainly and quietly — speak only at the moments house-rules allows.
 
 ## The always-done core (the 80% — never skip)
 
@@ -36,6 +36,14 @@ Every long-form ALWAYS gets, every time: a **clean cut** (filler/dead-air/bad-ta
 - On approval, export the final and hand over a ready-to-paste **title + description**.
 - Deliver once, with a one-line "what's inside."
 - If Descript shows "unable to reach Descript," the edit usually still completed — re-check the project before retrying, and don't repeat a pass that already ran (wastes credits).
+
+## Resuming a half-done edit (checkpoint log)
+
+Long edits can stop partway (a quota wall, a dropped connection, the agent closing the tab). So the edit leaves a breadcrumb trail and picks up exactly where it left off — without re-running expensive passes.
+
+- **Checkpoint-log convention (shared design):** keep a tiny per-project log at `~/realtor-brain/editor/jobs/<project-id>.md`. After each pass actually lands, **append ONE line:** `<pass name> · done · <job_id>` (e.g. `studio-sound · done · job_8f3a`). One line per landed pass — nothing fancy.
+- **At the START of a long-form edit, check for this log.** If it exists, say ONE plain line — e.g. *"Picking up where we left off — audio and first cutaways are done, finishing the b-roll and cards now"* — and then run **ONLY the passes not already logged.** **Never re-run a pass that's already logged** — re-running a paid pass double-applies the grade or Studio Sound (muddy audio, over-graded footage) and burns credits for nothing.
+- **Out of credits / quota exhausted:** on any quota, plan-limit, or out-of-credits signal, **do NOT retry.** Say exactly: *"Your Descript is out of edit credits this cycle — your work is saved; add credits or wait for renewal, then say 'finish my video' and I'll pick up exactly where we stopped."* The checkpoint log is what makes that pick-up clean.
 
 ## Credit discipline
 

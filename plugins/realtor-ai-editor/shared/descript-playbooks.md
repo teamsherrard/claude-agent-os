@@ -39,6 +39,28 @@ Descript enforces a hard per-session ceiling — **"Query count exceeded limit o
 - **BATCH the later, additive passes** into single instructions: e.g. one pass for "colour grade + punch-ins + transitions + SFX," one pass for "all the cards + emphasis pop-ups." Target **~6–10 `prompt_project_agent` calls total** for a long-form — not 30.
 - If you see **"Query count exceeded limit of 100"**: STOP — do NOT blind-retry (it wastes a paid call). The work so far is saved in the project; continue the remaining passes in a fresh continuation, picking up where you left off (use `get_project` to see current state first).
 
+### Checkpoint log — so a stopped edit resumes cleanly (no double-charging)
+
+Keep a tiny per-project log at **`~/realtor-brain/editor/jobs/<project-id>.md`**. **Append ONE line per landed pass**, exactly:
+
+```
+<pass name> · done · <job_id>
+```
+
+(e.g. `studio-sound · done · job_8f2a` / `colour-grade+motion · done · job_a13c` / `cards · done · job_77de`). Write the line only AFTER `wait_for_job` confirms `status: success`.
+
+**At the START of any long-form or listing edit, check for this log first.**
+- If it exists, say ONE plain line — e.g. *"Picking up where we left off — audio and first cutaways are done, finishing the b-roll and cards now"* — then run **ONLY the passes not already logged**.
+- **NEVER re-run a logged paid pass.** Re-running grade or Studio Sound double-applies it (over-saturated / over-processed audio) AND wastes credits. The log is the source of truth for what's already done.
+
+### Credits / quota exhausted (named failure mode)
+
+On ANY signal that the agent's Descript is out of edit credits / hit a plan limit / quota exhausted (distinct from the 100-query session ceiling above) — **do NOT retry.** Say, in plain words:
+
+> "Your Descript is out of edit credits this cycle — your work is saved; add credits or wait for renewal, then say 'finish my video' and I'll pick up exactly where we stopped."
+
+When they come back, read the checkpoint log and run only the unlogged passes.
+
 ## Playbook A — long-form cleanup
 
 1. Find/create the project; `import_media` the video **by URL**; `wait_for_job` (auto-transcribes).
@@ -51,9 +73,24 @@ Descript enforces a hard per-session ceiling — **"Query count exceeded limit o
 
 ## Playbook B — short-form / pull shorts
 
+Two modes: a **standalone reel** (one short → steps 4–5 below) and the **repurpose batch** (one long video → N clips). Standalone is the simple path. The repurpose batch is the careful one — follow it in order so you stay under the query ceiling and never double-spend credits.
+
+### B0 — Repurpose batch (long → N clips)
+
+1. **Scope & confirm N.** Ask how many clips they want (**default 3, cap 5** — more is the agent's manual 20%). Confirm the one number before doing anything paid.
+2. **ONE shared import + transcribe.** Import the long video by URL once; `wait_for_job` (auto-transcribes). All clips come from this single project — never re-import per clip.
+3. **SCORE candidate spans (read-only, on the transcript — no paid calls).** Skim the transcript and rate each candidate span **0–2 on each of 5 criteria**: (a) self-contained (makes sense with no setup), (b) has a hook line, (c) high-value or emotional, (d) clean payoff, (e) length-fit (~20–60s, ideal 30–45s). This is pure reading — it spends NO Descript queries.
+4. **PICK the top N distinct spans.** Reject overlapping spans and same-topic repeats — each clip must stand on its own and cover a different idea. **If you can't find N strong distinct spans, say so plainly** (e.g. *"This video really only has 2 reel-worthy moments — want those 2, or should I stretch for a weaker third?"*) rather than forcing filler.
+5. **BATCH the budget.** Plan **~6–8 `prompt_project_agent` calls per clip**; stay under the hard **100-query ceiling**. If the running total nears **~80**, STOP and finish the rest in a fresh session (the checkpoint log makes this clean) — don't risk dying mid-clip with credits spent.
+6. **BUILD clips SEQUENTIALLY, each to done, with per-clip checkpoints.** Use the **identical recipe (steps 3–4 below) for every clip** so they're consistent. Log each landed clip to the checkpoint log (`<clip-N hook> · done · <job_id>`) before starting the next — so a stop/resume picks up at the right clip and never rebuilds a finished one.
+7. **FRAME-QA each clip** before moving on (safe zones, face framing, captions not clipped — see the safe-zone rule in step 4).
+8. **DELIVER all N at once, labelled by hook line** (e.g. *"Clip 1 — 'The #1 mistake first-time buyers make'; Clip 2 — …"*) so the agent can tell them apart at a glance. `publish_project` the set on approval.
+
+### Standalone reel (and the per-clip recipe used in B0 step 6)
+
 1. Find/import as above (by URL).
 2. `prompt_project_agent`: pick stand-alone moments (hook → idea → payoff/CTA); make a 9:16 composition per clip.
-3. Reframe (face centred), cut hard, hook in first ~1.5s.
+3. Reframe (face centred), cut hard, hook in first ~1.5s. **Keep text/graphics inside the vertical safe zones — out of the right ~12% (icon/caption rail) and clear of the top/bottom bars.**
 4. Karaoke captions on (brand style, big ~90pt+, below the face); B-roll on the words (**MAXIMUM 3 clips, never reused, never over the face** — more is the agent's manual 20%); **MANDATORY energy on KEY beats — a couple of zoom-in/out punch-ins (each with a swoosh SFX), smooth transitions at scene changes, a couple of SFX**; ducked music. **Graphics are done natively in Descript and kept MINIMAL — a hook card + a CTA card (2, maybe 3 cards total), each on a rounded brand panel and OFF THE FACE (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`). The karaoke captions already carry the keyword emphasis, so no separate keyword-pop cards by default.**
 5. `publish_project` the set.
 

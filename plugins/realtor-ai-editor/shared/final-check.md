@@ -1,6 +1,54 @@
 # Final check — run before handing back any video
 
-Before you tell the agent it's ready, run this quick self-check against everything we've learned. If something fails, fix it. Don't deliver broken work, and don't over-report.
+Before you tell the agent it's ready, run this self-check against everything we've learned. This is a GATE, not a vibe-check: it runs on EVERY version, including every revision. Work the gates IN ORDER — Gate 1 (compliance) and Gate 2 (pass/fail) first; only once both are green do you move on to the polish self-check and the delivery message. If something fails, fix it. Don't deliver broken work, and don't over-report.
+
+---
+
+## GATE 1 — COMPLIANCE (non-negotiable; runs first, every version)
+
+This is ASSISTANCE, not legal advice — you are helping the agent not trip over their own brokerage's rules, not giving a legal opinion. But the items below are hard: a compliance miss can get a real estate agent in real trouble, so a fail here is a BLOCKER (you cannot deliver).
+
+First, read `identity/compliance.md` from the agent's Brain.
+- **If `identity/compliance.md` is MISSING** — warn the agent ONCE in plain language ("I couldn't find your compliance file, so I can't confirm your disclaimer or license rules — I've kept the video free of any claim cards to be safe; want to set that up?") and then **do NOT auto-add any claim-bearing card** (no stat cards, no "best/top/#1" language, no neighbourhood "who it's for" copy). Captions of what he actually said are fine; invented claim text is not.
+
+When `identity/compliance.md` IS present, every card AND every caption must pass ALL of these:
+- **No banned / superlative / guarantee claims** anywhere on screen — e.g. "best agent", "#1", "number one", "top agent", "guaranteed to sell", "guaranteed", "the only", "always", "never lose". If the agent literally said it on camera, it can stay in the spoken captions, but do NOT manufacture it into a graphic card.
+- **Required brokerage disclaimer + license # present** wherever `identity/compliance.md` requires it (e.g. on the CTA / identity card). Don't invent a disclaimer — use exactly what the file specifies; if the file says it's required but doesn't give the text, that's a FAIL → stop and ask.
+- **Fair-housing-safe language** on any neighbourhood or "who it's for" text — NO steering language: no "great for families", "safe area", "good schools so you know the type", "perfect for young professionals", "quiet/clean neighbourhood" used to signal who belongs. Describe the HOME and the FACTS, never who should or shouldn't live there.
+
+Emit a literal line for each:
+- `COMPLIANCE — banned/superlative claims: PASS / FAIL / FIXED`
+- `COMPLIANCE — disclaimer + license #: PASS / FAIL / FIXED / N/A (no compliance.md — claim cards withheld)`
+- `COMPLIANCE — fair-housing language: PASS / FAIL / FIXED`
+
+Any compliance FAIL you cannot fix in ≤1 pass → STOP. Do not deliver. Tell the agent which item failed and why, in plain language.
+
+---
+
+## GATE 2 — HARD PASS / FAIL (blockers vs polish; runs on every version)
+
+This is the real gate. Split into BLOCKERS (auto-fail — cannot deliver) and POLISH (fix if you can, but they don't block). For EACH blocker, emit a literal line: `<item>: PASS` / `<item>: FAIL` / `<item>: FIXED`.
+
+**The frame-read rule (because the editor has lied about this before):** every VISUAL blocker's PASS MUST cite the exact frame timestamp you actually extracted and Read — e.g. `no text/cards over the face: PASS (read frame @ 00:07)`. A PASS with no cited, actually-read frame is NOT a pass — treat it as FAIL. You have falsely claimed "off-face" on frames you never looked at; that is banned. Read the frame, or it failed.
+
+**BLOCKERS (auto-fail — cannot deliver):**
+1. `Studio Sound confirmed ON (~55%)` — verify it actually applied (not silently off); ~80–90% for phone/echoey. (non-visual)
+2. `short-form captions present + below the face` — karaoke captions exist AND sit below the face. (VISUAL — cite frame)
+3. `opened on the hook` — no settling-in / silent lead-in. (VISUAL or transcript — cite the open)
+4. `ended on a complete thought` — never mid-sentence. (transcript/clip end)
+5. `CTA on screen` — the agent's CTA card is present at the end. (VISUAL — cite frame)
+6. `colour grade applied` — subtle grade is on; skin not pale/orange/yellow. (VISUAL — cite frame)
+7. `NO text/cards over the face` — captions AND cards all clear of the face (or timed over B-roll). (VISUAL — cite frame at each card/caption moment)
+8. `no exposed black bars` — footage fills the frame; no exposed edges from zooms. (VISUAL — cite frame)
+9. `no accidental background removal` — his real background is intact, NOT black/keyed. (VISUAL — cite frame)
+10. `b-roll within the cap + no repeats` — short-form ≤ 3 total; long-form ~1 per 1.5–2 min (~5–7 on 10 min); no repeated clips anywhere. (count them; cite a frame if unsure)
+11. `long-form emphasis pop-ups present (every ~2–3 min)` — long-form only; an emphasis pop-up roughly every 2–3 min (~3–5 on a 10-min video). N/A for short-form. (VISUAL — cite a frame at one pop-up)
+
+**POLISH (fix if quick — does NOT block delivery):** caption size/contrast fine-tuning, SFX level, transition smoothness, panel rounding, perfect text padding, B-roll word-matching nuance, count-up/heavy-AI restraint confirmations. Note any you couldn't perfect so the agent knows it's part of their free 20%.
+
+**Hard stop rule:** any BLOCKER (or compliance item) that FAILS and is NOT fixable in ≤1 pass → STOP. Tell the agent EXACTLY which item failed, in plain language. Do NOT deliver it as "done." A blocker fail is never shipped silently.
+
+---
 
 ## Audio
 - Audio is clean AND natural — Studio Sound at the right level: **default ~55%**, **~80–90% for phone / echoey rooms**; NOT so low it leaves a fishbowl/room echo, and NOT so high it brightens/thins the voice. If a separate high-quality mic track was provided, it's synced in and in lip-sync.
@@ -44,6 +92,20 @@ Before you tell the agent it's ready, run this quick self-check against everythi
 
 ## Verify, then deliver
 - Each paid step actually landed (job result success), not assumed.
-- Hand back once, in plain language, with a one-line "what's inside" + the review link.
+- Both gates above are green (every blocker PASS/FIXED, every compliance line PASS/FIXED/N/A) BEFORE you hand anything back.
+- Hand back once, in plain language, using the standard delivery message below.
+
+## GATE 3 — DELIVERY MESSAGE (the standard hand-back)
+
+Always frame the export as a **REVIEW DRAFT** — the starting point, NOT the finished post. Never call it "done", "final", or "perfect". The message has four parts, in plain non-techy language:
+
+1. **It's a review draft.** One line: "Here's your review draft — take a look before you post." + the review link.
+2. **The spec you hit.** A short, plain "what's inside" — the fixed spec that was actually applied, e.g. "Cleaned up the audio, opened on your hook, karaoke captions, a couple of punch-ins, your CTA card at the end, [N] B-roll clips, colour grade." Keep it to one or two lines.
+3. **The 2–3 human-eyeball checks.** Ask the agent to confirm ONLY the specific things you genuinely can't verify yourself — pick the 2–3 that apply:
+   - "Does the audio FEEL right to your ear?" (you can't hear playback)
+   - "Any text that drifts near your face when you move?" (on-face nuance across motion)
+   - "Does the overall flow/energy feel like you?"
+   (Don't dump the whole checklist — just the handful only a human can judge.)
+4. **The 80/20 hand-off line (ALWAYS include).** Close with: "I've done the heavy 80% for you. The last 20% — small tweaks, swapping a clip, nudging text — is yours to finish by hand in Descript, free, no AI credits." Adjust wording to fit, but the message is non-negotiable: the final 20% is theirs, free, no credits.
 
 **You cannot watch the rendered video play — but you CAN read extracted frames.** Frame-QA the export yourself (extract a frame at each card / caption / B-roll moment with `ffmpeg -ss <t> -i file -frames:v 1` and Read it) to catch contrast/size/sync/off-face failures BEFORE involving the agent. What you still CANNOT verify is live playback, audio feel, on-face nuance across motion, and overall flow — and the editor's own position reports are unreliable (it has claimed captions were clear of the face when they weren't). So after your own frame-QA, hand the agent the review link and ask them to eyeball *those specific things*; NEVER claim a visual is confirmed or "perfect" on a frame you haven't actually looked at. **Final visual QA is still a human step** — say so plainly.

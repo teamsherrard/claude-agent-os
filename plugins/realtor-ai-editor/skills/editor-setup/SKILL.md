@@ -19,7 +19,18 @@ Descript is the one tool that does everything. Walk them through it simply:
 
 If they don't have a Descript account yet, tell them any **paid** plan includes the API/connector at no extra cost, and the connection uses their own account's credits.
 
-Confirm the connection works (`list_projects` finds their projects) before moving on.
+Confirm the connection works before moving on. Run `list_projects`. **Reading the result the right way matters:**
+
+- **An EMPTY list with NO error = the connection is LIVE and working.** A brand-new Descript account simply has no videos in it yet — that's expected, not a problem. Say "You're connected!" and keep going. **Never report "setup failed" just because there are zero projects.**
+- It's only a **real** failure if you get an actual error — "not connected," an auth/sign-in error, or "tool not found." If that happens, re-check: (1) the **Cowork-vs-Code mode toggle** in the desktop app, and (2) that the **Descript connector is switched on for the exact mode they're in** (it's common to have it on in one mode but not the other). Fix that and run `list_projects` again.
+
+### If they can't connect or import — plain-language fixes
+
+Most snags come down to three things. Walk them through these in plain words, no jargon:
+
+- **"Is Descript actually switched on in Code mode — not just Cowork?"** This is the #1 cause. The connector can be on in one mode and off in the other. Have them open Settings → Connectors and make sure Descript is enabled for the mode they're editing in.
+- **Drive sharing:** if a video won't import from a Google Drive link, the link is almost always set to private. Have them open the file in Drive → Share → change to **"Anyone with the link"** → copy the link again. That fixes it nearly every time.
+- **Really big files:** for very large clips (4K, ~10 GB+), Google blocks the auto-download, so the Drive link won't work. Easiest fix: **drag the file straight into the Descript desktop app**, or share a 1080p version instead.
 
 **Tip worth giving them now:** the easiest way to edit is to keep videos in their **Google Drive** — Descript imports straight from a Drive link, with no slow uploads. (One exception: very large 4K files, ~10 GB+, are blocked by Google's large-file download page — for those, a 1080p export or dragging the file into the Descript app works better.)
 
@@ -50,9 +61,17 @@ Explain simply: "B-roll is the extra footage we lay over your talking — skylin
 
 Make it clear: **none of these are required.** They can add them now, later, or never.
 
-## Step 5 — Save and hand off
+## Step 5 — Set expectations (say this ONCE)
 
-Write the settings to the Brain at `~/realtor-brain/editor/config.json` (use `config/editor-config.example.json` as the template), so they persist and sync. Then confirm in one friendly line that they're ready, and tell them the only thing they need to remember:
+Before you hand off, set the right expectation so they're never surprised later. **Say this only the first time** — check `expectations_shown` in their config; if it's already `true`, skip this entirely (don't repeat it every session). Say it warmly, in your own words, but keep all of these points:
+
+> "Quick heads-up on what I do: I take your raw video and make it clean, branded, and ready to post — good audio, captions, your colours, a hook and your call-to-action, and a little energy. I'll get you about **80% of the way to polished**; you add the last little touches by hand, for free. Think of me as your **in-house editor, not a Hollywood VFX studio**. And you always **review and approve** before anything goes out."
+
+After saying it, set `expectations_shown: true` in their config so it's never repeated.
+
+## Step 6 — Save and hand off
+
+Write the settings to the Brain at `~/realtor-brain/editor/config.json` (use `config/editor-config.example.json` as the template), so they persist and sync. Include the `expectations_shown` flag (set to `true` once you've shown the expectation paragraph in Step 5). Then confirm in one friendly line that they're ready, and tell them the only thing they need to remember:
 
 > "You're all set. Whenever you want to edit something, just say **'edit my video'** — I'll take it from there."
 
