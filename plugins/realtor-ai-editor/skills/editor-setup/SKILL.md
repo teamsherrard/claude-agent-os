@@ -11,7 +11,7 @@ Goal: get the agent editing in about five minutes, with the **fewest possible st
 
 Cowork wipes the local sandbox between sessions, so the Brain (and the editor config inside it) lives in **Google Drive**, not on this machine. Before anything else:
 
-1. **Pull the Brain down first** — run the `realtor-brain-sync` skill (or pull `realtor-brain/` from Google Drive). This restores `~/realtor-brain/` including any saved `editor/config.json`, so the editor's settings survive across sessions. Don't skip this even if a local copy seems to exist — the local copy may be stale or empty.
+1. **Pull the Brain down first** — run the `realtor-brain-sync` skill (or pull `realtor-brain/` from Google Drive). This restores `~/realtor-brain/` including any saved `editor/config.json`, so the editor's settings survive across sessions. Don't skip this even if a local copy seems to exist — the local copy may be stale or empty. **If no Brain exists in Drive yet (a brand-new agent), skip the pull and continue — you'll create the config fresh in this session.**
 2. **Idempotent re-run check.** After the pull, look for `~/realtor-brain/editor/config.json`. **If it already exists AND `list_projects` succeeds (an empty list with no error counts as success — see Step 1), you're already set up.** Say warmly: *"Good news — you're already set up and connected. Want me to change anything, or shall we edit?"* Do **not** re-run the whole questionnaire and **never** overwrite a good config. If they name ONE thing to change (e.g. "update my caption style", "change my CTA"), touch **only that one section** of the config and save — leave everything else exactly as it is.
 3. Only if there's **no** config (or `list_projects` returns a real error) do you run the full setup below.
 
@@ -26,6 +26,8 @@ Descript is the one tool that does everything. Walk them through it simply:
 5. Set permissions: leave **Publish** on **"needs approval"** (so nothing ever posts without them saying yes). Everything else can be "always allow."
 
 If they don't have a Descript account yet, tell them any **paid** plan includes the API/connector at no extra cost, and the connection uses their own account's credits.
+
+**If you keep B-roll or videos in Google Drive, add the Google Drive connector too.** In the same place — Settings → Connectors — add **Google Drive** and turn it on for the **same mode as Descript (Code)**. This is optional, but it's what lets the editor reach the footage in your Drive (and it's also where your Brain and editor settings are saved — see Step 0/Step 6). If you don't use Drive for footage, you can skip it for now.
 
 Confirm the connection works before moving on. Run `list_projects`. **Reading the result the right way matters:**
 
@@ -44,12 +46,12 @@ Most snags come down to three things. Walk them through these in plain words, no
 
 ## Step 2 — Brand (pull it, don't ask)
 
-Read `identity/brand-visual.md` (and `identity/voice.md`, `identity/compliance.md`) from the Brain. Build/confirm the editor's `brand.json` from it — see `${CLAUDE_PLUGIN_ROOT}/shared/brand-wiring.md` for the schema. Never show placeholders.
+Read `identity/brand-visual.md` (and `identity/voice.md`, `identity/compliance.md`) from the Brain. Build/confirm the editor's brand from it and write it into the **`"brand"` block inside `~/realtor-brain/editor/config.json`** — there is **no separate `brand.json` file**. See `${CLAUDE_PLUGIN_ROOT}/shared/brand-wiring.md` for the schema and resolution order (the config's brand block is source #1; the Brain's `brand-visual.md` is the fallback). Never show placeholders.
 
 **Handle whatever Brain state they're in — three cases (the Step 0 pull has already run):**
 
-- **(a) Brain folder/file MISSING** (no `~/realtor-brain/` or no brand file even after the pull) → **don't block setup.** Capture just the two essentials inline — their **main brand colour** and **font feel** — write them into `brand.json`, and gently nudge: *"I've got a basic look set. When you have a minute, say **'set up my brain'** to lock in your full brand — then I'll use it everywhere automatically."*
-- **(b) Brain present but brand fields EMPTY** (file exists but colour/font are blank) → ask only those **two essentials** (main colour + font feel) and save them. Don't run a full brand interview — that's the brain skill's job.
+- **(a) Brain folder/file MISSING** (no `~/realtor-brain/` or no brand file even after the pull) → **don't block setup.** Capture just the two essentials inline — their **main brand colour** and **font feel** — write them into the **`"brand"` block of `config.json`**, and gently nudge: *"I've got a basic look set. When you have a minute, say **'set up my brain'** to lock in your full brand — then I'll use it everywhere automatically."*
+- **(b) Brain present but brand fields EMPTY** (file exists but colour/font are blank) → ask only those **two essentials** (main colour + font feel) and save them into the **`"brand"` block of `config.json`**. Don't run a full brand interview — that's the brain skill's job.
 - **(c) Brain populated** → pull the brand **silently** and just confirm it back in one line (e.g. "Using your purple + SF Pro brand"). Don't re-ask anything it already knows.
 
 ## Step 3 — The short questionnaire (only what you can't infer)
@@ -79,15 +81,17 @@ Make it clear: **none of these are required.** They can add them now, later, or 
 
 Before you hand off, set the right expectation so they're never surprised later. **Say this only the first time** — check `expectations_shown` in their config; if it's already `true`, skip this entirely (don't repeat it every session). Say it warmly, in your own words, but keep all of these points:
 
-> "Quick heads-up on what I do: I take your raw video and make it clean, branded, and ready to post — good audio, captions, your colours, a hook and your call-to-action, and a little energy. I'll get you about **80% of the way to polished**; you add the last little touches by hand, for free. Think of me as your **in-house editor, not a Hollywood VFX studio**. And you always **review and approve** before anything goes out."
+> "Quick heads-up on what I do: I take your raw video and make it clean, branded, and ready for you to review and post — good audio, captions, your colours, a hook and your call-to-action, and a little energy. I'll get you about **80% of the way to polished**; you add the last little touches by hand, for free. Think of me as your **in-house editor, not a Hollywood VFX studio**. And you always **review and approve** before anything goes out."
 
 After saying it, set `expectations_shown: true` in their config so it's never repeated.
 
 ## Step 6 — Save and hand off
 
-Write the settings to the Brain at `~/realtor-brain/editor/config.json` (use `config/editor-config.example.json` as the template), so they persist and sync. Include the `expectations_shown` flag (set to `true` once you've shown the expectation paragraph in Step 5).
+Write the settings to the Brain at `~/realtor-brain/editor/config.json` (use `config/editor-config.example.json` as the template), so they persist and sync. Write the captured brand colour/font into the file's **`"brand"` block** (the same block from Step 2 — not a separate file). Include the `expectations_shown` flag (set to `true` once you've shown the expectation paragraph in Step 5).
 
-**Then PUSH the Brain back up to Drive** — run the `realtor-brain-sync` skill (or push `realtor-brain/` to Google Drive). This is what makes the editor config survive: Cowork wipes the local sandbox between sessions, so if you don't push, the settings you just saved are lost next time. (On an idempotent one-section re-run from Step 0, push too — so the single change persists.)
+**Then PUSH the Brain back up to Drive** — but first **check the Google Drive connector is connected** (Step 1). 
+- **If Drive is connected:** run the `realtor-brain-sync` skill (or push `realtor-brain/` to Google Drive). This is what makes the editor config survive: Cowork wipes the local sandbox between sessions, so if you don't push, the settings you just saved are lost next time. (On an idempotent one-section re-run from Step 0, push too — so the single change persists.)
+- **If Drive is NOT connected:** either walk them through adding it now (Settings → Connectors → Google Drive, same mode as Descript — see Step 1), or tell them plainly: *"Your settings are saved on this machine for now, but until Google Drive is connected they won't carry over to your next session. Add the Drive connector when you get a chance and I'll back them up."* So they know the config may not persist yet.
 
 Then confirm in one friendly line that they're ready, and tell them the only thing they need to remember:
 

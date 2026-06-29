@@ -5,6 +5,21 @@
     "note": "Connected in the Claude desktop app. No API key is stored here."
   },
   "brand_source": "~/realtor-brain/identity/brand-visual.md",
+  "_brand_comment": "SINGLE SOURCE OF TRUTH for the editor's brand. Setup writes the captured colours/font here. This block is resolution source #1 (see shared/brand-wiring.md); if blank, readers fall back to the Brain's identity/brand-visual.md, then tasteful defaults. There is NO separate brand.json file.",
+  "brand": {
+    "agent_name": "",
+    "brokerage": "",
+    "brand_name": "",
+    "tagline": "",
+    "city": "",
+    "website": "",
+    "cta_url": "",
+    "colors": { "primary": "", "accent": "", "text": "#FFFFFF", "bg": "" },
+    "fonts": { "heading": "", "body": "" },
+    "logo": "",
+    "caption": { "font": "", "accent": "", "weight": "900", "anim": "karaoke" },
+    "style_pack": "bold-kinetic"
+  },
   "own_footage": {
     "google_drive_folder": "",
     "local_folder": "",

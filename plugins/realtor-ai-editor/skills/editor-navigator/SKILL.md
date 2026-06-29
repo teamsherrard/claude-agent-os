@@ -55,8 +55,12 @@ If something isn't specified, use the Brain + these defaults and move:
 - Aspect ratio from where they post (reels = 9:16, YouTube = 16:9).
 - Captions: full karaoke on for shorts; long-form gets **emphasis pop-ups every ~2–3 min** (a key-phrase callout — no word-by-word karaoke) — see `${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md`.
 - B-roll: their own footage first, then stock (see `${CLAUDE_PLUGIN_ROOT}/shared/broll-ladder.md`).
-- Brand: from `brand.json`.
+- Brand: from the `brand` block inside `~/realtor-brain/editor/config.json` first, then the Brain's `identity/brand-visual.md`, then sensible defaults (there is no separate `brand.json`).
 - **Before writing ANY on-screen text** (hook card, CTA, emphasis pop-up, captions, lower-thirds), read `~/realtor-brain/identity/compliance.md` first. It carries the agent's brokerage disclaimer, license-number display, fair-housing rules, and the claims they legally can't make — so the words you put on screen stay safe. This is assistance to keep them out of trouble, not legal advice. If something looks risky, soften it and flag it for their eyeball; never invent a disclaimer.
+  - The file can be in **three** states — handle them like this:
+    1. **Missing** (no file) — withhold any claim-bearing cards (anything that needs a disclaimer or license #), but **don't stop the edit**: deliver safely with plain captions, and nudge **once**: *"Want to lock your brokerage disclaimer + license #? Just say 'set up my compliance'."*
+    2. **Present and filled** (real disclaimer text) — use it as written.
+    3. **Present but an unfilled placeholder** — it exists but still has `[bracketed]` template tokens or unreplaced template headings (first-run Brain setup scaffolds it as a template before compliance is actually done). **Treat this EXACTLY like Missing:** withhold claim cards, deliver safely with plain captions, nudge once — do **not** fail or dead-end the edit, and **never** stamp a `[placeholder]` disclaimer onto a video. Detection: any `[` bracket token or unreplaced template heading = unfilled.
 - Credit discipline: the **80/20 core** by default — do the 80% basics; the agent finishes the 20% by hand for free (see `${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md`).
 Announce the plan in one sentence, then go.
 

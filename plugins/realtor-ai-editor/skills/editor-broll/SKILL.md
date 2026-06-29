@@ -31,3 +31,5 @@ Claude finds the footage; Descript holds the timeline. Follow `${CLAUDE_PLUGIN_R
 ## Handoff to Descript
 
 Import the chosen media into the Descript project via the connector (import-media), then instruct Descript to place each clip at its transcript moment. The agent sees it appear live. Verify nothing covers the face before moving on.
+
+For stock-library results, import the DIRECT asset/download URL from the API response (e.g. Pexels `video_files[].link`), NOT the human-facing web page URL — the page URL fails import_media.

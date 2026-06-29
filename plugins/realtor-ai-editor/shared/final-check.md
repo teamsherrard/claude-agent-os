@@ -8,20 +8,26 @@ Before you tell the agent it's ready, run this self-check against everything we'
 
 This is ASSISTANCE, not legal advice — you are helping the agent not trip over their own brokerage's rules, not giving a legal opinion. But the items below are hard: a compliance miss can get a real estate agent in real trouble, so a fail here is a BLOCKER (you cannot deliver).
 
-First, read `identity/compliance.md` from the agent's Brain.
-- **If `identity/compliance.md` is MISSING** — warn the agent ONCE in plain language ("I couldn't find your compliance file, so I can't confirm your disclaimer or license rules — I've kept the video free of any claim cards to be safe; want to set that up?") and then **do NOT auto-add any claim-bearing card** (no stat cards, no "best/top/#1" language, no neighbourhood "who it's for" copy). Captions of what he actually said are fine; invented claim text is not.
+First, read `identity/compliance.md` from the agent's Brain. It can be in THREE states, not two — detect which one before you do anything else:
+- **(1) MISSING** — the file doesn't exist.
+- **(2) PRESENT + FILLED** — it exists AND has real disclaimer text (an actual brokerage name, a real license #, real disclaimer wording).
+- **(3) PRESENT BUT UNFILLED PLACEHOLDER** — it exists but is still the first-run template: any `[bracketed]` token (e.g. `[Brokerage Name]`, `[License #]`, `[disclaimer text]`) or an unreplaced template heading is still sitting there. The Brain scaffolds this as a template on first setup; compliance is a later phase, so a brand-new agent's very first edit will often hit this state. **Detection rule:** if the disclaimer/license fields contain ANY `[` bracket token or an unreplaced template heading, treat it as UNFILLED.
 
-When `identity/compliance.md` IS present, every card AND every caption must pass ALL of these:
+**States (1) MISSING and (3) UNFILLED-PLACEHOLDER are handled IDENTICALLY — and neither one FAILS the gate:** warn the agent ONCE in plain language ("I couldn't find a finished compliance file, so I can't confirm your disclaimer or license rules — I've kept the video free of any claim cards to be safe. Say 'set up my compliance' to lock your brokerage disclaimer + license #."), then **do NOT auto-add any claim-bearing card** (no stat cards, no "best/top/#1" language, no neighbourhood "who it's for" copy) and **NEVER stamp a `[placeholder]` disclaimer onto the video**. Captions of what he actually said are fine; invented or placeholder claim text is not. Deliver the edit safely — do NOT stop or FAIL over a missing/unfilled disclaimer; that would dead-end a first-timer's very first edit.
+
+When `identity/compliance.md` is in state **(2) PRESENT + FILLED**, every card AND every caption must pass ALL of these:
 - **No banned / superlative / guarantee claims** anywhere on screen — e.g. "best agent", "#1", "number one", "top agent", "guaranteed to sell", "guaranteed", "the only", "always", "never lose". If the agent literally said it on camera, it can stay in the spoken captions, but do NOT manufacture it into a graphic card.
-- **Required brokerage disclaimer + license # present** wherever `identity/compliance.md` requires it (e.g. on the CTA / identity card). Don't invent a disclaimer — use exactly what the file specifies; if the file says it's required but doesn't give the text, that's a FAIL → stop and ask.
+- **Required brokerage disclaimer + license # present** wherever `identity/compliance.md` requires it (e.g. on the CTA / identity card). Don't invent a disclaimer — use exactly what the file specifies. If a FILLED file says a disclaimer is required but gives no real text, that's a FAIL → stop and ask. (Note: a file that's still an UNFILLED placeholder is NOT this case — it's state (3) above; treat it like MISSING, deliver safely, never stamp the `[placeholder]` text, do NOT FAIL.)
 - **Fair-housing-safe language** on any neighbourhood or "who it's for" text — NO steering language: no "great for families", "safe area", "good schools so you know the type", "perfect for young professionals", "quiet/clean neighbourhood" used to signal who belongs. Describe the HOME and the FACTS, never who should or shouldn't live there.
 
 Emit a literal line for each:
 - `COMPLIANCE — banned/superlative claims: PASS / FAIL / FIXED`
-- `COMPLIANCE — disclaimer + license #: PASS / FAIL / FIXED / N/A (no compliance.md — claim cards withheld)`
+- `COMPLIANCE — disclaimer + license #: PASS / FAIL / FIXED / N/A (no compliance.md — claim cards withheld) / N/A (compliance.md is an unfilled placeholder — claim cards withheld, nudged once)`
 - `COMPLIANCE — fair-housing language: PASS / FAIL / FIXED`
 
-Any compliance FAIL you cannot fix in ≤1 pass → STOP. Do not deliver. Tell the agent which item failed and why, in plain language.
+For the disclaimer line, pick the state: **FILLED** → PASS/FAIL/FIXED as normal. **MISSING** → `N/A (no compliance.md — claim cards withheld)`. **UNFILLED PLACEHOLDER** → `N/A (compliance.md is an unfilled placeholder — claim cards withheld, nudged once)`. Both N/A states are a clean pass for the gate — they do NOT block delivery.
+
+Any compliance FAIL you cannot fix in ≤1 pass → STOP. Do not deliver. Tell the agent which item failed and why, in plain language. **A MISSING or UNFILLED-PLACEHOLDER compliance file is NOT a FAIL** — it resolves to N/A; you deliver the edit safely (claim cards withheld) and nudge once. Never dead-end a first edit over an unset disclaimer.
 
 ---
 

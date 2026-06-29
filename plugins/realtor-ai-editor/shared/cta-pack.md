@@ -1,5 +1,7 @@
 # Call-to-action pop-ups (the agent's branded CTA pack)
 
+Read the agent's saved CTA from `~/realtor-brain/editor/config.json` (text + details captured at setup); only ask if it's missing.
+
 ## Every video ends with their CTA
 
 A realtor video that doesn't tell the viewer what to do next is a wasted video. Always close with the agent's call-to-action — and reinforce it **on screen**, not just spoken. If the agent says "if you want to work with me…", something must appear: their name, number, website, or "DM me."

@@ -4,7 +4,7 @@ The agent's own footage is always **tier 1** — authentic, free, accurate, and 
 
 ## Where own footage comes from
 
-1. **Standing Google Drive B-roll library** — a folder the agent keeps with reusable clips (drone shots, exteriors, signage, neighbourhood, handshakes). Browse it with the Google Drive connector (search / list / download); the folder is set in editor config during setup. Reuse it across every video.
+1. **Standing Google Drive B-roll library** — a folder the agent keeps with reusable clips (drone shots, exteriors, signage, neighbourhood, handshakes). Browse it with the Google Drive connector (search / list / download); the folder is set in editor config during setup. **Prerequisite: the Google Drive connector must be enabled (same mode as Descript) to browse the folder — if it isn't, fall back to per-video uploads.** Reuse it across every video.
 2. **Per-video uploads** — clips the agent drops for *this* video. The common case for a listing: the kitchen, the backyard, the yard, front/back, a drone shot.
 3. **Listing photos** — for property videos, the listing photos become Ken-Burns motion stills wherever there's no video clip of a room.
 

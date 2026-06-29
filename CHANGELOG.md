@@ -2,6 +2,32 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.64.0] — 2026-06-26
+
+### AI Editor (Plugin 6) → v0.16.0 — cold-test dry-run fixes (9 execution bugs)
+A cold-test dry-run (agents role-playing EXECUTION of the real skills on concrete journeys — first-run, the
+long→3-shorts repurpose, and failure/resume) surfaced 9 execution bugs that consistency-review couldn't. All fixed
++ adversarially verified (ship_ready, zero must-fix):
+- **Google Drive connector now provisioned** in setup (it was a hard dependency for the listing journey + the
+  recommended Drive import path, but setup only connected Descript) — plus a prerequisite check in edit-listing /
+  footage-intake before browsing a Drive folder.
+- **Brand single source of truth** — brand now lives in `config.json`'s `brand` block everywhere (setup writes it,
+  the example config ships it, brand-wiring/caption-style/navigator read it). The old standalone `brand.json` (which
+  resolution never read) is gone — brand was silently failing to apply.
+- **Compliance three-state placeholder branch** — a first-run `compliance.md` is a `[bracketed]` template; the gate
+  only handled MISSING/PRESENT, so it either dead-ended the first edit or stamped empty cards. Now an unfilled
+  placeholder is treated like MISSING (withhold claim cards, never stamp a `[placeholder]`, deliver safely, nudge
+  once) — applied identically in final-check, navigator, and all three edit skills.
+- **Saved CTA** is now read back from `config.json` (was captured at setup but never re-read → re-asked every video).
+- **Title/description + chapters** had no procedure despite being promised — added a concrete title/description recipe
+  (with a boundary handoff to the Realtor YouTube System for deep SEO) and real chapter timestamps (00:00 in the
+  description); aligned the over-promise wording.
+- **Stock B-roll import** now uses the direct asset URL (e.g. Pexels `video_files[].link`), not the web page URL that
+  fails `import_media`; **identify-the-hook-line first** before the open-on-hook cut; first-run brain-sync handles an
+  empty/no-Brain-yet state.
+
+This completes the production-hardening arc: hardened (BUILD-NOW + BUILD-LATER) → dry-run-tested → bugs fixed.
+
 ## [0.63.0] — 2026-06-26
 
 ### AI Editor (Plugin 6) → v0.15.0 — production hardening for scale (zero-refund pass, part 2)

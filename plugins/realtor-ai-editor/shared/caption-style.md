@@ -7,7 +7,7 @@
 
 ## The bar (every caption)
 
-- Brand caption style from `brand.json` (`brand.caption`): font, accent colour, weight, animation.
+- Brand caption style from `config.json`'s brand block (`brand.caption`, synced from the Brain at setup): font, accent colour, weight, animation. There is NO standalone `brand.json` — resolution order is `~/realtor-brain/editor/config.json` brand block → the Brain's `identity/brand-visual.md` → defaults (see `${CLAUDE_PLUGIN_ROOT}/shared/brand-wiring.md`).
 - Default look: heavy sans, thick black outline, white text, the **active word** in the brand accent (e.g. gold). No colored chips with dark text.
 - **The active-word highlight must be the WORD itself recoloured (text colour) — NOT a filled colour BOX/background behind the word.** Descript's karaoke "classic" can render a solid accent box that *covers and hides* the word (seen live on Daniel's reel). Pick the karaoke style where the active word's TEXT changes colour, and verify on a frame that the word is still readable, not boxed-over.
 - **Size: big and phone-legible.** Descript's default (~60pt) is too small — set captions large (~90pt+ on a vertical reel), and bump them up if they look small in preview.

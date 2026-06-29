@@ -4,10 +4,14 @@ Brand is **per agent, never hardcoded.** The structure is universal; the colours
 
 ## Resolution order
 
-1. Existing `~/realtor-brain/editor/config.json` brand block.
+Read brand in this exact order — first hit wins:
+
+1. **`~/realtor-brain/editor/config.json`'s `brand` block** — the single source of truth. There is **NO separate `brand.json` file**; brand lives as a `brand` block *inside* `config.json`.
 2. The Realtor AI Brain: `identity/brand-visual.md` (+ `identity/voice.md`, `identity/compliance.md`).
-3. Ask one friendly question (main colour + font feel) only if the Brain has nothing.
-4. Tasteful defaults — never placeholders.
+3. Tasteful defaults — never placeholders.
+4. Ask one friendly question (main colour + font feel) only if there's nothing in 1–3.
+
+**Home that setup writes to:** Editor Setup captures the agent's colour/font and writes it into `config.json`'s `brand` block (synced from the Brain). The example/starter `config.json` ships with an **empty** `brand` block. All readers (caption-style, navigator, and every other skill) read `config.json`'s `brand` block, then fall back to the Brain's `identity/brand-visual.md`, then defaults — never a standalone `brand.json`.
 
 ## Schema (brand block)
 
