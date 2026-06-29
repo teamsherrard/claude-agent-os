@@ -2,6 +2,30 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.63.0] — 2026-06-26
+
+### AI Editor (Plugin 6) → v0.15.0 — production hardening for scale (zero-refund pass, part 2)
+The BUILD-LATER tier from the production-readiness sweep, built by file-partitioned agents + adversarially verified
+(ship_ready: true, zero must-fix):
+- **Snapshot before the first destructive pass** on Descript-only originals (recorded in Descript, no Drive backup),
+  "review proposed cuts" is now a HARD gate, and "say the word and I'll roll it back" goes in the delivery note.
+  Imported videos keep no-duplicates (the Drive file is the backup).
+- **Out-of-scope redirect catalog** — thinner/younger, remove background, logo intro, "make it like [creator]'s",
+  trending song → always the closest yes, never a flat "can't."
+- **Setup is Brain-aware + persistent** — pulls the Brain first, idempotent "you're already set up" path, three
+  Brain-presence cases (missing / empty / populated), and pushes config back to Drive so it survives Cowork's wiped
+  sandbox ("the product forgot me" churn).
+- **Definition-of-Done table** — countable per-format targets (cards, emphasis layer, punch-ins, B-roll, Studio
+  Sound, grade, chapters) so output doesn't drift run-to-run across agents; sits inside the existing hard caps.
+- **Proper-noun / listing-address seeding** made concrete + sourced — name/brokerage/city from the Brain, street
+  address + community from listing intake → a glossary + find-and-correct pass before captions (no misspelled
+  address on a client's on-mute reel).
+- **Bounded repair loop** — diagnose-first (read frames before any paid re-render), defect-vs-taste fork, 2-round
+  cap — no blind credit-burning re-rolls.
+
+Both production-hardening tiers (BUILD-NOW v0.14.0 + BUILD-LATER v0.15.0) are now complete; the remaining
+sweep items were deliberately SKIP'd as over-building.
+
 ## [0.62.0] — 2026-06-26
 
 ### AI Editor (Plugin 6) → v0.14.0 — production hardening for scale (zero-refund pass, part 1)

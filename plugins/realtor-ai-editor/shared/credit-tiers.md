@@ -30,6 +30,23 @@ That clean core is the whole job. Everything past it is the agent's 20%.
 - **NO heavy AI effects** — background removal / green screen, eye contact, AI generation, AI-generated B-roll. Warn and skip.
 - **Punch-ins / SFX / transitions — a few on key beats, never every scene.**
 
+## Definition of Done — the fixed recipe (so every video is consistent)
+
+These are the **countable targets** for each format. They pin down "how much" so the output doesn't drift run-to-run across many agents — same recipe every time. These don't loosen the 80/20 or the hard caps above; they just make the targets countable. When in doubt, hit these exact numbers.
+
+| Element | SHORT-FORM reel | 10-MIN LONG-FORM | LISTING reel |
+|---|---|---|---|
+| **Cards (total)** | hook card + CTA card (**≤2–3 cards**) | hook card + CTA card | hook/address card + price card + CTA (**≤3 cards**) |
+| **Emphasis layer** | **karaoke captions ON** | **~4 emphasis pop-ups** (every ~2–3 min) — **NO karaoke** | **karaoke captions ON** |
+| **Punch-ins** | **2–3** | a couple on key beats | a couple on key beats |
+| **B-roll** | **1–3 clips (max 3)** | **5–7 clips** | **property B-roll matched room-to-room (≤3 on a reel)** |
+| **Studio Sound** | **~55%** (~80–90% phone) | **~55%** (~80–90% phone) | **~55%** (~80–90% phone) |
+| **Colour grade** | **on** | **on** | **on** |
+| **Energy (transitions + SFX)** | a couple SFX + smooth transitions | energy on key beats | smooth transitions + a couple SFX |
+| **Chapters** | — | **yes** | — |
+
+This is the recipe the delivery "what's inside" line should restate back to the agent — e.g. short-form: *"hook + CTA card, karaoke captions, 2–3 punch-ins, up to 3 B-roll, Studio Sound, grade, a couple SFX."* If they want more than the table says, that's the 20% they add by hand (free).
+
 ## Don't waste credits (the hidden drains)
 
 - **Batch into 2–3 passes**, not 15 tiny ones — every `prompt_project_agent` call costs credits. (e.g. one "clean + audio + grade + captions" pass, one "B-roll + a couple cards + CTA" pass.)

@@ -48,9 +48,22 @@ The one-page rulebook for editing a realtor's video. The detailed refs back each
 ## Always end with their call-to-action
 - DO close every video with the agent's CTA on screen — subscribe / DM me / link in bio / call / website (see cta-pack.md).
 
+## Out-of-scope asks → the closest thing we CAN do
+Never a flat "can't." When they ask for something we don't do, warmly redirect to the closest yes.
+
+| They ask for… | What you say we'll do instead |
+| --- | --- |
+| "make me thinner / younger" | Natural, flattering framing and a clean grade so you look your best — I don't reshape faces. |
+| "remove my background" | I keep your real room (it reads as more trustworthy) and add b-roll cutaways for variety. |
+| "an animated logo intro" | A clean brand card to open — not a heavy motion-graphics intro. |
+| "make it like [big creator]'s" | Our own clean, on-brand style — I won't copy someone else's look. |
+| "use this trending / licensed song" | Safe licensed music so your post never gets muted or hit with a copyright strike. |
+
 ## Respect their money (credits)
 - DO offer a lean (cheaper) or full-polish (more credits) option, and say roughly what a pass costs.
 - DO verify each paid step actually landed before saying it's done; never blind-retry; report the cost.
 - DO make sure the audio actually improved — Studio Sound can silently stay OFF if buried in a multi-part pass. Apply it as its own step and confirm it's on (bad audio kills a video).
 - DON'T burn credits experimenting — get a yes first.
 - DON'T create duplicate copies of their video — edit the **original** in place (copies clutter and confuse their Descript). Descript's undo is the safety net.
+- ONE narrow exception: if the video was **recorded straight in Descript** (no source file sitting in their Drive, so there's no backup), make **one** snapshot/duplicate (or a named version checkpoint) BEFORE the first destructive pass — removing filler words, dead air, or bad takes. Just one, and tell them plainly: "I saved a copy of your original first." For **imported** videos (the source file is still in their Drive), keep the no-duplicates rule as-is — the Drive file IS the backup, so no extra copy.
+- ALWAYS show them the proposed cuts and get a yes BEFORE applying any destructive pass (filler/dead-air/bad-take removal) — this is a **hard gate, not optional**. And in the delivery note, add one line: "Say the word and I'll roll it back to your original."

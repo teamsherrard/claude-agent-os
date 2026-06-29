@@ -64,3 +64,13 @@ When the agent gives revision feedback:
 1. **Apply it.**
 2. **Save recurring preferences** to their editor config (`~/realtor-brain/editor/config.json`) so the next video starts that way — caption size, styles they like/dislike, how they want starts and ends, graphics taste.
 3. If the **same note recurs across agents**, it's a plugin-level rule, not a per-agent one — flag it to be baked into the plugin (the way these rules were).
+
+## Repair loop (when the agent wants changes)
+
+Sits with **Learn from every revision** above. When the agent asks to change something, do NOT fire a fresh paid re-render on a hunch — that burns their credits to fix the wrong thing. Work the loop:
+
+1. **DIAGNOSE FIRST — never re-roll blind.** Before ANY paid re-render, look at what's actually there: read the exported frames / the current project state to find what's really wrong. A vague note ("the start feels off") usually has one concrete cause once you look — find it before you spend anything.
+2. **FORK defect vs taste.**
+   - A real **defect** (caption sitting over the face, wrong cut, a grade or Studio Sound pass that didn't land) → fix that **one thing** in a targeted pass that touches only the affected part. Reuse everything else.
+   - A **taste preference or extra** (different music, more b-roll than the cap, a different hook angle) → name it as part of their **free manual 20%** they can finish by hand, OR offer **one bounded paid pass** — and state the credit cost first, before they say go.
+3. **CAP at 2 rounds.** After **2 revision rounds on the same video**, stop re-rolling. Walk the agent through the manual tweak instead — it protects their credits and the relationship, and the last 20% was always theirs to finish free anyway.

@@ -7,6 +7,14 @@ description: Realtor AI Editor — Setup. The first skill a real estate agent ru
 
 Goal: get the agent editing in about five minutes, with the **fewest possible steps**. Read the Realtor AI Brain first (`~/realtor-brain/`) so you never ask for anything it already knows. Go one step at a time, plain language, friendly. Follow `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
 
+## Step 0 — Pull the Brain, then check if they're already set up (do this FIRST)
+
+Cowork wipes the local sandbox between sessions, so the Brain (and the editor config inside it) lives in **Google Drive**, not on this machine. Before anything else:
+
+1. **Pull the Brain down first** — run the `realtor-brain-sync` skill (or pull `realtor-brain/` from Google Drive). This restores `~/realtor-brain/` including any saved `editor/config.json`, so the editor's settings survive across sessions. Don't skip this even if a local copy seems to exist — the local copy may be stale or empty.
+2. **Idempotent re-run check.** After the pull, look for `~/realtor-brain/editor/config.json`. **If it already exists AND `list_projects` succeeds (an empty list with no error counts as success — see Step 1), you're already set up.** Say warmly: *"Good news — you're already set up and connected. Want me to change anything, or shall we edit?"* Do **not** re-run the whole questionnaire and **never** overwrite a good config. If they name ONE thing to change (e.g. "update my caption style", "change my CTA"), touch **only that one section** of the config and save — leave everything else exactly as it is.
+3. Only if there's **no** config (or `list_projects` returns a real error) do you run the full setup below.
+
 ## Step 1 — Connect Descript (the only required connection)
 
 Descript is the one tool that does everything. Walk them through it simply:
@@ -36,7 +44,13 @@ Most snags come down to three things. Walk them through these in plain words, no
 
 ## Step 2 — Brand (pull it, don't ask)
 
-Read `identity/brand-visual.md` (and `identity/voice.md`, `identity/compliance.md`) from the Brain. Build/confirm the editor's `brand.json` from it — see `${CLAUDE_PLUGIN_ROOT}/shared/brand-wiring.md` for the schema. Only if the Brain has no brand info, ask the two essentials (main color + font feel) or use tasteful defaults. Never show placeholders.
+Read `identity/brand-visual.md` (and `identity/voice.md`, `identity/compliance.md`) from the Brain. Build/confirm the editor's `brand.json` from it — see `${CLAUDE_PLUGIN_ROOT}/shared/brand-wiring.md` for the schema. Never show placeholders.
+
+**Handle whatever Brain state they're in — three cases (the Step 0 pull has already run):**
+
+- **(a) Brain folder/file MISSING** (no `~/realtor-brain/` or no brand file even after the pull) → **don't block setup.** Capture just the two essentials inline — their **main brand colour** and **font feel** — write them into `brand.json`, and gently nudge: *"I've got a basic look set. When you have a minute, say **'set up my brain'** to lock in your full brand — then I'll use it everywhere automatically."*
+- **(b) Brain present but brand fields EMPTY** (file exists but colour/font are blank) → ask only those **two essentials** (main colour + font feel) and save them. Don't run a full brand interview — that's the brain skill's job.
+- **(c) Brain populated** → pull the brand **silently** and just confirm it back in one line (e.g. "Using your purple + SF Pro brand"). Don't re-ask anything it already knows.
 
 ## Step 3 — The short questionnaire (only what you can't infer)
 
@@ -71,7 +85,11 @@ After saying it, set `expectations_shown: true` in their config so it's never re
 
 ## Step 6 — Save and hand off
 
-Write the settings to the Brain at `~/realtor-brain/editor/config.json` (use `config/editor-config.example.json` as the template), so they persist and sync. Include the `expectations_shown` flag (set to `true` once you've shown the expectation paragraph in Step 5). Then confirm in one friendly line that they're ready, and tell them the only thing they need to remember:
+Write the settings to the Brain at `~/realtor-brain/editor/config.json` (use `config/editor-config.example.json` as the template), so they persist and sync. Include the `expectations_shown` flag (set to `true` once you've shown the expectation paragraph in Step 5).
+
+**Then PUSH the Brain back up to Drive** — run the `realtor-brain-sync` skill (or push `realtor-brain/` to Google Drive). This is what makes the editor config survive: Cowork wipes the local sandbox between sessions, so if you don't push, the settings you just saved are lost next time. (On an idempotent one-section re-run from Step 0, push too — so the single change persists.)
+
+Then confirm in one friendly line that they're ready, and tell them the only thing they need to remember:
 
 > "You're all set. Whenever you want to edit something, just say **'edit my video'** — I'll take it from there."
 

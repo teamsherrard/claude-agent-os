@@ -14,6 +14,10 @@ The agent's own footage is always **tier 1** — authentic, free, accurate, and 
 - Match clips to transcript moments: kitchen clip on the kitchen line, backyard on the yard mention, drone on the intro / exterior / address reveal.
 - Index the standing Drive library once and reuse it; only re-index new files.
 
+## Listings — capture the address & neighbourhood (not just rooms)
+
+For a **listing**, the intake must capture the **full street address** and the **community / neighbourhood name**, not only the room footage. Get these up front (from the agent, the listing, or the file names) and seed them into Descript's **correct-spelling list before captions run** — so the address and community name appear spelled exactly right on screen. A misspelled address or neighbourhood on a client's reel is an embarrassing, noticed error; seeding them first prevents it. (Generic content — market updates, tips — doesn't need this step.)
+
 ## Has all / some / none
 
 - **Has all:** use own footage, matched to the moments.
