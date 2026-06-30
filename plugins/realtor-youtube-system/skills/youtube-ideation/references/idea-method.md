@@ -2,6 +2,12 @@
 
 > INTERNAL ONLY. The agent never sees this rubric or the scores. They see ranked ideas + packages.
 
+**Applies the YouTube Doctrine** (`${CLAUDE_PLUGIN_ROOT}/shared/youtube-doctrine.md`): **§3** (S.E.A.R.C.H. —
+search intent first, build around exact questions), **§8–§14** (the 6 content types every batch draws
+across), **§16** (title principles + formulas), **§15** (the broad/niche content mix), and **§24.1** (the
+video-idea output template — title · pillar · search intent · target viewer · why it works · thumbnail
+concept · CTA angle, which this method's packaging maps onto).
+
 ## The scoring rubric (rank candidates with this, silently)
 Score each candidate 1–5 on six criteria, then weight:
 
@@ -17,8 +23,11 @@ Score each candidate 1–5 on six criteria, then weight:
 Priority = D×3 + B×3 + G×2 + N×2 + T×1 + H×1 (max 60). Rank high → low. Show only the order.
 
 ## Packaging-first checklist (every idea)
-- **Title:** specific, search-shaped, voice-matched. Use a proven formula (listicle / question / how-to /
-  benefit), front-load the keyword, and lean long-tail for a small channel. See `${CLAUDE_PLUGIN_ROOT}/shared/seo-knowledge-base.md`.
+- **Title (doctrine §16):** specific, search-shaped, voice-matched — match search intent, be market-specific,
+  **include the city/neighbourhood and the year or month when relevance matters**, signal a clear payoff, and
+  differentiate from the top 3–5 ranking videos. Use a proven formula (the §16.5 formulas + listicle /
+  question / how-to / benefit), front-load the keyword, lean long-tail for a small channel. Never too clever
+  or vague (§16.1, §28.6). See `${CLAUDE_PLUGIN_ROOT}/shared/seo-knowledge-base.md`.
 - **Hook:** name the viewer's situation/fear in line one; promise the payoff in line two.
 - **Thumbnail text:** 2–5 punchy on-screen words — a shortened, SEO-aware version of the title. Text only, no design.
 
@@ -40,8 +49,11 @@ Build topic memory each run by reading the agent's **Videos folders + their publ
 - Start from the Research Brief's "Signals for ideas" (timely, local, high-relevance).
 - Pull from the template library in `${CLAUDE_PLUGIN_ROOT}/shared/idea-templates.md` (the Big 5 categories + proven title
   formulas) — fill every `[bracket]` with the agent's real market / communities / price points / niche.
-- Always produce a **BLEND**: broad general/relocation/comparison ideas + niche-specific ideas tied to the
-  agent's specialty (new construction, first-time buyers, mortgage if dually licensed, etc.). Both, every batch.
+- Always produce a **BLEND** (the doctrine's content mix, §15.6): broad searchable pillar ideas drawn across
+  the **6 content types** (§8–§14: market updates · home tours · relocation · community tours · map tours ·
+  local lifestyle) at ~80%, + niche-specific ideas tied to the agent's specialty (new construction,
+  first-time buyers, mortgage if dually licensed, etc.) at ~20% in year one. Both, every batch — don't let a
+  batch be all one content type (§15.1).
 - Fill **coverage gaps** from the read above (underserved pillar, uncovered neighbourhood, neglected avatar).
 - Each idea should map to an avatar question/fear OR a timely local signal — ideally both.
 - Never repeat an already-made topic.

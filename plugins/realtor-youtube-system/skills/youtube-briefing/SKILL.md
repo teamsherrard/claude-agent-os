@@ -9,6 +9,11 @@ The system's core is **on-demand** — one idea flow, least friction, least brea
 for agents who explicitly ask for a scheduled Monday nudge. **Never enable it by default, never imply it's
 required.** Apply `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
 
+**Applies the YouTube Doctrine** (`${CLAUDE_PLUGIN_ROOT}/shared/youtube-doctrine.md`) — the kickoff is the
+front of the doctrine's **weekly workflow (§22.4)**: topic & search intent → research & outline → record →
+edit → upload/optimize → publish/respond → review. It also carries the **cadence (§15.3, §22.4):** 2 videos/
+week ideal, 1/week minimum. The first kickoff of the month leans into the **monthly workflow (§22.5)**.
+
 ## What it does (when an agent turns it on)
 1. Runs **Ideation** fresh — research → triggers → outlier scan (weekly max) → ranked ideas, gaps baked in.
 2. Pre-builds the **#1 idea** (script + SEO package) into its Videos folder so it's genuinely film-ready.
@@ -23,9 +28,20 @@ GOOD MORNING, {Agent} — your YouTube week
 🔥 TIMELY: {any local event worth jumping on}
 ```
 
+## First Monday of the month — the monthly workflow (§22.5)
+The first kickoff of each month does a little more, following the doctrine's monthly rhythm (§22.5):
+- Lead with the **market update** — §22.5 says record it in the first week; include the market-report offer
+  (the same line Ideation uses) as the #1 film-this-week.
+- A one-line nudge to **review last month's analytics** and **note which videos drove comments, calls, or
+  booked appointments** (hand to Analytics / the Coach).
+- The doctrine's key reminder (§22.5, §23.2): **ask every new lead "Which video made you decide to reach
+  out?"** — so they're collecting the signal that tells them what's really working.
+- Point to **one content pillar to improve** this month.
+
 ## Rules
 - ONE short message; every idea carries its real "why"; plain, warm tone (house rules §6, §7).
-- The first kickoff of a month includes the market-report offer (same line Ideation uses).
+- Reflect the doctrine's cadence (§15.3) — 2/week ideal, 1/week minimum; never push volume over quality.
+- The first kickoff of a month runs the monthly-workflow add-ons above (market update first, §22.5).
 - If the schedule ever fails, nothing is lost — everything here is available on demand by asking.
 
 ## Setup + honesty

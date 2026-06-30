@@ -8,6 +8,13 @@ description: Workflow 2 of 2 — Video Production. Run this in a NEW chat that b
 This chat IS the video. Walk the agent through producing it **one simple step at a time** — never dump it
 all at once. Everything saves to this video's folder. Apply `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
 
+> **Applies the YouTube Doctrine** (`${CLAUDE_PLUGIN_ROOT}/shared/youtube-doctrine.md`). Every video follows
+> the universal structure **§4** (Hook → Primary CTA near the beginning → Body → Secondary CTA → next-video
+> direction) and the matching pillar's spec: market updates **§9.1**, home tours **§10.1** (+ new-construction
+> positioning **§10.5**), relocation **§11.1**, community tours **§12.1**, map tours **§13.1/§13.3**, local
+> lifestyle **§14.1**. Lock the packaging and outline on the **§24.2 outline template**. The downstream skills
+> (Script Studio §4–§7, SEO §16–§18) carry the detail — keep this flow coherent with the doctrine throughout.
+
 > This is the guided full-video flow. If the agent only wants one piece — just a script, just the SEO, just
 > a lead magnet, just repurposing — let them jump straight to that skill; don't force the whole sequence.
 
@@ -21,11 +28,16 @@ the spot in plain words and suggest the agent name this chat after the video.
 
 ## Step 1 — Lock the packaging (quick, before the script)
 Confirm or refine the final **Title**, the **Hook**, and **3 short thumbnail text options** (pulled from
-the title — text only, no design). Packaging first.
+the title — text only, no design). Packaging first. Identify the video's **pillar** so the script follows
+that pillar's structure (§9–§14). The hook follows the §5.4 formula (never "welcome back" / §5.5); the title
+is search-intent-first and beats the top 3–5 ranking videos (§16, §16.4).
 
 ## Step 2 — Script
 Write the full teleprompter script in the agent's voice — complete and ready to read, no placeholders
-(Script Studio rules). Save it as **Script**. Offer a 30–45s short-form cut.
+(Script Studio rules) — on the doctrine's structure: Hook (§5) → Primary CTA right after it (§6.2: "people
+just like you" / "your unique situation" / "avoid costly mistakes" / book a private call) → Body that
+delivers the promise (§7) → Secondary CTA + next-video direction at the end (§6.5). Length per §27.6
+(relocation 8–12 min, others 10–25 min). Save it as **Script**. Offer a 30–45s short-form cut.
 
 ## Step 3 — SEO package
 Build it (SEO Engine): 3 title options, 3 thumbnail texts, description + timestamped chapters, tags,

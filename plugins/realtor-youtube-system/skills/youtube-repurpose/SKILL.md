@@ -7,6 +7,12 @@ description: The Repurposing Engine for the Realtor YouTube System — turns one
 
 One shoot → ten written assets. No editing. Apply `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
 
+> **Applies the YouTube Doctrine** (`${CLAUDE_PLUGIN_ROOT}/shared/youtube-doctrine.md`). Repurposing reuses
+> the long-form's already-sourced facts — but every short clip still earns its **§5 hook** (straight into the
+> viewer's question/fear, NEVER "welcome back" or a credentials open — §5.5) and a brief **§6 CTA** (invite
+> them to book / reach out, in the spirit of §6.2 + the §26 library). The blog/email/social keep the doctrine's
+> search-intent, plain-language, local-specificity, and compliance (§21) standards.
+
 > **Part of the video package — one chat = one video.** Normally Step 5 of Make This Video (after filming),
 > inside that same video's chat. For a video made outside the system, run it in a chat/folder for THAT
 > video. Never a separate workflow.
@@ -16,7 +22,9 @@ The video's script (or its key points) + the AI Brain (voice, avatars, CTA, comm
 
 ## Produce a Repurposing Pack
 1. **Short-form scripts (3)** — 30–45s each, distinct angles from the video (a tip, a myth, a "watch out").
-   Each: hook → one point → CTA → caption + hashtags (#Shorts + #YouTubeShorts + 2–4 niche + 1–2 trending).
+   Each: §5 hook (open on the viewer's question/fear or the single best moment — no "welcome back") → one
+   point → a brief §6 CTA (invite them to book / reach out) → caption + hashtags (#Shorts + #YouTubeShorts +
+   2–4 niche + 1–2 trending).
 2. **Blog post (600–900 words)** — the video as an article that actually ranks on Google: apply
    `${CLAUDE_PLUGIN_ROOT}/shared/seo-knowledge-base.md` (keyword-led H1, H2 headers, primary keyword in the
    first 100 words, natural keyword use, a meta-description line). Embed-the-video note at top. This is the whole double-dip.

@@ -2,6 +2,27 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.65.0] — 2026-06-26
+
+### YouTube System (Plugin 3) → v0.8.0 — rebuilt on Mike Sherrard Coaching Inc's full YouTube doctrine
+Captured Mike Sherrard Coaching Inc's complete YouTube methodology (the partner's master knowledge file) as
+the plugin's canonical source of truth, and aligned EVERY skill to it.
+- **New `shared/youtube-doctrine.md`** (1,495 lines, all 30 sections): the S.E.A.R.C.H. framework, the
+  universal video structure, the hook + CTA frameworks, the **6 content pillars** (market updates · home
+  tours · relocation · community tours · map tours · local lifestyle), content mix / channel strategy, titles
+  / thumbnails / descriptions, filming + editing, compliance, the 90-day launch plan, analytics, output
+  templates, and the hook + CTA libraries. The single source of truth — it overrides generic YouTube advice.
+- **house-rules #1 now mandates the doctrine** (core operating priorities + the hard "never" list + the
+  misalignment corrections), so every skill inherits it.
+- **All 16 skills + both shared knowledge files** (`idea-templates.md`, `seo-knowledge-base.md`) aligned to
+  the doctrine. Key reconciliations: the Game Plan's 3 thematic pillars are now explicitly *delivered through*
+  the doctrine's 6 content types, with the 90-day mix following the §22 spread (24 videos at 2/week ≈ 4 market
+  · 5 relocation · 5 community · 3 map · 3 lifestyle · 4 home); the old 3-CTA script model replaced with the
+  doctrine's **2-CTA model** (Primary CTA right after the hook · Secondary CTA + next-video at the end); SEO
+  descriptions now lead with the CTA + links; cadence = 2/week ideal · 1/week minimum; thumbnails follow the
+  per-pillar 33%-headshot rules; analytics centers the "which video made you reach out?" lead question.
+- The shared doc renderer's structure-label list updated for the 2-CTA model (synced identical across plugins).
+
 ## [0.64.0] — 2026-06-26
 
 ### AI Editor (Plugin 6) → v0.16.0 — cold-test dry-run fixes (9 execution bugs)

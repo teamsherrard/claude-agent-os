@@ -9,6 +9,14 @@ Know exactly what's happening in THIS agent's market + niche right now, so Ideat
 timely, locally-specific video ideas. Output = a fresh **Research Brief** (delivered in chat — not stored
 as a spreadsheet; the system regenerates it live).
 
+> **Applies the YouTube Doctrine** (`${CLAUDE_PLUGIN_ROOT}/shared/youtube-doctrine.md`). Research is
+> **search-intent-first** (the S in S.E.A.R.C.H., §3): lead with what the agent's future buyer/seller is
+> actually typing — the exact questions (§3 "E"), not clever angles. For any topic worth a video, run the
+> **competitive audit** (§11.5, §16.4): pull the top 3–5 ranking videos and note title / thumbnail / hook /
+> structure / local specificity / what's missing — so the agent can beat them. When you read existing videos,
+> classify them by **intent** (§23.4: awareness · trust-building · high-intent lead-gen · niche authority ·
+> underperformers needing a title/thumbnail fix). Carry §16's "what makes a title win" into the signals.
+
 ## Step 1 — Read the AI Brain (scope the research)
 Read the AI Brain + YouTube Layer for:
 - City / metro + the specific **communities** the agent serves
@@ -27,7 +35,11 @@ Use web search + fetch. See `references/research-method.md` for sources (Canada 
 2. **Local & lifestyle news ("mayor of the town")** — new developments, infrastructure, schools,
    transit, population growth, notable new businesses/events — per community the agent serves.
 3. **Rising search trends** — what people are increasingly searching about the market, relocation, and
-   the niche (Google Trends-style signals + trending questions).
+   the niche (Google Trends-style signals + trending questions). Capture the **exact questions** buyers/sellers
+   ask (§3 "E") — they become titles.
+4. **Competitive audit** (§11.5, §16.4) — for the strongest topic candidates, search the topic on YouTube and
+   review the **top 3–5 ranking videos**: title, thumbnail, hook, structure, local specificity, and what's
+   missing — so the agent can make a more specific, clearer, more locally-useful version that beats them.
 
 ## Step 3 — Rules (non-negotiable)
 - **Always capture SOURCE + DATE** for every stat or claim. Flag anything older than ~60 days as stale.

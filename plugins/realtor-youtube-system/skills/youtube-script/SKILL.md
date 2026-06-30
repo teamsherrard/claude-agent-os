@@ -7,6 +7,15 @@ description: Script Studio — writes the full video script (long-form, plus a s
 
 Write the video — in the agent's voice, ready to read off a teleprompter.
 
+> **Applies the YouTube Doctrine** (`${CLAUDE_PLUGIN_ROOT}/shared/youtube-doctrine.md`) — the source of
+> truth here. Build the script on **§4 video structure** (Hook → Primary CTA near the beginning → Body →
+> Secondary CTA → next-video direction), **§5 hooks** (incl. the §5.4 formula and the §5.5 bad-hook list),
+> **§6 CTAs** (the §6.2 primary-CTA structure + the §6.4 variations + the §26 library), **§7 body**, and the
+> **§24.6 script template** (conversational, easy to *speak*, never a stiff essay). Match the script to the
+> idea's video type and follow that pillar's structure — market updates §9.1, home tours §10.1 (+ new-
+> construction positioning §10.5), relocation §11.1, community tours §12.1, map tours §13.1/§13.3, lifestyle
+> §14.1. Length: relocation talking-head 8–12 min, other types 10–25 min (§27.6).
+
 > **Part of the video package — one chat = one video.** Normally Step 2 of Make This Video. An agent can
 > also come straight here with their own idea ("just script this idea I had") — no Ideation step needed;
 > that chat simply becomes the video's chat. Gather whatever's missing, plainly.
@@ -24,19 +33,33 @@ Write the video — in the agent's voice, ready to read off a teleprompter.
   only `[double-check]` what genuinely can't be verified.
 
 ## Step 2 — Write the long-form script
-Follow `references/script-format.md` and the 4-part framework in `references/script-framework.md`:
-- **Hook (0:00)** — use the idea's hook; name the viewer's situation/fear, promise the payoff (first 15s decide the watch).
-- **Early Warm CTA (~0:20)** — ⭐ right after the hook, a friendly, non-salesy invite to connect that
-  captures leads early ("we get calls from people just like you every day — reach out anytime"). Value-first, low-pressure.
-- **Intro** — who the agent is + what the video delivers. Credible, brief, never braggy.
-- **Body** — 3–5 clear sections (enough to deliver value, not to pad); each = the point + real specifics; a pattern interrupt + a story where natural. Talking-point bullets for lists.
-- **Soft mid CTA (~halfway)** — one light, value-first reminder tied to the content ("the full checklist's linked below"). Not salesy.
-- **Reassurance** — address the core fear head-on.
-- **Final CTA** — the agent's real CTA, low-pressure, + a nudge to the end screen (next video / playlist / subscribe).
+Follow `references/script-format.md` and the doctrine's universal structure (§4) in `references/script-framework.md`:
+- **Hook (0:00–0:30/60s)** — use the idea's hook; follow the doctrine §5.4 formula: call out the viewer/
+  situation → introduce the tension/mistake/question/opportunity → say what the video helps them understand
+  → add a reason to stay to the end. NEVER "welcome back," a long personal intro, "today we're going to talk
+  about…," or a credentials dump (§5.5). It promises the payoff that matches the title/thumbnail.
+- **Primary CTA (right after the hook)** — the doctrine's §6.2 structure: brief intro ("if you're new here,
+  my name is [Name] with [Brokerage]…") + "people just like you" social proof + speak to "your unique
+  situation" + "avoid costly mistakes" + book a private call via the link in the description. Keep it short.
+  Use the right §6.4 variation for the avatar (buyer / seller / relocation / new-construction / luxury) and
+  the §26 library — pull the agent's real CTA wording, booking link, and brokerage from the Brain.
+- **Body** — deliver the hook's promise (§7): logical order, plain language, local specificity, no random
+  tangents; for each point answer *what they need to know · why it matters · what they should do* (§7.2) and
+  translate facts into guidance — never info-dump a stat without its meaning (§7.3). 3–5 clear sections, real
+  specifics + a story where natural, a pattern interrupt where it helps. Talking-point bullets for lists.
+  Follow the pillar's own body shape (market updates §9.1 · home tours §10.1/§10.5 · relocation §11.1 listicle
+  · community §12.1 · map tours §13.3 logical sequence · lifestyle §14.1).
+- *(Optional, only if it serves the content)* one light, value-first mid reminder tied to the material ("the
+  full checklist's linked below"). Never salesy, never a hard second pitch — the doctrine mandates two CTAs.
+- **Secondary CTA (the very end)** — the final thing said (§6.5): remind them to book/reach out + point to the
+  **next best video** (general next-video for a newer channel, a specific continuation for an established one).
 - **Chapters** — list the timestamped chapters at the end (they feed the SEO description).
 - Cues: `[brackets]` = delivery/B-roll · `>>` = on-screen text · `(source, date)` = a fact's source (not read aloud). Guidance only — no editing.
 
-**Keep it tight — never a 10-page essay.** Match the runtime: ~140 words/min (a 10–12 min video ≈ 1,400–1,700 words). Value-dense, scannable, cut filler.
+**Keep it tight — never a 10-page essay.** Match the runtime: ~140 words/min. Target the doctrine's length
+(§27.6) — relocation talking-head **8–12 min**, all other types **10–25 min** — and write the word count to
+fit (e.g. a 10–12 min video ≈ 1,400–1,700 words). Value-dense, scannable, cut filler. Per §24.6 it must read
+**easy to speak** — conversational lines, clearly-labeled sections, bullet-friendly delivery — never a stiff essay.
 
 **Verified facts only.** Use only facts you can source from the Research Brief, tagged `(source, date)`.
 Any number/claim you can't verify → write `[double-check before filming]`, never guess. The agent must never say something false on camera.
@@ -52,7 +75,9 @@ Brain's real differentiators, communities, and avatar situations). If the agent 
 client example in chat, weave it in seamlessly — but the script must always be 100% filmable as delivered.
 
 ## Step 4 — Short-form cut
-Also write one 30–45s short-form script (Reel/Short/TikTok): punchy hook → one core point → the CTA.
+Also write one 30–45s short-form script (Reel/Short/TikTok): punchy hook (same §5 rules — straight into the
+viewer's question, no "welcome back") → one core point → a brief CTA in the §6 spirit (invite them to reach
+out / book).
 
 ## Step 5 — Compliance + fact-check
 Before saving: (1) **fact-check** — verify every stat/claim is sourced from the Research Brief; flag anything

@@ -9,6 +9,14 @@ One-time onboarding that stands up the agent's YouTube System as a **layer on to
 AI Brain**. By the end the agent has: a YouTube Layer linked to their AI Brain, connected tools, a clean Google
 Drive workspace (Videos + Setup), and their full **YouTube Game Plan** — the first epic deliverable.
 
+**Applies the YouTube Doctrine** (`${CLAUDE_PLUGIN_ROOT}/shared/youtube-doctrine.md`) — setup feeds the Game
+Plan, so it carries the doctrine's **default assumptions (§1.4)** into the Layer: the agent is here to
+generate real estate leads (not become a full-time creator), most viewers are new to them, they're building
+authority in a **specific market**, they should **test all 6 content types before niching** (§15), and the
+launch follows the **90-day plan (§22)** at the **§15.3 cadence (2/week ideal · 1/week minimum · 3/week only
+if quality holds)**. Don't re-teach strategy here — capture the channel, default everything else from the
+Brain + doctrine, and hand to the Game Plan.
+
 ## ⭐ THE #1 RULE: ONE BRAIN, NEVER TWO
 The agent's **identity, market, niche, avatars, offer, and voice already live in the shared Realtor
 AI Brain.** This skill does **NOT** rebuild any of it and **NEVER re-asks it.** It READS the AI Brain
@@ -58,7 +66,8 @@ performers (the Game Plan audits the channel from there).
 - **Goals** (YouTube, business, life, personal) → `identity/strategy.md`. The Game Plan's math uses these.
 - **Competitors they admire/follow locally** → the Brain. If none are there, the Outlier engine finds them
   later — don't ask at setup.
-- **Posting cadence** → `identity/content-engine.md`.
+- **Posting cadence** → `identity/content-engine.md` (if missing/vague, default to the doctrine §15.3: 2/week
+  ideal, 1/week minimum — the Game Plan calendar uses this).
 - **Niche, neighbourhoods, avatars, voice, offer, lead magnets** → the Brain.
 
 If any of those are genuinely missing from the Brain, **don't re-ask them here.** Note it once, kindly, and

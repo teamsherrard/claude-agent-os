@@ -1,5 +1,9 @@
 # Research Method — Sources, Queries & Brief Format
 
+**Applies the YouTube Doctrine** (`${CLAUDE_PLUGIN_ROOT}/shared/youtube-doctrine.md`): search-intent-first
+(§3 S.E.A.R.C.H.), the competitive audit (§11.5, §16.4), classify-by-intent (§23.4), and what makes a title
+win (§16). Lead with the exact questions buyers/sellers type (§3 "E"); never fabricate volumes (§21.1).
+
 ## Sources by country
 
 ### Canada
@@ -26,12 +30,23 @@
 - "{niche} {city} {year}" (e.g. "first time home buyer Calgary 2026")
 
 ## Demand evidence (to justify each idea — the moat)
-Gather a real demand signal for the top ideas so each can be justified, not asserted:
+Gather a real demand signal for the top ideas so each can be justified, not asserted. Lead with **search
+intent** (§3): what is the future buyer/seller actually typing, and what decision/fear/desire is behind it?
 - Google Trends — is the topic / relocation route rising for this market?
-- YouTube + Google autocomplete and "people also ask" — what are people actually typing/asking?
+- YouTube + Google autocomplete and "people also ask" — what are people actually typing/asking? Capture the
+  **exact questions** (§3 "E") — they become titles.
 - AnswerThePublic / AlsoAsked-style questions for the niche.
 - Competitor outliers (from the Outlier scan) — proven demand for a similar video.
 Attach the signal + its source to the idea. Never fabricate exact search volumes.
+
+## Competitive audit — top 3–5 ranking videos (§11.5, §16.4)
+Before a video, search the topic on YouTube and review the **top 3–5 ranking videos** so the agent can beat
+them. For each, note: **title · thumbnail · hook · structure/delivery · local specificity · what's missing**.
+Then state how the agent's version wins — more specific, clearer, more curiosity-driven, more timely, or more
+locally useful (§16). When useful, classify each by **intent** (§23.4): awareness · trust-building · high-
+intent lead-gen · niche authority · underperformer needing a title/thumbnail fix. Useful for relocation,
+community, market-update, and any high-competition topic — it directly sharpens the title and thumbnail.
+- Query: "{topic} {city}" / "moving to {city} {year}" / "{community} {city}" on YouTube; scan the top results.
 
 ## Price-point & comparison videos — pull LIVE listings (so scripts use real numbers)
 When the video is a price-point ("What does $Xk get you…") or comparison ("$X vs $Y," "[Community] vs
@@ -70,8 +85,13 @@ RESEARCH BRIEF — {Agent}, {City} — week of {date}
 
 5) RISING INTEREST / TRENDS
    - {topic people are increasingly searching} — signal + why it matters now
+   - Exact questions buyers/sellers are typing (§3 "E") — these become titles
 
-6) SIGNALS FOR IDEAS  ← feeds Ideation
+6) COMPETITIVE AUDIT (for the top topic candidates — §11.5, §16.4)
+   - {topic}: top 3–5 ranking videos → title / thumbnail / hook / local specificity / what's missing
+     → how the agent beats them (more specific, clearer, more timely, more locally useful)
+
+7) SIGNALS FOR IDEAS  ← feeds Ideation
    - 3–6 of the most content-worthy hooks from above, each one line, each tied to an avatar/pillar
 ```
 Keep it tight and skimmable. Every number carries a source + date. The "Signals for ideas" section is

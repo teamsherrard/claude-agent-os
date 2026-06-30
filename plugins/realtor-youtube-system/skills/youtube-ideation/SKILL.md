@@ -9,6 +9,13 @@ The realtor's front door — **on-demand by design.** They ask when they're read
 scheduled, nothing can silently break, and the data is fresh at the exact moment they ask. Talk plain +
 warm, never technical (`${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` §6). All machinery runs invisibly.
 
+**Applies the YouTube Doctrine** (`${CLAUDE_PLUGIN_ROOT}/shared/youtube-doctrine.md`) — ideation runs on
+**§3 (S.E.A.R.C.H.: search intent first, exact questions)**, **§8–§14 (the 6 content pillars)**, **§16 (title
+principles + formulas)**, **§15 (content mix — blend broad searchable with niche)**, and **§24.1 (the
+video-idea output template)**. The "blend" the agent gets is the doctrine's content mix in action: broad
+searchable pillar content (~80%) plus the agent's niche (~20% in year one, §15.6); every idea starts from a
+real search the buyer/seller would type, not a clever angle.
+
 ## Step 1 — Warm welcome + a quick question
 Find the scope in one friendly question:
 > "Awesome — let's find your next videos. Quick question: how many are you looking to film? Just one or
@@ -30,9 +37,12 @@ Run the engine in `references/idea-method.md` (rubric scored silently, packaging
 - **Aligned to the Game Plan first (house rules #9):** draw the batch from the agent's active pillars + the
   planned title backlog — advance the strategy and fill its next gaps, not random topics. A timely/off-plan
   idea is fine when a real signal warrants it — tie it to a pillar, or offer to fold it into the plan.
-- **A BLEND, always:** broad general/relocation/comparison ideas + niche-specific ideas from their specialty.
-- **Coverage gaps are baked into the batch automatically** — if a neighbourhood or pillar is uncovered, one
-  of the ideas simply IS that gap (with its "why"). **Never run a separate "gap" conversation or second
+- **A BLEND, always (the doctrine's content mix, §15.6):** broad searchable pillar ideas (relocation,
+  community/map tours, market updates, home tours, local lifestyle — the 6 content types in §8–§14) make up
+  the bulk (~80%), plus niche-specific ideas from their specialty (~20% in year one). Draw across the six
+  content types so the channel isn't all one pillar (§15.1, §28.3).
+- **Coverage gaps are baked into the batch automatically** — if a neighbourhood or content type is uncovered,
+  one of the ideas simply IS that gap (with its "why"). **Never run a separate "gap" conversation or second
   list** — one list, nothing for the agent to juggle or overthink.
 - Hyper-specific to their real market, communities, price points, and the cities people relocate from.
 

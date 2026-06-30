@@ -23,6 +23,14 @@ Claude themselves, because it fuses Mike's method with THEIR Brain + THEIR chann
 **Apply house rules** (`${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`) — especially the credibility stamp (#8),
 compliance/Fair-Housing on titles (#2), honest-no-guarantees (#5), and the clean-doc format (#3).
 
+**Applies the YouTube Doctrine** (`${CLAUDE_PLUGIN_ROOT}/shared/youtube-doctrine.md`) — the flagship strategy
+doc IS the doctrine made personal. Lean on **§22** (the 90-day launch plan + the exact 24-video mix), **§15**
+(content mix · 20/80 niche · small-market blend · one channel unless avatars truly differ), **§8** (the 6
+content pillars), **§3** (S.E.A.R.C.H.), and **§16** (titles). **Pillar reconciliation:** the agent's 3
+chosen pillars are their thematic FOCUSES — they are *delivered through* the doctrine's 6 content types
+(market update · home tour · relocation · community tour · map tour · local lifestyle), and the 90-day mix
+follows §22. Prefer the doctrine's terminology and the §22 mix.
+
 > **The "why not just do it myself" moat:** Mike's frameworks × their Brain (offer, market, avatars, goals) ×
 > their real channel data. The premium feel comes from **substance + structure**, delivered as a clean,
 > well-structured Google Doc — never visual design. (For a designed PDF, hand a claude.ai/design prompt.)
@@ -53,7 +61,7 @@ Read `~/realtor-brain/brain.md`, then:
   - Competitor analysis → `${CLAUDE_PLUGIN_ROOT}/skills/youtube-outliers/SKILL.md`
   - Search/market signals → `${CLAUDE_PLUGIN_ROOT}/skills/youtube-research/references/research-method.md`
   - Pillars + exact titles → `${CLAUDE_PLUGIN_ROOT}/skills/youtube-ideation/references/idea-method.md` + `${CLAUDE_PLUGIN_ROOT}/shared/idea-templates.md`
-  - The 4-part video structure → `${CLAUDE_PLUGIN_ROOT}/skills/youtube-script/references/script-framework.md`
+  - The video structure (doctrine §4) → `${CLAUDE_PLUGIN_ROOT}/skills/youtube-script/references/script-framework.md`
 
 ## Step 3 — Get the channel data for the audit (scaled — house rules #6 plain talk)
 The audit flexes to wherever they are (full detail in the framework). The channel is mostly **public**, so:
@@ -72,11 +80,16 @@ pillars) + a head-to-head table vs a real local competitor (from Outliers). 10 �
 "too early to read much," acknowledge the start. 0 → skip; this becomes a launch plan. Always name the
 insight: *"your best-performing content has always been X — there's an audience, they just can't find you."*
 
-## Phase 2 — The 3 Pillars (chosen by LEAD TYPE)
+## Phase 2 — The 3 Pillars (the agent's thematic FOCUSES, chosen by LEAD TYPE)
 Pick **3 high-intent pillars** from the Brain (niche, market, avatars) + real demand (Research) + what's
 winning locally (Outliers). Each pillar targets a specific motivated lead. For each: a short *"why this
 pillar generates leads"* (the lead psychology) + a named playlist. (Riya, e.g.: New Construction / Calgary
 Market Updates / Relocation to Calgary.)
+**Reconcile with the doctrine's 6 content types (§8):** these 3 pillars are the agent's thematic focuses —
+they are *delivered through* the doctrine's six content TYPES (market update · home tour · relocation ·
+community tour · map tour · local lifestyle). Make that explicit, and remember the doctrine's own guidance:
+test all six types in the first 90 days before over-committing to a focus (§15.1, §28.3). The 90-day mix
+(Phase 6) follows the §22 spread across all six types, weighted toward the agent's 3 focuses.
 
 ## Phase 3 — Exact Video Titles per pillar (the gold)
 For each pillar, generate **15–20 EXACT, search-optimized titles** (not vague ideas), each annotated with
@@ -92,16 +105,22 @@ milestones.` Show the numbers, **state the assumptions**, and frame it as a **cr
 guarantee** (house rules #2 + #5). Reframe gently: subscribers are a vanity metric unless they convert — tie
 subs → leads → deals. This is the section that makes them believe *"this is genuinely possible."*
 
-## Phase 5 — The 4 Strategic Shifts + Video Structure + Playlists
-- The **4 strategic shifts** (tailored to their audit): length (10–20 min), search-intent titles, early CTA
-  (first 60–90s), playlists per pillar.
-- The **4-part video structure** (Hook → Early CTA → Content → Closing CTA) — from `script-framework.md`,
-  with their real CTA from the Brain (a call OR a lead magnet — not hardcoded).
-- The named **playlists** (one per pillar).
+## Phase 5 — The Strategic Shifts + Video Structure + Playlists
+- The **strategic shifts** (tailored to their audit, from the doctrine): length (10–20 min; relocation 8–12,
+  §27.6), search-intent titles (§16), the **primary CTA placed early** (first 60–90s, §6.1), playlists per
+  pillar (§15.1, S.E.A.R.C.H. "C").
+- The **video structure** (doctrine §4): **Hook → Primary CTA → Body → Secondary CTA + next-video** — from
+  `script-framework.md`, with their real CTA from the Brain (a private call OR a lead magnet — not hardcoded).
+- The named **playlists** (one per pillar focus).
 
 ## Phase 6 — 90-Day Calendar + Success Metrics
-- A **90-day publishing calendar** at their real cadence (default ~2/week), week by week, mixing pillars,
-  front-loading the broadest titles.
+- A **90-day publishing calendar** at their real cadence (doctrine §15.3: **2/week ideal · 1/week minimum ·
+  3/week only if quality holds**), week by week, front-loading the broadest titles. **Follow the §22 mix:** at
+  2/week for 12 weeks = **24 videos** ≈ 4 market updates · 5 relocation · 5 community tours · 3 map tours ·
+  3 local lifestyle · 4 home tours (adjust for inventory access, local demand, market size, and the agent's
+  3 focuses). **If 1/week**, rotate through the pillars (§22.3 priority: relocation/high-intent local → market
+  update → community tour → map tour → local lifestyle/home tour) rather than getting stuck in one type.
+  Record the **market update in the first week of each month** (§9.3, §22.5).
 - A **success-metrics** block with 90-day targets (view duration, CTR, subs, leads/bookings, ranking) framed
   as **milestones toward their 12-month goal** — not random numbers.
 
@@ -135,7 +154,7 @@ subs → leads → deals. This is the section that makes them believe *"this is 
 - [ ] 15–20 EXACT search-optimized titles per pillar, annotated (intent + lead type), broad→niche
 - [ ] **Every title Fair-Housing-safe + compliant** (house rules #2)
 - [ ] Goal-math present, assumptions stated, framed as a credible path — **no guarantees** (house rules #2 + #5)
-- [ ] 4 shifts + 4-part video structure + playlists + 90-day calendar + metrics-as-milestones
+- [ ] Strategic shifts + the §4 video structure (Hook → Primary CTA → Body → Secondary CTA) + playlists + 90-day calendar (§22 mix) + metrics-as-milestones
 - [ ] Built in the agent's voice; local and specific (why-not-ChatGPT)
 - [ ] **Credibility stamp** present (byline + footer, house rules #8)
 - [ ] Saved as `YouTube Game Plan — [Agent]` at the workspace root; location confirmed plainly

@@ -5,6 +5,13 @@ plans. The deliverable reads like a premium coaching document: an honest audit, 
 titles, and a goal-backed plan. Substance + structure is what makes it feel worth the cohort price — not
 visual design.
 
+**This framework IS the YouTube Doctrine made personal** (`${CLAUDE_PLUGIN_ROOT}/shared/youtube-doctrine.md`).
+Anchor to **§22** (90-day plan + the exact 24-video mix), **§15** (content mix · 20/80 niche · small-market ·
+1-vs-2 channels), **§8** (the 6 content types), **§3** (S.E.A.R.C.H.), **§16** (titles). **Pillar
+reconciliation:** the 3 pillars below are the agent's thematic FOCUSES, *delivered through* the doctrine's
+six content TYPES (market update · home tour · relocation · community tour · map tour · local lifestyle); the
+90-day calendar follows the §22 spread across all six.
+
 ---
 
 ## The document structure (assemble in this order)
@@ -49,13 +56,21 @@ the Outliers engine.
 - **15–20 exact titles** in a list: `# · Exact Title · Search Intent & Lead Type`, ordered broad→niche.
 - A **named playlist**.
 
-**7. The 4-Part Video Structure** — Hook (0:00–0:30, the viewer's pain, not "welcome back") → Early CTA
-(0:30–1:00) → Content (1:00–end, 10–20 min of real value) → Closing CTA (final 60s). Pull the canonical
-version from `${CLAUDE_PLUGIN_ROOT}/skills/youtube-script/references/script-framework.md`; include one short
-example hook + CTA in the agent's voice.
+**7. The Video Structure (doctrine §4)** — Hook (0:00–0:30, the viewer's question/fear, not "welcome back" —
+§5) → **Primary CTA** (0:30–1:00, the warm "people just like you" invite — §6.2) → Body (1:00–end, 10–20 min
+of real, local value — §7) → **Secondary CTA** (final 60s: book + the next best video — §6.5). Pull the
+canonical version from `${CLAUDE_PLUGIN_ROOT}/skills/youtube-script/references/script-framework.md`; include
+one short example hook + CTA in the agent's voice.
 
-**8. 90-Day Publishing Calendar** — a week-by-week table at their real cadence (default 2 videos/week),
-mixing pillars, front-loading the broadest-reach titles first. Concrete titles in each slot (drawn from §6).
+**8. 90-Day Publishing Calendar** — a week-by-week table at their real cadence (doctrine §15.3: **2/week
+ideal · 1/week minimum · 3/week only if quality holds**), front-loading the broadest-reach titles first,
+concrete titles in each slot (drawn from §6). **Use the doctrine §22 mix:** 2/week × 12 weeks = **24 videos**
+≈ **4 market updates · 5 relocation · 5 community tours · 3 map tours · 3 local lifestyle · 4 home tours**
+(adjust for inventory access, local demand, agent strengths, market size, and the agent's 3 focuses). At
+**1/week**, rotate the pillars in the §22.3 priority order (relocation/high-intent local → market update →
+community tour → map tour → local lifestyle/home tour). Schedule the **market update in the first week of each
+month** (§9.3). The 24 are spread across all six content types, weighted toward the 3 focuses — testing every
+type in the first 90 days is the point (§15.1).
 
 **9. Success Metrics** — a small table: Metric · What it measures · 90-day target. Frame every target as a
 **milestone toward the 12-month business goal** (Phase 4), not a random number. Sensible defaults: avg view
@@ -85,17 +100,26 @@ Outliers engine (public data). Honest only — never invent a stat.
 
 ---
 
-## Pillars — choose by LEAD TYPE
-Pick 3 pillars where (a) the agent's Brain shows niche/avatar fit, (b) there's real search demand (Research),
-and (c) competitors are already winning (Outliers). Each pillar should attract a **specific motivated lead**:
+## Pillars — the 3 thematic FOCUSES, chosen by LEAD TYPE
+These 3 pillars are the agent's thematic focuses — they are **delivered through the doctrine's six content
+TYPES** (§8: market update · home tour · relocation · community tour · map tour · local lifestyle), and the
+90-day calendar still spreads across all six per the §22 mix. Pick 3 focuses where (a) the agent's Brain shows
+niche/avatar fit, (b) there's real search demand (Research), and (c) competitors are already winning
+(Outliers). Each should attract a **specific motivated lead**:
 - **Relocation** — the highest-volume traffic driver for local agents; out-of-state buyers research for weeks.
   *(Honest/"warning"-framed titles outperform here — e.g. "Avoid These 5 [City] Suburbs if You're Moving
   From Out of State." Embrace it.)*
 - **Market Updates** — the best seller-lead format; homeowners thinking of selling binge these to time the
   market. Translate data into decisions, never just read stats.
-- **A niche pillar** — the agent's specialty (new construction, first-time buyers, probate/inherited,
+- **A niche focus** — the agent's specialty (new construction, first-time buyers, probate/inherited,
   downsizers, investors) — lower volume, highest lead intent.
 Give each a one-paragraph *"why this pillar generates leads."* Name a playlist per pillar.
+
+**Honor the doctrine's content-mix rules (§15):** the first 90 days test all six content types before
+over-committing (§15.1); a **niche focus stays ~20% / broad searchable ~80%** in year one, +~20%/yr only if
+data supports it (§15.6); a **small market blends** its own content with the nearest larger market (§15.5);
+and it's **one channel unless the avatars are truly different** (§15.4). The 3 focuses guide the weighting of
+the §22 mix — they don't replace the six types.
 
 ## Exact titles — the method (not vague ideas)
 - **Search-intent first.** The title mirrors the exact words the audience types. The audience searches the

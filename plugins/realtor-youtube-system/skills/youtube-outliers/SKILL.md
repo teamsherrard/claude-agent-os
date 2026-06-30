@@ -7,6 +7,14 @@ description: Competitor Intelligence for the Realtor YouTube System — two jobs
 
 Find proven demand by studying what's already winning. Apply `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
 
+> **Applies the YouTube Doctrine** (`${CLAUDE_PLUGIN_ROOT}/shared/youtube-doctrine.md`) — the **competitive
+> audit** (§11.5 + §16.4: study the top 3–5 ranking videos and beat them on title, thumbnail, hook, delivery,
+> local specificity, and what's missing), the **analytics lens** (§23.3–§23.4: which topics to repeat from a
+> NEW angle, and classifying videos by intent — awareness / trust-building / high-intent lead-gen / niche
+> authority / underperforming-needs-new-title-or-thumbnail), and **§3 "R — repetition wins"** (cover the same
+> proven topic from many angles to build topic authority — not copy it). Every recreate must be **localized,
+> on-brand, and stronger** than the original, never a clone.
+
 ## Part A — Outlier scan (weekly MAX — never more)
 YouTube long-form doesn't move daily. Run this **once a week at most** — typically refreshed when the
 agent asks for ideas, or on demand.
@@ -25,8 +33,10 @@ list of real outliers beats a long list of noise.
 1. Channels: the competitors named in the AI Brain; if none, find 3–7 relevant local/niche channels.
 2. Scan their recent uploads against the three-part test above (public data — team-held API key in the
    backend, or web/YouTube search; never the agent's credentials).
-3. For each true outlier, reverse-engineer: the topic, the title pattern, the hook/angle, why it worked.
-4. Translate into a **stronger, localized, on-brand version** for THIS agent.
+3. For each true outlier, run the **competitive audit (§11.5 / §16.4)**: title · thumbnail · hook · delivery ·
+   structure · local specificity · **what's missing** · why it worked.
+4. Translate into a **stronger, localized, on-brand version** for THIS agent — beating the original on title,
+   thumbnail, and delivery (§16.4), in the agent's voice and market.
 
 ## Part B — Evergreen competition analysis (monthly or on demand)
 The deeper sweep — find the **proven, durable** topics in the agent's market worth recreating:
@@ -34,8 +44,11 @@ The deeper sweep — find the **proven, durable** topics in the agent's market w
 2. **Mine their greatest hits:** for each, compile their most popular videos that are **2+ years old** —
    topics that still pull views years later = durable search demand, not a spike.
 3. **Build the recreate list:** for each, give the agent — the topic · why it's proven (channel + rough view
-   scale + age) · their stronger version (better title/hook, localized, their voice).
-4. **Help them recreate it:** offer to take any pick straight into "Make This Video."
+   scale + age) · their stronger version (audited per §11.5/§16.4 → better title/hook/thumbnail, localized,
+   their voice, and what the original missed).
+4. **Help them recreate it:** offer to take any pick straight into "Make This Video." Flag the **repeat-from-a-
+   new-angle** plays (§3 R, §23.3): a proven topic the agent should cover from several distinct angles over
+   time to build topic authority — never the same video twice.
 
 ### If automation can't get clean numbers — teach the manual way (5 minutes)
 Be honest when the data's out of reach, and show the agent the manual method instead:
@@ -49,7 +62,9 @@ the backend API key (team-built) makes it sharper later. Never present a guess a
 
 ## Output
 Short, real lists only — outlier angles and the recreate list — fed into **Ideation** as "Signals for
-ideas" and surfaced in chat. Nothing stored, nothing padded.
+ideas" and surfaced in chat. Nothing stored, nothing padded. Where it sharpens a recommendation, tag a pick by
+its **intent role (§23.4)** — awareness · trust-building · high-intent lead-gen · niche authority · or a
+repeat-from-a-new-angle (§3 R, §23.3) — so the agent knows *why* it's worth recreating, not just that it ranked.
 
 ## Modes
 Part A: weekly max, at ideation time + on demand. Part B: monthly or on demand ("competition analysis").

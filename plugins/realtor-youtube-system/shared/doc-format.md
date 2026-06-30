@@ -124,16 +124,16 @@ Why it generates leads: {the lead psychology}
 
 
 ════════════════════════════════════════════
-THE 4-PART VIDEO STRUCTURE
+THE VIDEO STRUCTURE   (every video — doctrine §4)
 ════════════════════════════════════════════
-   HOOK (0:00–0:30) — {the viewer's pain, not "welcome back"}
-   EARLY CTA (0:30–1:00) — {their real CTA from the Brain}
-   CONTENT (1:00–end) — {10–20 min of real value}
-   CLOSING CTA (final 60s) — {next video + subscribe}
+   HOOK (0:00–0:30) — {the viewer's question/fear, not "welcome back" — §5}
+   PRIMARY CTA (0:30–1:00) — {warm invite: "people just like you" + book a private call, from the Brain — §6.2}
+   BODY (1:00–end) — {deliver the promise; 10–20 min of real, local value — §7}
+   SECONDARY CTA (final 60s) — {book/reach out + watch the next best video — §6.5}
 
 
 ════════════════════════════════════════════
-90-DAY CALENDAR   (2 videos/week)
+90-DAY CALENDAR   (24 videos · 2/week · the §22 mix across the 6 content types)
 ════════════════════════════════════════════
    Week 1 — {Video 1}  ·  {Video 2}    ({pillars})
    Week 2 — {…}
@@ -156,9 +156,10 @@ Powered by Mike Sherrard Coaching Inc Frameworks
 ```
 
 ### Script
-TITLE/meta → bands for `HOOK · 0:00`, `EARLY WARM CTA · 0:15`, `INTRO · 0:30`, numbered `1 · LABEL · MM:SS`
-sections (3–5), `SOFT MID CTA`, `REASSURANCE`, `FINAL CTA` → heavy band `CHAPTERS` → heavy band
-`30-SECOND SHORT` → footer. (Detailed skeleton: `${CLAUDE_PLUGIN_ROOT}/skills/youtube-script/references/script-format.md`.)
+TITLE/meta → bands for `HOOK · 0:00` (doctrine §5) → `PRIMARY CTA · ~0:45` (§6.2, right after the hook) →
+numbered `1 · LABEL · MM:SS` body sections (3–5, §7) → optional brief mid-reminder → `SECONDARY CTA` (§6.5 —
+book + the next best video) → heavy band `CHAPTERS` → heavy band `30-SECOND SHORT` → footer. (Detailed
+skeleton: `${CLAUDE_PLUGIN_ROOT}/skills/youtube-script/references/script-format.md`.)
 
 ### SEO Package
 ```

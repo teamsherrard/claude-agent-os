@@ -296,8 +296,8 @@ def render(lines, doc, title=None, subtitle=None):
         # 4-part-structure style label "HOOK (0:00) — text" + example
         mstruct = re.match(r'^([A-Z][A-Z ]{2,22}?)(\s*\([^)]*\))?\s*—\s*(.+)$', line)
         if mstruct and mstruct.group(1).strip() in (
-                "HOOK", "EARLY CTA", "CONTENT", "CLOSING CTA", "EARLY WARM CTA", "SOFT MID CTA",
-                "REASSURANCE", "FINAL CTA", "MID CTA", "INTRO"):
+                "HOOK", "PRIMARY CTA", "SECONDARY CTA", "BODY", "CONTENT", "EARLY CTA", "CLOSING CTA",
+                "EARLY WARM CTA", "SOFT MID CTA", "MID CTA", "REASSURANCE", "FINAL CTA", "INTRO"):
             label = mstruct.group(1) + (" " + mstruct.group(2) if mstruct.group(2) else "")
             txt = mstruct.group(3); i += 1
             eg = ""

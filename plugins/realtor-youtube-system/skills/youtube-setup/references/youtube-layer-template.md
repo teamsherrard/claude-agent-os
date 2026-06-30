@@ -4,6 +4,11 @@ This is **NOT a second brain.** It is a thin add-on that reads the shared Realto
 only YouTube-specific fields. Anything in Part A is *read live from the AI Brain* — never re-asked,
 never copied here.
 
+The strategy stored here (Part C) follows the **YouTube Doctrine**
+(`${CLAUDE_PLUGIN_ROOT}/shared/youtube-doctrine.md`): the **cadence** is the §15.3 default (2/week ideal ·
+1/week minimum), and the **3 pillars** are the agent's thematic focuses *delivered through* the doctrine's 6
+content types (§8) per the §22 mix.
+
 ---
 
 ## Part A — Inherited from the AI Brain (READ live — never ask, never store here)
@@ -31,10 +36,11 @@ competitors they admire/follow, posting cadence, niche, neighbourhoods, avatars,
 If one's missing from the Brain, point the agent to add it *there*, not in YouTube.
 
 ## Part C — Generated at setup (NOT stored as spreadsheets)
-- **Active Game Plan anchors** — the **3 content pillars + playlists, the goal, and the cadence** set by the
-  YouTube Game Plan, stored here so EVERY skill reads them and stays aligned (house rules #9). The full Game
-  Plan Doc (workspace root) holds the title backlog + 90-day calendar; skills open it for that detail. This
-  keeps idea-generation strategic — invisibly. (No Content Map file.)
+- **Active Game Plan anchors** — the **3 content pillars (thematic focuses) + playlists, the goal, and the
+  cadence** set by the YouTube Game Plan, stored here so EVERY skill reads them and stays aligned (house rules
+  #9). The 3 focuses are delivered through the doctrine's 6 content types (§8) per the §22 mix; the cadence
+  follows §15.3. The full Game Plan Doc (workspace root) holds the title backlog + 90-day calendar; skills
+  open it for that detail. This keeps idea-generation strategic — invisibly. (No Content Map file.)
 - **The YouTube Game Plan** — the agent's first deliverable, built at setup (audit + 3 pillars + exact
   titles + goal-math + 90-day calendar) and saved as a Doc at the workspace root. Ideas are regenerated live
   thereafter — never an Idea Bank sheet.
