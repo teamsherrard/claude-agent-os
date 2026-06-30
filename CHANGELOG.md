@@ -2,6 +2,18 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.65.1] — 2026-06-30
+
+### YouTube System (Plugin 3) → v0.8.1 — the Coach now genuinely coaches like Mike
+Rebuilt `youtube-coach` so it delivers Mike Sherrard's coaching, not generic tips:
+- **Mike's beliefs** (done > perfect · it compounds · search intent + consistency win · conversations beat
+  views · you're not behind) + **his voice** (direct + warm · clarity over everything · motivating by making
+  the path obvious · in their corner). The Coach speaks in the *coach's* voice, not the agent's.
+- A tight **coaching flow** (acknowledge + the win/why → the one fix with a specific tactic + example → a
+  motivating close tied to their goal + ONE next action), a **diagnose→prescribe tactical playbook** for the
+  common situations (discouraged · stuck · salesy titles · one-pillar · no CTA · overwhelmed · plateaued), and
+  the §28 misalignment corrections folded in. Still grounded in their real numbers (§23) + the §24.5 audit.
+
 ## [0.65.0] — 2026-06-26
 
 ### YouTube System (Plugin 3) → v0.8.0 — rebuilt on Mike Sherrard Coaching Inc's full YouTube doctrine
