@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <!--
   AI ADMIN DASHBOARD — Brain-native live artifact template (Drive-backed brain)
-  Built ONCE during "Set up my AI Admin" (SKILL.md setup step 5). Before creating the artifact:
-   1. Load the Brain (pull from Drive if the local copy is missing). Fill %%ASSISTANT_NAME%%,
-      %%AGENT_FIRST%%, %%MARKET%% from brain.md — never ask the agent.
+  Built ONCE during "Set up my AI Admin" (SKILL.md setup step 7). Before creating the artifact:
+   1. Load the Brain (pull from Drive if the local copy is missing). Fill %%AGENT_FIRST%% and
+      %%MARKET%% from brain.md, %%ASSISTANT_NAME%% from the assistant name in config.md
+      (default "AI Admin") — never ask the agent.
    2. Populate the MEMORY constant by PARSING the Brain memory files:
         - memory/deadlines.md  -> items of type "deadline" / "followup"
         - memory/clients.md    -> items of type "note" (recent client updates)
@@ -22,13 +23,13 @@
 <meta charset="UTF-8">
 <title>AI Admin Dashboard</title>
 <style>
+  /* No external fonts: artifact CSP blocks outside hosts — the declared system-font stacks ARE the design. */
   :root { --gold:#d8b36a; --gold-dim:rgba(216,179,106,.32); --ivory:#f3ecdd;
     --bg:#0a0e13; --jade:#5fd6a4; --red:#e06a7e; --amber:#e8974f;
     --serif:"Playfair Display", Georgia, serif; --sans:"Jost","Segoe UI",sans-serif; }
   * { margin:0; padding:0; box-sizing:border-box; }
   body { background:linear-gradient(180deg,#0c1117, var(--bg) 60%); color:var(--ivory);
     font-family:var(--sans); min-height:100vh; padding:1.4rem; }
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Jost:wght@300;400;500&display=swap');
   header { display:flex; justify-content:space-between; align-items:baseline;
     border-bottom:1px solid var(--gold-dim); padding-bottom:.9rem; margin-bottom:1.2rem; flex-wrap:wrap; gap:.5rem; }
   h1 { font-family:var(--serif); font-size:1.25rem; letter-spacing:.18em; color:var(--ivory); text-transform:uppercase; }
@@ -125,7 +126,7 @@ function rows(el, items, cls, emptyMsg) {
 .map(i => ({ t: i.due || "soon", x: (i.client !== "General" ? i.client + " — " : "") + i.note }));
   const fups = open.filter(i => i.type === "followup" && daysUntil(i.due) <= 0)
 .map(i => ({ t: i.due || "due", x: i.client + " — " + i.note }));
-  const notes = (MEMORY.items || []).slice(-6).reverse()
+  const notes = (MEMORY.items || []).filter(i => i.type === "note").slice(-6).reverse()
 .map(i => ({ t: (i.date || "").slice(5, 10), x: i.client + " — " + i.note }));
   rows($("urgent"), urgent, "urgent", "Nothing urgent. Clear runway.");
   rows($("fups"), fups, "fup", "All caught up.");
@@ -151,7 +152,7 @@ function rows(el, items, cls, emptyMsg) {
 
 $("runBrief").addEventListener("click", () => {
   try { window.cowork.runScheduledTask(BRIEFING_TASK_ID);
-    $("runBrief").textContent = "Briefing on its way to your inbox";
+    $("runBrief").textContent = "Briefing running — watch your notifications";
   } catch { $("runBrief").textContent = "Ask %%ASSISTANT_NAME%% for your briefing in chat"; }
 });
 </script>

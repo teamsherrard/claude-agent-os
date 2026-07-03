@@ -25,7 +25,8 @@ car becomes a finished video, a proof point, or a referral instead of evaporatin
 
 ## Hands-free rules (the same discipline as the AI Admin's dispatch)
 1. **Capture-first — never lose a thought.** If you can't classify it cleanly, still save it to
-   `memory/capture-log.md` (create it if absent) so nothing evaporates. A lost capture is the only failure.
+   `memory/capture-log.md` (create it if absent, header `| Logged | Captured (raw) | Needs | Status |`,
+   new rows Status **Open**) so nothing evaporates. A lost capture is the only failure.
 2. **Act, don't ask.** No clarifying questions — file it on your best read and state the assumption in
    the one-line confirm. Queue genuine ambiguity to the capture-log; don't block.
 3. **Parse every intent.** One breath can hold several (a win AND a video idea) — capture each.
@@ -48,7 +49,7 @@ Read `~/realtor-brain/brain.md`. If `~/realtor-brain/` is missing, PULL it from 
 | "add a vendor / great lender / great contractor: [name, contact]…" | vendor | `identity/vendors.md` |
 | "new offer angle / I should emphasize…" | positioning | `identity/offer.md` (append a note — don't rewrite) |
 | a client note, reminder, email, or booking | admin action | **hand to the AI Admin** (its dispatch). If it isn't installed, park the intent in `memory/deadlines.md` and say so |
-| can't tell | — | `memory/capture-log.md` → the morning briefing asks |
+| can't tell | — | `memory/capture-log.md` → the AI Admin's morning briefing surfaces it (if installed; otherwise it stays Open until the agent resolves it) |
 
 ## Step 3 — Write it (append, never overwrite)
 - **`memory/ideas.md`** — one row: `| [date] | [tag] | [idea verbatim + one-line cleanup] | New |`.

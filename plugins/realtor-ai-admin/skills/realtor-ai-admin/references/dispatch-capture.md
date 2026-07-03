@@ -25,14 +25,16 @@ present, let it take the knowledge captures; don't double-handle.
 
 ## The flow (every dispatch)
 1. **Load the Brain** (SKILL.md Step 0 — pull from Drive if the local copy is missing).
-2. **Parse** the request into one or more intents (note · reminder · draft · book · recall ·
-   debrief · open-house).
+2. **Parse** the request into one or more intents (note · reminder · draft · book · cancel/move ·
+   recall · debrief · open-house).
 3. **Resolve names** with the **Name-Resolution Ladder** (SKILL.md): Brain → Gmail search →
    Calendar → Google Contacts → create the record from what you found → if truly nothing, park it
    in the capture-log. (Never guess an email; only use one you actually found.)
 4. **Execute each intent** against the matching system, honoring the safety rules above.
 5. **Write back** to `memory/clients.md` + `memory/deadlines.md`, append anything unresolved to
-   `memory/capture-log.md`, then **push to Drive** (sync) once, at the end.
+   `memory/capture-log.md`, then **push to Drive** (sync) once, at the end. **If the push fails,
+   include the full raw capture text in your report** — it survives in the notification even if
+   the sandbox is wiped — and tell the agent to say "sync my brain" when they're back at a desk.
 6. **Report** — one tight, glanceable confirmation: one line per action, drafts + bookings
    flagged, unresolved items noted. No padding, no lecture.
 
@@ -40,9 +42,11 @@ present, let it take the knowledge captures; don't double-handle.
 | Job | Sounds like | What you do |
 |---|---|---|
 | **Quick Capture** | "remember…", "note that…", "jot down…" | Resolve the name, then log the note to that client's `clients.md` block |
-| **Quick Reminder** | "remind me to…", "don't let me forget…" | Add a dated `deadlines.md` Follow-up (+ a calendar reminder if a time is given) |
+| **Quick Reminder** | "remind me to…", "don't let me forget…" | Add a dated `deadlines.md` Follow-up (+ a calendar reminder if a time is given — a guestless, free/transparent event; Conflict Guard not needed) |
 | **Quick Draft** | "draft a… to…", "email … saying…" | Write it in their voice → save a Gmail **draft** → log it |
-| **Quick Book** | "book…", "put … on my calendar" | Auto-Booking (Conflict Guard, guest invite, auto video link) |
+| **Quick Book** | "book…", "put … on my calendar" | Auto-Booking (Conflict Guard, guest invite, auto video link). If Conflict Guard blocks: don't ask — skip the booking, park the clash + the nearest open slots in the capture-log, and flag it in the report |
+| **Quick Cancel / Move** | "cancel my 3pm", "push the Lees to 4" | Rescheduling & Cancelling flow (attendees notified automatically) — log it |
+| **Quick Recall** | "what do I know about…", "when did I last talk to…" | Total Client Recall — answer inside the report (read-only) |
 | **Post-Showing Debrief** | "just showed [client] [address] — [reaction], [next step]" | Log the showing + reactions to the client, set the next action / follow-up, and optionally draft the follow-up email |
 | **Open-House Capture** | "log the open house at [address] — [groups], [hot leads]" | Create/update a record for each named lead; start a follow-up for each |
 | **Multi-Intent** | several of the above in one breath | Parse all, execute each, then ONE combined report |

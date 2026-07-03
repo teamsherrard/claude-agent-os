@@ -2,6 +2,38 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.69.0] — 2026-07-03
+
+### AI Admin (Plugin 2) → v0.4.0 — full quality sweep (24 fixes; multi-pass adversarial QA)
+- **Real bugs:** setup ordering (dashboard needed the briefing task id before it existed — automations now
+  come first); Monday sweep missed ALL weekend mail (now newer_than:3d); duplicate follow-up rows for a
+  lead sitting in the inbox two days; duplicate 7am briefings if setup re-ran or crashed mid-way (re-run
+  guard + adopt-existing-tasks + immediate config push); undefined assistant name (new optional naming
+  step, default AI Admin); dashboard JS leaked deadlines into Recent Client Notes; invalid CSS @import
+  (removed — artifact CSP blocks external fonts anyway); briefing button copy implied email delivery.
+- **Safety:** removed the send-capable-tool clause from the briefing (an unapproved PII send path —
+  nothing may ever send on the agent's behalf); guest invites in dispatch book WITHOUT the guest when
+  name resolution is ambiguous (an invite actually emails a stranger); booking confirmations now state
+  the exact invited email; dashboard artifact explicitly sanctioned + private in the PII rule.
+- **The Mike Test:** briefing housekeeping now runs BEFORE composing so the 7am notification ends on the
+  briefing, never maintenance chatter; cancelling creates the client draft instead of offering one; Route
+  Optimizer's confirm marked as the ONE sanctioned confirm (dispatch = propose-only); email replies never
+  ask to confirm the recipient — resolve, then state it.
+- **New workflows:** Day View (on-demand "what's my day"); Rescheduling & Cancelling (incl. recurring
+  events = one instance only); dispatch adds Quick Cancel/Move + Quick Recall; Conflict-Guard clash in
+  dispatch parks to the capture-log instead of asking; failed Drive push echoes the raw capture in the
+  report so nothing dies with the sandbox.
+- **Consistency:** label tiebreaks (Under Contract beats Active Client AND Lender-Title; board/MLS never
+  Promotions; a referral from an existing client IS a Hot Lead); sweep creates missing labels; both task
+  prompts fully self-contained (Drive-download fallback, no skill-name dependency); deadlines/clients
+  headers quoted to match the real template; timezone explicit in bookings; multi-calendar Conflict
+  Guard; test events + Zoom probe meetings get deleted; setup teaches the on-the-go dispatch habit.
+
+### Brain (Plugin 1) → v0.22.2 — capture-layer contract fixes
+- realtor-capture now writes `capture-log.md` with the exact schema the briefing reads
+  (| Logged | Captured (raw) | Needs | Status |), and its briefing promise is qualified (surfaced by the
+  AI Admin's briefing if installed). Brain-template config.md gains the Assistant name + artifact URL slots.
+
 ## [0.68.0] — 2026-07-03
 
 ### Doctrine alignment — Brain brand-doctrine ↔ Short-Form frameworks (no conflicts, now cross-linked)
