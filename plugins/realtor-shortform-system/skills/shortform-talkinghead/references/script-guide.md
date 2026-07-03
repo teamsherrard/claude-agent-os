@@ -3,24 +3,24 @@
 For each chosen topic, deliver a script package the agent can film immediately. Everything in their voice
 (`voice.md` + `voice-samples.md`), speaking to one person ("you"), naming the city.
 
-## The structure (every script)
-1. **Hook (first 3 seconds)** — one punchy line that stops the scroll. State the payoff or the surprise.
-   No slow wind-up. (Pull a hook style that fits — question, contrarian, stat, "most people get this wrong.")
-2. **Value (the middle)** — the actual teaching. One clear idea, 1–3 beats. Specific and local. This is
-   the part that earns the follow — give something genuinely useful, not a tease.
-3. **CTA (the close)** — one clear action, matched to the funnel role (see the CTA map). Soft by default;
-   a lead-magnet/booking CTA only on the occasional conversion topic.
+## The structure — HVC (every script)
+Mike's HVC framework (`${CLAUDE_PLUGIN_ROOT}/shared/mike-frameworks.md`):
+1. **Hook (first ~3 seconds)** — one **bold or slightly controversial** line that stops the scroll. State
+   the payoff or the surprise; no slow wind-up. **Never say "stop scrolling."**
+2. **Value (the middle)** — the actual teaching, **structured as a list** ("3 things…", "here's how…").
+   One clear idea, 1–3 beats. Specific and local — genuinely useful, not a tease.
+3. **CTA (the close)** — one clear action matched to the funnel role; **it doesn't always sell** (follow
+   for more tips, share with someone, comment). A lead-magnet/booking ask only on the ~10% conversion topics.
 
-## Three length options
-Write the topic at three lengths so the agent picks what suits the idea and their energy:
-- **15 seconds (~35–40 words)** — hook + one sharp point + quick CTA. Punchy. Best for a single tip or a
-  hot take.
-- **30 seconds (~75–85 words)** — hook + 2 beats of value + CTA. The default — the short-form sweet spot.
-- **45 seconds (~110–130 words)** — hook + deeper explanation (2–3 beats) + CTA. For topics that need a
-  little room (financing, process, a myth with nuance).
+## Length — 45–60s is the real-estate sweet spot
+For real estate, **45–60 seconds performs best** (Mike) — that's the default. Offer shorter cuts for a
+punchy single-tip:
+- **45–60 seconds (~120–160 words)** — hook + a 3-point list of value + CTA. **The default for real estate.**
+- **30 seconds (~75–85 words)** — hook + 2 beats + CTA. For a tighter single idea.
+- **15 seconds (~35–40 words)** — hook + one sharp point + CTA. For a hot take.
 
-Default to delivering the 30s in full, and offer: *"Want the 15 or 45-second version too?"* — or give all
-three if the agent likes options. Don't bury them in text.
+Default to delivering the **45–60s** in full, and offer: *"Want a tighter 15 or 30-second cut too?"* Don't
+bury them in text.
 
 ## Two delivery formats (always give both)
 - **Teleprompter version** — word-for-word, written the way people actually talk (contractions, short

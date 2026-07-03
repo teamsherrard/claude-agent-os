@@ -56,8 +56,8 @@ niche-focused (their specialty: e.g. relocation, luxury, first-time buyers — f
 people). Ground every topic in their market/niche/pillars; none should be generic enough that a random
 agent in another city could post it.
 
-For each topic give: a working **title/angle**, a one-line **hook**, the **funnel role** (reach/trust/
-authority/conversion — kept silent), and a one-line **why this works for you** (a real local or niche
+For each topic give: a working **title/angle**, a one-line **hook**, the **funnel role** (reach/value/
+trust/conversion — kept silent), and a one-line **why this works for you** (a real local or niche
 reason). Present them simply and let the agent pick which to film:
 > "Here are some strong ones for you — most are wide-reach, a couple are aimed right at [niche]. Tell me
 > which numbers you want to film and I'll script them."
@@ -69,11 +69,12 @@ Don't hand an unsure agent a long list to sort through.
 
 ## Phase 2 — Scripts (for the chosen topics)
 **Read `references/script-guide.md`.** For each chosen topic, build a ready-to-film script package:
-- **Length options** — a 15-second, 30-second, and 45-second cut (short = punchy hook+one point; longer =
-  more teaching). Default to 30s; offer the others.
+- **Length** — **default to 45–60 seconds** (Mike's real-estate sweet spot); offer tighter 15/30s cuts
+  for a punchy single-tip.
 - **Teleprompter version** — word-for-word, natural spoken rhythm, for agents who like to read it.
 - **Bullet version** — the same script as riff points, for agents who'd rather talk freely.
-- Built on the structure: **Hook → value (the teaching) → CTA**, in the agent's voice.
+- Built on **HVC** (`${CLAUDE_PLUGIN_ROOT}/shared/mike-frameworks.md`): **Hook** (bold, ~3s, never "stop
+  scrolling") → **Value** (structured as a list) → **CTA** (aligns with format; doesn't always sell) — in the agent's voice.
 
 ## Phase 3 — Platform optimization
 Read `${CLAUDE_PLUGIN_ROOT}/skills/shortform-optimizer/references/platform-rules.md` (per-platform rules,

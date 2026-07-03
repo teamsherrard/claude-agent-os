@@ -68,7 +68,7 @@ For "run my 2-week review" / "review my performance" (and the natural cadence of
 
 1. Pull the last ~2 weeks across platforms; join to `content-log.md`.
 2. Produce the review (full structure in `metrics-guide.md`): **best post · weakest post · best content
-   category (awareness/trust/authority/conversion) · best format (green screen/talking head/carousel) ·
+   category (reach/value/trust/conversion — Mike's 4-3-2-1) · best format (green screen/talking head/carousel) ·
    best hook · CTA performance (what drove DMs/leads) · what to make more of · posts worth remaking.**
 3. **Write it to the Brain** — append a dated block to `~/realtor-brain/memory/performance.md` (create the
    file if it doesn't exist), then push to Drive. This is what makes the system get smarter: the planner

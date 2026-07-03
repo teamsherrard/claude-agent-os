@@ -5,6 +5,10 @@ For a daily green screen, write **one hook** — the best fit for today's articl
 Hooks are under 10 words. Pick a formula that matches the article type (see the selection guide), and
 vary the formula day to day so the agent's feed doesn't feel one-note (glance at `content-log.md`).
 
+Per Mike's HVC framework (`${CLAUDE_PLUGIN_ROOT}/shared/mike-frameworks.md`): the hook has **~3 seconds**
+to land, so make it a **bold or slightly controversial statement**. **NEVER tell people to "stop
+scrolling" / "don't scroll"** — it reads as desperate. The hook earns attention by being interesting.
+
 ---
 
 ## 10 Hook Formulas

@@ -40,7 +40,7 @@ Pull ~2 weeks, join to `content-log.md`, then report:
 |---|---|
 | **Best post** | What it was (format + topic + hook) and why it won |
 | **Weakest post** | What missed, and the likely weak link (hook/middle/value/CTA) |
-| **Best content category** | Awareness / trust / authority / conversion — where they're winning |
+| **Best content category** | Reach / value / trust / conversion (Mike's 4-3-2-1) — where they're winning |
 | **Best format** | Green screen / talking head / carousel |
 | **Best hook** | The hook style that's landing |
 | **CTA performance** | What actually drove DMs / clicks / leads |

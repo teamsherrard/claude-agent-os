@@ -50,10 +50,13 @@ tell them to run **Realtor AI Brain — Setup** first.
 Ask only these, conversationally, one at a time — skip any the Brain already answers:
 
 1. **Where do you post?** "Which of these do you post short videos to — Instagram, Facebook, TikTok,
-   YouTube Shorts? Pick any." (Note their priority order.)
-2. **How often, realistically?** "How often do you want to post — once a day, a few times a week? Be
-   honest, we'll build around what you'll actually keep up with." (Most agents: a daily green screen +
-   a few other posts a week. Reassure them it's doable because you do the heavy lifting.)
+   YouTube Shorts? Pick any." (Note their priority order. Per Mike: keep it to **one profile per platform**
+   that blends personal + business — that's what builds the know-like-trust factor. Don't set up a separate
+   "business" account.)
+2. **How often, realistically?** "How often do you want to post — daily, or a few times a week? Be honest,
+   we'll build around what you'll actually keep up with." (Per Mike: **minimum 3×/week; the goal is daily +
+   daily stories.** Early on it's about **volume — getting the reps in**; CTAs and lead-gen come once
+   there's momentum. Reassure them it's doable because you do the heavy lifting.)
 3. **Your freebies (lead magnets).** Only if the Brain doesn't already list them: "Do you have any free
    guides or checklists you give people — like a first-time buyer guide, a seller checklist, a relocation
    guide? These are what we point people to." If they share new ones, **save them to their Brain** so this

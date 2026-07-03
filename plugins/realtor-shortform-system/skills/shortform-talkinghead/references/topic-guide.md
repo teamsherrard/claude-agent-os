@@ -16,20 +16,32 @@ Talking-head value content is how the agent builds reach AND authority. The mix 
 
 Across a batch, keep roughly 4 broad : 1 niche. Don't flip it — too much niche kills reach.
 
+## Mike's best-performing content types (pull from these)
+Beyond market takes, these consistently perform (`${CLAUDE_PLUGIN_ROOT}/shared/mike-frameworks.md`) —
+weave them into the list:
+- **Personal stories** about the agent · **passions / hobbies** (blends personal + business → know-like-trust)
+- **Client success told as their journey** — the client's story, NOT "sold!" / "congrats to my buyer"
+- **Home tours** — great reach + easy engagement
+- **"Things to do in [city] this week"** — pulls in locals, not just other agents
+- (Green-screen local-news / top-list reactions live in the daily green-screen workflow.)
+
+**Small market?** Cover local AND name the closest well-known big market nearby to borrow its search
+traffic. **Niche?** Cover the niche + broad content so new people find them.
+
 ## What makes a strong topic
 - **Local or niche-specific** — names the city/community or speaks to the agent's exact avatar. If a random
   agent in another city could post the same thing word-for-word, it's too generic — sharpen it.
 - **Answers a real question** the avatar is actually Googling or asking at the kitchen table.
 - **Has a clear angle** — a point of view, a myth to bust, a number, a "here's what most people get wrong."
 - **Ladders up to a content pillar** (`content-engine.md`) — so the agent stays known for their themes.
-- **Filmable in 15–45 seconds** — one idea per video, not a lecture.
+- **Filmable in ~45–60 seconds** (Mike's real-estate sweet spot) — one idea per video, not a lecture.
 
-## Funnel role (kept silent — for balance, not shown to the agent)
-Tag each topic internally so the batch stays balanced over time:
-- **Reach/awareness** — broad questions, market takes, money tips (most of the 80%)
-- **Trust** — personal lessons, "what I tell my clients," behind-the-scenes thinking
-- **Authority** — teaching something specific (process, negotiation, financing)
-- **Conversion** — the occasional direct "here's how I can help / grab my guide" (rare — ~1 in 10)
+## Funnel role (kept silent — Mike's 4-3-2-1, for balance)
+Tag each topic internally so the batch stays balanced (`${CLAUDE_PLUGIN_ROOT}/shared/mike-frameworks.md`):
+- **Reach / awareness (40%)** — broad questions, market takes, money tips, relatable POVs (most of the 80%)
+- **Value / education (30%)** — teaching something specific: tips, how-tos, mistakes to avoid, myth-busting
+- **Trust / connection (20%)** — personal lessons, "what I tell my clients," client stories, behind-the-scenes
+- **Conversion (10%)** — the occasional direct "here's how I can help / grab my guide" (~1 in 10)
 
 ## How to present them
 Rank by strength. Show a simple list — title + one-line hook + a one-line "why this is strong for you."

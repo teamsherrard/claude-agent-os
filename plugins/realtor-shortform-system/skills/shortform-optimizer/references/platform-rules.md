@@ -6,6 +6,9 @@ reads this file. Update it here and every workflow inherits the change.
 Core principle: **one idea, three native packagings.** Each platform ranks and displays content
 differently, so the hook is shared but the caption, hashtags, and metadata are not.
 
+Follows Mike's frameworks (`${CLAUDE_PLUGIN_ROOT}/shared/mike-frameworks.md`): **3–5 searchable hashtags
+max on every platform**, and captions/hooks **never say "stop scrolling."**
+
 ---
 
 ## Instagram Reels + Facebook
@@ -23,13 +26,12 @@ Treated together — one caption serves both, with a small Facebook tweak noted 
 - **Tone:** `voice.md`. Speak to one person ("you"), not a broadcast.
 - **Emoji:** sparingly, only if it fits the agent's voice.
 
-**Hashtags (Instagram): 8–12**, blended:
-- **2+ hyperlocal** — `#[City]RealEstate`, `#[City]Homes`, `#[Neighbourhood]`, `#[City]Realtor`
-- **3–4 topic** — e.g. `#FirstTimeHomeBuyer`, `#MortgageRates`, `#HousingMarket`, `#JustListed`
-- **2–3 audience / niche** — e.g. `#RelocatingTo[City]`, `#[City]Living`, `#MoveTo[City]`
-- **1–2 broad** — `#RealEstate`, `#Realtor` (use sparingly; broad tags are crowded)
-- Avoid banned/spammy or follow-bait tags (#followforfollow, #f4f). Avoid tags with millions of posts
-  as your only tags — local + mid-size tags get the agent seen.
+**Hashtags (Instagram): 3–5 searchable — no more** (Mike's rule; a hashtag wall reads as spammy and
+doesn't help reach). Blend:
+- **1–2 hyperlocal** — `#[City]RealEstate`, `#[City]Homes`, `#[Neighbourhood]`
+- **1–2 topic** — e.g. `#FirstTimeHomeBuyer`, `#[City]Living`
+- **1 broad** (optional) — `#RealEstate` / `#Realtor`
+- Prefer searchable, mid-size tags over million-post giants. Avoid follow-bait (#followforfollow, #f4f).
 
 **Facebook tweak (note it, don't rewrite the whole thing):**
 - Trim to **~3–5 hashtags** (FB doesn't reward dense hashtags).
@@ -78,10 +80,10 @@ and tags do real ranking work here.
 - Add one line of context/value, then the **CTA + booking link** (links are clickable on YouTube).
 - Weave in 2–3 natural keywords; don't keyword-stuff.
 
-**Tags: 8–15**, comma-separated:
-- City + market terms (`[city] real estate`, `[city] housing market`, `homes for sale in [city]`)
-- Topic terms (`mortgage rates 2026`, `first time home buyer`, `should i buy or wait`)
-- Agent/brand terms (agent name, brokerage, neighbourhood names)
+**Hashtags: 3–5** in the description — include `#Shorts` + `#[city]` + 1–2 topic tags (Mike's 3–5 rule).
+
+**Tags** (the separate YouTube keywords field — not visible hashtags): a handful of searchable phrases for
+indexing — city + market terms, the main topic, agent/brand. This field is metadata, not the hashtag count.
 
 ---
 
@@ -104,12 +106,14 @@ Text instructions only — the agent adds them in their editor. Never render an 
 Match the CTA on **both** the funnel role and the post topic. Any DM-keyword or download CTA must point
 to a **real lead magnet listed in `identity/offer.md`** — never invent one. If none fits, use a soft CTA.
 
+Mike's 4-3-2-1 (keep this ratio across the agent's posts): **4 reach (40%) · 3 value/education (30%) · 2 trust/connection (20%) · 1 conversion (10%)**.
+
 | Post type / funnel role | CTA |
 |---|---|
-| Awareness (reach) | "Follow for [city] updates" · "save this" · "send this to someone thinking of moving" |
-| Trust / connection | invite a reply, comment, or DM'd question — no ask for business |
-| Authority / education | "DM me '[KEYWORD]' for the [guide/checklist]" (keyword → a real lead magnet) |
-| Conversion | book a call · download the lead magnet · request a home valuation (Primary CTA from `voice.md`) |
+| **4 · Awareness / reach** (40%) | "Follow for [city] updates" · "save this" · "send this to someone thinking of moving" |
+| **3 · Value / education** (30%) | "save this" · "follow for more tips" · "DM me '[KEYWORD]' for the [guide]" (→ a real lead magnet) |
+| **2 · Trust / connection** (20%) | invite a reply, comment, or DM'd question — no ask for business |
+| **1 · Conversion / selling** (10%) | book a call · download the lead magnet · request a home valuation (Primary CTA from `voice.md`) |
 | Market update | "DM '[REPORT]' for this month's [city] market report" |
 | Buyer education | DM **"BUYER"** → the buyer lead magnet |
 | Seller education | DM **"SELLER"** → the seller lead magnet |
@@ -125,6 +129,8 @@ Only ~1 in 10 posts is a hard conversion CTA (the "1" in 4-3-2-1). Default to so
 
 - **Never paste one identical caption across all three.** Different lengths, different hashtag logic,
   different CTAs. If two outputs look the same, rework them.
+- **3–5 hashtags max** on every platform (Mike's rule) — searchable, mostly local; never a hashtag wall.
+- **Never write "stop scrolling" / "don't scroll"** in a hook or caption — it reads as desperate (Mike).
 - **Name the local market** in every version — local is the realtor's edge.
 - **Match the funnel role** — soft CTAs by default; a hard "book a call" only on conversion posts
   (~1 in 10).

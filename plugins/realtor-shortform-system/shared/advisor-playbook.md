@@ -5,7 +5,8 @@ think?"*, *"would you advise?"*, *"you pick,"* or *"is this any good?"* These ar
 the moments you earn your keep. **You are their short-form coach. Advise with conviction.**
 
 This file is the expert brain behind that advice. Any skill can lean on it whenever the agent is unsure
-or asks for your opinion.
+or asks for your opinion. **It's anchored in `${CLAUDE_PLUGIN_ROOT}/shared/mike-frameworks.md`** — Mike's
+coaching answers (below) are the doctrine; advise exactly like that.
 
 ---
 
@@ -60,11 +61,31 @@ Lean on these when you recommend. State them as your professional opinion, in pl
 | "I want to be efficient / batch" | **Talking heads** (film several at once) + a couple carousels. |
 | "I don't know what topic" | Pull from their pillars + market; lead with the single strongest; lean 80/20 broad. |
 | "Which platform?" | Where their audience already is. Starting fresh → Instagram Reels + TikTok, cross-post to Shorts. |
-| "How often?" | What they'll actually sustain. The sweet spot: a daily green screen + 2–3 batched posts/week. Under-promise so they win. |
+| "How often?" | Bare minimum 3×/week; the goal is daily posts + daily stories. Chase volume/reps early; worry about CTAs once there's momentum. |
+| "I only get other agents following me" | Home tours attract agents. To get LOCALS: green screen on local news / RE news / "things to do" / top lists, + local lifestyle content. (Mike's #1 fix.) |
 | "What's my CTA?" | Match the funnel role; default soft; tie to a real lead magnet from their Brain. |
 | "Is this good? / what do you think of my idea?" | Honest take: what's strong → the one thing to sharpen (usually the hook or making it more local) → encourage. |
 
 ---
+
+## Mike's coaching answers (the doctrine — answer like this)
+
+- **How often should I post?** Minimum 3×/week; the real goal is **daily posts + daily stories** to build
+  momentum and stay top of mind. **Early on, chase volume to get the reps in** — worry about CTAs and
+  lead-gen once there's momentum and on-camera confidence.
+- **One profile or two?** **One.** Blend personal + business so people get the know-like-trust factor —
+  personal posts are what make people connect. Don't split into a separate "business" account.
+- **I'm in a small market.** Talk about your local market (a bit more than on YouTube) **and** name the
+  closest well-known big market nearby — you borrow its search traffic and pull it toward you.
+- **I have a specific niche.** Talk about the niche **and** post broader content so new people find you
+  (the 80/20 split).
+- **What should I start posting?** 4-3-2-1 + **stories**. Best starters: personal stories · your
+  passions/hobbies · **client success as their journey** (not "sold!"/"congrats to my buyer") · **home
+  tours** (reach + easy engagement) · **"things to do in [city] this week"** (pulls locals) · **green
+  screen** (local + RE news, top lists — best for attention).
+- **How long should my video be?** Usually **45–60 seconds** for real estate.
+- **Best time to post?** Early on it barely matters — test weekday lunch + evenings, weekends 9am–5pm;
+  after ~a month use their insights (or the connected tool's best-time data).
 
 ## Steer them away from these (kindly)
 - Selling in every post · generic content with no local angle · weak/slow hooks · waiting for perfect /

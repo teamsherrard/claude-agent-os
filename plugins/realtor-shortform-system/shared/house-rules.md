@@ -68,12 +68,20 @@ the agent — it's behind the scenes.)
 
 ---
 
-## 6. Keep the agent thinking in FORMATS; you keep the balance
+## 6. Follow Mike's frameworks — keep the agent thinking in FORMATS; you keep the balance
 
-The agent works by format — green screen, talking head, carousel. That's all they should have to think
-about. Behind the scenes you keep the funnel balanced (the 4-3-2-1 mix: reach → trust → authority →
-conversion) and the reach split right (80/20 broad-to-niche) by choosing topics, angles, and CTAs. Never
-make the agent manage a content plan — just hand them the next thing to make.
+**`${CLAUDE_PLUGIN_ROOT}/shared/mike-frameworks.md` is the methodology source of truth** (the 4-3-2-1
+ratio, the HVC video structure, the filming/editing/hashtag beliefs, and Mike's coaching answers). When
+anything conflicts, that file wins. Highlights every skill honours:
+- **4-3-2-1 ratio:** 4 reach (40%) · 3 value/education (30%) · 2 trust/connection (20%) · 1 conversion (10%).
+- **HVC:** every video = Hook (bold, ~3 sec, **never "stop scrolling"**) → Value (structured list) → CTA
+  (aligns with the format; doesn't always sell).
+- **Beliefs:** raw + vertical is good; **captions are the only mandatory edit**; **3–5 searchable hashtags,
+  no more**; 45–60s is the real-estate sweet spot.
+
+The agent works by format — green screen, talking head, carousel. That's all they think about. Behind the
+scenes you keep the 4-3-2-1 ratio balanced and the 80/20 broad-to-niche reach split right by choosing
+topics, angles, and CTAs. Never make the agent manage a content plan — just hand them the next thing to make.
 
 ---
 

@@ -3,6 +3,12 @@
 The daily green screen needs **one** fresh, locally-relevant, reactable article. Search wide, then pick
 the single best for today.
 
+**Green screen is Mike's #1 tool for reaching LOCALS — not just other agents.** So cast wide across BOTH
+real-estate news AND local-life content: local news, "things to do this week," and top lists (restaurants,
+cafés, events, hikes, beaches). Real-estate-only reactions build a following of *agents*; mixing in
+local-life content is what builds a following of actual buyers and sellers. Across the week, alternate
+between RE news and local-life topics.
+
 ## Search categories (run for the agent's city/market)
 Replace `[city]`, `[month]`, `[year]` with the agent's details.
 
@@ -26,6 +32,14 @@ Replace `[city]`, `[month]`, `[year]` with the agent's details.
 **5 — Local development / neighbourhood**
 - `"[city]" new development real estate [year]` · `"[city]" rezoning OR "new housing policy" [year]`
 
+**6 — Local news & "things to do" (reaches locals, not agents)**
+- `[city] news [month] [year]` · `things to do in [city] this weekend` · `[city] events [month] [year]`
+- `[city] new restaurant OR cafe opening [year]` · `[city] infrastructure OR development news [year]`
+
+**7 — Top lists / local lifestyle (great green-screen fuel)**
+- `best restaurants in [city]` · `best coffee shops [city]` · `best hikes OR parks OR patios [city]`
+- `cost of living [city]` · `moving to [city] [year]` · `[neighbourhood] guide`
+
 ---
 
 ## Source Priority
@@ -46,7 +60,7 @@ CoreLogic, Freddie Mac, Federal Reserve.
 |---|---|---|
 | Recency | Published within 7 days (0–3 ideal) | Older than 7 days |
 | Source | Named, credible publication or board | Anonymous, blog, brokerage promo |
-| Data | At least one specific stat or number | All vague generalities |
+| Substance | A specific stat/number, OR a concrete local hook (an event, opening, a real list) | Vague — nothing to react to |
 | Local relevance | Specific to the agent's city, or directly affects their market | Only relevant elsewhere |
 | Reaction potential | Agent can add a take | Neutral data dump |
 | Link status | Verified working via web_fetch | 404, paywall, redirect |

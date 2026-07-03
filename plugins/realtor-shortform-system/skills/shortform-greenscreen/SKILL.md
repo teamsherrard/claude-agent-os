@@ -1,9 +1,11 @@
 ---
 name: shortform-greenscreen
 description: >
-  The Daily Green Screen workflow for the Short-Form Content OS. Once a day, finds the single most
-  timely, locally-relevant real estate or market article worth reacting to RIGHT NOW, and delivers a
-  ready-to-film package: the verified article + the key stat to hold on screen + a word-for-word HOOK +
+  The Daily Green Screen workflow for the Short-Form Content OS — Mike's #1 tool for reaching LOCALS.
+  Once a day, finds the single most timely, locally-relevant thing worth reacting to RIGHT NOW — local
+  news, "things to do this week," top lists (restaurants/cafés/events/hikes), OR real-estate/market news —
+  and delivers a ready-to-film package: the verified source + the key stat/hook to hold on screen + a
+  word-for-word HOOK +
   4–6 KEY TALKING POINTS (not a full script, so delivery stays natural and fast) + platform-specific
   captions/titles/tags. Reactive and daily on purpose — timeliness drives green-screen performance, so
   this is never batched. Text only: it does NOT generate green-screen backgrounds, images, or designs —
@@ -17,11 +19,16 @@ description: >
 
 # Daily Green Screen
 
-The agent's daily reaction post. Find the one thing happening in their market right now that's worth a
-30–60 second take, hand them a hook and the talking points, and let them film it in two minutes.
+The agent's daily reaction post. Find the one timely thing happening locally right now that's worth a
+45–60 second take, hand them a hook and the talking points, and let them film it in two minutes.
+
+**Green screen is Mike's #1 tool for reaching LOCALS, not just agents** (`${CLAUDE_PLUGIN_ROOT}/shared/mike-frameworks.md`).
+So it's not only real-estate news — alternate across **local news, "things to do this week," top lists
+(restaurants, cafés, events, hikes), and RE/market news.** Real-estate-only reactions build a following of
+agents; the local-life angles build a following of actual buyers and sellers.
 
 **Why daily and reactive (not batched):** green screen earns reach by being *timely* — "I'm on top of
-this market today." Batching a week of reactions in advance kills that signal. Run this once per day on
+what's happening here today." Batching a week in advance kills that signal. Run this once per day on
 whatever is freshest.
 
 **Why talking points, not a script:** reaction content should sound natural and unscripted. The agent
