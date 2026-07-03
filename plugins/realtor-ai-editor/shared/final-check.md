@@ -35,7 +35,7 @@ Any compliance FAIL you cannot fix in ≤1 pass → STOP. Do not deliver. Tell t
 
 This is the real gate. Split into BLOCKERS (auto-fail — cannot deliver) and POLISH (fix if you can, but they don't block). For EACH blocker, emit a literal line: `<item>: PASS` / `<item>: FAIL` / `<item>: FIXED`.
 
-**The frame-read rule (because the editor has lied about this before):** every VISUAL blocker's PASS MUST cite the exact frame timestamp you actually extracted and Read — e.g. `no text/cards over the face: PASS (read frame @ 00:07)`. A PASS with no cited, actually-read frame is NOT a pass — treat it as FAIL. You have falsely claimed "off-face" on frames you never looked at; that is banned. Read the frame, or it failed.
+**The frame-read rule (because the editor has lied about this before):** every VISUAL blocker's PASS MUST cite the exact frame timestamp you actually extracted and Read — e.g. `no text/cards over the face: PASS (read frame @ 00:07)`. A PASS with no cited, actually-read frame is NOT a pass — treat it as FAIL. You have falsely claimed "off-face" on frames you never looked at; that is banned. Read the frame, or it failed. **Visual-blocker frame reads run ON the exported file — export the review draft BEFORE working this gate; fix and re-export if a blocker fails.**
 
 **BLOCKERS (auto-fail — cannot deliver):**
 1. `Studio Sound confirmed ON (~55%)` — verify it actually applied (not silently off); ~80–90% for phone/echoey. (non-visual)
@@ -47,8 +47,8 @@ This is the real gate. Split into BLOCKERS (auto-fail — cannot deliver) and PO
 7. `NO text/cards over the face` — captions AND cards all clear of the face (or timed over B-roll). (VISUAL — cite frame at each card/caption moment)
 8. `no exposed black bars` — footage fills the frame; no exposed edges from zooms. (VISUAL — cite frame)
 9. `no accidental background removal` — his real background is intact, NOT black/keyed. (VISUAL — cite frame)
-10. `b-roll within the cap + no repeats` — short-form ≤ 3 total; long-form ~1 per 1.5–2 min (~5–7 on 10 min); no repeated clips anywhere. (count them; cite a frame if unsure)
-11. `long-form emphasis pop-ups present (every ~2–3 min)` — long-form only; an emphasis pop-up roughly every 2–3 min (~3–5 on a 10-min video). N/A for short-form. (VISUAL — cite a frame at one pop-up)
+10. `b-roll within the cap + no repeats` — short-form ≤ 3 total; long-form ~1 per 1.5–2 min (~5–7 on 10 min); no repeated clips anywhere. EXCEPTION — long listing tour: the room-by-room property cutaways (per edit-listing) are exempt from the per-minute scale; the no-repeats rule still holds. (count them; cite a frame if unsure)
+11. `long-form emphasis pop-ups present (every ~2–3 min)` — long-form only; an emphasis pop-up roughly every 2–3 min (~3–5 on a 10-min video). N/A for short-form. Long listing tour: the address/price/feature info cards plus an occasional emphasis pop-up satisfy this line — do not force the 2–3-min cadence. (VISUAL — cite a frame at one pop-up)
 12. `card typography clean at FULL resolution` — for EVERY card: extract the frame at **full export resolution and CROP to the card region** (a small/low-res montage HIDES these defects — that's how a misaligned card shipped before). Check: all lines centred to the panel AND to each other, single spaces only, panel hugs the text (no oversized empty slab), no drifting stacked layers. (VISUAL — cite the full-res crop per card)
 
 **POLISH (fix if quick — does NOT block delivery):** caption size/contrast fine-tuning, SFX level, transition smoothness, panel rounding, perfect text padding, B-roll word-matching nuance, count-up/heavy-AI restraint confirmations. Note any you couldn't perfect so the agent knows it's part of their free 20%.
@@ -68,6 +68,7 @@ This is the real gate. Split into BLOCKERS (auto-fail — cannot deliver) and PO
 - **Colour grade applied** — subtle, bare-minimum, natural, flattering; **never over-saturated / over-bright** (skin never pale, orange, or yellow).
 - **Studio Sound applied AND confirmed on** — at the right level (**~55% default; ~80–90% for phone/echoey**); not so low it leaves echo, not so high it thins the voice. Verify it didn't silently stay off.
 - **Energy present (mandatory minimum)** — a couple of zoom-in/out punch-ins (each with a swoosh SFX), smooth transitions at scene changes, and a couple of SFX — on KEY beats, not every scene. A flat reel with none is a fail.
+- **Music bed (short-form / reels)** — a music bed is present AND ducked well under the voice (never blasting over it; `${CLAUDE_PLUGIN_ROOT}/shared/music.md`). Long-form ships without a bed by default — N/A unless one was added.
 - **Captions / on-screen text right for the format** — SHORT-FORM: karaoke captions present, big (~90pt+, not the tiny default), readable, high-contrast, active word in the brand accent set explicitly (not green). LONG-FORM: no word-by-word karaoke — instead an emphasis pop-up every ~2–3 min (key phrase, brand panel, off the face; ~3–5 on a 10-min video).
 - **Clean cut** — filler words, dead air, bad takes, and false starts removed.
 - **Clean open ON THE HOOK** and **clean ending** on a complete thought (covered below).
@@ -86,7 +87,7 @@ This is the real gate. Split into BLOCKERS (auto-fail — cannot deliver) and PO
 - **His real background is intact — NOT accidentally removed / black** (no green-screen / background-removal on a talking-head).
 - **B-roll is actually present** — every long-form has at least some (Descript stock minimum); never a bare talking-head.
 - Horizontal b-roll on a vertical reel is split-screen or clean full-bleed — never over-zoomed / floating.
-- B-roll matches the words, is unique (**no repeats anywhere — not just back-to-back**), **within the cap (short-form ≤ 3 clips total — count them; long-form scaled to length ~1 per 1.5–2 min, e.g. ~5–7 on a 10-min video, curated, never wall-to-wall)**, and never covers the face / hook / CTA.
+- B-roll matches the words, is unique (**no repeats anywhere — not just back-to-back**), **within the cap (short-form ≤ 3 clips total — count them; long-form scaled to length ~1 per 1.5–2 min, e.g. ~5–7 on a 10-min video, curated, never wall-to-wall; EXCEPTION — a long listing tour's room-by-room property cutaways are exempt from the per-minute scale, no-repeats still applies)**, and never covers the face / hook / CTA.
 
 ## Look & feel
 - Purposeful creativity (minimal ≠ bare) but not cluttered; the mandatory energy (zoom punch-ins + swoosh, smooth transitions, a couple of SFX) is present but on KEY beats only, never every scene; SFX subtle + low.

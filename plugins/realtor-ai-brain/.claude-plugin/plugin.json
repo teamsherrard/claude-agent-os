@@ -1,8 +1,8 @@
 {
   "name": "realtor-ai-brain",
   "displayName": "Realtor AI Brain (Plugin 1)",
-  "version": "0.22.2",
-  "description": "One shared AI Brain for a real estate agent \u2014 their identity (brand, market, avatars, voice, offer, visuals) and their memory (clients, listings, content history) \u2014 that every skill reads from and writes back to. Run Setup once; every tool already knows you. (The AI Admin is its own plugin on this same marketplace.) Now includes the system-wide Capture layer: the agent talks on the go (a video idea, a closing, a new vendor, a market note) and it files each into the right place \u2014 ideas, proof, vendors, intel \u2014 that every other system then reads.",
+  "version": "0.23.0",
+  "description": "One shared AI Brain for a real estate agent — their identity (brand, market, avatars, voice, offer, visuals) and their memory (clients, listings, content history) — that every skill reads from and writes back to. Run Setup once; every tool already knows you. (The AI Admin is its own plugin on this same marketplace.) Now includes the system-wide Capture layer: the agent talks on the go (a video idea, a closing, a new vendor, a market note) and it files each into the right place — ideas, proof, vendors, intel — that every other system then reads.",
   "author": {
     "name": "Team Sherrard"
   },

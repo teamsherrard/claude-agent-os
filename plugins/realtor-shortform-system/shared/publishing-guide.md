@@ -40,9 +40,10 @@ Use the connected Metricool tools (call them by these names — your connection 
    title + `madeForKids`; X ≤280 chars (don't split into threads); Bluesky ≤300. Set `autoPublish` true.
 4. **`getScheduledPosts`** / **`updateScheduledPost`** — list or change what's queued (e.g. "move it to 2pm").
 
-**Free-plan guardrail:** free caps at **20 scheduled posts** and **3 months of analytics history**. If a
-cycle would exceed 20, say so plainly and offer to post to one platform, or suggest the cheap Starter
-upgrade. Never silently drop posts.
+**Free-plan guardrail:** free caps at **20 posts per calendar month** (counted when published — resets
+on the 1st; queuing ahead is fine) and **3 months of analytics history**. If a month would exceed 20,
+say so plainly and offer to post to one platform, or suggest the cheap Starter upgrade. Never silently
+drop posts.
 
 **Platforms:** Instagram, Facebook, TikTok, YouTube Shorts (+ LinkedIn, X, Threads, Pinterest, Bluesky,
 GBP). Account-type reminders still apply (Instagram needs a Business/Creator profile to auto-publish).
@@ -87,7 +88,7 @@ adds the slides they built in claude.ai/design).
   with the date/platform, then push to Drive.
 
 ## Measuring later
-The same connector pulls performance (Metricool + GHL both expose analytics). The 2-week analytics review
-(coming as `shortform-analytics`) reads it and writes winners to `memory/performance.md` so the next
-round of content leans on what worked. Until then, the agent can ask "how did my posts do?" and you pull
-what the connector offers.
+The same connector pulls performance (Metricool + GHL both expose analytics). The 2-week performance
+review and any "how did my posts do?" ask are handled by the **`shortform-analytics`** skill — it reads
+the connector and writes winners to `~/realtor-brain/memory/performance.md` so the next round of content
+leans on what worked. Route those requests there instead of pulling numbers ad hoc.

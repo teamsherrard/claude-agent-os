@@ -6,8 +6,8 @@ Welcome to your **Realtor AI Brain**. Three steps and you're running.
 In Claude Cowork (all UI — nothing to type):
 **Customize → Personal Plugins → Browse Plugins → ＋ → Add marketplace →** paste
 `teamsherrard/claude-agent-os` → **Install Plugin 1 (Realtor AI Brain)** → toggle **Sync
-automatically**. *(The marketplace lists every system in order — install Plugin 2, the AI Admin AI
-Admin, and the rest as you reach them in your training.)*
+automatically**. *(The marketplace lists every system in order — install Plugin 2 (the AI Admin)
+and the rest as you reach them in your training.)*
 
 ### 2. Build your Brain (one time)
 Say:

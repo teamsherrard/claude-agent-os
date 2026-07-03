@@ -67,7 +67,7 @@ Impact if exploited: exfiltrate the Brain / client ledger, send email as the rea
 - With **thousands of users worldwide**, this raises **GDPR / CCPA** questions: data minimization, retention, the realtor's controller role vs. your processor role, and deletion rights. Not a breach risk per se — a **compliance/governance** obligation.
 
 ### 3.5 [LOW] Shipped code & dependencies
-- `render_doc.py` and `generate-launch-doc.js` are **clean today.** Keep them that way with a standing rule: *shipped scripts stay minimal — no network, no `eval`/`exec`/`subprocess`, reviewed before merge.*
+- `render_doc.py` (the only shipped script; the legacy `generate-launch-doc.js` was removed in the v0.70.0 quality sweep) is **clean today.** Keep it that way with a standing rule: *shipped scripts stay minimal — no network, no `eval`/`exec`/`subprocess`, reviewed before merge.*
 - Pin and monitor the one runtime dependency (`python-docx`).
 
 ### 3.6 [LOW] The realtor's own account security

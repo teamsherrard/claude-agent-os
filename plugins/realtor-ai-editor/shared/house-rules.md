@@ -20,7 +20,7 @@ Many agents — especially women in the cohort — are self-conscious on camera.
 
 ## Confirm before cost or publish
 
-Always get a yes before anything that **spends credits** (especially AI-generated B-roll) or **publishes**. Publishing stays on "needs approval."
+Always get a yes before anything that **spends credits** or **publishes**. Publishing stays on "needs approval." (The heavy AI effects — AI generation, AI-generated B-roll — aren't a yes away; they're banned outright: `${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md`.)
 
 ## Revisions — empathy first, batched
 
@@ -31,7 +31,7 @@ Always get a yes before anything that **spends credits** (especially AI-generate
 
 ## Credit & token discipline (simplify, simplify)
 
-- Default to the **cheap, reliable** operations (cuts, filler removal, Studio Sound, captions, reframe). Warn before the expensive ones (AI gen).
+- Default to the **cheap, reliable** operations (cuts, filler removal, Studio Sound, captions, reframe). The heavy AI effects (AI generation, AI-generated B-roll) are banned — warn and skip (`${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md`).
 - Transcribe once. Don't re-run a pass that already completed.
 - Prefer one well-formed instruction over many tiny ones — **run THE PASS PLANS** (`${CLAUDE_PLUGIN_ROOT}/shared/descript-playbooks.md`): short-form reel ≈ **4 paid passes**, long-form ≤ **6**. Free prep (transcript work, glossary, frame-QA) costs nothing — do it outside the paid calls.
 - Keep your own messages short — fewer tokens, less for the agent to read.

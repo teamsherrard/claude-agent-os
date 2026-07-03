@@ -38,10 +38,10 @@ get a detached home under $[X]. I'm [Name] — real estate agent in [City] — a
 today I'm walking you through [Neighbourhood] so you can see exactly what your
 money gets you here."
 
-*For families:*
-"If you're moving to [City] with kids and you haven't looked at [Neighbourhood] yet —
-this video is for you. [School name], [park name], [key amenity] — all within walking
-distance. I'm [Name], and I'm taking you inside [Neighbourhood] today."
+*Schools-and-parks angle:*
+"If you're moving to [City] and schools are at the top of your list — this video is
+for you. [School name], [park name], [key amenity] — all within walking distance in
+[Neighbourhood]. I'm [Name], and I'm taking you inside [Neighbourhood] today."
 
 *For out-of-town relocators:*
 "You've probably heard of [Neighbourhood] but have no idea what it actually feels like
@@ -134,7 +134,7 @@ The final thing the agent says. Like the hook — word-for-word, clean, and spec
 If you're [target buyer type] looking in [City], this is one I'd put on your
 shortlist — and I'd be happy to walk you through it in person.
 
-[Agent's primary CTA from Project file — or: "Link in the description to
+[Agent's primary CTA from the Brain (identity/voice.md) — or: "Link in the description to
 book a free call — we'll figure out if [Neighbourhood] is the right fit for you."]
 
 And if you want more neighbourhood guides like this, subscribe —

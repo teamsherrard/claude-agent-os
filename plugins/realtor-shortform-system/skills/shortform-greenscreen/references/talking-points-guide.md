@@ -11,7 +11,7 @@ after the hook is bullet prompts** the agent expands in their own voice.
 
 ## The structure
 
-### 1. Hook — word-for-word, under 10 words
+### 1. Hook — word-for-word, ~12 words max (one breath)
 One line, read exactly as written, from `hook-formulas.md`. It references the stat or the local market.
 This is the only scripted part.
 
@@ -53,7 +53,7 @@ the agent wants to build a graphic in claude.ai/design (we describe; we don't re
 
 ```
 HOOK (word-for-word):
-"The Bank of Canada just blinked again. Here's what it means for Calgary."
+"The Bank of Canada just blinked. Here's what it means for Calgary."
 
 TALKING POINTS (riff):
 • Rate held a 3rd time — borrowing costs aren't climbing for now

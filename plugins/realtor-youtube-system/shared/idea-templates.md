@@ -33,10 +33,12 @@ education · market updates — are angles WITHIN these 6 pillars, mostly reloca
 
 ## Location / comparison
 - Where to Live in [City] — Every Neighbourhood You Need to Know
-- Top X Communities / Top X Safest Communities in [City]
+- Top X Communities in [City]
 - [Your Market] vs [Competing Market] — Where Should You Live?  (e.g., Calgary vs Vancouver)
 - [Community 1] vs [Community 2] — Which Is Better?
-- Top Neighbourhoods for Young Professionals / Families / Retirees in [City]
+- Top [City] Neighbourhoods for First-Time Buyers by Price
+- [City] Neighbourhoods With the Shortest Downtown Commute
+- [City] Suburbs With Top-Rated Schools and the Most Green Space
 - Best Suburbs Outside [City]
 - Moving From [Other City] to [City]  (e.g., Toronto → Calgary)
 

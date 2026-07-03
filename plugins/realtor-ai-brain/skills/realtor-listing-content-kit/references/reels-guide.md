@@ -70,7 +70,7 @@ Pick the 3 features most relevant to the target buyer — not the 3 most impress
 features to any buyer. They're not always the same thing.
 
 Examples:
-- For families → school catchment, backyard size, bedroom count
+- Schools angle → catchment school by name, backyard size, bedroom count
 - For first-time buyers → price vs neighbourhood avg, updated kitchen, low maintenance
 - For investors → suite potential, rental income estimate, location to transit
 - For downsizers → main floor primary bedroom, lock-and-leave, low maintenance yard
@@ -116,11 +116,12 @@ while walking to a nearby amenity. The neighbourhood should be visually present.
 "If [Neighbourhood] is on your shortlist — here's a listing that's worth your time."
 
 ### Neighbourhood talking points (from research):
-Pick 3 specific, named facts that matter most to the target buyer:
+Pick 3 specific, named facts that matter most to the target buyer — angle on facts about the place,
+never on who "belongs" there (fair housing):
 
-For families: school name + rating, park or playground name, family-friendly street context
-For young professionals: commute time to downtown, café or restaurant name, walkability score
-For first-time buyers: price vs neighbourhood average, transit access, what the neighbourhood is becoming
+Schools angle: school name + rating, park or playground name, walking distance to a named green space
+Commute angle: commute time to downtown, café or restaurant name, walkability score
+For first-time buyers (by budget): price vs neighbourhood average, transit access, what the neighbourhood is becoming
 For downsizers: quiet street context, proximity to amenities, maintenance-free lifestyle angle
 
 ### Listing bridge (5-10 seconds):

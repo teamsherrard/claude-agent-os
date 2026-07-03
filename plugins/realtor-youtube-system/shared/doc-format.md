@@ -62,7 +62,7 @@ CHAPTERS   (paste into the description)
 Facts verified — {claim} ({source}, {date}).
 Compliance — {what was checked}.  ✓
 ```
-Flagship strategy docs (Game Plan, Market Report) also carry the **credibility stamp** (house rules #8):
+Flagship strategy docs (Game Plan, Market Report) also carry the **credibility stamp** (house rules #9):
 `Powered by Mike Sherrard Coaching Inc Frameworks` — once as a byline under the title, once as the final
 footer line. Never put it inside a copy block the agent pastes out.
 
@@ -106,7 +106,7 @@ Goal: {from strategy.md}
 ════════════════════════════════════════════
 THE FOUR STRATEGIC SHIFTS
 ════════════════════════════════════════════
-   1.  {length 10–20 min}     2.  {search-intent titles}
+   1.  {length 10–25 min (relocation 8–12)}     2.  {search-intent titles}
    3.  {early CTA, 60–90s}    4.  {playlists per pillar}
 
 
@@ -128,7 +128,7 @@ THE VIDEO STRUCTURE   (every video — doctrine §4)
 ════════════════════════════════════════════
    HOOK (0:00–0:30) — {the viewer's question/fear, not "welcome back" — §5}
    PRIMARY CTA (0:30–1:00) — {warm invite: "people just like you" + book a private call, from the Brain — §6.2}
-   BODY (1:00–end) — {deliver the promise; 10–20 min of real, local value — §7}
+   BODY (1:00–end) — {deliver the promise; 10–25 min of real, local value (relocation 8–12) — §7}
    SECONDARY CTA (final 60s) — {book/reach out + watch the next best video — §6.5}
 
 
@@ -172,7 +172,8 @@ For {avatar}  ·  {market}  ·  {YYYY-MM-DD}
 3.  {option}
 
 ──────────────── DESCRIPTION ────────────────
-{2–3 keyword-rich lines in the agent's voice, then the CTA + booking link + lead-magnet link}
+{first 3 lines — the §18.2 opening: CTA + clickable links (book-a-call / calendar link · phone · email · lead-magnet link)}
+{then 2–3 keyword-rich summary lines in the agent's voice}
 
    CHAPTERS
    00:00  {…}

@@ -29,11 +29,13 @@ plain takeaway and a recommendation.
 ## Step 1 — Load the Brain + find the data source
 - Read `~/realtor-brain/brain.md`, then `identity/publishing.md` (which tool is connected),
   `memory/content-log.md` (to map each post back to its format / category / hook / topic — the numbers
-  mean little without knowing what the post *was*), `identity/offer.md` (lead-magnet CTAs, for conversion
-  read), and `identity/voice.md` (tone).
-- The connected tool provides the numbers: **Metricool** (default) or **GoHighLevel**. If no analytics
-  connector is set up, say so kindly and offer the fallback: the agent pastes a screenshot or their
-  numbers and you analyze those (vision works fine) — the system is never blocked on the connector.
+  mean little without knowing what the post *was*; newer rows carry a `· [funnel: …]` tag in the
+  Topic/Angle cell — read the category from it, and infer from the topic for older untagged rows),
+  `identity/offer.md` (lead-magnet CTAs, for conversion read), and `identity/voice.md` (tone).
+- The connected tool provides the numbers: **Metricool** (default) or **GoHighLevel**. (Buffer schedules
+  posts but doesn't feed analytics here — treat a Buffer-only agent as the fallback below.) If no
+  analytics connector is set up, say so kindly and offer the fallback: the agent pastes a screenshot or
+  their numbers and you analyze those (vision works fine) — the system is never blocked on the connector.
 
 ## Step 2 — Read the metrics guide
 **Read `references/metrics-guide.md`** — what each metric actually tells you, how to turn it into advice,
@@ -71,12 +73,13 @@ For "run my 2-week review" / "review my performance" (and the natural cadence of
    category (reach/value/trust/conversion — Mike's 4-3-2-1) · best format (green screen/talking head/carousel) ·
    best hook · CTA performance (what drove DMs/leads) · what to make more of · posts worth remaking.**
 3. **Write it to the Brain** — append a dated block to `~/realtor-brain/memory/performance.md` (create the
-   file if it doesn't exist), then push to Drive. This is what makes the system get smarter: the planner
-   and the content workflows read the latest `performance.md` so the next round leans on what worked.
-4. **Save the readable report to Drive** following `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md` — a
-   clean Google Doc of the review in `[Agent Name] — Short-Form System/Performance/`, named
+   file if it doesn't exist), then push to Drive. This is what makes the system get smarter: the content
+   workflows read the latest `performance.md` so the next round leans on what worked.
+4. **Save the readable report to Drive** following `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md` —
+   the review as structured text, **rendered to a styled `.docx` via the shared renderer** (`render_doc.py`,
+   output-standard §6) and uploaded to `[Agent Name] — Short-Form System/Performance/`, named
    `[YYYY-MM-DD–DD] · Performance Review`. (The `performance.md` block is the machine-readable memory; this
-   Doc is the readable one the agent + their VA review.)
+   doc is the readable one the agent + their VA review.)
 5. Tell the agent the 3-sentence version + the one thing to do more of next, and where the report saved.
 
 ---

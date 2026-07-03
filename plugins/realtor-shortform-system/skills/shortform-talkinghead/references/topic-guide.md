@@ -37,7 +37,9 @@ traffic. **Niche?** Cover the niche + broad content so new people find them.
 - **Filmable in ~45–60 seconds** (Mike's real-estate sweet spot) — one idea per video, not a lecture.
 
 ## Funnel role (kept silent — Mike's 4-3-2-1, for balance)
-Tag each topic internally so the batch stays balanced (`${CLAUDE_PLUGIN_ROOT}/shared/mike-frameworks.md`):
+Tag each topic internally so the batch stays balanced (`${CLAUDE_PLUGIN_ROOT}/shared/mike-frameworks.md`) —
+and when a post is logged, persist the tag in its `content-log.md` row (the `· [funnel: …]` tag in the
+Topic/Angle cell) so the balance survives across sessions:
 - **Reach / awareness (40%)** — broad questions, market takes, money tips, relatable POVs (most of the 80%)
 - **Value / education (30%)** — teaching something specific: tips, how-tos, mistakes to avoid, myth-busting
 - **Trust / connection (20%)** — personal lessons, "what I tell my clients," client stories, behind-the-scenes

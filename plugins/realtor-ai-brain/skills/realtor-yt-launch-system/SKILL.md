@@ -3,7 +3,7 @@ name: realtor-yt-launch-system
 description: >
   Realtor YouTube Launch System — takes a YouTube video topic or transcript from a real estate agent
   and generates every written deliverable needed to launch and repurpose the video. Produces a single
-  clean Google Doc containing: YouTube SEO package (titles, description, tags), two launch emails
+  clean, formatted doc containing: YouTube SEO package (titles, description, tags), two launch emails
   (launch-day + 3-day follow-up), 3 short-form Reel/TikTok scripts with captions, platform captions
   for Instagram, TikTok, Facebook, and LinkedIn, and a launch checklist. Designed for real estate
   agents who are beginners — every output is word-for-word ready to use. Reads the agent's Brain
@@ -19,8 +19,8 @@ description: >
 # Realtor YouTube Launch System
 
 One-shot generation engine for real estate agents. When triggered, you produce every written deliverable
-needed to launch a YouTube video AND repurpose it into short-form content — compiled into a single clean
-Google Doc the agent can hand directly to a VA or use themselves.
+needed to launch a YouTube video AND repurpose it into short-form content — compiled into a single
+clean, formatted doc the agent can hand directly to a VA or use themselves.
 
 This skill is built for beginners. Every output must be word-for-word ready to copy, paste, or read.
 No agent should have to figure anything out after receiving this document.
@@ -36,7 +36,7 @@ the agent for anything already in the Brain:
 - `~/realtor-brain/identity/profile.md` — name, city/market, booking link, social handles, credentials
 - `~/realtor-brain/identity/avatars.md` — ideal client, neighbourhoods, buyer/seller pain points
 - `~/realtor-brain/identity/voice.md` — tone, what they never want to sound like, tagline, signature phrases
-- `~/realtor-brain/identity/brand-visual.md` — brand context (the Doc itself is clean plain text)
+- `~/realtor-brain/identity/brand-visual.md` — brand context (the doc itself renders in the neutral house style — no brand colours)
 - `~/realtor-brain/memory/content-log.md` — what's already been launched/repurposed, to avoid overlap
 
 **Applying what you find:** apply this context actively across every single deliverable — not just as
@@ -93,7 +93,7 @@ Extract everything you can directly from it. Only ask for what's genuinely missi
 
 Generate deliverables in this exact order. Each section builds on the ones before it.
 
-**Formatting rule for ALL sections:** Every section ends up in a clean Google Doc. Format output so that
+**Formatting rule for ALL sections:** Every section ends up in one clean, formatted doc. Format output so that
 each paragraph, bullet, and label is on its own line separated by line breaks. No walls of text.
 See Phase 3 for full formatting rules.
 
@@ -227,13 +227,14 @@ ONGOING
 
 ---
 
-## Phase 3: Save as a clean Google Doc
+## Phase 3: Save as a clean, formatted doc
 
-After all sections are generated, save them as one clean Google Doc.
+After all sections are generated, save them as one clean, formatted doc.
 
-**Read `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` first.** Build this as well-structured plain text
-and create it as a Google Doc via the Drive connector — do NOT render a `.docx` (it won't convert in
-Cowork and lands as a broken file).
+**Read `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` first.** Build this as well-structured text (the
+grammar in that file), write it to a temp file (e.g. `/tmp/doc.txt`), and render it to a styled `.docx`:
+`python3 "${CLAUDE_PLUGIN_ROOT}/shared/render_doc.py" /tmp/doc.txt "YouTube Launch · [Video Topic].docx" --title "[Video Topic] — YouTube Launch Package" --subtitle "[Agent] · [City]"`
+Then upload the `.docx` via the Drive connector.
 
 ### Formatting (per the doc-formatting standard)
 - Title + meta line (video title · agent · date · "YouTube Launch Package"), then ALL-CAPS section
@@ -243,13 +244,13 @@ Cowork and lands as a broken file).
   own line.
 - Script lines each on their own line — never run dialogue together; **bold labels** like `Subject Line:`
   on their own line.
-- Script/email sections set off with a clear label + dividers above and below (plain text can't shade)
-  so they're visually distinct from the copy.
+- Script/email sections set off with a clear label + dividers above and below so they're visually
+  distinct from the copy.
 - Omit any section that doesn't apply.
 - No brand colours — every doc renders to one clean neutral standard (visual brand design lives in the agent's design tool).
 
-Create the Google Doc in the agent's Drive **`Realtor AI Brain` → `exports`**, named
-`YouTube Launch · [Video Topic]`, and tell the agent the location + link.
+Upload the rendered `.docx` to the agent's Drive **`Realtor AI Brain` → `exports`** (find-or-create
+`exports`), named `YouTube Launch · [Video Topic]`, and tell the agent the location + link.
 
 ---
 
@@ -305,7 +306,7 @@ copy is wiped when the session ends; an unsynced write is a lost write.
 ### SEO
 - [ ] Agent's city appears in title, description, and tags
 - [ ] Primary keyword leads the description
-- [ ] Year (2026) included in titles and tags
+- [ ] Current year included in titles and tags
 - [ ] 15 tags using 5-tier hierarchy
 
 ### Consistency

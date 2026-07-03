@@ -1,4 +1,4 @@
-# USP Knowledge File Template — Claude Project Reference Document
+# USP Knowledge File Template — Brain Reference (identity/offer.md)
 
 ## About This Document
 
@@ -7,7 +7,7 @@ persona file. Together, the two files give Claude the complete picture of who th
 agent is, who they serve, and what they offer.
 
 Written in third person. Structured for Claude to read, not for the agent or prospects.
-Uploaded to the agent's Claude Project alongside their brand persona file.
+Written into the agent's Brain (`~/realtor-brain/identity/offer.md`) alongside the brand persona files.
 
 ---
 

@@ -3,7 +3,7 @@ name: leadcapture-magnet
 description: >
   Step 1 of the Lead Capture System — builds the agent's lead magnet (a brand-led guide for their whole
   audience of buyers AND sellers, or a focused buyer/seller guide) straight from the offer in their AI Brain. Produces the full, genuinely useful guide content as clean copyable text, in
-  the agent's voice. Saves it as a Google Doc in the campaign folder, then hands off to the funnel that gives
+  the agent's voice. Saves it as a clean, formatted doc (styled .docx) in the Drive campaign folder, then hands off to the funnel that gives
   it away. CONTENT ONLY — it writes the guide's content (the design is a separate skill); it NEVER designs the PDF.
 
   Trigger on: "build my lead magnet", "create a lead magnet", "lead magnet for my offer", "make my buyer

@@ -26,7 +26,7 @@ in [City]" — not generic real estate advice.
 
 ### Title Rules
 - City/market name in the title whenever possible
-- Year (2026) for search freshness
+- Current year for search freshness
 - Keep under 60 characters when possible
 - Use "Realtors" OR "Real Estate Agents" interchangeably (both are searched)
 - Deliver on the promise — no clickbait
@@ -113,7 +113,7 @@ In this video, I cover:
 
 ### Tag Rules
 - First tag = primary local keyword
-- Always include the year (2026)
+- Always include the current year
 - Mix city-specific and broad tags
 - Use "[city]" as a placeholder — always replace with the actual city
 - 15 tags total — never more

@@ -14,6 +14,7 @@
     "city": "",
     "website": "",
     "cta_url": "",
+    "cta": { "text": "", "details": "" },
     "colors": { "primary": "", "accent": "", "text": "#FFFFFF", "bg": "" },
     "fonts": { "heading": "", "body": "" },
     "logo": "",
@@ -27,8 +28,9 @@
     "use_listing_photos_for_property_videos": true
   },
   "platforms": ["youtube", "instagram"],
-  "caption_style": "karaoke-gold",
+  "caption_style": "bold-karaoke",
   "publish": "needs-approval",
+  "expectations_shown": false,
   "stock_sources": {
     "pexels":   { "enabled": false, "api_key": "" },
     "pixabay":  { "enabled": false, "api_key": "" },
@@ -38,6 +40,5 @@
   "real_place_sources": {
     "wikimedia":         { "enabled": true,  "note": "no key needed" },
     "google_streetview": { "enabled": false, "api_key": "" }
-  },
-  "ai_broll": { "enabled": false, "max_per_video": 2 }
+  }
 }

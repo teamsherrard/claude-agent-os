@@ -7,7 +7,7 @@ description: >
   schools, amenities, restaurants, and local stats automatically, then delivers a hybrid
   YouTube script (word-for-word hook and closing line, structured talking points at each stop,
   natural transition lines between locations) plus 3 short-form video concepts pulled from the
-  tour content. Everything compiled into a single clean Google Doc.
+  tour content. Everything compiled into a single clean, formatted doc.
 
   Trigger on: "neighbourhood tour script", "neighbourhood tour video", "build a tour script",
   "filming a neighbourhood", "drive and talk script", "community tour video", "neighbourhood
@@ -41,6 +41,9 @@ doesn't exist, tell the agent to run _Realtor AI Brain — Setup_ first.**
 - **Compliance:** read `~/realtor-brain/identity/compliance.md`. Append the required brokerage disclaimer
   + license # to every public-facing output, and never make a claim on its "claims to avoid" list. *(If
   `compliance.md` is empty/unset, proceed but flag it to the agent.)*
+- **Fair Housing:** describe the place, never the people — no "safe/good area" or "family-friendly"
+  proxies, no demographic descriptions of who lives in a neighbourhood. Sell named facts: schools by
+  name, parks, commute, price point.
 - **No placeholders:** if any identity file you rely on still contains `[bracketed]` template text, treat
   that field as missing — ask the agent or skip it. **Never output bracketed placeholder text.**
 
@@ -122,7 +125,6 @@ replacing [neighbourhood], [city], and [year] with the agent's specifics.
 - `[neighbourhood] [city] community vibe lifestyle`
 - `living in [neighbourhood] [city]`
 - `[neighbourhood] [city] pros cons`
-- `[neighbourhood] [city] demographics population`
 
 ### Step 2 — Extract and Organize Research
 
@@ -156,7 +158,7 @@ PARKS AND RECREATION:
 RESTAURANTS AND COFFEE:
 - Top restaurants: [3-5 names with one-line descriptions]
 - Best coffee: [2-3 names]
-- Local food vibe: [casual/trendy/family-friendly/diverse/etc.]
+- Local food vibe: [casual/trendy/upscale/diverse/etc.]
 
 SHOPPING AND ERRANDS:
 - Grocery: [Names]
@@ -170,7 +172,7 @@ DEVELOPMENT AND GROWTH:
 
 COMMUNITY CHARACTER:
 - Overall vibe: [2-3 words]
-- Who lives here: [demographic notes]
+- Housing mix and lifestyle amenities: [notes]
 - What makes it unique: [key differentiator vs other neighbourhoods]
 - Any insider knowledge or lesser-known facts worth mentioning
 
@@ -218,6 +220,12 @@ I'm [Agent Name] — real estate agent in [City] — and today I'm taking you in
 [One-line teaser of what they'll see in the video.]
 Let's go.
 ```
+
+**Primary CTA (10-15 seconds — right after the hook, per the 2-CTA model):** one
+natural line with the agent's main offer + booking link (from
+`~/realtor-brain/identity/voice.md` / `offer.md`) — e.g. "And if [Neighbourhood] is
+on your shortlist, my free consult link is the first one in the description." The
+closing line's CTA at the end is the secondary CTA.
 
 ---
 
@@ -358,11 +366,12 @@ compelling stop — ideally somewhere that shows the neighbourhood's character.
 
 ---
 
-## Phase 5: Save as a clean Google Doc
+## Phase 5: Save as a clean, formatted doc
 
-**Read `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` first.** Build this as well-structured plain text
-and create it as a Google Doc via the Drive connector — do NOT render a `.docx` (it won't convert in
-Cowork and lands as a broken file).
+**Read `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` first.** Build this as well-structured text (the
+grammar in that file), write it to a temp file (e.g. `/tmp/doc.txt`), and render it to a styled `.docx`:
+`python3 "${CLAUDE_PLUGIN_ROOT}/shared/render_doc.py" /tmp/doc.txt "Tour · [Neighbourhood] · [City].docx" --title "[Neighbourhood] Tour Guide" --subtitle "[Agent] · [City]"`
+Then upload the `.docx` via the Drive connector.
 
 ### Document Structure
 
@@ -405,15 +414,15 @@ DATA SOURCES
 ### Formatting (per the doc-formatting standard)
 - Title + meta line ([Neighbourhood] · agent · date · target buyer), then ALL-CAPS section headers each
   with an em-dash divider above and a blank line below.
-- Hook and closing line set off with a label + dividers above and below (plain text can't shade) so
-  they're clearly word-for-word.
+- Hook and closing line set off with a label + dividers above and below so they're clearly
+  word-for-word.
 - Stop cards clearly separated with a divider between each; transition lines on their own line, labelled.
 - Stats cheat sheet kept clean and minimal — all key info in a tight block the agent can screenshot.
 - `•` bullets, one per line; generous blank-line spacing.
 - No brand colours — every doc renders to one clean neutral standard (visual brand design lives in the agent's design tool).
 
-Create the Google Doc in the agent's Drive **`Realtor AI Brain` → `exports`**, named
-`Tour · [Neighbourhood] · [City]`, and tell the agent the location + link.
+Upload the rendered `.docx` to the agent's Drive **`Realtor AI Brain` → `exports`** (find-or-create
+`exports`), named `Tour · [Neighbourhood] · [City]`, and tell the agent the location + link.
 
 ---
 

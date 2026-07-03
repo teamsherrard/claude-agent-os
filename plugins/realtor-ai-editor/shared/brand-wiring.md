@@ -24,6 +24,7 @@ Read brand in this exact order — first hit wins:
   "city": "",
   "website": "",
   "cta_url": "",
+  "cta": { "text": "", "details": "" },
   "colors": { "primary": "", "accent": "", "text": "#FFFFFF", "bg": "" },
   "fonts": { "heading": "", "body": "" },
   "logo": "",
@@ -34,4 +35,5 @@ Read brand in this exact order — first hit wins:
 
 - `style_pack` (look/energy/typography) × the colour skin = the agent's signature, so 100 agents don't look identical. Starter packs: `data-rich`, `clean-minimal`, `bold-kinetic`, `cinematic`.
 - `caption.accent` drives the active-word colour.
+- `cta` holds the CTA wording captured at setup (`text` e.g. "DM me COST", `details` e.g. the phone number or link) — `cta-pack.md` reads it for the closing card; `cta_url` stays the link-only field.
 - Compliance: read `identity/compliance.md` before any public-facing export (brokerage disclaimer, license display, claims to avoid).

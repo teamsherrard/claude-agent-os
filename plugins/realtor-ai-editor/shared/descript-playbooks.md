@@ -36,7 +36,7 @@ After any import, `wait_for_job`; Descript auto-transcribes on import (don't re-
 Every `prompt_project_agent` call costs credits and a query, so the cheap, fast edit is the one with the **fewest, best-formed passes**. Proof from live edits: one batched clean pass (cuts + Studio Sound + reframe + grade in a single call) cost ~6 credits, while a fragmented cards-only session cost ~78. **Do ALL the free prep first** — reading/scoring the transcript, identifying the hook line, the proper-noun glossary, picking B-roll moments, the compliance read, chapters/title/description, frame-QA. Free work costs ZERO Descript credits; paid calls are only for changes to the video.
 
 **SHORT-FORM reel — 4 paid passes:**
-1. **CLEAN** — 9:16 composition + reframe (face centred) + open on the pre-identified hook + cut filler/dead-air/bad-takes + clean end + Studio Sound ~55% (80–90% phone/echoey). One instruction; review the cut after.
+1. **CLEAN** — 9:16 composition + reframe (face centred) + open on the pre-identified hook + cut filler/dead-air/bad-takes + clean end + Studio Sound ~55% (80–90% phone/echoey). One instruction — but preview the proposed cuts (from the free transcript read) and get a yes BEFORE firing it (the destructive-pass hard gate; snapshot first if the recording lives only in Descript), then verify the cut landed.
 2. **CAPTIONS** — glossary corrections first, then karaoke ON (brand style, ~90pt+, below the face, inside the safe zones).
 3. **B-ROLL** — `import_media` the ≤3 chosen clips, then ONE placement pass (full-cover, on the exact words, never over hook/face/CTA).
 4. **FINISH** — bare-minimum grade + 2–3 punch-ins (each with a swoosh) + smooth transitions + 1–2 SFX + ducked music + hook card + CTA card (rounded brand panels, off the face, safe zones — spell out every position in the one instruction).
@@ -87,7 +87,7 @@ When they come back, read the checkpoint log and run only the unlogged passes.
 6. **PASS ④ — B-roll:** `editor-broll` sources + imports (**curated, never reused**, ~1 per 1.5–2 min), then ONE placement pass on the exact words. Horizontal b-roll on a vertical → **split-screen, never over-zoomed** (`${CLAUDE_PLUGIN_ROOT}/shared/layouts.md`).
 7. **PASS ⑤ — energy (KEY beats, not every scene):** a couple of **zoom-in/out punch-ins** on key lines (each with a **swoosh SFX**), **smooth transitions** at scene changes, **at least a couple of SFX**, contextual animations matched to the words (price drop → down arrow; "tight" → a squeeze). Minimal ≠ bare (`${CLAUDE_PLUGIN_ROOT}/shared/effects-menu.md`).
 8. **PASS ⑥ — cards + emphasis pop-ups (every position in the instruction):** a **hook card + a CTA card** on rounded brand panels + an **emphasis pop-up every ~2–3 min** (a key phrase from the transcript — a ~10-min video ≈ 3–5 pop-ups) + optionally ONE stat card — all **OFF THE FACE**, in the safe zones (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`). **No word-by-word karaoke on long-form** (YouTube auto-captions cover accessibility); full captioning only if asked.
-9. **FREE:** chapters (00:00-format timestamps for the description) + title/description + frame-QA; then `publish_project` (on approval) → **ONE render** used for the QA and the review link, handed over with the title/description.
+9. **FREE:** chapters (00:00-format timestamps for the description) + title/description; then `publish_project` (on approval) → **ONE render** — frame-QA that exported render (free; the final check runs on the export), fix + re-export only if a blocker fails, then hand it over with the title/description.
 
 ## Playbook B — short-form / pull shorts
 
@@ -108,11 +108,11 @@ Two modes: a **standalone reel** (one short → steps 4–5 below) and the **rep
 
 1. Find/import as above (by URL).
 2. **FREE PREP:** pick the moment (hook → idea → payoff/CTA), identify the hook line, build the glossary, read compliance.
-3. **PASS 1 — CLEAN:** make the 9:16 composition, reframe face-centred, cut hard (open on the hook, zero dead air, clean end — never cut the hook or the CTA), Studio Sound ~55% (80–90% phone/echoey). One instruction; review the cut.
+3. **PASS 1 — CLEAN:** make the 9:16 composition, reframe face-centred, cut hard (open on the hook, zero dead air, clean end — never cut the hook or the CTA), Studio Sound ~55% (80–90% phone/echoey). One instruction — preview the proposed cuts and get a yes BEFORE firing (hard gate; snapshot first if the recording lives only in Descript), then verify the cut landed.
 4. **PASS 2 — CAPTIONS:** glossary corrections, then karaoke ON (brand style, big ~90pt+, below the face, **inside the vertical safe zones — out of the right ~12% icon rail and clear of the top/bottom bars**).
 5. **PASS 3 — B-ROLL:** import the ≤3 chosen clips, then ONE placement pass (**MAXIMUM 3, never reused, never over the hook/face/CTA** — more is the agent's manual 20%).
 6. **PASS 4 — FINISH:** bare-min grade + **energy on KEY beats — a couple of zoom-in/out punch-ins (each with a swoosh SFX), smooth transitions, a couple of SFX** + ducked music + **a hook card + a CTA card (2, maybe 3 cards total), each on a rounded brand panel and OFF THE FACE** (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`; the karaoke captions already carry the keyword emphasis, so no separate keyword-pop cards).
-7. Frame-QA (free), then `publish_project` on approval — **ONE render** for the QA + the review link.
+7. `publish_project` on approval — **ONE render**; frame-QA that export (free; the final check runs on the export), fix + re-export only if a blocker fails, then send the review link.
 
 ## Playbook C — build from a prompt (optional)
 

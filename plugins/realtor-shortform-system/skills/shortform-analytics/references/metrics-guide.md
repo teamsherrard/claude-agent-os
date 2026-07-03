@@ -56,7 +56,7 @@ Then write a dated block to `~/realtor-brain/memory/performance.md`:
 - Do more of: [..] · Remake: [..]
 - One thing for next cycle: [..]
 ```
-Push to Drive. The content workflows + planner read the latest block so next cycle leans on what worked.
+Push to Drive. The content workflows read the latest block so next cycle leans on what worked.
 
 ## Honesty rules
 - Two weeks is often thin — call out small samples; don't over-read a single spike.

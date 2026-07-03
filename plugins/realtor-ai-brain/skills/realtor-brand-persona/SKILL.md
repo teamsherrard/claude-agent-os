@@ -39,7 +39,7 @@ agent shares.
 
 **Total conversation target:** 15 minutes. Not longer.
 **Output:** The four identity files (`profile`, `market`, `avatars`, `voice`) written into
-`~/realtor-brain/identity/` — plus an optional clean Google Doc keepsake in `~/realtor-brain/exports/`.
+`~/realtor-brain/identity/` — plus an optional clean doc keepsake in `~/realtor-brain/exports/`.
 
 ---
 
@@ -192,10 +192,10 @@ the start of a **T**rust System (proof/feedback). If **Edge** or **Narrative** i
 targeted follow-up before writing — those two carry the brand. Capture the niche as a *growing* niche the
 agent is comfortable with, framed as evolvable (not a lifetime lock).
 
-**Optional keepsake:** save a clean combined Google Doc to the agent's Drive `Realtor AI Brain → exports`
-(per `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` — structured plain text, not `.docx`) so the agent
-has a human-readable copy. The Doc is a *render* — the markdown in `identity/` is the source of truth
-skills actually read.
+**Optional keepsake:** save a clean combined doc to the agent's Drive `Realtor AI Brain → exports`
+(per `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` — structured text rendered to a styled `.docx` via
+`shared/render_doc.py`, then uploaded) so the agent has a human-readable copy. The doc is a *render* —
+the markdown in `identity/` is the source of truth skills actually read.
 
 ---
 

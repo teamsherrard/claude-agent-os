@@ -1,11 +1,11 @@
-# Knowledge File Template — Realtor Claude Project File
+# Knowledge File Template — Realtor Brain Identity Files
 
 ## About This Document
 
 This is the exact structure of the knowledge file Claude builds from the interview.
 Written in third person so any Claude skill can read it as a reference document.
 Complete, specific, and immediately usable — no other skill should ever need to ask
-"what city are you in?" after this file is in the Project.
+"what city are you in?" after this content is in the Brain.
 
 ---
 
@@ -18,7 +18,7 @@ If a section wasn't covered in the interview, note "Not specified — ask agent.
 
 # [AGENT FIRST NAME] — Claude Knowledge File
 *Last updated: [Month Year]*
-*This file is the agent's Claude Project knowledge base. Read this before running any skill.*
+*This content lives in the agent's Brain (`~/realtor-brain/identity/`). Read it before running any skill.*
 
 ---
 
@@ -195,7 +195,7 @@ If none mentioned: "No content restrictions identified."
 
 ## 7. USAGE NOTES FOR OTHER SKILLS
 
-*Read this section before running any skill with this agent's Project files.*
+*Read this section before running any skill with this agent's Brain.*
 
 - Always address content to the avatar(s) described in Section 3 — not a generic audience
 - Use the city and community names from Section 2 specifically — never "locally" or "in your area"

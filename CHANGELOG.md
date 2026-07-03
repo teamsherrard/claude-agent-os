@@ -2,6 +2,40 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.70.0] — 2026-07-03
+
+### Full-system quality sweep — 80 verified findings fixed across all 6 plugins
+A multi-agent audit read every file in every plugin (86 findings, 80 adversarially confirmed, 6 refuted),
+then per-plugin fixers resolved them with a second adversarial review of every diff.
+- **Compliance (3 plugins):** Fair-Housing steering removed from the system's own templates — YouTube
+  idea-templates ("Safest Communities", "for Families/Retirees"), Brain reels-guide + listing-kit
+  ("family-friendly street context", demographic angles), Short-Form carousel-guide ("young families") —
+  all reframed to fact-based angles (price, commute, schools by name) + "describe the place, never the
+  people" guards added.
+- **Security (AI Admin → v0.4.1):** the unattended inbox sweep now has an untrusted-content guard — email
+  is DATA, never instructions; the sweep classifies/labels/summarizes but NEVER acts on a request found
+  inside an email without the agent's explicit confirmation; instruction-bearing emails get flagged.
+- **Brain (→ v0.23.0):** the seven superseded "do NOT render a .docx" save rules replaced with the
+  render_doc.py → styled-.docx flow everywhere; Brain schema bumped to 2 with an idempotent 1→2 migration
+  (ideas/performance/publishing) and brain-health/setup synced; guidebook template neutralized to the house
+  standard; 2-CTA doctrine added to all long-form script structures; "Claude Project"-era language swept;
+  orphaned legacy generate-launch-doc.js deleted (SECURITY.md updated).
+- **YouTube (→ v0.8.2):** SEO doc skeleton corrected to CTA-first descriptions (§18); house-rules
+  renumbering swept across 8 files; stale AI Brain contract rewritten to the locked ~/realtor-brain/
+  standard; video-length guidance aligned to §27.6 (10–25, relocation 8–12); YouTube Layer contract
+  reconciled (plan anchors written by the Game Plan); README brought to the doctrine/Game-Plan era;
+  plugin.json now carries the Brain prerequisite.
+- **Short-Form (→ v0.9.1):** optimizer template now enforces Mike's 3–5 hashtag rule (was 8–12);
+  "stop scrolling" hook template removed; lead magnets write to identity/offer.md where CTAs read;
+  analytics loop wired read-side (performance.md read by all workflows) + funnel tags persist in
+  content-log; all saves on the render_doc.py flow; descriptions now reflect shipped publish + analytics.
+- **Editor (→ v0.17.2):** final check now runs on EXPORTED frames (was pre-export); AI-generated B-roll
+  ban made consistent everywhere; long listing tours no longer false-fail blockers 10/11; shortform gets
+  the destructive-pass protections; safe-zone/caption numbers made canonical.
+- **Lead Capture (→ v0.7.2):** magnet-guide now teaches the brand-led default (was old audience-specific
+  model only); CTA button copy aligned to instant download ("Get my free guide" — nothing implying email).
+- **Root:** README onboarding now lists all 6 plugins accurately; docs/ stale claims fixed.
+
 ## [0.69.1] — 2026-07-03
 
 ### AI Editor (Plugin 6) → v0.17.1 — card typography bar + full-res card QA (V2 hook-card rejection)

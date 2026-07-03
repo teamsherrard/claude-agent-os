@@ -49,7 +49,7 @@ schedules for them — **no one is forced onto a new platform:**
 - **Don't have one?** Metricool is the easy default (free to start); Buffer also works.
 - **Prefer manual?** Fine — Claude hands over copy-paste-ready posts.
 
-(Posting + the 2-week analytics loop are wired in a later release; see `docs/shortform-publishing-layer.md`.)
+(Posting + the 2-week analytics loop ship in this plugin — see `shortform-publish` and `shortform-analytics` below.)
 
 ---
 

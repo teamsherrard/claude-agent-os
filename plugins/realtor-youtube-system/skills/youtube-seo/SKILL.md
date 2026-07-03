@@ -75,7 +75,7 @@ the "resolve, never duplicate" rule in
 `${CLAUDE_PLUGIN_ROOT}/skills/youtube-setup/references/drive-structure.md`.
 
 ## Modes
-On-demand, and bundled into the weekly briefing for the #1 idea so it's publish-ready.
+On-demand; if the optional Monday Kickoff is enabled, also pre-built for the #1 idea so it's publish-ready.
 
 ## Hand-off
 Pairs with the **Lead Engine** (the description links the lead magnet) and **Repurposing Engine**.

@@ -40,7 +40,7 @@ the Outliers engine.
 **4. Your Goal → The Plan (the math)** — see "The goal-math" below. This is the confidence engine.
 
 **5. The Four Strategic Shifts** — the coaching layer (tailor the framing to their audit):
-- **Shift 1 — Video length 10–20 min.** The single biggest lever; watch time is what ranks. (Skip the
+- **Shift 1 — Video length 10–25 min, most land 10–20 (relocation talking-head 8–12 — §27.6).** The single biggest lever; watch time is what ranks. (Skip the
   "increase" framing for a fresh channel — just set the standard.)
 - **Shift 2 — Titles built around search intent.** Every title answers something a real person types into
   YouTube. The test: if you can type the title into the search bar and expect relevant results, it's good;
@@ -57,8 +57,8 @@ the Outliers engine.
 - A **named playlist**.
 
 **7. The Video Structure (doctrine §4)** — Hook (0:00–0:30, the viewer's question/fear, not "welcome back" —
-§5) → **Primary CTA** (0:30–1:00, the warm "people just like you" invite — §6.2) → Body (1:00–end, 10–20 min
-of real, local value — §7) → **Secondary CTA** (final 60s: book + the next best video — §6.5). Pull the
+§5) → **Primary CTA** (0:30–1:00, the warm "people just like you" invite — §6.2) → Body (1:00–end, 10–25 min
+of real, local value; relocation 8–12 — §7, §27.6) → **Secondary CTA** (final 60s: book + the next best video — §6.5). Pull the
 canonical version from `${CLAUDE_PLUGIN_ROOT}/skills/youtube-script/references/script-framework.md`; include
 one short example hook + CTA in the agent's voice.
 
@@ -131,7 +131,7 @@ the §22 mix — they don't replace the six types.
   price-point / "X vs Y" / "avoid these" / "cost of living" / "best time to buy") and the local angles from
   Research + the winning patterns from Outliers.
 - **Sub-group long pillars** (e.g. relocation → General / Suburb-Specific / Audience-Specific).
-- **Compliance/Fair-Housing on EVERY title** (house rules #2): titles ship publicly. Keep them factual — no
+- **Compliance/Fair-Housing on EVERY title** (house rules #3): titles ship publicly. Keep them factual — no
   "good area," "safe," or "family-friendly"-as-a-proxy framing. "Best Suburbs for Families" → reframe to a
   fact-based angle ("[City] Suburbs With the Top-Rated Schools & Most Green Space"). Never steer.
 
@@ -149,7 +149,7 @@ Business goal (deals or income)
   **clearly-labelled, conservative assumption** the agent can adjust — never a hidden guess.
 - **Show the chain** so it's believable, then translate to milestones: *"That's ~X booked conversations a
   month once you're consistent — your first 90 days get you to [milestone] on the way there."*
-- **Honest framing — NEVER a guarantee** (house rules #2 + #5). *"Here's how this is genuinely possible"* — not
+- **Honest framing — NEVER a guarantee** (house rules #3 + #6). *"Here's how this is genuinely possible"* — not
   *"you WILL make 20 deals."* Confidence comes from realistic math + small achievable milestones.
 - **Reframe vanity metrics:** subscribers only matter if they convert — always connect subs → leads → deals,
   keeping their eye on the business goal.

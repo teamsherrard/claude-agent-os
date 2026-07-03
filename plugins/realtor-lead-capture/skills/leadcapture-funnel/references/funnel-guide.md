@@ -51,7 +51,7 @@ The first screen. If it's vague, they leave. Three parts:
 - **Subhead** (1–2 lines) — expand the promise, name who it's for, remove doubt.
   *"A plain-English walkthrough of every step, incentive, and number — from a Calgary new-build specialist
   who tells you the truth, not a sales pitch."*
-- **CTA button** — first-person, specific: *"Send me the free guide."*
+- **CTA button** — first-person, specific: *"Get my free guide."*
 The headline MUST equal the magnet's promise (alignment — house rules #7).
 
 ## SECTION 2 — THE PROBLEM (agitate before you pitch)
@@ -142,7 +142,7 @@ Make grabbing the magnet a no-brainer:
   These MUST match the guide's actual pages (alignment — house rules #7).
 - **The form** — name + email only. Nothing else (every extra field costs leads).
 - **Reassurance** by the button — *"Free. Instant download. No spam — unsubscribe anytime."*
-- **CTA button** — same promise as the hero: *"Send me the free guide."*
+- **CTA button** — same promise as the hero: *"Get my free guide."*
 - **Thank-you state** (after submit) — a warm confirmation + **the guide as an instant download right on the
   page** (*"You're in — here's your guide, grab it below"*), in the agent's voice. **Instant download ONLY,
   NEVER email delivery — no "check your inbox" copy, and never ask how to deliver it (house rules #4).** No

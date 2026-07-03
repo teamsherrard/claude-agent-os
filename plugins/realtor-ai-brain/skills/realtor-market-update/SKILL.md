@@ -5,12 +5,15 @@ description: >
   city, communities, and niche, then generates a complete monthly market update package including:
   a visual market update report (for screen share and email distribution), a 15-minute word-for-word
   YouTube script built around the data, and 3 short-form video concepts (article-based, green screen
-  background-based, and talking head opinion). Everything is compiled into a single clean Google Doc.
+  background-based, and talking head opinion). Everything is compiled into a single clean, formatted doc.
 
   Trigger on: "run my market update", "create my market update", "market update for [month]",
   "build my market update package", "monthly market update", "market update video", "generate
   market update", "what's happening in my market", "market stats for this month", or any request
   for a market update report, YouTube market update script, or monthly real estate data package.
+  BOUNDARY: if the dedicated Realtor YouTube System plugin is installed, defer to its
+  youtube-market-report for the monthly market update video — this skill is the built-in version
+  for agents without it.
 ---
 
 # Realtor Market Update Skill
@@ -19,7 +22,7 @@ When triggered, research live market data for the agent's specific city and comm
 complete visual market update report, write a 15-minute YouTube script the agent reads while screen
 sharing the report, and generate 3 short-form video concepts ready to record.
 
-Everything compiles into one clean Google Doc the agent uses on camera, sends to their list, and
+Everything compiles into one clean, formatted doc the agent uses on camera, sends to their list, and
 repurposes into short-form content.
 
 ---
@@ -373,12 +376,12 @@ Produce:
 
 ---
 
-## Phase 6: Save as a clean Google Doc
+## Phase 6: Save as a clean, formatted doc
 
-**Read `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` first.** Build this as well-structured plain text
-and create it as a Google Doc via the Drive connector — do NOT render a `.docx` (it won't convert in
-Cowork and lands as a broken file). The infographic PNG (Phase 5) is a separate image deliverable and is
-unaffected.
+**Read `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` first.** Build this as well-structured text (the
+grammar in that file), write it to a temp file (e.g. `/tmp/doc.txt`), and render it to a styled `.docx`:
+`python3 "${CLAUDE_PLUGIN_ROOT}/shared/render_doc.py" /tmp/doc.txt "Market Update · [City] · [Month Year].docx" --title "[City] Market Update — [Month Year]" --subtitle "[Agent] · [City]"`
+Then upload the `.docx` via the Drive connector.
 
 ### Document Structure
 
@@ -426,12 +429,12 @@ DATA SOURCES
 - Script lines each on their own line — never run dialogue together; `[SCREEN CUE]` / `[BRACKET]`
   directions on their own line.
 - Stat callouts: the number on its own line with the label under it.
-- Script sections can't be shaded in plain text — set each off with a clear label + a divider above and
-  below so it stands out.
+- Script sections set off with a clear label + a divider above and below so each stands out (the
+  renderer turns the dividers into real headings).
 - No brand colours — every doc renders to one clean neutral standard (visual brand design lives in the agent's design tool).
 
-Create the Google Doc in the agent's Drive **`Realtor AI Brain` → `exports`**, named
-`Market Update · [City] · [Month Year]`, and tell the agent the location + link.
+Upload the rendered `.docx` to the agent's Drive **`Realtor AI Brain` → `exports`** (find-or-create
+`exports`), named `Market Update · [City] · [Month Year]`, and tell the agent the location + link.
 
 ---
 

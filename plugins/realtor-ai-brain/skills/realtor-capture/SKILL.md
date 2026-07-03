@@ -49,7 +49,7 @@ Read `~/realtor-brain/brain.md`. If `~/realtor-brain/` is missing, PULL it from 
 | "add a vendor / great lender / great contractor: [name, contact]…" | vendor | `identity/vendors.md` |
 | "new offer angle / I should emphasize…" | positioning | `identity/offer.md` (append a note — don't rewrite) |
 | a client note, reminder, email, or booking | admin action | **hand to the AI Admin** (its dispatch). If it isn't installed, park the intent in `memory/deadlines.md` and say so |
-| can't tell | — | `memory/capture-log.md` → the AI Admin's morning briefing surfaces it (if installed; otherwise it stays Open until the agent resolves it) |
+| can't tell | — | `memory/capture-log.md` → the AI Admin's morning briefing surfaces it (if installed; otherwise tell them plainly: "Saved to your capture log — ask me to review it anytime") |
 
 ## Step 3 — Write it (append, never overwrite)
 - **`memory/ideas.md`** — one row: `| [date] | [tag] | [idea verbatim + one-line cleanup] | New |`.
@@ -68,7 +68,8 @@ a lost capture.
 ## Step 5 — Confirm (one line, glanceable)
 "Saved your video idea to your content backlog." · "Logged the Henderson close to your proof library."
 · "Added Sarah (RBC) to your vendors." Several captures → one line each. Parked something → say so:
-"Saved — I'll confirm which listing in your morning briefing."
+"Saved — I'll confirm which listing in your morning briefing" (only promise the briefing if the AI
+Admin is installed; otherwise: "Saved to your capture log — ask me to review it anytime").
 
 ## The boundary with the AI Admin (no double-handling)
 This skill **captures knowledge** (ideas, wins, intel, vendors, offer angles, edit notes) into the

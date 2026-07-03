@@ -25,7 +25,7 @@ On a **short-form reel** that's **2, maybe 3 cards total** — the karaoke capti
 
 On a vertical 9:16 talking-head the speaker's head sits **HIGH**, so a card in the upper third lands **on the face**. To keep it off:
 
-- **Pin the card to the EXTREME TOP edge, above the hairline**, OR
+- **Pin the card high above the hairline — just inside the top ~8–10% platform-chrome margin (a small gap from the very top; `${CLAUDE_PLUGIN_ROOT}/shared/layouts.md` is canonical)**, OR
 - **Time the card OVER a B-roll moment** (the speaker's face isn't on screen then — the safest option), OR
 - Place it in a genuinely clear area.
 - **Never** over the face, and **never** over the bottom captions.

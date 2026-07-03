@@ -41,6 +41,7 @@ Read `~/realtor-brain/brain.md` first, then:
   words** (NOT to render anything)
 - `identity/compliance.md` — the third law
 - `memory/content-log.md` — avoid repeating a recent carousel topic
+- `memory/performance.md` — what worked last cycle (from the 2-week review); lean on it when picking the topic, cover hook, and CTA. Skip if it doesn't exist yet
 
 **Read the Brain; never re-ask what it knows** (house rules #2). If `~/realtor-brain/` is missing, send
 them to **Realtor AI Brain — Setup**.
@@ -94,13 +95,14 @@ built the slides, per `${CLAUDE_PLUGIN_ROOT}/shared/publishing-guide.md` (carous
 hybrid path — caption + time scheduled, agent adds the built slides) — only with explicit approval.
 
 ## Phase 6 — Save to Drive + log to the Brain
-1. **Save the formatted doc** following `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md` — a clean
-   Google Doc with the cover hook, SLIDE 1 / SLIDE 2 … copy, DESIGN DIRECTION, and the IG+FB caption —
-   in `[Agent Name] — Short-Form System/Content/[YYYY-MM · Month]/`, named
+1. **Save the formatted doc** following `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md` — structured
+   text with the cover hook, SLIDE 1 / SLIDE 2 … copy, DESIGN DIRECTION, and the IG+FB caption,
+   **rendered to a styled `.docx` via the shared renderer** (`render_doc.py`, output-standard §6) and
+   uploaded to `[Agent Name] — Short-Form System/Content/[YYYY-MM · Month]/`, named
    `[YYYY-MM-DD] · Carousel · [Short Topic]`. (This is the doc the agent copies into claude.ai/design.)
 2. **Log it:** append a row to `~/realtor-brain/memory/content-log.md`, then push the Brain to Drive:
    ```
-   | [date] | Instagram/Facebook | Carousel | [topic / angle] | [city/area] | Drafted | |
+   | [date] | Instagram/Facebook | Carousel | [topic / angle] · [funnel: reach/value/trust/conversion] | [city/area] | Drafted | |
    ```
 Then: *"Saved your carousel to your Drive (Short-Form System → Content → [month]) — open it, copy the
 slides into claude.ai/design, and you're set."*

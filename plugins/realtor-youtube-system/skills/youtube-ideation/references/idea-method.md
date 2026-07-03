@@ -29,7 +29,7 @@ Priority = D×3 + B×3 + G×2 + N×2 + T×1 + H×1 (max 60). Rank high → low. 
   question / how-to / benefit), front-load the keyword, lean long-tail for a small channel. Never too clever
   or vague (§16.1, §28.6). See `${CLAUDE_PLUGIN_ROOT}/shared/seo-knowledge-base.md`.
 - **Hook:** name the viewer's situation/fear in line one; promise the payoff in line two.
-- **Thumbnail text:** 2–5 punchy on-screen words — a shortened, SEO-aware version of the title. Text only, no design.
+- **Thumbnail text:** 3–5 punchy on-screen words — a shortened, SEO-aware version of the title. Text only, no design.
 
 ## Voice-matched titles — good vs bad (example: a calm, consultative, never-salesy agent)
 - ✅ "The New 5% GST Savings on Calgary New Builds — Who Actually Qualifies"
@@ -47,8 +47,9 @@ Build topic memory each run by reading the agent's **Videos folders + their publ
 
 ## Sourcing ideas
 - Start from the Research Brief's "Signals for ideas" (timely, local, high-relevance).
-- Pull from the template library in `${CLAUDE_PLUGIN_ROOT}/shared/idea-templates.md` (the Big 5 categories + proven title
-  formulas) — fill every `[bracket]` with the agent's real market / communities / price points / niche.
+- Pull from the template library in `${CLAUDE_PLUGIN_ROOT}/shared/idea-templates.md` (the template sections,
+  organized by the 6 content pillars, + proven title formulas) — fill every `[bracket]` with the agent's real
+  market / communities / price points / niche.
 - Always produce a **BLEND** (the doctrine's content mix, §15.6): broad searchable pillar ideas drawn across
   the **6 content types** (§8–§14: market updates · home tours · relocation · community tours · map tours ·
   local lifestyle) at ~80%, + niche-specific ideas tied to the agent's specialty (new construction,
@@ -75,7 +76,7 @@ Lead with the strongest real signal. **Honesty:** don't fabricate exact search v
 is connected, justify with the proven format + the real trend/event/gap, and keep it truthful.
 
 ## Output rules
-- Default 5 ideas (or however many they asked for), ranked. Mix timely with evergreen.
+- Default to the count agreed in Step 1 — typically 4 (fits one phone screen) — ranked. Mix timely with evergreen.
 - GENERATE the full package per idea (Title · Hook · Thumbnail text — packaging-first), but PRESENT only
   two lines each: the title + one line of data-backed "why" + who it's for. The hook + thumbnail surface
   in Make This Video Step 1. Expand an idea only if the agent asks.

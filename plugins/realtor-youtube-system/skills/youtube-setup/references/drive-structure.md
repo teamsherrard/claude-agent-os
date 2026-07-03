@@ -1,7 +1,7 @@
-# Drive Provisioning — Spec (minimal, briefing-driven)
+# Drive Provisioning — Spec (minimal, chat-driven)
 
 The realtor's Drive is just a clean **content library** — NO tracker spreadsheets. The system is
-driven by the weekly briefing + on-demand chat, and reads state live. It does NOT maintain an Idea
+driven by on-demand chat (plus the optional Monday Kickoff), and reads state live. It does NOT maintain an Idea
 Bank, Content Map, Content Calendar, Keyword Map, or Performance Log. (Agents found them useless and
 they're redundant with data the system can read live.)
 
@@ -17,10 +17,12 @@ they're redundant with data the system can read live.)
 │                 ├── SEO Package        (Doc — SEO Engine)
 │                 ├── Lead Magnet Map    (Doc — Lead Engine)
 │                 └── Repurposing Pack   (Doc — Repurposing Engine)
-└── Setup/
-      └── YouTube Layer                  (Doc — channel, goal, cadence, pillars, voice; references AI Brain)
+├── Setup/
+│     └── YouTube Layer                  (Doc — channel, goal, cadence, pillars, voice; references AI Brain)
+└── YouTube Game Plan — [Agent]          (Doc at workspace root — saved by youtube-gameplan; holds the
+                                          title backlog + 90-day calendar, house rules #10)
 ```
-No spreadsheets. Two folders. **This workspace lives INSIDE the agent's existing master Drive (the one
+No spreadsheets. Two folders plus the Game Plan doc at the root. **This workspace lives INSIDE the agent's existing master Drive (the one
 their AI Brain / realtor system already uses) — never an orphan folder elsewhere.** Record the top
 folder's ID in the YouTube Layer so every skill saves to the same place.
 
@@ -31,6 +33,7 @@ folder's ID in the YouTube Layer so every skill saves to the same place.
   (date = film/created date; Title Case; strip emojis and slashes from the title)
 - **Docs inside a video folder — FIXED names:** `Script` · `SEO Package` · `Lead Magnet Map` · `Repurposing Pack`
 - **Setup doc:** `YouTube Layer`
+- **Game Plan doc (workspace root):** `YouTube Game Plan — {Agent Name}`
 - A **monthly market report** is just a normal video (the agent records it): a `{date} · {Month} Market Update`
   video folder with its own `Script` + `SEO Package`.
 Dates are ALWAYS `YYYY-MM-DD` so folders sort chronologically. Same name, same spot, every time.
@@ -54,7 +57,7 @@ Finished content lands in the Videos folders. There is nothing to maintain.
 - Folder: create_file with `mimeType: application/vnd.google-apps.folder`; capture the `id` for `parentId`.
 - Doc:    write the structured text, render it to a styled `.docx` via `shared/render_doc.py`, then
   `create_file` that `.docx` into the folder (see `shared/doc-format.md`). Structure the text per house-rules
-  §3: title + meta line, ALL-CAPS section headers with divider rules, blank-line spacing, cues on their own
+  §4: title + meta line, ALL-CAPS section headers with divider rules, blank-line spacing, cues on their own
   lines, `•` bullets — the renderer turns that into real headings, bullet lists, and tables.
 - Create a per-video folder ONLY when that video is being made. Don't pre-create empty folders.
 
@@ -70,17 +73,20 @@ The system is stateless, so it RE-FINDS the structure every time instead of reme
 Every video's docs live together in that one video folder — nothing loose, nothing orphaned.
 
 > Only CONTENT files are saved to Drive (Script, SEO Package, Lead Magnet Map, Repurposing Pack, YouTube
-> Layer, market-report script). Live analysis — research brief, idea list, analytics read — stays in chat
-> by design; it's regenerated fresh, never stored. That's the stateless model, not a gap.
+> Layer, the YouTube Game Plan, market-report script). Live analysis — research brief, ad-hoc weekly idea
+> lists, analytics read — stays in chat by design; it's regenerated fresh, never stored. (The Game Plan's
+> title backlog IS stored — in the Game Plan doc at the workspace root, house rules #10.) That's the
+> stateless model, not a gap.
 
 ## At setup
 1. Locate the agent's existing master Drive workspace (their AI Brain / realtor-system folder) and create
    `{Agent Name} — YouTube System` INSIDE it (only fall back to Drive root if no master workspace exists
    yet), then a `Videos/` and a `Setup/` folder. **Record the top-workspace folder ID in the YouTube
    Layer** — it's the anchor every other skill uses to save in the right place.
-2. Write the **YouTube Layer** doc into Setup (channel, goal, cadence, pillars derived from the AI
-   Brain, voice notes).
+2. Write the **YouTube Layer** doc into Setup (channel + status, optional voice notes; the Game Plan
+   then writes the plan anchors — goal, cadence, pillars — into it as its final step).
 3. Do NOT create any tracker spreadsheets.
-4. Generate the first set of ranked video ideas (from the AI Brain + a quick city/niche scan) and
-   present them to the agent **directly in chat / the first briefing** — not as a stored file.
+4. The first deliverable is the **YouTube Game Plan** (built by `youtube-gameplan` at the end of setup),
+   saved at the workspace root — it contains the pillars + starter titles. Do NOT generate or store a
+   separate ranked idea list.
 5. Share the folder link.

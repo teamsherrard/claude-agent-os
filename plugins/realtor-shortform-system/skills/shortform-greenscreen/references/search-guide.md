@@ -58,7 +58,7 @@ CoreLogic, Freddie Mac, Federal Reserve.
 
 | Check | Pass | Fail |
 |---|---|---|
-| Recency | Published within 7 days (0–3 ideal) | Older than 7 days |
+| Recency | Published within 7 days (0–3 ideal); 8–14 days only for rate/policy news with no newer update | Older than that |
 | Source | Named, credible publication or board | Anonymous, blog, brokerage promo |
 | Substance | A specific stat/number, OR a concrete local hook (an event, opening, a real list) | Vague — nothing to react to |
 | Local relevance | Specific to the agent's city, or directly affects their market | Only relevant elsewhere |

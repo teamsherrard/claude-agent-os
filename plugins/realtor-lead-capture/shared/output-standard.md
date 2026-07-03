@@ -76,11 +76,13 @@ What this guide delivers, in one or two lines · who it's for.
 
 ────────────────────────────────────────────
 THE GUIDE   (page by page)
-PAGE 1 — [title]
+── PAGE 1 - [TITLE] ──
    •  ...the actual, genuinely useful content...
-PAGE 2 — [title]
+── PAGE 2 - [TITLE] ──
    •  ...
-(5–9 pages of real value — never a tease)
+(5–9 pages of real value — never a tease. Keep each page-title line in that exact `── PAGE N - TITLE ──`
+form — a short title of plain words (a few words, ~30 characters max, no punctuation), hyphen separator —
+so the renderer makes it a real subheading.)
 
 ────────────────────────────────────────────
 HOW [AGENT] HELPS NEXT
@@ -106,7 +108,7 @@ Your page copy + structure, ready for your design step. This doc is the words; t
 SECTION 1 — HERO
 Headline: ...        (= the magnet's promise)
 Subhead: ...
-CTA button: "Send me the free guide"
+CTA button: "Get my free guide"
 
 ────────────────────────────────────────────
 SECTION 2 — THE PROBLEM
@@ -120,7 +122,7 @@ SECTION 3 — THE GUIDE  (what's inside + value · mockup left or right)
 What you'll get:
    •  ...   (4–7 concrete outcomes, one per guide page — never teases)
 Why it's worth more than free: ...
-CTA button: "Send me the free guide"   (mid-page repeat)
+CTA button: "Get my free guide"   (mid-page repeat)
 
 ────────────────────────────────────────────
 SECTION 4 — ABOUT [AGENT]  (WHO they are)
@@ -147,7 +149,8 @@ The numbers: ...   (homes sold, $ saved, years in the niche)
 Tied to your fear: ...
 
 ────────────────────────────────────────────
-SECTION 8 — AS SEEN ON / FOLLOW ALONG   (socials + YouTube — ONLY if they have any; else delete this section)
+SECTION 8 — AS SEEN ON / FOLLOW ALONG   (socials + YouTube)
+(ONLY if they have channels — else delete this whole section.)
 Channels: ...   (real handles/links from profile.md / content-engine.md — YouTube, IG, TikTok…)
 Follow for more free value: ...   (esp. YouTube; real follower counts if worth showing)
 (Opt-in stays the primary CTA — these are secondary trust links, not a rival button.)
@@ -157,7 +160,7 @@ SECTION 9 — THE OPT-IN
 Top 3 you'll get: ...   (quick recap — full stack is in §3)
 Form: Name + Email
 Reassurance: Free. Instant download. No spam.
-CTA button: "Send me the free guide"
+CTA button: "Get my free guide"
 Thank-you state: ...   (warm confirmation + the guide as an INSTANT DOWNLOAD on this page — NEVER "check your inbox" / email delivery)
 
 ════════════════════════════════════════════

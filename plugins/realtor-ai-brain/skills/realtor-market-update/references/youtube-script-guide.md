@@ -60,6 +60,12 @@ I break down exactly what's happening in our market so you have the real
 numbers — not the headlines, not the national averages, the actual data
 from [City].
 
+[PRIMARY CTA (15-20 seconds) — the 2-CTA model puts the first CTA right after the
+hook, not only at the end. One natural line with the agent's main offer + booking
+link (from ~/realtor-brain/identity/voice.md / offer.md): e.g. "And if you want to
+know what these numbers mean for YOUR move, I do free consultations — the link is
+the first one in the description."]
+
 [Brief statement of what this video covers]
 
 Let's get into the [Month] numbers.
@@ -180,7 +186,7 @@ One: [Most important takeaway]
 Two: [Second takeaway]
 Three: [Third takeaway]"
 
-**2. Soft CTA:**
+**2. Secondary CTA:**
 "If you're thinking about buying or selling in [City] and want to know what any of
 this means for your specific situation — I do free consultations. Link is in the
 description below."
@@ -203,7 +209,8 @@ just what's actually happening here."
 - Agent takes a clear position in both buyer and seller sections — no "it depends" hedging
 - All numbers in the script match the numbers in the report exactly
 - Every section cue `[SCREEN: ...]` matches a real page in the report
-- Outro includes: summary, CTA, subscribe ask, end card direction
+- Two CTAs (the 2-CTA model): a primary CTA right after the hook/intro AND a secondary CTA in the outro
+- Outro includes: summary, secondary CTA, subscribe ask, end card direction
 - Total word count is between 1,700 and 2,100 words
 
 ---

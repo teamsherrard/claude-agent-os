@@ -75,8 +75,6 @@ STRONG: "I've helped [X] families buy in [Neighbourhood] over the last 3 years, 
 | LinkedIn post | Authority, professional | 250-400 words | Insight-led, not listing-led |
 | Facebook post | Conversational | 100-200 words | Community tone |
 | Reel scripts | Word-for-word spoken | 30-60 seconds | Natural, not read-y |
-| Thumbnail brief | Technical / directive | N/A | Clear specs for designer |
-| ManyChat DM | Warm, helpful, brief | 2-4 messages | Delivers value, not pitch |
 
 ---
 

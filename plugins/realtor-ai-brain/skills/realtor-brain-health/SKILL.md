@@ -24,8 +24,10 @@ If `~/realtor-brain/` doesn't exist, tell them to run **Realtor AI Brain — Set
 For each, mark ✅ complete · 🟡 thin (present but sparse/generic) · ⬜ empty (placeholder/`[brackets]`):
 
 **Identity:** profile · market · avatars · voice · offer · brand-visual · voice-samples · proof ·
-content-engine · operations · vendors · strategy · compliance
-**Memory:** clients · listings · content-log · deadlines *(these fill over time — don't penalize a new brain)*
+content-engine · operations · vendors · strategy · compliance · publishing *(written by the Short-Form
+System's setup — report as "not set up yet", don't penalize if that plugin isn't installed)*
+**Memory:** clients · listings · content-log · deadlines · ideas · performance *(these fill over time —
+don't penalize a new brain for sparse content, but do flag a FILE that's missing entirely)*
 **Assets:** logo present? · headshot present?
 **Connectors** (from `config.md`): Gmail · Calendar connected?
 

@@ -17,7 +17,8 @@ Claude finds the footage; Descript holds the timeline. Follow `${CLAUDE_PLUGIN_R
    - **Coverr** — video
    - **Unsplash** — high-quality photos (for Ken-Burns stills)
 4. **Real-place imagery** (for actual neighbourhoods/landmarks): the agent's footage → **Wikimedia Commons** real photos → **Google Street View / map** of the exact spot. See the local-realism rule below.
-5. **AI-generated** — last resort only, capped at 1–2 per video, and never for a real place. Warn about the credit cost first.
+
+The ladder ends there. **NO AI-generated B-roll — ever.** It's a banned heavy AI effect (`${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md`): warn and skip. If every rung runs dry, use fewer, better clips — never generate footage.
 
 ## The rules
 

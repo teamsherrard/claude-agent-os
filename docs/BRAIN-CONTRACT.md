@@ -9,9 +9,10 @@ agents). If you're building something new that should "know the realtor," implem
 ## Where the Brain lives
 **Permanent home: the realtor's Google Drive** (`Realtor AI Brain` folder). Cowork's local sandbox is
 wiped between sessions, so `~/realtor-brain/` is only a **per-session working copy** — synced down from
-Drive at session start and pushed back after changes (via the `realtor-brain-sync` skill / the
-SessionStart+Stop hooks). One brain per realtor. Never in any repo. Structure (mirrored in Drive and the
-local working copy):
+Drive at session start and pushed back after changes (via the `realtor-brain-sync` skill; a SessionStart
+hook loads the brain into context, but there is **no Stop hook** — every system that writes the Brain
+must push its own changes back to Drive). One brain per realtor. Never in any repo. Structure (mirrored
+in Drive and the local working copy):
 
 ```
 ~/realtor-brain/

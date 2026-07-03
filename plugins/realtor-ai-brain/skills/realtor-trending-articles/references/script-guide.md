@@ -80,7 +80,7 @@ Default options:
 - "Link in bio to book a free call"
 - "DM me and I'll tell you exactly what this means for your situation"
 
-Match to the agent's preferred CTA from their Project file if available.
+Match to the agent's preferred CTA from the Brain (identity/voice.md) if available.
 
 ---
 

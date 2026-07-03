@@ -1,6 +1,6 @@
 # Music (bed + ducking)
 
-A reel needs a music bed; long-form usually wants a subtle one. Always ducked under the voice.
+A reel needs a music bed, always ducked under the voice. Long-form ships without a bed by default — add a subtle one only if the agent asks (it's not part of the long-form pass plan).
 
 ## Mood → bed (match the content)
 - Market update / data / tips → light, modern, confident underscore (~90–110 BPM).

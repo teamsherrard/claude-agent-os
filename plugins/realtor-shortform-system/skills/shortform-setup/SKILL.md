@@ -59,8 +59,9 @@ Ask only these, conversationally, one at a time — skip any the Brain already a
    there's momentum. Reassure them it's doable because you do the heavy lifting.)
 3. **Your freebies (lead magnets).** Only if the Brain doesn't already list them: "Do you have any free
    guides or checklists you give people — like a first-time buyer guide, a seller checklist, a relocation
-   guide? These are what we point people to." If they share new ones, **save them to their Brain** so this
-   is never asked again.
+   guide? These are what we point people to." If they share new ones, **append them to
+   `~/realtor-brain/identity/offer.md`** (that's where every CTA lookup finds them) so this is never
+   asked again.
 
 **If they're unsure on any of these, advise — don't leave them hanging** (house rules #8 +
 `${CLAUDE_PLUGIN_ROOT}/shared/advisor-playbook.md`). "Not sure how often?" → recommend the sweet spot
@@ -78,7 +79,9 @@ for them. Ask one question:
 > you'd like me to schedule, do you already use a posting tool — like GoHighLevel or Metricool?"
 
 - **They already use GoHighLevel or Metricool** → great, we'll connect that one (no new platform to learn).
-- **They use neither and want scheduling** → recommend Metricool (it's free to start and easy), or Buffer.
+- **They use neither and want scheduling** → recommend Metricool (it's free to start and easy), or Buffer
+  (Buffer can schedule, but only Metricool/GoHighLevel feed the 2-week performance review — Metricool is
+  the better pick if they want that loop).
 - **They'd rather post manually for now** → totally fine; you'll hand them copy-paste-ready posts. They can
   connect a tool anytime later.
 
@@ -90,8 +93,10 @@ connect your socials there once, then sign in when I ask." Reassure them it's qu
 
 ## Step 5 — Save the short-form layer + set up their Drive folder
 1. Save a small note to the Brain at `~/realtor-brain/identity/publishing.md` with: platforms + priority,
-   posting cadence, posting method (which tool, or "manual"), and lead-magnet list if newly captured.
-   Push the Brain to Drive. The Brain stays the one source of truth.
+   posting cadence, posting method (which tool, or "manual"), and any account notes. Newly captured lead
+   magnets do NOT go here — append those to `~/realtor-brain/identity/offer.md` (per the One-Brain
+   write-back rule; that's the only file the CTA lookups read). Push the Brain to Drive. The Brain stays
+   the one source of truth.
 2. **Provision their content folder in Google Drive** (so everything they make has an organized home),
    following `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`: create
    `[Agent Name] — Short-Form System/` with a `Content/` and a `Performance/` folder inside. Don't
@@ -116,7 +121,7 @@ Then get them a quick win:
 ## Completion checklist
 - [ ] Brain located, read, and reflected back — **nothing re-asked**
 - [ ] Short-form layer captured (platforms, cadence) — only the delta
-- [ ] Lead magnets confirmed (read from Brain, or captured once and saved back)
+- [ ] Lead magnets confirmed (read from Brain, or captured once and saved to `identity/offer.md`)
 - [ ] Posting method chosen (a tool connected, or "manual for now") — never forced
 - [ ] `identity/publishing.md` saved and pushed to Drive
 - [ ] System explained in plain language (3 formats) and the agent pointed to their first post

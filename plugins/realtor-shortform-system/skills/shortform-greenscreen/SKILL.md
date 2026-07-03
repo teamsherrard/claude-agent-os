@@ -56,6 +56,8 @@ plain and warm, never technical. No tool names, no jargon, no overwhelm.
 - `~/realtor-brain/identity/offer.md` — offers, USP, and **lead magnets** (so the CTA can point to a real guide)
 - `~/realtor-brain/identity/compliance.md` — the third law; read before finalizing
 - `~/realtor-brain/memory/content-log.md` — what's already been covered, so today's pick is fresh
+- `~/realtor-brain/memory/performance.md` — what worked last cycle (from the 2-week review); lean on it
+  when picking the article angle, hook style, and CTA. Skip if it doesn't exist yet
 
 **The first law: read the Brain, never re-ask what it already knows.** The agent built all of this once
 in Cowork; it lives in their Google Drive `Realtor AI Brain` folder and syncs to `~/realtor-brain/`. The
@@ -97,7 +99,7 @@ reaction potential (can the agent add a real take?) → a stat that stops the sc
 **Read `references/talking-points-guide.md`** and produce, for the chosen article:
 
 - **The article line** — headline, source, date, verified link, and the **key stat to hold/show on screen**.
-- **The hook** — one line, under 10 words, **word-for-word** (the agent reads this exactly), using a formula from `hook-formulas.md`.
+- **The hook** — one line, ~12 words max (one breath), **word-for-word** (the agent reads this exactly), using a formula from `hook-formulas.md`.
 - **4–6 key talking points** — shorthand bullets the agent riffs from, in this beat order:
   1. What happened / the key number (the setup)
   2–3. What it actually means for a buyer/seller in [city] right now (**the take — where the value lives**)
@@ -182,14 +184,15 @@ offer to schedule it at the best time, following `${CLAUDE_PLUGIN_ROOT}/shared/p
 ## Phase 6 — Save to Drive + log to the Brain
 
 1. **Save the formatted doc to Drive** following `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`:
-   build the green-screen package as a clean, well-spaced Google Doc (the same content from Phase 5,
-   structured per the standard), and save it to
+   build the green-screen package as structured text (the same content from Phase 5, per the standard),
+   **render it to a styled `.docx` via the shared renderer** (`render_doc.py`, output-standard §6), and
+   upload that `.docx` to
    `[Agent Name] — Short-Form System/Content/[YYYY-MM · Month]/` named
    `[YYYY-MM-DD] · Green Screen · [Short Topic]`. Tell the agent where it landed + the link.
 2. **Log it:** append one row to `~/realtor-brain/memory/content-log.md`, then push the Brain to Drive
    per `brain.md`:
    ```
-   | [date] | Reels/TikTok/Shorts | Green screen | [article angle] | [city/area] | Scripted | [article URL] |
+   | [date] | Reels/TikTok/Shorts | Green screen | [article angle] · [funnel: reach/value/trust/conversion] | [city/area] | Scripted | [article URL] |
    ```
 
 Then: *"Saved today's green screen to your Drive (Short-Form System → Content → [month]) and logged it."*
@@ -199,9 +202,9 @@ Then: *"Saved today's green screen to your Drive (Short-Form System → Content 
 
 ## Quality checklist (run before delivering)
 - [ ] Brain was read (city, audience, voice, offers, lead magnets); nothing re-asked that the Brain answers
-- [ ] Exactly ONE article, published within the last 0–7 days (0–3 ideal), link verified via web_fetch
+- [ ] Exactly ONE article, published within the last 0–7 days (0–3 ideal; up to 14 days only for rate/policy news with no newer update), link verified via web_fetch
 - [ ] Not a repeat of a recent angle in `content-log.md`
-- [ ] Hook is one line, under 10 words, word-for-word, from a formula
+- [ ] Hook is one line, 12 words or fewer (one breath), word-for-word, from a formula
 - [ ] Talking points are bullets to riff from — NOT a written-out script
 - [ ] At least one genuine local take (not a news recap); city named; "you"-focused
 - [ ] No news-anchor language ("according to…", "experts say…")

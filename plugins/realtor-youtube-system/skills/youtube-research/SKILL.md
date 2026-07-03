@@ -1,6 +1,6 @@
 ---
 name: youtube-research
-description: The Research Engine for the Realtor YouTube System. Gathers what's happening in the agent's specific market and niche right now — local real estate market data, local + lifestyle news, and rising search trends — and synthesizes a Research Brief that feeds Ideation and the Coach. Reads the agent's AI Brain for market, communities, niche, price band, and avatars so research is always local and specific, never generic. Runs fresh whenever the agent asks for ideas, or on demand. Triggers on "run my research", "what's happening in my market", "weekly research", "market research", "what's new in [city]", or as a step inside the weekly briefing.
+description: The Research Engine for the Realtor YouTube System. Gathers what's happening in the agent's specific market and niche right now — local real estate market data, local + lifestyle news, and rising search trends — and synthesizes a Research Brief that feeds Ideation and the Coach. Reads the agent's AI Brain for market, communities, niche, price band, and avatars so research is always local and specific, never generic. Runs fresh whenever the agent asks for ideas, or on demand. Triggers on "run my research", "what's happening in my market", "weekly research", "market research", "what's new in [city]", or as a step inside the optional Monday Kickoff when it is enabled.
 ---
 
 # Research Engine
@@ -23,7 +23,7 @@ Read the AI Brain + YouTube Layer for:
 - Country (US vs Canada) → picks the right data sources
 - Niche + **price band** (only research relevant segments)
 - Avatars — their questions, fears, and where they're moving from
-- The **active Game Plan pillars + goal** (from the YouTube Layer) — scope research to advance those (house rules #9)
+- The **active Game Plan pillars + goal** (from the YouTube Layer) — scope research to advance those (house rules #10)
 Research is ALWAYS scoped to this agent. Never return generic national filler.
 
 ## Step 2 — Gather across three lanes

@@ -201,15 +201,20 @@ Then:
 
 ---
 
-## Document Design Notes (for .docx formatting)
+## Document Design Notes
+
+`${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` is the save/format authority — one neutral house style,
+no colour, no client branding.
 
 - Cover page: agent name large and bold, city and year below, headshot placeholder centered
-- Section headers: bold, in agent's brand color (from brand persona file)
+- Section headers: bold, pure black (house doc standard — no colour)
 - Offer items: bold title + regular body text, consistent spacing
-- Stats page: large numbers (48pt+) in brand color, label in regular weight below
+- Stats page: large bold numbers with the label in regular weight below — black, no colour
 - Commitment statements: bold opening line + regular body text
 - Footer on every page: agent name + city + booking link (small, consistent)
 - Page breaks between each major section
 - Clean margins — not cramped, not sparse
 - Font: Arial or similar clean sans-serif throughout
-- Brand colors: pull from brand persona file — fallback to black/dark gold/white
+
+Visual branding (colours, logo) is applied later, when the agent drops this copy into their design tool
+(claude.ai design) — never in this doc.

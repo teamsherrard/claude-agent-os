@@ -1,6 +1,6 @@
 ---
 name: youtube-triggers
-description: Local-Event Triggers (Newsjacking) for the Realtor YouTube System. Watches the agent's specific market for timely events worth a video while they're hot — interest-rate decisions, new development or community launches, school-ranking changes, major infrastructure, big local news — and turns them into time-sensitive video suggestions flagged "film this week." Reads the AI Brain for communities, niche, and avatars. Runs daily/continuously or on demand. Triggers on "anything timely to film", "local news angles", "newsjack", "what's happening this week in [city]".
+description: Local-Event Triggers (Newsjacking) for the Realtor YouTube System. Watches the agent's specific market for timely events worth a video while they're hot — interest-rate decisions, new development or community launches, school-ranking changes, major infrastructure, big local news — and turns them into time-sensitive video suggestions flagged "film this week." Reads the AI Brain for communities, niche, and avatars. Checked fresh whenever the agent asks for ideas, or on demand. Triggers on "anything timely to film", "local news angles", "newsjack", "what's happening this week in [city]".
 ---
 
 # Local-Event Triggers (Newsjacking)

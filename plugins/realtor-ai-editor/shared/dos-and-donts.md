@@ -23,7 +23,7 @@ The one-page rulebook for editing a realtor's video. The detailed refs back each
 ## Premium & minimal — but never BARE
 - DO keep it clean, modern, restrained. A few strong touches beat ten cheap ones.
 - DO add *purposeful* creativity — match the effect to the words (price drop → down arrow, "tight" → squeeze, in Descript). **Minimal ≠ bare**: a flat, static talking-head with nothing happening is *also* a bad edit. Talking-heads need gentle punch-ins, a little motion, a hook card, and the CTA card (emphasis comes from the captions — short-form karaoke, or a long-form emphasis pop-up every ~2–3 min — see below).
-- DO put B-ROLL in every video — ALWAYS at least a little, even from Descript's built-in stock (zero setup). Never deliver a long-form with zero b-roll.
+- DO put B-ROLL in every video — ALWAYS at least a little, even from Descript's built-in stock (zero setup). Never deliver a long-form with zero b-roll — but respect the HARD CAP: **max 3 clips on a short-form reel** (long-form ~1 per 1.5–2 min); more than that is the agent's free manual 20% (see credit-tiers.md).
 - DON'T pile on RANDOM effects/overlays/frames until it looks tacky. The enemy is clutter, not creativity. Curate by video type (see effects-menu.md).
 - DON'T use loud or random SFX — a few, subtle, low-volume, and purposeful only. DON'T ask Descript for count-up animations — they're its most expensive effect; if a number matters, make it a static card or just let the caption say it.
 

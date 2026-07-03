@@ -34,18 +34,21 @@ Listed only so you know what's already available. Source mapping: see `ai-brain-
 **Read live from the Brain — NOT captured here** (the #1 rule): goals (YouTube/business/life/personal),
 competitors they admire/follow, posting cadence, niche, neighbourhoods, avatars, voice, offer, lead magnets.
 If one's missing from the Brain, point the agent to add it *there*, not in YouTube.
+*("NOT captured here" means setup never asks for these or copies them from the Brain. The Game Plan later
+writes its CHOSEN goal + cadence into Part C as plan anchors — a snapshot of the plan, not a copy of the
+Brain. Skills read the Part C anchors once set, and the Brain otherwise.)*
 
 ## Part C — Generated at setup (NOT stored as spreadsheets)
 - **Active Game Plan anchors** — the **3 content pillars (thematic focuses) + playlists, the goal, and the
   cadence** set by the YouTube Game Plan, stored here so EVERY skill reads them and stays aligned (house rules
-  #9). The 3 focuses are delivered through the doctrine's 6 content types (§8) per the §22 mix; the cadence
+  #10). The 3 focuses are delivered through the doctrine's 6 content types (§8) per the §22 mix; the cadence
   follows §15.3. The full Game Plan Doc (workspace root) holds the title backlog + 90-day calendar; skills
   open it for that detail. This keeps idea-generation strategic — invisibly. (No Content Map file.)
 - **The YouTube Game Plan** — the agent's first deliverable, built at setup (audit + 3 pillars + exact
   titles + goal-math + 90-day calendar) and saved as a Doc at the workspace root. Ideas are regenerated live
   thereafter — never an Idea Bank sheet.
-- **CTA library** — 3–5 CTA variations generated from the agent's offer + lead magnets, stored here, so every
-  video doesn't repeat the identical close. The writing skills (SEO / Script / Lead / Repurpose) rotate through them.
+(CTAs are NOT stored here — the writing skills generate them live from the Brain's offer + the doctrine's
+§6/§26 CTA framework and library, rotating variations so no video repeats the identical close.)
 
 ---
 

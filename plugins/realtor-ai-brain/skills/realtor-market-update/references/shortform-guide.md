@@ -41,7 +41,7 @@ YOUR TAKE (25-40 sec):
 [city] right now? Agent's genuine opinion. Locally specific.]
 
 CTA (5-10 sec):
-[Single action — match to agent's primary CTA from Project file]
+[Single action — match to agent's primary CTA from the Brain (identity/voice.md)]
 ```
 
 ### Riff Notes

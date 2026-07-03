@@ -20,8 +20,8 @@ makes them feel *"this thing just handed me my entire channel plan, built around
 **Mike Sherrard's frameworks** and carries his stamp — something a realtor could never get by prompting
 Claude themselves, because it fuses Mike's method with THEIR Brain + THEIR channel data.
 
-**Apply house rules** (`${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`) — especially the credibility stamp (#8),
-compliance/Fair-Housing on titles (#2), honest-no-guarantees (#5), and the clean-doc format (#3).
+**Apply house rules** (`${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`) — especially the credibility stamp (#9),
+compliance/Fair-Housing on titles (#3), honest-no-guarantees (#6), and the clean-doc format (#4).
 
 **Applies the YouTube Doctrine** (`${CLAUDE_PLUGIN_ROOT}/shared/youtube-doctrine.md`) — the flagship strategy
 doc IS the doctrine made personal. Lean on **§22** (the 90-day launch plan + the exact 24-video mix), **§15**
@@ -48,8 +48,9 @@ Read `~/realtor-brain/brain.md`, then:
 - **`identity/strategy.md` — their BUSINESS goals** (deals/year, income, lead targets). This anchors the
   goal-math (Phase 4). If it's empty, ask once for their goal and write it back to the Brain.
 - `identity/compliance.md` — disclaimers + claims rules (titles ship publicly).
-- **The YouTube Layer** (`Setup/`) — channel URL + status, the 12-month YouTube target, cadence, competitor
-  channels, pillars/CTA library.
+- **The YouTube Layer** (`Setup/`) — channel URL + status, plus the plan anchors (the 12-month YouTube
+  target, cadence, pillars + playlists) if a prior Game Plan set them. Competitors come from the Brain +
+  the Outlier engine (Step 2), and CTAs are generated live from the Brain's offer (doctrine §6, §26).
 
 **Read the Brain; never re-ask what it knows** (house rules). If `~/realtor-brain/` is missing → Brain Setup.
 
@@ -63,7 +64,7 @@ Read `~/realtor-brain/brain.md`, then:
   - Pillars + exact titles → `${CLAUDE_PLUGIN_ROOT}/skills/youtube-ideation/references/idea-method.md` + `${CLAUDE_PLUGIN_ROOT}/shared/idea-templates.md`
   - The video structure (doctrine §4) → `${CLAUDE_PLUGIN_ROOT}/skills/youtube-script/references/script-framework.md`
 
-## Step 3 — Get the channel data for the audit (scaled — house rules #6 plain talk)
+## Step 3 — Get the channel data for the audit (scaled — house rules #7 plain talk)
 The audit flexes to wherever they are (full detail in the framework). The channel is mostly **public**, so:
 - **Active channel** → research the public channel from its URL: titles, view counts, lengths, top performers,
   upload cadence. Offer the deeper read in one plain line: *"Want me to go deeper? Drop a screenshot of your
@@ -95,19 +96,19 @@ test all six types in the first 90 days before over-committing to a focus (§15.
 For each pillar, generate **15–20 EXACT, search-optimized titles** (not vague ideas), each annotated with
 **Search Intent & Lead Type**, ordered **broad → niche** (highest search volume → highest lead intent). Use
 real search language (the "type it into YouTube" test) + the idea-templates + competitor outlier patterns.
-**Run every title through compliance/Fair-Housing** (house rules #2) — no "best suburbs for families"-style
+**Run every title through compliance/Fair-Housing** (house rules #3) — no "best suburbs for families"-style
 proxies; keep them factual and safe, since titles ship publicly.
 
 ## Phase 4 — Your Goal → The Plan (the math that builds confidence)
 Reverse-engineer their **business goal** (from `strategy.md`) into the content plan, per the framework:
 `goal (deals/income) ÷ close rate → leads needed ÷ conversion → views/reach → cadence + pillars → 90-day
 milestones.` Show the numbers, **state the assumptions**, and frame it as a **credible path — NEVER a
-guarantee** (house rules #2 + #5). Reframe gently: subscribers are a vanity metric unless they convert — tie
+guarantee** (house rules #3 + #6). Reframe gently: subscribers are a vanity metric unless they convert — tie
 subs → leads → deals. This is the section that makes them believe *"this is genuinely possible."*
 
 ## Phase 5 — The Strategic Shifts + Video Structure + Playlists
-- The **strategic shifts** (tailored to their audit, from the doctrine): length (10–20 min; relocation 8–12,
-  §27.6), search-intent titles (§16), the **primary CTA placed early** (first 60–90s, §6.1), playlists per
+- The **strategic shifts** (tailored to their audit, from the doctrine): length (10–25 min, most land 10–20;
+  relocation 8–12, §27.6), search-intent titles (§16), the **primary CTA placed early** (first 60–90s, §6.1), playlists per
   pillar (§15.1, S.E.A.R.C.H. "C").
 - The **video structure** (doctrine §4): **Hook → Primary CTA → Body → Secondary CTA + next-video** — from
   `script-framework.md`, with their real CTA from the Brain (a private call OR a lead magnet — not hardcoded).
@@ -127,8 +128,8 @@ subs → leads → deals. This is the section that makes them believe *"this is 
 ## Phase 7 — Assemble, deliver, save, hand off
 1. **Assemble the Game Plan** into one premium Google Doc following the **Game Plan skeleton** in
    `${CLAUDE_PLUGIN_ROOT}/shared/doc-format.md` — Mike's structure, clean bands, the **credibility stamp**
-   (byline under the title + footer credit, house rules #8).
-2. **Compliance pass** (house rules #2): every title + claim Fair-Housing-safe, disclaimers where needed,
+   (byline under the title + footer credit, house rules #9).
+2. **Compliance pass** (house rules #3): every title + claim Fair-Housing-safe, disclaimers where needed,
    no guarantees.
 3. **Deliver in chat** — a warm, plain-language summary (not the whole doc): *"Here's your YouTube Game Plan
    — your 3 pillars, ~50 ready-to-film titles, and the 90-day plan to hit [their goal]. It's in your Drive."*
@@ -136,7 +137,7 @@ subs → leads → deals. This is the section that makes them believe *"this is 
    `${CLAUDE_PLUGIN_ROOT}/skills/youtube-setup/references/drive-structure.md`, formatted as the Game Plan
    skeleton in `${CLAUDE_PLUGIN_ROOT}/shared/doc-format.md`) so it's the first thing they see. Confirm the
    location plainly. **Then
-   make it the operating strategy (house rules #9):** write the plan's anchors — the **3 pillars + playlists,
+   make it the operating strategy (house rules #10):** write the plan's anchors — the **3 pillars + playlists,
    the goal, and the cadence** — into the **YouTube Layer** (`Setup/`), so every other skill (ideation,
    research, scripts, the calendar, the coach) reads them and stays aligned. The full Doc holds the title
    backlog + 90-day calendar; skills open it for that detail.
@@ -152,10 +153,10 @@ subs → leads → deals. This is the section that makes them believe *"this is 
 - [ ] Audit scaled correctly to their video count (full / light / minimal / skip-for-fresh)
 - [ ] 3 pillars, each chosen by lead type with a "why it generates leads" + a named playlist
 - [ ] 15–20 EXACT search-optimized titles per pillar, annotated (intent + lead type), broad→niche
-- [ ] **Every title Fair-Housing-safe + compliant** (house rules #2)
-- [ ] Goal-math present, assumptions stated, framed as a credible path — **no guarantees** (house rules #2 + #5)
+- [ ] **Every title Fair-Housing-safe + compliant** (house rules #3)
+- [ ] Goal-math present, assumptions stated, framed as a credible path — **no guarantees** (house rules #3 + #6)
 - [ ] Strategic shifts + the §4 video structure (Hook → Primary CTA → Body → Secondary CTA) + playlists + 90-day calendar (§22 mix) + metrics-as-milestones
 - [ ] Built in the agent's voice; local and specific (why-not-ChatGPT)
-- [ ] **Credibility stamp** present (byline + footer, house rules #8)
+- [ ] **Credibility stamp** present (byline + footer, house rules #9)
 - [ ] Saved as `YouTube Game Plan — [Agent]` at the workspace root; location confirmed plainly
 - [ ] Handed off to "make this video"

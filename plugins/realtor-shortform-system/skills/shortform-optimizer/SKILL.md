@@ -40,6 +40,7 @@ keep it plain and warm, never technical. (Usually you're invoked behind the scen
 - `~/realtor-brain/identity/avatars.md` — who the post is for (shapes which keywords/hashtags matter)
 - `~/realtor-brain/identity/offer.md` — offers, USP, **lead magnets** (the guides/checklists CTAs point to) — required for DM-keyword and download CTAs (see the CTA map)
 - `~/realtor-brain/identity/content-engine.md` — platform priority order (optimize those first) and any signature series
+- `~/realtor-brain/memory/performance.md` — what worked last cycle (hooks, CTAs, categories from the 2-week review); lean on it. Skip if it doesn't exist yet
 - `~/realtor-brain/identity/compliance.md` — the third law; read before finalizing any public text
 
 **The first law: read the Brain, never re-ask what it already knows.** The agent set all of this up once
@@ -143,9 +144,9 @@ CAPTION:
 [caption — hook line first, value, CTA]
 
 HASHTAGS:
-[8–12 hashtags]
+[3–5 searchable hashtags — per platform-rules]
 
-(Facebook tweak: [one line — e.g. "trim to ~4 hashtags; you can paste your booking link directly"])
+(Facebook tweak: [one line — e.g. "same 3–5 hashtags work here; you can paste your booking link directly"])
 
 ─────────────────────────────────────
 TIKTOK
@@ -178,7 +179,8 @@ If a Brain-set posting/scheduling connector is configured (see `identity/publish
 - [ ] Every caption opens with a scroll-stopping first line (front-loaded before the "…more" cut)
 - [ ] TikTok caption is a **single line with no line breaks**
 - [ ] YouTube Shorts title is search-led, includes the city, and is under ~70 characters
-- [ ] At least 2 hyperlocal hashtags on IG (#[City]RealEstate, #[City]Homes or a neighbourhood tag)
+- [ ] 3–5 hashtags max on every platform — never a hashtag wall
+- [ ] 1–2 hyperlocal hashtags on IG (#[City]RealEstate, #[City]Homes or a neighbourhood tag)
 - [ ] Video formats include cover/thumbnail text + on-screen text cues (skipped for carousel)
 - [ ] CTA matches the post's funnel role; DM-keyword/download CTAs point to a **real** lead magnet from `offer.md`
 - [ ] Voice matches `voice.md` + `voice-samples.md`; the city is named; it speaks to the avatar

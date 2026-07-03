@@ -1,10 +1,12 @@
-# Agent OS — Complete System Map
-*Everything in the system, generated from the live repo. Snapshot: marketplace build v0.21.0 ·
-Brain v0.16.0 · AI Admin v0.2.0 · YouTube v0.3.0 · Short-Form v0.7.0.*
+# Agent OS — System Map (ARCHIVED SNAPSHOT — v0.21.0, superseded)
+*Frozen snapshot from marketplace build v0.21.0 (Brain v0.16.0 · AI Admin v0.2.0 · YouTube v0.3.0 ·
+Short-Form v0.7.0). The marketplace has since grown to **6 plugins** — including Plugin 5 (Realtor
+Lead Capture) and Plugin 6 (Realtor AI Editor), which this map predates. For the live inventory and
+current versions, see [`.claude-plugin/marketplace.json`](../.claude-plugin/marketplace.json).*
 
-**What it is:** one Cowork marketplace (`teamsherrard/claude-agent-os`) containing **4 plugins** that
-install in journey order. The realtor builds **Plugin 1 (the Brain) first** — it's the foundation every
-other plugin reads. **39 skills total.**
+**What it was at this snapshot:** one Cowork marketplace (`teamsherrard/claude-agent-os`) containing
+**4 plugins** that install in journey order. The realtor builds **Plugin 1 (the Brain) first** — it's
+the foundation every other plugin reads. **39 skills total (at v0.21.0).**
 
 | # | Plugin | Skills | What it does | When the agent installs it |
 |---|---|---|---|---|

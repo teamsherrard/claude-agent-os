@@ -13,10 +13,11 @@ there and never re-asks.
 **One campaign = one magnet + one funnel that sell each other.**
 
 1. **Build the lead magnet** (`leadcapture-magnet`) — pick a brand-led guide (whole audience) or a focused
-   buyer/seller guide, built from the offer in the Brain. Output: a clean Google Doc with the full guide content.
+   buyer/seller guide, built from the offer in the Brain. Output: a clean, formatted doc in Drive (styled
+   `.docx`) with the full guide content.
 2. **Map the funnel** (`leadcapture-funnel`) — it reads the magnet from step 1 so the page sells *exactly*
    what the guide delivers, then writes the opt-in page section by section, applying the funnel strategy.
-   Output: a clean Google Doc with the full page copy + structure.
+   Output: a clean, formatted doc in Drive (styled `.docx`) with the full page copy + structure.
 
 The agent takes both docs to their design step, builds the guide PDF + the page, and hosts the page in their
 own tool (their site, GoHighLevel, Carrd, etc.).
@@ -44,7 +45,8 @@ realtor-lead-capture/
 ├── shared/
 │   ├── house-rules.md       # the rules every skill applies (voice, compliance, map-not-design, …)
 │   ├── copywriting-kb.md     # how to write genuinely good, high-converting copy (trains both skills)
-│   └── output-standard.md    # how the two docs are named, organized, and formatted in Drive
+│   ├── output-standard.md    # how the two docs are named, organized, and formatted in Drive
+│   └── render_doc.py         # shared renderer: structured text → styled .docx
 └── skills/
     ├── leadcapture-magnet/   # Step 1 — build the lead magnet from the offer
     └── leadcapture-funnel/   # Step 2 — map the opt-in funnel that gives it away

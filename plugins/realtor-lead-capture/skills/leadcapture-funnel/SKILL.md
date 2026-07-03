@@ -3,7 +3,8 @@ name: leadcapture-funnel
 description: >
   Step 2 of the Lead Capture System — maps the opt-in funnel (the landing page) that gives the lead magnet
   away. Reads the finished lead magnet so the page sells exactly what the guide delivers, then writes the
-  full page copy section by section — Hero, About the agent, The offer, The opt-in — in the agent's voice,
+  full page copy section by section — Hero, The Problem, The Guide, About the agent, Why Work With (offer +
+  USP), Local Market, Proof, Socials (only if they have channels), and The Opt-in — in the agent's voice,
   built to convert. Lead capture ONLY — name + email, never a call booking. COPY + STRATEGY ONLY — it writes
   the page's copy and structure (the design is a separate skill); it NEVER designs or hosts the page.
 
@@ -73,7 +74,7 @@ communities from `market.md`, the full offer + USP from `offer.md`, real proof f
 
 1. **HERO** — the **headline** (= the magnet's core promise, benefit-led, for its audience — or the agent's
    whole brand if brand-led), a **subhead** (expand the promise + who + remove doubt), and the **CTA button**
-   ("Send me the free guide"). 90% of whether they stay.
+   ("Get my free guide"). 90% of whether they stay.
 2. **THE PROBLEM** — name the reader's single most acute fear from `avatars.md` and agitate it honestly (the
    real cost of getting it wrong), then turn the corner: there's a better way, and this guide is it. Empathy
    + stakes, not a pitch.

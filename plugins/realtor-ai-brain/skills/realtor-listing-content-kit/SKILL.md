@@ -6,7 +6,7 @@ description: >
   walkthrough script (room by room), full YouTube SEO package (title, description, tags,
   hashtags), and 3 short-form Reel/TikTok scripts (just listed announcement, top 3 features,
   neighbourhood angle) each with a ready-to-post caption. Everything compiled into one
-  clean Google Doc. Agent inputs the address, key features, price, neighbourhood, and target
+  clean, formatted doc. Agent inputs the address, key features, price, neighbourhood, and target
   buyer type — Claude does the rest.
 
   Trigger on: "listing content kit", "new listing content", "create content for my listing",
@@ -36,7 +36,7 @@ The agent provides the listing details. Claude builds the content.
 - `~/realtor-brain/identity/voice.md` — tone, voice characteristics, what they never want to sound like
 - `~/realtor-brain/identity/avatars.md` — buyer profiles, to target the listing content
 - `~/realtor-brain/identity/offer.md` — services/guarantees worth mentioning in listing content
-- `~/realtor-brain/identity/brand-visual.md` — brand context (the Doc itself is clean plain text)
+- `~/realtor-brain/identity/brand-visual.md` — brand context (the doc itself renders in the neutral house style — no brand colours)
 - `~/realtor-brain/memory/listings.md` — **has this address been worked before? what content already
   exists for it?** Don't re-script content already marked done.
 
@@ -48,6 +48,9 @@ Setup_ first.**
 - **Compliance:** read `~/realtor-brain/identity/compliance.md`. Append the required brokerage disclaimer
   + license # to every public-facing output, and never make a claim on its "claims to avoid" list. *(If
   `compliance.md` is empty/unset, proceed but flag it to the agent.)*
+- **Fair Housing:** describe the place, never the people — no "safe/good area" or "family-friendly"
+  proxies, no demographic descriptions of who lives in a neighbourhood. Sell named facts: schools by
+  name, parks, commute, price point.
 - **No placeholders:** if any identity file you rely on still contains `[bracketed]` template text, treat
   that field as missing — ask the agent or skip it. **Never output bracketed placeholder text.**
 
@@ -174,6 +177,13 @@ inside [Address] in [Neighbourhood].
 [Price + brief property summary in one sentence.]
 Let's walk through it.
 ```
+
+**PRIMARY CTA (10-15 seconds — right after the hook, per the 2-CTA model)**
+
+One natural line with the agent's main offer + booking link (from
+`~/realtor-brain/identity/voice.md` / `offer.md`) — e.g. "And if you want to see it
+in person, my booking link is the first one in the description." The closing CTA at
+the end is the secondary CTA.
 
 **EXTERIOR / ARRIVAL (60-90 seconds)**
 - Curb appeal description
@@ -373,11 +383,12 @@ Caption: Neighbourhood-first hook + 3 named local highlights + listing details +
 
 ---
 
-## Phase 6: Save as a clean Google Doc
+## Phase 6: Save as a clean, formatted doc
 
-**Read `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` first.** Build this as well-structured plain text
-and create it as a Google Doc via the Drive connector — do NOT render a `.docx` (it won't convert in
-Cowork and lands as a broken file).
+**Read `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` first.** Build this as well-structured text (the
+grammar in that file), write it to a temp file (e.g. `/tmp/doc.txt`), and render it to a styled `.docx`:
+`python3 "${CLAUDE_PLUGIN_ROOT}/shared/render_doc.py" /tmp/doc.txt "Listing Kit · [Address].docx" --title "[Address] — Listing Content Kit" --subtitle "[Agent] · [City]"`
+Then upload the `.docx` via the Drive connector.
 
 ### Document Structure
 
@@ -425,15 +436,15 @@ DATA SOURCES
 ### Formatting (per the doc-formatting standard)
 - Title + meta line ([Address] · agent · date · price), then ALL-CAPS section headers each with an
   em-dash divider above and a blank line below.
-- Hook and closing line set off with a clear label + dividers above and below (plain text can't shade) so
-  they're visually distinct and obviously word-for-word.
+- Hook and closing line set off with a clear label + dividers above and below so they're visually
+  distinct and obviously word-for-word.
 - Room labels as their own lines through the walkthrough; `[POINT CAMERA AT]` directions on their own line.
 - Reel scripts each under a clear `REEL 1 / 2 / 3` label; captions separated from scripts by a divider.
 - `•` bullets, one per line; generous blank-line spacing between blocks.
 - No brand colours — every doc renders to one clean neutral standard (visual brand design lives in the agent's design tool).
 
-Create the Google Doc in the agent's Drive **`Realtor AI Brain` → `exports`**, named
-`Listing Kit · [Address]`, and tell the agent the location + link.
+Upload the rendered `.docx` to the agent's Drive **`Realtor AI Brain` → `exports`** (find-or-create
+`exports`), named `Listing Kit · [Address]`, and tell the agent the location + link.
 
 ---
 
@@ -496,7 +507,7 @@ copy is wiped when the session ends; an unsynced write is a lost write.
 - [ ] Description opens with a keyword-rich hook sentence
 - [ ] Booking link appears twice in the full description
 - [ ] 15 tags using 5-tier hierarchy
-- [ ] Year (2026) included in titles and tags
+- [ ] Current year included in titles and tags
 
 ### Reel Scripts
 - [ ] All 3 hooks use different formulas

@@ -1,13 +1,13 @@
 ---
 name: youtube-ideation
-description: Workflow 1 of 2 — Ideation. The realtor's main entry point, and where everything starts — fully ON-DEMAND, the agent asks whenever they're ready for their next batch of content. It asks how many videos they want, pulls fresh market signals right then, and hands back ready-to-film ideas hyper-specific to their market — a BLEND of broad general/relocation ideas and niche-specific ideas, with coverage gaps automatically baked into the batch — each with a title, hook, a short thumbnail text line, and a data-backed "why," in the agent's voice. When the agent picks one, it tells them to open a NEW chat for that video (one chat = one video) and run "Make This Video." Triggers on "what should I film", "find my next video", "give me ideas", "give me video ideas", "ideas for this week", "what to make next", "I want to make a video", "help me with my YouTube".
+description: Workflow 1 of 2 — Ideation. The realtor's main entry point, and where everything starts — fully ON-DEMAND, the agent asks whenever they're ready for their next batch of content. It asks how many videos they want, pulls fresh market signals right then, and hands back ready-to-film ideas hyper-specific to their market — a BLEND of broad general/relocation ideas and niche-specific ideas, with coverage gaps automatically baked into the batch — each with a title and a one-line data-backed "why," in the agent's voice (the hook and thumbnail text are prepared behind the scenes and surface in Step 1 of Make This Video). When the agent picks one, it tells them to open a NEW chat for that video (one chat = one video) and run "Make This Video." Triggers on "what should I film", "find my next video", "give me ideas", "give me video ideas", "ideas for this week", "what to make next", "I want to make a video", "help me with my YouTube".
 ---
 
 # Workflow 1 — Ideation (where it all starts)
 
 The realtor's front door — **on-demand by design.** They ask when they're ready to create; nothing is
 scheduled, nothing can silently break, and the data is fresh at the exact moment they ask. Talk plain +
-warm, never technical (`${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` §6). All machinery runs invisibly.
+warm, never technical (`${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` §7). All machinery runs invisibly.
 
 **Applies the YouTube Doctrine** (`${CLAUDE_PLUGIN_ROOT}/shared/youtube-doctrine.md`) — ideation runs on
 **§3 (S.E.A.R.C.H.: search intent first, exact questions)**, **§8–§14 (the 6 content pillars)**, **§16 (title
@@ -22,11 +22,11 @@ Find the scope in one friendly question:
 > two this week, or do you want to batch a few — say 4, so you film two now and two next week?"
 
 ## Step 2 — Gather FRESH signals (invisibly, right now)
-**Start from the Game Plan (house rules #9):** read the agent's active pillars + goal (YouTube Layer) and
+**Start from the Game Plan (house rules #10):** read the agent's active pillars + goal (YouTube Layer) and
 their planned title backlog (the **YouTube Game Plan** Doc) — the next ideas should advance THAT strategy,
 not random topics. Then pull, at ask-time so everything's current: the **AI Brain** (market, clientele,
 niche), **fresh research** (market data + local news + trends), **local-event triggers**, the **outlier
-scan** (if it's been ~a week since the last one), and the **live coverage read** (Videos folders + channel —
+scan** (kept light — refreshed at ask time; long-form doesn't move daily), and the **live coverage read** (Videos folders + channel —
 what's already made). Also read the agent's **captured idea backlog** (`memory/ideas.md`, tag `youtube`) —
 their own on-the-go ideas; bring these into the batch FIRST, and mark each Used once it becomes a video.
 The agent only sees one plain line: *"Give me a sec — I'm checking what's happening in your market."*
@@ -34,7 +34,7 @@ The agent only sees one plain line: *"Give me a sec — I'm checking what's happ
 ## Step 3 — Generate the batch (blend + gaps baked in)
 Run the engine in `references/idea-method.md` (rubric scored silently, packaging-first), using
 `${CLAUDE_PLUGIN_ROOT}/shared/idea-templates.md` + `${CLAUDE_PLUGIN_ROOT}/shared/seo-knowledge-base.md`:
-- **Aligned to the Game Plan first (house rules #9):** draw the batch from the agent's active pillars + the
+- **Aligned to the Game Plan first (house rules #10):** draw the batch from the agent's active pillars + the
   planned title backlog — advance the strategy and fill its next gaps, not random topics. A timely/off-plan
   idea is fine when a real signal warrants it — tie it to a pillar, or offer to fold it into the plan.
 - **A BLEND, always (the doctrine's content mix, §15.6):** broad searchable pillar ideas (relocation,

@@ -176,8 +176,11 @@ The opt-in section presents the magnet and asks for the email:
   handoff.
 
 **CTA button copy** — specific and first-person beats generic:
-- ✅ "Send me the free guide" · "Get the Calgary buyer's guide" · "Yes, send me the guide"
-- ❌ "Submit" · "Sign up" · "Download" (cold, generic)
+- ✅ "Get my free guide" · "Get the Calgary buyer's guide" · "Grab the free guide"
+- ❌ "Submit" · "Sign up" · bare "Download" (generic one-word buttons — a specific, download-framed CTA like
+  "Download the Calgary buyer's guide" is fine)
+- ❌ "Send me the guide" or any send/email framing — delivery is an **instant download on the page** (house
+  rules #4), so the button must never promise the guide will be sent.
 Repeat the CTA ~3× — hero, mid-page (the Guide), and the opt-in — same promise each time.
 
 ---

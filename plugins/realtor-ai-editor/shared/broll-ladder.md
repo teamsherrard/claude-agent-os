@@ -28,7 +28,7 @@ Always prefer the agent's own footage — from a Google Drive library, per-video
 
 ## The rules
 
-1. **Try the ladder in order:** own footage → Descript stock → free stock libraries (queried together + de-duped) → real-place imagery → AI-generated (last resort, capped, warn first).
+1. **Try the ladder in order:** own footage → Descript stock → free stock libraries (queried together + de-duped) → real-place imagery. **NO AI-generated B-roll — it's a banned heavy AI effect** (`${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md`); if the ladder runs dry, use fewer, better clips instead.
 2. **Topical first** — search terms come from the transcript so footage matches the words.
 3. **Local realism** — real places use real imagery (own footage / Wikimedia / Street View). Never AI-fake or use generic foreign stock for a specific local landmark.
 4. **Variety — no duplicates anywhere** — every cutaway in a video is unique; **NEVER reuse the same clip at all in one video, and NEVER the same clip twice in a row** (a duplicated clip looks broken — it plays, cuts, replays — and wastes credits). Keep a running list of every clip ID/filename already placed and check each new clip against it BEFORE placing; if a source returns one already used, pull the next result instead. De-dupe across ALL sources.

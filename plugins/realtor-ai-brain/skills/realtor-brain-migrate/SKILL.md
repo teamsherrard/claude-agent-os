@@ -21,7 +21,7 @@ move a field), the new *skills* arrive automatically via the marketplace — but
 
 ## Step 1 — Compare versions
 1. Read `~/realtor-brain/config.md` → **Brain schema** (the version the brain is currently in).
-2. The **current schema this skill targets is: `1`** *(maintainers: bump this line when you add a migration below)*.
+2. The **current schema this skill targets is: `2`** *(maintainers: bump this line when you add a migration below)*.
 3. **If brain schema == current →** tell the agent "Your brain is up to date — nothing to migrate." Stop.
 4. **If brain schema < current →** apply each migration below in order, from the brain's version up to current.
 5. **Always protect first:** before changing anything, push the current brain to Drive via
@@ -41,9 +41,17 @@ here describing the exact transformation. Each entry is idempotent and safe to r
   `memory/` (clients, listings, content-log, deadlines), `assets/`, `config.md`, `brain.md`, `exports/`.
   No migration needed; this is the starting point.
 
-  *(Example of a future entry — do NOT apply, illustration only:)*
-  *“**1 → 2:** split `identity/market.md` into `market.md` + `local-intel.md`; move the ‘Local market
-  intelligence’ section into the new file; add a pointer in `brain.md`’s file map.”*
+- **1 → 2 (2026-06):** the brain gained the capture / performance / publishing layer. Each step is
+  idempotent — skip anything that already exists; never delete data.
+  1. Create `memory/ideas.md` and `memory/performance.md` if missing — copy their headers from the
+     shipped template (`realtor-brain-setup` skill → `references/brain-template/realtor-brain/memory/`).
+  2. Create `identity/publishing.md` if missing (same template — it stays mostly blank until the
+     Short-Form System's setup writes it).
+  3. In `brain.md`: add the three files to "The files" map (descriptions per the template `brain.md` —
+     `memory/ideas.md` capture backlog, `memory/performance.md` what's-working review,
+     `identity/publishing.md` short-form posting setup), and add law 2's routing lines for performance
+     reviews (→ `memory/performance.md`) and on-the-go captures (→ `memory/ideas.md` via
+     **realtor-capture**) if they aren't already there.
 
 ## Step 3 — Finalize
 - Confirm the brain now reports the current schema in `config.md`.

@@ -2,8 +2,8 @@
 
 **One AI Brain that powers every tool you use as a real estate agent.**
 
-Set it up once. From then on, every skill — your market updates, your listing content, your AI admin
-AI Admin, everything we build next — already knows who you are, who you serve, how you sound, and what
+Set it up once. From then on, every skill — your market updates, your listing content, your AI Admin,
+everything we build next — already knows who you are, who you serve, how you sound, and what
 you've already done. You never re-explain yourself again.
 
 This is the foundation everything else plugs into. Install it first.
@@ -35,7 +35,10 @@ In **Claude Cowork** (everything is UI — there are no commands to type):
    - **Plugin 1 · Realtor AI Brain** — install first, always (the foundation)
    - **Plugin 2 · Realtor AI Admin** — install when you start the AI Admin module
    - **Plugin 3 · Realtor YouTube System** — install when you start the YouTube module
-   - *(Plugin 4 · Short-Form OS — joins this same shelf when it ships)*
+   - **Plugin 4 · Realtor Short-Form System** — install when you start the Short-Form module
+   - **Plugin 5 · Realtor Lead Capture** — install when you build your lead magnet + funnel
+   - **Plugin 6 · Realtor AI Editor** — install when you start the editing module (connects to
+     your own Descript account)
 5. *(Recommended)* Open the marketplace card → toggle **Sync automatically** so you get future updates
 
 That's it — the whole system is installed.

@@ -17,12 +17,12 @@ Including the address is optional — it's very specific but captures high-inten
 | Property type + neighbourhood + year | "[X] Bedroom Home for Sale in [Neighbourhood], [City] — [Year]" |
 | Price + neighbourhood | "Under $[X] in [Neighbourhood] [City] — Full Home Tour" |
 | Feature + neighbourhood | "[Key Feature] Home in [Neighbourhood] [City] — [Year] Listing" |
-| Buyer-type + neighbourhood | "Best [Family/Investor/First-Time Buyer] Home in [Neighbourhood] [City]" |
+| Buyer-type + neighbourhood | "Best [First-Time Buyer/Investor] Home in [Neighbourhood] [City]" |
 
 ### Title Rules
 - Neighbourhood name in every title
 - City name in every title
-- Year (2026) in at least 3 of the 5 variations
+- Current year in at least 3 of the 5 variations
 - Under 60 characters when possible — never over 70
 - No clickbait — deliver what the title promises
 - Price in title is optional — include if it's a compelling value angle

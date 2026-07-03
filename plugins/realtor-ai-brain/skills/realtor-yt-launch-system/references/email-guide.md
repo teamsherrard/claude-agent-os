@@ -128,19 +128,3 @@ One stat surprised even me. Worth a 12-minute watch if you're thinking about mak
 [VIDEO LINK]
 
 [Agent Name]
-
-Short, warm, immediate. This email delivers the free resource.
-
-Subject: Here's your [Resource Name], [First Name]
-Preview: Plus — the video that goes with it
-
-Body:
-You're all set.
-
-Here's your free [Resource Name]: [LINK]
-
-This goes hand-in-hand with the video I just dropped on [City] [topic]. If you haven't watched it yet, it's worth 15 minutes: [VIDEO LINK]
-
-If you have any questions about your specific situation in [City], just reply to this email — I read everything.
-
-[Agent Name]

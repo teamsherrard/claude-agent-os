@@ -9,7 +9,10 @@ no manual cloning — the setup skill provisions everything per agent.
 
 ## The realtor's experience — just two workflows
 
-Everything the agent does collapses into two things. **One chat = one video.**
+Setup ends by delivering the **YouTube Game Plan** (`youtube-gameplan`) — the flagship first deliverable:
+channel audit, 3 pillars, exact titles, goal-math, and a 90-day calendar. Ideation and every other skill
+then align to it (house rule #10). Day to day, everything the agent does collapses into two things.
+**One chat = one video.**
 
 1. **Ideation** (`youtube-ideation`) — "what should I film?" → a few ready ideas → they pick one.
 2. **Make This Video** (`youtube-make-video`) — they open a new chat (that chat *is* the video) → it
@@ -48,7 +51,7 @@ One repo = the single source of truth. Improve it once → every agent gets the 
 | **3. Creation** | Script Studio + Lead Engine + Repurposing | ✅ built |
 | **4. Growth loop** | Analytics + Coach + Consistency Engine | ✅ built |
 | **5. Monday Kickoff** | Optional + off by default — the core is fully on-demand | ✅ built |
-| 6. Ship | Marketplace packaging + self-serve onboarding | ⬜ next |
+| **6. Ship** | Marketplace packaging + self-serve onboarding | ✅ shipped (marketplace) |
 
 ---
 
@@ -58,10 +61,14 @@ One repo = the single source of truth. Improve it once → every agent gets the 
 realtor-youtube-system/
 ├── .claude-plugin/plugin.json     # plugin manifest
 ├── shared/                        # cross-skill references — every skill applies these
-│   ├── house-rules.md             #   voice · compliance · formatting · state · plain talk · the standard
+│   ├── youtube-doctrine.md        #   Mike Sherrard's 30-section methodology — the source of truth every skill applies
+│   ├── house-rules.md             #   doctrine · voice · compliance · formatting · state · plain talk · the standard
 │   ├── seo-knowledge-base.md      #   2026 SEO: intent, titles, tags, keyword library
-│   └── idea-templates.md          #   plug-and-play video idea templates
-├── skills/                        # ★ = the two realtor-facing workflows; the rest are the engine they call
+│   ├── idea-templates.md          #   plug-and-play video idea templates
+│   ├── doc-format.md              #   the house doc style + per-doc skeletons (structured text → .docx)
+│   └── render_doc.py              #   renders structured text to the styled .docx every saved doc uses
+├── skills/                        # ★ = the flagship deliverable + the two realtor-facing workflows; the rest are the engine they call
+│   ├── youtube-gameplan/          # ★ first deliverable — the YouTube Game Plan (built at end of setup; rule #10: everything aligns to it)
 │   ├── youtube-ideation/          # ★ Workflow 1 — Ideation (the entry point; ranks + packages ideas)
 │   ├── youtube-make-video/        # ★ Workflow 2 — Make This Video (one chat = one video)
 │   ├── youtube-setup/             # onboarding: reads AI Brain, captures voice, provisions Drive
@@ -80,7 +87,8 @@ realtor-youtube-system/
 └── README.md
 ```
 
-Every skill reads the agent's **AI Brain** and applies `shared/house-rules.md`.
+Every skill reads the agent's **AI Brain** and applies `shared/house-rules.md` — rule #1 of which is the
+methodology source of truth, `shared/youtube-doctrine.md`.
 
 ---
 
@@ -92,7 +100,7 @@ entire system. Phase 1 is what builds it.
 
 ## Agent vs Team — who touches what
 The whole design keeps technical work off the realtor:
-- **The realtor (in Cowork):** their Brain (a Claude Project) and the skills — all on-demand (plus an
+- **The realtor (in Cowork):** their Brain (the `~/realtor-brain/` folder, synced to their Google Drive) and the skills — all on-demand (plus an
   optional Monday kickoff). They never open a terminal, an API console, or this repo.
 - **The team (in Claude Code):** builds + maintains this plugin, holds the single competitor-data API
   key (backend), and later the one-click "Connect YouTube with Google" OAuth app.

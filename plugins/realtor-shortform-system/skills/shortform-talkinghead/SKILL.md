@@ -38,6 +38,7 @@ Read `~/realtor-brain/brain.md` first (follow its laws), then:
 - `identity/compliance.md` — the third law
 - `memory/content-log.md` — what they've already covered, so topics stay fresh
 - `memory/ideas.md` (tag `shortform`) — reel/topic ideas the agent captured on the go; put these at the TOP of the list, and mark each Used once scripted
+- `memory/performance.md` — what worked last cycle (from the 2-week review); lean on it when picking topics, hooks, and CTAs. Skip if it doesn't exist yet
 
 **Read the Brain; never re-ask what it knows** (house rules #2). If `~/realtor-brain/` is missing, send
 them to **Realtor AI Brain — Setup**.
@@ -99,13 +100,14 @@ best times per `${CLAUDE_PLUGIN_ROOT}/shared/publishing-guide.md` — only with 
 
 ## Phase 6 — Save to Drive + log to the Brain
 For **each** scripted video:
-1. **Save the formatted doc** following `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md` — a clean
-   Google Doc (topic + the chosen-length script with teleprompter & bullet versions + video assets + the
-   three platform blocks) in `[Agent Name] — Short-Form System/Content/[YYYY-MM · Month]/`, named
-   `[YYYY-MM-DD] · Talking Head · [Short Topic]`.
+1. **Save the formatted doc** following `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md` — structured
+   text (topic + the chosen-length script with teleprompter & bullet versions + video assets + the three
+   platform blocks) **rendered to a styled `.docx` via the shared renderer** (`render_doc.py`,
+   output-standard §6) and uploaded to `[Agent Name] — Short-Form System/Content/[YYYY-MM · Month]/`,
+   named `[YYYY-MM-DD] · Talking Head · [Short Topic]`.
 2. **Log it:** append a row to `~/realtor-brain/memory/content-log.md`:
    ```
-   | [date] | Reels/TikTok/Shorts | Talking head | [topic / angle] | [city/area] | Scripted | |
+   | [date] | Reels/TikTok/Shorts | Talking head | [topic / angle] · [funnel: reach/value/trust/conversion] | [city/area] | Scripted | |
    ```
 Push the Brain to Drive. Then: *"Saved your [N] talking heads to your Drive (Short-Form System → Content →
 [month]) and logged them so we don't repeat topics."*

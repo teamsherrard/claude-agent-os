@@ -60,7 +60,7 @@ Ask these one at a time, each with a recommended default they can just accept:
 
 1. **Where do you post?** (YouTube / Instagram / TikTok / Facebook — pick any) → sets default aspect ratios.
 2. **Do you have your own footage?** Two ways to use it: a **Google Drive folder** where you keep reusable B-roll (drone, exteriors, neighbourhood), and/or **uploading clips per video** (e.g. a listing's kitchen, backyard, drone). If they keep a Drive folder, get its name/location. If not, that's fine — stock and (for listings) the listing photos cover it. See `${CLAUDE_PLUGIN_ROOT}/shared/footage-intake.md`.
-3. **Caption look** for shorts → show 2–3 sample styles (see `${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md`) and let them point at one.
+3. **Caption look** for shorts → show the named sample looks listed in `${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md` ("Sample looks to show at setup") and let them point at one; save that look's exact values (`caption_style` label + `brand.caption` + `style_pack`) to the config so it reproduces every time.
 4. **Publishing** → confirm they want to approve before anything posts (recommended yes).
 5. **Your call-to-action** → what should viewers do, and the details? (e.g. "DM me COST", "call 555-1234", "link in bio", "subscribe"). Save it so **every video ends with their CTA on screen** — never a missing or generic ending.
 

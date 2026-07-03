@@ -95,13 +95,14 @@ workspace **nested inside the agent's existing master Drive** (never an orphan f
 and a `Setup/` folder — following the exact naming convention there. **Record the top-workspace folder ID
 into the YouTube Layer** so every later skill saves to the same organized place. **Do NOT create tracker
 spreadsheets** — no
-Idea Bank, Content Map, Content Calendar, Keyword Map, or Performance Log. The system is briefing-driven
-and reads state live. (The agent's first deliverable — their full YouTube Game Plan, which includes their
+Idea Bank, Content Map, Content Calendar, Keyword Map, or Performance Log. The system is chat-driven
+(on-demand) and reads state live. (The agent's first deliverable — their full YouTube Game Plan, which includes their
 pillars + a starter slate of ideas — is built next, in Step 7.)
 
 ## Step 6 — Save the YouTube Layer (a thin file, not a brain copy)
-Save a small **YouTube Layer** that stores ONLY channel, goals, cadence, pillars, and any optional
-voice refinement — and that *references* the AI Brain for everything else. Mirror a readable copy to
+Save a small **YouTube Layer** that stores ONLY channel + status, any optional voice refinement, and —
+once the Game Plan sets them (Step 7) — the plan anchors (goal, cadence, pillars + playlists) — and that
+*references* the AI Brain for everything else. Mirror a readable copy to
 the "YouTube Layer" Doc in their folder. The AI Brain stays the single source of truth; when it
 updates, the YouTube System reflects it automatically with no re-onboarding.
 

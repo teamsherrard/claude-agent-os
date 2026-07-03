@@ -9,7 +9,7 @@ Carousels win when they teach something genuinely useful, fast. People **save** 
 | Local guide | "7 best coffee shops in [area]" |
 | Buyer education | "5 things to know before buying your first home" |
 | Seller checklist | "6 things to do before you list your home" |
-| Neighbourhood guide | "Best areas in [city] for young families" *(keep Fair-Housing-safe — see below)* |
+| Neighbourhood guide | "3 [city] neighbourhoods under $[X] with top-rated schools" *(see Fair-Housing note below)* |
 | Market breakdown | "What's actually happening in the [city] market right now" |
 | Relocation content | "Moving to [city]? Pros and cons nobody tells you" |
 | Money / process | "The real cost of buying a home in [city] (all-in)" |

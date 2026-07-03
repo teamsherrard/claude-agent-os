@@ -86,12 +86,13 @@ unverifiable with `[double-check before filming]` and never leave an invented nu
 
 ## Step 6 — Save
 Create the video's folder if needed — `Videos/{YYYY-MM · Month}/{YYYY-MM-DD · Title}/` — and save the
-script as a clean Google Doc named **Script** inside it. Format it per
-`${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` §3 — a teleprompter-ready layout, NEVER a wall of text:
+script as a clean doc named **Script** inside it. Format it per
+`${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` §4 — a teleprompter-ready layout, NEVER a wall of text:
 a title + meta line (runtime · audience), ALL-CAPS section headers with timestamps set off by em-dash
 dividers (`──────── HOOK · 0:00 ────────`), a blank line between sections, spoken lines prominent, and
-cues (`>> ON SCREEN`, `[PAUSE]`, `FACT:`) on their own lines. Structure carries the formatting — don't
-rely on bold/colour (plain-text import can't keep them).
+cues (`>> ON SCREEN`, `[PAUSE]`, `FACT:`) on their own lines. Write it as the structured text in
+`${CLAUDE_PLUGIN_ROOT}/shared/doc-format.md` (the Script skeleton — detailed in `references/script-format.md`),
+render it to the styled `.docx` per doc-format.md, and upload the `.docx` to the video's folder.
 
 ## Hand-off
 After scripting → **SEO Engine** (title/description/tags/chapters) + **Lead Engine** (a matching lead

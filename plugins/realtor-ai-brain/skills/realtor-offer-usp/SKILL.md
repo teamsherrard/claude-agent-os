@@ -6,7 +6,7 @@ description: >
   the agent's Realtor AI Brain so nothing is repeated. Only asks what it doesn't already
   know — specifically what the agent offers, what makes them different, and why someone
   should hire them over every other agent in their market. Produces two outputs: a polished
-  public-facing Google Doc guidebook the agent uses as a lead magnet or sends to prospects, and
+  public-facing guidebook doc the agent uses as a lead magnet or sends to prospects, and
   the structured offer written into their Brain (identity/offer.md) to power every other skill.
 
   Trigger on: "build my offer", "create my USP", "build my offer guide", "why work with me
@@ -53,7 +53,7 @@ write the result. Ideally suggest they run **Brain Setup** (or the Brand Persona
 ### Step 2 — Read Reference Files
 
 1. `references/interview-guide.md` — the 6 questions, follow-up prompts, handling guidance
-2. `references/guidebook-template.md` — structure of the public-facing Google Doc guidebook
+2. `references/guidebook-template.md` — structure of the public-facing guidebook doc
 3. `references/usp-knowledge-template.md` — structure for the offer written to `identity/offer.md`
 
 ---
@@ -126,15 +126,17 @@ specific: core offer, buyer/seller offers, **lead magnets** (with their DM keywo
 signature process, USP, and proof. **This is what every other skill reads** — the lead magnets are what
 content CTAs point to. If `~/realtor-brain/identity/` doesn't exist yet, create it.
 
-### Output 2 — Public-Facing Guidebook (a clean Google Doc)
+### Output 2 — Public-Facing Guidebook (a clean, formatted doc)
 **Read:** `references/guidebook-template.md` for the content, and
 `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` for how to save it.
 
-Build the guidebook as well-structured plain text and create it as a clean Google Doc in the agent's
-Drive **`Realtor AI Brain` → `exports`**, named `Why Work With Me · [Agent Name]`. Do NOT render a
-`.docx` — it won't convert in Cowork and lands as a broken file. This is a *render* for humans; the
-source of truth is `offer.md`. The clean Doc is ready to send as-is; for a fully branded, visually
-designed PDF, tell the agent to drop this copy into their design tool (claude.ai design).
+Build the guidebook as well-structured text (the grammar in doc-formatting.md), write it to a temp file
+(e.g. `/tmp/doc.txt`), render it to a styled `.docx`:
+`python3 "${CLAUDE_PLUGIN_ROOT}/shared/render_doc.py" /tmp/doc.txt "Why Work With Me · [Agent Name].docx" --title "Why Work With Me" --subtitle "[Agent Name] · [City]"`
+and upload the `.docx` to the agent's Drive **`Realtor AI Brain` → `exports`** (find-or-create
+`exports`). This is a *render* for humans; the source of truth is `offer.md`. The clean doc is ready to
+send as-is; for a fully branded, visually designed PDF, tell the agent to drop this copy into their
+design tool (claude.ai design).
 
 ---
 

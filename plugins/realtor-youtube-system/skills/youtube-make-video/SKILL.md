@@ -57,5 +57,6 @@ an email, and social posts. Save as **Repurposing Pack**.
 - Done = the video's folder holds: Script · SEO Package · Lead Magnet Map · (later) Repurposing Pack.
 
 ## Hand-off
-Script + packaging ready → the agent films. After they publish → "say 'repurpose this'." Results later
-flow back into Ideation via the weekly briefing.
+Script + packaging ready → the agent films. After they publish → "say 'repurpose this'." Results flow
+back into Ideation automatically — it reads the channel, folders, and analytics live next time the agent
+asks for ideas.
