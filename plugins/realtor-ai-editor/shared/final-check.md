@@ -49,6 +49,7 @@ This is the real gate. Split into BLOCKERS (auto-fail — cannot deliver) and PO
 9. `no accidental background removal` — his real background is intact, NOT black/keyed. (VISUAL — cite frame)
 10. `b-roll within the cap + no repeats` — short-form ≤ 3 total; long-form ~1 per 1.5–2 min (~5–7 on 10 min); no repeated clips anywhere. (count them; cite a frame if unsure)
 11. `long-form emphasis pop-ups present (every ~2–3 min)` — long-form only; an emphasis pop-up roughly every 2–3 min (~3–5 on a 10-min video). N/A for short-form. (VISUAL — cite a frame at one pop-up)
+12. `card typography clean at FULL resolution` — for EVERY card: extract the frame at **full export resolution and CROP to the card region** (a small/low-res montage HIDES these defects — that's how a misaligned card shipped before). Check: all lines centred to the panel AND to each other, single spaces only, panel hugs the text (no oversized empty slab), no drifting stacked layers. (VISUAL — cite the full-res crop per card)
 
 **POLISH (fix if quick — does NOT block delivery):** caption size/contrast fine-tuning, SFX level, transition smoothness, panel rounding, perfect text padding, B-roll word-matching nuance, count-up/heavy-AI restraint confirmations. Note any you couldn't perfect so the agent knows it's part of their free 20%.
 

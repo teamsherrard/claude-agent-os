@@ -18,6 +18,7 @@ On a **short-form reel** that's **2, maybe 3 cards total** — the karaoke capti
 - **On-brand** — colours/fonts from the Brain (`brand-wiring.md`); never a tool default (it once defaulted to green). One accent colour, used for the one thing the eye should land on.
 - **Animated in** (pop / slide ~0.3s) and out; nothing blinks on.
 - **Text fits its panel** (even padding, no overflow); **no collisions** with captions, other cards, or the CTA.
+- **Typography is DESIGNED, not assembled — this is the bar cards keep failing.** Every line centred relative to the panel AND to each other (two stacked lines with different centres read broken); **single spaces only** (a double space like "MORE IN␣␣90 DAYS" is instantly sloppy); a deliberate size hierarchy; and the **panel HUGS the text** — tight, even padding (~40–60px), never an oversized slab of empty colour. **Prefer ONE text object — or one of Descript's designed title templates — over hand-stacking separate text layers on a rectangle**: stacked layers drift out of alignment, which is exactly how the rejected "horrible" hook card happened.
 - **No cramped multi-box grids** — Descript renders 2×2 quadrants / packed grids BROKEN (overlapping, cut-off). For a multi-part idea use **sequential cards** (one at a time) or a simple stacked list, full-size.
 
 ## OFF THE FACE — how (this is the rule that kept getting broken)
@@ -33,7 +34,7 @@ On a vertical 9:16 talking-head the speaker's head sits **HIGH**, so a card in t
 
 ## Be explicit with Descript
 
-Out of the box Descript makes a small flat centred box (right on the face). Tell it exactly what to do every time: rounded brand panel, big size, weight 900, drop shadow, ~0.3s pop-in, and the **exact off-face position**. It won't do it on its own.
+Out of the box Descript makes a small flat centred box (right on the face). Tell it exactly what to do every time: rounded brand panel, big size, weight 900, drop shadow, ~0.3s pop-in, and the **exact off-face position**. It won't do it on its own. **Spell out the typography too**: "one text object, all lines centre-aligned to each other and the panel, single spaces, tight even padding — never separate drifting text layers." If a clean designed **title template** from Descript's library fits the brand, use it instead of hand-building — designed templates come with the alignment/padding already right.
 
 ## Premium & minimal — and that's the point, not a compromise
 

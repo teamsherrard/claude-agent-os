@@ -2,6 +2,18 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.69.1] — 2026-07-03
+
+### AI Editor (Plugin 6) → v0.17.1 — card typography bar + full-res card QA (V2 hook-card rejection)
+Mike rejected the V2 hook card at full size: stacked text layers with drifting centres, a double-space gap, an
+oversized empty slab panel — defects the low-res frame-QA physically could not see.
+- `graphics-style.md`: new quality-bar rule — **typography is DESIGNED, not assembled**: all lines centred to the
+  panel AND each other, single spaces only, deliberate hierarchy, panel hugs the text (~40–60px padding, no slab);
+  prefer ONE text object or a designed Descript title template over hand-stacked layers (stacking is how the
+  rejected card happened). "Be explicit with Descript" now includes the alignment spec + template preference.
+- `final-check.md`: new BLOCKER #12 — **card typography clean at FULL resolution**: crop every card region from a
+  full-res frame (small montages hide misalignment — that is exactly how this shipped); cite the crop per card.
+
 ## [0.69.0] — 2026-07-03
 
 ### AI Admin (Plugin 2) → v0.4.0 — full quality sweep (24 fixes; multi-pass adversarial QA)
