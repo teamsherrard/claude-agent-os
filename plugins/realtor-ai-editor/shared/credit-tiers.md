@@ -49,7 +49,7 @@ This is the recipe the delivery "what's inside" line should restate back to the 
 
 ## Don't waste credits (the hidden drains)
 
-- **Batch into 2–3 passes**, not 15 tiny ones — every `prompt_project_agent` call costs credits. (e.g. one "clean + audio + grade + captions" pass, one "B-roll + a couple cards + CTA" pass.)
+- **Run THE PASS PLANS** (`${CLAUDE_PLUGIN_ROOT}/shared/descript-playbooks.md`): short-form reel ≈ **4 paid passes**, long-form ≤ **6**, listing reel ≈ **4** — never 15 tiny calls; every `prompt_project_agent` call costs credits AND a query. Do the FREE prep (transcript scoring, the hook line, the glossary, chapters, title/description, frame-QA) outside the paid calls — free work costs zero credits.
 - **Frame-QA before delivering** (read the exported frames) so you're not re-running to fix things you couldn't see.
 - **The biggest drain is OVER-CORRECTING** — too-little-B-roll → swing to too-much; tiny-caption → guess again. Each swing is a paid pass. Follow the safe defaults the FIRST time; don't swing.
 - **NEVER blind-retry** a paid pass — if "unable to reach Descript," check the project first; the edit usually landed.

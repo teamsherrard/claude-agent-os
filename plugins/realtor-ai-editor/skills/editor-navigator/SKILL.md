@@ -19,6 +19,10 @@ Get these from context and the Brain first. Ask only what's genuinely missing �
 
 For a **listing / home tour**, also check what **footage** they have (a Google Drive folder, files to upload, or just the listing photos) and route to `edit-listing` — property videos use their real footage, never generic stock.
 
+## Fast lane (most edits — zero extra questions)
+
+If their **config exists** (setup is done), the **video source is clear** (a link, a file, or a named Descript project), and the ask matches a **standard job** (a reel · a long-form edit · a listing · clips-from-a-long-video), **skip ALL discovery questions**: run the connection preflight, say the one-line plan with the cost gate, get the single yes, and GO. The one-question rule below is for when something is genuinely missing — not a step of every job.
+
 ## Connection-health preflight (one cheap check before you route)
 
 Before handing off to an editing skill, do **one** cheap `list_projects` to confirm the editor is actually connected to Descript.

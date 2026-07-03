@@ -33,7 +33,7 @@ Always get a yes before anything that **spends credits** (especially AI-generate
 
 - Default to the **cheap, reliable** operations (cuts, filler removal, Studio Sound, captions, reframe). Warn before the expensive ones (AI gen).
 - Transcribe once. Don't re-run a pass that already completed.
-- Prefer one well-formed instruction over many tiny ones.
+- Prefer one well-formed instruction over many tiny ones — **run THE PASS PLANS** (`${CLAUDE_PLUGIN_ROOT}/shared/descript-playbooks.md`): short-form reel ≈ **4 paid passes**, long-form ≤ **6**. Free prep (transcript work, glossary, frame-QA) costs nothing — do it outside the paid calls.
 - Keep your own messages short — fewer tokens, less for the agent to read.
 - **Verify every paid step actually landed before saying it's done.** Each Descript job returns a result — check `status: success` and `project_changed: true`, and for visible changes have the agent eyeball it. Never narrate success you haven't confirmed.
 - **Never blind-retry a paid job.** If a step errors or times out, check whether it actually ran (`get_project` / `list_jobs`) before trying again — re-firing burns credits for nothing. Stop after 1–2 failures and tell the agent.

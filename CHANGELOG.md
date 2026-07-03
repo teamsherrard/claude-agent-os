@@ -2,6 +2,29 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.67.0] — 2026-07-03
+
+### AI Editor (Plugin 6) → v0.17.0 — efficiency pass: fewer paid passes, faster starts, fewer credits
+An optimization sweep with one goal: simpler, quicker, cheaper for the realtor — by cutting paid calls and
+reading, not by adding rules.
+- **THE PASS PLANS** (new canon in `descript-playbooks.md`, wired into every edit skill + credit-tiers +
+  house-rules): a reel = **4 paid passes** (CLEAN → CAPTIONS → B-ROLL → FINISH), long-form = **≤6**, listing
+  reel = **≈4**. Down from ~6–8 (reel) and 6–10 (long-form) calls. Grounded in live data: a batched clean pass
+  (cuts + Studio Sound + reframe + grade in ONE call) cost ~6 credits vs ~78 for a fragmented cards session.
+  All free work (transcript scoring, hook ID, glossary, chapters, title/description, frame-QA) explicitly moved
+  OUTSIDE the paid calls. Playbooks A + B rewritten pass-by-pass; recipes tagged with which pass each step lands in.
+- **Fixed the built-in contradiction** — "one clear instruction per call" (which pushed toward many tiny paid
+  calls) is now "one well-formed PASS per call"; destructive cuts stay separate + reviewed.
+- **Repurpose batch got cheaper**: ~4–5 calls per clip (was 6–8); a 3-clip batch ≈ **13–17 calls** (was 20–26) —
+  double the headroom under Descript's 100-query ceiling.
+- **Lazy-load reading**: edit skills now front-load only house-rules + dos-and-donts (+ the playbook), opening
+  the other refs at the step that uses them — the reel-edit up-front read path drops from 13 files (~12k words)
+  to 4 (~7.4k). Faster starts, same rules.
+- **Fast lane** in the navigator: config exists + clear source + standard job → zero discovery questions, just
+  the one-line plan + cost gate, then go.
+- **ONE RENDER rule**: publish once (1080p) and use that single export for both frame-QA and the review link;
+  re-render only if a fix was needed.
+
 ## [0.66.0] — 2026-07-03
 
 ### AI Brain (Plugin 1) → v0.22.0 — Mike's A.G.E.N.T. Brand OS embedded across all branding skills
