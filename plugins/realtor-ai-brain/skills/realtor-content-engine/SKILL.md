@@ -43,9 +43,12 @@ beliefs (below). If `~/realtor-brain/` doesn't exist, run **Setup** first.
 ## The two questions only the agent can answer (always ask)
 1. **Platforms** — "Which platforms are you actually on, or want to focus on?" (capture handles → `profile.md`).
 2. **Capacity** — "Realistically, how much can you post right now?" Offer three simple options:
-   - **Light** — ~1 video + 2 short posts / week
+   - **Light** — ~1 video + 3 short posts / week
    - **Medium** — ~2 videos + 3–4 short posts / week
    - **Heavy** — daily
+
+   *(Short-form's floor is ~3×/week — so even "Light" keeps 3 short posts/week; the Short-Form System
+   plugin owns the detailed short-form cadence. Below 3 short/week, momentum stalls.)*
 
 ## The rest — ask once, generate only if they're unsure
 For each: ask once. **They know → use it. They don't → generate from the Brain and confirm.**

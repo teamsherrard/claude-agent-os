@@ -9,7 +9,7 @@
     {
       "name": "realtor-ai-brain",
       "source": "./plugins/realtor-ai-brain",
-      "version": "0.22.0",
+      "version": "0.22.1",
       "description": "PLUGIN 1 \u2014 install first. The Realtor AI Brain: one shared brain (the agent's identity + memory) that powers every other system. Run 'Set up my Brain' once, and every tool already knows the agent. Plus a system-wide Capture layer: talk on the go and your ideas, wins, vendors, and market notes file themselves into the Brain."
     },
     {
@@ -27,7 +27,7 @@
     {
       "name": "realtor-shortform-system",
       "source": "./plugins/realtor-shortform-system",
-      "version": "0.8.1",
+      "version": "0.8.2",
       "description": "PLUGIN 4 \u2014 the Short-Form System. A routine-based short-form OS: daily green-screen reactions, talking-head value, and carousels, each optimized for Instagram/Facebook, TikTok, and YouTube Shorts. The agent thinks in formats; Claude keeps the funnel balanced. Text only \u2014 never films or designs. Requires Plugin 1 (the Brain) set up first."
     },
     {

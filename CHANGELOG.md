@@ -2,6 +2,19 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.68.0] — 2026-07-03
+
+### Doctrine alignment — Brain brand-doctrine ↔ Short-Form frameworks (no conflicts, now cross-linked)
+Verified the two "source of truth" files are complementary layers, not duplicate/conflicting doctrine, and
+made the seam explicit.
+- **AI Brain (Plugin 1) → v0.22.1:** `content-engine` Light cadence raised to **3 short posts/week** so it
+  no longer sits under Short-Form's ~3×/week floor (added the "why" note). `shared/brand-doctrine.md` gains a
+  **Scope** section — it owns brand *strategy* (A.G.E.N.T. + niching); short-form *execution* lives in the
+  Short-Form plugin — with a cross-reference confirming its "20% niche / 80% general" == that plugin's
+  "80/20 reach split."
+- **Short-Form System (Plugin 4) → v0.8.2:** `shared/mike-frameworks.md` gains the reverse **Scope** pointer
+  to the Brain's `brand-doctrine.md`, so the two never drift or get defined twice.
+
 ## [0.67.0] — 2026-07-03
 
 ### AI Editor (Plugin 6) → v0.17.0 — efficiency pass: fewer paid passes, faster starts, fewer credits

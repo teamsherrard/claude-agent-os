@@ -4,6 +4,11 @@ Every short-form skill follows this. It is Mike Sherrard's short-form methodolog
 intent. When a skill says "follow Mike's frameworks," it means this file. Where anything else in the
 plugin disagrees with this, **this wins.**
 
+> **Scope:** this file owns short-form *execution* (the 4-3-2-1 ratio, HVC, filming/editing, cadence). The
+> agent's brand + niche *strategy* — the **A.G.E.N.T. Brand OS** and the niching beliefs — lives in the
+> Brain plugin (`realtor-ai-brain/shared/brand-doctrine.md`). The two agree where they touch: the "80/20
+> reach split" here is the same as the Brain's "20% niche / 80% general." If that mix changes, update both.
+
 ---
 
 ## 1. The 4-3-2-1 Content Ratio

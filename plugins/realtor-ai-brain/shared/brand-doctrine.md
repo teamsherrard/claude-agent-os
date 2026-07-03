@@ -66,6 +66,15 @@ to keep the agent from either refusing to niche or over-narrowing.
 
 ---
 
+## Scope — where this ends and the content engine begins
+
+This file owns **brand strategy**: *who* the agent is and *what* niche they own (A.G.E.N.T. + niching).
+It does **not** own short-form content *execution* — the 4-3-2-1 content ratio, the Hook·Value·CTA video
+structure, filming/editing rules, and posting cadence live in the **Short-Form System** plugin
+(`realtor-shortform-system/shared/mike-frameworks.md`). The two agree where they touch: this file's
+"20% niche / 80% general" mix is the same as that file's "80/20 reach split." Keep them consistent — if
+the niche/broad mix ever changes, update both.
+
 ## The contract for branding skills
 
 - **Read this file** before capturing or coaching anything about brand or niche.
