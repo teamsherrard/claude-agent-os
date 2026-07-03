@@ -161,8 +161,9 @@ what's something more specific? Is it a particular area you know better than any
 A type of client you're especially good with? A process you do differently?"
 
 **Q27: How would you describe your personality on camera or in person?
-Are you more formal and professional, casual and conversational, energetic,
-calm and reassuring — or something else?**
+Pick any that fit — you might be a mix — or tell me your own: formal/professional,
+casual/conversational, energetic, calm/reassuring, warm, bold, funny.**
+*(Multi-select — most agents blend a few, e.g. "calm but energetic." Capture their own words + any nuance.)*
 
 **Q28: What do you never want to sound like in your content?
 Any type of agent or style of content that makes you cringe?**

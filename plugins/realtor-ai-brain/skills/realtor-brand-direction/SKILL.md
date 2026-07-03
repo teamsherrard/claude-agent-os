@@ -33,14 +33,20 @@ brokerage from `profile.md` — if eXp / RE/MAX / KW, tell them to keep their pe
 from the brokerage's brand colours (e.g. eXp blue). If `~/realtor-brain/` doesn't exist, run **Setup** first.
 
 ## The capture (conversational — and guide them, because most realtors don't know)
+*For every item below, the options are **examples to react to, not a menu** — the agent can pick several,
+reject them all, or give their own. Capture what they actually say, in their words.*
 1. **Colours** — "Any colours you love or hate?" If they're unsure, **propose 2–3 complete colour
-   directions** built from their vibe + niche and let them react. Capture ~4–5 colours, each with a hex
-   and a role (dominant / primary / accent / neutral-text).
-2. **Feel / vibe** — 3 words for how the brand should feel (e.g. calm, premium, modern); tie it to their voice.
-3. **Font direction** — modern vs classic, serif vs sans, clean vs bold. Suggest a pairing to react to (names only).
-4. **Logo direction** — do they have one, or want one? What style — monogram, wordmark, a simple mark?
-   **Direction only — do not design it.**
-5. **Tagline ideas** — offer 2–3 drawn from their offer + voice; let them pick one or park it.
+   directions** built from their vibe + niche and let them react — *and if none feel right, ask what colours
+   actually speak to them.* Capture ~4–5 colours, each with a hex and a role (dominant / primary / accent /
+   neutral-text).
+2. **Feel / vibe** — a few words for how the brand should feel (e.g. calm, premium, modern, bold, playful —
+   **pick any that fit or add your own; it can be a mix**); tie it to their voice.
+3. **Font direction** — modern vs classic, serif vs sans, clean vs bold — *or a different pairing if none fit.*
+   Suggest a pairing to react to (names only).
+4. **Logo direction** — do they have one, or want one? What style — monogram, wordmark, a simple mark, **or
+   something else they can describe**? **Direction only — do not design it.**
+5. **Tagline ideas** — offer 2–3 drawn from their offer + voice; **let them pick one, tweak one, write their
+   own, or park it.**
 
 When they're unsure, **propose and let them react** — never hand them a blank. (Same move as the offer phase.)
 

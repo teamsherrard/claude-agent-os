@@ -360,7 +360,7 @@ Based on what the data shows, identify the single strongest opinion angle the ag
 Pick the most interesting, counterintuitive, or locally specific insight from this month's numbers
 and build a talking head script around it.
 
-Angle options — pick whichever fits the data best:
+Angle options — pick whichever fits the data best (or a different angle entirely if the data tells a stronger story):
 - Contrarian take: "Everyone thinks the market is [X]. The data says otherwise."
 - Before/after: "[City] 12 months ago vs today — here's what changed."
 - Myth buster: "The most common thing I'm hearing from buyers right now is [X]. Here's the truth."

@@ -2,6 +2,23 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.72.0] — 2026-07-03
+
+### AI Brain (Plugin 1) → v0.25.0 — full sweep: no remaining questions box the agent in
+Audited every question across all seven phases (+ the other brain skills) against the "Options are examples,
+not a cage" standard. Everything else was already clean (offer/USP, voice-proof, operations, capture,
+listing-kit, neighbourhood-tour, trending-articles, setup); fixed the six spots that still boxed agents in:
+- **brand-persona (Q27, personality):** fixed style list → multi-select ("you might be a mix") + "tell me
+  your own" + capture nuance.
+- **content-engine (capacity):** Light/Medium/Heavy was a single pick → now allows "differs by platform"
+  (Heavy on video, Light on short-form) + "tell me your own."
+- **brand-direction (colours, vibe, fonts, logo, tagline):** every item now explicitly says the options are
+  examples to react to — the agent can pick several, reject them all, or give their own; vibe is multi.
+- **compliance (brokerage co-brand):** the eXp/RE/MAX/KW/independent list now has an escape hatch — "or tell
+  me your brokerage's name + co-brand rules."
+- **market-update (angle)** & **yt-launch (delivery format):** internal option menus now allow a
+  different/hybrid angle or format when the content calls for it.
+
 ## [0.71.0] — 2026-07-03
 
 ### AI Brain (Plugin 1) → v0.24.0 — interview options no longer box the agent in (multi-select + type-your-own + context)

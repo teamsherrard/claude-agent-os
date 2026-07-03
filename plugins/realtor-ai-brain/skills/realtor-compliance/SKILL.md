@@ -50,7 +50,8 @@ Read `~/realtor-brain/brain.md` and `identity/profile.md` (brokerage, license #,
    your brokerage's marketing/branding page, or your managing broker has it. I'll flag it as a to-do, and
    your content will show '[brokerage disclaimer pending]' until you add it."* **Never invent a disclaimer.**
 6. **Brokerage logo / co-brand rules** — infer from `profile.md`/brokerage and confirm: eXp (keep personal
-   palette distinct from eXp blue), RE/MAX co-brand zone, KW, or independent (no constraints).
+   palette distinct from eXp blue), RE/MAX co-brand zone, KW, or independent (no constraints) — **or, if
+   their brokerage isn't one of these, ask its name and any co-brand rules they should follow.**
 
 ## Write + push to Drive + confirm
 > **Push to Drive after writing** — run `realtor-brain-sync` (PUSH). An unsynced write is a lost write.

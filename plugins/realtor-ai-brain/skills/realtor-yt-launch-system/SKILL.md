@@ -158,7 +158,7 @@ Each script must be:
 For each of the 3 scripts, produce:
 - Script title / concept angle
 - Recommended length (15s / 30s / 60s)
-- **Delivery format:** Label each script as one of: `Talking Head` / `Green Screen — pair with article or stat background` / `B-Roll Voiceover`. Base this on the content type — stat-heavy or article-based scripts suit green screen; personal opinion or story scripts suit talking head.
+- **Delivery format:** Label each script as one of: `Talking Head` / `Green Screen — pair with article or stat background` / `B-Roll Voiceover` — or a hybrid/custom format if the video content calls for it. Base this on the content type — stat-heavy or article-based scripts suit green screen; personal opinion or story scripts suit talking head.
 - Hook line (what they say first — must stop the scroll)
 - Full word-for-word script
 - On-screen text suggestions in [BRACKETS] (what to show while talking)
