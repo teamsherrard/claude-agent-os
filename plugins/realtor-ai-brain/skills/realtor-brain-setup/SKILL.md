@@ -40,9 +40,10 @@ you copy it into place, fill it through the phases, then push it to Drive. Exact
 ├── identity/                 # filled by the phase skills
 │   ├── profile.md  market.md  avatars.md  voice.md  offer.md  brand-visual.md     (Phases 1–3)
 │   ├── voice-samples.md  proof.md  content-engine.md                              (Phases 4–5)
-│   └── operations.md  vendors.md  strategy.md  compliance.md                      (Phases 6–7)
+│   ├── operations.md  vendors.md  strategy.md  compliance.md                      (Phases 6–7)
+│   └── publishing.md             # scaffolded empty — the Short-Form System's setup writes it
 ├── memory/                   # scaffolded empty — skills fill these over time
-│   └── clients.md  listings.md  content-log.md  deadlines.md
+│   └── clients.md  listings.md  content-log.md  deadlines.md  ideas.md  performance.md
 ├── assets/                   # logo, headshot, fonts
 ├── config.md                 # connectors, timezone, Brain schema version
 └── exports/                  # deliverables archive — synced to Drive (outputs, not source)
@@ -83,24 +84,22 @@ Drive with a fresh empty one** at the finalize push. So:
 
 Say something like:
 
-> Welcome — I'm setting up your AI Brain. One time, and from then on every tool already knows you. We
-> save as we go, so you can pause anytime.
+> Welcome — I'm building your complete AI Brain. We do this once, and from then on every tool already
+> knows you — your market, your voice, your offer — so you never have to re-explain yourself again.
 >
-> I'd recommend **Express (~30 min)** — the essentials: who you are, who you serve, what you offer, and
-> your brand direction. That's enough for every content tool to start working for you *today*. You can
-> deepen it later, one quick piece at a time.
+> It takes about **45 minutes**, and we **save as we go**, so you can pause anytime and pick up exactly
+> where you left off. Nothing is lost. I'll connect your Google Drive, email, and calendar at the end.
 >
-> Or go **Full (~45 min)** — Express PLUS your real writing samples + proof and your content plan. *(Two
-> more pieces — how you operate and your compliance rules — we set up later, right when you need them, so
-> we don't overload you now.)*
->
-> Either way I'll connect your Google Drive, email, and calendar at the end. **Express to get creating
-> today, or Full to go deeper now?**
+> Ready? Let's build it properly.
 
-Default to **Express** if they're unsure or just say "get started." Remember their choice — **Express**
-runs Phases 1–3 then connectors; **Full** runs Phases 1–5 + 7. **Operations (Phase 6) and Vendors are NOT
-part of first-run setup** — they run just before "Set up my AI Admin," the only thing that needs them.
-This keeps onboarding short and stops new agents stalling on decisions they haven't made yet.
+**Always build the full Brain — there is no fast-track and no "how deep" choice.** Every agent gets the
+complete version. First-run runs **Phases 1–5 + 7**, then connectors, then finalize. Don't offer a
+shorter path; if an agent is short on time, reassure them they can **pause and resume** (we checkpoint
+after every phase) — never by skipping phases.
+
+**Operations (Phase 6) + Vendors are the one thing NOT in first-run** — not to save time, but because
+they're used *only* by the AI Admin, so they're captured just before "Set up my AI Admin" (correct
+sequencing, not a shortcut). Everything else is built now.
 
 Then **scaffold the folder structure now** — copy the bundled template
 `references/brain-template/realtor-brain/` to `~/realtor-brain/` (this gives them every subfolder, the
@@ -145,14 +144,13 @@ skill's flow, then checkpoint: "Phase 3 done — your brand direction is set."
 defaults — black / dark gold `#B8860B` / white — so nothing downstream hits an empty file. They can
 re-run "set my brand direction" anytime.)*
 
-**→ If they chose Express, skip to Step 6 (Connect your tools) now.**
-
 ---
 
-## Step 5 — Deepen the Brain *(Full only — skipped in Express)*
+## Step 5 — Complete the Brain (Phases 4, 5, 7 — always run)
 
 Run these as their own skills, in order, checkpointing after each. The agent can stop after any one and
 resume later — every one **defaults gracefully** if they're unsure (per `shared/ask-once-default.md`).
+These are **not optional** — they're part of every setup. (Graceful defaults keep them fast, not skipped.)
 
 - **Phase 4 — Voice & Proof** (`realtor-voice-proof`): real writing samples + testimonials/stats →
   `identity/voice-samples.md`, `proof.md`. *(~5 min — biggest lever on content quality; fully skippable.)*
@@ -204,9 +202,10 @@ agent connect it before finishing. Set their **timezone** and pull the **default
 3. **Save the Brain to Google Drive — do NOT skip.** Use the **realtor-brain-sync** skill to create the
    `Realtor AI Brain` folder in the agent's Drive and push the whole brain up. This is what makes it
    persist; the local copy is gone next session. Confirm it's saved before continuing.
-4. **Save a welcome doc** to the agent's Drive `Realtor AI Brain → exports` — a short, friendly Google
-   Doc the agent can keep: "Here's your Brain — here's what's in it, and here's what to try first."
-   (A clean Google Doc per `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` — structured plain text, not `.docx`.)
+4. **Save a welcome doc** to the agent's Drive `Realtor AI Brain → exports` — a short, friendly doc
+   the agent can keep: "Here's your Brain — here's what's in it, and here's what to try first."
+   (Per `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` — structured text rendered to a styled `.docx`
+   via `shared/render_doc.py`, then uploaded.)
 5. **Confirm and hand off.** Show them the finished structure and tell them what to do next:
 
 > 🎉 Your AI Brain is built. From now on, every skill already knows you — you'll never re-explain your
