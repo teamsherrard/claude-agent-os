@@ -29,6 +29,10 @@ Takes under 10 minutes. Produces two documents — one for prospects, one for Cl
 offer/USP draft from their Brain and let them react; honour "skip" / "use defaults". Defaults stay
 full-quality and specific, never thin.*
 
+*This skill owns the **Edge** pillar of the A.G.E.N.T. Brand OS (`${CLAUDE_PLUGIN_ROOT}/shared/brand-doctrine.md`) —
+the USP is literally "what makes your perspective different." Hold the bar there: reject generic answers
+("great service," "I work hard") and push to a real, specific, provable edge tied to their niche.*
+
 ### Step 1 — Load the Brain
 
 Before asking anything, **read `~/realtor-brain/brain.md`** and the identity files Phase 1 (Brand

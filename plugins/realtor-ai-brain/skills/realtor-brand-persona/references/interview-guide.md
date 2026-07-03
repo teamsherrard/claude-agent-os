@@ -1,5 +1,9 @@
 # Interview Guide — Realtor Brand Persona Skill
 
+*Runs on Mike's **A.G.E.N.T. Brand OS** (`shared/brand-doctrine.md`). The blocks map to the pillars:
+Block 2 → **A**udience (niche) · Block 3 → **A**udience + **G**ap · Block 4 → **E**dge + **N**arrative +
+start of the **T**rust System. Keep all five in mind as you go.*
+
 ## How to Run the Interview
 
 - Ask ONE question at a time. Always.
@@ -46,6 +50,20 @@ is it more under $500K, the $500K-$800K range, over a million?"
 investment properties, relocations — or is it more general residential?**
 Follow-up if "general residential": "Is there one type of client or transaction you
 find yourself doing more than others, even if you don't think of it as a niche?"
+
+*Niche coaching (apply `shared/brand-doctrine.md`) — when they're hesitant or resistant, don't just
+record "no niche." Coach briefly, in plain language:*
+- *Reassure it's not a trap: "Picking a niche now doesn't lock you in forever — it evolves as you do.
+  And you're not abandoning everyone else: early on it's about 20% niche content and 80% general,
+  widely-searched stuff. The niche is just the thing you become known for over time."*
+- *Give the why: "In the AI-search era, tools recommend what they can find — people search 'relocating
+  to [city]' or 'first home in [city],' and specialists get recommended. Strong-brand agents also get
+  paid more and get more referrals. That's why it's worth choosing one."*
+- *Guard the size: if their idea is too narrow for the market, say so — "That's a real niche, but is it
+  big enough in [market] to hit your income goals? We might widen it slightly." Aim at a **growing** niche
+  with real volume.*
+- *Never force it. Offer a direction and the reasoning; let them choose. Capture what they land on as
+  their **Audience** pillar.*
 
 **Q9: Do you cover any secondary markets outside your main city or area?**
 If yes: "Tell me about that market — is it a different type of client or similar to
@@ -179,6 +197,9 @@ that would make your job easier and their experience better?**
 Response: "That makes sense — most agents do early on. But if you think about the
 last 5 transactions you closed, was there a type of client that kept showing up?
 First-time buyers, upsizers, people relocating, investors?"
+*Then reassure per the doctrine: "Naming a niche doesn't mean turning everyone else away — it's the
+thing you become the go-to for. And it's how you get found now: AI and search recommend specialists, and
+strong-brand agents earn more and get more referrals. It can evolve later — we're just planting the flag."*
 
 **"I just provide great service"**
 Response: "I hear that a lot — and I believe you. But help me get more specific.
@@ -200,3 +221,7 @@ reason for buying or selling?"
 Response: "That's okay — you might have one you haven't named yet. When you think about
 the last 10 deals you closed, was there a property type, price range, or client profile
 that showed up more than once?"
+*If still resistant, give the doctrine's why + the low-stakes framing: "You don't have to go all-in —
+start with ~20% niche content and 80% general, and grow the niche a bit each year until you own it. But
+having one matters more than ever: AI search recommends specialists, and strong-brand agents get cheaper
+leads and more referrals. Let's just pick a direction — it can change as you do."*

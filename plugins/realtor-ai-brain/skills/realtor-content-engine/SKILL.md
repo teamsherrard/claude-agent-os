@@ -27,7 +27,18 @@ Sets a simple, durable content plan. Built so a brand-new agent in week one is n
 ## Step 1 — Load the Brain
 Read `~/realtor-brain/brain.md`, plus `identity/avatars.md`, `identity/voice.md`, `identity/market.md`,
 `identity/offer.md`, `identity/profile.md`. This is what you generate from *when the agent is stuck*.
-If `~/realtor-brain/` doesn't exist, run **Setup** first.
+Also read `${CLAUDE_PLUGIN_ROOT}/shared/brand-doctrine.md` — the pillars must reflect Mike's niche/content
+beliefs (below). If `~/realtor-brain/` doesn't exist, run **Setup** first.
+
+## The niche/content mix rule (from `brand-doctrine.md` — apply when setting pillars)
+- **Start ~20% niche / 80% general, and grow the niche ~20% each year.** Early on, most content should be
+  broad, widely-searched, top-of-funnel — it builds momentum and brand awareness, then funnels people down
+  to the niche. Over ~5 years the agent becomes THE go-to for their niche. So a week-one plan leans general,
+  with **one clear niche pillar** seeded in — not an all-niche plan.
+- **A few pillars, not a prison.** The niche is *one* pillar; the rest can be market-general topics. Don't
+  force everything through the niche.
+- **Think in search intent (AI-search era).** Favour pillars/topics people actually search — "relocating to
+  [city]," "first home in [market]," "is [community] worth it" — so the agent gets found and recommended.
 
 ## The two questions only the agent can answer (always ask)
 1. **Platforms** — "Which platforms are you actually on, or want to focus on?" (capture handles → `profile.md`).
@@ -38,9 +49,10 @@ If `~/realtor-brain/` doesn't exist, run **Setup** first.
 
 ## The rest — ask once, generate only if they're unsure
 For each: ask once. **They know → use it. They don't → generate from the Brain and confirm.**
-- **Content pillars (3–5)** — if unsure, propose pillars from their niche + avatars + market + offer
-  (e.g. new-construction agent → "New-build 101," "Community spotlights," "Market reads," "Buyer
-  myth-busting").
+- **Content pillars (3–5)** — if unsure, propose pillars from their niche + avatars + market + offer,
+  following the 20/80 mix above: **one clear niche pillar + broader, widely-searched market pillars**
+  (e.g. new-construction agent → niche: "New-build 101"; general: "Community spotlights," "Market reads,"
+  "Buyer myth-busting"). Phrase them toward search intent so the agent gets found.
 - **Signature series** — if unsure, propose one obvious recurring format (e.g. "Monthly [city] [niche] Update").
 - **Default video style** — captions on/off, vibe, typical length. If unsure, default from their voice
   (e.g. calm/clean, captions on, 30–60s).

@@ -2,6 +2,24 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.66.0] — 2026-07-03
+
+### AI Brain (Plugin 1) → v0.22.0 — Mike's A.G.E.N.T. Brand OS embedded across all branding skills
+Brought Mike Sherrard's personal-branding methodology into the Brain as a shared source of truth, so every
+branding step now runs on his framework (the branding sibling of `youtube-doctrine.md`).
+- **New `shared/brand-doctrine.md`** — the **A.G.E.N.T. Brand OS** (Audience · Gap · Edge · Narrative ·
+  Trust System) mapped to the Brain's identity files, plus Mike's 7 niching beliefs (niche evolves, not a
+  lifetime lock · start 20% niche / 80% general and +20%/yr → dominate in ~5 yrs · niching doesn't alienate ·
+  you must niche for the AI-search era · strong brands get paid more · a few pillars, "niche isn't a prison" ·
+  target a *growing* niche with real market size).
+- **`realtor-brand-persona`** (SKILL + interview-guide) — the interview now runs through the A.G.E.N.T. lens
+  (pushes on a thin Edge/Narrative) and *coaches* niche selection with Mike's beliefs (reassure it evolves +
+  won't alienate; justify via AI-search + strong-brand economics; guard against over-narrowing).
+- **`realtor-content-engine`** — pillars now follow the 20/80 niche-to-general mix (+20%/yr), keep it to a
+  few pillars, and lean into search-intent topics.
+- **`realtor-brand-direction`** & **`realtor-offer-usp`** — visual direction must express the brand's Edge +
+  Narrative; the USP explicitly owns the **Edge** pillar (rejects generic "great service" answers).
+
 ## [0.65.1] — 2026-06-30
 
 ### YouTube System (Plugin 3) → v0.8.1 — the Coach now genuinely coaches like Mike

@@ -45,11 +45,31 @@ agent shares.
 
 ## Before You Start
 
-Follow `${CLAUDE_PLUGIN_ROOT}/shared/ask-once-default.md`: if the agent is unsure on any question, offer
-a sensible default drawn from what they've already told you and let them confirm; honour "skip" / "use
-defaults" — never let them stall on a blank. (Keep the interview's depth — defaults are full-quality, not
-shortcuts.) Then read `references/interview-guide.md` — this contains the full question bank, follow-up
-prompts, and guidance on how to handle common agent responses.
+**Read `${CLAUDE_PLUGIN_ROOT}/shared/brand-doctrine.md` first.** This is Mike Sherrard's branding
+methodology — the **A.G.E.N.T. Brand OS** and the niching beliefs. Run this whole interview through that
+lens: you are not just collecting facts, you are building a brand that answers all five A.G.E.N.T.
+questions and lands on a smart, *growing* niche the agent is comfortable with.
+
+Then follow `${CLAUDE_PLUGIN_ROOT}/shared/ask-once-default.md`: if the agent is unsure on any question,
+offer a sensible default drawn from what they've already told you and let them confirm; honour "skip" /
+"use defaults" — never let them stall on a blank. (Keep the interview's depth — defaults are full-quality,
+not shortcuts.) Then read `references/interview-guide.md` — the full question bank, follow-up prompts, and
+guidance on how to handle common agent responses.
+
+### The A.G.E.N.T. Brand OS — what this interview is really capturing
+The blocks below already surface all five pillars; hold them in mind as you go and make sure none is left thin:
+- **A — Audience** (who they serve): Blocks 2 + 3 — niche, geography, avatars.
+- **G — Gap** (the problem/confusion they solve): Block 3 — worries, fears, misconceptions (Q15, Q23, Q24).
+- **E — Edge** (what makes their perspective different): Block 4 — Q26. *The most commonly thin pillar — push past "great service."*
+- **N — Narrative** (the human story that makes them memorable): Block 4 — Q25, and the best-client story in Q13.
+- **T — Trust System** (how they prove it): the client feedback in Q17, plus proof + consistency (captured further in later phases).
+
+### Coaching the niche (apply the beliefs in `brand-doctrine.md`)
+Niche comes up in Block 2 (Q8) and whenever an agent says "I work with everyone." When it does, coach — don't just record:
+- **Reassure:** a niche *evolves* — it's not a lifetime lock, and it won't alienate everyone (every top agent is known for something).
+- **Justify:** the AI-search era only recommends what it can find, and strong brands get paid more — so specialising is how they get recommended and generate free inbound leads.
+- **Guard the edges:** keep it to a few pillars (the niche isn't a prison), and make sure it's a *growing* niche with enough real market size to hit their income goals — widen it if it's too thin.
+Never force a niche they reject — offer direction and the *why*, let them choose.
 
 ---
 
@@ -164,6 +184,13 @@ are reference documents for Claude, not for the agent to read about themselves.
 
 Each file must be specific and complete enough that any other skill — market update, YouTube launch,
 trending articles — runs with zero additional intake beyond what's video- or campaign-specific.
+
+**Synthesise through A.G.E.N.T.** (per `${CLAUDE_PLUGIN_ROOT}/shared/brand-doctrine.md`): before you finish,
+confirm the Brain now clearly answers all five — **A**udience (niche + avatars), **G**ap (their fears/
+confusions), **E**dge (the real differentiator, not "great service"), **N**arrative (the human story), and
+the start of a **T**rust System (proof/feedback). If **Edge** or **Narrative** is still thin, ask one more
+targeted follow-up before writing — those two carry the brand. Capture the niche as a *growing* niche the
+agent is comfortable with, framed as evolvable (not a lifetime lock).
 
 **Optional keepsake:** save a clean combined Google Doc to the agent's Drive `Realtor AI Brain → exports`
 (per `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` — structured plain text, not `.docx`) so the agent

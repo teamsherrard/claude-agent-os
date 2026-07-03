@@ -24,8 +24,11 @@ their logo, brand kit, and templates.
 unsure (this skill already does), and honour "skip" / "use defaults" with a safe, on-brand default.*
 
 ## Step 1 — Load the Brain
-Read `~/realtor-brain/brain.md`, plus `identity/voice.md`, `identity/avatars.md`, `identity/profile.md`.
-Their voice (calm vs bold), avatars, and niche should shape the directions you propose. Note the
+Read `~/realtor-brain/brain.md`, plus `identity/voice.md`, `identity/avatars.md`, `identity/profile.md`,
+and `${CLAUDE_PLUGIN_ROOT}/shared/brand-doctrine.md`. Their voice (calm vs bold), avatars, and niche should
+shape the directions you propose — the visual direction is how the brand's **Edge** and **Narrative**
+(A.G.E.N.T.) *look*, so tie every choice back to what makes this agent different and their story, not
+generic taste. Note the
 brokerage from `profile.md` — if eXp / RE/MAX / KW, tell them to keep their personal direction *distinct*
 from the brokerage's brand colours (e.g. eXp blue). If `~/realtor-brain/` doesn't exist, run **Setup** first.
 
