@@ -16,6 +16,22 @@ typing for the agent, the highest-quality file for the Brain.**
    - **"skip" / "do this later" / "not sure I have that"** → write a safe, friendly placeholder and move
      on. Never leave a broken or empty file; never block.
 
+## Options are examples, not a cage
+When you offer choices (property types, buyer/seller, price bands, platforms — anything), they are
+**starting points, never a fixed menu**. In Cowork these render as tappable chips, so the wording decides
+whether the agent feels boxed in. Every option-style question must let the agent:
+- **Pick more than one** whenever the answer is genuinely multi-valued — an agent can work $300–400K
+  first-timers **and** $1.2M+ luxury; sell houses **and** condos; serve buyers **and** investors. Signal it
+  in the wording (*"select all that apply,"* *"you might span more than one"*) so it renders **multi-select**,
+  never a forced single pick.
+- **Type their own** when theirs isn't listed — always include an *"or tell me your own / anything I
+  missed?"* path. The listed options never limit them (farms, mobile homes, renters, relocations all count).
+- **Add their own context in their words.** After any selection, ask **one open follow-up** — *"anything to
+  add, or a specific mix I should note?"* — and capture that free text **verbatim**.
+
+Never phrase a multi-valued question as "which one?" or present the list as exhaustive. The agent chooses
+buttons **and** can always customise, edit, and expand in their own words. Never box them in.
+
 ## The quality guardrail (NON-NEGOTIABLE)
 **A default is NOT a thin stub.** When the agent accepts a default, generate the COMPLETE, professional,
 specific version — exactly as detailed, thoughtful, and strategic as if they'd answered every question

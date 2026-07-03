@@ -13,6 +13,10 @@ start of the **T**rust System. Keep all five in mind as you go.*
 - If an agent says "I don't know" or "I work with everyone" — that's the signal to dig deeper
 - Never use marketing jargon in your questions — ask it the way a real person would
 - Encourage honesty over polish — "don't worry about making it sound perfect" energy
+- **Options are examples, not a cage** (see `shared/ask-once-default.md`). For any question with choices,
+  let the agent pick **multiple**, **type their own**, and **add context in their words**. Signal
+  multi-select ("select all that apply" / "you might span more than one") and always follow with an open
+  "anything I missed?" Never force a single pick or treat the list as final — they can always customise.
 
 ---
 
@@ -23,14 +27,21 @@ start of the **T**rust System. Keep all five in mind as you go.*
 
 **Q2: How long have you been a real estate agent?**
 
-**Q3: What types of properties do you mostly work with — houses, condos, townhouses, new builds, commercial, or a mix?**
-Follow-up if vague: "If you had to pick the one type you sell the most, what would it be?"
+**Q3: What types of properties do you mostly work with? Select all that apply — and tell me your own if it's not listed.**
+*(Examples: single-family homes, condos, townhomes, new construction, luxury, investment, land, commercial —
+but capture whatever they actually say, including types not listed: farms, acreages, mobile homes,
+pre-construction, multi-family. Multi-select — most agents work several.)*
+Open follow-up (always): "Anything else you work with, or a specific mix I should note (e.g. 'mostly new
+builds, some resale')?" Capture their exact words + nuance — never reduce them to one type.
 
 **Q4: Do you work under a brokerage or team, and if so, what's it called?**
 *(Optional — some agents won't want this in their files)*
 
-**Q5: Do you work mostly with buyers, sellers, or both?**
-Follow-up if "both": "If you had to guess — is it more like 60/40 buyers, or pretty even?"
+**Q5: Do you work mostly with buyers, sellers, or both — and is there anyone else you serve a lot?**
+*(Buyers · sellers · both — AND capture other segments they name: investors, renters/landlords, relocations,
+first-time buyers, downsizers, builders. Select all that apply + type your own — don't box them into three.)*
+Follow-up if "both": "Roughly what's the split — more like 60/40 buyers, or pretty even?"
+Open follow-up (always): "Anyone else you work with a lot that I should capture?"
 
 ---
 
@@ -42,9 +53,11 @@ Follow-up if they say just the city name: "Within [city] — are there specific 
 or quadrants you focus on? Like the northwest, downtown, suburban areas, specific
 developments?"
 
-**Q7: What price range do you mostly work in?**
-Follow-up if vague: "Like what's a typical sale price for the homes you deal with —
-is it more under $500K, the $500K-$800K range, over a million?"
+**Q7: What price range(s) do you work in? Pick all that apply — many agents span more than one.**
+*(Examples: under $400K, $400–700K, $700K–1.2M, $1.2M+ — but agents often split, e.g. first-time buyers
+around $300–400K **and** luxury condos at $1M+. Capture EVERY band they work, not just one, plus their own
+numbers if different. Multi-select — never a single forced pick.)*
+Open follow-up (always): "If your work splits across ranges, tell me how — which clients sit where?"
 
 **Q8: Do you have a niche — like luxury homes, new construction, first-time buyers,
 investment properties, relocations — or is it more general residential?**

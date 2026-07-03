@@ -2,6 +2,25 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.71.0] — 2026-07-03
+
+### AI Brain (Plugin 1) → v0.24.0 — interview options no longer box the agent in (multi-select + type-your-own + context)
+Setup interview questions were rendering as restrictive single-select chips (e.g. price range let you pick
+only one band; property type / buyer-seller had no way to add your own). Fixed system-wide so agents can
+pick buttons AND customise, edit, and add their own context.
+- **New shared rule `shared/ask-once-default.md` → "Options are examples, not a cage"** — applies to every
+  phase skill: any option-style question must let the agent **pick multiple** (signal "select all that
+  apply" so it renders multi-select, never a forced single pick), **type their own** ("or tell me your
+  own"), and **add free-text context** (always follow with an open "anything I missed?"). Never phrase a
+  multi-valued question as "which one?" or present the list as exhaustive.
+- **`realtor-brand-persona` interview-guide** — reworked the three questions the feedback flagged:
+  - **Property types (Q3):** multi-select + "tell me your own if it's not listed" (farms, mobile homes,
+    pre-construction, multi-family all count) + open follow-up for the mix.
+  - **Buyers/sellers (Q5):** no longer just three options — captures investors, renters/landlords,
+    relocations, first-timers, downsizers too; select all + type your own.
+  - **Price range (Q7):** now **multi-band** — an agent can be $300–400K first-timers **and** $1.2M+
+    luxury; captures every band + their own numbers, never one forced pick.
+
 ## [0.70.0] — 2026-07-03
 
 ### Full-system quality sweep — 80 verified findings fixed across all 6 plugins
