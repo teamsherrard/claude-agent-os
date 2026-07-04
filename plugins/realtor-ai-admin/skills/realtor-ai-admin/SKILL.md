@@ -50,9 +50,7 @@ The Admin exists only if it's FASTER than the agent doing it manually:
 ## Sync rule (protects the moat)
 After ANY write to `memory/` or `config.md`, **push the changed files to Drive** (brain-sync
 PUSH) before ending the turn — batched once per turn, not per file. If Drive is unreachable,
-say so plainly: "your notes aren't saved to Drive yet." If `config.md` holds a dashboard
-artifact, also refresh its MEMORY data block from the updated memory files — otherwise the
-dashboard goes stale until the next 7am briefing.
+say so plainly: "your notes aren't saved to Drive yet."
 
 ## Name resolution — when you hear a name the Brain doesn't know
 `clients.md` is the agent's **active working set, not their whole address book** — their real,
@@ -74,9 +72,9 @@ Applies everywhere — bookings, drafts, logging, and especially dispatch.
 # ONE-TIME SETUP — "Set up my AI Admin"
 
 Run when asked to set up / build / start AI Admin. Plain English, one step at a time.
-**Re-run guard:** if `config.md` already holds the task + artifact ids, this is a health check,
-not a rebuild — verify the connectors and both automations still work, repair what's broken, and
-never create duplicate tasks, labels, or dashboards.
+**Re-run guard:** if `config.md` already holds the task ids, this is a health check, not a
+rebuild — verify the connectors and both automations still work, repair what's broken, and
+never create duplicate tasks or labels.
 
 1. **Brain check.** Load the Brain (Step 0). If `identity/operations.md` is still placeholders,
    run the **realtor-operations** skill first (~3 min — most agents just confirm the standard
@@ -84,7 +82,7 @@ never create duplicate tasks, labels, or dashboards.
    and vendors. Don't duplicate its questions.
 2. **Name the assistant (optional, 10 seconds).** Ask once: "Want to give your assistant a name —
    or keep it simple and call it your AI Admin?" Save it in `config.md` (assistant name; default
-   **AI Admin**). The briefing signs with it and the dashboard wears it.
+   **AI Admin**). The briefing signs with it.
 3. **Connector check.** Verify by making one trivial read each: **Gmail**, **Google Calendar**,
    **Google Drive** (required), **Zoom** (recommended — test whether it can CREATE meetings, not
    just read them; delete the test meeting; note the result in `config.md`), **Cal.com**
@@ -101,20 +99,14 @@ never create duplicate tasks, labels, or dashboards.
    `config.md` to Drive right away** (a setup crash must not orphan these ids into duplicates):
    - **Morning Briefing** — daily 7:00am, prompt from `references/briefing-prompt.md`
    - **Daily Inbox Sweep** — weekdays 8:30am, prompt from `references/daily-inbox-sweep.md`
-7. **Dashboard.** Build the live dashboard artifact from `references/dashboard-template.html`
-   (personalize from `brain.md` + the assistant name in `config.md`; parse MEMORY from the memory
-   files; wire the fetchers to the real probed connector tools; drop in the briefing task id
-   saved at step 6). Save the artifact id + URL in `config.md`. Tell the agent plainly: the
-   dashboard shows client names and notes — it's for their eyes only; never share the
-   artifact link.
-8. **First-run test (do it WITH them).** Book a real test event ("book a showing at 123 Main
+7. **First-run test (do it WITH them).** Book a real test event ("book a showing at 123 Main
    tomorrow 2pm") → confirm it's on their calendar → log a client note → run the briefing once →
    **delete the test event** (unless it was a real appointment). Then hand over: "Talk to me like
    an assistant. Every morning your briefing and a sorted inbox are waiting — and on the go, just
    send me a voice note: 'remember this, remind me Thursday, draft them a thank-you.' I'll handle
    it and report back."
-9. **Push to Drive.** Sync the brain (config now holds the assistant name, artifact + task ids,
-   and the sweep choice).
+8. **Push to Drive.** Sync the brain (config now holds the assistant name, task ids, and the
+   sweep choice).
 
 ---
 
@@ -237,12 +229,10 @@ back in one glance. **Follow `references/dispatch-capture.md`.** In short:
 - `clients.md` block format: `## [Client] — [Buyer/Seller] — Stage: [..]` + Looking / Last
   contact / Next action / Key deadlines / Notes. `deadlines.md`:
   `| Due date | Type | Client / Listing | What | Status |` (match the template headers exactly).
-- Read the ledger before answering anything about a client. The dashboard and briefing are built
-  from these same files — write-backs keep them honest. Push to Drive after writes (Sync rule).
-- **`clients.md` is the agent's private client data (PII).** It lives ONLY in the local brain,
-  the agent's own Drive, and their private dashboard artifact — never in any repo, export, or
-  message to anyone else. The dashboard is the one sanctioned rendering: it stays private;
-  never share or publish it.
+- Read the ledger before answering anything about a client. The briefing is built from these
+  same files — write-backs keep them honest. Push to Drive after writes (Sync rule).
+- **`clients.md` is the agent's private client data (PII).** It lives ONLY in the local brain
+  and the agent's own Drive — never in any repo, export, artifact, or message to anyone else.
 
 ## Connectors (resolve exact tool names at runtime)
 | Need | Primary | Fallback |

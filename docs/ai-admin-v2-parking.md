@@ -35,3 +35,9 @@ tl;dv / Grain connectors (verify capabilities at build time).
 ## Daily Command extensions
 - **Productivity Scorecard** (Automation) — weekly "did-I-do-my-admin / what's slipping" report.
 - Special-date surfacing is already in the v1 briefing prompt (reads client notes).
+
+## Parked at v0.5.0 — the Dashboard artifact
+Removed from the AI Admin (owner call, 2026-07-03): looked bad, added setup friction, and was
+redundant — the 7am briefing is the daily surface and Day View covers on-demand. If a dashboard
+ever returns it needs a real design pass first. Template lives in git history (v0.72.0 and earlier:
+`plugins/realtor-ai-admin/skills/realtor-ai-admin/references/dashboard-template.html`).

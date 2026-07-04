@@ -25,7 +25,6 @@ missing should tell the agent to connect it rather than failing silently.*
 ## AI Admin runtime
 *Written by "Set up my AI Admin" — leave blank until then.*
 - **Assistant name:** [blank — default "AI Admin"]
-- **Dashboard artifact id + URL:** [blank]
 - **Morning Briefing task id:** [blank] · runs daily 7:00am (agent timezone)
 - **Daily Inbox Sweep task id:** [blank] · runs weekdays 8:30am (agent timezone)
 - **Sweep may archive Promotions:** [yes/no — agent's choice at setup]

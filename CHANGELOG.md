@@ -2,6 +2,17 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.73.0] — 2026-07-03
+
+### AI Admin (Plugin 2) → v0.5.0 — dashboard artifact REMOVED (owner call from live testing)
+- The dashboard looked bad, added a setup step + artifact-API failure modes, was a third PII surface,
+  and duplicated what already works: the **7am briefing** is the daily surface, **Day View** is the
+  on-demand one. Setup is now 8 steps; the briefing's housekeeping no longer refreshes an artifact;
+  the PII rule tightens back to local brain + agent's own Drive ONLY. Template deleted (restorable
+  from git history; parked in docs/ai-admin-v2-parking.md with a design-pass requirement).
+### Brain (Plugin 1) → v0.25.1
+- brain-template config.md: dashboard artifact slot removed (assistant name + task ids remain).
+
 ## [0.72.0] — 2026-07-03
 
 ### AI Brain (Plugin 1) → v0.25.0 — full sweep: no remaining questions box the agent in
