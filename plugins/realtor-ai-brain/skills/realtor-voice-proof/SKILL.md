@@ -25,10 +25,16 @@ Read `~/realtor-brain/brain.md`, plus `identity/profile.md`, `identity/voice.md`
 You already know their described voice and offer — this phase adds *real examples* and *proof*. If
 `~/realtor-brain/` doesn't exist, tell them to run **Realtor AI Brain — Setup** first.
 
+> **Faster than typing:** this whole phase is file-shaped, so lead with the option to **upload or import**.
+> *"Got past posts, emails, or scripts saved somewhere — or testimonials in a doc or screenshots? Upload
+> them here or point me to a Google Drive folder and I'll pull them in (via **realtor-import**) — then you
+> just confirm."* Only fall back to paste/typing for what they don't have on file.
+
 ## Phase A — Writing samples (the voice lever)
-Ask the agent to **paste 3–5 pieces of their own real past content** — Instagram captions, an email to
-a client, a LinkedIn post, a video script, anything they actually wrote. Reassure: "Don't polish them,
-don't pick the fanciest — pick the most *you*."
+Ask the agent to **paste OR upload 3–5 pieces of their own real past content** — Instagram captions, an
+email to a client, a LinkedIn post, a video script, anything they actually wrote (they can drop files or
+point to a Drive folder — see **realtor-import**). Reassure: "Don't polish them, don't pick the fanciest —
+pick the most *you*."
 
 For each, capture it **verbatim** and add a one-line note on what's distinctive (short sentences? dry
 humor? no emojis? lots of line breaks?). Write to `~/realtor-brain/identity/voice-samples.md`.
@@ -37,8 +43,9 @@ If they have nothing written: that's fine — note it and suggest they come back
 few things. Don't fabricate samples.
 
 ## Phase B — Proof library
-Collect, conversationally:
-- **Testimonials** — paste 2–5 real client quotes (first name / client type + year).
+Collect, conversationally (or **upload/import** — a reviews doc, testimonial screenshots, or a stats sheet
+all work; **realtor-import** extracts them):
+- **Testimonials** — paste, upload, or point me to 2–5 real client quotes (first name / client type + year).
 - **Stats** — homes sold, years, average days on market (vs market), list-to-sale ratio, competitive-
   offer win rate, awards/rankings. Whatever they know — don't force numbers they don't have.
 - **Case studies** — 1–2 signature wins (situation → what they did → outcome).

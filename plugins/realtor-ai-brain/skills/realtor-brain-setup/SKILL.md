@@ -44,6 +44,7 @@ you copy it into place, fill it through the phases, then push it to Drive. Exact
 │   └── publishing.md             # scaffolded empty — the Short-Form System's setup writes it
 ├── memory/                   # scaffolded empty — skills fill these over time
 │   └── clients.md  listings.md  content-log.md  deadlines.md  ideas.md  performance.md
+├── intake/                   # drop zone — agent uploads materials here, then "import my materials"
 ├── assets/                   # logo, headshot, fonts
 ├── config.md                 # connectors, timezone, Brain schema version
 └── exports/                  # deliverables archive — synced to Drive (outputs, not source)
@@ -103,8 +104,28 @@ sequencing, not a shortcut). Everything else is built now.
 
 Then **scaffold the folder structure now** — copy the bundled template
 `references/brain-template/realtor-brain/` to `~/realtor-brain/` (this gives them every subfolder, the
-empty `memory/` files, `config.md`, and the `assets/` + `exports/` placeholders in one step). Confirm
-it's created.
+empty `memory/` files, `config.md`, and the `assets/` + `exports/` + `intake/` placeholders in one step).
+Confirm it's created.
+
+---
+
+## Step 1.5 — Offer to import existing materials first (the big typing-saver)
+
+Before the interview, offer the **realtor-import** skill **once** — most agents already have gold in Drive
+or on their computer, and pulling it in means they answer far fewer questions:
+
+> "Quick one before we start: do you already have materials — testimonials, a bio, past posts, market
+> reports, a lead magnet or workbook? You can **upload them right here**, or **point me to a Google Drive
+> folder**, and I'll pull what I can so you're mostly confirming instead of typing. Or just say **skip** and
+> we'll talk it through."
+
+- **Yes / they have materials →** run **realtor-import** (it extracts, shows a summary, confirms, and writes
+  to the relevant identity files). Then continue the interview and **only ask what the import didn't already
+  cover** — read what got written before each phase so you never re-ask.
+- **Skip →** proceed to Phase 1 as normal.
+
+Either way the **full interview still runs** — import just pre-fills it. It never replaces a phase; it means
+some phases become "here's what I pulled, look right?" instead of a blank question.
 
 ---
 

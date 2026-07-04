@@ -2,6 +2,24 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.74.0] — 2026-07-03
+
+### AI Brain (Plugin 1) → v0.26.0 — Import existing materials (upload OR read from Drive), not just Q&A
+Agents already have gold in Google Drive — testimonials, a bio, past posts, market reports, lead magnets,
+workbooks. The Brain was pure Q&A with no way to bring any of it in. Added a guided import layer that
+**augments the interview** (pull what exists, then only talk through the gaps) — never a blind full-Drive
+crawl, always confirm-before-write.
+- **New skill `realtor-import`** — two ways in: the agent **uploads files to the chat**, or **points to a
+  Google Drive folder** (or drops files in the new `Realtor AI Brain/intake` folder) and Claude reads them
+  via the Drive connector (Docs, PDFs, Sheets, screenshots). It extracts, **maps each piece to the right
+  identity file** (testimonials→proof, past posts→voice-samples, market reports→market, lead magnets→offer,
+  bio→profile…), shows a summary, and writes only after the agent confirms. Merges, never clobbers.
+- **Kickoff prompt in Setup (Step 1.5)** — offered once up front with a one-tap skip: "upload or point me to
+  a Drive folder and I'll pull what I can." The full interview still runs; import just pre-fills it.
+- **Upload/import affordances woven into the file-shaped phases** — Voice & Proof (samples + testimonials)
+  and Offer/USP (lead magnets, guides, listing decks) now lead with "paste, upload, or point me to Drive."
+- **New `intake/` drop-zone folder** added to the Brain scaffold + documented in the `brain.md` index.
+
 ## [0.73.0] — 2026-07-03
 
 ### AI Admin (Plugin 2) → v0.5.0 — dashboard artifact REMOVED (owner call from live testing)

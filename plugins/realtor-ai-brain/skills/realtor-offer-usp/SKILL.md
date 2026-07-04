@@ -71,6 +71,11 @@ I have [X] questions. This takes less than 10 minutes.
 Let's go.
 ```
 
+> **If they already have it on paper:** a lead magnet, buyer/seller guide, workbook, or listing
+> presentation *is* their offer in document form. Offer to pull from it first — *"Got a buyer/seller guide,
+> a workbook, or a listing presentation? Upload it or point me to it and I'll draft your offer from it (via
+> **realtor-import**) — then you just refine."* Then the questions become confirmations, not blank prompts.
+
 If no brand persona file exists, adjust:
 ```
 I'm going to ask you a few focused questions about your offer and what makes
