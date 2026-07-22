@@ -29,35 +29,44 @@ Check whether Notion tools are available in this conversation.
   they've connected).
 - **Connected** → continue.
 
-## Step 2 — Find-or-create THE board (one per agent, ever)
-Search their Notion for `[Agent Name] — Content Dashboard` (name from the Brain).
-- **Exists** → reuse it: add any missing columns/views per the spec, then jump to whatever the agent asked
-  for (seed / refresh / update).
-- **Doesn't exist** → create it per the spec: the page + database, the columns (Pillar options = THEIR 3
-  Game-Plan pillar names + the short-form funnel roles), and the three views (🎬 YouTube — Long-Form ·
-  📱 Short-Form · 🗓 Calendar). If view creation isn't available, use the spec's one-line fallback tip.
+## Step 2 — Find-or-create THE board (one per agent, ever — the Brain knows where)
+Read the `Content board:` line in `~/realtor-brain/identity/publishing.md` first (spec golden rule):
+- **URL there** → go straight to it; reuse it (add any missing columns/views per the spec), then do whatever
+  the agent asked (seed / refresh / update). Search their Notion only if the link is dead.
+- **`declined`** → they said no before; only proceed if they're asking for the board right now (they changed
+  their mind — update the line).
+- **No line** → search Notion for `[Agent Name] — Content Dashboard` once; found → record its URL in the
+  Brain and reuse; not found → create it per the spec: the page + database, the columns (Pillar options =
+  THEIR 3 Game-Plan pillar names + the short-form funnel roles; incl. the System ID column), the three views
+  (🎬 YouTube — Long-Form · 📱 Short-Form · 🗓 Calendar; if view creation isn't available, use the spec's
+  one-line fallback tip) — then **write the board's URL into the Brain immediately.**
 
-## Step 3 — Seed it from the Game Plan (the premium moment)
-Open the **YouTube Game Plan** doc (workspace root) + the YouTube Layer:
-- Every title on the **90-day calendar** becomes an `Idea` card: Topic (the exact title) · Format
-  `Long-Form` · Pillar · **Context** (`• What:` / `• Outcome:` written from the title's Search Intent & Lead
-  Type note) · **Recording Date** (the calendar week at their cadence — anchor Week 1 to next week unless
-  they say otherwise) · **Resource Assets** (their real CTA + lead magnet from the Brain).
-- **References**: don't fake it at seed time — fill the top-3 proven videos only where research has actually
-  run (the make-video flow adds them per card as each video gets prepped, per the spec).
+## Step 3 — Seed the next ~2 weeks (rolling window — never the whole plan)
+Open the **YouTube Game Plan** doc (workspace root) + the YouTube Layer. Per the spec: the board carries the
+**next ~2 weeks of planned videos** (their cadence: 2/wk → ~4 cards, 1/wk → ~2) — the full 90-day backlog
+stays in the Game Plan doc, and the board tops itself up as cards publish and check-ins run.
+- Each card: Topic (the exact title) · Format `Long-Form` · Pillar · **Context** (`• What:` / `• Outcome:`
+  from the title's Search Intent & Lead Type note) · **Recording Date** (this/next week at their cadence) ·
+  **Resource Assets** (their real CTA + lead magnet from the Brain) · a fresh **System ID**.
+- Set the expectation (*"give me a moment — putting your next videos on the board"*), then **count-check**
+  and confirm plainly (*"your next 4 videos are on the board ✓"*); if a write failed, name it and retry once.
+- **References**: don't fake them at seed time — the make-video flow adds the top-3 proven videos per card
+  as each video gets prepped (real links + numbers only, per the spec).
 - No Game Plan yet? Say so plainly and offer it first (`youtube-gameplan`) — the board is built FROM the
   plan (house rules #10), not instead of it.
 
 ## Step 4 — Confirm in plain words
-*"Your content board is live in your Notion — every video from your 90-day plan is on it with filming dates.
-When we make a video together, its card fills up with the full script, the SEO package, your lead magnet,
-and the 3 top-performing videos to beat. Here's the link."*
+*"Your content board is live in your Notion — your next two weeks of videos are on it with filming dates,
+and it refills itself as you publish. When we make a video together, its card fills up with the full script,
+the SEO package, your lead magnet, and the 3 top-performing videos to beat. Here's the link."*
 
 ## Ongoing (how the system keeps it alive — every skill honors this)
-Per the spec's "Who writes what": make-video fills the card completely (script + SEO + lead magnet INTO the
-page body, Drive links in the columns, top-3 references, status flips as it happens). Rows the agent edited
-keep their edits; never downgrade a status they moved forward. "Update my board" → reconcile the board with
-the Videos folders + content-log: fill gaps, fix stale statuses, add any new planned titles.
+Per the spec's "Who writes what" + "Two-way sync": make-video fills the card completely (script + SEO + lead
+magnet INTO the page body — sections replaced, never stacked — Drive links in the columns, top-3 references,
+status flips as it happens; cards found by **System ID first**). Rows the agent edited keep their edits;
+never downgrade a status they moved forward; **cards they deleted stay deleted**. "Update my board" →
+reconcile with the Videos folders + content-log (fix stale statuses, fill the ~2-week window with the next
+planned titles — skipping anything they removed on purpose).
 
 ## Rules
 - **One board, found not duplicated** — always search first (spec golden rule).

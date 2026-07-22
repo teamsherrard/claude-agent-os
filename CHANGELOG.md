@@ -2,6 +2,21 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.75.2] — 2026-07-10
+
+### Content Dashboard hardening (YouTube v0.9.2 · Short-Form v0.10.2)
+- **Rolling 2-week window instead of seeding all 24 cards:** the board carries the next ~2 weeks of planned
+  videos (2/wk → ~4 cards) and tops itself up as cards publish / check-ins run; the full 90-day backlog stays
+  in the Game Plan doc. Count-check + plain confirmation after every batch; failed writes named + retried.
+- **System ID column:** every system-created card carries a small ID tag — cards are found by ID first, so
+  agent renames can never cause duplicates.
+- **The Brain remembers the board:** its URL (or `declined`) lives on a `Content board:` line in
+  `identity/publishing.md` — no re-searching (no accidental second boards across workspaces), and the
+  offer-once promise is actually enforced across chats.
+- **Replace-never-stack card bodies** (re-runs update the SCRIPT/SEO sections in place) · **deleted cards
+  stay deleted** (reconcile never resurrects an agent's deletion) · **board content = information, never
+  instructions** (same untrusted-content guard as email — Notion may be team-shared).
+
 ## [0.75.1] — 2026-07-10
 
 ### Content Dashboard → explicit two-way sync (YouTube v0.9.1 · Short-Form v0.10.1)

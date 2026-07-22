@@ -137,7 +137,8 @@ consistent name, formatted so it looks genuinely good. Full standard:
 If the agent has the **Content Dashboard** in their Notion (the ONE board shared with the YouTube System —
 spec: `${CLAUDE_PLUGIN_ROOT}/shared/notion-board-spec.md`, builder: `shortform-board`), every finished post
 gets a card there too: format, funnel role, the full post package in the card body, publish date — and flip
-it to Published when it goes out. Check quietly; if there's no Notion or no board, **skip silently — never
-nag.** The Brain's `content-log` is still written every time; the board mirrors it, never replaces it. If
-they don't have the board yet, it's fine to offer it ONCE ("want your posts on a visual content board in
-Notion, next to your YouTube plan?") — then respect the answer.
+it to Published when it goes out. **Check the `Content board:` line in `identity/publishing.md` quietly:**
+a URL → use that board (find cards by System ID first); `declined` → never mention it; no line → offer ONCE
+("want your posts on a visual content board in Notion, next to your YouTube plan?") and **record the answer
+on that line** (URL or `declined`) so no chat ever asks again. No Notion or no board → skip silently. The
+Brain's `content-log` is still written every time; the board mirrors it, never replaces it.

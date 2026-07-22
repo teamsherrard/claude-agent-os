@@ -52,11 +52,12 @@ Once the agent has filmed + published, repurpose (Repurposing Engine): short-for
 an email, and social posts. Save as **Repurposing Pack**.
 
 ## Step 6 — Fill their content-board card (if they have the Notion board)
-If the agent's **Content Dashboard** exists in their Notion (built by `youtube-board` — check quietly; if
-Notion isn't connected or there's no board, skip silently, never nag): **find this video's card FIRST** —
-it's usually already there from the Game Plan seed. Match by title (exact, then near-match); found → update
-THAT card (rename its Topic to the final title if packaging refined it — same card, never a duplicate); not
-found → create it. Then fill it per `${CLAUDE_PLUGIN_ROOT}/shared/notion-board-spec.md` — the full **script,
+If the agent's **Content Dashboard** exists (the `Content board:` line in the Brain's `publishing.md` has
+its link — check quietly; no link / no Notion → skip silently, never nag): **find this video's card FIRST** —
+it's usually already there from the seed. Match by **System ID**, then exact title, then near-match; found →
+update THAT card (rename its Topic to the final title if packaging refined it — same card, never a
+duplicate); not found → create it with a fresh System ID. Then fill it per
+`${CLAUDE_PLUGIN_ROOT}/shared/notion-board-spec.md` (sections REPLACED on re-runs, never stacked) — the full **script,
 SEO package, and lead magnet written INTO the card's page**, the Drive links in the columns, the **top-3
 proven reference videos** from Step 1's competitive read (real links + numbers only), and Status →
 `Scripted` (then `Recorded` / `Published` as the agent reports it). Keep the agent's own edits (their dates,

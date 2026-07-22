@@ -143,11 +143,13 @@ subs → leads → deals. This is the section that makes them believe *"this is 
    backlog + 90-day calendar; skills open it for that detail.
 5. **Optional premium PDF** — offer a ready-to-paste **claude.ai/design** prompt to turn it into a designed
    showpiece (brand colours/fonts from `brand-visual.md`). Words only — never a render.
-6. **Offer the Content Dashboard (premium moment):** *"Want your whole plan as a live content board in your
-   Notion — every video as a card with filming dates, and each card fills up with the script, SEO, and lead
-   magnet as we make it?"* If yes → `youtube-board` (it seeds the board from this plan per
-   `${CLAUDE_PLUGIN_ROOT}/shared/notion-board-spec.md`). If Notion isn't connected, the board skill handles
-   the plain-words walkthrough — never block on it.
+6. **Offer the Content Dashboard (premium moment — but check the Brain first):** read the `Content board:`
+   line in the Brain's `publishing.md`. A URL → the board exists; just note it'll fill from this plan. Says
+   `declined` → skip the offer entirely. No line → offer ONCE: *"Want this as a live content board in your
+   Notion? Your next two weeks of videos go on it with filming dates, it refills itself as you publish, and
+   each card fills up with the script, SEO, and lead magnet as we make it."* Yes → `youtube-board`; no →
+   record `declined` in the Brain and never re-offer. If Notion isn't connected, the board skill handles the
+   plain-words walkthrough — never block on it.
 7. **Hand off:** *"Pick any title from Pillar 1 and say 'make this video' — I'll script it, SEO it, and the
    rest."*
 

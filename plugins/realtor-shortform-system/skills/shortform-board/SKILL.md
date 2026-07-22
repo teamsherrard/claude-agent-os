@@ -24,17 +24,21 @@ ensures the 📱 Short-Form view exists.
 Check whether Notion tools are available. **Not connected** → the spec's "Connecting Notion" walkthrough
 (never block; deliver the content normally, one plain line + click-path + reassurance). **Connected** → on.
 
-## Step 2 — Find-or-create THE board
-Search their Notion for `[Agent Name] — Content Dashboard`. Exists → reuse; ensure the 📱 Short-Form view
-(filter: Format ≠ Long-Form) + any missing columns. Doesn't exist → create the full board per the spec
-(the YouTube System shares it later).
+## Step 2 — Find-or-create THE board (the Brain knows where)
+Read the `Content board:` line in `~/realtor-brain/identity/publishing.md` first: a URL → go straight to
+that board (search only if the link is dead); `declined` → only proceed if they're asking for it right now;
+no line → search Notion for `[Agent Name] — Content Dashboard` once. Exists → record its URL in the Brain,
+reuse it, ensure the 📱 Short-Form view (filter: Format ≠ Long-Form) + any missing columns (incl. System ID).
+Doesn't exist → create the full board per the spec, then **write its URL into the Brain immediately** (the
+YouTube System shares it later).
 
 ## Step 3 — Cards for posts (how the workflows use this)
 When a workflow finishes a post (green screen / talking head / carousel) and the agent wants it tracked:
-- Add a card: **Topic** (the post's title/hook) · **Format** · **Pillar** = its funnel role (`Reach` /
-  `Value` / `Trust` / `Convert` — the 4-3-2-1 balance made visible) · **Context** (`• What:` / `• Outcome:`)
-  · **SEO / Post Package** link (the Drive doc) · Status `Ready to Film` · **Publishing Date** (its planned
-  slot).
+- **Find first, never duplicate** (spec two-way sync): match by System ID, then title; found → update that
+  card (sections in the body replaced, never stacked); not found → add a card with a fresh System ID:
+  **Topic** (the post's title/hook) · **Format** · **Pillar** = its funnel role (`Reach` / `Value` / `Trust`
+  / `Convert` — the 4-3-2-1 balance made visible) · **Context** (`• What:` / `• Outcome:`) · **SEO / Post
+  Package** link (the Drive doc) · Status `Ready to Film` · **Publishing Date** (its planned slot).
 - **Into the card body**: the full post package — script/talking points, caption, hashtags (3–5), cover
   text — so filming day is open-one-card simple.
 - When the agent says it's posted (or the publish step schedules it): flip to `Published` + confirm the date.
