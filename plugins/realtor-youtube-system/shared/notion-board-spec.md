@@ -74,6 +74,27 @@ that's your YouTube view; do the same for the other formats for your Short-Form 
   board mirrors it, never replaces it.)
 - **Either plugin can create the board** — whichever runs first. The other finds it and adds its view + rows.
 
+## Two-way sync — the board and the chat always agree (no duplicates, ever)
+
+**WRITE side — find the card first, always.** Before creating ANY card, search the board for an existing one
+for this video/post (the Game Plan seed means long-form cards usually ALREADY exist):
+- Match on the title — exact first, then near-match (the seeded title vs. a slightly refined one).
+- **Found** → UPDATE that card (and if the title was refined during packaging, rename the card's Topic to
+  the final title — same card, better title). **Never create a second card for the same video.**
+- **Not found** → create it (an off-plan video still gets a card).
+
+**READ side — the board is also an input.** When it exists, the system reads it:
+- **"Make this video"** → find the card; its dates/pillar/context ride along into production.
+- **"What should I film this week?" / planning & check-ins** (ideation, consistency, briefing) → read
+  Recording Dates + Statuses: what's due, what's stuck in `Scripted`, what got `Published`.
+- **Cards the AGENT added by hand** = their ideas. Treat them as real input: offer to produce them, and to
+  fold them into the plan — never ignore them, never delete them.
+
+**Conflicts:** the agent's own edits win on dates and forward status moves (they moved filming to Thursday —
+that's the new truth; reflect it, offer to update the plan). Strategy stays with the Game Plan + Brain: if
+the board has drifted far from the plan, say so plainly and offer to reconcile ("update my board" /
+"refresh my plan") — never silently overwrite either side.
+
 ## Connecting Notion (when it isn't connected — plain words, never block)
 
 1. Deliver whatever the agent asked for normally first — never block on the connection.

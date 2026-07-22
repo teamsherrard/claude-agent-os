@@ -2,6 +2,16 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.75.1] — 2026-07-10
+
+### Content Dashboard → explicit two-way sync (YouTube v0.9.1 · Short-Form v0.10.1)
+- **Write side:** before creating ANY card, find the existing one (Game-Plan-seeded cards usually already
+  exist) — match by title, update in place, rename the Topic if packaging refined the title. Never a duplicate.
+- **Read side:** the board is also an input — "make this video" finds the card; planning/check-ins read
+  Recording Dates + Statuses; cards the agent added by hand are treated as their ideas (offer to produce them).
+- **Conflicts:** the agent's own edits win on dates + forward status moves; strategy stays with the Game Plan
+  + Brain; material drift → offer to reconcile, never silently overwrite. (`make-video` Step 6 updated to match.)
+
 ## [0.75.0] — 2026-07-10
 
 ### The Content Dashboard — ONE Notion board for the whole system (YouTube v0.9.0 · Short-Form v0.10.0)

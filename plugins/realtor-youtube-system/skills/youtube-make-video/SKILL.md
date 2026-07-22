@@ -53,12 +53,15 @@ an email, and social posts. Save as **Repurposing Pack**.
 
 ## Step 6 — Fill their content-board card (if they have the Notion board)
 If the agent's **Content Dashboard** exists in their Notion (built by `youtube-board` — check quietly; if
-Notion isn't connected or there's no board, skip silently, never nag): update this video's card per
-`${CLAUDE_PLUGIN_ROOT}/shared/notion-board-spec.md` — the full **script, SEO package, and lead magnet
-written INTO the card's page**, the Drive links in the columns, the **top-3 proven reference videos** from
-Step 1's competitive read (real links + numbers only), and Status → `Scripted` (then `Recorded` /
-`Published` as the agent reports it). One plain line: *"Your card on the board has everything now — script,
-SEO, lead magnet, and the 3 videos to beat."*
+Notion isn't connected or there's no board, skip silently, never nag): **find this video's card FIRST** —
+it's usually already there from the Game Plan seed. Match by title (exact, then near-match); found → update
+THAT card (rename its Topic to the final title if packaging refined it — same card, never a duplicate); not
+found → create it. Then fill it per `${CLAUDE_PLUGIN_ROOT}/shared/notion-board-spec.md` — the full **script,
+SEO package, and lead magnet written INTO the card's page**, the Drive links in the columns, the **top-3
+proven reference videos** from Step 1's competitive read (real links + numbers only), and Status →
+`Scripted` (then `Recorded` / `Published` as the agent reports it). Keep the agent's own edits (their dates,
+their forward status moves — spec: two-way sync). One plain line: *"Your card on the board has everything
+now — script, SEO, lead magnet, and the 3 videos to beat."*
 
 ## How to run it
 - One step at a time, conversational. Confirm before moving on. The agent only ever feels "we're making my video."

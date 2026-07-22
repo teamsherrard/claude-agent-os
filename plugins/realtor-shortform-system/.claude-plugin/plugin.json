@@ -1,7 +1,7 @@
 {
   "name": "realtor-shortform-system",
   "displayName": "Realtor Short-Form System (Plugin 4)",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "An ongoing short-form content operating system for real estate agents — daily green-screen reactions, talking-head value, and carousels, each optimized per platform (Instagram/Facebook, TikTok, YouTube Shorts). The agent thinks in formats; Claude keeps the funnel balanced, schedules posts through their own Metricool / GoHighLevel / Buffer (bring-your-own), and reviews performance on a 2-week loop. Text only: it writes scripts, talking points, captions, and specs — it never films, edits, or designs. Requires Plugin 1 (the Brain) set up first.",
   "author": {
     "name": "Mike Sherrard"

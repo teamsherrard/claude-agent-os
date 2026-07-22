@@ -21,13 +21,13 @@
     {
       "name": "realtor-youtube-system",
       "source": "./plugins/realtor-youtube-system",
-      "version": "0.9.0",
+      "version": "0.9.1",
       "description": "PLUGIN 3 — the YouTube System. Starts with a complete YouTube Game Plan (built on Mike Sherrard's frameworks) — channel audit, 3 high-intent pillars, ~50 exact titles, goal-math, and a 90-day plan — then ideation, research, SEO, scripting in the agent's own voice, lead magnets, repurposing, analytics, and coaching — plus a live Content Dashboard in the agent's own Notion, seeded from their Game Plan, where every video card fills with the script, SEO, lead magnet, and top-3 reference videos. Requires Plugin 1 (the Brain) set up first."
     },
     {
       "name": "realtor-shortform-system",
       "source": "./plugins/realtor-shortform-system",
-      "version": "0.10.0",
+      "version": "0.10.1",
       "description": "PLUGIN 4 — the Short-Form System. A routine-based short-form OS: daily green-screen reactions, talking-head value, and carousels, each optimized for Instagram/Facebook, TikTok, and YouTube Shorts. The agent thinks in formats; Claude keeps the funnel balanced, schedules posts through their own Metricool / GoHighLevel / Buffer (bring-your-own), and reviews performance on a 2-week loop. Shares one Notion Content Dashboard with the YouTube System (a Short-Form view of the same board). Text only — never films or designs. Requires Plugin 1 (the Brain) set up first."
     },
     {
