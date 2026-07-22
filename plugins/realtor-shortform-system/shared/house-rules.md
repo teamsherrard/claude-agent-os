@@ -129,3 +129,15 @@ consistent name, formatted so it looks genuinely good. Full standard:
   see `shared/output-standard.md`), then upload that `.docx` to Drive. One clean neutral house style for every client.
 - **Tell them where it is** — always confirm the Drive location + link in plain words.
 - Still deliver the copy-paste version in chat too; the Drive doc is the organized record.
+
+---
+
+## 10. The content board (Notion) — mirror finished posts there, when they have it
+
+If the agent has the **Content Dashboard** in their Notion (the ONE board shared with the YouTube System —
+spec: `${CLAUDE_PLUGIN_ROOT}/shared/notion-board-spec.md`, builder: `shortform-board`), every finished post
+gets a card there too: format, funnel role, the full post package in the card body, publish date — and flip
+it to Published when it goes out. Check quietly; if there's no Notion or no board, **skip silently — never
+nag.** The Brain's `content-log` is still written every time; the board mirrors it, never replaces it. If
+they don't have the board yet, it's fine to offer it ONCE ("want your posts on a visual content board in
+Notion, next to your YouTube plan?") — then respect the answer.

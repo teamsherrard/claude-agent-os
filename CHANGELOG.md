@@ -2,6 +2,27 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.75.0] — 2026-07-10
+
+### The Content Dashboard — ONE Notion board for the whole system (YouTube v0.9.0 · Short-Form v0.10.0)
+Cohort-grade upgrade of the free skill-bank Notion board, modeled on Mike Sherrard's real YouTube content
+dashboard: **one shared board in the agent's OWN Notion**, two views.
+- **New shared spec `shared/notion-board-spec.md`** (identical in both plugins, like render_doc.py): board
+  `[Agent Name] — Content Dashboard`, Mike-style columns (Topic · Format · Status pipeline · Pillar/funnel
+  role · Context "What/Outcome" · Script + SEO links · References · Resource Assets · Recording/Publishing
+  dates), three views (🎬 YouTube Long-Form · 📱 Short-Form · 🗓 Calendar), find-or-create (ONE board ever),
+  draft-only conduct, plain-words Notion-connect walkthrough, never required (Game Plan + Brain stay the
+  source of truth; the board mirrors).
+- **New `youtube-board` skill:** seeds the board from the agent's REAL Game Plan — every 90-day-calendar
+  title as a card with pillar, What/Outcome context, filming date at their cadence, their CTA/lead magnet.
+- **`youtube-make-video` Step 6:** when a video gets made, its card fills COMPLETELY — the full script, SEO
+  package, and lead magnet written INTO the card body, Drive links in the columns, the **top-3 proven
+  reference videos** (real links + numbers from the §11.5 competitive audit — watch these, then beat them),
+  status flipping Scripted → Recorded → Published.
+- **New `shortform-board` skill + house-rules #10:** the SAME board gets short-form cards (format, 4-3-2-1
+  funnel role, full post package in the body, publish date); content-log stays canonical.
+- Game Plan Phase 7 now offers the board as the post-plan premium moment. Marketplace descriptions updated.
+
 ## [0.74.0] — 2026-07-03
 
 ### AI Brain (Plugin 1) → v0.26.0 — Import existing materials (upload OR read from Drive), not just Q&A

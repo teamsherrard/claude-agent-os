@@ -51,10 +51,20 @@ the agent's design tool. Save as **Lead Magnet Map**.
 Once the agent has filmed + published, repurpose (Repurposing Engine): short-form scripts, a blog post,
 an email, and social posts. Save as **Repurposing Pack**.
 
+## Step 6 — Fill their content-board card (if they have the Notion board)
+If the agent's **Content Dashboard** exists in their Notion (built by `youtube-board` — check quietly; if
+Notion isn't connected or there's no board, skip silently, never nag): update this video's card per
+`${CLAUDE_PLUGIN_ROOT}/shared/notion-board-spec.md` — the full **script, SEO package, and lead magnet
+written INTO the card's page**, the Drive links in the columns, the **top-3 proven reference videos** from
+Step 1's competitive read (real links + numbers only), and Status → `Scripted` (then `Recorded` /
+`Published` as the agent reports it). One plain line: *"Your card on the board has everything now — script,
+SEO, lead magnet, and the 3 videos to beat."*
+
 ## How to run it
 - One step at a time, conversational. Confirm before moving on. The agent only ever feels "we're making my video."
 - Run compliance on everything before saving.
-- Done = the video's folder holds: Script · SEO Package · Lead Magnet Map · (later) Repurposing Pack.
+- Done = the video's folder holds: Script · SEO Package · Lead Magnet Map · (later) Repurposing Pack — and
+  the board card (if they have one) holds it all too.
 
 ## Hand-off
 Script + packaging ready → the agent films. After they publish → "say 'repurpose this'." Results flow

@@ -64,6 +64,7 @@ schedules for them — **no one is forced onto a new platform:**
 | `shortform-optimizer` | Shared engine: one post → IG+FB, TikTok, YouTube Shorts packaging (captions, hashtags, titles, tags, cover/on-screen text) + the CTA map. Every workflow calls it. |
 | `shortform-publish` | Schedules/posts through the connected tool — "schedule this for tomorrow at 10am," "post these at my best times." Confirms first, never auto-posts. |
 | `shortform-analytics` | The data brain — "analyze my last 10 posts / my ads / my data," plus the 2-week review that records what worked to the Brain so the next round improves. |
+| `shortform-board` | The Content Dashboard in THEIR Notion — the same single board the YouTube System uses, with a Short-Form view: every post as a card (format, funnel role, full post package inside, publish date). Bring-your-own Notion, never required. |
 
 Coming next: the light weekly menu/balance tracker (which ties the formats together and reads
 `memory/performance.md` to keep improving).

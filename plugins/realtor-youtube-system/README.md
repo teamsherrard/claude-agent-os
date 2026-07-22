@@ -66,6 +66,7 @@ realtor-youtube-system/
 │   ├── seo-knowledge-base.md      #   2026 SEO: intent, titles, tags, keyword library
 │   ├── idea-templates.md          #   plug-and-play video idea templates
 │   ├── doc-format.md              #   the house doc style + per-doc skeletons (structured text → .docx)
+│   ├── notion-board-spec.md       #   the ONE Notion Content Dashboard (shared with Short-Form) — columns, views, conduct
 │   └── render_doc.py              #   renders structured text to the styled .docx every saved doc uses
 ├── skills/                        # ★ = the flagship deliverable + the two realtor-facing workflows; the rest are the engine they call
 │   ├── youtube-gameplan/          # ★ first deliverable — the YouTube Game Plan (built at end of setup; rule #10: everything aligns to it)
@@ -83,6 +84,7 @@ realtor-youtube-system/
 │   ├── youtube-repurpose/         # Repurposing Engine (blog/email/social/shorts)
 │   ├── youtube-coach/             # Coach
 │   ├── youtube-consistency/       # Consistency Engine (batch days · month plans · 30/60/90)
+│   ├── youtube-board/             # Content Dashboard in THEIR Notion (seeded from the Game Plan; one board shared with Short-Form)
 │   └── youtube-briefing/          # OPTIONAL Monday Kickoff (off by default)
 └── README.md
 ```
