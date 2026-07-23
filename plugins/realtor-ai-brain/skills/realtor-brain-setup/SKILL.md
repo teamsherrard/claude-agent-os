@@ -232,7 +232,11 @@ agent connect it before finishing. Set their **timezone** and pull the **default
 > 🎉 Your AI Brain is built. From now on, every skill already knows you — you'll never re-explain your
 > market, your voice, or your offer again.
 >
-> Try these next:
+> **Recommended first move — "Build my business plan."** Now that your Brain knows you, let's point it at a
+> goal: I'll turn your income target into the exact number of deals, where they come from, and the three
+> weekly moves to hit them — a real 90-day plan with a dashboard. Want to do that now?
+>
+> Then, anytime:
 > • "Set up my AI Admin" — your AI assistant (uses the email + calendar you just connected). It takes
 >   ~3 quick minutes first to learn how you operate — hours, booking rules — mostly just confirming defaults.
 > • "Run my market update" — your first piece of content

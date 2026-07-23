@@ -49,6 +49,7 @@ If `~/realtor-brain/` is missing files, tell the agent to run **Realtor AI Brain
 - `identity/operations.md` — hours, signature, booking rules, follow-up cadence
 - `identity/vendors.md` — trusted partner network (AI Admin referrals)
 - `identity/strategy.md` — goals (business · YouTube · life · personal) + positioning + competitors they admire
+- `identity/business-plan.md` — the 90-day plan: deals needed + the 3 weekly moves + dashboard (refreshed quarterly)
 - `identity/compliance.md` — disclaimers, license display, claims to avoid (read before publishing)
 
 **memory/** — what the agent has done (grows daily)

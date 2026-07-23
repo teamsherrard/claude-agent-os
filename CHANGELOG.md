@@ -2,6 +2,23 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.76.0] — 2026-07-10
+
+### AI Brain (Plugin 1) → v0.27.0 — 90-day Business Plan (the goal made real)
+The Brain *captured* goals (`strategy.md`) but never turned them into a plan. Added a business-planning skill
+built on the proven **Money → Engine → Future** structure.
+- **New skill `realtor-business-plan`** — reverse-engineers the GCI/income goal into the exact **number of
+  deals** (using their real average sale price + commission from the Brain), maps where those deals come from,
+  and locks **3 weekly non-negotiables** grounded in their actual capacity + content cadence. Delivers a premium
+  90-day plan book to Drive + a weekly dashboard. Reads `strategy.md`, `market.md`, `offer.md`,
+  `content-engine.md`, `operations.md`; the content engine hands off to the YouTube Game Plan rather than
+  duplicating it.
+- **Weekly check-in mode** — "weekly check-in" / "review my plan" updates the dashboard from real memory
+  (pipeline, content shipped), celebrates wins, and re-commits the 3 moves. The AI Admin can surface the 3
+  moves in the 7am brief. **Quarterly refresh** archives the plan and re-plans the next 90 days.
+- **Offered right after Setup** as the recommended first move; new `identity/business-plan.md` in the scaffold
+  + `brain.md` index; flagged by `brain-health` as a high-impact gap when empty.
+
 ## [0.75.2] — 2026-07-10
 
 ### Content Dashboard hardening (YouTube v0.9.2 · Short-Form v0.10.2)
