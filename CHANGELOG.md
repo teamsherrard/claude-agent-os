@@ -2,6 +2,22 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.77.0] — 2026-07-10
+
+### Document renderer → neutral-PREMIUM (every client deliverable, all 4 plugins)
+Live-test feedback: exported docs looked "basic / cheap" — the content was rich but the render was a flat,
+pure-black, cramped Word memo. Elevated `shared/render_doc.py` to a **neutral premium** standard (no client
+branding — brand visuals aren't set until later in the program, so it stays brand-agnostic on purpose):
+- **Premium cover header** — optional letter-spaced eyebrow kicker, larger tightly-tracked display title,
+  refined muted subtitle, a near-black accent hairline, airier meta block.
+- **Typographic hierarchy** — section headings are now tracked small-caps labels over hairline rules (not
+  heavy black bars); near-black ink (`#111`) instead of pure black; refined greys; letter-spacing as the
+  premium cue; more generous margins, table padding, and vertical rhythm.
+- **Backward-compatible** — parsing untouched; all existing skills render unchanged text, just far better.
+  New optional `--eyebrow` flag for a cover kicker.
+- **Propagated to all four copies** (brain, lead-capture, short-form, youtube) so every deliverable matches:
+  Brain → v0.28.0, Short-Form → v0.10.3, YouTube → v0.9.3, Lead Capture → v0.7.3.
+
 ## [0.76.0] — 2026-07-10
 
 ### AI Brain (Plugin 1) → v0.27.0 — 90-day Business Plan (the goal made real)

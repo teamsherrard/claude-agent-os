@@ -31,14 +31,15 @@ except ImportError:
     sys.stderr.write("ERROR: python-docx is required.  Install it with:  pip install python-docx\n")
     sys.exit(2)
 
-# ---------- the one house style (neutral, no client branding) ----------
-INK   = RGBColor(0x00, 0x00, 0x00)   # title, headings, body, emphasis — pure black
-BODY  = RGBColor(0x00, 0x00, 0x00)
-MUTED = RGBColor(0x33, 0x33, 0x33)   # dark grey, still clearly legible — meta / stamp / small print
-WHITE = RGBColor(0xFF, 0xFF, 0xFF)
-RULE  = "AEB2B8"                      # medium-grey section rule
-HEAD_FILL, ALT_FILL, COOL_FILL = "1A1A1A", "F4F4F5", "F6F6F7"   # near-black table header · light rows · callouts
-FONT  = "Arial"                       # one clean sans-serif, installed everywhere
+# ---------- the one house style (neutral PREMIUM — no client branding, no colour) ----------
+INK    = RGBColor(0x11, 0x11, 0x11)  # title + headings — near-black (softer + more premium than pure black)
+BODY   = RGBColor(0x1A, 0x1A, 0x1A)  # body copy — near-black, crisp and legible
+MUTED  = RGBColor(0x60, 0x63, 0x67)  # refined mid-grey — eyebrow / subtitle / meta / small print
+WHITE  = RGBColor(0xFF, 0xFF, 0xFF)
+RULE   = "D7DADD"                     # hairline section rule (light, refined)
+ACCENT = "111111"                     # near-black accent hairline (cover)
+HEAD_FILL, ALT_FILL, COOL_FILL = "202226", "F5F6F7", "F7F8F9"   # refined charcoal header · light rows · callouts
+FONT   = "Arial"                      # one clean sans-serif, installed everywhere
 
 def _font(run, name=FONT):
     run.font.name = name
@@ -49,9 +50,17 @@ def _font(run, name=FONT):
     for a in ('w:ascii', 'w:hAnsi', 'w:cs'):
         rf.set(qn(a), name)
 
-def _run(p, text, size=10.5, color=BODY, bold=False, italic=False):
+def _track(run, val=0):
+    # letter-spacing in twentieths of a point (60 = 3pt) — the premium-typography cue
+    if not val: return run
+    rpr = run._element.get_or_add_rPr()
+    sp = OxmlElement('w:spacing'); sp.set(qn('w:val'), str(val)); rpr.append(sp)
+    return run
+
+def _run(p, text, size=10.5, color=BODY, bold=False, italic=False, track=0):
     r = p.add_run(text); _font(r); r.font.size = Pt(size)
     r.font.color.rgb = color; r.bold = bold; r.italic = italic
+    if track: _track(r, track)
     return r
 
 def _sp(p, before=0, after=6, line=1.16):
@@ -77,7 +86,7 @@ def _cell_borders(cell, color="E4E4E6", sz=4):
         e.set(qn('w:sz'), str(sz)); e.set(qn('w:color'), color); b.append(e)
     tcPr.append(b)
 
-def _cell_margins(cell, t=60, b=60, l=110, r=110):
+def _cell_margins(cell, t=80, b=80, l=130, r=130):
     tcPr = cell._tc.get_or_add_tcPr(); m = OxmlElement('w:tcMar')
     for s, v in (('top', t), ('bottom', b), ('start', l), ('end', r)):
         e = OxmlElement(f'w:{s}'); e.set(qn('w:w'), str(v)); e.set(qn('w:type'), 'dxa'); m.append(e)
@@ -88,17 +97,18 @@ class Doc:
         self.d = Document()
         st = self.d.styles['Normal']; st.font.name = FONT; st.font.size = Pt(10.5); st.font.color.rgb = BODY
         s = self.d.sections[0]
-        s.top_margin = Inches(0.85); s.bottom_margin = Inches(0.85)
-        s.left_margin = Inches(0.9); s.right_margin = Inches(0.9)
+        s.top_margin = Inches(1.0); s.bottom_margin = Inches(0.9)
+        s.left_margin = Inches(1.0); s.right_margin = Inches(1.0)
         self.usable = s.page_width - s.left_margin - s.right_margin
 
     def heading(self, text):
-        p = self.d.add_paragraph(); _sp(p, 20, 9, 1.0)
-        _run(p, text.upper(), 14.5, INK, bold=True); _border(p)
+        p = self.d.add_paragraph(); _sp(p, 22, 8, 1.0)
+        _run(p, text.upper(), 12, INK, bold=True, track=70)   # tracked small-caps label reads premium
+        _border(p, RULE, 6, 7)                                 # hairline, not a heavy bar
 
     def subheading(self, text, note=""):
-        p = self.d.add_paragraph(); _sp(p, 9, 3)
-        _run(p, text.strip(), 10.5, INK, bold=True)
+        p = self.d.add_paragraph(); _sp(p, 11, 3)
+        _run(p, text.strip(), 10.5, INK, bold=True, track=15)
         if note: _run(p, "   " + note, 9.5, MUTED, italic=True)
 
     def body(self, text, size=10.5):
@@ -157,17 +167,25 @@ class Doc:
         if bg: _cell_bg(cell, bg)
         cell.vertical_alignment = WD_ALIGN_VERTICAL.CENTER; _cell_borders(cell); _cell_margins(cell)
 
-    def title_block(self, title, subtitle, meta_lines):
-        p = self.d.add_paragraph(); _sp(p, 0, 0); _run(p, title, 28, INK, bold=True)
+    def title_block(self, title, subtitle, meta_lines, eyebrow=None):
+        if eyebrow:
+            p = self.d.add_paragraph(); _sp(p, 22, 6)
+            _run(p, eyebrow.upper(), 9, MUTED, bold=True, track=140)   # letter-spaced kicker
+        else:
+            self.d.add_paragraph().paragraph_format.space_after = Pt(12)   # top air
+        p = self.d.add_paragraph(); _sp(p, 0, 2, 1.02)
+        _run(p, title, 30, INK, bold=True, track=-8)                  # larger, tightly tracked display
         if subtitle:
-            p = self.d.add_paragraph(); _sp(p, 0, 2); _run(p, subtitle, 13.5, INK, bold=True)
-        p = self.d.add_paragraph(); _sp(p, 2, 1); _border(p, "B6BABF", 12, 6)
+            p = self.d.add_paragraph(); _sp(p, 1, 4)
+            _run(p, subtitle, 12.5, MUTED, track=20)                  # muted subtitle = refined, not shouty
+        p = self.d.add_paragraph(); _sp(p, 4, 7); _border(p, ACCENT, 8, 7)   # near-black accent hairline
         for ml in meta_lines:
-            p = self.d.add_paragraph(); _sp(p, 4, 0)
+            p = self.d.add_paragraph(); _sp(p, 3, 0)
             if ml.lower().startswith("powered by"):
-                _run(p, ml.upper(), 8.5, MUTED, bold=True)
+                _run(p, ml.upper(), 8.5, MUTED, bold=True, track=60)
             else:
-                _run(p, ml, 10, MUTED)
+                _run(p, ml, 9.5, MUTED)
+        self.d.add_paragraph().paragraph_format.space_after = Pt(4)   # breathing room before the body
 
     def stamp(self, text):
         p = self.d.add_paragraph(); _sp(p, 8, 2); p.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -193,7 +211,7 @@ NUM = re.compile(r'^\s*(\d+)\s')
 SUBBAND = re.compile(r'^\s*[─—-]{2,}\s*([A-Z0-9][A-Za-z0-9 &/\-\']{2,40}?)\s*[─—-]{2,}\s*$')  # ── LABEL ──
 CUE = re.compile(r'^\s*(>>|\[|FACT:|ON SCREEN|PAUSE)')
 
-def render(lines, doc, title=None, subtitle=None):
+def render(lines, doc, title=None, subtitle=None, eyebrow=None):
     n = len(lines); i = 0
     # ----- title block: everything before the first band -----
     head = []
@@ -205,7 +223,7 @@ def render(lines, doc, title=None, subtitle=None):
     sub = subtitle
     if sub is None and meta and "·" in meta[0] and not meta[0].lower().startswith(("prepared", "powered")):
         sub, meta = meta[0], meta[1:]
-    doc.title_block(t, sub, meta)
+    doc.title_block(t, sub, meta, eyebrow=eyebrow)
 
     # ----- sections -----
     def section_heading_at(k):
@@ -326,9 +344,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("input"); ap.add_argument("output")
     ap.add_argument("--title", default=None); ap.add_argument("--subtitle", default=None)
+    ap.add_argument("--eyebrow", default=None)
     a = ap.parse_args()
     lines = open(a.input, encoding="utf-8").read().split("\n")
-    doc = Doc(); render(lines, doc, a.title, a.subtitle); doc.save(a.output)
+    doc = Doc(); render(lines, doc, a.title, a.subtitle, a.eyebrow); doc.save(a.output)
     print("rendered:", a.output)
 
 if __name__ == "__main__":
