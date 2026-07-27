@@ -1,0 +1,23 @@
+{
+  "name": "realtor-market-system",
+  "displayName": "Realtor Market System (Plugin 8)",
+  "version": "0.1.0",
+  "description": "The Monthly Market System — one command, one complete monthly launch. Pulls live local market data for the agent's city and communities (sourced and dated, never invented), then builds every piece off those exact numbers: the screen-share market report and its email version, the word-for-word YouTube market update script, three short-form concepts (green-screen article reaction, talking-head opinion, stat graphic), the branded 1:1 Instagram infographic brief, and the distribution pack — lead magnet, newsletter segment, captions, and CTAs pointing at the funnel. The agent's only job is to film the script. Each piece is its own skill, so they can run the whole month or just the one thing they need, and a routine skill puts it on autopilot for the 1st of every month. Text, data, and design briefs only: it never designs, films, or publishes. Requires Plugin 1 (the Brain) set up first.",
+  "author": {
+    "name": "Mike Sherrard"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "real estate",
+    "realtor",
+    "market update",
+    "market report",
+    "housing market",
+    "monthly routine",
+    "youtube script",
+    "short form",
+    "infographic",
+    "newsletter"
+  ],
+  "homepage": "https://github.com/teamsherrard/claude-agent-os"
+}
