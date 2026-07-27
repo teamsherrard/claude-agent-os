@@ -105,6 +105,10 @@ a **Google-Drive-linked-in-Metricool** file (per the prerequisites above). If Me
 file, use the hybrid fallback: schedule the caption + slot and have the agent drop that video in the app. Then:
 - If any fail, report exactly which scheduled and which need a second look — never claim all done if not.
 - Append a `Scheduled` row per piece to `memory/content-log.md` (date + platforms) and push to Drive.
+- **Mirror the batch on the content board** (house rules #10 — quietly skip if no board): each piece gets its
+  card (match by System ID first — long-form videos from the YouTube system are usually ALREADY seeded cards;
+  update those, never duplicate) with its Publishing Date set to the scheduled slot. Status stays as-is until
+  it actually goes live — scheduled is not `Published`.
 
 ## Step 7 — Confirm
 Plain summary + where it lives:
@@ -121,4 +125,5 @@ Plain summary + where it lives:
 - [ ] Free-plan cap respected (flagged, never silently dropped)
 - [ ] Full queue saved as a calendar doc + **approved once** before anything was scheduled
 - [ ] Every piece logged to `content-log.md`; failures (if any) reported honestly
+- [ ] Board mirrored (if they have it): every piece carded per house rules #10, System-ID matched (no duplicates), scheduled ≠ Published
 - [ ] Compliance pass on every caption; talked plainly throughout

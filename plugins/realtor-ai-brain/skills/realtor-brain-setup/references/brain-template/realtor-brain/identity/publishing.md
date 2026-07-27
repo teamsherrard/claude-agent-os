@@ -8,6 +8,8 @@ how to post, and whether to schedule for the agent or hand over copy-paste posts
 **Posting cadence:** [what they'll realistically sustain — e.g. "1 green screen/day + 2–3 batched posts/week"]
 **Posting method:** [Metricool / GoHighLevel / Buffer / Manual] — [connected? account/brand name if relevant]
 **Account notes:** [e.g. "Instagram is a Business profile (auto-publish OK)"]
+**Content board:** [the Notion Content Dashboard's URL · or "declined [date]" · blank = never offered —
+written by the YouTube or Short-Form system; skills read this line first and preserve it on every update]
 
 *(Lead magnets live in `offer.md`. Voice, market, avatars live in their own identity files. This file is
-only about the publishing pipeline.)*
+about the publishing pipeline + the content board pointer.)*

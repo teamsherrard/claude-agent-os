@@ -45,7 +45,8 @@ them. These double as the **reference videos** the agent watches to plan and pre
 content-board card — so capture them properly:
 - **Capture per video:** `link · channel · ~views · length`, plus the read: **title · thumbnail · hook ·
   structure/delivery · local specificity · what's missing** — and the one line that matters most, **how the
-  agent's version beats it**.
+  agent's version beats it**. (What travels to chat + the board card is the distilled form:
+  `link · channel · ~views · the one thing to beat`.)
 - **Market first, comparable-market fallback:** search THEIR market first ("pros and cons of moving to
   Calgary" → Calgary videos). Only if the local results are thin (small market, few real videos on the
   topic) widen to **comparable markets** (similar size/type of city, same topic) — and say so plainly:

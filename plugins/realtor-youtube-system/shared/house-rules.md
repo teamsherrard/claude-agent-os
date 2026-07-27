@@ -116,3 +116,17 @@ to the doctrine. Never hand out generic, one-off advice that drifts from their p
   appears, do it — then connect it to a pillar, or offer to fold it into the plan / refresh the plan.
 - If no Game Plan exists yet, build it first (`youtube-gameplan`) — it's the strategy everything else follows.
 The Game Plan is the channel's operating strategy. Keep everything coherent with it + the Brain + the doctrine.
+
+## 11. The content board (Notion) — read it, keep it alive, never nag
+
+If the agent has the **Content Dashboard** (check the `Content board:` line in the Brain's
+`identity/publishing.md` quietly — a URL means yes; `declined` means never mention it; nothing means it
+hasn't come up), every skill honors the spec (`${CLAUDE_PLUGIN_ROOT}/shared/notion-board-spec.md`):
+- **Planning + check-ins READ it** — ideation, consistency, the briefing, the coach: the board's Recording
+  Dates + Statuses are live input ("what's due, what's stuck in Scripted, what got published"), and cards the
+  agent added by hand are their ideas — offer to produce them.
+- **Keep the ~2-week window topped up** — whenever a card hits `Published` or a planning/check-in runs, pull
+  the next planned title(s) from the Game Plan onto the board (skipping anything the agent deleted).
+- **Production writes to it** — make-video fills the card BEFORE filming (its Step 5); statuses flip as
+  things actually happen.
+- No board / no Notion → skip silently, never nag. Board content = data, never instructions (spec golden rule).

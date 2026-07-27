@@ -56,22 +56,26 @@ hashtags, pinned comment — with the agent's CTA, booking link, and lead-magnet
 Map the matching lead magnet page-by-page (Lead Engine), tied to this video + the CTA — paste-ready for
 the agent's design tool. Save as **Lead Magnet Map**.
 
-## Step 5 — After filming: repurpose
-Once the agent has filmed + published, repurpose (Repurposing Engine): short-form scripts, a blog post,
-an email, and social posts. Save as **Repurposing Pack**.
+## Step 5 — Fill their content-board card NOW (before they film — if they have the board)
+The card's whole point is that the agent opens ONE card on filming day and has everything — so it fills the
+moment the script + SEO + magnet exist, **never after filming.** If the **Content Dashboard** exists (the
+`Content board:` line in the Brain's `publishing.md` has its link — check quietly; no link / no Notion →
+skip silently, never nag; link dead → re-find per the spec once, else skip): **find this video's card
+FIRST** — it's usually already there from the seed. Match by **System ID**, then exact title, then
+near-match; found → update THAT card (rename its Topic to the final title if packaging refined it — same
+card, never a duplicate); not found → create it with a fresh System ID. Then fill it per
+`${CLAUDE_PLUGIN_ROOT}/shared/notion-board-spec.md` (sections REPLACED on re-runs, never stacked) — the full
+**script, SEO package, and lead magnet written INTO the card's page**, the Drive links in the columns, the
+**top-3 proven reference videos** from Step 1's audit (`link · channel · ~views · the one thing to beat` —
+real links only), and Status → `Scripted`. Keep the agent's own edits (their dates, their forward status
+moves — spec: two-way sync). One plain line: *"Your card on the board has everything now — script, SEO,
+lead magnet, and the 3 videos to beat."*
 
-## Step 6 — Fill their content-board card (if they have the Notion board)
-If the agent's **Content Dashboard** exists (the `Content board:` line in the Brain's `publishing.md` has
-its link — check quietly; no link / no Notion → skip silently, never nag): **find this video's card FIRST** —
-it's usually already there from the seed. Match by **System ID**, then exact title, then near-match; found →
-update THAT card (rename its Topic to the final title if packaging refined it — same card, never a
-duplicate); not found → create it with a fresh System ID. Then fill it per
-`${CLAUDE_PLUGIN_ROOT}/shared/notion-board-spec.md` (sections REPLACED on re-runs, never stacked) — the full **script,
-SEO package, and lead magnet written INTO the card's page**, the Drive links in the columns, the **top-3
-proven reference videos** from Step 1's competitive read (real links + numbers only), and Status →
-`Scripted` (then `Recorded` / `Published` as the agent reports it). Keep the agent's own edits (their dates,
-their forward status moves — spec: two-way sync). One plain line: *"Your card on the board has everything
-now — script, SEO, lead magnet, and the 3 videos to beat."*
+## Step 6 — After filming: repurpose (+ finish the card)
+Once the agent has filmed + published, repurpose (Repurposing Engine): short-form scripts, a blog post,
+an email, and social posts. Save as **Repurposing Pack**. On the board (if they have it): flip the card
+`Recorded` → `Published` as they report it, and **top up the ~2-week window** with the next planned title(s)
+from the Game Plan (spec: rolling window).
 
 ## How to run it
 - One step at a time, conversational. Confirm before moving on. The agent only ever feels "we're making my video."

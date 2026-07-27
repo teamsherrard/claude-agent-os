@@ -34,14 +34,17 @@ YouTube System shares it later).
 
 ## Step 3 — Cards for posts (how the workflows use this)
 When a workflow finishes a post (green screen / talking head / carousel) and the agent wants it tracked:
-- **Find first, never duplicate** (spec two-way sync): match by System ID, then title; found → update that
-  card (sections in the body replaced, never stacked); not found → add a card with a fresh System ID:
+- **Find first, never duplicate** (spec two-way sync): match by System ID, then exact title, then near-match;
+  found → update that card (sections in the body replaced, never stacked); not found → add a card with a
+  fresh System ID:
   **Topic** (the post's title/hook) · **Format** · **Pillar** = its funnel role (`Reach` / `Value` / `Trust`
   / `Convert` — the 4-3-2-1 balance made visible) · **Context** (`• What:` / `• Outcome:`) · **SEO / Post
   Package** link (the Drive doc) · Status `Ready to Film` · **Publishing Date** (its planned slot).
 - **Into the card body**: the full post package — script/talking points, caption, hashtags (3–5), cover
   text — so filming day is open-one-card simple.
-- When the agent says it's posted (or the publish step schedules it): flip to `Published` + confirm the date.
+- When it's **scheduled** (publish / batch-publish): set the Publishing Date to the slot — status stays put;
+  **scheduled is not published.** Flip to `Published` only when it actually goes live / the agent confirms
+  (spec rule).
 - The Brain's `content-log` row is STILL written every time (house rules) — the board mirrors the log,
   never replaces it.
 

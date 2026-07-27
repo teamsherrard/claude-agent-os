@@ -3,9 +3,10 @@ name: youtube-board
 description: >
   Builds and maintains the agent's Content Dashboard in THEIR OWN Notion — one board for all their content,
   modeled on Mike Sherrard's real YouTube dashboard, with a YouTube long-form view, a Short-Form view, and a
-  calendar. Seeded from their actual Game Plan (every planned title as a card with real dates), and then kept
-  alive by the system: when a video gets made, its card fills with the full script, SEO package, lead magnet,
-  and the top-3 proven reference videos — everything in one card. Bring-your-own Notion; never required.
+  calendar. Seeded with the next ~2 weeks from their actual Game Plan (a rolling window that tops itself up —
+  the full 90-day backlog stays in the plan doc), and then kept alive by the system: when a video gets made,
+  its card fills with the full script, SEO package, lead magnet, and the top-3 proven reference videos —
+  everything in one card. Bring-your-own Notion; never required.
 
   Triggers on "build my content board", "set up my board", "content board in notion", "notion board",
   "notion dashboard", "content dashboard", "put my plan in notion", "update my board", or after the Game

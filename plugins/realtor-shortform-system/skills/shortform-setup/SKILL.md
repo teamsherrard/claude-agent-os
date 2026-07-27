@@ -93,10 +93,12 @@ connect your socials there once, then sign in when I ask." Reassure them it's qu
 
 ## Step 5 — Save the short-form layer + set up their Drive folder
 1. Save a small note to the Brain at `~/realtor-brain/identity/publishing.md` with: platforms + priority,
-   posting cadence, posting method (which tool, or "manual"), and any account notes. Newly captured lead
-   magnets do NOT go here — append those to `~/realtor-brain/identity/offer.md` (per the One-Brain
-   write-back rule; that's the only file the CTA lookups read). Push the Brain to Drive. The Brain stays
-   the one source of truth.
+   posting cadence, posting method (which tool, or "manual"), and any account notes. **Update only those
+   fields — preserve every other line already in the file** (especially the `Content board:` line if the
+   YouTube System wrote one; overwriting it breaks the board's memory and the offer-once promise). Newly
+   captured lead magnets do NOT go here — append those to `~/realtor-brain/identity/offer.md` (per the
+   One-Brain write-back rule; that's the only file the CTA lookups read). Push the Brain to Drive. The Brain
+   stays the one source of truth.
 2. **Provision their content folder in Google Drive** (so everything they make has an organized home),
    following `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`: create
    `[Agent Name] — Short-Form System/` with a `Content/` and a `Performance/` folder inside. Don't
