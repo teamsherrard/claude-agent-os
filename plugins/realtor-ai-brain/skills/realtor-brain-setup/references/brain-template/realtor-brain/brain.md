@@ -15,6 +15,8 @@
    - Client conversation / note → `memory/clients.md`
    - New deadline or follow-up → `memory/deadlines.md`
    - Content performance review → `memory/performance.md` (read it back before planning new content)
+   - This month's researched market numbers → `memory/market-data.md` (researched once, quoted by
+     every market piece — never re-search what's already in the current month's block)
    - On-the-go idea / win / vendor / market note → **realtor-capture** files it into `memory/ideas.md`,
      `identity/proof.md`, `identity/vendors.md`, or `identity/market.md`
    - **Then PUSH to Drive** (`realtor-brain-sync`) — the local copy is wiped when the session ends;
@@ -22,6 +24,11 @@
 3. **STAY COMPLIANT.** Before publishing anything public-facing, read `identity/compliance.md` — append
    the required brokerage disclaimer + license #, and avoid the listed "claims to avoid." *(If
    `compliance.md` is empty, proceed but note it's unset.)*
+4. **SOUND LIKE THEM.** When producing anything **read aloud** (video / reel / YouTube scripts, tours), read
+   `identity/voice-print.md` and write for the ear in their spoken cadence. When producing content that can
+   carry a story (scripts, emails, posts), check `identity/story-bank.md` for a real story matching the topic
+   or emotional beat, weave it into the open or close in their voice (**anonymize real clients**), then stamp
+   its **Used-where** so stories rotate. Never fabricate a voice or a story — if a file is empty, just proceed.
 
 If `~/realtor-brain/` is missing files, tell the agent to run **Realtor AI Brain — Setup**.
 
@@ -42,8 +49,10 @@ If `~/realtor-brain/` is missing files, tell the agent to run **Realtor AI Brain
 - `identity/voice.md` — full tone rules, never-sounds-like, signature phrases, CTA
 - `identity/offer.md` — services, guarantees, USP, why-hire-me
 - `identity/brand-visual.md` — brand *direction*: colours, fonts, vibe, logo direction, tagline (feed to Claude Design)
-- `identity/voice-samples.md` — real writing samples (match their actual voice)
+- `identity/voice-samples.md` — real WRITTEN samples (how they type)
+- `identity/voice-print.md` — the SPOKEN voice DNA (how they talk) — read for every read-aloud script
 - `identity/proof.md` — testimonials, stats, case studies (reuse as proof)
+- `identity/story-bank.md` — real career stories, tagged by topic (weave into scripts/emails/posts)
 - `identity/content-engine.md` — content plan: pillars, platforms, cadence, series, video default
 - `identity/publishing.md` — how the agent posts short-form (platforms, cadence, posting tool) — written by the Short-Form System
 - `identity/operations.md` — hours, signature, booking rules, follow-up cadence
@@ -57,6 +66,7 @@ If `~/realtor-brain/` is missing files, tell the agent to run **Realtor AI Brain
 - `memory/listings.md` — listings + which content has been made
 - `memory/content-log.md` — everything published (check before creating, to avoid repeats)
 - `memory/performance.md` — what's working in content (written by the 2-week review; read before planning)
+- `memory/market-data.md` — the local market numbers, one dated block per month (written by the Market System)
 - `memory/deadlines.md` — what's due and when
 - `memory/ideas.md` — content ideas + backlog captured on the go (read before generating new ideas; mark Used)
 

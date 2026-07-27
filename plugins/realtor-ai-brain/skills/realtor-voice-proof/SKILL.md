@@ -57,5 +57,12 @@ Write to `~/realtor-brain/identity/proof.md`.
 > **Push to Drive after writing** — run `realtor-brain-sync` (PUSH). The local copy is wiped when the
 > session ends; an unsynced write is a lost write.
 Tell them: *"Added to your Brain — your real voice and your proof. Now every script sounds more like
-you, and every listing/lead magnet can pull in real testimonials and stats."* If run as **Phase 4 of
-Setup**, hand control back to Setup.
+you, and every listing/lead magnet can pull in real testimonials and stats."*
+
+**Then offer the spoken layer (the bigger lever for scripts):** *"One more, and it's the best thing you can do
+for your video scripts — written samples teach me how you TYPE, but scripts get read out loud. Want to spend
+~8 minutes just talking, so I learn how you actually TALK?"* → hand to **realtor-voice-print**. (And when
+they're ready for storytelling, **realtor-story-bank** — "build my story bank" — mines the real stories that
+make their content un-copyable.)
+
+If run as **Phase 4 of Setup**, hand control back to Setup.
