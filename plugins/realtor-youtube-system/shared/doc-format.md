@@ -135,9 +135,10 @@ THE VIDEO STRUCTURE   (every video — doctrine §4)
 ════════════════════════════════════════════
 90-DAY CALENDAR   (24 videos · 2/week · the §22 mix across the 6 content types)
 ════════════════════════════════════════════
-   Week 1 — {Video 1}  ·  {Video 2}    ({pillars})
-   Week 2 — {…}
-   …  (12 weeks)
+   Week 1 · Video 1 — {exact title}   ({content type})
+   Week 1 · Video 2 — {exact title}   ({content type})
+   Week 2 · Video 1 — {…}   ({…})
+   …  (one video per row — the weekly 2-video rhythm must read at a glance; 12 weeks)
 
 
 ════════════════════════════════════════════

@@ -266,8 +266,19 @@ def render(lines, doc, title=None, subtitle=None, eyebrow=None):
             doc.table(["#", "Exact video title", "Search intent & lead type"], rows,
                       [Inches(0.4), Inches(4.05), Inches(2.25)])
             continue
+        WEEKV = r'^\s*Week\s+(\d+)\s*[·:]\s*Video\s*(\d+)\s*—\s*(.*?)\s*\(([^)]*)\)\s*$'
+        mweekv = re.match(WEEKV, raw)
+        if mweekv:  # calendar, one video per row: "Week 1 · Video 2 — Title   (Type)"
+            rows = []
+            while i < n:
+                m = re.match(WEEKV, lines[i])
+                if not m: break
+                rows.append([f"Week {m.group(1)}", f"#{m.group(2)}", m.group(3).strip(), m.group(4).strip()]); i += 1
+            doc.table(["Week", "#", "Video to publish", "Type"], rows,
+                      [Inches(0.7), Inches(0.4), Inches(3.85), Inches(1.75)])
+            continue
         mweek = re.match(r'^\s*Week\s+(\d+)\s+—\s+(.*)\((Pillar[^)]*)\)\s*$', raw)
-        if mweek:
+        if mweek:  # legacy calendar: "Week 1 — Video A · Video B (pillars)"
             rows = []
             while i < n:
                 m = re.match(r'^\s*Week\s+(\d+)\s+—\s+(.*)\((Pillar[^)]*)\)\s*$', lines[i])

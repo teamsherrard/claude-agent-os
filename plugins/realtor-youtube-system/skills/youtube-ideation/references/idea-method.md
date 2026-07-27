@@ -29,7 +29,14 @@ Priority = D×3 + B×3 + G×2 + N×2 + T×1 + H×1 (max 60). Rank high → low. 
   question / how-to / benefit), front-load the keyword, lean long-tail for a small channel. Never too clever
   or vague (§16.1, §28.6). See `${CLAUDE_PLUGIN_ROOT}/shared/seo-knowledge-base.md`.
 - **Hook:** name the viewer's situation/fear in line one; promise the payoff in line two.
-- **Thumbnail text:** 3–5 punchy on-screen words — a shortened, SEO-aware version of the title. Text only, no design.
+- **Thumbnail text:** 3–5 punchy on-screen words — a shortened, SEO-aware version of the title, written to
+  fit the §17 layout for that pillar (beside a ~33% headshot; home tours = the home photo). Text only, no
+  design — the agent builds it in their thumbnail/design tool from this exact text.
+- **Three hard gates on every title + every ranked list** (cohort feedback — these shipped wrong once):
+  (1) **the market IS in the title** — a title that could run on any city's channel FAILS, rewrite it local;
+  (2) **every dollar figure is sourced** — from `market.md` price bands or live Research, cited in the note,
+  never invented; (3) **vary the angle at the top** — never open a ranked list with two titles on the same
+  angle/avatar; the first 3–5 span distinct angles, depth comes later.
 
 ## Voice-matched titles — good vs bad (example: a calm, consultative, never-salesy agent)
 - ✅ "The New 5% GST Savings on Calgary New Builds — Who Actually Qualifies"

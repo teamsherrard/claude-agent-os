@@ -30,6 +30,15 @@ approves ONCE before anything is scheduled.** Never queue a post without that ye
 
 ---
 
+## Before you batch — the hands-off prerequisites (check once, up front, in plain words)
+A truly hands-off month only works if these are true. Confirm them kindly at the start — don't spring them at post #21:
+1. **A posting tool is connected** (`identity/publishing.md`). If not → run **shortform-setup** first, or take the manual path (hand over the packages).
+2. **Metricool can actually reach the videos.** Metricool attaches media from a **public URL** OR from a **Google Drive account linked inside Metricool** (Metricool → Settings → connect Google Drive, one time). A raw Drive *share* link is **not** public, so without that Drive-in-Metricool link Metricool can't pull the files from the folder. No link → use the **hybrid path** (schedule caption + time; the agent drops each video in the Metricool app), or have them link Drive once for true hands-off.
+3. **Accounts are set for auto-publish.** Instagram must be a **Business/Creator** profile (a personal IG gets a *reminder*, not an auto-post), and TikTok/YouTube connected. Otherwise "hands-off" quietly becomes a stack of manual reminders — say so before scheduling 30 of them.
+4. **Plan reality.** Metricool **Free = 20 posts/month, 1 brand.** A real month of daily content across platforms blows past 20 fast, so a full-month batch needs **Starter (~$20/mo, unlimited publishing)**. Set this expectation the moment they ask for "a month."
+
+---
+
 ## Step 1 — Point it at the folder + load context
 - **The folder:** the agent names it or pastes the Drive link ("my Reels folder," "October content").
   If they don't specify, ask once, simply. List the folder's files via the Drive connector.
@@ -75,8 +84,9 @@ Run every caption/description through `compliance.md` (disclaimer/license where 
   3×/week the floor); **never stack** several in one hour. Keep the 4-3-2-1 mix balanced across the run —
   if the folder is lopsided (e.g. all home tours = agent-bait), say so and suggest what's missing, but
   don't block.
-- **Free-plan cap:** Metricool free = **20 scheduled posts/month** — if the batch would exceed it, say so
-  and offer to trim to the strongest, post to fewer platforms, or upgrade. Never silently drop a post.
+- **Free-plan cap:** Metricool Free = **20 posts/month** (flagged in the prerequisites). If the batch
+  would exceed it, never silently drop posts — trim to the strongest, post to fewer platforms, or
+  recommend Starter (~$20/mo, unlimited).
 
 ## Step 5 — ONE review + approval (the whole point)
 Save the proposed queue as a clean **content calendar** the agent reviews in one place, per
@@ -90,8 +100,9 @@ give the plain-language summary and ask for the go:
 
 ## Step 6 — Schedule the batch + log
 On approval, schedule each piece via the connected tool (`publishing-guide.md`): Metricool
-`createScheduledPost` at its slot, media by the file's public Drive URL (hybrid fallback if a video isn't
-shareable — schedule caption+slot, agent drops the file). Then:
+`createScheduledPost` at its slot, attaching each file the way Metricool accepts it — a **public URL** or
+a **Google-Drive-linked-in-Metricool** file (per the prerequisites above). If Metricool can't reach a
+file, use the hybrid fallback: schedule the caption + slot and have the agent drop that video in the app. Then:
 - If any fail, report exactly which scheduled and which need a second look — never claim all done if not.
 - Append a `Scheduled` row per piece to `memory/content-log.md` (date + platforms) and push to Drive.
 

@@ -52,10 +52,11 @@ best-time logic, the free-plan cap, and the video/media handling). In short:
 ---
 
 ## Notes
-- **Batch scheduling:** if they ask to schedule several ("schedule all of these at my best times"), space
-  them out sensibly across the days/slots — don't stack five posts in one hour.
-- **Free plan:** Metricool's free plan caps at 20 scheduled posts/month — if they'd exceed it, say so and
-  offer to post to one platform or suggest the upgrade. Never silently drop a post.
+- **Batch scheduling:** for a few posts already in the conversation ("schedule all of these"), space them
+  across days/slots — don't stack five in one hour. **For a whole Drive folder or a month of finished
+  content, use `shortform-batch-publish`** — that's the folder-to-queue batch flow, not this skill.
+- **Free plan:** Metricool Free = 20 posts/month + 1 brand — if they'd exceed it, say so and offer fewer
+  platforms or Starter (~$20/mo, unlimited). Never silently drop a post.
 - **Account types:** Instagram auto-publishes from a Business/Creator profile; if theirs is personal, the
   tool may send a reminder instead of auto-posting — mention it once if relevant.
 - This skill doesn't write content — it schedules what the workflows produced. If they want something new,

@@ -19,7 +19,14 @@ Walk them through it the first time:
 2. Choose the date range (e.g., last 28 or 90 days) and the **Content** tab for per-video rows.
 3. Click **Export → Comma-separated values (.csv)**.
 4. Upload the file here (or paste its contents).
-That's the whole "connection." No Google Cloud project, no API key, no OAuth.
+That's the whole setup. No Google Cloud project, no API key, no OAuth — and **never say "connect your
+YouTube" to the agent** (that word makes them think there's a technical step; real testers froze on it).
+It's just: drop the export here, or share the channel link.
+
+**Works on ANY public channel — including someone else's.** Public reads (titles, views, lengths, cadence,
+top performers) only need a channel LINK — the agent's own, a competitor's, or another agent's channel a
+coach is testing on ("audit this channel: [URL]"). Only the private depth (watch time, CTR, retention) needs
+that channel owner's Studio export or screenshot.
 
 ## Step 1 — Parse what they gave you
 From the CSV(s), per video, review the doctrine's full set (§23.1): views, **impressions + CTR**, **average

@@ -53,18 +53,27 @@ the Outliers engine.
 **6. The 3 Pillars** — for EACH pillar (see "Pillars" below):
 - *Why this pillar generates leads* (the lead psychology — who it attracts and why they convert).
 - The search-intent insight (what the audience actually types).
-- **15–20 exact titles** in a list: `# · Exact Title · Search Intent & Lead Type`, ordered broad→niche.
+- **15–20 exact titles** in a list: `# · Exact Title · Search Intent & Lead Type`, ordered broad→niche —
+  every title passing the **three hard gates** (SKILL Phase 3): the market IS in the title · every dollar
+  figure sourced from `market.md`/Research (cite it in the note) · the top of every ranked list varies its
+  angle (never two same-angle titles opening the gate).
 - A **named playlist**.
 
 **7. The Video Structure (doctrine §4)** — Hook (0:00–0:30, the viewer's question/fear, not "welcome back" —
 §5) → **Primary CTA** (0:30–1:00, the warm "people just like you" invite — §6.2) → Body (1:00–end, 10–25 min
 of real, local value; relocation 8–12 — §7, §27.6) → **Secondary CTA** (final 60s: book + the next best video — §6.5). Pull the
 canonical version from `${CLAUDE_PLUGIN_ROOT}/skills/youtube-script/references/script-framework.md`; include
-one short example hook + CTA in the agent's voice.
+one short example hook + CTA in the agent's voice. **The example CTA must be the exact §6.2 structure with
+the agent's REAL CTA from the Brain** (brief intro → "people just like you" → "your unique situation" →
+"avoid costly mistakes" → their actual booking link / lead magnet) — the same CTA the script skill will
+produce. Never a loose paraphrase or an invented style: if the plan's example and the shipped scripts
+disagree, the agent loses trust in both.
 
 **8. 90-Day Publishing Calendar** — a week-by-week table at their real cadence (doctrine §15.3: **2/week
 ideal · 1/week minimum · 3/week only if quality holds**), front-loading the broadest-reach titles first,
-concrete titles in each slot (drawn from §6). **Use the doctrine §22 mix:** 2/week × 12 weeks = **24 videos**
+concrete titles in each slot (drawn from §6). **Format: ONE VIDEO PER ROW** — `Week · Video 1 or 2 · the
+exact title · its content type` — so the weekly two-video rhythm reads at a glance (cohort feedback: the
+two-titles-crammed-per-line layout was confusing). **Use the doctrine §22 mix:** 2/week × 12 weeks = **24 videos**
 ≈ **4 market updates · 5 relocation · 5 community tours · 3 map tours · 3 local lifestyle · 4 home tours**
 (adjust for inventory access, local demand, agent strengths, market size, and the agent's 3 focuses). At
 **1/week**, rotate the pillars in the §22.3 priority order (relocation/high-intent local → market update →

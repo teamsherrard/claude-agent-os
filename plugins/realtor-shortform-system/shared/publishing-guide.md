@@ -40,10 +40,10 @@ Use the connected Metricool tools (call them by these names — your connection 
    title + `madeForKids`; X ≤280 chars (don't split into threads); Bluesky ≤300. Set `autoPublish` true.
 4. **`getScheduledPosts`** / **`updateScheduledPost`** — list or change what's queued (e.g. "move it to 2pm").
 
-**Free-plan guardrail:** free caps at **20 posts per calendar month** (counted when published — resets
-on the 1st; queuing ahead is fine) and **3 months of analytics history**. If a month would exceed 20,
-say so plainly and offer to post to one platform, or suggest the cheap Starter upgrade. Never silently
-drop posts.
+**Free-plan guardrail:** Metricool Free = **20 posts/month + 1 brand** (confirmed) and 3 months of
+analytics history. A full multi-platform month blows past 20 fast, so a real batch needs **Starter
+(~$20/mo, unlimited publishing)**. If a month would exceed the cap, say so up front and offer to trim to
+the strongest, post to fewer platforms, or upgrade. Never silently drop posts.
 
 **Platforms:** Instagram, Facebook, TikTok, YouTube Shorts (+ LinkedIn, X, Threads, Pinterest, Bluesky,
 GBP). Account-type reminders still apply (Instagram needs a Business/Creator profile to auto-publish).
@@ -68,10 +68,11 @@ Posts to IG/FB/TikTok/YouTube/GBP/LinkedIn/X; GHL handles the platform connectio
 
 ## Media / video handling
 Reels/TikToks/Shorts are videos, so the schedule call needs the agent's video.
-- **Path A (full — Metricool default):** Metricool's `createScheduledPost` takes `media` as **public
-  URLs to image or video files**, so pass the agent's video URL and the complete post schedules. This is
-  confirmed and the default path. The agent's video needs to live at a public URL (or a linked Google
-  Drive/Dropbox link, which Metricool auto-uploads).
+- **Path A (full — Metricool default):** `createScheduledPost` takes `media` as a **public URL**, OR a
+  **Google Drive / Dropbox file when the agent has linked that account inside Metricool** (Metricool →
+  Settings → Google Drive, one-time). A raw Drive *share* link is not public, so the Drive-in-Metricool
+  link is what lets Metricool pull files straight from the agent's folder. With that in place, pass the
+  file and the whole post schedules — the hands-off default.
 - **Path B (hybrid — fallback):** if the agent's video ISN'T at a shareable URL (it's only on their
   phone), schedule the **caption + platform + best-time slot** and tell them plainly: *"Caption and time
   are set — just open Metricool on your phone and drop your video onto it."* Still a big time-save.

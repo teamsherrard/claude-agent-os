@@ -71,7 +71,13 @@ The audit flexes to wherever they are (full detail in the framework). The channe
   YouTube Studio analytics or your export and I'll add your watch-time and click data."* Never required.
 - **Empty / none / starting fresh** → skip the audit numbers entirely; lead with competitor analysis + the
   pillars + the launch calendar. (The setup answer already tells you which path.)
-Never ask them to "connect YouTube" — public + screenshot/CSV is all it takes.
+- **Any public channel works — including someone else's.** The audit only needs a channel LINK. A coach or
+  team member testing on another agent's channel ("run this on [URL]", "audit this channel") is fully
+  supported — same read, no ownership needed, no login. (Private watch-time depth still needs that channel
+  owner's screenshot/export.)
+**NEVER use the word "connect" about YouTube — not "connect your channel," not "connect to get analytics."**
+Ask for the channel **link** (public), or offer the screenshot/CSV export for depth. "Connect" makes agents
+think there's a technical setup step — there isn't, and that word alone has confused real testers.
 
 ---
 
@@ -96,8 +102,22 @@ test all six types in the first 90 days before over-committing to a focus (§15.
 For each pillar, generate **15–20 EXACT, search-optimized titles** (not vague ideas), each annotated with
 **Search Intent & Lead Type**, ordered **broad → niche** (highest search volume → highest lead intent). Use
 real search language (the "type it into YouTube" test) + the idea-templates + competitor outlier patterns.
+**Three hard gates on every title + ranked list (cohort feedback — these shipped wrong once):**
+1. **The market IS in the title.** Every title names their city/community ("…in Austin", "Austin vs …",
+   "[Community] …"). A title that could run on any city's channel — e.g. "Do You Even Need a Realtor if the
+   Builder Has One?" — FAILS; rewrite it local ("…When Buying a New Build in Austin?"). §16: local specificity
+   is the principle; here it's a gate.
+2. **Every dollar figure is REAL.** A price point in a title ($900K, $500K…) comes from the Brain's
+   `market.md` price bands or live sourced data (Research) — cite where it came from in the Search-Intent
+   note. Can't verify it? Use their real band or ask — never an invented number.
+3. **Vary the angle at the top.** In any ranked list, never open with two titles on the same angle/avatar
+   (two California-relocation titles back-to-back = one avatar hogging the gate). Spread the first 3–5 across
+   distinct angles/lead types; depth on one angle lives further down the pillar list.
 **Run every title through compliance/Fair-Housing** (house rules #3) — no "best suburbs for families"-style
 proxies; keep them factual and safe, since titles ship publicly.
+**Thumbnail text alignment:** any thumbnail text offered with a title is written to actually FIT the §17
+layout for that pillar (3–5 words beside a ~33% headshot; home tours = the home photo) — and say plainly that
+they build it in their thumbnail/design tool from that exact text, so the plan and the real thumbnail match.
 
 ## Phase 4 — Your Goal → The Plan (the math that builds confidence)
 Reverse-engineer their **business goal** (from `strategy.md`) into the content plan, per the framework:
