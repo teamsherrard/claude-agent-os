@@ -2,6 +2,110 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.79.1] — 2026-07-12
+
+### References done right (YouTube v0.9.5 · Short-Form v0.11.1)
+- **The competitive audit now actually RUNS in "make this video" Step 1** (it was implied, never
+  instructed): search YouTube for the top 3–5 real videos on the exact topic, capture
+  `link · channel · ~views · the read`, use them to sharpen the title/thumbnail — and hand them to the
+  agent in chat ("watch these 3 before filming — here's how yours wins"), Notion board or not.
+- **Research method's audit lane upgraded into the References engine:** market-first (their city), comparable
+  markets only as a labeled fallback; quality bar (same concept · genuinely performed by outlier logic ·
+  recent ~2–3 yrs · watchable); links actually found in search — never constructed; view counts marked
+  approximate, left off if unverifiable; deliver 3 (2–4), best teacher first.
+- Board spec's References column aligned to the same rules (both plugin copies synced).
+
+## [0.79.0] — 2026-07-27
+
+### Market System (Plugin 8) → v0.1.0 — the monthly market update becomes a system
+The market update was one 500-line monolith skill inside the Brain plus a deck-builder inside YouTube —
+two overlapping half-versions of the highest-leverage video an agent makes, and nothing that produced the
+rest of the month. Rebuilt as its own plugin: **one command, one complete monthly launch.**
+
+- **New plugin `realtor-market-system` (8 skills)** — `market-run` is the front door and sequencer;
+  `market-research` is the data engine; `market-report`, `market-script`, `market-shorts`,
+  `market-infographic`, and `market-distribution` each own one deliverable; `market-routine` puts it on
+  autopilot.
+- **Research once, quote everywhere.** The keystone: `market-research` pulls the month's numbers a single
+  time and writes them to a new Brain file, `memory/market-data.md` (one dated block per month). Every
+  other skill reads that block and is forbidden from searching — which is what guarantees the report, the
+  script, the three shorts, the infographic, and the newsletter all state identical figures.
+- **The full month, not just the video:** screen-share report (7 fixed pages, so the script's screen cues
+  line up) + email version + design brief · word-for-word YouTube script with publish kit (titles,
+  thumbnail text, hook, description opening, chapters) · three shorts in three formats — green-screen
+  article reaction (talking points, verified 0–7-day article), talking-head opinion (word-for-word), and
+  stat graphic (9:16 brief + voiceover) · branded 1:1 Instagram infographic brief + caption + story frame ·
+  distribution pack: recurring lead magnet, newsletter, per-platform captions, CTA map, four-week plan.
+- **New `shared/market-doctrine.md`** — the methodology, aligned with YouTube Doctrine §9: the **timing
+  rule** (record week one, previous month's complete data, current month in the title), **interpret don't
+  recap**, the **three mandatory audience lenses** (local buyers · local sellers · relocating in), the 8
+  headline metrics, market condition from months of supply, freshness rules, affordability math, the
+  2-CTA model, and the eight common mistakes.
+- **The Market Update AI Agent** — `market-routine` teaches the monthly rhythm (the Weeks 5–6 routine)
+  and, on an explicit yes, creates a real monthly scheduled task for the 1st that pulls the new numbers
+  as soon as the board release lands, builds the package, and leaves a five-line note. Adopts an existing
+  task rather than creating a twin; id saved to `config.md`; **never posts, sends, or publishes.**
+- **Never invents a number.** Sourced and dated or it doesn't ship — no estimating, no interpolating, no
+  forecast stated as fact, unpublished metrics named as unpublished, and a stop-and-retry rather than
+  partial-month data as a headline.
+
+### Brain (Plugin 1) → v0.29.0 · YouTube (Plugin 3) → v0.9.4 — superseded, and wired in
+- **Removed `realtor-market-update`** from the Brain — Plugin 8 supersedes it. Its four reference guides
+  were rewritten into the new plugin (data sources, report guide, script guide, concepts guide).
+- **New `memory/market-data.md`** in the Brain scaffold + `brain.md` index and law 2 routing; added to
+  `brain-setup`'s tree, `brain-health`'s memory scan, and a **2 → 3 migration step** in `brain-migrate`
+  so existing brains gain the file without losing data.
+- **`youtube-market-report` now defers** to Plugin 8 when it's installed, handing back afterwards for the
+  YouTube-side work it owns (full SEO, lead magnet, board card, repurposing). It remains the
+  YouTube-native version for agents who only own Plugin 3.
+
+## [0.78.0] — 2026-07-27
+
+### Listing Launch (Plugin 7) → v0.2.0 — the eight stages, and the plugin ships
+Plugin 7 existed as nine unreleased deliverable skills with no spine. Restructured it around the
+**eight stages of a listing** and filled the five real gaps, then registered it in the marketplace.
+
+- **New `shared/stages.md`** — the spine. WIN IT · LIST IT · LAUNCH IT · FILM IT · TOUR IT · CLIP IT ·
+  SHOW IT · CLOSE IT, each mapped to the skill that owns it and the trigger that fires it, plus the
+  six stage rules (skip forward never backward, FILM IT and TOUR IT are alternatives, stage names are
+  never said out loud to the agent).
+- **New skill `listing-win` (WIN IT)** — the part that gets the listing. Pre-listing package sent
+  ahead of the appointment, the presentation section by section with **what to say** on each, the
+  pricing conversation scripted honestly (no invented CMA — `[YOUR NUMBER]` left for their own
+  analysis), the four objections that actually lose listings, and the didn't-sign-tonight follow-up.
+- **New skill `listing-tour` (TOUR IT)** — listing photos → an animated cinematic tour on the agent's
+  own Higgsfield account. Generates the clips; hands them to Plugin 6's `edit-listing` to be cut,
+  captioned, and scored.
+- **New `shared/tour-rules.md`** — the discipline TOUR IT runs under, because AI video models *repaint*
+  what they animate and an invented room on a live listing is material misrepresentation. Verbatim
+  no-alteration constraint block on every prompt, a safe-camera-move list (push-in default; no orbits,
+  fly-throughs, or doorway transitions), 9:16 / 5s / sound off / one photo per clip / no frame
+  chaining, a mandatory agent review gate (regenerate once, then drop the room), a disclosure line,
+  and cost discipline (say the credit cost, get a yes, never regenerate the whole set).
+- **New skill `listing-clips` (CLIP IT)** — three genuinely different shorts (just-listed, top 3
+  features, neighbourhood angle) with on-screen text, captions, and one combined shot list so all
+  three are filmed in a single trip.
+- **New skill `listing-openhouse` (SHOW IT)** — the full event kit: the before-sequence timed backward
+  from the date, five day-of stories on the native stickers, the sign-in question that earns a real
+  answer, and four follow-ups — including **the seller update most agents forget**.
+- **New skill `listing-sold` (CLOSE IT)** — the sold post, the client story told as the seller's win,
+  the review request that's actually timed and prompted, the thank-you, and the neighbour follow-up.
+  **Writes the result back to `proof.md`**, so every closing makes the next listing presentation
+  stronger.
+- **`listing-video` → FILM IT** — the reel moved out to CLIP IT (it was duplicated); now the
+  room-by-room walkthrough plus the **full YouTube SEO package** the spec called for: five titles with
+  character counts, a description with the address block and timestamps, 15–20 tags, hashtags, and a
+  thumbnail brief. Defers to the YouTube System's `youtube-seo` when that plugin is installed.
+- **`listing-launch` → the navigator** — now sequences the eight stages, picks the starting stage from
+  **Built so far**, asks FILM IT vs TOUR IT as one question instead of running both, and answers
+  "what's left on Maplewood?" from the listing block.
+- **`listing-intake` → the Dispatch door** — one sentence on the go ("Just listed 14 Oak — start the
+  content") now takes the address from their words and asks **three questions maximum** instead of a
+  seven-line form, then starts the launch. The full form stays for desk setup.
+- **Registered in the marketplace** as PLUGIN 7 (was untracked and unshipped).
+- **Boundary set** — the Brain's `realtor-listing-content-kit` now defers to Plugin 7 when installed,
+  matching how `realtor-market-update` defers to the YouTube System.
+
 ## [0.77.0] — 2026-07-10
 
 ### Document renderer → neutral-PREMIUM (every client deliverable, all 4 plugins)

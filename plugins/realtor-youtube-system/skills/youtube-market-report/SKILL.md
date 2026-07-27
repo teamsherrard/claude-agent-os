@@ -8,6 +8,15 @@ description: Monthly Market Report for the Realtor YouTube System — the highes
 Most agents struggle to make market updates — yet they drive serious authority and seller leads. This makes
 it nearly effortless: **we build the deck, they hit record.** Apply `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
 
+> **BOUNDARY — if the Realtor Market System (Plugin 8) is installed, defer to it.** That plugin owns the
+> full monthly launch: it researches the numbers once into the Brain, then builds the report, the
+> word-for-word script, three shorts, the Instagram infographic, and the distribution pack off those exact
+> figures — and can run it automatically on the 1st of every month. Say one plain line (*"you've got the
+> full market system — I'll run that instead, it does the whole month"*), hand to **Market Run**, and come
+> back afterwards for the YouTube-side work this plugin owns: the full SEO package (`youtube-seo`), the
+> lead magnet (`youtube-leads`), the board card (`youtube-board`), and repurposing (`youtube-repurpose`).
+> This skill is the YouTube-native version for agents who only own Plugin 3.
+
 > **Applies the YouTube Doctrine** (`${CLAUDE_PLUGIN_ROOT}/shared/youtube-doctrine.md`) — **§9 Market Updates**:
 > structure (§9.1), **timing (§9.3)**, **interpret-don't-recap (§9.4)**, common mistakes (§9.7), and the
 > **Claude output standard (§9.8)**. Market updates are a core pillar (§8) and one of the strongest authority +

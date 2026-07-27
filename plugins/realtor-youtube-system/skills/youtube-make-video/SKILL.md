@@ -27,10 +27,19 @@ chat saves there under its fixed name (Script · SEO Package · Lead Magnet Map 
 the spot in plain words and suggest the agent name this chat after the video.
 
 ## Step 1 — Lock the packaging (quick, before the script)
-Confirm or refine the final **Title**, the **Hook**, and **3 short thumbnail text options** (pulled from
-the title — text only, no design). Packaging first. Identify the video's **pillar** so the script follows
-that pillar's structure (§9–§14). The hook follows the §5.4 formula (never "welcome back" / §5.5); the title
-is search-intent-first and beats the top 3–5 ranking videos (§16, §16.4).
+**First, actually RUN the competitive audit (§11.5/§16.4) — search YouTube now, don't skip this:** find the
+**top 3–5 real videos on this exact topic in THEIR market** (per the competitive-audit lane in
+`${CLAUDE_PLUGIN_ROOT}/skills/youtube-research/references/research-method.md` — market-first, comparable
+markets only as the fallback, quality bar applied). Capture each as `link · channel · ~views · the read`
+(what works, what's missing, how we beat it). REAL links you actually found — never invented; if a view
+count isn't visible, leave it off rather than guess.
+Then, informed by that read: confirm or refine the final **Title**, the **Hook**, and **3 short thumbnail
+text options** (pulled from the title — text only, no design). Identify the video's **pillar** so the script
+follows that pillar's structure (§9–§14). The hook follows the §5.4 formula (never "welcome back" / §5.5);
+the title is search-intent-first and beats the videos you just audited (§16, §16.4).
+**Give the agent the references in chat** — *"before you film, watch these 3 — here's what each does well
+and how yours wins"* — they're part of the deliverable whether or not a Notion board exists (they also go on
+the card in Step 6).
 
 ## Step 2 — Script
 Write the full teleprompter script in the agent's voice — complete and ready to read, no placeholders

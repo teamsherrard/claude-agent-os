@@ -39,13 +39,27 @@ intent** (§3): what is the future buyer/seller actually typing, and what decisi
 - Competitor outliers (from the Outlier scan) — proven demand for a similar video.
 Attach the signal + its source to the idea. Never fabricate exact search volumes.
 
-## Competitive audit — top 3–5 ranking videos (§11.5, §16.4)
+## Competitive audit — top 3–5 ranking videos (§11.5, §16.4) — the References engine
 Before a video, search the topic on YouTube and review the **top 3–5 ranking videos** so the agent can beat
-them. For each, note: **title · thumbnail · hook · structure/delivery · local specificity · what's missing**.
-Then state how the agent's version wins — more specific, clearer, more curiosity-driven, more timely, or more
-locally useful (§16). When useful, classify each by **intent** (§23.4): awareness · trust-building · high-
-intent lead-gen · niche authority · underperformer needing a title/thumbnail fix. Useful for relocation,
-community, market-update, and any high-competition topic — it directly sharpens the title and thumbnail.
+them. These double as the **reference videos** the agent watches to plan and prep — in chat and on their
+content-board card — so capture them properly:
+- **Capture per video:** `link · channel · ~views · length`, plus the read: **title · thumbnail · hook ·
+  structure/delivery · local specificity · what's missing** — and the one line that matters most, **how the
+  agent's version beats it**.
+- **Market first, comparable-market fallback:** search THEIR market first ("pros and cons of moving to
+  Calgary" → Calgary videos). Only if the local results are thin (small market, few real videos on the
+  topic) widen to **comparable markets** (similar size/type of city, same topic) — and say so plainly:
+  *"your market's thin on this one, so these are from [comparable city] — same play, your numbers."*
+- **Quality bar — a reference must be worth the agent's time:** genuinely the SAME concept (not just the
+  same city) · actually performed (strong views relative to the channel's size — outlier logic, not just big
+  channels) · recent enough to reflect today's YouTube (~last 2–3 years, unless it's an evergreen monster
+  that still ranks) · watchable (a real video, not a livestream dump).
+- **Honesty:** links you actually opened/found in search — never constructed from memory. View counts marked
+  approximate (`~120K`); if a count isn't visible, leave it off — never guess. (§21.1)
+- **Deliver 3 (2–4 is fine)** — ranked, best teacher first.
+When useful, classify each by **intent** (§23.4): awareness · trust-building · high-intent lead-gen · niche
+authority · underperformer needing a title/thumbnail fix. Useful for relocation, community, market-update,
+and any high-competition topic — it directly sharpens the title and thumbnail.
 - Query: "{topic} {city}" / "moving to {city} {year}" / "{community} {city}" on YouTube; scan the top results.
 
 ## Price-point & comparison videos — pull LIVE listings (so scripts use real numbers)
