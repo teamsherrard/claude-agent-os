@@ -41,8 +41,12 @@ both ways in, in one message:
 - **Upload →** read the attached files directly.
 - **Drive folder →** use the **Google Drive connector**: `search_files` to find the folder they named (or
   the `Realtor AI Brain/intake` subfolder), list the files inside, then `read_file_content` on each. The
-  connector reads Google Docs, PDFs, Sheets, and image/screenshot files — **use the returned text directly;
-  never pipe it through bash or local files** (it lives outside the shell sandbox). Read ONLY that folder.
+  connector reads Google Docs, PDFs, and Sheets directly. **Screenshots/images of reviews read most reliably
+  when the agent UPLOADS them to chat** (I can read those); from Drive I'll only get an image's text if the
+  connector returns it. **Use the returned text directly; never pipe it through bash or local files** (it lives
+  outside the shell sandbox). Read ONLY that folder.
+  - **Unhappy paths — don't dead-end:** if the Drive connector isn't connected/authorized, or `search_files`
+    finds the folder zero or many times, say so and **offer upload-to-chat instead** — never leave them stuck.
 - **Skip →** hand back to whatever called this, noting they can say "import my materials" anytime.
 
 ## Step 2 — Extract + map each piece to the right Brain file

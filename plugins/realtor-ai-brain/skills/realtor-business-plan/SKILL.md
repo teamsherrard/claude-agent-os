@@ -47,8 +47,12 @@ Reverse-engineer the goal into deals. Show the working — agents love seeing th
 
 1. **The target.** Use `strategy.md`'s GCI / income goal. If it's an *income* (take-home) goal, gross it up
    to GCI (before splits/expenses) — ask their brokerage split if unknown, default a sensible one and label it.
-2. **Average commission per deal.** `avg sale price` (from `market.md`) × `commission %`. Use their market's
-   norm; if unsure default **~2.5% per side** and say it's an assumption they can change.
+2. **Average commission per deal.** = average sale price × commission %.
+   - **Average sale price:** `market.md` stores price *ranges*, not a single number — so take the **midpoint of
+     their primary price range** as the working average, **state it as an assumption**, and let them correct it
+     (*"I've used ~$X as your average — sound right, or what's your real number?"*). If there's no range yet
+     (brand-new agent), just ask their expected average once.
+   - **Commission %:** use their market's norm; if unsure default **~2.5% per side** and label it an assumption.
 3. **Deals needed** = GCI goal ÷ avg commission per deal. Round up.
 4. **Split it:** buyer/seller mix (from `offer.md`/persona), then break the year into **quarterly → monthly →
    the 90-day target** (deals in the next 90 days). Also translate to "**deals per month**" and "**closings
@@ -93,12 +97,15 @@ Assemble it into something they'll actually keep and revisit.
 > **Push to Drive after writing** — run `realtor-brain-sync` (PUSH). An unsynced write is a lost write.
 - Write the structured plan to **`~/realtor-brain/identity/business-plan.md`** (target, math, engine, 3 moves,
   milestones, dashboard). Every skill can now read what the agent is driving toward.
+- **If you captured the income/deal goal here** (because `strategy.md` didn't have one), also write it into
+  `identity/strategy.md` — so the two never diverge and no later skill re-asks the goal.
 - **Render a premium plan-book doc** to the agent's Drive `Realtor AI Brain → exports` (per
   `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` → structured text rendered via `shared/render_doc.py`) — a
   clean 3–4 page "[Agent] — 90-Day Business Plan" they can keep and print. The markdown is the source of truth;
   the doc is the keepsake.
 - Confirm: *"Your 90-day plan is set — [N] deals, three weekly moves, and a dashboard to track it. I'll check in
-  weekly. Your AI Admin can remind you of your three moves in your morning brief."*
+  weekly."* (Only if their **AI Admin is set up**, add: *"— and your AI Admin can remind you of your three moves
+  in your morning brief."* Don't promise the brief to an agent who hasn't set up the Admin.)
 
 ---
 

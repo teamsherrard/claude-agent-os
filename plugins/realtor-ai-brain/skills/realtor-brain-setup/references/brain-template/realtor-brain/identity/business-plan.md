@@ -6,7 +6,7 @@
 **GCI / income goal (year):** [ ] · **90-day deal target:** [ ] · **Deals/month:** [ ]
 
 ## The Money (the math)
-- **Average sale price:** [from market.md] · **Commission/side:** [%] · **Avg commission/deal:** [$]
+- **Average sale price:** [midpoint of market.md's primary range — stated as an assumption; agent can correct] · **Commission/side:** [%] · **Avg commission/deal:** [$]
 - **Deals needed (year):** [goal ÷ avg commission] · **Buyer/seller split:** [ ]
 
 ## The Engine (where the deals come from)

@@ -23,6 +23,8 @@ competitor program can replicate. This mines them, structures them, and makes th
 ## Step 0 — Read the shared engine
 Read `${CLAUDE_PLUGIN_ROOT}/shared/spoken-capture.md` (mechanism · natural interview · never-fabricate) and
 `${CLAUDE_PLUGIN_ROOT}/shared/ask-once-default.md`. This is the Story-Bank application of that engine.
+**Exception — the "use defaults / you decide" escape hatch does NOT apply here.** Stories cannot be invented.
+If they have none, that's simply the **starter state** (Step 2) — never write a fabricated story to fill the bank.
 
 ## Step 1 — Load the Brain + set expectations (gently)
 Read `~/realtor-brain/brain.md`, `identity/proof.md` (wins already on file — some may already be story seeds),

@@ -24,6 +24,9 @@ comes back readable in their own mouth. **~8 minutes, spoken.**
 ## Step 0 — Read the shared engine
 Read `${CLAUDE_PLUGIN_ROOT}/shared/spoken-capture.md` (the mechanism, how to run it, the never-fabricate rule)
 and `${CLAUDE_PLUGIN_ROOT}/shared/ask-once-default.md`. This skill is the Voice-Print application of that engine.
+**Exception — the "use defaults / you decide" escape hatch does NOT apply here.** A person's voice cannot be
+defaulted or invented. If the agent won't talk or says "you pick," treat it as **skip**: leave a friendly
+placeholder in `voice-print.md` and move on — never generate a fake voice DNA.
 
 ## Step 1 — Load the Brain + set up the mic
 Read `~/realtor-brain/brain.md`, `identity/voice.md`, `identity/voice-samples.md` (so the spoken layer builds on
@@ -58,13 +61,14 @@ Reflect it back, let them tweak, then write. Stamp **last updated + sample count
 ## Step 4 — Wire + confirm
 > **Push to Drive** — `realtor-brain-sync` (PUSH). `voice.md` should point to `voice-print.md` as the spoken layer.
 Confirm: *"Got your speaking voice. From now on your scripts come back sounding like YOU said them, not like AI
-wrote them — you'll actually be able to read them on camera. And it keeps learning: every voice note you send
-your Brain makes it sharper."*
+wrote them — you'll actually be able to read them on camera. And it keeps learning — every voice session sharpens it."*
 
 ## REFRESH mode (trigger: "refresh my voice print")
-Spoken voice compounds. On refresh, re-read `voice-print.md` + pull recent spoken material — new voice-mode
-answers and Dispatch voice notes (`memory/ideas.md` and anything `realtor-capture` tagged as spoken) — and
-**enrich** the DNA (sharper phrases, new tics), bumping the sample count. Merge, don't overwrite; keep the best.
+Spoken voice compounds. On refresh, re-read `voice-print.md` and analyze any **new spoken material the agent
+brings to this session** — a fresh voice-mode conversation or a transcript they paste — then **enrich** the DNA
+(sharper phrases, new tics) and bump the sample count. Merge, don't overwrite; keep the best. *(Honest scope:
+there's no automatic Dispatch feed today — refresh works on what they bring to the session. If Dispatch later
+tags voice notes as spoken samples, wire it in then.)*
 
 ## How every output uses this (the payoff)
 Any skill producing **read-aloud** content — YouTube scripts, reels/shorts, market-update scripts, neighbourhood
