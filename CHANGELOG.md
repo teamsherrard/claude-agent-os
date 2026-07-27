@@ -2,6 +2,17 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.80.1] — 2026-07-04
+
+### AI Admin (Plugin 2) → v0.5.1 — cohort-feedback fixes (10-week cohort, live setup testing)
+- **Timezone guard** (feedback: calendar showed America/Chicago for a team not in that timezone):
+  setup's connector check now reads the calendar's own timezone, compares it to the Brain, asks ONCE
+  when they disagree, corrects operations.md, and tells the agent their Google Calendar setting may
+  need fixing. A wrong timezone silently shifts the briefing, the sweep, and every booking.
+- **No mystery steps** (feedback: "I don't know what this is for but I'll create it"): setup rule —
+  never create anything or ask the agent to create/approve anything without one plain-English line
+  on what it is and why it exists.
+
 ## [0.79.1] — 2026-07-12
 
 ### References done right (YouTube v0.9.5 · Short-Form v0.11.1)
@@ -14,6 +25,40 @@ All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`
   recent ~2–3 yrs · watchable); links actually found in search — never constructed; view counts marked
   approximate, left off if unverifiable; deliver 3 (2–4), best teacher first.
 - Board spec's References column aligned to the same rules (both plugin copies synced).
+
+## [0.80.0] — 2026-07-27
+
+### Market System (Plugin 8) → v0.2.0 — the presentation, and the deck+script lock
+v0.1.0 shipped a 7-page *document* and called it the screen-share asset. It wasn't. The agent records by
+sharing a **deck**, and a document with "advance to page 4" cues is not a deck — which also meant the one
+thing the superseded `youtube-market-report` did well (build the actual slides) had been dropped. Fixed,
+and then hardened so the two halves can't drift.
+
+- **`market-report` → `market-presentation`.** The deck is now the primary deliverable: a paste-ready
+  **Claude Design brief** that builds the slides one by one with the month's real numbers already in
+  them, 16:9, brand colours and fonts from the Brain, plus **2–4 spoken talking points under every
+  slide** so an agent who won't read a teleprompter can still open the deck and just talk. The
+  email/distribution version and the Data Sources ride along in the same doc.
+- **New `shared/deck-spec.md` — the Slide Map contract.** The canonical 15-slide sequence (title ·
+  headline · at-a-glance · price · supply · speed · buying · selling · moving here · property types ·
+  communities* · niche* · rates · my take · CTA, two conditional), the design rules (one idea per slide,
+  **≤20 words**, the number is the largest element, arrows direction-only, no animation), and the rule
+  that makes the package real: **one slide = one script beat, same order, same numbering.**
+- **The lock.** `market-presentation` runs first and publishes the **Slide Map** — the final numbered
+  slide list with conditionals already resolved — at the top of its doc. `market-script` reads that map
+  and writes exactly one beat per slide, cued `[SLIDE N — title] (X min)`. Dropping the community slide
+  drops its beat and renumbers both together.
+- **New alignment check in `market-script`** (Phase 3, mandatory before delivery): cue count equals slide
+  count · cues in order with none skipped · cue titles match the map · dropped conditionals have no beat ·
+  spoken figures match the slide's figures. Failing means fixing the script to match the deck; a beat that
+  genuinely needs a new slide hands back to the presentation to re-issue the map rather than inventing a
+  cue. The script doc opens with the Slide Map it was written against, and closes with the agent-facing
+  contract: *"[N] slides, [N] beats — advance one slide each time you see a cue."*
+- **Everything downstream re-pointed at the deck:** the run order now states the deck must precede the
+  script and why · the infographic reuses the headline and glance slides instead of choosing stats again ·
+  the stat-graphic short pulls from the deck's price/supply/speed slides so the short and the video
+  reinforce the same number · distribution reuses the presentation's email version rather than writing a
+  second one · the 1st-of-month task prompt builds the deck first and runs the count check before saving.
 
 ## [0.79.0] — 2026-07-27
 

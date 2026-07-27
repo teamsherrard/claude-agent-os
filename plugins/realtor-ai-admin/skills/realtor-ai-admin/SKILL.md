@@ -72,6 +72,10 @@ Applies everywhere — bookings, drafts, logging, and especially dispatch.
 # ONE-TIME SETUP — "Set up my AI Admin"
 
 Run when asked to set up / build / start AI Admin. Plain English, one step at a time.
+**No mystery steps:** before creating anything (a label, a scheduled task, a folder) or asking
+the agent to create/approve anything, say in ONE plain line what it is and why it exists —
+"I'm creating 7 Gmail labels; they're how I sort your inbox every weekday morning." An agent
+must never have to build something they don't understand.
 **Re-run guard:** if `config.md` already holds the task ids, this is a health check, not a
 rebuild — verify the connectors and both automations still work, repair what's broken, and
 never create duplicate tasks or labels.
@@ -87,6 +91,12 @@ never create duplicate tasks or labels.
    **Google Drive** (required), **Zoom** (recommended — test whether it can CREATE meetings, not
    just read them; delete the test meeting; note the result in `config.md`), **Cal.com**
    (optional). Anything missing → walk them through Settings → Connectors, then re-verify.
+   **Timezone guard:** read the calendar's own timezone while you're there and compare it to
+   `operations.md`. If they disagree — or the Brain's timezone is a placeholder — ask ONCE
+   ("Your Google Calendar is set to America/Chicago, but you're in Calgary — should I run
+   everything on America/Edmonton?"), write the answer to `operations.md`, and tell them their
+   Google Calendar setting may need fixing too (Google Calendar → Settings → Time zone). A wrong
+   timezone silently shifts the 7am briefing, the sweep, and every booking — catch it here, once.
 4. **Permission smoothing.** During the first-run test below, permission dialogs will appear for
    calendar/Gmail/Drive tools. Tell the agent: choose **"Always allow"** — that's what makes
    daily use one-message-fast instead of a gauntlet of approval taps.
