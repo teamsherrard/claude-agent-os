@@ -9,7 +9,7 @@
     {
       "name": "realtor-ai-brain",
       "source": "./plugins/realtor-ai-brain",
-      "version": "0.28.0",
+      "version": "0.29.0",
       "description": "PLUGIN 1 — install first. The Realtor AI Brain: one shared brain (the agent's identity + memory) that powers every other system. Run 'Set up my Brain' once, and every tool already knows the agent. Plus a system-wide Capture layer: talk on the go and your ideas, wins, vendors, and market notes file themselves into the Brain."
     },
     {
@@ -21,13 +21,13 @@
     {
       "name": "realtor-youtube-system",
       "source": "./plugins/realtor-youtube-system",
-      "version": "0.9.3",
+      "version": "0.9.5",
       "description": "PLUGIN 3 — the YouTube System. Starts with a complete YouTube Game Plan (built on Mike Sherrard's frameworks) — channel audit, 3 high-intent pillars, ~50 exact titles, goal-math, and a 90-day plan — then ideation, research, SEO, scripting in the agent's own voice, lead magnets, repurposing, analytics, and coaching — plus a live Content Dashboard in the agent's own Notion, seeded from their Game Plan, where every video card fills with the script, SEO, lead magnet, and top-3 reference videos. Requires Plugin 1 (the Brain) set up first."
     },
     {
       "name": "realtor-shortform-system",
       "source": "./plugins/realtor-shortform-system",
-      "version": "0.10.3",
+      "version": "0.11.1",
       "description": "PLUGIN 4 — the Short-Form System. A routine-based short-form OS: daily green-screen reactions, talking-head value, and carousels, each optimized for Instagram/Facebook, TikTok, and YouTube Shorts. The agent thinks in formats; Claude keeps the funnel balanced, schedules posts through their own Metricool / GoHighLevel / Buffer (bring-your-own), and reviews performance on a 2-week loop. Shares one Notion Content Dashboard with the YouTube System (a Short-Form view of the same board). Text only — never films or designs. Requires Plugin 1 (the Brain) set up first."
     },
     {
@@ -41,6 +41,18 @@
       "source": "./plugins/realtor-ai-editor",
       "version": "0.17.2",
       "description": "PLUGIN 6 — the AI Editor. The agent talks in plain English; Claude directs Descript (their own account) to do the real editing — long-form and short-form in one tool — while they watch it happen live. Claude adds the multi-source B-roll Descript can't source itself (the agent's own footage, listing photos, free stock libraries), and a navigator skill turns vague or messy requests into one clear plan so the agent is never overwhelmed. Requires Plugin 1 (the Brain) set up first, plus a Descript connection."
+    },
+    {
+      "name": "realtor-listing-launch",
+      "source": "./plugins/realtor-listing-launch",
+      "version": "0.2.0",
+      "description": "PLUGIN 7 — the Listing Launch System. One input — the address, or one sentence on the go (\"Just listed 14 Oak — start the content\") — and every listing becomes a content and lead-gen event. Eight stages: WIN IT (the presentation + pre-listing package that gets the signature) · LIST IT (the MLS description) · LAUNCH IT (just-listed posts + Meta ad copy) · FILM IT (room-by-room YouTube walkthrough + full SEO package) · TOUR IT (listing photos → an animated cinematic home tour, no filming, no videographer) · CLIP IT (3 just-listed shorts) · SHOW IT (the open house kit) · CLOSE IT (just-sold content queued for closing day). Plus the brochure, the postcards, and the person-to-person outreach. The property is captured once and never re-asked. Requires Plugin 1 (the Brain) set up first; TOUR IT needs a Higgsfield connection and hands its clips to Plugin 6 (the AI Editor)."
+    },
+    {
+      "name": "realtor-market-system",
+      "source": "./plugins/realtor-market-system",
+      "version": "0.1.0",
+      "description": "PLUGIN 8 — the Monthly Market System. One command — \"run my market update for July\" — and the whole month builds itself. It pulls live local market data for the agent's city and communities (sourced and dated, never invented), writes it once into the Brain, then builds every piece off those exact numbers: the screen-share market report and its email version, the word-for-word YouTube script timed to the report page by page, three short-form concepts (green-screen article reaction, talking-head opinion, stat graphic), the branded 1:1 Instagram infographic brief, and the distribution pack — lead magnet, newsletter, captions, CTA map, and a four-week posting plan. The agent's only job is to film the script. A routine skill puts it on autopilot for the 1st of every month. Text, data, and design briefs only: it never designs, films, or publishes. Requires Plugin 1 (the Brain) set up first."
     }
   ]
 }
