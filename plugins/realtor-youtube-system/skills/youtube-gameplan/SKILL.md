@@ -57,6 +57,10 @@ Read `~/realtor-brain/brain.md`, then:
 ## Step 2 — Read the framework + line up the engines
 - `references/gameplan-framework.md` — **the backbone** (Mike's structure, the audit-scaling, pillar logic,
   the exact-title method, the goal-math, the 90-day calendar + metrics, the stamp).
+- **The Live Data Engine** (`${CLAUDE_PLUGIN_ROOT}/shared/composio-data-engine.md`) — when the agent's data
+  connection is available, EVERY data step below runs on it: the audit (recipe 1), competitor scan (2), the
+  **gap analysis + keyword research** that picks the pillars and grounds the titles (3). Read-only, always;
+  fall back to the classic public/CSV paths without it.
 - This skill **orchestrates the existing engines** — don't reinvent them:
   - Audit → `${CLAUDE_PLUGIN_ROOT}/skills/youtube-analytics/SKILL.md` (their channel/CSV/screenshot read)
   - Competitor analysis → `${CLAUDE_PLUGIN_ROOT}/skills/youtube-outliers/SKILL.md`
@@ -66,9 +70,11 @@ Read `~/realtor-brain/brain.md`, then:
 
 ## Step 3 — Get the channel data for the audit (scaled — house rules #7 plain talk)
 The audit flexes to wherever they are (full detail in the framework). The channel is mostly **public**, so:
-- **Active channel** → research the public channel from its URL: titles, view counts, lengths, top performers,
-  upload cadence. Offer the deeper read in one plain line: *"Want me to go deeper? Drop a screenshot of your
-  YouTube Studio analytics or your export and I'll add your watch-time and click data."* Never required.
+- **Active channel** → **data connection available? Pull it live** (engine recipe 1: channel stats → the
+  catalog → per-video views/lengths/dates — real numbers on every claim). Otherwise research the public
+  channel from its URL: titles, view counts, lengths, top performers, upload cadence. Either way, offer the
+  deeper read in one plain line: *"Want me to go deeper? Drop a screenshot of your YouTube Studio analytics
+  or your export and I'll add your watch-time and click data."* Never required.
 - **Empty / none / starting fresh** → skip the audit numbers entirely; lead with competitor analysis + the
   pillars + the launch calendar. (The setup answer already tells you which path.)
 - **Any public channel works — including someone else's.** The audit only needs a channel LINK. A coach or
@@ -87,9 +93,12 @@ pillars) + a head-to-head table vs a real local competitor (from Outliers). 10 �
 "too early to read much," acknowledge the start. 0 → skip; this becomes a launch plan. Always name the
 insight: *"your best-performing content has always been X — there's an audience, they just can't find you."*
 
-## Phase 2 — The 3 Pillars (the agent's thematic FOCUSES, chosen by LEAD TYPE)
+## Phase 2 — The 3 Pillars (the agent's thematic FOCUSES, chosen by LEAD TYPE + the GAP)
 Pick **3 high-intent pillars** from the Brain (niche, market, avatars) + real demand (Research) + what's
-winning locally (Outliers). Each pillar targets a specific motivated lead. For each: a short *"why this
+winning locally (Outliers). **With the data connection, run the gap analysis (engine recipe 3) on the
+candidate angles first** — real demand + weak/stale/non-local coverage = the pillar bet, with the evidence
+named in the plan ("roughly 240k searches' worth of demand, and no local agent owns it"). Each pillar
+targets a specific motivated lead. For each: a short *"why this
 pillar generates leads"* (the lead psychology) + a named playlist. (Riya, e.g.: New Construction / Calgary
 Market Updates / Relocation to Calgary.)
 **Reconcile with the doctrine's 6 content types (§8):** these 3 pillars are the agent's thematic focuses —
@@ -101,7 +110,9 @@ test all six types in the first 90 days before over-committing to a focus (§15.
 ## Phase 3 — Exact Video Titles per pillar (the gold)
 For each pillar, generate **15–20 EXACT, search-optimized titles** (not vague ideas), each annotated with
 **Search Intent & Lead Type**, ordered **broad → niche** (highest search volume → highest lead intent). Use
-real search language (the "type it into YouTube" test) + the idea-templates + competitor outlier patterns.
+real search language (the "type it into YouTube" test) + the idea-templates + competitor outlier patterns —
+**and with the data connection, ground them in the keyword research (engine recipe 3):** what people
+demonstrably search in their market, what ranks, and where the coverage gaps are.
 **Three hard gates on every title + ranked list (cohort feedback — these shipped wrong once):**
 1. **The market IS in the title.** Every title names their city/community ("…in Austin", "Austin vs …",
    "[Community] …"). A title that could run on any city's channel — e.g. "Do You Even Need a Realtor if the

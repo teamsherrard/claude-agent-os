@@ -22,6 +22,11 @@ it nearly effortless: **we build the deck, they hit record.** Apply `${CLAUDE_PL
 > **Claude output standard (§9.8)**. Market updates are a core pillar (§8) and one of the strongest authority +
 > seller-lead engines. This is a **flagship deliverable** → it keeps the credibility stamp (house rule #9).
 
+**The Live Data Engine** (`${CLAUDE_PLUGIN_ROOT}/shared/composio-data-engine.md`): with the data connection, gather + verify via recipe 6 — news search
+(dedupe, `title · source · published_at · link`), page-fetch verification of load-bearing stats, web-search
+fallback. The board-first sourcing rule below still governs what's usable; every number still carries
+source + date.
+
 ## Step 1 — Pull LAST month's complete LOCAL data, title it THIS month (sourced, never invented)
 **Timing (§9.3):** record in the **first week of the month**, using the **previous month's COMPLETE data** (a
 full month of stats), but put the **CURRENT month in the title** so it matches what viewers are searching now.

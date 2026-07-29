@@ -15,6 +15,11 @@ Find proven demand by studying what's already winning. Apply `${CLAUDE_PLUGIN_RO
 > proven topic from many angles to build topic authority — not copy it). Every recreate must be **localized,
 > on-brand, and stronger** than the original, never a clone.
 
+**The Live Data Engine** (`${CLAUDE_PLUGIN_ROOT}/shared/composio-data-engine.md`): with the data connection, competitor numbers come from the real API —
+recipe 2: all competitor channels' stats in one batched pull, their uploads, per-video views/lengths/dates.
+An outlier = views as a multiple of that channel's OWN median (small channels overperforming count double).
+Read-only; without the connection, the public-page reads below.
+
 ## Part A — Outlier scan (weekly MAX — never more)
 YouTube long-form doesn't move daily. Run this **once a week at most** — typically refreshed when the
 agent asks for ideas, or on demand.

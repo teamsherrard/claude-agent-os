@@ -86,8 +86,14 @@ it stalls them. Just confirm Drive's good and keep moving. One plain line is ple
   calendar, and the optional Monday email. **Never ask about them up front.** Only when the agent later
   actually wants one of those ("put my filming days on my calendar," "send me a weekly email") do you say
   *"one-time connect for that — takes a sec"* and set it up then, at the point of need.
-- **YouTube — no connection needed** (analytics via their Studio export; competitor scans via the web).
+- **YouTube — no connection required** (analytics via their Studio export; competitor scans via the web).
   Never ask them for API keys.
+- **The live data connection (optional, offer ONCE, right here):** if the cohort's data connection
+  (`${CLAUDE_PLUGIN_ROOT}/shared/composio-data-engine.md`) is available, offer it in one plain line:
+  *"Want me to hook into live YouTube data? One sign-in, and your audit, titles, and reference videos run
+  on real numbers instead of estimates."* Yes → the one-click sign-in (the engine handles it); no → fine,
+  everything works the classic way. **Record the answer in the YouTube Layer and never re-offer.** Never
+  block setup on it; never say "connect your channel" (it's a sign-in, and it's optional).
 
 ## Step 5 — Provision the Drive workspace (minimal)
 Using the Google Drive connector, create the structure in `references/drive-structure.md`: the top

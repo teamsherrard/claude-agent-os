@@ -19,6 +19,10 @@ The realtor films best in batches. Given the top ranked ideas:
   intros/CTAs to record together, and a simple shot checklist per video.
 - Offer to drop a "Filming Day" block on their **Google Calendar**.
 
+**Batch-day data check** (`${CLAUDE_PLUGIN_ROOT}/shared/composio-data-engine.md`): with the data connection, sanity-check the batch's topics via recipe 3
+(one quick gap look per topic — demand still there? anything gone stale?) before they film 4 at once. One
+line of findings, never a report.
+
 ## Check-ins (when they show up or ask "am I on track?")
 - Compare what's actually shipped (Videos folders + channel) vs their target cadence (Brain if set, else the
   doctrine §15.3: 2/week ideal · 1/week minimum). Hold the line that **consistency beats volume** — one

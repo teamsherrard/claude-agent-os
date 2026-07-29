@@ -1,6 +1,6 @@
 ---
 name: youtube-analytics
-description: The Analytics module for the Realtor YouTube System. Reads the agent's real YouTube performance and turns it into plain-English insight — what's working, what's not, and WHY (weak title/thumbnail vs weak hook vs mid-video drop-off) — then feeds Ideation and the Coach. V1 needs ZERO technical setup: the agent exports their analytics CSV from YouTube Studio and uploads/pastes it; Claude parses and diagnoses it. (A one-click "Connect YouTube with Google" OAuth and a team-held key for competitor data are backend upgrades the team builds later — the agent never touches an API key.) Triggers on "how's my channel doing", "analyze my analytics", "how did my last video do", "review my YouTube stats", "here's my YouTube export".
+description: The Analytics module for the Realtor YouTube System. Reads the agent's real YouTube performance and turns it into plain-English insight — what's working, what's not, and WHY (weak title/thumbnail vs weak hook vs mid-video drop-off) — then feeds Ideation and the Coach. V1 needs ZERO technical setup: the agent exports their analytics CSV from YouTube Studio and uploads/pastes it; Claude parses and diagnoses it. (With the cohort's live data connection, the public layer pulls automatically — no export needed; the CSV stays for private depth. The agent never touches an API key.) Triggers on "how's my channel doing", "analyze my analytics", "how did my last video do", "review my YouTube stats", "here's my YouTube export".
 ---
 
 # Analytics
@@ -11,6 +11,11 @@ Know what actually worked — from the agent's real numbers, with zero technical
 feedback: what to review §23.1, the key lead question §23.2, the 90-day audit §23.3, classifying videos by
 intent §23.4) and §24.5 (the channel-audit template). The doctrine's rule: **track through to leads &
 conversations, not just views** — and don't overreact to a single video.
+
+**The Live Data Engine** (`${CLAUDE_PLUGIN_ROOT}/shared/composio-data-engine.md`): with the data connection, the PUBLIC layer (per-video views, likes,
+lengths, dates vs the channel's own baseline) pulls live via recipe 1 — the monthly read needs no export at
+all. The Studio CSV/screenshot below remains the add-on for PRIVATE depth (watch time · CTR · retention),
+which the public API doesn't expose. Read-only, always.
 
 ## V1 — how the agent gives you data (dead simple: no API, no keys, no console)
 The agent exports their stats from **YouTube Studio** — a tool they already use — and uploads/pastes the CSV.
@@ -70,11 +75,11 @@ search intent · title quality · thumbnail quality · hook strength · **CTA st
 description optimization · next-video strategy · **lead-conversion path** · 90-day recommendations. (The Coach
 owns the deep on-demand audit — hand off there for the full pass.)
 
-## Backend upgrades (team builds later — the agent NEVER touches these)
-- **"Connect YouTube with Google" (OAuth):** a one-click sign-in that auto-pulls analytics so the agent
-  can skip the manual export. Requires the team to build/host the OAuth app — a Phase-6 project.
-- **Team-held Data API key:** used in the backend for competitor/public data (Outliers). One key,
-  team-side; agents never generate or see a key.
+## The data connection (delivered — the old "backend upgrade")
+The one-click sign-in that auto-pulls public data now EXISTS: the cohort's **live data connection** (see the
+Live Data Engine note above — offered once at setup, in plain words). It covers the public layer for their
+channel AND competitors. The agent never touches an API key; the Studio export remains the private-depth
+add-on. If the connection isn't there, everything above still works the classic way.
 
 ## Modes
 On-demand, whenever the agent brings fresh stats — monthly is the right cadence for long-form YouTube.

@@ -26,6 +26,10 @@ Read the AI Brain + YouTube Layer for:
 - The **active Game Plan pillars + goal** (from the YouTube Layer) — scope research to advance those (house rules #10)
 Research is ALWAYS scoped to this agent. Never return generic national filler.
 
+**The Live Data Engine** (`${CLAUDE_PLUGIN_ROOT}/shared/composio-data-engine.md`): when the agent's data connection is available, the lanes below pull
+REAL numbers through it — YouTube demand + who-ranks via recipe 3 (gap analysis / keyword research), news
+via recipe 6 — instead of estimates. Read-only, always; without it, the classic web-search paths below.
+
 ## Step 2 — Gather across three lanes
 Use web search + fetch. See `references/research-method.md` for sources (Canada vs US) and exact query patterns.
 
