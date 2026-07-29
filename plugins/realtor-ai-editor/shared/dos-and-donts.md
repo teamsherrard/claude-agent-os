@@ -15,6 +15,7 @@ The one-page rulebook for editing a realtor's video. The detailed refs back each
 ## Sound (clean the audio — and DON'T under-do it)
 - DO clean the audio on every video. **Default ~55%** (the sweet spot for a decent mic in a normal room — ~30% leaves a fishbowl/room echo). **Phone audio or echoey rooms → ~80–90%** (100% for bad rooms). Only drop to ~40% or off if the audio is genuinely pristine AND high intensity is visibly thinning/brightening the voice. If a separate high-quality mic recording exists, sync it in. Renders on *playback*, not scrub.
 - DON'T under-do it (a too-low setting leaves a fishbowl echo — that was a real miss), and DON'T blast it so high it thins the voice. DON'T ship raw/echoey audio either — if the source is genuinely bad, a cheap lav mic fixes it at the source.
+- **DON'T let Descript REGENERATE speech. Ever.** Asked to clean up stutters it will quietly synthesize the word in a **cloned voice** (seen live on a real client edit). That's AI-generated audio in the agent's own face-to-camera video — an authenticity and trust problem for a licensed realtor. Always instruct "CUT it, do not regenerate / overdub / voice-clone." Removal only.
 
 ## Readable, always (contrast)
 - DO put light text on dark, dark text on light — always high contrast.
