@@ -9,6 +9,9 @@ Descript does the editing; Claude issues the instructions and verifies. These us
 - `prompt_project_agent` — the natural-language editor (Underlord). **One well-formed PASS per call** — a pass batches every additive change that belongs together (see THE PASS PLANS below); only destructive cut passes stay separate and reviewed. Never split one pass's work into many tiny calls — every call costs credits and a query. Pass `project_id` (+ optional `composition_id`).
 - `publish_project` — render/export → returns `share_url` + `download_url` (480p–4K).
 - `wait_for_job` — call after EVERY `import_media` / `prompt_project_agent` / `publish_project` (they run async and return a `job_id`). Always show the agent the `project_url`.
+- `list_folders` — browse the Descript drive's folder tree (then filter `list_projects` by `folder_path`). Use it when an organized agent keeps projects in folders and "find my video" needs more than the flat list.
+- `export_timeline` — export the edit as a timeline file for a pro tool (Premiere / DaVinci Resolve / Final Cut / Pro Tools; XML/EDL/AAF — media files are NOT bundled). For the rare agent whose human editor wants to finish elsewhere: the Descript rough cut travels. Async → `wait_for_job` → download_url.
+- `report_upload_status` — direct-upload hygiene: if a PUT to an `upload_url` errors, is cancelled, or will never happen, report it (`failed` / `aborted` / `abandoned`) so the import job stops waiting on that file instead of hanging. (URL-import stays the default path; this is for the small-file direct uploads like a music MP3.)
 
 ## Getting the video IN — read this first (it's where edits fail)
 
@@ -21,9 +24,11 @@ Descript does the editing; Claude issues the instructions and verifies. These us
 
 After any import, `wait_for_job`; Descript auto-transcribes on import (don't re-transcribe).
 
+**Media minutes are a second meter (matters most on long-form).** Importing + transcribing consumes the agent's **media minutes** — roughly the video's length — which are separate from AI credits and also capped per month by their plan. A 20-minute video spends ~20 media minutes just arriving; a re-import spends them AGAIN for nothing. One more reason the never-re-import / one-shared-import rules are hard rules.
+
 ## General habits (always)
 
-- Work on the **original** composition in place — never create duplicate copies (they clutter the agent's Descript and confuse them about which version is which). Descript's own undo / version history is the safety net. Seed proper nouns first; **run THE PASS PLANS — the fewest well-formed passes** — and verify each pass landed before the next (catches overreach).
+- Work on the **original** composition in place — never create duplicate copies (they clutter the agent's Descript and confuse them about which version is which). Descript's own undo / version history is the safety net — and Underlord now shows a **Revert** button under each of its responses in the app, so the agent can undo any pass themselves (mention it if they're nervous). Seed proper nouns first; **run THE PASS PLANS — the fewest well-formed passes** — and verify each pass landed before the next (catches overreach).
 - **Clean starts & ends — OPEN ON THE HOOK.** Cut the getting-settled / throat-clearing intro (adjusting in the chair, rubbing hands, "okay let's go", "let's do this", throat-clears) so the first frame is the first real line of content. Trim the camera-off reach / dead air at the end too — but NEVER cut into the hook itself or the CTA. The end lands the instant the last word finishes — and **never end mid-sentence**; end on a complete thought, then an outro / CTA.
 - **Studio Sound — clean the audio (its own step) — and DON'T under-do it.** The sweet spot for a typical realtor setup (a decent mic in a normal, untreated room) is **~55%** — go too low (~30%) and a fishbowl / room echo survives (a real failure we hit). **Phone audio or echoey rooms → higher (~80–90%, 100% for bad rooms).** Only drop to ~40% or off if the audio is genuinely pristine (a pro mic in a treated space) AND high intensity is visibly thinning/brightening the voice. **Default to ~55% and adjust by ear.** If the agent has a separate high-quality mic recording, sync THAT in. Render-time effect — confirm on *playback*, not the scrub preview. Honest ceiling: a bad mic + reverberant room has limits → suggest a cheap lav mic at the source.
 - **Verify each step landed** via the job result (`status: success`, `project_changed: true`) — not the project's `updated_at` (which doesn't move for in-clip edits like captions). Have the agent eyeball visible changes.
@@ -71,7 +76,7 @@ Keep a tiny per-project log at **`~/realtor-brain/editor/jobs/<project-id>.md`**
 
 ### Credits / quota exhausted (named failure mode)
 
-On ANY signal that the agent's Descript is out of edit credits / hit a plan limit / quota exhausted (distinct from the 100-query session ceiling above) — **do NOT retry.** Say, in plain words:
+On ANY signal that the agent's Descript is out of edit credits / hit a plan limit / quota exhausted (distinct from the 100-query session ceiling above) — **do NOT retry.** The literal API signal is usually an **HTTP 402**, returned when the account is out of **AI credits** (Underlord edits) OR out of **media minutes** (imports/transcription) — two separate meters; name the right one when you explain it. Say, in plain words:
 
 > "Your Descript is out of edit credits this cycle — your work is saved; add credits or wait for renewal, then say 'finish my video' and I'll pick up exactly where we stopped."
 
