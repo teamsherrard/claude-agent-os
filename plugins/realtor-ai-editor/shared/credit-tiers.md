@@ -18,13 +18,13 @@ Descript AI credits are the agent's **money**. The #1 rule of this editor: **do 
 6. **Captions / on-screen text** — short-form: **karaoke** (big, below the face, active word in the brand accent). Long-form: **no word-by-word karaoke — an emphasis pop-up every ~2–3 min** (key phrase, off the face) instead.
 7. **Reframe to 9:16** (short-form), face centred.
 8. **A bit of energy (mandatory minimum, KEY beats only):** a couple of zoom-in/out punch-ins (each with a swoosh SFX), smooth transitions at scene changes, and a couple of SFX.
-9. **The graphics essentials only:** a hook card, the CTA, and up to 3 B-roll on the key lines.
+9. **The graphics essentials only:** a hook card, the CTA, and B-roll on the key lines (short-form up to 3; long-form ~1 per 45–60s — see the caps below).
 
 That clean core is the whole job. Everything past it is the agent's 20%.
 
 ## The HARD CAPS — never exceed (this is what stops credit drain)
 
-- **B-roll — scale to length.** Short-form (≤ ~2 min): **MAXIMUM 3 clips.** Long-form: **~1 cutaway per ~1.5–2 min — a 10-min video ≈ 5–7 clips**, curated, never wall-to-wall. **If the agent wants more, they add it themselves by hand** (free). Don't carpet the video to be "thorough."
+- **B-roll — scale to length.** Short-form (≤ ~2 min): **MAXIMUM 3 clips.** Long-form: **~1 cutaway per ~45–60 seconds — a 10-min video ≈ 10–13 clips, a 15-min ≈ 15–20** (~10–15% of screen time), placed in ONE batched pass. Long-form genuinely needs this much: at the old 1-per-1.5–2-min rate a real 12-min video came out under 4% covered and read flat. Still curated, never wall-to-wall. **If the agent wants even more, they add it by hand** (free).
 - **Graphics — keep them purposeful (cards are the single most credit-expensive thing in Descript — ~40–80 credits a pass).** Short-form: a hook card + a CTA card (**≤2–3 cards**) — the karaoke captions already carry the keyword emphasis, so no separate keyword-pop cards. Long-form: a hook card + the CTA + **an emphasis pop-up every ~2–3 min** (these replace karaoke as the emphasis layer; ~3–5 on a 10-min video). Beyond that, the agent adds more by hand.
 - **NO count-up number animations** — Descript's most expensive effect (a single pass can cost ~167 credits). If a number matters, it's a static card, or just let the caption say it.
 - **NO heavy AI effects** — background removal / green screen, eye contact, AI generation, AI-generated B-roll. Warn and skip.
@@ -39,7 +39,7 @@ These are the **countable targets** for each format. They pin down "how much" so
 | **Cards (total)** | hook card + CTA card (**≤2–3 cards**) | hook card + CTA card | hook/address card + price card + CTA (**≤3 cards**) | address/title card + price card + CTA (**≤3 cards**) |
 | **Emphasis layer** | **karaoke captions ON** | **~4 emphasis pop-ups** (every ~2–3 min) — **NO karaoke** | **karaoke captions ON** | info cards + an **occasional** emphasis pop-up — **NO karaoke** |
 | **Punch-ins** | **2–3** | a couple on key beats | a couple on key beats | a couple on key beats |
-| **B-roll** | **1–3 clips (max 3)** | **5–7 clips** | **property B-roll matched room-to-room (≤3 on a reel)** | property B-roll room-to-room (exempt from the per-minute scale; **no repeats**) |
+| **B-roll** | **1–3 clips (max 3)** | **10–13 clips** (~1 per 45–60s, ~10–15% screen time) | **property B-roll matched room-to-room (≤3 on a reel)** | property B-roll room-to-room (exempt from the per-minute scale; **no repeats**) |
 | **Music** | **ducked bed ON** | — (a subtle bed is the agent's optional 20%) | **ducked bed ON** | — (optional subtle bed) |
 | **Studio Sound** | **~55%** (~80–90% phone) | **~55%** (~80–90% phone) | **~55%** (~80–90% phone) | **~55%** (~80–90% phone) |
 | **Colour grade** | **on** | **on** | **on** | **on** |
