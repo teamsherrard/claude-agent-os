@@ -13,14 +13,18 @@
 - [source] — ~[n] deals · [source] — ~[n] deals · …
 
 ## The 3 weekly non-negotiables
-1. [ ]
-2. [ ]
-3. [ ]
+1. **Content (short-form + YouTube)** — required; this is the engine the system amplifies
+2. [direct-lead activity]
+3. [direct-lead activity]
+
+## Daily & weekly KPIs
+- **Daily:** [e.g. ~5 outreach conversations · 1 short-form post · X follow-ups]
+- **Weekly:** [the weekly totals — conversations, posts, appointments, open houses]
 
 ## Monthly milestones
 - **Month 1:** [leading indicators] · **Month 2:** [ ] · **Month 3:** [ ]
 
 ## Weekly dashboard
-| Week | Conversations / leads | Appointments set | Deals in pipeline | Content shipped | 3 moves done? |
-|---|---|---|---|---|---|
-| | | | | | |
+| Week | Conversations / leads | Appointments set | Deals in pipeline | Content shipped | Daily KPIs hit? | 3 moves done? |
+|---|---|---|---|---|---|---|
+| | | | | | | |
