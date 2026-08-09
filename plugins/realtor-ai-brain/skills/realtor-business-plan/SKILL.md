@@ -109,10 +109,10 @@ Assemble it into something they'll actually keep and revisit.
   milestones, dashboard). Every skill can now read what the agent is driving toward.
 - **If you captured the income/deal goal here** (because `strategy.md` didn't have one), also write it into
   `identity/strategy.md` — so the two never diverge and no later skill re-asks the goal.
-- **Render a premium plan-book doc** to the agent's Drive `Realtor AI Brain → exports` (per
-  `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` → structured text rendered via `shared/render_doc.py`) — a
-  clean 3–4 page "[Agent] — 90-Day Business Plan" they can keep and print. The markdown is the source of truth;
-  the doc is the keepsake.
+- **Refresh the master "Your AI Brain" document** (per `${CLAUDE_PLUGIN_ROOT}/shared/brain-doc.md`) so its
+  **Business Plan section fills in** — everything stays in the one organized Brain doc, always current, rather
+  than a separate scattered file. *(Optional: if they'd like a standalone 90-day plan one-pager to print, also
+  render just the plan via `shared/render_doc.py`.)*
 - Confirm: *"Your 90-day plan is set — [N] deals, three weekly moves, and a dashboard to track it. I'll check in
   weekly."* (Only if their **AI Admin is set up**, add: *"— and your AI Admin can remind you of your three moves
   in your morning brief."* Don't promise the brief to an agent who hasn't set up the Admin.)

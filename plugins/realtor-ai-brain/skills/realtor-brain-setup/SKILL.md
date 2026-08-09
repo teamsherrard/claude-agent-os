@@ -43,7 +43,7 @@ you copy it into place, fill it through the phases, then push it to Drive. Exact
 │   ├── operations.md  vendors.md  strategy.md  compliance.md                      (Phases 6–7)
 │   └── publishing.md             # scaffolded empty — the Short-Form System's setup writes it
 ├── memory/                   # scaffolded empty — skills fill these over time
-│   └── clients.md  listings.md  content-log.md  deadlines.md  ideas.md  performance.md
+│   └── clients.md  listings.md  content-log.md  deadlines.md  ideas.md  performance.md  market-data.md
 ├── intake/                   # drop zone — agent uploads materials here, then "import my materials"
 ├── assets/                   # logo, headshot, fonts
 ├── config.md                 # connectors, timezone, Brain schema version
@@ -78,6 +78,10 @@ Drive with a fresh empty one** at the finalize push. So:
      only the relevant phase. **Never silently overwrite a complete Brain — and never push a fresh
      empty Brain over a real one in Drive.** Rebuild-from-scratch requires the agent's explicit
      confirmation after you tell them their existing Brain will be replaced.
+   - **"Review it" / "show me my Brain" / "regenerate my Brain document"** → don't re-interview; just
+     **rebuild the master "Your AI Brain" document** from the current identity files (per
+     `${CLAUDE_PLUGIN_ROOT}/shared/brain-doc.md`), save it to Drive `exports`, and share it. It always
+     reflects the latest Brain, including the Business Plan section once that's built.
 
 ---
 
@@ -223,10 +227,12 @@ agent connect it before finishing. Set their **timezone** and pull the **default
 3. **Save the Brain to Google Drive — do NOT skip.** Use the **realtor-brain-sync** skill to create the
    `Realtor AI Brain` folder in the agent's Drive and push the whole brain up. This is what makes it
    persist; the local copy is gone next session. Confirm it's saved before continuing.
-4. **Save a welcome doc** to the agent's Drive `Realtor AI Brain → exports` — a short, friendly doc
-   the agent can keep: "Here's your Brain — here's what's in it, and here's what to try first."
-   (Per `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` — structured text rendered to a styled `.docx`
-   via `shared/render_doc.py`, then uploaded.)
+4. **Build the master "Your AI Brain" document** — the single, organized deliverable the agent keeps. Follow
+   `${CLAUDE_PLUGIN_ROOT}/shared/brain-doc.md`: assemble every section (Snapshot → Who You Are → Market → Offer →
+   Voice/Proof → Brand Direction → Content Plan → **Business Plan** → Operations → Compliance) from the identity
+   files, render it premium via `shared/render_doc.py`, and save to Drive → `Realtor AI Brain → exports` as
+   "[Agent] — AI Brain". Sections not built yet (Business Plan, Operations) render as a friendly placeholder so
+   the agent sees what's still open — the Business Plan section fills in the moment they build it.
 5. **Confirm and hand off.** Show them the finished structure and tell them what to do next:
 
 > 🎉 Your AI Brain is built. From now on, every skill already knows you — you'll never re-explain your
