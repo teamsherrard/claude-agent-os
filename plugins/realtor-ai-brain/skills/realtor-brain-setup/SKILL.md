@@ -193,26 +193,22 @@ compliance" — and "set up my operations" when they're ready for their AI Admin
 
 ---
 
-## Step 6 — Connect your tools
+## Step 6 — Confirm your tools (most are already connected)
 
-Open `config.md` and walk the agent through connecting the core connectors, ticking each box as it's
-done:
+**Most agents reach this step with their connectors already set up** — in the cohort flow, tools are
+connected *before* the Brain build. So **check what's already connected and just confirm it — don't
+re-walk them through connecting things they've already done.** Something like: *"Looks like your Google
+Drive, Gmail, and Calendar are already connected — you're all set."* Tick what's connected in `config.md`.
 
-- **Google Drive** — **REQUIRED. This is where the Brain lives.** Cowork's local storage is wiped
-  between sessions, so the Brain must be saved to the agent's Drive or it disappears next time. Connect
-  this — don't skip it.
-- **Gmail** (required for AI Admin — inbox sweep + client email drafts; note: draft-only, it cannot send)
-- **Google Calendar** (required for AI Admin — booking showings/consults)
-- **Zoom** (recommended for AI Admin — auto-creates meeting links on virtual bookings; Google Meet is the
-  automatic fallback, so this can be added later)
-- **Cal.com** (optional — client self-booking links; AI Admin falls back to their own booking link or to
-  proposing times by email)
-- **Pexels** (optional — only if they'll use video skills)
+Only step in for what's **missing**:
+- **Google Drive** — **REQUIRED. This is where the Brain lives** (Cowork's local storage is wiped between
+  sessions). If it's somehow not connected, help them connect it before finishing — never skip this one.
+- **Gmail** (AI Admin — inbox sweep + email drafts, draft-only) · **Google Calendar** (AI Admin booking) —
+  if missing, note "set up later" in `config.md` and proceed.
+- **Zoom** (optional — meeting links; Google Meet is the fallback) · **Cal.com** (optional — client
+  self-booking) · **Pexels** (optional — video skills) — missing → note it and move on.
 
-If Gmail/Calendar/Zoom/Cal.com/Pexels aren't available, note "not connected — set up later" in `config.md` and
-proceed. **Drive is the exception — without it the Brain can't be saved** — so if it's missing, help the
-agent connect it before finishing. Set their **timezone** and pull the **default CTA** from
-`identity/voice.md` into `config.md`.
+Set their **timezone** and pull the **default CTA** from `identity/voice.md` into `config.md`.
 
 ---
 
