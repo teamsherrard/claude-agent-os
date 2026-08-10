@@ -7,9 +7,22 @@ The single source of truth for how the agent's Google Drive is organized, and th
 > uploaded, footage — is fair game for the system to read and use. The "brain" is the *whole* folder, not one file.
 
 ## The one guardrail — the WORKSPACE, not the whole Drive account
-"Read the whole Drive" means the agent's **`Social Agent OS` workspace folder** — **NOT** their entire Google Drive
-(which holds tax docs, personal files, unrelated stuff). **Scope every read to inside `Social Agent OS`.** Never
+"Read the whole Drive" means the agent's **workspace folder** — **NOT** their entire Google Drive
+(which holds tax docs, personal files, unrelated stuff). **Scope every read to inside the workspace folder.** Never
 crawl the agent's full Drive account — that's noisy and a privacy problem.
+
+## Locating the workspace — RENAME-PROOF (the agent will rename it)
+Agents will want to name this folder after their business — "Realty Group OS", "The Jenkins Group Hub", whatever.
+**That's encouraged — it's their branded home base.** So the system must **NEVER depend on the folder being called
+"Social Agent OS."** `Social Agent OS` is only the *default label*, never an identifier. Locate it robustly:
+- **Google Drive folder IDs never change on rename.** At setup, capture the folder's **ID + shareable link** and
+  store them in `config.md` (and inject at session start). Do all reads/writes **by folder ID** — a rename changes
+  the display name, not the ID, so nothing breaks.
+- **Marker fallback.** The system drops a hidden marker file in the workspace (`_workspace.md` — it records the
+  chosen name, folder ID, and link). If the ID ever fails (moved, new device, cleared cache), **search the agent's
+  Drive for that marker file and use its parent folder** — whatever the folder is now named — then re-cache the ID.
+- **At setup, let them name it** (default "Social Agent OS", or their own business name). Record name + ID + link.
+- **Never string-match "Social Agent OS"** anywhere in a skill. Find the workspace by ID, then marker — never by name.
 
 ## The structure (the plugin builds this automatically, once)
 ```
