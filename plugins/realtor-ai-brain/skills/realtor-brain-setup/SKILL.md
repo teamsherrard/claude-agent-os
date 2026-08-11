@@ -195,20 +195,30 @@ compliance" — and "set up my operations" when they're ready for their AI Admin
 
 ## Step 6 — Confirm your tools (most are already connected)
 
+**First, set the provider** (per `${CLAUDE_PLUGIN_ROOT}/shared/connectors.md`): is this agent a **Google**
+person (Drive · Gmail · Google Calendar) or a **Microsoft** person (OneDrive · Outlook, via the
+Microsoft 365 connector)? Detect from what's already connected; if both or neither, ask plainly —
+*"Are you a Google person or an Outlook/Microsoft person?"* Write `Storage provider:` in `config.md`.
+Every skill (including the AI Admin) uses that flag from now on — never re-ask.
+
 **Most agents reach this step with their connectors already set up** — in the cohort flow, tools are
 connected *before* the Brain build. So **check what's already connected and just confirm it — don't
 re-walk them through connecting things they've already done.** Something like: *"Looks like your Google
 Drive, Gmail, and Calendar are already connected — you're all set."* Tick what's connected in `config.md`.
 
 Only step in for what's **missing**:
-- **Google Drive** — **REQUIRED. This is where the Brain lives** (Cowork's local storage is wiped between
-  sessions). If it's somehow not connected, help them connect it before finishing — never skip this one.
-- **Gmail** (AI Admin — inbox sweep + email drafts, draft-only) · **Google Calendar** (AI Admin booking) —
-  if missing, note "set up later" in `config.md` and proceed.
-- **Zoom** (optional — meeting links; Google Meet is the fallback) · **Cal.com** (optional — client
+- **Storage — REQUIRED. This is where the Brain lives** (Cowork's local storage is wiped between
+  sessions): **Google Drive** on `google`, **Microsoft 365 (OneDrive)** on `microsoft`. If it's somehow
+  not connected, help them connect it before finishing — never skip this one.
+- **Email + Calendar** (AI Admin — inbox sweep, drafts, booking): **Gmail + Google Calendar** on `google`;
+  on `microsoft` the same **Microsoft 365** connector covers Outlook Mail + Calendar (drafts-only policy
+  either way). If missing, note "set up later" in `config.md` and proceed.
+- **Zoom** (optional — meeting links; Google Meet/Teams is the fallback) · **Cal.com** (optional — client
   self-booking) · **Pexels** (optional — video skills) — missing → note it and move on.
 
-Set their **timezone** and pull the **default CTA** from `identity/voice.md` into `config.md`.
+Set their **timezone**, their **locale** (country · currency · units — e.g. Canada · CAD · sq ft; every
+skill formats prices, dates, and measurements to this), and pull the **default CTA** from
+`identity/voice.md` into `config.md`.
 
 ---
 
@@ -219,10 +229,15 @@ Set their **timezone** and pull the **default CTA** from `identity/voice.md` int
    identity files. Keep the laws (read-first · write-back · stay-compliant) and the file map intact.
    This is the file every skill reads first — make the quick-reference genuinely complete so most skills
    never need to open another file.
-2. **Stamp `config.md`** — version, created date, timezone.
-3. **Save the Brain to Google Drive — do NOT skip.** Use the **realtor-brain-sync** skill to create the
-   `Realtor AI Brain` folder in the agent's Drive and push the whole brain up. This is what makes it
-   persist; the local copy is gone next session. Confirm it's saved before continuing.
+2. **Stamp `config.md`** — version, created date, timezone, locale, storage provider.
+3. **Save the Brain to their cloud storage — do NOT skip.** Use the **realtor-brain-sync** skill to create
+   the workspace folder in the agent's Drive/OneDrive (per provider), push the whole brain up
+   **(write → push → verify — on `microsoft`, the first write is also the write-actions probe; if it's
+   org-gated, surface it per `shared/connectors.md`)**, then **capture into `config.md`: the workspace
+   folder ID, its shareable link, and the owner account** — the ID is how every future session finds it
+   even if they rename the folder. Confirm it's saved before continuing.
+   **Hand them the link:** *"This is your home base — bookmark it. Everything the system builds lives
+   here, and you can rename the folder to your business name anytime; I'll still find it."*
 4. **Build the master "Your AI Brain" document** — the single, organized deliverable the agent keeps. Follow
    `${CLAUDE_PLUGIN_ROOT}/shared/brain-doc.md`: assemble every section (Snapshot → Who You Are → Market → Offer →
    Voice/Proof → Brand Direction → Content Plan → **Business Plan** → Operations → Compliance) from the identity

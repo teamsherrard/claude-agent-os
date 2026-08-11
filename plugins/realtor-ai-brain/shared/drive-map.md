@@ -44,7 +44,11 @@ Agents will want to name this folder after their business — "Realty Group OS",
 The system **auto-creates all of this at setup** — the agent never builds a folder. The stable folders (01–06
 + the Content sub-buckets) are created up front; **per-listing subfolders under `04 · Listings` are created on
 demand** as the agent adds properties. **Storage-agnostic:** the exact same map is built on **Google Drive OR
-OneDrive** (via the provider set in `config.md` — see the Microsoft tier).
+OneDrive** — the provider lives in `config.md` and the operation mapping in `shared/connectors.md`.
+
+**Scope: one workspace = one agent.** The Brain models a single agent — there is no multi-user/team mode.
+A team or VA can be *given access* via normal Drive/OneDrive sharing, but they're working in that one
+agent's Brain (one voice, one identity); don't present it as a team system.
 
 ## How plugins use it
 - **Read across the whole workspace, by relevance — not just `_engine`.** A content skill can reuse a past
@@ -61,6 +65,11 @@ OneDrive** (via the provider set in `config.md` — see the Microsoft tier).
   - **Brand assets** (logo, headshots, kit) → `02 · Brand/`. **The agent's pre-existing material** → `06 · Materials/`.
 - **Hand the agent the link.** At the end of setup, give them the **direct link** to their workspace folder and
   tell them to **bookmark it** — that's their home base.
+- **Files vs status (the Notion board).** The workspace holds the **files**; the Notion Content Dashboard (if
+  they use it) holds the **status** (Idea → Scripted → Recorded → Published); `memory/content-log.md` is the
+  system's own memory of what shipped. When they disagree: **the workspace wins on whether a file exists; the
+  board wins on status.** Skills that finish a piece update all the places they own — never invent status from
+  one source alone.
 
 ## Presentation rules (never make the agent feel technical)
 - **Agent-friendly names only** on anything they see — never `identity / memory / exports` in front of them.

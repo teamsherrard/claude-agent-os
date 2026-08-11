@@ -2,9 +2,9 @@
 *Last updated: [Month Year] · Realtor AI Brain v[x.y]*
 
 > **This is the index. Every skill reads this file first.**
-> **This Brain lives in the agent's Google Drive (`Realtor AI Brain` folder).** The local copy is synced
-> from Drive each session. After you change anything here, it gets pushed back to Drive (via
-> `realtor-brain-sync`) so it persists.
+> **This Brain lives in the agent's cloud workspace** (Google Drive or OneDrive — see `config.md` for the
+> provider + workspace folder ID). The local copy is synced down each session. After you change anything
+> here, it gets pushed back (via `realtor-brain-sync`, write → push → verify) so it persists.
 
 ## How to use this Brain (the laws)
 1. **READ this first.** For depth on any topic, open the specific file listed under "The files" below.
@@ -62,7 +62,10 @@ If `~/realtor-brain/` is missing files, tell the agent to run **Realtor AI Brain
 - `identity/compliance.md` — disclaimers, license display, claims to avoid (read before publishing)
 
 **memory/** — what the agent has done (grows daily)
-- `memory/clients.md` — client ledger
+- `memory/clients.md` — client ledger — **the AI's working memory, NOT the CRM.** The agent's CRM
+  (GoHighLevel, Follow Up Boss, etc.) stays the system of record for contacts + pipeline; this file holds
+  the context the AI needs (notes, active matters, preferences). Never present it as the CRM, and when
+  they conflict, the CRM wins.
 - `memory/listings.md` — listings + which content has been made
 - `memory/content-log.md` — everything published (check before creating, to avoid repeats)
 - `memory/performance.md` — what's working in content (written by the 2-week review; read before planning)
