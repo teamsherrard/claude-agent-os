@@ -1,6 +1,6 @@
 ---
 name: editor-navigator
-description: The friendly front door for the Realtor AI Editor. Real estate agents don't know how to "prompt" — they give vague, messy, or contradictory requests. This skill does the translating: it turns any plain-English (or confused) request into one simple, confirmable plan, asks at most ONE easy question with a recommended answer, never overwhelms, and routes to the right editing skill. It also handles tricky moments calmly and without jargon — "just make it good", "I don't like it", asking for something Descript can't do, piling on requests, or a frustrated agent. Trigger on: any vague or general video request ("edit my video", "help with my video", "make this better", "I have a video", "make me a reel", "can you fix this", "I don't know what I want"), or whenever a request is unclear, contradictory, or could overwhelm the agent. This is the DEFAULT entry point for the editor.
+description: The friendly front door for the Realtor AI Editor. Real estate agents don't know how to "prompt" — they give vague, messy, or contradictory requests. This skill does the translating: it turns any plain-English (or confused) request into one simple, confirmable plan, asks at most ONE easy question with a recommended answer, never overwhelms, and routes to the right editing skill. It also handles tricky moments calmly and without jargon — "just make it good", "I don't like it", asking for something Descript can't do, piling on requests, or a frustrated agent. It also PICKS UP A STOPPED EDIT — if an edit halted partway (out of Descript credits, a closed session, "I'll finish it tomorrow"), it finds the checkpoint log and resumes from the exact pass that stopped, without re-running anything already paid for. Trigger on: any vague or general video request ("edit my video", "help with my video", "make this better", "I have a video", "make me a reel", "can you fix this", "I don't know what I want"); ALSO trigger on any request to resume or finish an interrupted edit — "finish my video", "pick up where we left off", "continue my edit", "my edit stopped", "it ran out of credits", "resume my video", "carry on with my video"; or whenever a request is unclear, contradictory, or could overwhelm the agent. This is the DEFAULT entry point for the editor.
 ---
 
 # Editor Navigator — the front door
@@ -52,6 +52,18 @@ If they don't answer or seem unsure, **pick the recommended default and proceed*
 | "edit my listing/home tour", "my property video", "walkthrough" | property tour (footage-specific) | `edit-listing` |
 | "add the skyline", "add some footage", "make it less boring" | B-roll | `editor-broll` (inside an edit) |
 | "set this up", "it's not connected", first run | onboarding | `editor-setup` |
+| **"finish my video", "pick up where we left off", "continue my edit", "my edit stopped", "it ran out of credits", "resume my video"** | **resume a stopped edit** | **"Picking up a stopped edit" below → back into the original edit skill in resume mode** |
+
+## Picking up a stopped edit ("finish my video")
+
+An edit can stop partway — their Descript ran out of credits, the session closed, they left it till tomorrow. **We tell the agent to say "finish my video", so this must always land.** Never restart from scratch, and never re-run a pass they already paid for.
+
+1. **Find the video.** If they named it, use it. Otherwise `list_projects` and offer the most recently updated one in a single line: *"Picking up 'Phoenix Relocation' — right one?"*
+2. **Read the checkpoint log** at `~/realtor-brain/editor/jobs/<project-id>.md` (convention in `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`).
+   - **Log exists** → say ONE plain line about what's already done — *"Audio and the first cutaways are done, so I'll finish the b-roll and the cards"* — then hand back to the matching edit skill (`edit-longform` / `edit-shortform` / `edit-listing`) in **resume mode: run ONLY the passes that are not in the log.**
+   - **Log missing** (a different machine, a wiped sandbox, or it stopped before the first pass landed) → **do not guess and do not re-run blindly.** Inspect the project for FREE first: `get_project` (duration, media) plus `export_transcript` (are the filler words gone? is it already cut?). Then state what you believe is already done and get a one-word confirm **before spending anything**.
+3. **If they stopped because of credits, confirm they're actually topped up** before firing a paid pass — otherwise it fails again and costs them another round-trip. Ask plainly: *"Are your Descript credits back?"*
+4. **Then continue the normal pass plan** from where it stopped — same rules, same final check, same review-draft delivery.
 
 ## Smart defaults (so you never stall)
 

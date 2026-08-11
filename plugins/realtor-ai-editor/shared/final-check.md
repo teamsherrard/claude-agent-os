@@ -44,7 +44,7 @@ This is the real gate. Split into BLOCKERS (auto-fail — cannot deliver) and PO
 4. `ended on a complete thought` — never mid-sentence. (transcript/clip end)
 5. `CTA on screen` — the agent's CTA card is present at the end. (VISUAL — cite frame)
 6. `colour grade applied` — subtle grade is on; skin not pale/orange/yellow. (VISUAL — cite frame)
-7. `NO text/cards over the face` — captions AND cards all clear of the face (or timed over B-roll). (VISUAL — cite frame at each card/caption moment)
+7. `NO text/cards over the face` — captions AND cards all clear of the face (or timed over B-roll). **Check the zone matches the FORMAT** (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`): vertical → top edge above the hairline; **16:9 long-form → LOWER THIRD (~75–80% down)**. A card pinned to the top of a 16:9 talking head is the known failure — it lands on the face. (VISUAL — cite frame at each card/caption moment)
 8. `no exposed black bars` — footage fills the frame; no exposed edges from zooms. (VISUAL — cite frame)
 9. `no accidental background removal` — his real background is intact, NOT black/keyed. (VISUAL — cite frame)
 10. `b-roll within the cap + no repeats` — short-form ≤ 3 total; long-form ~1 per **45–60 seconds** (~10–13 on a 10-min, ~15–20 on a 15-min; ~10–15% of screen time) — a long-form that reads as a flat talking head is UNDER-rolled; no repeated clips anywhere. **Every clip must be instantly recognizable in a 4-second glance** — a dark blur or abstract macro that you can't identify = FAIL, swap it (caught live). EXCEPTION — long listing tour: the room-by-room property cutaways (per edit-listing) are exempt from the per-minute scale; the no-repeats rule still holds. (count them; cite a frame if unsure)

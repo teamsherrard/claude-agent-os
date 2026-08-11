@@ -22,16 +22,28 @@ On a **short-form reel** that's **2, maybe 3 cards total** — the karaoke capti
 - **Typography is DESIGNED, not assembled — this is the bar cards keep failing.** Every line centred relative to the panel AND to each other (two stacked lines with different centres read broken); **single spaces only** (a double space like "MORE IN␣␣90 DAYS" is instantly sloppy); a deliberate size hierarchy; and the **panel HUGS the text** — tight, even padding (~40–60px), never an oversized slab of empty colour. **ALWAYS build a card as ONE single text object** (a text layer with its own background colour) — never separate text layers stacked on a rectangle: stacked layers drift out of alignment, which is exactly how the rejected "horrible" hook card happened (it was four separate layers). **And NEVER use Descript's library templates/layouts for a card — live-tested and banned:** a "title template" applied via Underlord is a LAYOUT object that hijacks the scene — it zoomed the footage into a giant close-up and ran its text off the edge of the frame, while reporting the video "untouched." One text object is the ONLY approved build.
 - **No cramped multi-box grids** — Descript renders 2×2 quadrants / packed grids BROKEN (overlapping, cut-off). For a multi-part idea use **sequential cards** (one at a time) or a simple stacked list, full-size.
 
-## OFF THE FACE — how (this is the rule that kept getting broken)
+## OFF THE FACE — how (FORMAT-AWARE; this is the rule that kept getting broken)
 
-On a vertical 9:16 talking-head the speaker's head sits **HIGH**, so a card in the upper third lands **on the face**. To keep it off:
+**Never assume a zone — LOOK first.** Before placing any card, extract one frame of the actual footage (free — costs no credits) and see where the speaker really sits. The safe zone is different for vertical and horizontal, and it changes with how the agent framed themselves. Placing by habit is what put a card across a real client's eyes.
 
-- **Pin the card high above the hairline — just inside the top ~8–10% platform-chrome margin (a small gap from the very top; `${CLAUDE_PLUGIN_ROOT}/shared/layouts.md` is canonical)**, OR
-- **Time the card OVER a B-roll moment** (the speaker's face isn't on screen then — the safest option), OR
-- Place it in a genuinely clear area.
-- **Never** over the face, and **never** over the bottom captions.
-- **Frame-QA every card**: read the exported frame and confirm nothing touches the face. Claude can't see the live render — verify on a frame, and the agent eyeballs it before posting.
-- **Stay inside the platform safe zones too**: keep every card/panel out of the right ~12% icon rail and the top/bottom UI bars; **centre-align, never flush-right** — widen a panel by shrinking the text, not by extending into the right rail (`${CLAUDE_PLUGIN_ROOT}/shared/layouts.md`).
+### VERTICAL 9:16 (reels)
+The head sits **HIGH**, but there is usually a sliver of room above it.
+- **Default: pin the card to the extreme TOP edge, above the hairline** — just inside the top ~8–10% platform-chrome margin (`${CLAUDE_PLUGIN_ROOT}/shared/layouts.md` is canonical for the vertical safe zones). *Tested and working.*
+- **Or time it over a B-roll moment** (no face on screen — the safest option in any format).
+- Captions own the bottom (≈0.82–0.86) — a card must never collide with them.
+- **Stay inside the vertical safe zones**: out of the right ~12% icon rail and the top/bottom UI bars; **centre-align, never flush-right** — widen a panel by shrinking the text, not by pushing into the rail.
+
+### HORIZONTAL 16:9 (long-form YouTube)
+⚠️ **The top is usually NOT available — do not default to it.** On a 16:9 talking head the speaker's head routinely reaches or nearly reaches the top of frame. Pinning "above the hairline" here is exactly what landed a card across a real client's eyes in live testing.
+- **Default: the LOWER THIRD — vertical centre ~75–80% down.** Below the chin, above the bottom ~10% (YouTube's player controls and progress bar appear there on hover). *This is the tested-working zone.*
+- **Use the width.** 16:9 gives you lots of horizontal room — prefer **ONE wide line** over two stacked lines. It reads better and it dodges the overflow trap.
+- **If the speaker is framed off-centre** (sitting left or right in frame), the empty side is an excellent card zone — use it.
+- **The vertical safe zones do NOT apply.** There is no icon rail on a YouTube 16:9 video — don't shrink a card to dodge a rail that isn't there. The only margin that matters is the bottom ~10% player chrome.
+- **Or time it over a B-roll cutaway** — still the safest option.
+
+### Both formats
+- **Never** over the face. **Never** over the captions.
+- **Frame-QA every card at full resolution** and confirm nothing touches the face (`final-check.md` blockers 7 and 12). Claude can't see the live render — verify on a frame, and the agent eyeballs it before posting.
 
 ## Be explicit with Descript
 

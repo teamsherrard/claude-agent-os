@@ -19,7 +19,9 @@ Descript has a **Layout** feature (Properties → Layout) — use it. The classi
 
 Split-screen / picture-in-picture is also good for screen-shares (keep the face in a corner) and side-by-side comparisons. Same rule: the agent should almost always stay visible on a talking-head reel.
 
-## Platform safe zones (where the feed UI eats the frame)
+## Platform safe zones — VERTICAL 9:16 ONLY (where the feed UI eats the frame)
+
+> **These margins apply to vertical reels only.** A 16:9 YouTube video has **no icon rail and no handle bar** — don't shrink a long-form card to dodge a rail that isn't there. For 16:9 the only margin that matters is the bottom ~10% (YouTube's player controls on hover), and the card zone is the **lower third** — see `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`.
 
 On IG / TikTok / YouTube Shorts the app overlays its own UI **on top of** your vertical video — so keep ALL text, cards, and panels inside a **centre-safe box**:
 
