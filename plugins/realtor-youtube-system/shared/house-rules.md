@@ -52,8 +52,9 @@ Every saved doc is **rendered to a formatted `.docx`** in one neutral house styl
 the skill writes structured text, and the shared renderer turns it into real headings, bullet lists, and
 tables. Never write an unbroken wall. Every doc MUST have:
 - A clear **title line** at the top, then a one-line meta line (e.g. `Runtime ~8 min · Calgary buyers · Jun 13`).
-- **Section headers** that stand out — ALL-CAPS with a label/timestamp, set off by a divider line,
-  e.g. `──────── HOOK · 0:00 ────────`.
+- **Section headers** that stand out — ALL-CAPS with a label/timestamp. Canonical form: the label WRAPPED
+  by full-width divider rules (a `────…` line above AND below — doc-format's grammar); the compact inline
+  form `──────── HOOK · 0:00 ────────` also renders. Follow doc-format's skeletons exactly.
 - **Generous spacing** — a blank line between every section and around stage cues. Whitespace IS the format.
 - **Stage cues / on-screen notes on their own lines**, clearly marked: `>> ON SCREEN: ...`, `[PAUSE]`, `FACT: ...`.
 - **Bullets** as real list lines (`•`); **chapters/timestamps** laid out one per line.

@@ -1,8 +1,8 @@
 {
   "name": "realtor-youtube-system",
   "displayName": "Realtor YouTube System (Plugin 3)",
-  "version": "0.10.0",
-  "description": "An always-on YouTube brain for real estate agents — starts with a complete YouTube Game Plan (built on Mike Sherrard's frameworks), then ideation, research, SEO, scripting in the agent's own voice, lead magnets, repurposing, analytics, and coaching. Handles everything around the camera; never films, edits, or designs. Requires Plugin 1 (the Brain) set up first.",
+  "version": "0.10.1",
+  "description": "An always-on YouTube brain for real estate agents — starts with a complete YouTube Game Plan (built on Mike Sherrard's frameworks), then ideation, research, SEO, scripting in the agent's own voice, lead magnets, repurposing, analytics, and coaching. Includes the Notion Content Dashboard (every video as a card that fills itself) and the Live Data Engine (real YouTube + search data behind the audits, titles, references, and analytics — read-only). Handles everything around the camera; never films, edits, or designs. Requires Plugin 1 (the Brain) set up first.",
   "author": {
     "name": "Mike Sherrard"
   },

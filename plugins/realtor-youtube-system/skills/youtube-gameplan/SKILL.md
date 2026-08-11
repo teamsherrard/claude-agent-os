@@ -96,11 +96,13 @@ insight: *"your best-performing content has always been X — there's an audienc
 ## Phase 2 — The 3 Pillars (the agent's thematic FOCUSES, chosen by LEAD TYPE + the GAP)
 Pick **3 high-intent pillars** from the Brain (niche, market, avatars) + real demand (Research) + what's
 winning locally (Outliers). **With the data connection, run the gap analysis (engine recipe 3) on the
-candidate angles first** — real demand + weak/stale/non-local coverage = the pillar bet, with the evidence
-named in the plan ("roughly 240k searches' worth of demand, and no local agent owns it"). Each pillar
+candidate angles first** — real demand signals + weak/stale/non-local coverage = the pillar bet, with the
+evidence named HONESTLY in the plan (*"the top videos on this topic pull 100k+ views and none are local —
+nobody here owns it"* — top-video views and who ranks, NEVER result counts dressed up as "searches" or
+"demand volume"; engine hard rule #3). Each pillar
 targets a specific motivated lead. For each: a short *"why this
-pillar generates leads"* (the lead psychology) + a named playlist. (Riya, e.g.: New Construction / Calgary
-Market Updates / Relocation to Calgary.)
+pillar generates leads"* (the lead psychology) + a named playlist. (e.g., a new-construction specialist: New
+Builds / [City] Market Updates / Relocation to [City].)
 **Reconcile with the doctrine's 6 content types (§8):** these 3 pillars are the agent's thematic focuses —
 they are *delivered through* the doctrine's six content TYPES (market update · home tour · relocation ·
 community tour · map tour · local lifestyle). Make that explicit, and remember the doctrine's own guidance:
@@ -139,7 +141,7 @@ subs → leads → deals. This is the section that makes them believe *"this is 
 
 ## Phase 5 — The Strategic Shifts + Video Structure + Playlists
 - The **strategic shifts** (tailored to their audit, from the doctrine): length (10–25 min, most land 10–20;
-  relocation 8–12, §27.6), search-intent titles (§16), the **primary CTA placed early** (first 60–90s, §6.1), playlists per
+  relocation 8–12, §27.6), search-intent titles (§16), the **primary CTA placed early** (right after the hook — §6.1; in practice ~0:30–1:00), playlists per
   pillar (§15.1, S.E.A.R.C.H. "C").
 - The **video structure** (doctrine §4): **Hook → Primary CTA → Body → Secondary CTA + next-video** — from
   `script-framework.md`, with their real CTA from the Brain (a private call OR a lead magnet — not hardcoded).

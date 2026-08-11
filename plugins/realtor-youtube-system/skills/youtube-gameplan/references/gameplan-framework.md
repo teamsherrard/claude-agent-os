@@ -45,7 +45,7 @@ the Outliers engine.
 - **Shift 2 — Titles built around search intent.** Every title answers something a real person types into
   YouTube. The test: if you can type the title into the search bar and expect relevant results, it's good;
   if it reads like a clever social caption, it won't rank.
-- **Shift 3 — CTA early (first 60–90s).** Right after the hook, while viewership is highest: introduce, build
+- **Shift 3 — CTA early (right after the hook — §6.1; ~0:30–1:00).** While viewership is highest: introduce, build
   credibility, invite the action (their real CTA from the Brain). A softer CTA repeats at the end.
 - **Shift 4 — Organize into playlists.** One playlist per pillar — keeps viewers bingeing, lifts session time
   and subscriber conversion.
@@ -82,8 +82,9 @@ month** (§9.3). The 24 are spread across all six content types, weighted toward
 type in the first 90 days is the point (§15.1).
 
 **9. Success Metrics** — a small table: Metric · What it measures · 90-day target. Frame every target as a
-**milestone toward the 12-month business goal** (Phase 4), not a random number. Sensible defaults: avg view
-duration 40%+, CTR 4–8%, +50 subs/mo, 2–5 leads or booked calls/mo, top-5 for local search terms.
+**milestone toward the 12-month business goal** (Phase 4), not a random number. Sensible defaults — label
+them plainly as **coaching targets, not industry statistics**: avg view duration 40%+, CTR 4–8%, +50
+subs/mo, 2–5 leads or booked calls/mo, top-5 for local search terms.
 
 **10. Closing vision + footer** — one short, honest, motivating paragraph (*"stay consistent and here's where
 this puts you in 12 months"*), then the footer credit: `Powered by Mike Sherrard Coaching Inc Frameworks`.
@@ -116,8 +117,9 @@ TYPES** (§8: market update · home tour · relocation · community tour · map 
 niche/avatar fit, (b) there's real search demand (Research), and (c) competitors are already winning
 (Outliers). Each should attract a **specific motivated lead**:
 - **Relocation** — the highest-volume traffic driver for local agents; out-of-state buyers research for weeks.
-  *(Honest/"warning"-framed titles outperform here — e.g. "Avoid These 5 [City] Suburbs if You're Moving
-  From Out of State." Embrace it.)*
+  *(Honest/"warning"-framed titles outperform here — e.g. "Avoid These 5 [City] Areas If You Want a Short
+  Commute" — always with the specific-lifestyle qualifier (§16.2), never a bare "avoid these areas," and
+  factual reasons only (§21.2). Embrace the honesty, keep the qualifier.)*
 - **Market Updates** — the best seller-lead format; homeowners thinking of selling binge these to time the
   market. Translate data into decisions, never just read stats.
 - **A niche focus** — the agent's specialty (new construction, first-time buyers, probate/inherited,

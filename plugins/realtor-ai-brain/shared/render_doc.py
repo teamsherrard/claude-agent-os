@@ -208,14 +208,14 @@ def heading_like(s):  # CAPS-dominant (ignoring a lowercase parenthetical) → h
     if not letters: return False
     return sum(c.isupper() for c in letters) / len(letters) >= 0.6 and len(s) <= 80
 NUM = re.compile(r'^\s*(\d+)\s')
-SUBBAND = re.compile(r'^\s*[─—-]{2,}\s*([A-Z0-9][A-Za-z0-9 &/\-\']{2,40}?)\s*[─—-]{2,}\s*$')  # ── LABEL ──
+SUBBAND = re.compile(r'^\s*[─═—-]{2,}\s*([^─═]{2,70}?)\s*[─═—-]{2,}\s*$')  # ── LABEL ── (any divider style, label may hold · : digits)
 CUE = re.compile(r'^\s*(>>|\[|FACT:|ON SCREEN|PAUSE)')
 
 def render(lines, doc, title=None, subtitle=None, eyebrow=None):
     n = len(lines); i = 0
-    # ----- title block: everything before the first band -----
+    # ----- title block: everything before the first band (pure OR inline) -----
     head = []
-    while i < n and not is_band(lines[i]):
+    while i < n and not is_band(lines[i]) and not SUBBAND.match(lines[i]) and len(head) < 8:
         if lines[i].strip(): head.append(lines[i].strip())
         i += 1
     t = title or (head[0] if head else "Document")
@@ -226,6 +226,7 @@ def render(lines, doc, title=None, subtitle=None, eyebrow=None):
     doc.title_block(t, sub, meta, eyebrow=eyebrow)
 
     # ----- sections -----
+    last_head = ''
     def section_heading_at(k):
         # band, then the heading line. Wrapped both sides (closing band present) => definitely
         # a heading; divider only above => require it to look like a header, so a footer
@@ -242,7 +243,7 @@ def render(lines, doc, title=None, subtitle=None, eyebrow=None):
         if is_band(lines[i]):
             h, nxt = section_heading_at(i)
             if h is not None:
-                doc.heading(h); i = nxt; continue
+                doc.heading(h); last_head = h; i = nxt; continue
             i += 1; continue            # stray rule — skip
         raw = lines[i]; line = raw.strip()
         if line == "": i += 1; continue
@@ -255,9 +256,10 @@ def render(lines, doc, title=None, subtitle=None, eyebrow=None):
                 if rl.strip() == "": i += 1; break
                 if not NUM.match(rl): break
                 num = rl[:tcol].strip(); rest = rl[tcol:].rstrip()
-                gaps = list(re.finditer(r'\s{2,}', rest))
+                gaps = list(re.finditer(r'\s{4,}', rest)) or list(re.finditer(r'\s{2,}', rest))
                 if gaps:
                     g = gaps[-1]; ttl, intent = rest[:g.start()].strip(), rest[g.end():].strip()
+                    ttl = re.sub(r'\s{2,}', ' ', ttl); intent = re.sub(r'\s{2,}', ' ', intent)
                 else:
                     s = max(0, min(icol - tcol, len(rest) - 1))
                     while s > 0 and rest[s] != ' ': s -= 1
@@ -287,7 +289,7 @@ def render(lines, doc, title=None, subtitle=None, eyebrow=None):
             doc.table(["Week", "Video to publish", "Pillar"], rows,
                       [Inches(0.75), Inches(4.4), Inches(1.55)])
             continue
-        if '....' in raw and re.match(r'^\s*\S.*\.{3,}', raw):
+        if '....' in raw and re.match(r'^\s*\S.*\.{3,}\s*\S', raw):
             rows = []
             while i < n and '....' in lines[i]:
                 m = re.match(r'^\s*(.+?)\s*\.{3,}\s*(.+?)\s*$', lines[i])
@@ -296,13 +298,17 @@ def render(lines, doc, title=None, subtitle=None, eyebrow=None):
                 mm = re.match(r'^(.+?)\s{2,}\((.+)\)\s*$', rest)
                 if mm: rest, note = mm.group(1).strip(), mm.group(2).strip()
                 rows.append([m.group(1).strip(), rest, note]); i += 1
-            doc.table(["Metric", "Target", "Why it matters"], rows,
-                      [Inches(2.1), Inches(2.25), Inches(2.35)])
+            if 'COMPETITOR' in (last_head or '').upper():
+                doc.table(["Channel", "Numbers", "Notes"], rows,
+                          [Inches(2.1), Inches(2.25), Inches(2.35)])
+            else:
+                doc.table(["Metric", "Target", "Why it matters"], rows,
+                          [Inches(2.1), Inches(2.25), Inches(2.35)])
             continue
 
         # sub-band  "──── LABEL ────"
         msb = SUBBAND.match(raw)
-        if msb: doc.subheading(msb.group(1)); i += 1; continue
+        if msb: doc.subheading(msb.group(1)); last_head = msb.group(1); i += 1; continue
         # bullets
         if line.startswith("•"):
             bt = line[1:].strip()
@@ -314,7 +320,7 @@ def render(lines, doc, title=None, subtitle=None, eyebrow=None):
             i += 1; continue
         # numbered list item "1.  TEXT"  (gather indented continuations)
         mnum = re.match(r'^(\d+)\.\s+(.*)$', line)
-        if mnum and 1 <= int(mnum.group(1)) <= 9:
+        if mnum and 1 <= int(mnum.group(1)) <= 99:
             txt = mnum.group(2); i += 1
             while i < n and lines[i].strip() and lines[i].startswith("   ") and not re.match(r'^\s*\d+\.\s', lines[i]) and not is_band(lines[i]):
                 txt += " " + lines[i].strip(); i += 1
@@ -330,7 +336,9 @@ def render(lines, doc, title=None, subtitle=None, eyebrow=None):
             label = mstruct.group(1) + (" " + mstruct.group(2) if mstruct.group(2) else "")
             txt = mstruct.group(3); i += 1
             eg = ""
-            while i < n and lines[i].strip() and lines[i].startswith("   ") and not is_band(lines[i]):
+            _SL = re.compile(r'^\s*([A-Z][A-Z ]{2,22}?)(\s*\([^)]*\))?\s*—\s')
+            while (i < n and lines[i].strip() and lines[i].startswith("   ")
+                   and not is_band(lines[i]) and not _SL.match(lines[i])):
                 eg += (" " if eg else "") + lines[i].strip(); i += 1
             p = doc.d.add_paragraph(); _sp(p, 6, 2)
             _run(p, label, 10.5, INK, bold=True); _run(p, "  —  " + txt, 10.5, BODY)
@@ -342,6 +350,7 @@ def render(lines, doc, title=None, subtitle=None, eyebrow=None):
         mlbl = re.match(r'^([A-Z][A-Z0-9 &/\-]{5,42}?)(\s*\(.*\))?:?\s*$', line)
         if mlbl and mlbl.group(1).strip().count(' ') >= 1 and not NUM.match(raw):
             doc.subheading(mlbl.group(1).strip(), mlbl.group(2).strip() if mlbl.group(2) else "")
+            last_head = mlbl.group(1).strip()
             i += 1; continue
         # the credibility stamp
         if line.lower().startswith("powered by mike sherrard"):

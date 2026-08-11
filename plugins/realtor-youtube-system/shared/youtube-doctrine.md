@@ -22,7 +22,9 @@ from the master knowledge file so the system always stays aligned with Mike's te
 - The S.E.A.R.C.H. Framework
 - Universal Video Structure
 - Hook and CTA Frameworks
+- Body Structure Principles
 - Main Real Estate YouTube Content Pillars
+- Content Mix and Channel Strategy
 - Titles, Thumbnails, Descriptions, and Keywords
 - Filming and Editing Standards
 - Compliance and Trust Standards
@@ -31,6 +33,7 @@ from the master knowledge file so the system always stays aligned with Mike's te
 - Claude Output Templates
 - Hook and CTA Libraries
 - FAQ and Misalignment Patterns
+- Practical Claude Prompt Patterns
 - Final Doctrine Summary
 Purpose: This knowledge file captures Mike Sherrard's YouTube principles, frameworks, beliefs, video structures, and execution standards for real estate agents. It is designed to be uploaded into Claude and used as a supporting guideline so that any Claude-generated response, script, content plan, channel audit, title, thumbnail concept, or YouTube strategy stays aligned with Mike's teaching.
 Audience: Real estate agents using YouTube to attract buyers, sellers, relocation clients, local leads, niche clients, and long-term inbound business.

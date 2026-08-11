@@ -14,7 +14,8 @@ it nearly effortless: **we build the deck, they hit record.** Apply `${CLAUDE_PL
 > figures — and can run it automatically on the 1st of every month. Say one plain line (*"you've got the
 > full market system — I'll run that instead, it does the whole month"*), hand to **Market Run**, and come
 > back afterwards for the YouTube-side work this plugin owns: the full SEO package (`youtube-seo`), the
-> lead magnet (`youtube-leads`), the board card (`youtube-board`), and repurposing (`youtube-repurpose`).
+> lead magnet (`youtube-leads`), the board card (filled per `shared/notion-board-spec.md`), and repurposing
+> (`youtube-repurpose`).
 > This skill is the YouTube-native version for agents who only own Plugin 3.
 
 > **Applies the YouTube Doctrine** (`${CLAUDE_PLUGIN_ROOT}/shared/youtube-doctrine.md`) — **§9 Market Updates**:
@@ -67,7 +68,11 @@ patterns — city + CURRENT month + a clear payoff), **thumbnail text** (3–5 w
 thumbnail = headshot ≈ 33% + expression, doctrine §17.2), a **hook** (§9.6 — open on the shift, not "welcome
 back"), the **primary CTA**, **buyer takeaways**, **seller takeaways**, a **closing CTA**, a **description
 opening** (CTA + booking link first, §18.2), and a **suggested next video** to promote.
-Save the deck + a talking-points doc into `Videos/{YYYY-MM · Month}/{YYYY-MM-DD · Market Update}/`.
+Save the deck (as `Script` — it's what they read/record from) + the talking-points into the video folder
+`Videos/{YYYY-MM · Month}/{YYYY-MM-DD · {Month} Market Update}/` (drive-structure naming). **Then fill this
+video's board card** (if they have the Content Dashboard — `notion-board-spec.md`: find by System ID /
+create, deck + talking points into the card body, links in the columns, Status `Ready to Film`) — the
+monthly video gets a card like any other video.
 Then offer the usual: full SEO package · lead magnet (the report itself makes a great one — "get next month's
 report by email") · repurposing (the deck slides double as an email + carousel source).
 

@@ -16,7 +16,10 @@ week ideal, 1/week minimum. The first kickoff of the month leans into the **mont
 
 ## What it does (when an agent turns it on)
 1. Runs **Ideation** fresh — research → triggers → outlier scan (weekly max) → ranked ideas, gaps baked in.
-2. Pre-builds the **#1 idea** (script + SEO package) into its Videos folder so it's genuinely film-ready.
+2. Tees up the **#1 idea** — final title + hook + one line on why it wins this week — and the email's one
+   click-worthy ask: *"reply 'make it' or open a chat and say 'make this video' — it'll be film-ready in one
+   pass."* (Never pre-build script/SEO docs outside the video's own chat — that skips the references audit +
+   board card and collides with make-video's fixed doc names.)
 3. Flags anything **timely** this week.
 4. Composes ONE short, warm, skimmable email and sends it from the agent's **Gmail**.
 

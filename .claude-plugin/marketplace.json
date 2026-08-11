@@ -21,8 +21,8 @@
     {
       "name": "realtor-youtube-system",
       "source": "./plugins/realtor-youtube-system",
-      "version": "0.10.0",
-      "description": "PLUGIN 3 — the YouTube System. Starts with a complete YouTube Game Plan (built on Mike Sherrard's frameworks) — channel audit, 3 high-intent pillars, ~50 exact titles, goal-math, and a 90-day plan — then ideation, research, SEO, scripting in the agent's own voice, lead magnets, repurposing, analytics, and coaching — plus a live Content Dashboard in the agent's own Notion, seeded from their Game Plan, where every video card fills with the script, SEO, lead magnet, and top-3 reference videos. Requires Plugin 1 (the Brain) set up first."
+      "version": "0.10.1",
+      "description": "PLUGIN 3 — the YouTube System. Starts with a complete YouTube Game Plan (built on Mike Sherrard's frameworks) — channel audit, 3 high-intent pillars, ~50 exact titles, goal-math, and a 90-day plan — then ideation, research, SEO, scripting in the agent's own voice, lead magnets, repurposing, analytics, and coaching — plus a live Content Dashboard in the agent's own Notion, seeded from their Game Plan, where every video card fills with the script, SEO, lead magnet, and top-3 reference videos. Runs on the Live Data Engine — real YouTube + search data behind the audit, gap analysis, titles, references, and analytics. Requires Plugin 1 (the Brain) set up first."
     },
     {
       "name": "realtor-shortform-system",

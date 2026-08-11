@@ -33,6 +33,8 @@ sync with the AI Brain plugin.**
 | Posting cadence + content pillars        | `content-engine.md`                            |
 | Disclaimers + claims rules               | `compliance.md`                                |
 | Brand kit (colors/fonts/logo direction)  | `brand-visual.md`                              |
+| Content board link (`Content board:` line) | `publishing.md`                              |
+| Captured idea backlog (tag `youtube`)    | `../memory/ideas.md`                           |
 
 ## Rules
 - Field exists in the AI Brain → **use it silently. Never re-ask.**

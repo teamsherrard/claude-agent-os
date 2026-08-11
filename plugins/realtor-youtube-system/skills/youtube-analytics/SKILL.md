@@ -1,6 +1,13 @@
 ---
 name: youtube-analytics
-description: The Analytics module for the Realtor YouTube System. Reads the agent's real YouTube performance and turns it into plain-English insight — what's working, what's not, and WHY (weak title/thumbnail vs weak hook vs mid-video drop-off) — then feeds Ideation and the Coach. V1 needs ZERO technical setup: the agent exports their analytics CSV from YouTube Studio and uploads/pastes it; Claude parses and diagnoses it. (With the cohort's live data connection, the public layer pulls automatically — no export needed; the CSV stays for private depth. The agent never touches an API key.) Triggers on "how's my channel doing", "analyze my analytics", "how did my last video do", "review my YouTube stats", "here's my YouTube export".
+description: >
+  The Analytics module for the Realtor YouTube System. Reads the agent's real YouTube performance and turns it
+  into plain-English insight — what's working, what's not, and WHY (weak title/thumbnail vs weak hook vs mid-
+  video drop-off) — then feeds Ideation and the Coach. V1 needs ZERO technical setup: the agent exports their
+  analytics CSV from YouTube Studio and uploads/pastes it; Claude parses and diagnoses it. (With the cohort's
+  live data connection, the public layer pulls automatically — no export needed; the CSV stays for private
+  depth. The agent never touches an API key.) Triggers on "how's my channel doing", "analyze my analytics", "how
+  did my last video do", "review my YouTube stats", "here's my YouTube export".
 ---
 
 # Analytics

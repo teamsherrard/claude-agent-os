@@ -67,6 +67,7 @@ realtor-youtube-system/
 │   ├── idea-templates.md          #   plug-and-play video idea templates
 │   ├── doc-format.md              #   the house doc style + per-doc skeletons (structured text → .docx)
 │   ├── notion-board-spec.md       #   the ONE Notion Content Dashboard (shared with Short-Form) — columns, views, conduct
+│   ├── composio-data-engine.md    #   the Live Data Engine — real YouTube/search/news data behind Strategy + Growth (read-only)
 │   └── render_doc.py              #   renders structured text to the styled .docx every saved doc uses
 ├── skills/                        # ★ = the flagship deliverable + the two realtor-facing workflows; the rest are the engine they call
 │   ├── youtube-gameplan/          # ★ first deliverable — the YouTube Game Plan (built at end of setup; rule #10: everything aligns to it)
@@ -78,7 +79,7 @@ realtor-youtube-system/
 │   ├── youtube-market-report/     # Monthly Market Report (data → deck → agent records a Loom)
 │   ├── youtube-triggers/          # Local-event triggers (newsjacking)
 │   ├── youtube-seo/               # SEO Engine
-│   ├── youtube-analytics/         # Analytics (reads her YouTube Studio export)
+│   ├── youtube-analytics/         # Analytics (live via the data connection; Studio export for private depth)
 │   ├── youtube-script/            # Script Studio (voice-matched, ships complete)
 │   ├── youtube-leads/             # Lead Engine (lead-magnet maps, inside the video's chat)
 │   ├── youtube-repurpose/         # Repurposing Engine (blog/email/social/shorts)
@@ -104,8 +105,9 @@ entire system. Phase 1 is what builds it.
 The whole design keeps technical work off the realtor:
 - **The realtor (in Cowork):** their Brain (the `~/realtor-brain/` folder, synced to their Google Drive) and the skills — all on-demand (plus an
   optional Monday kickoff). They never open a terminal, an API console, or this repo.
-- **The team (in Claude Code):** builds + maintains this plugin, holds the single competitor-data API
-  key (backend), and later the one-click "Connect YouTube with Google" OAuth app.
-- **Analytics (V1):** the realtor exports a CSV from YouTube Studio and uploads it — no keys, no OAuth.
+- **The team (in Claude Code):** builds + maintains this plugin and the cohort's **live data connection**
+  (the Composio connector added to the Cowork workspace — the agent just clicks one sign-in at setup).
+- **Analytics:** live via the data connection (no export needed for the monthly read); the realtor's
+  YouTube Studio CSV remains the add-on for private depth — no keys, no consoles, ever.
 
 Positioning: *"We build advanced AI systems behind the scenes so it's simple for you"* — never *"learn Claude Code."*

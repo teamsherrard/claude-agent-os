@@ -41,7 +41,7 @@ Dates are ALWAYS `YYYY-MM-DD` so folders sort chronologically. Same name, same s
 ## Where state lives (the system is essentially stateless)
 Never ask the realtor to maintain a tracker. Derive everything live:
 - "What's been made / published?"  → the Videos folders + the agent's YouTube channel
-- "What performed?"                → her YouTube Studio export (V1) / live API later
+- "What performed?"                → her YouTube Studio export, or the live data connection when she said yes at setup
 - "What to film next?"             → generated fresh each week from the AI Brain + research + analytics
 - Content pillars                  → stored in the YouTube Layer (Setup); keep ideas strategic, invisibly
 - Scheduling (film/post dates)     → real Google Calendar events, NOT a spreadsheet

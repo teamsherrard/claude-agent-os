@@ -17,7 +17,7 @@ Be the "mayor of the town" — catch timely local topics while they matter. Appl
 
 ## Step 1 — Scope from the AI Brain
 The agent's city + specific communities, niche, price band, and avatars (so triggers are relevant — a
-rate change matters to buyers; a new school matters to upsizing families).
+rate change matters to buyers; a new school matters to move-up buyers shopping that community).
 
 ## Step 2 — Watch for triggers (web search; see research-method patterns)
 - **Rates / policy:** central-bank decisions, big mortgage-rate moves.

@@ -6,8 +6,10 @@ description: Workflow 1 of 2 — Ideation. The realtor's main entry point, and w
 # Workflow 1 — Ideation (where it all starts)
 
 The realtor's front door — **on-demand by design.** They ask when they're ready to create; nothing is
-scheduled, nothing can silently break, and the data is fresh at the exact moment they ask. Talk plain +
-warm, never technical (`${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` §7). All machinery runs invisibly.
+scheduled, nothing can silently break, and the data is fresh at the exact moment they ask. Apply
+`${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` — all of it (plain-warm talk #7; the content board #11: when
+they have the board, READ it here — what's due, what's stuck, cards they added by hand are their ideas — and
+top up the ~2-week window). All machinery runs invisibly.
 
 **Applies the YouTube Doctrine** (`${CLAUDE_PLUGIN_ROOT}/shared/youtube-doctrine.md`) — ideation runs on
 **§3 (S.E.A.R.C.H.: search intent first, exact questions)**, **§8–§14 (the 6 content pillars)**, **§16 (title
@@ -28,7 +30,8 @@ not random topics. Then pull, at ask-time so everything's current: the **AI Brai
 niche), **fresh research** (market data + local news + trends), **local-event triggers**, the **outlier
 scan** (kept light — refreshed at ask time; long-form doesn't move daily), and the **live coverage read** (Videos folders + channel —
 what's already made). Also read the agent's **captured idea backlog** (`memory/ideas.md`, tag `youtube`) —
-their own on-the-go ideas; bring these into the batch FIRST, and mark each Used once it becomes a video.
+their own on-the-go ideas; bring these into the batch FIRST (make-video marks a backlog idea Used when its
+video chat starts — never mark at pick time).
 The agent only sees one plain line: *"Give me a sec — I'm checking what's happening in your market."*
 
 ## Step 3 — Generate the batch (blend + gaps baked in)

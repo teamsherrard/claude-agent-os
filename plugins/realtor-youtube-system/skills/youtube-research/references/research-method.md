@@ -41,7 +41,8 @@ Attach the signal + its source to the idea. Never fabricate exact search volumes
 
 ## Competitive audit — top 3–5 ranking videos (§11.5, §16.4) — the References engine
 Before a video, search the topic on YouTube and review the **top 3–5 ranking videos** so the agent can beat
-them. These double as the **reference videos** the agent watches to plan and prep — in chat and on their
+them. **With the data connection, use the Live Data Engine** (`shared/composio-data-engine.md`, recipes 3–4:
+real ranked search + exact per-video stats); otherwise web search. These double as the **reference videos** the agent watches to plan and prep — in chat and on their
 content-board card — so capture them properly:
 - **Capture per video:** `link · channel · ~views · length`, plus the read: **title · thumbnail · hook ·
   structure/delivery · local specificity · what's missing** — and the one line that matters most, **how the

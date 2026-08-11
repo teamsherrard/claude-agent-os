@@ -1,6 +1,12 @@
 ---
 name: youtube-consistency
-description: The Consistency Engine for the Realtor YouTube System — solves the real reason most realtor channels die: they quit. Provides batch-day mode (plan one filming day = several ready scripts + the smartest filming order), streak tracking + gentle momentum nudges, and a guided 30/60/90-day ramp so beginners don't drown. Reads the AI Brain (cadence, goal), the Videos folders + channel (what's shipped), and uses Google Calendar for filming/batch days and reminders. Triggers on "plan a batch day", "help me film a batch", "set up my filming day", "keep me consistent", "what's my 30/60/90 plan", "am I on track", "plan my month".
+description: >
+  The Consistency Engine for the Realtor YouTube System — solves the real reason most realtor channels die: they
+  quit. Provides batch-day mode (plan one filming day = several ready scripts + the smartest filming order),
+  streak tracking + gentle momentum nudges, and a guided 30/60/90-day ramp so beginners don't drown. Reads the
+  AI Brain (cadence, goal), the Videos folders + channel (what's shipped), and uses Google Calendar for
+  filming/batch days and reminders. Triggers on "plan a batch day", "help me film a batch", "set up my filming
+  day", "keep me consistent", "what's my 30/60/90 plan", "am I on track", "plan my month".
 ---
 
 # Consistency Engine
@@ -13,8 +19,12 @@ the doctrine's **cadence (§15.3: 2/week ideal · 1/week minimum · 3/week only 
 one strong video a week beats three weak ones. The Brain's cadence wins if set; otherwise default to §15.3.
 
 ## Batch-day mode (on demand)
-The realtor films best in batches. Given the top ranked ideas:
-- Pick the next N (default 4) and ensure each has a ready script (call Script Studio if needed).
+The realtor films best in batches. **Batch day ORGANIZES — it never mass-produces** (one chat = one video,
+house rules #5: scripts are written in each video's own chat by Make This Video, with its references audit
+and board-card fill). Given the top ranked ideas:
+- Line up the next N (default 4) and CHECK each has its script ready (its video folder has a `Script`). For
+  any that don't: *"[title] isn't scripted yet — open a fresh chat and say 'make this video' and it'll be
+  ready in one pass."* Never script it here.
 - Produce a **filming order + run-of-show**: same-outfit/same-setup groupings, shortest setup changes,
   intros/CTAs to record together, and a simple shot checklist per video.
 - Offer to drop a "Filming Day" block on their **Google Calendar**.

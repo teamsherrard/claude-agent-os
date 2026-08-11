@@ -9,7 +9,7 @@ into real Word formatting — headings, bullet lists, tables — automatically. 
 1. Assemble the doc as structured text (the skeletons below); write it to a temp file, e.g. `/tmp/doc.txt`.
 2. Render it:
    `python3 "${CLAUDE_PLUGIN_ROOT}/shared/render_doc.py" /tmp/doc.txt "[Doc Name].docx" --title "[Title]" --subtitle "[Agent · City]"`
-   → produces the house style automatically: **Arial**, **pure-black** text, real **headings** (from the
+   → produces the house style automatically: **Arial**, **near-black** text, real **headings** (from the
    bands), real **bullet lists** and **tables**, thin light-grey rules. *(If `python-docx` is missing:
    `pip install python-docx`; if that's not possible, build the same `.docx` with the **docx skill**, matching
    the look below.)*
@@ -17,8 +17,8 @@ into real Word formatting — headings, bullet lists, tables — automatically. 
    deliverable is the `.docx`.
 
 ## The look the renderer produces (match it if you ever build by hand)
-- **Arial** everywhere (installed on every platform — never a serif). **Pure black** titles / headings / body;
-  **dark grey (#333)** only for the small byline + stamp.
+- **Arial** everywhere (installed on every platform — never a serif). **Near-black (#111)** titles /
+  headings / body — crisp, never grey; a legible **dark grey** only for the small byline + stamp.
 - Section headings: bold black + a thin light-grey underline. **Real** bullet lists. **Real** tables: near-black
   header row (white text) + light alternating rows. **No colour, no client branding** — one standard for all.
 - Flagship strategy docs carry `Powered by Mike Sherrard Coaching Inc Frameworks` (top byline + footer).
@@ -106,8 +106,10 @@ Goal: {from strategy.md}
 ════════════════════════════════════════════
 THE FOUR STRATEGIC SHIFTS
 ════════════════════════════════════════════
-   1.  {length 10–25 min (relocation 8–12)}     2.  {search-intent titles}
-   3.  {early CTA, 60–90s}    4.  {playlists per pillar}
+   1.  {length 10–25 min (relocation 8–12)}
+   2.  {search-intent titles}
+   3.  {primary CTA right after the hook (~0:30–1:00)}
+   4.  {playlists per pillar}
 
 
 ════════════════════════════════════════════

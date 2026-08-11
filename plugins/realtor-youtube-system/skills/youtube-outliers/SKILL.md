@@ -17,7 +17,8 @@ Find proven demand by studying what's already winning. Apply `${CLAUDE_PLUGIN_RO
 
 **The Live Data Engine** (`${CLAUDE_PLUGIN_ROOT}/shared/composio-data-engine.md`): with the data connection, competitor numbers come from the real API —
 recipe 2: all competitor channels' stats in one batched pull, their uploads, per-video views/lengths/dates.
-An outlier = views as a multiple of that channel's OWN median (small channels overperforming count double).
+The engine only supplies the NUMBERS — **the three-part outlier test below is the one definition of an
+outlier on every path** (a small channel overperforming its own median still has to clear all three).
 Read-only; without the connection, the public-page reads below.
 
 ## Part A — Outlier scan (weekly MAX — never more)
@@ -36,8 +37,8 @@ list of real outliers beats a long list of noise.
 
 ### Steps
 1. Channels: the competitors named in the AI Brain; if none, find 3–7 relevant local/niche channels.
-2. Scan their recent uploads against the three-part test above (public data — team-held API key in the
-   backend, or web/YouTube search; never the agent's credentials).
+2. Scan their recent uploads against the three-part test above (public data — the live data connection
+   when available, else web/YouTube search; the agent never handles keys or credentials).
 3. For each true outlier, run the **competitive audit (§11.5 / §16.4)**: title · thumbnail · hook · delivery ·
    structure · local specificity · **what's missing** · why it worked.
 4. Translate into a **stronger, localized, on-brand version** for THIS agent — beating the original on title,
@@ -62,8 +63,9 @@ Be honest when the data's out of reach, and show the agent the manual method ins
 > view counts. Paste me that list and I'll turn them into your stronger versions."
 
 ## Honesty
-Web-based scans are imperfect (view/sub counts aren't always visible). Say so when precision is limited;
-the backend API key (team-built) makes it sharper later. Never present a guess as data.
+Web-based scans are imperfect (view/sub counts aren't always visible). Say so when precision is limited —
+and note that the **live data connection** (offered at setup) makes every number exact. Never present a
+guess as data.
 
 ## Output
 Short, real lists only — outlier angles and the recreate list — fed into **Ideation** as "Signals for

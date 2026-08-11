@@ -28,7 +28,8 @@ Make the video rank — on YouTube search and Google. Apply `${CLAUDE_PLUGIN_ROO
   agent already has a finished video and no script in the system, ask for the title/topic + what it covers.
 - AI Brain: market + communities (use real names), niche keywords, offer/CTA, booking link, required disclosures.
 - Relevant keywords from the Research Brief.
-- **Live demand check (don't guess):** before finalizing, pull real signals — YouTube + Google autocomplete,
+- **Live demand check (don't guess):** with the data connection, use the Live Data Engine
+  (`${CLAUDE_PLUGIN_ROOT}/shared/composio-data-engine.md`, recipe 3) for real ranked results; plus — YouTube + Google autocomplete,
   "people also ask," and the titles/tags of competitor videos that actually rank for this topic. Ground the
   title + keywords in what people are really searching. Be honest about volumes (never assert numbers you didn't verify).
 

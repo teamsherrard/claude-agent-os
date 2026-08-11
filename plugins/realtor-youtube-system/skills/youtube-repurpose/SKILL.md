@@ -13,7 +13,7 @@ One shoot → ten written assets. No editing. Apply `${CLAUDE_PLUGIN_ROOT}/share
 > them to book / reach out, in the spirit of §6.2 + the §26 library). The blog/email/social keep the doctrine's
 > search-intent, plain-language, local-specificity, and compliance (§21) standards.
 
-> **Part of the video package — one chat = one video.** Normally Step 5 of Make This Video (after filming),
+> **Part of the video package — one chat = one video.** Normally Step 6 of Make This Video (after filming),
 > inside that same video's chat. For a video made outside the system, run it in a chat/folder for THAT
 > video. Never a separate workflow.
 
