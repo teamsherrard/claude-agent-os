@@ -7,7 +7,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "if [ -f \"$HOME/realtor-brain/brain.md\" ]; then echo '=== REALTOR AI BRAIN (read before substantive work) ==='; cat \"$HOME/realtor-brain/brain.md\"; else echo 'NOTE: This user may have a Realtor AI Brain stored in their Google Drive (folder: Realtor AI Brain). Before substantive work, use the realtor-brain-sync skill to pull it to ~/realtor-brain/ and read brain.md so all work reflects who they are. If no brain exists in Drive, suggest they say: Set up my Brain.'; fi"
+            "command": "if [ -f \"$HOME/realtor-brain/brain.md\" ]; then echo '=== REALTOR AI BRAIN (read before substantive work) ==='; cat \"$HOME/realtor-brain/brain.md\"; else echo 'NOTE: This user may have a Realtor AI Brain in their cloud workspace (Google Drive OR Microsoft OneDrive). Before substantive work, use the realtor-brain-sync skill to locate it (its ladder: _workspace.md marker file, then the legacy Realtor AI Brain folder name — never assume a name) and pull it to ~/realtor-brain/, then read brain.md and config.md (storage provider + workspace ID) so all work reflects who they are. If no brain exists anywhere, suggest they say: Set up my Brain.'; fi"
           }
         ]
       }

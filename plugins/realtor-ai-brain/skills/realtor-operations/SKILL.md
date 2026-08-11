@@ -67,8 +67,9 @@ problem at all; most agents add these as they meet them, and we can do that anyt
   empty table stays as a prompt for *later* — never present it as something to fill in now. Never block.
 
 ## Phase C — Goals + Competitors → `identity/strategy.md`
-Light and default-able (ask-once-default). Capture, in one friendly pass:
-- **Business goals** — this year's GCI / transaction goal.
+Light and default-able (ask-once-default). **First read `identity/business-plan.md` + `strategy.md`** — if
+the goal is already set (the Business Plan sets it), **confirm it, never re-ask.** Capture, in one friendly pass:
+- **Business goals** — this year's GCI / transaction goal (from the plan if it exists).
 - **YouTube / content goals** — subscriber + lead targets (the YouTube Game Plan reads these). No channel
   yet? A sensible default ("steady growth + a few leads a month") is fine.
 - **Life + personal goals** — the bigger "why" (more time with family, financial freedom, a personal

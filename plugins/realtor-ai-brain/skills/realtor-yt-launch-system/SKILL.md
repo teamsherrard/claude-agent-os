@@ -249,7 +249,8 @@ Then upload the `.docx` via the Drive connector.
 - Omit any section that doesn't apply.
 - No brand colours — every doc renders to one clean neutral standard (visual brand design lives in the agent's design tool).
 
-Upload the rendered `.docx` to the agent's Drive **`Realtor AI Brain` → `exports`** (find-or-create
+Upload the rendered `.docx` to the agent's workspace per `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md`
+(content deliverables → `03 · Content`; legacy brains: `Realtor AI Brain → exports` — find-or-create
 `exports`), named `YouTube Launch · [Video Topic]`, and tell the agent the location + link.
 
 ---

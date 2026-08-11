@@ -192,7 +192,7 @@ the start of a **T**rust System (proof/feedback). If **Edge** or **Narrative** i
 targeted follow-up before writing — those two carry the brand. Capture the niche as a *growing* niche the
 agent is comfortable with, framed as evolvable (not a lifetime lock).
 
-**Optional keepsake:** save a clean combined doc to the agent's Drive `Realtor AI Brain → exports`
+**Optional keepsake:** save a clean combined doc to the agent's workspace per `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` (legacy: `Realtor AI Brain → exports`)
 (per `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` — structured text rendered to a styled `.docx` via
 `shared/render_doc.py`, then uploaded) so the agent has a human-readable copy. The doc is a *render* —
 the markdown in `identity/` is the source of truth skills actually read.

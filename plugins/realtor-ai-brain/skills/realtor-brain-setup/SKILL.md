@@ -29,25 +29,27 @@ smart onboarding — not a form. They are often beginners. Encourage honesty ove
 
 ## The Brain you are building
 
-**Permanent home: the agent's Google Drive** (`Realtor AI Brain` folder). The local `~/realtor-brain/`
-is just the session's working copy — it syncs from Drive and pushes back (the sandbox is wiped between
-sessions). The empty scaffold ships with this skill at `references/brain-template/realtor-brain/` —
-you copy it into place, fill it through the phases, then push it to Drive. Exact structure:
+**Permanent home: the agent's cloud WORKSPACE** — the folder map in
+`${CLAUDE_PLUGIN_ROOT}/shared/drive-map.md`, built on **Google Drive or OneDrive** per their provider
+(`shared/connectors.md`). The Brain's engine lives inside it at **`01 · AI Brain/_engine/`**. The local
+`~/realtor-brain/` is just the session's working copy (the sandbox is wiped between sessions). The empty
+scaffold ships at `references/brain-template/realtor-brain/` — copy it into place, fill it through the
+phases, and **push after every phase**. Local engine structure:
 
 ```
-~/realtor-brain/   (mirrored in Drive)
+~/realtor-brain/   (mirrored to the workspace's 01 · AI Brain/_engine/)
 ├── brain.md                  # index — quick-reference + map + the laws (you write this LAST)
 ├── identity/                 # filled by the phase skills
 │   ├── profile.md  market.md  avatars.md  voice.md  offer.md  brand-visual.md     (Phases 1–3)
-│   ├── voice-samples.md  proof.md  content-engine.md                              (Phases 4–5)
-│   ├── operations.md  vendors.md  strategy.md  compliance.md                      (Phases 6–7)
+│   ├── voice-samples.md  voice-print.md  proof.md  story-bank.md  content-engine.md  (Phases 4–5 + spoken layer)
+│   ├── operations.md  vendors.md  strategy.md  business-plan.md  compliance.md    (Phases 6–7 + capstone)
 │   └── publishing.md             # scaffolded empty — the Short-Form System's setup writes it
 ├── memory/                   # scaffolded empty — skills fill these over time
 │   └── clients.md  listings.md  content-log.md  deadlines.md  ideas.md  performance.md  market-data.md
 ├── intake/                   # drop zone — agent uploads materials here, then "import my materials"
 ├── assets/                   # logo, headshot, fonts
-├── config.md                 # connectors, timezone, Brain schema version
-└── exports/                  # deliverables archive — synced to Drive (outputs, not source)
+├── config.md                 # provider, workspace ID/link, timezone, locale, schema version
+└── exports/                  # local staging for deliverables (their cloud home is per drive-map.md)
 ```
 
 **The laws every skill obeys — state these to no one, but build the Brain so they hold:**
@@ -58,16 +60,21 @@ you copy it into place, fill it through the phases, then push it to Drive. Exact
 
 ---
 
-## Step 0 — Pull from Drive FIRST, then check for an existing Brain
+## Step 0 — Provider first, then pull, then check for an existing Brain
 
 **Never trust the local folder to tell you whether this agent has a Brain.** The local sandbox is wiped
 between sessions — a fully onboarded agent will still show an empty `~/realtor-brain/` at session
-start. Checking only locally would re-onboard a returning agent and **overwrite their real Brain in
-Drive with a fresh empty one** at the finalize push. So:
+start. Checking only locally would re-onboard a returning agent and **shadow their real Brain in
+the cloud with a fresh empty one** at the finalize push. So:
 
-1. **Pull first.** Use the **realtor-brain-sync** skill to look for a `Realtor AI Brain` folder in the
-   agent's Google Drive and pull it to `~/realtor-brain/`. (If the Drive connector isn't connected,
-   ask them to connect it now — it's required for the Brain anyway.)
+0. **Detect their world FIRST** (per `${CLAUDE_PLUGIN_ROOT}/shared/connectors.md`): **Google** (Drive
+   connector) or **Microsoft** (Microsoft 365 connector)? Detect from what's connected; if both or
+   neither, ask plainly — *"Are you a Google person or an Outlook/Microsoft person?"* — and help them
+   connect that provider's connector now (storage is required for the Brain). Never tell a Microsoft
+   agent that Google Drive is required.
+1. **Pull.** Use the **realtor-brain-sync** skill to locate their workspace **via its locate ladder**
+   (marker file → legacy `Realtor AI Brain` name — never assume a folder name) on the **storage
+   connector for their provider**, and pull the brain to `~/realtor-brain/`.
 2. **Then decide:**
    - **No Brain in Drive (and none locally) →** fresh setup. Go to Step 1.
    - **Brain exists but incomplete** (some `identity/` files are still template placeholders) → tell the
@@ -80,8 +87,9 @@ Drive with a fresh empty one** at the finalize push. So:
      confirmation after you tell them their existing Brain will be replaced.
    - **"Review it" / "show me my Brain" / "regenerate my Brain document"** → don't re-interview; just
      **rebuild the master "Your AI Brain" document** from the current identity files (per
-     `${CLAUDE_PLUGIN_ROOT}/shared/brain-doc.md`), save it to Drive `exports`, and share it. It always
-     reflects the latest Brain, including the Business Plan section once that's built.
+     `${CLAUDE_PLUGIN_ROOT}/shared/brain-doc.md`), save it to the workspace's `01 · AI Brain/` (dated
+     filename), and share it. It always reflects the latest Brain, including the Business Plan section
+     once that's built.
 
 ---
 
@@ -106,10 +114,21 @@ after every phase) — never by skipping phases.
 they're used *only* by the AI Admin, so they're captured just before "Set up my AI Admin" (correct
 sequencing, not a shortcut). Everything else is built now.
 
-Then **scaffold the folder structure now** — copy the bundled template
-`references/brain-template/realtor-brain/` to `~/realtor-brain/` (this gives them every subfolder, the
-empty `memory/` files, `config.md`, and the `assets/` + `exports/` + `intake/` placeholders in one step).
-Confirm it's created.
+Then **scaffold locally AND create the cloud workspace NOW — before any interviewing.** This is what
+makes "save as we go" actually true (the sandbox can die at any minute; the cloud can't):
+1. **Scaffold locally** — copy `references/brain-template/realtor-brain/` to `~/realtor-brain/`.
+2. **Name the workspace** — *"Your workspace folder will be called **'Social Agent OS'** — or name it
+   after your business (you can rename it anytime; I'll always find it)."* Use their answer.
+3. **Create the workspace in their cloud** (Drive or OneDrive per Step 0's provider) — build the folder
+   map per `${CLAUDE_PLUGIN_ROOT}/shared/drive-map.md` (01–06 + the Content sub-buckets), and make the
+   **very first file you write the `_workspace.md` marker** (workspace name · folder ID · link · owner
+   account) in the workspace root. **On `microsoft`, this first write IS the write-actions probe** — if
+   it fails org-gated, surface it now (per `shared/connectors.md`) *before* 45 minutes of interviewing,
+   and offer the free-Google-account fallback.
+4. **Capture into `config.md`:** storage provider · workspace name · **folder ID** · link · owner
+   account. Push the scaffold to `01 · AI Brain/_engine/` (write → push → verify) and confirm.
+**From here on, PUSH AFTER EVERY PHASE** — each checkpoint below ends with a push (write → push →
+verify, per `realtor-brain-sync`). A pause, crash, or closed tab never costs more than the current phase.
 
 ---
 
@@ -230,20 +249,19 @@ skill formats prices, dates, and measurements to this), and pull the **default C
    This is the file every skill reads first — make the quick-reference genuinely complete so most skills
    never need to open another file.
 2. **Stamp `config.md`** — version, created date, timezone, locale, storage provider.
-3. **Save the Brain to their cloud storage — do NOT skip.** Use the **realtor-brain-sync** skill to create
-   the workspace folder in the agent's Drive/OneDrive (per provider), push the whole brain up
-   **(write → push → verify — on `microsoft`, the first write is also the write-actions probe; if it's
-   org-gated, surface it per `shared/connectors.md`)**, then **capture into `config.md`: the workspace
-   folder ID, its shareable link, and the owner account** — the ID is how every future session finds it
-   even if they rename the folder. Confirm it's saved before continuing.
-   **Hand them the link:** *"This is your home base — bookmark it. Everything the system builds lives
-   here, and you can rename the folder to your business name anytime; I'll still find it."*
+3. **Final full sync + snapshot — do NOT skip.** The workspace already exists (created in Step 1) and
+   every phase already pushed; now run a final **write → push → verify** of the whole brain to
+   `01 · AI Brain/_engine/`, then take a **snapshot** (`realtor-brain-sync` SNAPSHOTS — the setup-finalize
+   restore point). Confirm it's saved before continuing.
+   **Hand them the link again:** *"This is your home base — bookmark it. Everything the system builds
+   lives here, and you can rename the folder to your business name anytime; I'll still find it."*
 4. **Build the master "Your AI Brain" document** — the single, organized deliverable the agent keeps. Follow
    `${CLAUDE_PLUGIN_ROOT}/shared/brain-doc.md`: assemble every section (Snapshot → Who You Are → Market → Offer →
    Voice/Proof → Brand Direction → Content Plan → **Business Plan** → Operations → Compliance) from the identity
-   files, render it premium via `shared/render_doc.py`, and save to Drive → `Realtor AI Brain → exports` as
-   "[Agent] — AI Brain". Sections not built yet (Business Plan, Operations) render as a friendly placeholder so
-   the agent sees what's still open — the Business Plan section fills in the moment they build it.
+   files, render it premium via `shared/render_doc.py`, and save it to the workspace's **`01 · AI Brain/`** as
+   "[Agent] — AI Brain — [YYYY-MM-DD]" (dated — regenerations never collide; newest = current). Sections not
+   built yet (Business Plan, Operations) render as a friendly placeholder so the agent sees what's still open —
+   the Business Plan section fills in the moment they build it.
 5. **Confirm and hand off.** Show them the finished structure and tell them what to do next:
 
 > 🎉 Your AI Brain is built. From now on, every skill already knows you — you'll never re-explain your
@@ -262,15 +280,21 @@ skill formats prices, dates, and measurements to this), and pull the **default C
 >   so it already knows your market, niche, and voice. (Same for the Short-Form System and any other
 >   Team Sherrard system — the Brain you just built powers all of them.)
 >
-> To deepen your brain anytime: "add my writing samples" · "set up my content engine" · "set up my
-> operations" · "set up my compliance". To change anything: "update my brand" or "update my offer".
+> To deepen your brain anytime: "add my writing samples" · "**capture my speaking voice**" (so scripts
+> sound like YOU) · "**build my story bank**" (the stories only you can tell) · "set up my content
+> engine" · "set up my operations" · "set up my compliance". To change anything: "update my brand" or
+> "update my offer".
+
+*(Front-door rule: if an agent with several systems installed says "set up everything" / "onboard me,"
+Brain Setup runs FIRST — then list the other systems' setups in order: AI Admin, YouTube, Short-Form.)*
 
 ---
 
 ## Principles
 
 - **One question at a time. Always.** Never dump a list of questions.
-- **Save progressively.** The Brain is on disk — checkpoint after each phase so a pause never loses work.
+- **Save progressively — to the CLOUD.** Checkpoint after each phase and **push it** (write → push →
+  verify); local disk alone is wiped between sessions. A pause never loses more than the current phase.
 - **Never re-ask what's known.** Each phase reads what earlier phases wrote.
 - **Ask first, generate only when they're stuck.** If the agent gives a real answer, use it — never
   overwrite their input with a guess. When they don't know, propose a draft from the Brain and let them

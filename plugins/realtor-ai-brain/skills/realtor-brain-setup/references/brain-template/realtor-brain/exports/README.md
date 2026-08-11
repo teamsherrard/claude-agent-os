@@ -1,6 +1,6 @@
 # Exports — your deliverables archive
 Everything the system makes for you lands here **and syncs to your Google Drive**
-(`Realtor AI Brain → exports`), so it's always there — any session, any device.
+(`Realtor AI Brain → exports`), so it's they live in your cloud workspace — ask me and I'll fetch any of them.
 
 Things that land here:
 - Offer guidebooks ("Why Work With Me"), lead magnets

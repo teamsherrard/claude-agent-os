@@ -15,8 +15,10 @@ automatically.
    → produces the house style: **Arial**, **pure-black** text, real **headings**, **bullet lists**, and
    **tables**, thin light-grey rules. *(If `python-docx` is missing: `pip install python-docx`; if that's not
    possible, build the same `.docx` with the **docx skill**, matching the look below.)*
-3. Upload the **`.docx`** to the agent's **`Realtor AI Brain` → `exports`** folder (find-or-create `exports`;
-   don't duplicate it). Confirm in plain words: *"Saved to your Drive → Realtor AI Brain → exports → [name]."*
+3. Upload the **`.docx`** to the agent's **workspace**, in the folder `shared/drive-map.md` assigns that
+   deliverable type (content → `03 · Content/…`, market → `05 · Market`, the master doc → `01 · AI Brain`;
+   **legacy brains** → the `Realtor AI Brain → exports` folder). Confirm in plain words with the real
+   location: *"Saved to your Drive → [workspace] → [folder] → [name]."*
 
 ## Naming
 `[Deliverable] · [Subject] · [Date]` — Title Case, ISO dates. Examples:

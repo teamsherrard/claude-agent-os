@@ -28,11 +28,19 @@ assume the local copy is safe.
 
 ## Locating the workspace (rename-proof — NEVER by name alone)
 Agents may rename the workspace folder to their business name. Locate it in this order:
-1. **Folder ID from `config.md`** (`Workspace folder ID`) — Drive/OneDrive IDs survive renames. Use it.
-2. **Marker search** — search the agent's storage for the `_workspace.md` marker file; its parent folder
-   IS the workspace, whatever it's called now. Re-cache the ID + current name + link into `config.md`.
+1. **Folder ID from `config.md`** (`Workspace folder ID`) — **a within-session cache only**: `config.md`
+   lives inside the workspace, so on a cold start (wiped sandbox, no local config) this rung simply isn't
+   available — skip straight to the marker. When local config IS present, the ID is fastest; IDs survive
+   renames AND moves.
+2. **Marker search — the canonical cold-start locator.** Search the agent's storage for the
+   `_workspace.md` marker file (setup writes it as the workspace's FIRST file); its parent folder IS the
+   workspace, whatever it's called now. Re-cache the ID + current name + link into `config.md`.
+   **Self-heal:** after ANY successful locate, if the marker is missing, drop it.
 3. **Legacy name** — a folder named `Realtor AI Brain` (pre-workspace brains). If found, adopt it: cache
    its ID into `config.md` and drop the `_workspace.md` marker into it for next time.
+   **Legacy brains stay legacy-layout permanently** — the connector cannot move files, so never try to
+   relocate one into `01 · AI Brain/_engine/`; resolve the engine path from where the files actually are
+   (root = legacy · `01 · AI Brain/_engine/` = new map) and record it in `config.md → Brain home`.
 4. **Not found → RECOVERY (never assume "new agent"):**
    - **Wrong account?** `config.md` (if present locally) records the workspace **owner account** — ask:
      *"Your Brain lives in the [account] Drive — are you connected to that same account right now?"*
@@ -45,13 +53,18 @@ Agents may rename the workspace folder to their business name. Locate it in this
    workspace root (legacy layout) — detect whichever exists.
 2. **Download ONLY the brain's text files:** `brain.md`, `config.md`, `identity/*.md`, `memory/*.md` →
    `~/realtor-brain/`, preserving structure.
-   **NEVER download media or bulk folders:** no `Content/`, `Listings/`, `Materials/`, `exports/`, and no
-   image/video files from `assets/` (list `assets/` names only — fetch a specific asset only when a skill
-   actually needs that file). One agent's videos can be gigabytes; pulling them would stall every session.
+   **The allowlist above is exhaustive — everything else is NEVER pulled:** no `03 · Content/`,
+   `04 · Listings/`, `06 · Materials/` (or legacy `Content/`/`exports/`), and no image/video files from
+   `assets/` (list `assets/` names only — fetch a specific asset only when a skill actually needs that
+   file). One agent's videos can be gigabytes; pulling them would stall every session.
 3. **Duplicate names = newest wins.** Because the connector is create-only, a file can exist in several
    copies with the same name. For every file, **use the copy with the latest modified/created time** —
    older copies are harmless version history, never read them by accident.
-4. Confirm quietly: *"Brain loaded from your Drive — ready."* (OneDrive: say OneDrive.)
+4. **Schema check (the migration trigger — agents never know the word "migrate"):** compare
+   `config.md → Brain schema` with the current schema in `realtor-brain-migrate`. If behind, add one warm
+   line: *"Your Brain is on an older structure — say **'upgrade my brain'** and I'll bring it current.
+   Nothing is lost."* Never block on it.
+5. Confirm quietly: *"Brain loaded from your Drive — ready."* (OneDrive: say OneDrive.)
 
 ## PUSH — local → cloud *(IMMEDIATELY after every write — this is part of the write, not a batch)*
 > **The law: write → push → verify is ONE atomic step.** Never hold local writes for an end-of-session
@@ -79,10 +92,10 @@ never promise to clean up for them.
 ## SNAPSHOTS — deliberate backup + restore *(trigger: "back up my brain" · also monthly)*
 Accidental copies are a crude safety net; snapshots are the real one:
 - **Take a snapshot:** concatenate the whole brain (brain.md + config + every identity/ + memory/ file,
-  clearly delimited per file) into ONE file — `Brain Snapshot — [YYYY-MM-DD].md` — and push it to a
-  `snapshots/` folder beside the engine files. Take one on **"back up my brain"**, after **major
-  milestones** (setup finalize · business plan built), and roughly **monthly** when a sync notices the
-  newest snapshot is >30 days old.
+  clearly delimited per file) into ONE file — `Brain Snapshot — [YYYY-MM-DD].md` — and push it to
+  **`_engine/snapshots/`** (inside the hidden engine, never beside the agent's polished docs). Take one
+  on **"back up my brain"**, after **major milestones** (setup finalize — Step 7 takes it · business plan
+  built), and roughly **monthly** when a sync notices the newest snapshot is >30 days old.
 - **Restore:** on "restore my brain" (or when a bad write is discovered), list the snapshots by date, let
   the agent pick one, and rebuild the local files from it — then push the restored state as normal. A bad
   overwrite is now always undoable.

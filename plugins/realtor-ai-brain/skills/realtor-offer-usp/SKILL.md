@@ -138,7 +138,8 @@ content CTAs point to. If `~/realtor-brain/identity/` doesn't exist yet, create 
 Build the guidebook as well-structured text (the grammar in doc-formatting.md), write it to a temp file
 (e.g. `/tmp/doc.txt`), render it to a styled `.docx`:
 `python3 "${CLAUDE_PLUGIN_ROOT}/shared/render_doc.py" /tmp/doc.txt "Why Work With Me · [Agent Name].docx" --title "Why Work With Me" --subtitle "[Agent Name] · [City]"`
-and upload the `.docx` to the agent's Drive **`Realtor AI Brain` → `exports`** (find-or-create
+and upload the `.docx` to the agent's workspace per `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md`
+(guides → `03 · Content/Guides`; legacy brains: `Realtor AI Brain → exports` — find-or-create
 `exports`). This is a *render* for humans; the source of truth is `offer.md`. The clean doc is ready to
 send as-is; for a fully branded, visually designed PDF, tell the agent to drop this copy into their
 design tool (claude.ai design).

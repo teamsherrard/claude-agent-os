@@ -32,7 +32,8 @@ present, let it take the knowledge captures; don't double-handle.
    in the capture-log. (Never guess an email; only use one you actually found.)
 4. **Execute each intent** against the matching system, honoring the safety rules above.
 5. **Write back** to `memory/clients.md` + `memory/deadlines.md`, append anything unresolved to
-   `memory/capture-log.md`, then **push to Drive** (sync) once, at the end. **If the push fails,
+   `memory/capture-log.md` — and **push each write immediately (write → push → verify), never
+   held to the end**: on the go is exactly when a session dies mid-turn. **If a push fails,
    include the full raw capture text in your report** — it survives in the notification even if
    the sandbox is wiped — and tell the agent to say "sync my brain" when they're back at a desk.
 6. **Report** — one tight, glanceable confirmation: one line per action, drafts + bookings

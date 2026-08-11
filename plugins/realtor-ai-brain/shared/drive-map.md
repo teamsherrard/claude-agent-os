@@ -57,6 +57,11 @@ agent's Brain (one voice, one identity); don't present it as a team system.
 - **The engine stays the working truth.** Skills still read/write the structured brain files (identity, memory)
   locally in `~/realtor-brain/`, synced to `01 · AI Brain/_engine/`. That behaviour does not change. *(Sync pulls
   only the Brain text — never the big media in Content/Listings.)*
+- **Legacy brains (pre-workspace `Realtor AI Brain` folders) stay in their legacy layout permanently** — the
+  connector cannot move files. Skills must resolve the engine + deliverable paths from `config.md → Brain home`
+  (root/exports = legacy · this map = new), never assume `01 · AI Brain/_engine/` exists.
+- **Regenerated documents carry a date** in the filename ("[Agent] — AI Brain — 2026-07-15") — the connector
+  can't overwrite, so dating keeps regenerations from colliding; **the newest date is the current one.**
 - **Where deliverables save:**
   - Master **AI Brain doc** + **Business Plan** → `01 · AI Brain/`.
   - **Long-form** → `03 · Content/Long-Form`; **short-form** → `Short-Form`; **carousels/thumbnails/designs** →

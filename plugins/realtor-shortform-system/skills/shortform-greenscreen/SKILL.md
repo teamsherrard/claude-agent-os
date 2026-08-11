@@ -60,7 +60,7 @@ plain and warm, never technical. No tool names, no jargon, no overwhelm.
   when picking the article angle, hook style, and CTA. Skip if it doesn't exist yet
 
 **The first law: read the Brain, never re-ask what it already knows.** The agent built all of this once
-in Cowork; it lives in their Google Drive `Realtor AI Brain` folder and syncs to `~/realtor-brain/`. The
+in Cowork; it lives in their cloud workspace — Google Drive or OneDrive, located by realtor-brain-sync's ladder, never by folder name — and syncs to `~/realtor-brain/`. The
 city, audience, voice, offers, lead magnets, and handles are already here — use them; don't ask.
 
 - **If `~/realtor-brain/` doesn't exist:** tell the agent to run _Realtor AI Brain — Setup_ first.

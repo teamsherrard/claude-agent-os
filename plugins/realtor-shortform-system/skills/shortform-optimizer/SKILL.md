@@ -44,7 +44,7 @@ keep it plain and warm, never technical. (Usually you're invoked behind the scen
 - `~/realtor-brain/identity/compliance.md` — the third law; read before finalizing any public text
 
 **The first law: read the Brain, never re-ask what it already knows.** The agent set all of this up once
-(in Cowork; it lives in their Google Drive `Realtor AI Brain` folder and syncs to `~/realtor-brain/`).
+(in Cowork; it lives in their cloud workspace — Google Drive or OneDrive, located by realtor-brain-sync's ladder, never by folder name — and syncs to `~/realtor-brain/`).
 Pull voice, market, avatar, offers, lead magnets, and handles straight from these files — do not ask the
 agent for anything that's in them.
 

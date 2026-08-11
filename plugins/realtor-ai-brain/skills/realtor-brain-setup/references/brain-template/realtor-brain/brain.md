@@ -40,6 +40,7 @@ If `~/realtor-brain/` is missing files, tell the agent to run **Realtor AI Brain
 - **Primary CTA:** [e.g., "Book a free consult — [link]"]
 - **Brand colors:** [#hex] / [#hex] / [#hex] · **Fonts:** [Heading] / [Body]
 - **Booking link:** [url] · **Socials:** [@instagram, @youtube, @tiktok]
+- **Locale:** [country · currency · units — format every price, date, and measurement to this (config.md)]
 
 ## The files
 **identity/** — who the agent is (set once, changes rarely)

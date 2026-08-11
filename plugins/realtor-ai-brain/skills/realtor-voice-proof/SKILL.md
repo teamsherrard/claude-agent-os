@@ -9,7 +9,9 @@ description: >
 
   Trigger on: "add my writing samples", "voice samples", "capture my voice", "add my testimonials",
   "build my proof library", "add my reviews", "add my stats", "phase 4", or any request to give the
-  Brain real examples of how the agent writes or proof of their results.
+  Brain real examples of how the agent writes or proof of their results. BOUNDARY: this skill = how they
+  TYPE (written samples). How they TALK (spoken voice for scripts) is realtor-voice-print — on a bare
+  "capture my voice", ask which they mean (or do written here, then offer the spoken layer).
 ---
 
 # Realtor Voice Samples + Proof (Brain Phase 4)

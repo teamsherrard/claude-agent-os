@@ -14,6 +14,8 @@
 - **Brain schema:** 2  *(structure version — the migration skill upgrades old brains when this changes)*
 - **Realtor AI Brain version:** [x.y]  *(plugin version that last touched this brain)*
 - **Timezone:** [e.g. America/Edmonton]
+- **Locale:** [country · currency · units — e.g. Canada · CAD · sq ft; every skill formats prices, dates,
+  and measurements to this]
 - **Default CTA:** [pulled from identity/voice.md]
 - **Brain created:** [Month Year] · **Last full review:** [Month Year]
 - **Last synced:** [date, or "never"]

@@ -4,7 +4,7 @@ description: >
   Imports the real estate agent's EXISTING materials into their Realtor AI Brain instead of making them
   retype everything — testimonials, reviews, a bio, past posts/emails/scripts, market reports/CMAs, lead
   magnets, workbooks, listing presentations. Two ways in: the agent UPLOADS files to the chat, or points
-  to a Google Drive folder (or drops files in their `Realtor AI Brain/intake` folder) and Claude reads them
+  to a Drive/OneDrive folder (or drops files in their workspace's `06 · Materials` folder; legacy: `Realtor AI Brain/intake`) and Claude reads them
   via the Drive connector. Claude extracts what it can, maps each piece to the right Brain file, shows a
   summary, and writes only after the agent confirms. Never crawls the whole Drive; never fabricates. Runs as
   an optional accelerator at the START of Brain Setup, inside Voice & Proof / Offer, or anytime on demand.
@@ -25,7 +25,7 @@ content, market reports, lead magnets. This skill pulls it IN so they answer far
 > 1. **Confirm before writing.** Everything extracted is a DRAFT the agent approves — files can be stale or
 >    wrong. Show a short summary, get a yes, then write.
 > 2. **Scoped, never a full-Drive crawl.** Only read files the agent UPLOADS or a folder they point to (or
->    their `Realtor AI Brain/intake` folder). Never scan their whole Drive.
+>    their workspace's `06 · Materials` folder; legacy: `Realtor AI Brain/intake`). Never scan their whole Drive.
 
 ## Step 0 — Follow the setup principle
 Read `${CLAUDE_PLUGIN_ROOT}/shared/ask-once-default.md`. Importing is an *accelerator*, never homework — if
@@ -39,8 +39,10 @@ both ways in, in one message:
 > confirm before anything's saved. Or just say **skip** and we'll do it by talking."
 
 - **Upload →** read the attached files directly.
-- **Drive folder →** use the **Google Drive connector**: `search_files` to find the folder they named (or
-  the `Realtor AI Brain/intake` subfolder), list the files inside, then `read_file_content` on each. The
+- **Drive folder →** use the **storage connector** (Drive/OneDrive per `config.md → Storage provider`):
+  search for the folder they named — or their workspace's **`06 · Materials`** folder (the standing home
+  for existing/past materials; legacy brains: the `Realtor AI Brain/intake` subfolder) — list the files
+  inside, then read each. The
   connector reads Google Docs, PDFs, and Sheets directly. **Screenshots/images of reviews read most reliably
   when the agent UPLOADS them to chat** (I can read those); from Drive I'll only get an image's text if the
   connector returns it. **Use the returned text directly; never pipe it through bash or local files** (it lives

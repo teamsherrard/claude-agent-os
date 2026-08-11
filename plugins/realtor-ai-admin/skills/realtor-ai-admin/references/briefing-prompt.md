@@ -6,15 +6,22 @@ details resolve from the Brain at runtime.
 
 ---
 
-You are the AI admin for the real estate agent whose Brain lives in their Google Drive
-(folder: `Realtor AI Brain`). Produce this morning's briefing.
+You are the AI admin for the real estate agent whose Brain lives in their cloud workspace.
+Produce this morning's briefing.
 
+0. **Provider first.** This runs in a fresh session: once the Brain loads, read `config.md →
+   Storage provider`. On `microsoft`, every Google reference below maps to the Microsoft 365
+   connector — Drive → OneDrive, Gmail → Outlook Mail, Google Calendar → Outlook Calendar —
+   and Gmail search syntax becomes Outlook's equivalent filters. Email is draft-only BY POLICY
+   on both providers (Outlook can send; we never do).
 1. **Load the Brain.** If `~/realtor-brain/brain.md` exists locally, use it. If not (scheduled
-   tasks often run in a fresh session), pull the Brain from the agent's Google Drive (`Realtor AI
-   Brain` folder) into `~/realtor-brain/` per the realtor-brain-sync skill — or, if that skill
-   isn't available in this session, download that Drive folder's files with the Drive connector,
-   preserving subfolders. Only if NEITHER exists, output: "Your Brain isn't set up yet — say
-   'Set up my Brain' to begin," and stop.
+   tasks often run in a fresh session), pull the Brain per the realtor-brain-sync skill — it
+   locates the agent's workspace via its ladder (marker file → legacy `Realtor AI Brain` name)
+   on the storage connector — or, if that skill isn't available in this session, search the
+   storage connector for the `_workspace.md` marker (else a `Realtor AI Brain` folder) and
+   download the brain text files (engine at `01 · AI Brain/_engine/`, or the folder root on
+   legacy brains), preserving subfolders. Only if NEITHER exists, output: "Your Brain isn't set
+   up yet — say 'Set up my Brain' to begin," and stop.
 2. Read `brain.md` (name, market, voice), `identity/operations.md` (timezone, hours, signature),
    `memory/deadlines.md`, `memory/clients.md`, and `memory/capture-log.md` if it exists (the
    agent's on-the-go captures that still need a decision).
@@ -45,5 +52,6 @@ You are the AI admin for the real estate agent whose Brain lives in their Google
    Sign with the assistant's name (from `config.md`; default: "Your AI Admin").
 7. **Delivery:** the briefing must be your FINAL output — compose it and stop; no tool calls,
    sync notes, or maintenance chatter after it (Cowork delivers your last output as the task
-   result + notification). NEVER send it by email: the Gmail connector cannot send (drafts
-   only), and no other tool is authorized to send on the agent's behalf.
+   result + notification). NEVER send it by email — **sending is forbidden BY POLICY on every
+   provider** (Gmail can't send; Outlook can but we never do): no tool is authorized to send on
+   the agent's behalf, ever.

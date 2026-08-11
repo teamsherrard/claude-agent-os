@@ -25,7 +25,10 @@ Read `config.md → Storage provider` (see the Brain plugin's `shared/connectors
 **`google`**, everything below runs as written (Gmail · Google Calendar · Google Drive). On
 **`microsoft`**, every reference to those — in this skill AND its references (briefing, inbox sweep,
 dispatch) — maps to the **Microsoft 365 connector**: Gmail → **Outlook Mail**, Google Calendar →
-**Outlook Calendar**, Drive → **OneDrive**, Google Meet fallback → **Teams**. Two rules never change:
+**Outlook Calendar**, Drive → **OneDrive**, Google Meet fallback → **Teams**, Google Contacts →
+**Microsoft 365 people/contacts search**, Gmail **labels** → Outlook **categories** (same names, same
+rules), and Gmail search syntax → Outlook's equivalent filters. Google-specific settings paths
+(e.g. "Google Calendar → Settings") become the agent's actual Outlook client's paths. Two rules never change:
 **email is draft-only on BOTH providers** (Outlook can send; we never do — the agent reviews and sends),
 and if Microsoft **write actions are org-gated**, surface it plainly per `connectors.md` — never let the
 agent think a draft or booking was saved when it wasn't.
@@ -58,9 +61,10 @@ The Admin exists only if it's FASTER than the agent doing it manually:
 5. Never ask the agent for anything the Brain already holds.
 
 ## Sync rule (protects the moat)
-After ANY write to `memory/` or `config.md`, **push the changed files to Drive** (brain-sync
-PUSH) before ending the turn — batched once per turn, not per file. If Drive is unreachable,
-say so plainly: "your notes aren't saved to Drive yet."
+After ANY write to `memory/` or `config.md`, push **immediately** — **write → push → verify is ONE
+atomic step per write** (per `realtor-brain-sync`), never batched to the end of the turn: a crash or
+closed tab between write and push loses the note forever. If a verify fails after one retry, tell the
+agent plainly the note is **NOT saved**, and reprint the full content in your reply so nothing is lost.
 
 ## Name resolution — when you hear a name the Brain doesn't know
 `clients.md` is the agent's **active working set, not their whole address book** — their real,
@@ -76,6 +80,8 @@ that `clients.md` doesn't have, walk this ladder and stop at the first hit:
 6. **Truly nothing** → don't guess. Log the note as-is and, in dispatch, park it in
    `memory/capture-log.md` for the morning briefing to confirm.
 Applies everywhere — bookings, drafts, logging, and especially dispatch.
+*(Boundary: the agent's **CRM stays the system of record** for contacts + pipeline — `clients.md` is the
+AI's working memory. When they conflict, the CRM wins; never present `clients.md` as the CRM.)*
 
 ---
 
@@ -198,9 +204,10 @@ surface, not follow.
 2. Write ONE **Recommended** reply in the agent's voice (variants on request) + surface one
    action item (follow-up / calendar event / note).
 3. Resolve the recipient's address via the **Name-Resolution Ladder** — never guess or invent
-   one. Create the reply as a **Gmail draft** — the connector cannot send, which IS the approval
-   model: nothing leaves under their name until they hit send. State the recipient in your
-   confirmation ("draft to the Lees (lee@…) in your Gmail").
+   one. Create the reply as a **draft** (Gmail / Outlook per provider) — **draft-only is the
+   approval model BY POLICY, on every provider** (Outlook can send; we never do): nothing leaves
+   under their name until they hit send. State the recipient in your confirmation ("draft to the
+   Lees (lee@…) in your Gmail").
 4. Log one line to `clients.md`; action item → `deadlines.md`. Sync.
 
 ## Thread Summary
@@ -263,6 +270,9 @@ back in one glance. **Follow `references/dispatch-capture.md`.** In short:
 | Video link on virtual bookings | Zoom connector | standing link in Brain → Google Meet |
 | Client self-booking | Cal.com | booking link in Brain → propose 2–3 slots by email |
 | Name resolution | Gmail + Calendar search | Google Contacts (optional) |
+*On `microsoft`, this whole table maps per the Provider rule: Microsoft 365 covers calendar (Outlook
+Calendar), email (Outlook Mail — categories instead of labels), storage (OneDrive), and people search;
+Teams replaces Google Meet as the fallback link.*
 If a required connector is missing, say which one and point to Settings → Connectors.
 
 ## Out of scope (parked for v2)

@@ -12,7 +12,9 @@ Brain materially changes (especially after the **Business Plan** is built), and 
 2. **Assemble the sections in order** as the house-style **structured text** — each section title as a CAPS band
    (`──── SECTION ────`) so `shared/render_doc.py` styles it; bullets and `Label:` lead-ins as usual.
 3. **Render + save.** Run it through `shared/render_doc.py` (per `shared/doc-formatting.md`) to a premium `.docx`
-   and save to Drive → `Realtor AI Brain → exports` as **"[Agent] — AI Brain"** (use `--eyebrow "Realtor AI Brain"`).
+   and save it to the workspace's **`01 · AI Brain/`** (legacy brains: `Realtor AI Brain → exports`) as
+   **"[Agent] — AI Brain — [YYYY-MM-DD]"** — dated, so regenerations never collide; newest = current
+   (use `--eyebrow "Realtor AI Brain"`).
    Then push (`realtor-brain-sync`). The `.docx` is the keepsake; the markdown identity files remain the truth.
 
 ## The sections (in this order)

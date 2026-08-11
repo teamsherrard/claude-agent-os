@@ -421,7 +421,8 @@ DATA SOURCES
 - `•` bullets, one per line; generous blank-line spacing.
 - No brand colours — every doc renders to one clean neutral standard (visual brand design lives in the agent's design tool).
 
-Upload the rendered `.docx` to the agent's Drive **`Realtor AI Brain` → `exports`** (find-or-create
+Upload the rendered `.docx` to the agent's workspace per `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md`
+(content deliverables → `03 · Content`; legacy brains: `Realtor AI Brain → exports` — find-or-create
 `exports`), named `Tour · [Neighbourhood] · [City]`, and tell the agent the location + link.
 
 ---

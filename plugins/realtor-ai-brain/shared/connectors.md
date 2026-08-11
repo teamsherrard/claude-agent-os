@@ -10,6 +10,7 @@ connector based on the **`Storage provider`** field in `config.md` (set once at 
 | **Storage — find folder / list files** | Google Drive connector (search) | Microsoft 365 connector (OneDrive/SharePoint search) |
 | **Storage — read a file's text** | Google Drive read-file | Microsoft 365 read/analyze file |
 | **Storage — create a file** | Google Drive create-file | Microsoft 365 create/update file |
+| **Storage — create a folder** | Google Drive create-file with the folder mime type | Microsoft 365 create folder (if a folder create fails, create the first file with the folder in its path — most storage APIs create the path; if that also fails, say so and save flat, never lose the file) |
 | **Email — search / read inbox** | Gmail connector | Microsoft 365 (Outlook Mail) |
 | **Email — draft a message** | Gmail (drafts) | Microsoft 365 (Outlook drafts) |
 | **Calendar — read / create / update events** | Google Calendar connector | Microsoft 365 (Outlook Calendar) |
@@ -38,6 +39,10 @@ disabled** — Claude can *read* their OneDrive but every create fails. The rule
 - Record `Storage: READ-ONLY (org-gated)` in `config.md` so every skill knows saves are blocked, and
   **surface it on every attempted save** until it's fixed. Never let an agent think work was saved when
   it wasn't.
+- **The rescue path (if gating is discovered AFTER content exists):** dump the full brain contents into
+  the chat as a clearly-delimited copyable block, say plainly it is **NOT saved**, and offer the switch:
+  set `Storage provider: google` in `config.md`, connect Google Drive (free account is fine), then re-run
+  the save. Setup probes at its FIRST write precisely so this rescue is almost never needed.
 
 ## Choosing the provider (setup does this once)
 - If **Google Drive is connected** → `google`. If **Microsoft 365 is connected** (and Drive isn't) →
