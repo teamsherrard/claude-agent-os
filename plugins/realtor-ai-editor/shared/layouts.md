@@ -15,6 +15,15 @@ Descript has a **Layout** feature (Properties → Layout) — use it. The classi
 - B-roll is horizontal and cropping loses the subject → **split-screen**.
 - When in doubt, split-screen keeps it clean *and* keeps the agent present.
 
+## Vertical b-roll on a HORIZONTAL 16:9 video (the mirror problem)
+
+Long-form is 16:9, and a lot of free stock is shot vertical. Dropping a 9:16 clip into a 16:9 frame is the same mistake in reverse.
+
+1. **Full-bleed cover-fill** — fine if the subject survives losing the top and bottom (a person walking, a close-up). Most vertical stock does.
+2. **If cover-fill destroys it** (a tall building, a full-body shot), don't force it: **pick a different, natively-horizontal clip instead.** There's plenty of 16:9 stock — swapping the clip is free and always beats a broken frame.
+3. **Never** pillarbox it with black bars down the sides, and never float it small in the middle of the frame. Both read as an error.
+4. Same recognisability bar as everywhere: if you can't tell what it is in a 4-second glance, it's the wrong clip.
+
 ## Other layout uses
 
 Split-screen / picture-in-picture is also good for screen-shares (keep the face in a corner) and side-by-side comparisons. Same rule: the agent should almost always stay visible on a talking-head reel.

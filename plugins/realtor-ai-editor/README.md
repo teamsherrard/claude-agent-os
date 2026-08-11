@@ -36,6 +36,7 @@ Descript does **both** long-form (YouTube) and short-form (Reels/Shorts/TikTok).
 | `edit-longform` | Edit a long-form / YouTube video end to end. |
 | `edit-shortform` | Make reels, or recycle a long video into vertical clips. |
 | `edit-listing` | Edit a property/home tour using the agent's own footage or listing photos. |
+| `editor-quick` | One small fix, cheaply — "just add captions", "just clean the audio". One pass, not a full edit. |
 | `editor-broll` | The B-roll brain: finds and places footage from multiple sources. |
 
 ## Setup

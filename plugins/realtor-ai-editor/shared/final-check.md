@@ -77,6 +77,7 @@ This is the real gate. Split into BLOCKERS (auto-fail — cannot deliver) and PO
 ## Captions & graphics
 - **Graphics are purposeful and Descript-native** — short-form: a hook card + a CTA card (≤2–3 cards), the karaoke captions carry the keyword emphasis (no separate pop cards); long-form: hook + CTA + an emphasis pop-up every ~2–3 min (these ARE the emphasis layer). Don't sparse-panic OR pile on (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`).
 - **Cards sit on a rounded brand panel** — never a flat black box, never bare floating text.
+- **Panel is DARK and the text reads against it** — panel picked deterministically (`bg` → `primary` → `#1F2A37`, dark test ≤~0.35 luminance), text white. **Light text on a light panel is a FAIL** — if the agent's brand is light, the panel should have fallen back to the dark neutral (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`).
 - **Captions AND cards/graphics sit BELOW the face — never over it (absolute)** — or a card is timed over a B-roll moment.
 - **Graphics are clean — not cramped, overlapping, or broken** (no tiny multi-box grids / quadrants with colliding text).
 - Every text element FITS its box (padding, no overflow).
@@ -102,6 +103,7 @@ This is the real gate. Split into BLOCKERS (auto-fail — cannot deliver) and PO
 ## Verify, then deliver
 - Each paid step actually landed (job result success), not assumed.
 - Both gates above are green (every blocker PASS/FIXED, every compliance line PASS/FIXED/N/A) BEFORE you hand anything back.
+- **Exported at the right resolution — `1080p`, never lower** (4K only if they asked). A 480p/720p export to a client is a disaster; check what you actually passed to `publish_project`.
 - Hand back once, in plain language, using the standard delivery message below.
 
 ## GATE 3 — DELIVERY MESSAGE (the standard hand-back)

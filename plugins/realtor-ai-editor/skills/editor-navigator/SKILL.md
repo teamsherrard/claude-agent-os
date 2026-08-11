@@ -50,6 +50,7 @@ If they don't answer or seem unsure, **pick the recommended default and proceed*
 | "make shorts/clips from this", "cut this up", "repurpose it" | recycle long → clips | `edit-shortform` |
 | "edit my YouTube video", "my market update", "my long video" | long-form | `edit-longform` |
 | "edit my listing/home tour", "my property video", "walkthrough" | property tour (footage-specific) | `edit-listing` |
+| **"just add captions", "just clean the audio", "just make it vertical", "just trim the start", "only the CTA"** | **ONE small fix — not a full edit** | **`editor-quick`** (one cheap pass) |
 | "add the skyline", "add some footage", "make it less boring" | B-roll | `editor-broll` (inside an edit) |
 | "set this up", "it's not connected", first run | onboarding | `editor-setup` |
 | **"finish my video", "pick up where we left off", "continue my edit", "my edit stopped", "it ran out of credits", "resume my video"** | **resume a stopped edit** | **"Picking up a stopped edit" below → back into the original edit skill in resume mode** |

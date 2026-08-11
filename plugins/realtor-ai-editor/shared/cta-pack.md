@@ -6,7 +6,9 @@ Read the agent's saved CTA from `~/realtor-brain/editor/config.json` (text + det
 
 A realtor video that doesn't tell the viewer what to do next is a wasted video. Always close with the agent's call-to-action — and reinforce it **on screen**, not just spoken. If the agent says "if you want to work with me…", something must appear: their name, number, website, or "DM me."
 
-## The branded CTA pack — build once, reuse forever
+## The branded CTA pack — decide once, rebuild instantly every time
+
+(To be precise: there's no stored graphic sitting in a library. The **wording and brand values are saved once** in the agent's config, and the card is re-created from them on each video — which is why it's always on-brand and costs almost nothing.)
 
 Realtors reuse the same handful of CTAs on every video:
 
@@ -16,7 +18,7 @@ These should be **clean, branded CTA pop-ups** (the agent's colours, font, logo)
 
 The CTA card is done **natively in Descript**, kept minimal and on-brand (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`): a **rounded brand-coloured panel** (never a flat box, never bare text), big and bold, animated in (~0.3s pop/slide), **OFF THE FACE — and the right zone depends on the format** (`${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md` is canonical): on a **vertical reel**, pin it to the extreme top edge above the hairline, inside the top ~8–10% margin; on **16:9 long-form, use the LOWER THIRD (~75–80% down)** — the top is usually blocked by the speaker's head, and pinning high there is what put a card across a real client's eyes. Best of all in either format: **time it over the closing B-roll** (no face on screen). Never over the face or the bottom captions — synced to the exact closing line. Tell Descript exactly that every time; out of the box it makes a small flat centred box right on the face. Set the brand values once and reuse them on every video.
 
-It fills the most common gap (no CTA on screen) and stays cheap because it's one Descript card, reused, with the brand values set once.
+It fills the most common gap (no CTA on screen) and stays cheap because it's one Descript card built from values the agent set once — not a bespoke design each time.
 
 ## Keep it simple for the agent
 

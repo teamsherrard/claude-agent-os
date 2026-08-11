@@ -1,6 +1,8 @@
 # Music (bed + ducking)
 
-A reel needs a music bed, always ducked under the voice. Long-form ships without a bed by default — add a subtle one only if the agent asks (it's not part of the long-form pass plan).
+A reel needs a music bed, always ducked under the voice.
+
+**Long-form: no bed by default — but OFFER it, don't just leave it out silently.** It's excluded from the long-form pass plan to protect credits, not because it's wrong; plenty of strong realtor YouTube has a quiet bed under the talking head. So at delivery, say it in one line: *"I left music off this one to keep it clean and save you credits — want a subtle bed under it? It's a quick add, or you can drop one in yourself for free in Descript."* Their call, made knowingly.
 
 ## Mood → bed (match the content)
 - Market update / data / tips → light, modern, confident underscore (~90–110 BPM).

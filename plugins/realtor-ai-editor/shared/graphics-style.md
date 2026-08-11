@@ -12,7 +12,7 @@ On a **short-form reel** that's **2, maybe 3 cards total** — the karaoke capti
 
 ## Every card must be (the quality bar)
 
-- **On a rounded, brand-coloured panel** with a soft drop shadow — **NEVER a flat hard black box, and NEVER bare text floating on the footage** (bare text vanishes on bright/busy footage — the recurring contrast complaint).
+- **On a rounded, brand-coloured panel** with a soft drop shadow — **NEVER a flat hard black box, and NEVER bare text floating on the footage** (bare text vanishes on bright/busy footage — the recurring contrast complaint). Which colour exactly → **"Panel colour" below** (don't improvise it).
 - **OFF THE FACE — absolute** (see placement below).
 - **Big & bold** — fill a real part of the frame, heaviest weight (800–900).
 - **On-brand** — colours/fonts from the Brain (`brand-wiring.md`); never a tool default (it once defaulted to green). One accent colour, used for the one thing the eye should land on.
@@ -21,6 +21,33 @@ On a **short-form reel** that's **2, maybe 3 cards total** — the karaoke capti
 - **⚠️ THE 4K OVERFLOW TRAP — the #1 way cards ship broken.** In a 4K composition (3840×2160) Descript sizes **fonts at 1080p scale** but treats the **background box in 4K pixels** — so a card asked for at "90pt" renders roughly **DOUBLE** its box and the words spill out above and below the panel, as bare unreadable text. Seen live on a real client video: the hook card overflowed AND landed across the speaker's eyes. **The rule:** never specify a card in raw pt. Specify **cap height ≈ 3.5% of frame height** (~75px in 4K terms), demand the **background box be ≥30% wider and ≥60% taller than the text bounding box**, and tell Descript to **measure the text bbox against the panel and shrink the font until it's contained**. Keep each card to **ONE short line** where possible — multi-line wraps are what overflow. Then prove it on a full-res frame (`final-check.md` blocker 12).
 - **Typography is DESIGNED, not assembled — this is the bar cards keep failing.** Every line centred relative to the panel AND to each other (two stacked lines with different centres read broken); **single spaces only** (a double space like "MORE IN␣␣90 DAYS" is instantly sloppy); a deliberate size hierarchy; and the **panel HUGS the text** — tight, even padding (~40–60px), never an oversized slab of empty colour. **ALWAYS build a card as ONE single text object** (a text layer with its own background colour) — never separate text layers stacked on a rectangle: stacked layers drift out of alignment, which is exactly how the rejected "horrible" hook card happened (it was four separate layers). **And NEVER use Descript's library templates/layouts for a card — live-tested and banned:** a "title template" applied via Underlord is a LAYOUT object that hijacks the scene — it zoomed the footage into a giant close-up and ran its text off the edge of the frame, while reporting the video "untouched." One text object is the ONLY approved build.
 - **No cramped multi-box grids** — Descript renders 2×2 quadrants / packed grids BROKEN (overlapping, cut-off). For a multi-part idea use **sequential cards** (one at a time) or a simple stacked list, full-size.
+
+## Panel colour — pick it deterministically (never "some brand colour")
+
+The panel is **always DARK**, so white text always reads. Pick it in this order and take the first one that passes the dark test:
+
+1. `brand.colors.bg` — if dark
+2. `brand.colors.primary` — if dark
+3. **`#1F2A37`** (the neutral dark fallback)
+
+**The dark test:** convert to greyscale — `(0.2126·R + 0.7152·G + 0.0722·B) / 255`. **Below ~0.35 = dark enough.** Above that, it will not carry white text; move to the next option.
+
+- **Text on the panel is always `brand.colors.text` (default `#FFFFFF`).** Never light text on a light panel — that's the exact contrast failure banned everywhere else in this plugin.
+- **If ALL their brand colours are light** (cream / gold / pastel — common in luxury real estate), **do not force it.** Use `#1F2A37` and put the brand colour to work as a thin accent rule or underline instead. Say it once, plainly: *"Your brand colours are light, so I've put them on a dark panel — light-on-light doesn't read on video."*
+- **`brand.colors.accent` does NOT go inside a card.** A single text object can't do per-word colour (live-tested), so the accent lives in the karaoke captions' active word (`brand.caption.accent`), not the card.
+
+## Style packs — so 100 agents don't look identical
+
+Read `brand.style_pack` from the config (`${CLAUDE_PLUGIN_ROOT}/shared/brand-wiring.md`). It shifts the *look and energy*, never the safety rules — off-face, contrast, containment, and the caps hold in every pack. Default is `bold-kinetic`.
+
+| Pack | Cards | Type | Energy |
+|---|---|---|---|
+| **`bold-kinetic`** *(default)* | hook + CTA, punchy pop-in | heaviest weight (800–900) | 2–3 punch-ins, swooshes, snappy transitions |
+| **`clean-minimal`** | fewest possible — hook + CTA only, gentle fade | lighter weight, more padding, more air | 1–2 punch-ins, one soft SFX, soft dissolves |
+| **`data-rich`** | favours the optional **stat card**; numbers get their own moment; a touch more long-form emphasis pop-ups | heavy, numerals prominent | punch-ins land on the stats |
+| **`cinematic`** | sparing, elegant, slow fade | condensed, refined | slow dissolves, minimal SFX, fewer punch-ins, slightly richer grade |
+
+These align with the named caption looks in `${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md` — keep a agent's card pack and caption look in the same family.
 
 ## OFF THE FACE — how (FORMAT-AWARE; this is the rule that kept getting broken)
 

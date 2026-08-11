@@ -5,6 +5,7 @@
     "note": "Connected in the Claude desktop app. No API key is stored here."
   },
   "brand_source": "~/realtor-brain/identity/brand-visual.md",
+  "_brand_source_comment": "FALLBACK POINTER ONLY — this is where the brand block below gets refreshed FROM. It is not the source the skills read at edit time; that is always the 'brand' block below (resolution order #1). Don't confuse the two.",
   "_brand_comment": "SINGLE SOURCE OF TRUTH for the editor's brand. Setup writes the captured colours/font here. This block is resolution source #1 (see shared/brand-wiring.md); if blank, readers fall back to the Brain's identity/brand-visual.md, then tasteful defaults. There is NO separate brand.json file.",
   "brand": {
     "agent_name": "",
