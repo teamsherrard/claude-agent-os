@@ -26,33 +26,44 @@ Agents will want to name this folder after their business — "Realty Group OS",
 
 ## The structure (the plugin builds this automatically, once)
 ```
-Social Agent OS/                 ← the master workspace folder (created + named by the system)
-├── 01 · AI Brain/               ← what the AI knows about the agent + their key documents
-│   ├── Your AI Brain.docx        ← the polished, readable master document (the agent opens THIS)
-│   ├── Your Business Plan.docx   ← the 90-day plan (agent opens this)
-│   └── _engine/                  ← the raw brain files that run everything (agent never opens these)
-│       └── identity/  memory/  brain.md  config.md
-├── 02 · Brand/                  ← logo, headshot, colours, fonts, brand kit
-├── 03 · Content/                ← scripts, videos, posts + market updates, guides, lead magnets
-│   └── To Film/   Published/
-└── 04 · Drop Zone/              ← the agent drops ANYTHING here for the AI to use
+[Business] OS/                   ← master workspace (renameable; found by folder ID, never by name)
+├── 01 · AI Brain/               ← what the AI knows + your key documents
+│   ├── Your AI Brain.docx        ← the polished master doc (the agent opens THIS)
+│   ├── Your Business Plan.docx
+│   └── _engine/                  ← raw brain files, agent never opens (identity/ memory/ brain.md config.md)
+├── 02 · Brand/                  ← logo, headshots, colours, fonts, brand kit
+├── 03 · Content/                ← what you create + post
+│   ├── Long-Form/                (YouTube videos)
+│   ├── Short-Form/               (reels & clips)
+│   ├── Graphics/                 (carousels, thumbnails, designed posts)
+│   └── Guides/                   (lead magnets, downloadable PDFs)
+├── 04 · Listings/               ← one subfolder per property (by address): photos + that listing's content
+├── 05 · Market/                 ← monthly market reports + data
+└── 06 · Materials/              ← the agent's existing/past stuff (old marketing, reference) — the AI reads these
 ```
+The system **auto-creates all of this at setup** — the agent never builds a folder. The stable folders (01–06
++ the Content sub-buckets) are created up front; **per-listing subfolders under `04 · Listings` are created on
+demand** as the agent adds properties. **Storage-agnostic:** the exact same map is built on **Google Drive OR
+OneDrive** (via the provider set in `config.md` — see the Microsoft tier).
 
 ## How plugins use it
-- **Read across the whole workspace, by relevance — not just `_engine`.** A content skill can pull a past
-  marketing file from `03 · Content` or something dropped in `04 · Drop Zone`; the editor reads footage from
-  `03 · Content`; graphics read the logo from `02 · Brand`. The Brain's `_engine` is the structured *core*, but
-  it is not the only thing the system can see.
+- **Read across the whole workspace, by relevance — not just `_engine`.** A content skill can reuse a past
+  marketing file from `06 · Materials`; the editor reads footage from `03 · Content`; graphics read the logo from
+  `02 · Brand`. The Brain's `_engine` is the structured *core*, but not the only thing the system can see.
 - **The engine stays the working truth.** Skills still read/write the structured brain files (identity, memory)
-  exactly as before — locally in `~/realtor-brain/`, synced to `01 · AI Brain/_engine/`. That behaviour does not change.
+  locally in `~/realtor-brain/`, synced to `01 · AI Brain/_engine/`. That behaviour does not change. *(Sync pulls
+  only the Brain text — never the big media in Content/Listings.)*
 - **Where deliverables save:**
-  - Master **AI Brain doc** + **Business Plan** → `01 · AI Brain/` (top level, visible).
-  - **Content deliverables** (market updates, guides, lead magnets, scripts, listing content) → `03 · Content/`.
-  - **Brand assets** → `02 · Brand/`. **Raw material the agent hands over** → `04 · Drop Zone/`.
-- **Hand the agent the link.** At the end of setup, give them the **direct link** to their `Social Agent OS`
-  folder and tell them to **bookmark it** — that's their home base.
+  - Master **AI Brain doc** + **Business Plan** → `01 · AI Brain/`.
+  - **Long-form** → `03 · Content/Long-Form`; **short-form** → `Short-Form`; **carousels/thumbnails/designs** →
+    `Graphics`; **lead magnets/guides** → `Guides`.
+  - **Listing content + photos** → `04 · Listings/[address]/`. **Monthly market report** → `05 · Market/`.
+  - **Brand assets** (logo, headshots, kit) → `02 · Brand/`. **The agent's pre-existing material** → `06 · Materials/`.
+- **Hand the agent the link.** At the end of setup, give them the **direct link** to their workspace folder and
+  tell them to **bookmark it** — that's their home base.
 
 ## Presentation rules (never make the agent feel technical)
 - **Agent-friendly names only** on anything they see — never `identity / memory / exports` in front of them.
 - **Polished docs visible, engine hidden** — the agent opens `01 · AI Brain` and sees *their documents*, not `.md` files.
-- **One drop zone** (the forever-rule): anything new lands in `04 · Drop Zone`; the system reads it, uses it, files it.
+- **The agent almost never files anything** — the system creates the map and files what it makes. They mostly just
+  open `01 · AI Brain` (their docs) and drop videos into `03 · Content`; old material goes in `06 · Materials`.
