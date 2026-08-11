@@ -131,3 +131,8 @@ the magnet and its funnel live together in one campaign folder; each doc is **re
 ALL-CAPS section headers with divider rules, generous spacing, and bullets, and the renderer turns it into
 real headings, bullet lists, and tables. Always tell the agent where it is in plain words, and deliver the
 copy in chat too.
+
+## The write-back law (an unsynced write is a lost write)
+Any write to the Brain (`memory/content-log.md`, `memory/listings.md`, anything in `~/realtor-brain/`) is
+**write → push → verify, immediately** — run **realtor-brain-sync** (PUSH) as part of the write, never
+batched to the end. The local sandbox is wiped between sessions; only the cloud copy survives.

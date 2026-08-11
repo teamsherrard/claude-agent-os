@@ -30,7 +30,7 @@ Read `~/realtor-brain/brain.md` first, then:
 - `identity/operations.md` — their follow-up cadence and signature, if it's set.
 - `identity/compliance.md` — disclaimer and licence.
 
-If `~/realtor-brain/` is missing, send them to **Realtor AI Brain — Setup** and stop.
+If `~/realtor-brain/` is missing, **pull it first — never assume no Brain**: every fresh session/project starts with an empty sandbox while the Brain lives safely in the agent's cloud workspace (Drive/OneDrive). Run **realtor-brain-sync** (PULL — its locate ladder finds the workspace). Only if the CLOUD truly has no Brain either, send them to **Realtor AI Brain — Setup** and stop.
 
 ## Step 2 — Load the listing, and get the date
 Read `~/realtor-brain/memory/listings.md` — address, beds/baths/sqft, price, features, status,

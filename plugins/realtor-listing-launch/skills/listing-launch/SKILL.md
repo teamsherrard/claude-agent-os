@@ -32,7 +32,7 @@ Read `~/realtor-brain/brain.md` first, then:
 - `identity/content-engine.md` — which platforms they actually post on. Plan around those, not a
   generic list. If it's missing, plan for Instagram and Facebook and say so in one line.
 
-If `~/realtor-brain/` is missing, send them to **Realtor AI Brain — Setup** and stop.
+If `~/realtor-brain/` is missing, **pull it first — never assume no Brain**: every fresh session/project starts with an empty sandbox while the Brain lives safely in the agent's cloud workspace (Drive/OneDrive). Run **realtor-brain-sync** (PULL — its locate ladder finds the workspace). Only if the CLOUD truly has no Brain either, send them to **Realtor AI Brain — Setup** and stop.
 
 ## Step 2 — Load the listing
 Read `~/realtor-brain/memory/listings.md`.

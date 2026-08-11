@@ -92,3 +92,8 @@ Every piece in a launch quotes the same facts and sounds like the same person.
   block and rebuild.
 - Banned words everywhere: unlock, supercharge, game-changer, revolutionary, secret weapon,
   leverage (as a verb).
+
+## The write-back law (an unsynced write is a lost write)
+Any write to the Brain (`memory/content-log.md`, `memory/listings.md`, anything in `~/realtor-brain/`) is
+**write → push → verify, immediately** — run **realtor-brain-sync** (PUSH) as part of the write, never
+batched to the end. The local sandbox is wiped between sessions; only the cloud copy survives.

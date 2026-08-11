@@ -43,8 +43,7 @@ Read `~/realtor-brain/brain.md` first, then:
 - `memory/content-log.md` — avoid repeating a recent carousel topic
 - `memory/performance.md` — what worked last cycle (from the 2-week review); lean on it when picking the topic, cover hook, and CTA. Skip if it doesn't exist yet
 
-**Read the Brain; never re-ask what it knows** (house rules #2). If `~/realtor-brain/` is missing, send
-them to **Realtor AI Brain — Setup**.
+**Read the Brain; never re-ask what it knows** (house rules #2). If `~/realtor-brain/` is missing, **pull it first — never assume no Brain**: every fresh session/project starts with an empty sandbox while the Brain lives safely in the agent's cloud workspace (Drive/OneDrive). Run **realtor-brain-sync** (PULL — its locate ladder finds the workspace). Only if the CLOUD truly has no Brain either, send them to **Realtor AI Brain — Setup**.
 
 ## Step 2 — Read the reference file
 `references/carousel-guide.md` — carousel types, slide structures, and what makes one get saved/shared.

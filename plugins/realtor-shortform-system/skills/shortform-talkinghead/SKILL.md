@@ -44,8 +44,7 @@ Read `~/realtor-brain/brain.md` first (follow its laws), then:
 - `memory/ideas.md` (tag `shortform`) — reel/topic ideas the agent captured on the go; put these at the TOP of the list, and mark each Used once scripted
 - `memory/performance.md` — what worked last cycle (from the 2-week review); lean on it when picking topics, hooks, and CTAs. Skip if it doesn't exist yet
 
-**Read the Brain; never re-ask what it knows** (house rules #2). If `~/realtor-brain/` is missing, send
-them to **Realtor AI Brain — Setup**.
+**Read the Brain; never re-ask what it knows** (house rules #2). If `~/realtor-brain/` is missing, **pull it first — never assume no Brain**: every fresh session/project starts with an empty sandbox while the Brain lives safely in the agent's cloud workspace (Drive/OneDrive). Run **realtor-brain-sync** (PULL — its locate ladder finds the workspace). Only if the CLOUD truly has no Brain either, send them to **Realtor AI Brain — Setup**.
 
 ## Step 2 — Read the reference files
 1. `references/topic-guide.md` — how to build the 80/20 topic list (broad vs niche, what makes a strong topic)

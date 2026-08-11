@@ -31,7 +31,7 @@ Read `~/realtor-brain/brain.md` first, then:
 - `memory/listings.md` — what's already on file. If this address is already there, don't re-capture:
   show what you have and ask if anything changed.
 
-If `~/realtor-brain/` is missing, send them to **Realtor AI Brain — Setup** and stop.
+If `~/realtor-brain/` is missing, **pull it first — never assume no Brain**: every fresh session/project starts with an empty sandbox while the Brain lives safely in the agent's cloud workspace (Drive/OneDrive). Run **realtor-brain-sync** (PULL — its locate ladder finds the workspace). Only if the CLOUD truly has no Brain either, send them to **Realtor AI Brain — Setup** and stop.
 
 ## Step 2 — The Dispatch door (one sentence, on the go)
 

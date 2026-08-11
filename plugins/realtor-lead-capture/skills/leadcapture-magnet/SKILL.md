@@ -36,7 +36,7 @@ Read `~/realtor-brain/brain.md` first, then:
 
 **Read the Brain; never re-ask what it knows (house rules #2).** If `identity/offer.md` is thin or empty,
 stop and tell the agent kindly that the magnet is only as strong as the offer behind it, and point them to
-**"build my offer"** first. If `~/realtor-brain/` is missing, send them to **Realtor AI Brain — Setup**.
+**"build my offer"** first. If `~/realtor-brain/` is missing, **pull it first — never assume no Brain**: every fresh session/project starts with an empty sandbox while the Brain lives safely in the agent's cloud workspace (Drive/OneDrive). Run **realtor-brain-sync** (PULL — its locate ladder finds the workspace). Only if the CLOUD truly has no Brain either, send them to **Realtor AI Brain — Setup**.
 
 ## Step 2 — Read the references
 - `references/magnet-guide.md` — magnet types, what makes one worth opting in for, the guide structure.
