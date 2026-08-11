@@ -37,6 +37,10 @@ Everything else is done.
 - `~/realtor-brain/identity/market.md` — local conditions, price ranges, neighbourhoods served
 - `~/realtor-brain/identity/avatars.md` — ideal client, what the audience worries about right now
 - `~/realtor-brain/identity/voice.md` — tone, what they never want to sound like, signature phrases, CTA
+- `~/realtor-brain/identity/voice-print.md` — SPOKEN voice DNA — these are read-aloud scripts: write them in the
+  agent's spoken cadence + signature phrases (empty → voice.md alone; never fabricate)
+- `~/realtor-brain/identity/story-bank.md` — if a banked story matches an article's theme, weave it into that
+  script's angle (anonymize clients, stamp Used-where); empty → proceed
 - `~/realtor-brain/memory/content-log.md` — articles/angles already covered, so the batch stays fresh
 
 The city/market is the primary search parameter. The target audience shapes which articles are

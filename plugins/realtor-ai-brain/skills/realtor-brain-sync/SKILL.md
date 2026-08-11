@@ -71,7 +71,10 @@ Agents may rename the workspace folder to their business name. Locate it in this
 > sync — a crash, timeout, or closed tab between write and push loses the work forever.
 1. **Push only what changed** this session (compare against what was pulled). The connector can't
    update-in-place, so every push **creates a new copy** — changed-only keeps the copies from piling up.
-   Engine `.md` files upload as **plain files with auto-conversion disabled** so they read back exactly.
+   Engine `.md` files upload as **plain files with auto-conversion disabled**.
+   **Normalize before comparing (live-verified):** the connector returns `.md` text **markdown-escaped**
+   (`\#`, `\-`, `\_`) — strip that escaping before diffing pulled-vs-local, or every file looks changed
+   and every session pushes a phantom duplicate. Compare *meaning*, not bytes.
 2. **Verify each push:** search for the file and confirm the new copy exists (newest timestamp = yours).
    - Verify fails → retry once. Still failing → **tell the agent their work is NOT saved yet**, keep the
      written content visible in chat so nothing is silently lost, and troubleshoot the connector.

@@ -9,7 +9,7 @@
     {
       "name": "realtor-ai-brain",
       "source": "./plugins/realtor-ai-brain",
-      "version": "0.32.1",
+      "version": "0.33.0",
       "description": "PLUGIN 1 \u2014 install first. The Realtor AI Brain: one shared brain (the agent's identity + memory) that powers every other system. Run 'Set up my Brain' once, and every tool already knows the agent. Plus a system-wide Capture layer: talk on the go and your ideas, wins, vendors, and market notes file themselves into the Brain."
     },
     {
@@ -21,13 +21,13 @@
     {
       "name": "realtor-youtube-system",
       "source": "./plugins/realtor-youtube-system",
-      "version": "0.10.1",
+      "version": "0.11.0",
       "description": "PLUGIN 3 \u2014 the YouTube System. Starts with a complete YouTube Game Plan (built on Mike Sherrard's frameworks) \u2014 channel audit, 3 high-intent pillars, ~50 exact titles, goal-math, and a 90-day plan \u2014 then ideation, research, SEO, scripting in the agent's own voice, lead magnets, repurposing, analytics, and coaching \u2014 plus a live Content Dashboard in the agent's own Notion, seeded from their Game Plan, where every video card fills with the script, SEO, lead magnet, and top-3 reference videos. Runs on the Live Data Engine \u2014 real YouTube + search data behind the audit, gap analysis, titles, references, and analytics. Requires Plugin 1 (the Brain) set up first."
     },
     {
       "name": "realtor-shortform-system",
       "source": "./plugins/realtor-shortform-system",
-      "version": "0.12.1",
+      "version": "0.13.0",
       "description": "PLUGIN 4 \u2014 the Short-Form System. A routine-based short-form OS: daily green-screen reactions, talking-head value, and carousels, each optimized for Instagram/Facebook, TikTok, and YouTube Shorts. The agent thinks in formats; Claude keeps the funnel balanced, schedules posts through their own Metricool / GoHighLevel / Buffer (bring-your-own), and reviews performance on a 2-week loop. Shares one Notion Content Dashboard with the YouTube System (a Short-Form view of the same board). Text only \u2014 never films or designs. Requires Plugin 1 (the Brain) set up first."
     },
     {

@@ -24,7 +24,10 @@ Write the video — in the agent's voice, ready to read off a teleprompter.
 - The idea — either Ideation's package (title, hook, thumbnail) OR one the agent brings directly. If
   they bring their own, quickly shape the title/hook/angle with them first, then write.
 - **AI Brain:** VOICE (tone, pacing, phrases, hard-avoids), avatars (their fear + questions),
-  offer/CTA, market specifics, communities, differentiators.
+  offer/CTA, market specifics, communities, differentiators — **plus `identity/voice-print.md` (their
+  SPOKEN voice DNA: pace, verbatim signature phrases, filler, never-say) and `identity/story-bank.md`
+  (their real stories, tagged by topic).** Scripts are read aloud — the voice print is the primary
+  reference for cadence. Both may be empty on a new brain: proceed on voice.md alone, never fabricate.
 - Relevant **Research Brief** facts to use as talking points — ONLY verified, sourced ones (with source + date).
 - **For price-point / comparison videos** ("what $Xk gets you," "$X vs $Y"): use the live listing data from
   the Research Brief — real beds/baths/sq ft/community/price — so you state real numbers, not placeholders.
@@ -65,9 +68,14 @@ fit (e.g. a 10–12 min video ≈ 1,400–1,700 words). Value-dense, scannable, 
 Any number/claim you can't verify → write `[double-check before filming]`, never guess. The agent must never say something false on camera.
 
 ## Step 3 — Voice (critical)
-Match the AI Brain voice exactly. For a calm/consultative agent: short, clear sentences; reassuring;
-teach step-by-step; **no hype, no pressure, no clickbait.** Honor every hard-avoid. Re-read as the
-agent — if a line sounds salesy, rewrite it. Weave in their differentiator where it fits naturally.
+Match the AI Brain voice exactly — and when `voice-print.md` exists, **write for the EAR in their spoken
+cadence**: their sentence length, their verbatim signature phrases, their energy; respect the never-say
+list. For a calm/consultative agent: short, clear sentences; reassuring; teach step-by-step; **no hype,
+no pressure, no clickbait.** Honor every hard-avoid. Read the script ALOUD as the agent — if a line
+sounds salesy or un-sayable in their mouth, rewrite it. Weave in their differentiator where it fits.
+**Stories:** before writing, check `story-bank.md` for a story tagged to this topic or emotional beat —
+a real banked story in the open or close beats any invented example (anonymize real clients, stamp its
+Used-where). If the agent volunteers a new story in chat, use it AND offer to bank it.
 
 **Ship it complete — no blanks, no homework.** Never insert `[add your story]`-style placeholders — gaps
 make agents overthink and resist. Write every line ready to read, including examples (drawn from the

@@ -31,6 +31,10 @@ beyond knowing where they're going.
 
 - `~/realtor-brain/identity/profile.md` — name, city, booking link, CTA
 - `~/realtor-brain/identity/voice.md` — tone, voice, what they never want to sound like
+- `~/realtor-brain/identity/voice-print.md` — SPOKEN voice DNA — this script is read while driving/walking:
+  write the word-for-word parts in their spoken cadence (empty → voice.md alone; never fabricate)
+- `~/realtor-brain/identity/story-bank.md` — a real local story fits tours perfectly; weave one in if tagged to
+  this neighbourhood/topic (anonymize clients, stamp Used-where); empty → proceed
 - `~/realtor-brain/identity/avatars.md` — who their buyers and sellers are, what they care about
 - `~/realtor-brain/memory/content-log.md` — recent tour/area content, so this one takes a fresh angle
 

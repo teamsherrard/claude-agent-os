@@ -33,6 +33,10 @@ Read `~/realtor-brain/brain.md` first (follow its laws), then:
 - `identity/market.md` — neighbourhoods, price ranges, local conditions
 - `identity/avatars.md` — who this is for and what they worry about
 - `identity/voice.md` + `identity/voice-samples.md` — tone + their real phrasing (scripts must sound like them)
+- `identity/voice-print.md` — their SPOKEN voice DNA (pace, signature phrases, never-say) — **scripts are read
+  aloud, so write for the ear in their spoken cadence** (if empty, proceed on voice.md alone; never fabricate)
+- `identity/story-bank.md` — check for a real story matching this topic/emotional beat; weave it in (anonymize
+  real clients) and stamp its Used-where. Empty → just write without one; never invent a story
 - `identity/offer.md` — offer, USP, **lead magnets** (for CTAs)
 - `identity/content-engine.md` — their content pillars (topics should ladder up to these) + platform priority
 - `identity/compliance.md` — the third law

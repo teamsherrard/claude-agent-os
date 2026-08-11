@@ -36,6 +36,10 @@ the agent for anything already in the Brain:
 - `~/realtor-brain/identity/profile.md` — name, city/market, booking link, social handles, credentials
 - `~/realtor-brain/identity/avatars.md` — ideal client, neighbourhoods, buyer/seller pain points
 - `~/realtor-brain/identity/voice.md` — tone, what they never want to sound like, tagline, signature phrases
+- `~/realtor-brain/identity/voice-print.md` — SPOKEN voice DNA — the reel scripts are read aloud: write them in
+  the agent's spoken cadence (empty → voice.md alone; never fabricate)
+- `~/realtor-brain/identity/story-bank.md` — weave a matching banked story into a reel script if one fits
+  (anonymize clients, stamp Used-where); empty → proceed
 - `~/realtor-brain/identity/brand-visual.md` — brand context (the doc itself renders in the neutral house style — no brand colours)
 - `~/realtor-brain/memory/content-log.md` — what's already been launched/repurposed, to avoid overlap
 

@@ -53,6 +53,10 @@ plain and warm, never technical. No tool names, no jargon, no overwhelm.
 - `~/realtor-brain/identity/avatars.md` — who this is for and what they worry about right now
 - `~/realtor-brain/identity/voice.md` — tone, never-sounds-like, signature phrases, Primary CTA
 - `~/realtor-brain/identity/voice-samples.md` — the agent's real writing samples; match their actual phrasing
+- `~/realtor-brain/identity/voice-print.md` — SPOKEN voice DNA — talking points are said out loud: write them in
+  the agent's spoken cadence + signature phrases (empty → voice.md alone; never fabricate)
+- `~/realtor-brain/identity/story-bank.md` — a real story on this topic beats a generic take; weave one in if it
+  fits (anonymize clients, stamp Used-where); empty → proceed, never invent
 - `~/realtor-brain/identity/offer.md` — offers, USP, and **lead magnets** (so the CTA can point to a real guide)
 - `~/realtor-brain/identity/compliance.md` — the third law; read before finalizing
 - `~/realtor-brain/memory/content-log.md` — what's already been covered, so today's pick is fresh
