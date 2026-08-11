@@ -262,7 +262,11 @@ skill formats prices, dates, and measurements to this), and pull the **default C
    "[Agent] — AI Brain — [YYYY-MM-DD]" (dated — regenerations never collide; newest = current). Sections not
    built yet (Business Plan, Operations) render as a friendly placeholder so the agent sees what's still open —
    the Business Plan section fills in the moment they build it.
-5. **Confirm and hand off.** Show them the finished structure and tell them what to do next:
+5. **Hand them the Project Seatbelt.** Read `${CLAUDE_PLUGIN_ROOT}/shared/project-instructions.md` and
+   deliver its paste block exactly as that file instructs (copyable code fence + the one-line explanation:
+   *"your project seatbelt — paste into any project's Project Instructions so every chat there loads your
+   Brain first, even when you're freestyling"*). Every agent leaves setup holding it.
+6. **Confirm and hand off.** Show them the finished structure and tell them what to do next:
 
 > 🎉 Your AI Brain is built. From now on, every skill already knows you — you'll never re-explain your
 > market, your voice, or your offer again.
