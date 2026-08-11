@@ -116,9 +116,13 @@ never create duplicate tasks or labels.
 4. **Permission smoothing.** During the first-run test below, permission dialogs will appear for
    calendar/Gmail/Drive tools. Tell the agent: choose **"Always allow"** — that's what makes
    daily use one-message-fast instead of a gauntlet of approval taps.
-5. **Label taxonomy.** Create the Gmail labels if missing: `Hot Lead`, `Active Client`,
-   `Under Contract`, `Lender-Title`, `Brokerage`, `Personal`, `Promotions`. Ask once whether
-   the daily sweep may ARCHIVE junk mail or only label it; record the choice in `config.md`.
+5. **Label taxonomy.** Create the seven if missing — Gmail labels on `google`, Outlook
+   **categories** on `microsoft`: `Hot Lead`, `Active Client`, `Under Contract`, `Lender-Title`,
+   `Brokerage`, `Personal`, `Promotions`. On `microsoft`, verify tagging actually works (apply
+   one category to a thread, then remove it) — if writes are org-gated, record `Sweep:
+   report-only` in `config.md` and tell the agent plainly (triage still runs; labels wait on
+   their IT admin). Ask once whether the daily sweep may ARCHIVE junk mail or only label it;
+   record the choice in `config.md`.
 6. **Automations.** First check the scheduled-task list — if a Morning Briefing or Daily Inbox
    Sweep already exists, adopt/update it instead of creating a twin. Then create what's missing,
    in the agent's timezone (from `operations.md`), save both task ids in `config.md`, and **push

@@ -2,6 +2,25 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.84.2] — 2026-08-11
+
+### AI Admin (Plugin 2) → v0.6.2 — criticals batch, part 2 (completes C1–C3 from the deep sweep)
+- **C3 — sweep volume cap:** at most 60 threads per run, newest first with lead-looking senders
+  prioritized before promo mail, explicit pagination up to the cap, and a mandatory report opener on
+  overflow ("High volume: triaged the newest 60 of ~N — say 'sweep the rest' to continue"). Briefing
+  inbox scan capped at the newest 50 ("50+ unread"). No more silent partial triage at portal volume.
+- **C1 residual — a tool ERROR is never "not found":** both scheduled prompts now only say "your Brain
+  isn't set up" after a SUCCESSFUL empty search; connector failures (auth/permission/timeout) instead
+  produce a partial output that names the failed connector + how to reconnect. An expired login can no
+  longer masquerade as a missing Brain.
+- **C2 residual — org-gated tagging fallback:** if label/category writes are gated (managed Microsoft
+  orgs), the sweep switches to report-only mode instead of dying; setup verifies tagging on `microsoft`
+  (apply+remove one category) and records `Sweep: report-only` when gated. Outlook archive semantics
+  noted (move to Archive folder); sweep push line provider-neutral.
+### Brain (Plugin 1) → v0.32.1
+- connectors.md gains the missing **Email — tag / organize a thread** mapping row (Gmail labels ↔
+  Outlook categories, gated-write → report-only), closing the C2 gap in the provider table.
+
 ## [0.80.1] — 2026-07-04
 
 ### AI Admin (Plugin 2) → v0.5.1 — cohort-feedback fixes (10-week cohort, live setup testing)

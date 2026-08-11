@@ -13,6 +13,7 @@ connector based on the **`Storage provider`** field in `config.md` (set once at 
 | **Storage — create a folder** | Google Drive create-file with the folder mime type | Microsoft 365 create folder (if a folder create fails, create the first file with the folder in its path — most storage APIs create the path; if that also fails, say so and save flat, never lose the file) |
 | **Email — search / read inbox** | Gmail connector | Microsoft 365 (Outlook Mail) |
 | **Email — draft a message** | Gmail (drafts) | Microsoft 365 (Outlook drafts) |
+| **Email — tag / organize a thread** | Gmail labels | Microsoft 365 (Outlook **categories** — same names; archive = move to Archive folder; if writes are org-gated, the inbox sweep runs report-only and says so) |
 | **Calendar — read / create / update events** | Google Calendar connector | Microsoft 365 (Outlook Calendar) |
 
 ## Hard truths every skill must respect (both providers)

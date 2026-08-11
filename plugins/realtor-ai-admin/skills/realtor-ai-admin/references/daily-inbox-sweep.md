@@ -30,12 +30,21 @@ YOU TODAY instead.
    available in this session, search the storage connector for the `_workspace.md` marker (else
    a `Realtor AI Brain` folder) and download the brain text files (engine at
    `01 · AI Brain/_engine/`, or the folder root on legacy brains), preserving subfolders.
-   Only if NEITHER exists, output "Your Brain isn't set up yet — say 'Set up my Brain'" and
-   stop. Read `brain.md`, `memory/clients.md`, `memory/deadlines.md` (so you don't duplicate
+   Only if the storage search SUCCEEDED and found nothing, output "Your Brain isn't set up
+   yet — say 'Set up my Brain'" and stop. **A tool ERROR is never "not found":** if any
+   connector call fails (auth, permission, timeout), still produce your report — name the
+   failed connector, say "open Settings → Connectors, reconnect, then say 'rerun my sweep'",
+   and build whatever partial output the working connectors allow, clearly marked partial.
+   Read `brain.md`, `memory/clients.md`, `memory/deadlines.md` (so you don't duplicate
    follow-ups), and the sweep settings in `config.md` (archive junk: yes/no).
 2. **Collect** inbox threads from the last 24 hours (Gmail search, `in:inbox newer_than:1d`).
    **On Mondays use `newer_than:3d`** — the sweep doesn't run on weekends, and Saturday/Sunday
-   mail must not be missed.
+   mail must not be missed. **Volume cap: process AT MOST 60 threads per run**, newest first
+   (paginate up to the cap — never assume one page of results is the whole inbox). If more
+   remain: before capping, prioritize anything whose sender/subject suggests a lead or client
+   over promotions-looking mail, label nothing beyond the cap, and your report MUST open with:
+   "High volume: triaged the newest 60 of ~N — say 'sweep the rest' to continue." (The
+   don't-relabel rule below makes follow-up passes safe.)
 3. **Classify and label each thread** using sender, subject, and snippet (open a thread only
    when genuinely ambiguous). One label per thread:
    - `Hot Lead` — new buyer/seller inquiry, portal lead (Zillow/Realtor.com), referral intro
@@ -47,6 +56,10 @@ YOU TODAY instead.
    - `Promotions` — newsletters, marketing, automated noise
    Apply with the Gmail label tools (Outlook: the categories tools) — first create any of the
    seven that don't exist (setup normally makes them; never fail on a missing label/category).
+   **If tagging fails with permission-style errors** (some Microsoft orgs gate write actions),
+   switch to REPORT-ONLY mode: keep classifying, deliver the full report with each thread's
+   category named in NEEDS YOU TODAY, and say once: "I couldn't apply labels — your admin has
+   write actions off for the mail connector; triage still ran." Never die on a tagging error.
    Don't relabel threads that already carry one of these. If more than one fits:
    - `Under Contract` beats `Active Client` AND `Lender-Title` — deal content beats sender
      identity; label the deal, not the relationship.
@@ -55,7 +68,8 @@ YOU TODAY instead.
    - A thread introducing a NEW prospect is `Hot Lead` even when it's sent by an existing
      client (a referral is a lead, not client traffic).
 4. **Declutter:** `Promotions` threads — archive them ONLY if `config.md` says archiving is
-   allowed; otherwise label only. Never archive anything in the other categories.
+   allowed; otherwise label only (on Outlook, archive = move to the Archive folder). Never
+   archive anything in the other categories.
 5. **Waiting-on:** scan SENT mail from the last 7 days for threads where the agent asked a
    question or made a request and nobody replied in 3+ days. List each: who, what's owed,
    days waiting.
@@ -63,7 +77,7 @@ YOU TODAY instead.
    `memory/deadlines.md` (type Follow-up) — **unless an open row for that client/item already
    exists** (a lead sitting in the inbox two days must not create two rows) — and a one-line note
    to that client's block in `memory/clients.md` (create the block for a new lead). **Push the
-   Brain to Drive.**
+   Brain to the storage connector (Drive / OneDrive) per the sync rules.**
 7. **Report** (your output is delivered to the agent — keep it tight, plain text):
    - NEEDS YOU TODAY — the 1–5 threads that genuinely need the agent, each with a one-line why
      and a suggested one-line reply.
