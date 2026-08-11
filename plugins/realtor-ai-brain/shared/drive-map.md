@@ -81,3 +81,11 @@ agent's Brain (one voice, one identity); don't present it as a team system.
 - **Polished docs visible, engine hidden** — the agent opens `01 · AI Brain` and sees *their documents*, not `.md` files.
 - **The agent almost never files anything** — the system creates the map and files what it makes. They mostly just
   open `01 · AI Brain` (their docs) and drop videos into `03 · Content`; old material goes in `06 · Materials`.
+
+## Who fills each folder (so empty folders are a promise, not a bug)
+`01 · AI Brain` — Setup + the Business Plan (this plugin). `02 · Brand` — the agent drops brand files;
+brand-direction points them here. `03 · Content` — the content producers: Long-Form (YouTube System),
+Short-Form (Short-Form System), Graphics (designed posts from Claude Design), Guides (offer/lead-magnet
+docs). `04 · Listings/[address]` — the Listing Launch plugin creates each address folder on demand.
+`05 · Market` — the Market System's monthly reports. `06 · Materials` — the agent's own drops for import.
+A folder an agent hasn't needed yet SHOULD be empty — say so if they ask.

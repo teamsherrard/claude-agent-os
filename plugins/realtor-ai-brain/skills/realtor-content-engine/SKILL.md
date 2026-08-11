@@ -9,7 +9,7 @@ description: >
   content skills generate those fresh per piece.
 
   Trigger on: "set up my content engine", "my content plan", "content pillars", "posting schedule",
-  "what should I post", "phase 5", or any request to define how/what the agent posts.
+  "set my posting schedule", "phase 5", or any request to define how/what the agent posts.
 ---
 
 # Realtor Content Engine (Brain Phase 5)

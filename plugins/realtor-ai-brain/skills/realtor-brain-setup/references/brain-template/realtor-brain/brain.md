@@ -74,9 +74,9 @@ If `~/realtor-brain/` is missing files, tell the agent to run **Realtor AI Brain
 - `memory/deadlines.md` — what's due and when
 - `memory/ideas.md` — content ideas + backlog captured on the go (read before generating new ideas; mark Used)
 
-**intake/** — drop zone for the agent's existing materials (testimonials, bio, past posts, market reports,
-lead magnets, workbooks). They upload here or point to a Drive folder, then say **"import my materials"** —
-`realtor-import` extracts each piece and files it into `identity/` after they confirm. Not read directly by
-other skills; it's the on-ramp, not a source of truth.
+**Existing materials** (testimonials, bio, past posts, market reports, lead magnets, workbooks) live in the
+workspace's **`06 · Materials`** folder — the agent drops files there (or uploads in chat), then says
+**"import my materials"**; `realtor-import` extracts each piece into `identity/` after they confirm. *(Local
+`intake/` is legacy staging only — nothing durable lives there.)*
 
 **config.md** — connectors, timezone, defaults, version

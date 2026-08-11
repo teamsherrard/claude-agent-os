@@ -8,8 +8,9 @@ description: >
   Editor reads for colours and fonts.
 
   Trigger on: "set my brand direction", "my brand colours", "what should my brand look like", "build my
-  brand" (direction), "I don't know my brand colours", "lock my brand direction", "phase 3", or any
-  request to DECIDE the agent's visual direction (not to design it).
+  brand" (direction), "I don't know my brand colours", "lock my brand direction", "phase 3",
+  "update my brand colours", "update my brand direction", or any request to DECIDE or update the
+  agent's visual direction (not to design it).
 ---
 
 # Realtor Brand Direction (Brain Phase 3)
@@ -59,8 +60,9 @@ fonts, vibe, logo direction, tagline. Then tell them plainly:
 
 > Your brand **direction** is saved. To turn it into actual visuals — logo, brand kit, templates — take
 > this into **Claude Design (claude.ai/design)**; it builds them from this direction. Once you have a
-> logo or headshot, drop them into `~/realtor-brain/assets/` so your other tools and the AI Video Editor
-> can use them.
+> logo or headshot, drop them into your workspace's **`02 · Brand`** folder (in your Drive/OneDrive — the
+> link I gave you) so your other tools and the AI Video Editor can use them. *(Never the local `assets/`
+> folder — that's session-only and gets wiped.)*
 
 If run as **Phase 3 of Setup**, hand control back to Setup. *(Reminder: direction only — Claude Design
 does the building.)*

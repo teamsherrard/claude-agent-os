@@ -144,7 +144,8 @@ so this becomes automatic. *(This is the payoff of setting the plan: their Brain
 calendar against it.)*
 
 ## QUARTERLY REFRESH
-After ~90 days: archive the finished plan to `exports/`, celebrate results vs target, and run Phases 1–3 again
+After ~90 days: archive the finished plan to the workspace's **`01 · AI Brain/`** as a dated file
+("90-Day Plan · [Quarter]") — pushed, so it survives (never local `exports/`, which is wiped) — celebrate results vs target, and run Phases 1–3 again
 for the next quarter (their averages + what worked update the assumptions). Growth compounds when the plan does.
 
 ## When this runs

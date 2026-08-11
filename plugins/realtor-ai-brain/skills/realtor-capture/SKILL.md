@@ -8,7 +8,7 @@ description: >
   the AI Admin. One line in, one line back, never a lost thought. The content systems (YouTube,
   Short-Form, Lead Capture, AI Editor) read what it captures when they plan.
 
-  Trigger on: "I've got a video idea", "video idea", "reel idea", "content idea", "great hook",
+  Trigger on: "I've got a video idea", "here's a video idea", "here's a reel idea", "capture this idea", "great hook",
   "hook idea", "outline this video", "lead magnet idea", "new offer angle", "just closed", "we just
   closed", "just got a review / testimonial", "quick win", "add a vendor", "great lender / contractor",
   "market note", "note for my market", "for the [video] edit add…", "remember this idea", "capture
@@ -27,7 +27,7 @@ car becomes a finished video, a proof point, or a referral instead of evaporatin
 1. **Capture-first — never lose a thought.** If you can't classify it cleanly, still save it to
    `memory/capture-log.md` (create it if absent, header `| Logged | Captured (raw) | Needs | Status |`,
    new rows Status **Open**) so nothing evaporates. A lost capture is the only failure.
-2. **Act, don't ask.** No clarifying questions — file it on your best read and state the assumption in
+2. **Act, don't ask — but FIRST: if the utterance is a REQUEST for ideas ("give me…", "what should I…"), that's NOT a capture — route to the content skills instead. Then: act, don't ask.** No clarifying questions — file it on your best read and state the assumption in
    the one-line confirm. Queue genuine ambiguity to the capture-log; don't block.
 3. **Parse every intent.** One breath can hold several (a win AND a video idea) — capture each.
 4. **Voice-tolerant.** Messy transcription in, clean entry out. Keep the idea **verbatim** plus a

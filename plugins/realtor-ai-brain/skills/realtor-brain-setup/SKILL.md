@@ -46,8 +46,8 @@ phases, and **push after every phase**. Local engine structure:
 │   └── publishing.md             # scaffolded empty — the Short-Form System's setup writes it
 ├── memory/                   # scaffolded empty — skills fill these over time
 │   └── clients.md  listings.md  content-log.md  deadlines.md  ideas.md  performance.md  market-data.md
-├── intake/                   # drop zone — agent uploads materials here, then "import my materials"
-├── assets/                   # logo, headshot, fonts
+├── intake/                   # LEGACY local staging only — the real drop zone is the workspace's 06 · Materials
+├── assets/                   # session-only staging — real brand files live in the workspace's 02 · Brand
 ├── config.md                 # provider, workspace ID/link, timezone, locale, schema version
 └── exports/                  # local staging for deliverables (their cloud home is per drive-map.md)
 ```
@@ -77,9 +77,14 @@ the cloud with a fresh empty one** at the finalize push. So:
    connector for their provider**, and pull the brain to `~/realtor-brain/`.
 2. **Then decide:**
    - **No Brain in Drive (and none locally) →** fresh setup. Go to Step 1.
-   - **Brain exists but incomplete** (some `identity/` files are still template placeholders) → tell the
-     agent "Looks like we started this before — want to pick up where we left off?" and skip the phases
-     already complete.
+   - **Brain exists but incomplete** → tell the agent "Looks like we started this before — want to pick
+     up where we left off?" and resume at the first incomplete phase. **"Incomplete" is judged ONLY on the
+     first-run ten** (`profile · market · avatars · voice · offer · brand-visual · voice-samples · proof ·
+     content-engine · compliance`) — `operations`, `vendors`, `strategy`, `business-plan`, `publishing`,
+     `voice-print`, and `story-bank` are placeholders BY DESIGN after a perfect first run; never count
+     them. (Best: read the `Setup progress:` line in `config.md` — a stamped fact beats inference.)
+     **On ANY resume, skip Step 1's scaffold-and-create entirely** — the workspace, marker, and files
+     already exist; re-running Step 1 would overwrite the pulled Brain with template placeholders.
    - **Brain exists and complete** → ask what they want: "Your Brain's already set up. Want to **update
      one part** (brand, market, offer, visuals), **review it**, or **rebuild from scratch**?" Then run
      only the relevant phase. **Never silently overwrite a complete Brain — and never push a fresh
@@ -100,8 +105,9 @@ Say something like:
 > Welcome — I'm building your complete AI Brain. We do this once, and from then on every tool already
 > knows you — your market, your voice, your offer — so you never have to re-explain yourself again.
 >
-> It takes about **45 minutes**, and we **save as we go**, so you can pause anytime and pick up exactly
-> where you left off. Nothing is lost. I'll connect your Google Drive, email, and calendar at the end.
+> It takes about **45 minutes**, and we **save as we go** — to your cloud, after every step — so you can
+> pause anytime and pick up exactly where you left off. Nothing is lost. Your Drive/OneDrive is already
+> connected, so I'm setting up your workspace right now; email and calendar we'll confirm at the end.
 >
 > Ready? Let's build it properly.
 
@@ -115,20 +121,31 @@ they're used *only* by the AI Admin, so they're captured just before "Set up my 
 sequencing, not a shortcut). Everything else is built now.
 
 Then **scaffold locally AND create the cloud workspace NOW — before any interviewing.** This is what
-makes "save as we go" actually true (the sandbox can die at any minute; the cloud can't):
-1. **Scaffold locally** — copy `references/brain-template/realtor-brain/` to `~/realtor-brain/`.
+makes "save as we go" actually true (the sandbox can die at any minute; the cloud can't).
+**This whole step runs ONLY on a genuinely fresh setup (Step 0 found no Brain anywhere) — on a resume,
+skip it entirely.** Every action here is find-or-create, never re-create:
+1. **Scaffold locally — copy ONLY files that don't already exist** in `~/realtor-brain/`. **Never
+   overwrite a pulled file with the template** — that replaces a real Brain with placeholders.
 2. **Name the workspace** — *"Your workspace folder will be called **'Social Agent OS'** — or name it
    after your business (you can rename it anytime; I'll always find it)."* Use their answer.
-3. **Create the workspace in their cloud** (Drive or OneDrive per Step 0's provider) — build the folder
-   map per `${CLAUDE_PLUGIN_ROOT}/shared/drive-map.md` (01–06 + the Content sub-buckets), and make the
-   **very first file you write the `_workspace.md` marker** (workspace name · folder ID · link · owner
-   account) in the workspace root. **On `microsoft`, this first write IS the write-actions probe** — if
-   it fails org-gated, surface it now (per `shared/connectors.md`) *before* 45 minutes of interviewing,
-   and offer the free-Google-account fallback.
+3. **Create the workspace in their cloud** (Drive or OneDrive per Step 0's provider) — **find-or-create:
+   if a `_workspace.md` marker already exists anywhere in their storage, adopt that folder and NEVER
+   write a second marker** (two markers make every future cold-start ambiguous). Otherwise: create the
+   workspace **root folder**, then **immediately write `_workspace.md`** (workspace name · folder ID ·
+   link · owner account) into it — **on `microsoft`, THIS write is the write-actions probe**: if it fails
+   org-gated, stop and surface it now (per `shared/connectors.md`), *before* 45 minutes of interviewing,
+   with the free-Google-account fallback. Only after the marker succeeds, build the rest of the map per
+   `${CLAUDE_PLUGIN_ROOT}/shared/drive-map.md` (01–06 + the Content sub-buckets).
 4. **Capture into `config.md`:** storage provider · workspace name · **folder ID** · link · owner
-   account. Push the scaffold to `01 · AI Brain/_engine/` (write → push → verify) and confirm.
+   account · **`Setup progress: Step 1 done`**. Push the scaffold to `01 · AI Brain/_engine/`
+   (write → push → verify) and confirm. **Stamp `Setup progress:` at every later checkpoint too**
+   (Phase 1 done, Phase 2 done, …) — resume reads that stamp, never guesses.
 **From here on, PUSH AFTER EVERY PHASE** — each checkpoint below ends with a push (write → push →
 verify, per `realtor-brain-sync`). A pause, crash, or closed tab never costs more than the current phase.
+**And keep `brain.md` LIVE, not placeholder:** at each phase's push, also fill the quick-reference fields
+that phase produced (Phase 1 → name·market·avatar·voice-line·CTA; Phase 3 → colours·fonts) and push
+brain.md too — the session-start hook injects brain.md everywhere, so it must never sit as `[First Last]`
+templates while identity/ is rich. Step 7 only *finalizes* it.
 
 ---
 
@@ -138,8 +155,8 @@ Before the interview, offer the **realtor-import** skill **once** — most agent
 or on their computer, and pulling it in means they answer far fewer questions:
 
 > "Quick one before we start: do you already have materials — testimonials, a bio, past posts, market
-> reports, a lead magnet or workbook? You can **upload them right here**, or **point me to a Google Drive
-> folder**, and I'll pull what I can so you're mostly confirming instead of typing. Or just say **skip** and
+> reports, a lead magnet or workbook? You can **upload them right here**, or **point me to a folder in
+> your Drive/OneDrive**, and I'll pull what I can so you're mostly confirming instead of typing. Or just say **skip** and
 > we'll talk it through."
 
 - **Yes / they have materials →** run **realtor-import** (it extracts, shows a summary, confirms, and writes
@@ -197,7 +214,7 @@ resume later — every one **defaults gracefully** if they're unsure (per `share
 These are **not optional** — they're part of every setup. (Graceful defaults keep them fast, not skipped.)
 
 - **Phase 4 — Voice & Proof** (`realtor-voice-proof`): real writing samples + testimonials/stats →
-  `identity/voice-samples.md`, `proof.md`. *(~5 min — biggest lever on content quality; fully skippable.)*
+  `identity/voice-samples.md`, `proof.md`. *(~5 min — biggest lever on content quality; if they have nothing handy, capture what's real and move on — the phase always runs, no field is forced.)*
 - **Phase 5 — Content Engine** (`realtor-content-engine`): a simple content plan → `identity/content-engine.md`.
   Asks just 2 things; generates the rest if the agent's unsure. *(~3–5 min.)*
 - **Phase 7 — Compliance** (`realtor-compliance`): brokerage disclaimer, license display, claims to avoid →
@@ -214,11 +231,8 @@ compliance" — and "set up my operations" when they're ready for their AI Admin
 
 ## Step 6 — Confirm your tools (most are already connected)
 
-**First, set the provider** (per `${CLAUDE_PLUGIN_ROOT}/shared/connectors.md`): is this agent a **Google**
-person (Drive · Gmail · Google Calendar) or a **Microsoft** person (OneDrive · Outlook, via the
-Microsoft 365 connector)? Detect from what's already connected; if both or neither, ask plainly —
-*"Are you a Google person or an Outlook/Microsoft person?"* Write `Storage provider:` in `config.md`.
-Every skill (including the AI Admin) uses that flag from now on — never re-ask.
+**The provider was already set in Step 0 and lives in `config.md` — do NOT re-detect and do NOT re-ask.**
+This step just confirms the right connectors for that provider and ticks the boxes.
 
 **Most agents reach this step with their connectors already set up** — in the cohort flow, tools are
 connected *before* the Brain build. So **check what's already connected and just confirm it — don't

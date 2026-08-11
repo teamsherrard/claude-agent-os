@@ -47,6 +47,9 @@ Agents may rename the workspace folder to their business name. Locate it in this
    - **Local copy exists?** Offer to **rebuild the workspace in Drive from the local brain** (a full push).
    - **Genuinely nothing anywhere** → they're new (or it was deleted): route to **"Set up my Brain"** —
      and say plainly that no existing Brain could be found, so they can stop you if that's wrong.
+   - **No local `config.md` → you cannot PUSH.** A push needs the provider + workspace from config; if a
+     skill wants to push and there's no config, hand to **realtor-brain-setup Step 1** to create the
+     workspace properly first — never invent a destination.
 
 ## PULL — cloud → local *(at session start, or before any brain operation if local is missing)*
 1. Locate the workspace (above). The brain's engine lives at `01 · AI Brain/_engine/` (new map) or the

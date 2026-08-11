@@ -15,8 +15,8 @@
 **Font direction:** [modern vs classic · serif vs sans · clean vs bold] — suggested pairing: [Heading / Body]
 
 **Logo direction:** [have one? want one? style — monogram / wordmark / simple mark]. *Built in Claude
-Design, not here.* Once made, file lives at `assets/logo.*`.
+Design, not here.* Once made, file lives at `02 · Brand/logo.*`.
 
-**Headshot:** `assets/headshot.jpg` — to add.
+**Headshot:** `02 · Brand/headshot.jpg` — to add.
 
 **Tagline (direction / options):** [1–3 options, or the chosen one]

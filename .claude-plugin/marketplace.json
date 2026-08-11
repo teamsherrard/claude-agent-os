@@ -9,7 +9,7 @@
     {
       "name": "realtor-ai-brain",
       "source": "./plugins/realtor-ai-brain",
-      "version": "0.34.0",
+      "version": "0.35.0",
       "description": "PLUGIN 1 — install first. The Realtor AI Brain: one shared brain (the agent's identity + memory) that powers every other system. Run 'Set up my Brain' once, and every tool already knows the agent. Plus a system-wide Capture layer: talk on the go and your ideas, wins, vendors, and market notes file themselves into the Brain."
     },
     {
@@ -58,7 +58,7 @@
       "name": "cohort-claude-support",
       "source": "./plugins/cohort-claude-support",
       "version": "0.1.0",
-      "description": "PLUGIN 9 — Cohort Claude Support. The calm support desk inside Cowork: say \"help\" and it answers every Claude question, diagnoses breakage with real checks (brain missing, connector expired, skill won't fire, Claude slow), teaches in plain English, audits setup and resumes at the first missing step, tracks the cohort week with a catch-up plan, and escalates to Mike's team with a complete pre-built bug report the member sends from their own Gmail. Knows all 9 plugins and routes every fix to the skill that owns it — support itself never touches the member's data (READ-ONLY by constitution). Stays current by design: money/limit answers are always fetched live from official pages; a weekly digest reads Anthropic's changelogs so answers stand on this week's Claude, not launch-week Claude. Works best with Plugin 1 (the Brain); helps even without it."
+      "description": "PLUGIN 9 — Cohort Claude Support. The calm support desk inside Cowork: say \"help\" and it answers every Claude question, diagnoses breakage with real checks (brain missing, connector expired, skill won't fire, Claude slow), teaches in plain English, audits setup and resumes at the first missing step, tracks the cohort week with a catch-up plan, and escalates to Mike's team with a complete pre-built ticket the member pastes straight into the support portal. Knows all 9 plugins and routes every fix to the skill that owns it — support itself never touches the member's data (READ-ONLY by constitution). Stays current by design: money/limit answers are always fetched live from official pages; a weekly digest reads Anthropic's changelogs so answers stand on this week's Claude, not launch-week Claude. Works best with Plugin 1 (the Brain); helps even without it."
     }
   ]
 }

@@ -10,8 +10,9 @@ description: >
   Trigger on: "build my brand persona", "set up my knowledge file", "create my agent profile",
   "build my target market profile", "who is my target market",
   "brand persona skill", "set up my profile", "agent knowledge base", "build my Claude profile",
-  or any request where the agent wants to define who they are, who they serve, or set up the
-  foundation of their Realtor AI Brain.
+  "update my brand", "update my brand persona", "update my profile", "phase 1", or any request where
+  the agent wants to define OR UPDATE who they are, who they serve, or the foundation of their Realtor
+  AI Brain.
 ---
 
 # Realtor Brand Persona Skill
@@ -39,7 +40,7 @@ agent shares.
 
 **Total conversation target:** 15 minutes. Not longer.
 **Output:** The four identity files (`profile`, `market`, `avatars`, `voice`) written into
-`~/realtor-brain/identity/` — plus an optional clean doc keepsake in `~/realtor-brain/exports/`.
+`~/realtor-brain/identity/` — plus an optional clean doc keepsake saved to the workspace per `shared/doc-formatting.md`.
 
 ---
 
@@ -167,9 +168,11 @@ later.
 You are writing the **foundation** of the agent's Realtor AI Brain. Everything captured now goes into
 `~/realtor-brain/identity/` as markdown — the source of truth every other skill reads.
 
-**First, make sure the Brain exists.** If `~/realtor-brain/` is missing, create the folder structure
-(`identity/`, `memory/`, `assets/`, `exports/`). If the agent reached this skill through **Brain
-Setup**, the structure already exists — just write into it.
+**First, make sure the Brain exists.** If `~/realtor-brain/` is missing, **pull it first** (run
+**realtor-brain-sync** PULL — never assume no Brain on an empty sandbox). If the cloud has no Brain
+either, **run realtor-brain-setup Steps 0–1 first** (provider, workspace, marker, config) — never
+scaffold a headless folder here: a brain without `config.md` and a workspace can't be saved. If the
+agent reached this skill through **Brain Setup**, the structure already exists — just write into it.
 
 **Read** `references/knowledge-file-template.md` for the full content structure, then map it to the
 four identity files. Write in **third person** ("Sarah is a real estate agent in Calgary…") — these

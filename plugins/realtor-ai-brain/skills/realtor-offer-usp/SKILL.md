@@ -12,7 +12,8 @@ description: >
   Trigger on: "build my offer", "create my USP", "build my offer guide", "why work with me
   document", "create my value proposition", "offer guidebook", "build my USP file",
   "create my offer knowledge file", "what's my offer", "build my agent offer", or any
-  request where the agent wants to document what they offer and why someone should hire them.
+  "update my offer", "update my USP", "phase 2", or any request where the agent wants to document or
+  update what they offer and why someone should hire them.
 ---
 
 # Realtor Offer USP Skill
@@ -159,7 +160,7 @@ Done — two things:
 1. Your offer is now in your Brain (identity/offer.md). Every skill — listing content,
    lead magnets, AI Admin emails — now knows exactly what you offer and why clients hire you.
 
-2. Your "Why Work With Me" guide is saved to exports/ — send it to prospects, use it as a
+2. Your "Why Work With Me" guide is saved to your workspace → 03 · Content → Guides — here's the link — send it to prospects, use it as a
    lead magnet, or share it at consultations.
 
 To change your offer later, just say "update my offer" and I'll edit it directly.
