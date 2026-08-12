@@ -3,7 +3,7 @@
 The YouTube System is a **layer on top of the shared Realtor AI Brain.** It must READ from the Brain,
 never duplicate it. The Brain's structure is locked (Plugin 1 — `realtor-ai-brain`): it lives at
 **`~/realtor-brain/`** with `brain.md` (the index) + `identity/*.md`, and its permanent home is the
-agent's Google Drive ("Realtor AI Brain" folder), synced by `realtor-brain-sync`. **Keep this file in
+agent's cloud workspace — **Google Drive OR Microsoft OneDrive** — synced by `realtor-brain-sync`. **Keep this file in
 sync with the AI Brain plugin.**
 
 ---
@@ -11,10 +11,11 @@ sync with the AI Brain plugin.**
 ## Where to find the AI Brain (discovery order)
 1. **`~/realtor-brain/brain.md`** — the local working copy. If it exists, read it (+ the `identity/`
    files below) and go.
-2. Not there? **Restore it from Drive** — the Brain's permanent home is the agent's "Realtor AI Brain"
-   folder in Google Drive; pull it down via `realtor-brain-sync` (the local sandbox is wiped between
-   sessions, so a missing local copy is normal, not a missing Brain).
-3. Not in Drive either → the agent has no Brain yet. Route them to **`realtor-brain-setup`**: *"I couldn't
+2. Not there? **Restore it from the cloud** — the Brain's permanent home is the agent's cloud workspace
+   (Google Drive OR OneDrive); pull it down via `realtor-brain-sync`, which handles both (the local
+   sandbox is wiped between sessions, so a missing local copy is normal, not a missing Brain — this is
+   what makes the Brain follow the agent into ANY project or chat).
+3. Not in the cloud either → the agent has no Brain yet. Route them to **`realtor-brain-setup`**: *"I couldn't
    find your AI Brain — let's set it up first so everything else knows who you are."* Never collect the
    fields ad-hoc instead — the Brain is captured once, centrally.
 
