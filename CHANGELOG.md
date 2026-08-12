@@ -2,6 +2,30 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.90.0] — 2026-08-11
+
+### AI Admin (Plugin 2) → v0.7.0 — full deep-sweep backlog cleared (highs + mediums + lows)
+- **Business-plan briefing (H6):** the 7am TOP 3 MONEY-MAKING ACTIONS now anchors to the agent's 3
+  weekly non-negotiables from identity/business-plan.md when it exists, with a Monday check-in nudge —
+  the promise realtor-business-plan makes is now real. Empty-ledger rule: generic guidance, clearly
+  labeled — never invented clients (L2).
+- **Ledger lifecycle (H2):** monthly prune (1st, or >40 blocks) — Closed/Past + 60-day-stale lead blocks
+  → memory/clients-archive.md; Done rows >30d archived from deadlines + capture-log. Sweep's Active
+  Client label is now stage- and recency-aware (never name-alone); a returning stale contact with new
+  intent is Hot Lead; URGENT filters not-Done.
+- **Teams probe (H5):** first-run test verifies Teams-link attachment on microsoft (config records it);
+  booking ladder falls back gracefully and flags 'no video link' rather than going silent or blocking.
+- **Mediums:** sweep window newer_than:2d (missed runs self-heal, M6); client-block schema + deadlines
+  header inlined into the sweep prompt (M3); pull-newest-before-push freshness law in both scheduled
+  prompts (M4); undated reminders default to TOMORROW in dispatch and undated rows count as due today
+  in the briefing (M7); story hand-off from post-showing debriefs (M8).
+- **Lows:** all-day events listed first + counted busy by Conflict Guard when titles imply unavailability
+  (L1); onboarding test booking auto-picks the nearest free slot — the guard firing is part of the demo (L3).
+### Brain (Plugin 1) → v0.35.1
+- realtor-capture gains the STORY lane (M8): field stories route to identity/story-bank.md in the bank's
+  structured shape (hook · story · lesson · tags · beat, anonymized); a win WITH a story files to both.
+  Description + router + write-rules updated — story-bank's 'grows via Dispatch' promise is now real.
+
 ## [0.84.2] — 2026-08-11
 
 ### AI Admin (Plugin 2) → v0.6.2 — criticals batch, part 2 (completes C1–C3 from the deep sweep)

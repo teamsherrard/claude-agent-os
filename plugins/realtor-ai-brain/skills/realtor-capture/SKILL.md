@@ -3,9 +3,9 @@ name: realtor-capture
 description: >
   The on-the-go capture layer for the whole Realtor AI Brain — the agent talks while driving, at a
   showing, or between meetings, and whatever they say lands in the right place. Captures CONTENT IDEAS
-  (video / reel / hook / outline), WINS (closings, reviews, milestones → the proof library), MARKET
-  INTEL, new VENDORS, OFFER angles, and EDIT NOTES into the Brain, and routes anything actionable to
-  the AI Admin. One line in, one line back, never a lost thought. The content systems (YouTube,
+  (video / reel / hook / outline), WINS (closings, reviews, milestones → the proof library), STORIES
+  (real moments → the story bank), MARKET INTEL, new VENDORS, OFFER angles, and EDIT NOTES into the
+  Brain, and routes anything actionable to the AI Admin. One line in, one line back, never a lost thought. The content systems (YouTube,
   Short-Form, Lead Capture, AI Editor) read what it captures when they plan.
 
   Trigger on: "I've got a video idea", "here's a video idea", "here's a reel idea", "capture this idea", "great hook",
@@ -45,6 +45,7 @@ Read `~/realtor-brain/brain.md`. If `~/realtor-brain/` is missing, PULL it from 
 | "lead-magnet idea…" | content idea | `memory/ideas.md` — tag `leadmagnet` |
 | "for the [video] edit, add [b-roll / chart / zoom]…" | edit note | `memory/ideas.md` — tag `edit` (name the video) |
 | "just closed / we closed / got a 5-star review / hit [milestone]…" | **win / proof** | `identity/proof.md` |
+| "crazy story / you won't believe what happened / memorable moment with [client]…" | **story** | `identity/story-bank.md` — hook · story · lesson · topic tags · emotional beat (anonymize clients). A win WITH a story goes to BOTH files |
 | "market note / new development / new school / prices doing X…" | local intel | `identity/market.md` |
 | "add a vendor / great lender / great contractor: [name, contact]…" | vendor | `identity/vendors.md` |
 | "new offer angle / I should emphasize…" | positioning | `identity/offer.md` (append a note — don't rewrite) |
@@ -57,6 +58,9 @@ Read `~/realtor-brain/brain.md`. If `~/realtor-brain/` is missing, PULL it from 
 - **`identity/proof.md`** — the win/review with the date and, if known, the client + the number
   ("$50k under ask", "12 days on market"). Proof is reused across listings, lead magnets, and bios, so
   capture the specifics — but never invent a number you weren't given.
+- **`identity/story-bank.md`** — the story in the bank's structured shape: one-line hook · the story
+  (their words, cleaned) · the lesson · topic tags · emotional beat. Anonymize clients for public use.
+  The content skills pull from here, so a captured story becomes future scripts and emails.
 - **`identity/market.md`** — the intel, under the relevant community.
 - **`identity/vendors.md`** — the partner: name · role · contact · one-line why.
 - **`identity/offer.md`** — the positioning idea as an appended note.

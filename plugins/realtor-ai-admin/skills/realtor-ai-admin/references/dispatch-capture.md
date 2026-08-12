@@ -6,10 +6,11 @@ Your job: parse it, do the right thing(s), and report back in one glance. Never 
 and never ask them to answer (they're busy). This lane reuses the existing systems (Scheduling,
 Inbox, Client Memory) — it adds no new ones.
 
-**Boundary:** *knowledge* captures — content/video ideas, wins for the proof library, new vendors,
-market intel — belong to the Brain's **`realtor-capture`** skill, not this lane. This lane is for client
-*actions*: book, draft, reschedule, remind, debrief, open-house leads. If the Brain capture skill is
-present, let it take the knowledge captures; don't double-handle.
+**Boundary:** *knowledge* captures — content/video ideas, wins for the proof library, **field
+stories (→ the story bank)**, new vendors, market intel — belong to the Brain's **`realtor-capture`**
+skill, not this lane. This lane is for client *actions*: book, draft, reschedule, remind, debrief,
+open-house leads. If the Brain capture skill is present, let it take the knowledge captures; don't
+double-handle.
 
 ## The five rules (non-negotiable in dispatch)
 1. **Capture-first — never lose a thought.** If you can't fully act, still save the raw note to
@@ -43,12 +44,12 @@ present, let it take the knowledge captures; don't double-handle.
 | Job | Sounds like | What you do |
 |---|---|---|
 | **Quick Capture** | "remember…", "note that…", "jot down…" | Resolve the name, then log the note to that client's `clients.md` block |
-| **Quick Reminder** | "remind me to…", "don't let me forget…" | Add a dated `deadlines.md` Follow-up (+ a calendar reminder if a time is given — a guestless, free/transparent event; Conflict Guard not needed) |
+| **Quick Reminder** | "remind me to…", "don't let me forget…" | Add a dated `deadlines.md` Follow-up (+ a calendar reminder if a time is given — a guestless, free/transparent event; Conflict Guard not needed). **No date given → due TOMORROW**, and say "assumed tomorrow" in the report — an undated row never surfaces anywhere |
 | **Quick Draft** | "draft a… to…", "email … saying…" | Write it in their voice → save a Gmail **draft** → log it |
 | **Quick Book** | "book…", "put … on my calendar" | Auto-Booking (Conflict Guard, guest invite, auto video link). If Conflict Guard blocks: don't ask — skip the booking, park the clash + the nearest open slots in the capture-log, and flag it in the report |
 | **Quick Cancel / Move** | "cancel my 3pm", "push the Lees to 4" | Rescheduling & Cancelling flow (attendees notified automatically) — log it |
 | **Quick Recall** | "what do I know about…", "when did I last talk to…" | Total Client Recall — answer inside the report (read-only) |
-| **Post-Showing Debrief** | "just showed [client] [address] — [reaction], [next step]" | Log the showing + reactions to the client, set the next action / follow-up, and optionally draft the follow-up email |
+| **Post-Showing Debrief** | "just showed [client] [address] — [reaction], [next step]" | Log the showing + reactions to the client, set the next action / follow-up, and optionally draft the follow-up email. **If the debrief holds a story-worthy moment** ("she cried at closing") hand that story to the Brain's realtor-capture (story bank) too — capture it, don't lose it |
 | **Open-House Capture** | "log the open house at [address] — [groups], [hot leads]" | Create/update a record for each named lead; start a follow-up for each |
 | **Multi-Intent** | several of the above in one breath | Parse all, execute each, then ONE combined report |
 

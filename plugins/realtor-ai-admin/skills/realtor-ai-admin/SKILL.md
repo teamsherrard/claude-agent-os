@@ -130,8 +130,11 @@ never create duplicate tasks or labels.
    - **Morning Briefing** — daily 7:00am, prompt from `references/briefing-prompt.md`
    - **Daily Inbox Sweep** — weekdays 8:30am, prompt from `references/daily-inbox-sweep.md`
 7. **First-run test (do it WITH them).** Book a real test event ("book a showing at 123 Main
-   tomorrow 2pm") → confirm it's on their calendar → log a client note → run the briefing once →
-   **delete the test event** (unless it was a real appointment). Then hand over: "Talk to me like
+   tomorrow 2pm" — if that slot clashes, auto-pick the nearest free time and say so; the guard
+   firing IS part of the demo) → confirm it's on their calendar → **on `microsoft`, also verify
+   a Teams link can attach to the test event and record `Teams links: yes/no` in `config.md`**
+   (this is the video-link probe — Zoom's is at step 3) → log a client note → run the briefing
+   once → **delete the test event** (unless it was a real appointment). Then hand over: "Talk to me like
    an assistant. Every morning your briefing and a sorted inbox are waiting — and on the go, just
    send me a voice note: 'remember this, remind me Thursday, draft them a thank-you.' I'll handle
    it and report back."
@@ -155,7 +158,10 @@ never create duplicate tasks or labels.
    WITHOUT the guest and park the invite in the capture-log instead of guessing.
 4. **Virtual meetings get a video link automatically — NEVER ask for one.** Priority: Zoom
    connector creates a meeting (if setup verified it can) → standing virtual link from
-   `operations.md` → Google Meet (`addGoogleMeetUrl: true`). A virtual booking never goes out linkless.
+   `operations.md` → Google Meet (`addGoogleMeetUrl: true`). On `microsoft`: Zoom → standing
+   link → Teams link (only if `config.md` says setup verified Teams attachment works); if no
+   path works, book anyway and flag "no video link" in the confirmation — never silently
+   linkless, never blocked on it.
 5. **Write back** one line to the client's block in `memory/clients.md`; if the booking implies
    a future obligation, add a `deadlines.md` row. Sync.
 6. Confirm in one line with the proof — and when a guest was invited, include the exact email
@@ -192,6 +198,8 @@ each (time · what · where), urgent items flagged first. Read-only — no write
 Read the calendar for the target window first. Overlap with an appointment, personal block, or
 required buffer → do NOT book; surface the clash + offer the nearest open slots instead. Check
 every calendar the agent actually uses (primary by default; any extras noted in `config.md`).
+An ALL-DAY event whose title implies unavailability (closing, vacation, conference) counts as
+busy even when the calendar marks it "free."
 
 ---
 
@@ -262,6 +270,12 @@ back in one glance. **Follow `references/dispatch-capture.md`.** In short:
   `| Due date | Type | Client / Listing | What | Status |` (match the template headers exactly).
 - Read the ledger before answering anything about a client. The briefing is built from these
   same files — write-backs keep them honest. Push to Drive after writes (Sync rule).
+- **Ledger lifecycle:** monthly (or when `clients.md` exceeds ~40 blocks), move Stage
+  Closed/Past blocks — and Lead/Touring blocks untouched for 60+ days — to
+  `memory/clients-archive.md`; move Done rows older than 30 days from `deadlines.md` and
+  `capture-log.md` there too. The briefing and sweep never read the archive; Total Client
+  Recall may (check it before saying "the ledger has nothing"). The briefing runs this prune
+  on the 1st; do it in-chat too when you notice the ledger is past the threshold.
 - **`clients.md` is the agent's private client data (PII).** It lives ONLY in the local brain
   and the agent's own Drive — never in any repo, export, artifact, or message to anyone else.
 
