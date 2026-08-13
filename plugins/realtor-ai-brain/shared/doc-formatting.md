@@ -15,6 +15,13 @@ automatically.
    → produces the house style: **Arial**, **pure-black** text, real **headings**, **bullet lists**, and
    **tables**, thin light-grey rules. *(If `python-docx` is missing: `pip install python-docx`; if that's not
    possible, build the same `.docx` with the **docx skill**, matching the look below.)*
+**Build + verify (EVERY document):** build ONLY via `render_doc.py` (or the docx skill matching the same
+look) — never hand-write document XML. Before uploading, read the finished `.docx` text back and check:
+(a) no raw `<w:` markup in the content — if you see any, the build is corrupt: rebuild; (b) **depth matches
+the deliverable — client-facing guides and the master AI Brain doc are FULL, multi-page documents that
+render the COMPLETE source content, never summaries.** Rich brain + thin render (a full brain under
+~2,000 words) = a FAILED render — rebuild with the full content before uploading. Agents pay a premium
+for this system; the documents must feel like it.
 3. Upload the **`.docx`** to the agent's **workspace**, in the folder `shared/drive-map.md` assigns that
    deliverable type (content → `03 · Content/…`, market → `05 · Market`, the master doc → `01 · AI Brain`;
    **legacy brains** → the `Realtor AI Brain → exports` folder). Confirm in plain words with the real

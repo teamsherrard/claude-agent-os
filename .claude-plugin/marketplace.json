@@ -9,7 +9,7 @@
     {
       "name": "realtor-ai-brain",
       "source": "./plugins/realtor-ai-brain",
-      "version": "0.35.1",
+      "version": "0.36.0",
       "description": "PLUGIN 1 — install first. The Realtor AI Brain: one shared brain (the agent's identity + memory) that powers every other system. Run 'Set up my Brain' once, and every tool already knows the agent. Plus a system-wide Capture layer: talk on the go and your ideas, wins, vendors, and market notes file themselves into the Brain."
     },
     {
@@ -39,19 +39,19 @@
     {
       "name": "realtor-ai-editor",
       "source": "./plugins/realtor-ai-editor",
-      "version": "0.20.0",
+      "version": "0.21.0",
       "description": "PLUGIN 6 — the AI Editor. The agent talks in plain English; Claude directs Descript (their own account) to do the real editing — long-form and short-form in one tool — while they watch it happen live. Claude adds the multi-source B-roll Descript can't source itself (the agent's own footage, listing photos, free stock libraries), and a navigator skill turns vague or messy requests into one clear plan so the agent is never overwhelmed. Requires Plugin 1 (the Brain) set up first, plus a Descript connection."
     },
     {
       "name": "realtor-listing-launch",
       "source": "./plugins/realtor-listing-launch",
-      "version": "0.2.1",
+      "version": "0.3.0",
       "description": "PLUGIN 7 — the Listing Launch System. One input — the address, or one sentence on the go (\"Just listed 14 Oak — start the content\") — and every listing becomes a content and lead-gen event. Eight stages: WIN IT (the presentation + pre-listing package that gets the signature) · LIST IT (the MLS description) · LAUNCH IT (just-listed posts + Meta ad copy) · FILM IT (room-by-room YouTube walkthrough + full SEO package) · TOUR IT (listing photos → an animated cinematic home tour, no filming, no videographer) · CLIP IT (3 just-listed shorts) · SHOW IT (the open house kit) · CLOSE IT (just-sold content queued for closing day). Plus the brochure, the postcards, and the person-to-person outreach. The property is captured once and never re-asked. Requires Plugin 1 (the Brain) set up first; TOUR IT needs a Higgsfield connection and hands its clips to Plugin 6 (the AI Editor)."
     },
     {
       "name": "realtor-market-system",
       "source": "./plugins/realtor-market-system",
-      "version": "0.1.0",
+      "version": "0.4.0",
       "description": "PLUGIN 8 — the Monthly Market System, powered by the Market Update AI Agent. It schedules itself the moment the agent installs it, times itself to when their local real estate board actually publishes (and re-times itself as it learns), then every month pulls the fresh local numbers and builds the entire package off them: the branded PRESENTATION they screen-record (talking points under every slide — no script needed), the sendable PDF market report that doubles as a green-screen asset and the lead magnet, three short-form concepts, the Instagram 1:1 infographic AND carousel, and the distribution pack with a two-CTA newsletter. Every asset ships as a paste-ready Claude Design brief with the real numbers already in it. The realtor's only job is to film. Numbers are researched once into the Brain and quoted everywhere, so nothing ever disagrees; sourced and dated or it doesn't ship. Text, data, and design briefs only — it never designs, films, or publishes. Requires Plugin 1 (the Brain) set up first."
     }
   ]
