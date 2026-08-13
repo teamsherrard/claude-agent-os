@@ -135,7 +135,12 @@ skip it entirely.** Every action here is find-or-create, never re-create:
    link · owner account) into it — **on `microsoft`, THIS write is the write-actions probe**: if it fails
    org-gated, stop and surface it now (per `shared/connectors.md`), *before* 45 minutes of interviewing,
    with the free-Google-account fallback. Only after the marker succeeds, build the rest of the map per
-   `${CLAUDE_PLUGIN_ROOT}/shared/drive-map.md` (01–06 + the Content sub-buckets).
+   `${CLAUDE_PLUGIN_ROOT}/shared/drive-map.md` (01–06 + the Content sub-buckets) — and drop a signpost
+   file at the TOP of `_engine/` named **"⚙️ WHAT IS THIS FOLDER — read me.md"** containing exactly this:
+   *"This is your AI Brain's ENGINE — the working files Claude reads and writes to power every tool. You
+   never need to open, edit, or organize anything in here. Everything in these files, in readable form,
+   lives in your 📕 Business Brain Book (one folder up). Please don't rename, move, or delete these files —
+   your AI depends on them. The snapshots folder is your automatic backup."*
 4. **Capture into `config.md`:** storage provider · workspace name · **folder ID** · link · owner
    account · **`Setup progress: Step 1 done`**. Push the scaffold to `01 · AI Brain/_engine/`
    (write → push → verify) and confirm. **Stamp `Setup progress:` at every later checkpoint too**
@@ -268,7 +273,9 @@ skill formats prices, dates, and measurements to this), and pull the **default C
    `01 · AI Brain/_engine/`, then take a **snapshot** (`realtor-brain-sync` SNAPSHOTS — the setup-finalize
    restore point). Confirm it's saved before continuing.
    **Hand them the link again:** *"This is your home base — bookmark it. Everything the system builds
-   lives here, and you can rename the folder to your business name anytime; I'll still find it."*
+   lives here, and you can rename the folder to your business name anytime; I'll still find it. One thing
+   you'll notice: a folder called `_engine` — that's your AI's internal memory. You never need to touch
+   it; everything in it, readable, is in your 📕 Business Brain Book."*
 4. **Build the master "Your AI Brain" document — the agent's BUSINESS BOOK. This is the flagship
    deliverable; treat it like the product it is.** Follow `${CLAUDE_PLUGIN_ROOT}/shared/brain-doc.md` for the
    section order (Snapshot → Who You Are → Who You Serve → Market → Offer & USP → Voice & Proof → Brand
