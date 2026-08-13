@@ -28,8 +28,8 @@ Agents will want to name this folder after their business — "Realty Group OS",
 ```
 [Business] OS/                   ← master workspace (renameable; found by folder ID, never by name)
 ├── 01 · AI Brain/               ← what the AI knows + your key documents
-│   ├── Your AI Brain.docx        ← the polished master doc (the agent opens THIS)
-│   ├── Your Business Plan.docx
+│   ├── 📕 [Agent]'s Business Brain Book        ← the polished master doc (the agent opens THIS)
+│   ├── 🎯 [Agent]'s 90-Day Business Plan
 │   └── _engine/                  ← raw brain files, agent never opens (identity/ memory/ brain.md config.md)
 ├── 02 · Brand/                  ← logo, headshots, colours, fonts, brand kit
 ├── 03 · Content/                ← what you create + post
@@ -60,7 +60,7 @@ agent's Brain (one voice, one identity); don't present it as a team system.
 - **Legacy brains (pre-workspace `Realtor AI Brain` folders) stay in their legacy layout permanently** — the
   connector cannot move files. Skills must resolve the engine + deliverable paths from `config.md → Brain home`
   (root/exports = legacy · this map = new), never assume `01 · AI Brain/_engine/` exists.
-- **Regenerated documents carry a date** in the filename ("[Agent] — AI Brain — 2026-07-15") — the connector
+- **Regenerated documents carry a date** in the filename ("📕 [Agent]'s Business Brain Book — 2026-07-15") — the connector
   can't overwrite, so dating keeps regenerations from colliding; **the newest date is the current one.**
 - **Where deliverables save:**
   - Master **AI Brain doc** + **Business Plan** → `01 · AI Brain/`.

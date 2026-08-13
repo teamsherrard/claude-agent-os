@@ -293,11 +293,16 @@ skill formats prices, dates, and measurements to this), and pull the **default C
      rebuild immediately by writing each section from the full identity-file contents with the formatting
      grammar above, then re-verify. Never upload a failed render, and never narrate the retry to the
      agent** — they only ever see the finished book.
-   - Render premium via `shared/render_doc.py`, save to the workspace's **`01 · AI Brain/`** as
-     "[Agent] — AI Brain — [YYYY-MM-DD]" (dated — regenerations never collide; newest = current). Sections
-     not built yet (Business Plan, Operations) render as a friendly placeholder — the Business Plan section
-     fills in the moment they build it. The same standard applies to EVERY regeneration ("show me my
-     Brain" / after the Business Plan).
+   - Render premium via `shared/render_doc.py`, save to the workspace's **`01 · AI Brain/`** — and name it
+     so it's UNMISSABLE: **"📕 [Agent]'s Business Brain Book — [YYYY-MM-DD]"** (the emoji + the words
+     "Business Brain Book" make it instantly findable in a folder; dated so regenerations never collide —
+     newest = current). Sections not built yet (Business Plan, Operations) render as a friendly placeholder —
+     the Business Plan section fills in the moment they build it. The same standard AND the same name apply
+     to EVERY regeneration ("show me my Brain" / after the Business Plan).
+   - **Hand them the DOC, not just the folder.** After uploading, give the agent the **direct link to the
+     Book itself** and say exactly where it lives: *"Your **Business Brain Book** is in your workspace →
+     01 · AI Brain — here's the direct link. This is your business bible; everything the system knows about
+     you, in one book."* Never make an agent hunt through Drive for their flagship document.
 5. **Hand them the Project Seatbelt.** Read `${CLAUDE_PLUGIN_ROOT}/shared/project-instructions.md` and
    deliver its paste block exactly as that file instructs (copyable code fence + the one-line explanation:
    *"your project seatbelt — paste into any project's Project Instructions so every chat there loads your
