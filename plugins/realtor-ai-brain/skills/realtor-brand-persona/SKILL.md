@@ -28,9 +28,10 @@ This is a one-time setup. Do it once, and every skill they run after that alread
 
 ## How This Skill Works
 
-This skill is different from every other skill in the system. It does not search the web.
-It does not generate content. It asks questions, listens carefully, and builds a document
-from the agent's answers.
+This skill is different from every other skill in the system. It does not generate content.
+It asks questions, listens carefully, and builds the Brain from the agent's answers — and then, in
+Phase 4, it DOES search the web for one thing only: **real, sourced market research on the communities
+the agent named**, so `market.md` knows their market in more depth than they typed.
 
 The conversation should feel like a smart colleague asking good questions — not a form,
 not an interrogation, not a corporate intake process. Warm, conversational, encouraging.
@@ -182,6 +183,22 @@ are reference documents for Claude, not for the agent to read about themselves.
 |---|---|
 | Agent profile — name, city, **title/designations**, brokerage, years, focus, property types, booking link, socials | `~/realtor-brain/identity/profile.md` |
 | Market — communities, price ranges, niche, secondary market + local intelligence | `~/realtor-brain/identity/market.md` |
+
+**RESEARCH THE MARKET BEFORE WRITING `market.md` — never settle for what the agent said.** Most agents
+answer in headlines ("I serve Round Rock and Pflugerville"). The Brain's market file must know MORE than
+the agent typed. For their city + EVERY community/neighbourhood they named, run real web research and
+write a detailed breakdown per community:
+- **Prices** — current typical price range + how it's moved (with the source + as-of date)
+- **Who lives/buys there** — the buyer profile, why people choose it
+- **What's there** — schools, amenities, commute, new construction/developments underway
+- **The angle** — what makes it interesting right now (growth, value, inventory)
+The accuracy rules are ABSOLUTE: **every number carries its source + date** ("researched [Month YYYY],
+[source]"); **never invent or estimate a statistic** — these numbers flow into published content and
+on-camera scripts, so a made-up stat is a compliance incident, not a shortcut. Can't find a number?
+Write what you verified and omit what you couldn't. Clearly separate **"what [Agent] says"** (their
+words, their positioning) from **"researched market intelligence"** (sourced facts) in the file.
+This is a big part of what they're paying for — the Brain should know their market better than a
+brand-new agent does on day one.
 | Target avatars — each one captured separately | `~/realtor-brain/identity/avatars.md` |
 | Voice — tone, never-sounds-like, signature phrases, CTA + content topics | `~/realtor-brain/identity/voice.md` |
 

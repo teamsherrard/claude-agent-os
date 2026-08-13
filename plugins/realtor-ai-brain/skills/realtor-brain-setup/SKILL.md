@@ -276,7 +276,9 @@ skill formats prices, dates, and measurements to this), and pull the **default C
    - **RENDER THE FULL CONTENT of every identity file — never summarize, never compress.** Each section
      carries everything its file holds, written out for the agent: **Who You Serve** = EVERY avatar in full
      (their situation, motivations, fears, what they want from an agent, their words); **Market** = every
-     community, price band, and piece of local intelligence; **Offer** = the complete offer, guarantees,
+     community with its RESEARCHED breakdown — the sourced prices, buyer profile, schools/amenities, and
+     what's being built, from `market.md`'s researched intelligence, not just the agent's one-liners
+     (numbers always carry source + date); **Offer** = the complete offer, guarantees,
      process, and USP; **Voice & Proof** = the full tone rules, never-sound-like list, signature phrases,
      samples, testimonials, and stories; **Business Plan** = the whole plan with the math and KPIs.
    - **FORMAT IT LIKE THE $8,000 DOCUMENT IT IS.** Use the renderer's full grammar deliberately, per
