@@ -269,13 +269,33 @@ skill formats prices, dates, and measurements to this), and pull the **default C
    restore point). Confirm it's saved before continuing.
    **Hand them the link again:** *"This is your home base — bookmark it. Everything the system builds
    lives here, and you can rename the folder to your business name anytime; I'll still find it."*
-4. **Build the master "Your AI Brain" document** — the single, organized deliverable the agent keeps. Follow
-   `${CLAUDE_PLUGIN_ROOT}/shared/brain-doc.md`: assemble every section (Snapshot → Who You Are → Market → Offer →
-   Voice/Proof → Brand Direction → Content Plan → **Business Plan** → Operations → Compliance) from the identity
-   files, render it premium via `shared/render_doc.py`, and save it to the workspace's **`01 · AI Brain/`** as
-   "[Agent] — AI Brain — [YYYY-MM-DD]" (dated — regenerations never collide; newest = current). Sections not
-   built yet (Business Plan, Operations) render as a friendly placeholder so the agent sees what's still open —
-   the Business Plan section fills in the moment they build it.
+4. **Build the master "Your AI Brain" document — the agent's BUSINESS BOOK. This is the flagship
+   deliverable; treat it like the product it is.** Follow `${CLAUDE_PLUGIN_ROOT}/shared/brain-doc.md` for the
+   section order (Snapshot → Who You Are → Who You Serve → Market → Offer & USP → Voice & Proof → Brand
+   Direction → Content Plan → **Business Plan** → Operations → Compliance), and obey these NON-NEGOTIABLES:
+   - **RENDER THE FULL CONTENT of every identity file — never summarize, never compress.** Each section
+     carries everything its file holds, written out for the agent: **Who You Serve** = EVERY avatar in full
+     (their situation, motivations, fears, what they want from an agent, their words); **Market** = every
+     community, price band, and piece of local intelligence; **Offer** = the complete offer, guarantees,
+     process, and USP; **Voice & Proof** = the full tone rules, never-sound-like list, signature phrases,
+     samples, testimonials, and stories; **Business Plan** = the whole plan with the math and KPIs.
+   - **FORMAT IT LIKE THE $8,000 DOCUMENT IT IS.** Use the renderer's full grammar deliberately, per
+     content type — never walls of plain paragraphs: **tables** for structured data (brand colours + roles,
+     the business plan's KPI dashboard and money math, avatar-at-a-glance rows, the content-plan cadence),
+     **bullets** for every list (services, guarantees, never-say, communities), **sub-headings** inside big
+     sections (one per avatar, per pillar), **callouts** for testimonials and signature phrases, and clean
+     line breaks between every idea. Prose where prose persuades; structure where structure clarifies.
+   - **HARD GATE — 3,000+ words for a complete brain, properly formatted.** After rendering, extract the
+     text back out of the `.docx` and COUNT. Under 3,000 words, ANY `<w:` markup in the text, or
+     wall-of-text sections with no tables/bullets where the data is clearly tabular = **FAILED render —
+     rebuild immediately by writing each section from the full identity-file contents with the formatting
+     grammar above, then re-verify. Never upload a failed render, and never narrate the retry to the
+     agent** — they only ever see the finished book.
+   - Render premium via `shared/render_doc.py`, save to the workspace's **`01 · AI Brain/`** as
+     "[Agent] — AI Brain — [YYYY-MM-DD]" (dated — regenerations never collide; newest = current). Sections
+     not built yet (Business Plan, Operations) render as a friendly placeholder — the Business Plan section
+     fills in the moment they build it. The same standard applies to EVERY regeneration ("show me my
+     Brain" / after the Business Plan).
 5. **Hand them the Project Seatbelt.** Read `${CLAUDE_PLUGIN_ROOT}/shared/project-instructions.md` and
    deliver its paste block exactly as that file instructs (copyable code fence + the one-line explanation:
    *"your project seatbelt — paste into any project's Project Instructions so every chat there loads your
