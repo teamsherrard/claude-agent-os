@@ -17,11 +17,15 @@ connector based on the **`Storage provider`** field in `config.md` (set once at 
 | **Calendar — read / create / update events** | Google Calendar connector | Microsoft 365 (Outlook Calendar) |
 
 ## Hard truths every skill must respect (both providers)
-1. **Assume NO update-in-place and NO delete.** The Google Drive connector can only **create** new files —
-   it cannot overwrite, delete, move, or rename (verified). Treat Microsoft the same way unless a real
-   update succeeds. Consequence: **"saving" a file again creates a SECOND copy with the same name.**
-   The sync skill's rules (newest-wins reads · changed-only pushes — see `realtor-brain-sync`) exist
-   because of this. Never write a skill that assumes it replaced a file.
+1. **NO content update-in-place — but rename/move/trash DO exist (live-verified 2026-08).** The Google
+   Drive connector cannot overwrite a file's CONTENT — "saving" a file again still creates a SECOND copy
+   with the same name, so the sync rules (newest-wins reads · changed-only pushes) remain law. BUT the
+   connector's `update_file` can **rename and MOVE** a file (metadata), and `trash_file` can **move a file
+   to trash** (recoverable). Use them for HOUSEKEEPING only: after a verified push of a new copy, you MAY
+   trash the superseded older copy of the same file (never snapshots — those are the deliberate backups);
+   and moving files between folders is now possible (legacy-brain migration, misfiled deliverables).
+   If either operation is unavailable in a session (older environments, Microsoft untested), fall back to
+   the create-only rules — they always remain the safety net.
 2. **Email is DRAFT-ONLY as policy, on both providers.** Gmail literally cannot send. Outlook *can* send —
    but we never do: every email lands as a **draft the agent reviews and sends themselves**. No exceptions.
 3. **Markdown/text files must round-trip.** When creating `.md` engine files, keep them as plain files

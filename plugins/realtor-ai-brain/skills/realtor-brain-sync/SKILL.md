@@ -38,9 +38,10 @@ Agents may rename the workspace folder to their business name. Locate it in this
    **Self-heal:** after ANY successful locate, if the marker is missing, drop it.
 3. **Legacy name** — a folder named `Realtor AI Brain` (pre-workspace brains). If found, adopt it: cache
    its ID into `config.md` and drop the `_workspace.md` marker into it for next time.
-   **Legacy brains stay legacy-layout permanently** — the connector cannot move files, so never try to
-   relocate one into `01 · AI Brain/_engine/`; resolve the engine path from where the files actually are
-   (root = legacy · `01 · AI Brain/_engine/` = new map) and record it in `config.md → Brain home`.
+   **Legacy brains: migration is now POSSIBLE** (`update_file` can move files — live-verified) but only
+   the migrate skill may do it, deliberately, with a snapshot first. Until an agent runs "upgrade my
+   brain," resolve the engine path from where the files actually are (root = legacy ·
+   `01 · AI Brain/_engine/` = new map) via `config.md → Brain home` — never relocate ad-hoc mid-task.
 4. **Not found → RECOVERY (never assume "new agent"):**
    - **Wrong account?** `config.md` (if present locally) records the workspace **owner account** — ask:
      *"Your Brain lives in the [account] Drive — are you connected to that same account right now?"*
@@ -89,11 +90,13 @@ Agents may rename the workspace folder to their business name. Locate it in this
 4. Update **Last synced** in `config.md` (and push config too when it changed).
 5. Confirm quietly: *"Saved to your Drive."* / *"Saved to your OneDrive."*
 
-## Housekeeping (the duplicate copies)
-Old copies of a file are **version history** — correct reads always take the newest. They're tiny text
-files; leave them. If an agent asks about duplicates, explain that plainly and (only if they want a tidy
-folder) note they can delete older copies themselves in Drive/OneDrive — the connector cannot delete, so
-never promise to clean up for them.
+## Housekeeping (the duplicate copies — now self-cleaning where supported)
+Content saves still create new copies (no content update-in-place), and correct reads always take the
+newest. **But `trash_file` is now available (live-verified) — so AFTER a push is verified, trash the
+superseded older copy of that same file** (same name, same folder, older timestamp). Rules: only after
+verify succeeds · never trash anything in `snapshots/` (deliberate backups) · never trash a file you
+didn't just supersede · if trash fails or is unavailable, leave the copy — newest-wins keeps it harmless.
+Net: folders stay clean automatically; snapshots remain the real version history.
 
 ## SNAPSHOTS — deliberate backup + restore *(trigger: "back up my brain" · also monthly)*
 Accidental copies are a crude safety net; snapshots are the real one:
