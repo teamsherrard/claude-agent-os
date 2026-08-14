@@ -192,6 +192,9 @@ write a detailed breakdown per community:
 - **Who lives/buys there** — the buyer profile, why people choose it
 - **What's there** — schools, amenities, commute, new construction/developments underway
 - **The angle** — what makes it interesting right now (growth, value, inventory)
+- **Surrounding communities** — also research 2–4 nearby/adjacent communities the agent DIDN'T name but
+  their buyers will ask about — captured the same way, marked "adjacent". The Brain should know the map
+  around them, not just their pins
 The accuracy rules are ABSOLUTE: **every number carries its source + date** ("researched [Month YYYY],
 [source]"); **never invent or estimate a statistic** — these numbers flow into published content and
 on-camera scripts, so a made-up stat is a compliance incident, not a shortcut. Can't find a number?

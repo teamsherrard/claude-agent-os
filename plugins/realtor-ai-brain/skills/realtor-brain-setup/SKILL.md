@@ -283,10 +283,15 @@ skill formats prices, dates, and measurements to this), and pull the **default C
    Direction → Content Plan → **Business Plan** → Operations → Compliance), and obey these NON-NEGOTIABLES:
    - **RENDER THE FULL CONTENT of every identity file — never summarize, never compress.** Each section
      carries everything its file holds, written out for the agent: **Who You Serve** = EVERY avatar in full
-     (their situation, motivations, fears, what they want from an agent, their words); **Market** = every
-     community with its RESEARCHED breakdown — the sourced prices, buyer profile, schools/amenities, and
-     what's being built, from `market.md`'s researched intelligence, not just the agent's one-liners
-     (numbers always carry source + date); **Offer & USP** = the complete Why-Work-With-Me narrative in full — the offer, guarantees,
+     (their situation, motivations, fears, what they want from an agent, their words); **Market** = a
+     **sub-section PER COMMUNITY**, each a real researched breakdown: sourced current prices + how they've
+     moved, who buys there and why, schools/amenities/commute, what's being built right now, and the
+     angle — plus **surrounding/nearby communities worth knowing** beyond the ones the agent named
+     (numbers always carry source + date). **If `market.md` holds only one-liners for any community
+     (captured before the research mandate, or thin), RUN THE RESEARCH NOW — during this build or any
+     regenerate — write it back to `market.md` first, then render.** A one-bullet-per-community Market
+     section is a FAILED render. **Overall length: the Book is as long as the Brain is deep — 15+ pages
+     is normal and welcome; never compress to fit a page count**; **Offer & USP** = the complete Why-Work-With-Me narrative in full — the offer, guarantees,
      process, and USP; **Voice & Proof** = the full tone rules, never-sound-like list, signature phrases,
      samples, testimonials, and stories; **Business Plan** = the whole plan with the math and KPIs.
    - **FORMAT IT LIKE THE $8,000 DOCUMENT IT IS.** Use the renderer's full grammar deliberately, per
