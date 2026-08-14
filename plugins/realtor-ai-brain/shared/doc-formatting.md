@@ -56,4 +56,7 @@ for this system; the documents must feel like it.
 - **Labels and cues on their own lines** (e.g. `HOOK (read word-for-word)` then the hook on the next line) —
   scripts and captions never run together as a blob. **Copy the agent will paste** (captions, hashtags,
   descriptions) under a clear label, ready to grab.
+- **Tables — pipe rows:** `| Week | Calls | Posts |` on one line per row (optional `| --- | --- |`
+  separator after the header) → the renderer builds a real styled table (charcoal header, alternating
+  rows). Use for anything tabular: KPI dashboards, brand colours + roles, avatar-at-a-glance, money math.
 - Plain structured text in the body (no Markdown `#`/`**`/backticks) — the renderer applies the formatting.

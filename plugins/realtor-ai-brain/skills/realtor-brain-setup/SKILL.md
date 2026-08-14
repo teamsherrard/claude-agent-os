@@ -299,7 +299,12 @@ skill formats prices, dates, and measurements to this), and pull the **default C
      uploads.** Upload the `.docx` produced by `render_doc.py` (or the docx skill) — NEVER the raw
      structured text (if the doc in Drive shows literal `════`/`────` lines as text, you uploaded the
      renderer's input: re-render and re-upload). After rendering, extract the
-     text back out of the `.docx` and COUNT. Under 3,000 words, ANY `<w:` markup in the text, or
+     text back out of the `.docx` and CHECK: (a) COUNT — 3,000+ words; (b) **ALL ELEVEN section headings
+     present** (Snapshot · Who You Are · Who You Serve · Your Market · Your Offer & USP · Your Voice &
+     Proof · Your Brand Direction · Your Content Plan · Your 90-Day Business Plan · How You Operate ·
+     Compliance) — a missing section (especially Offer & USP or Voice & Proof) = failed; (c) the byline
+     appears ONCE (title block) — don't repeat the full credential line again in Snapshot. Under 3,000
+     words, a missing section, ANY `<w:` markup in the text, or
      wall-of-text sections with no tables/bullets where the data is clearly tabular = **FAILED render —
      rebuild immediately by writing each section from the full identity-file contents with the formatting
      grammar above, then re-verify. Never upload a failed render, and never narrate the retry to the

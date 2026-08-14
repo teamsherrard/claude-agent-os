@@ -306,6 +306,23 @@ def render(lines, doc, title=None, subtitle=None, eyebrow=None):
                           [Inches(2.1), Inches(2.25), Inches(2.35)])
             continue
 
+        # generic pipe table:  | Head 1 | Head 2 |  /  | --- | --- |  /  | a | b |
+        if line.startswith("|") and line.endswith("|") and line.count("|") >= 3:
+            rows = []
+            while i < n:
+                l = lines[i].strip()
+                if not (l.startswith("|") and l.endswith("|")): break
+                cells = [c.strip() for c in l.strip("|").split("|")]
+                if not all(set(c) <= set("-: ") for c in cells):   # skip |---|---| separator rows
+                    rows.append(cells)
+                i += 1
+            if rows:
+                ncol = max(len(r) for r in rows)
+                rows = [r + [""] * (ncol - len(r)) for r in rows]
+                w = int(doc.usable / ncol)
+                doc.table(rows[0], rows[1:] if len(rows) > 1 else [], [w] * ncol)
+            continue
+
         # sub-band  "──── LABEL ────"
         msb = SUBBAND.match(raw)
         if msb: doc.subheading(msb.group(1)); last_head = msb.group(1); i += 1; continue

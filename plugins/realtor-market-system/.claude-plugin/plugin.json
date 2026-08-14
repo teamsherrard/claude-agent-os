@@ -1,8 +1,8 @@
 {
   "name": "realtor-market-system",
   "displayName": "Realtor Market System (Plugin 8)",
-  "version": "0.1.0",
-  "description": "The Monthly Market System — one command, one complete monthly launch. Pulls live local market data for the agent's city and communities (sourced and dated, never invented), then builds every piece off those exact numbers: the screen-share market report and its email version, the word-for-word YouTube market update script, three short-form concepts (green-screen article reaction, talking-head opinion, stat graphic), the branded 1:1 Instagram infographic brief, and the distribution pack — lead magnet, newsletter segment, captions, and CTAs pointing at the funnel. The agent's only job is to film the script. Each piece is its own skill, so they can run the whole month or just the one thing they need, and a routine skill puts it on autopilot for the 1st of every month. Text, data, and design briefs only: it never designs, films, or publishes. Requires Plugin 1 (the Brain) set up first.",
+  "version": "0.4.0",
+  "description": "The Monthly Market System — the Market Update AI Agent. It schedules itself the moment the agent installs it, times itself to when their local real estate board actually publishes (and re-times itself as it learns), then every month pulls the fresh local numbers and builds the entire package off them: the branded PRESENTATION they screen-record (talking points under every slide — no script needed), the sendable PDF market report that doubles as a green-screen asset and the lead magnet, three short-form concepts, the Instagram 1:1 infographic AND carousel, and the distribution pack with a two-CTA newsletter. Every asset ships as a paste-ready Claude Design brief with the real numbers already in it. The realtor's only job is to film. Numbers are researched once into the Brain and quoted everywhere, so nothing ever disagrees; sourced and dated or it doesn't ship. Text, data, and design briefs only — it never designs, films, or publishes. Requires Plugin 1 (the Brain) set up first.",
   "author": {
     "name": "Mike Sherrard"
   },
@@ -12,12 +12,14 @@
     "realtor",
     "market update",
     "market report",
-    "housing market",
+    "scheduled agent",
+    "presentation",
+    "slide deck",
+    "pdf report",
+    "instagram carousel",
+    "newsletter",
     "monthly routine",
-    "youtube script",
-    "short form",
-    "infographic",
-    "newsletter"
+    "short form"
   ],
   "homepage": "https://github.com/teamsherrard/claude-agent-os"
 }
