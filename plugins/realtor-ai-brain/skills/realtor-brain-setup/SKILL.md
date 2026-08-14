@@ -192,9 +192,10 @@ questions here.)*
 ## Step 3 — Phase 2: What you offer (Offer & USP)
 
 Run the **Offer USP** skill (`realtor-offer-usp`) — it reads what Phase 1 wrote (so it never re-asks),
-runs its 6 questions, writes `identity/offer.md`, and renders a "Why Work With Me" guide into
-`exports/`. Follow that skill's flow, then return here and checkpoint: "Phase 2 done — your offer is
-locked in."
+runs its 6 questions, and writes `identity/offer.md`. **No separate document is produced in setup** — the
+full Why-Work-With-Me content becomes the 📕 Book's "Your Offer & USP" section (the client-ready
+standalone guide is available on demand later: "build my Why Work With Me guide"). Then return here and
+checkpoint: "Phase 2 done — your offer is locked in." 
 
 ---
 
@@ -285,7 +286,7 @@ skill formats prices, dates, and measurements to this), and pull the **default C
      (their situation, motivations, fears, what they want from an agent, their words); **Market** = every
      community with its RESEARCHED breakdown — the sourced prices, buyer profile, schools/amenities, and
      what's being built, from `market.md`'s researched intelligence, not just the agent's one-liners
-     (numbers always carry source + date); **Offer** = the complete offer, guarantees,
+     (numbers always carry source + date); **Offer & USP** = the complete Why-Work-With-Me narrative in full — the offer, guarantees,
      process, and USP; **Voice & Proof** = the full tone rules, never-sound-like list, signature phrases,
      samples, testimonials, and stories; **Business Plan** = the whole plan with the math and KPIs.
    - **FORMAT IT LIKE THE $8,000 DOCUMENT IT IS.** Use the renderer's full grammar deliberately, per

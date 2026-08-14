@@ -5,9 +5,10 @@ description: >
   conversation to capture their full service offering and unique value proposition. Reads
   the agent's Realtor AI Brain so nothing is repeated. Only asks what it doesn't already
   know — specifically what the agent offers, what makes them different, and why someone
-  should hire them over every other agent in their market. Produces two outputs: a polished
-  public-facing guidebook doc the agent uses as a lead magnet or sends to prospects, and
-  the structured offer written into their Brain (identity/offer.md) to power every other skill.
+  should hire them over every other agent in their market. Writes the structured offer into the Brain
+  (identity/offer.md) to power every other skill — in Brain Setup that's the ONLY output (the content
+  becomes the Business Brain Book's Offer & USP section); the polished client-facing "Why Work With Me"
+  guidebook renders ON DEMAND when the agent asks for a version to send to prospects.
 
   Trigger on: "build my offer", "create my USP", "build my offer guide", "why work with me
   document", "create my value proposition", "offer guidebook", "build my USP file",
@@ -20,7 +21,7 @@ description: >
 
 A focused interview that captures the agent's full service offering and unique value proposition.
 Reads their existing Brain so nothing is repeated. Asks 5-6 broad questions.
-Takes under 10 minutes. Produces two documents — one for prospects, one for Claude.
+Takes under 10 minutes. Writes the offer into the Brain; the client-facing guidebook is on-demand.
 
 ---
 
@@ -132,7 +133,14 @@ specific: core offer, buyer/seller offers, **lead magnets** (with their DM keywo
 signature process, USP, and proof. **This is what every other skill reads** — the lead magnets are what
 content CTAs point to. If `~/realtor-brain/identity/` doesn't exist yet, create it.
 
-### Output 2 — Public-Facing Guidebook (a clean, formatted doc)
+### Output 2 — Public-Facing Guidebook (ON-DEMAND ONLY — never during Brain Setup)
+**When this skill runs as Phase 2 of Brain Setup: SKIP this output entirely.** Setup produces ONE
+document — the 📕 Business Brain Book — and the full Why-Work-With-Me content becomes the Book's
+**"Your Offer & USP"** section. Do not render a separate guidebook doc during setup; at the end of the
+phase just mention: *"When you want a client-ready version of this to send to prospects, say 'build my
+Why Work With Me guide' anytime."*
+**Render this standalone doc ONLY when the agent explicitly asks for it** (a client-facing guide to send
+out / for lead capture). Then:
 **Read:** `references/guidebook-template.md` for the content, and
 `${CLAUDE_PLUGIN_ROOT}/shared/doc-formatting.md` for how to save it.
 
