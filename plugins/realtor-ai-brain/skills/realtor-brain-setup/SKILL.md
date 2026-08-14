@@ -295,7 +295,10 @@ skill formats prices, dates, and measurements to this), and pull the **default C
      **bullets** for every list (services, guarantees, never-say, communities), **sub-headings** inside big
      sections (one per avatar, per pillar), **callouts** for testimonials and signature phrases, and clean
      line breaks between every idea. Prose where prose persuades; structure where structure clarifies.
-   - **HARD GATE — 3,000+ words for a complete brain, properly formatted.** After rendering, extract the
+   - **HARD GATE — 3,000+ words for a complete brain, properly formatted, and the RENDERED FILE is what
+     uploads.** Upload the `.docx` produced by `render_doc.py` (or the docx skill) — NEVER the raw
+     structured text (if the doc in Drive shows literal `════`/`────` lines as text, you uploaded the
+     renderer's input: re-render and re-upload). After rendering, extract the
      text back out of the `.docx` and COUNT. Under 3,000 words, ANY `<w:` markup in the text, or
      wall-of-text sections with no tables/bullets where the data is clearly tabular = **FAILED render —
      rebuild immediately by writing each section from the full identity-file contents with the formatting

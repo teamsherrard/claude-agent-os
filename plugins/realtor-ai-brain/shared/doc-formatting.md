@@ -15,6 +15,12 @@ automatically.
    → produces the house style: **Arial**, **pure-black** text, real **headings**, **bullet lists**, and
    **tables**, thin light-grey rules. *(If `python-docx` is missing: `pip install python-docx`; if that's not
    possible, build the same `.docx` with the **docx skill**, matching the look below.)*
+**NEVER upload the raw structured text as the deliverable.** The structured text (CAPS bands, `────`
+rules, `Label:` lead-ins) is the RENDERER'S INPUT, not a document. If a Google Doc ever shows literal
+`════`/`────` dash lines as text, the raw input was uploaded instead of the rendered file — that is a
+FAILED delivery: re-render and upload the `.docx`. The fallback chain when rendering breaks is:
+`render_doc.py` → (`pip install python-docx`) → the **docx skill** building the same styled look →
+**never** "just upload the text." A plain-text wall is not an acceptable output at any step.
 **Build + verify (EVERY document):** build ONLY via `render_doc.py` (or the docx skill matching the same
 look) — never hand-write document XML. Before uploading, read the finished `.docx` text back and check:
 (a) no raw `<w:` markup in the content — if you see any, the build is corrupt: rebuild; (b) **depth matches
