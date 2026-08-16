@@ -58,7 +58,9 @@ If `~/realtor-brain/` is missing files, tell the agent to run **Realtor AI Brain
 - `identity/publishing.md` — how the agent posts short-form (platforms, cadence, posting tool) — written by the Short-Form System
 - `identity/operations.md` — hours, signature, booking rules, follow-up cadence
 - `identity/vendors.md` — trusted partner network (AI Admin referrals)
-- `identity/strategy.md` — goals (business · YouTube · life · personal) + positioning + competitors they admire
+- `identity/strategy.md` — goals + positioning + competitors + the Book's Strategic Position synthesis
+- `identity/market-intel.md` — RESEARCHED competitive/search/outlook intelligence (sourced+dated; written
+  by the Book's research pipeline; other systems READ this before re-researching the same ground)
 - `identity/business-plan.md` — the 90-day plan: deals needed + the 3 weekly moves + dashboard (refreshed quarterly)
 - `identity/compliance.md` — disclaimers, license display, claims to avoid (read before publishing)
 
