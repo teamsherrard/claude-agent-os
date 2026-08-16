@@ -193,8 +193,13 @@ write a detailed breakdown per community:
 - **What's there** — schools, amenities, commute, new construction/developments underway
 - **The angle** — what makes it interesting right now (growth, value, inventory)
 - **Surrounding communities** — also research 2–4 nearby/adjacent communities the agent DIDN'T name but
-  their buyers will ask about — captured the same way, marked "adjacent". The Brain should know the map
+  their buyers will ask about — captured the same way, marked "adjacent", and only after verifying each
+  actually borders the agent's stated city/region. The Brain should know the map
   around them, not just their pins
+**Same-name-city guard:** every research query carries the city + state/province ("Springfield,
+Illinois" — never bare "Springfield"); a result whose geography doesn't match the agent's market is
+discarded, never adapted. A wrong-city fact written into `market.md` here poisons every deliverable
+downstream — the Book's grounding audit re-verifies geography, but the file must be right at the source.
 The accuracy rules are ABSOLUTE: **every number carries its source + date** ("researched [Month YYYY],
 [source]"); **never invent or estimate a statistic** — these numbers flow into published content and
 on-camera scripts, so a made-up stat is a compliance incident, not a shortcut. Can't find a number?

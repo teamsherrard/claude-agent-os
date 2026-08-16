@@ -1,7 +1,7 @@
 {
   "name": "realtor-listing-launch",
   "displayName": "Realtor Listing Launch (Plugin 7)",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "One input — the address, or one sentence on the go (\"Just listed 14 Oak — start the content\") — and every listing becomes a content and lead-gen event. Eight stages: WIN IT (the listing presentation + pre-listing package that gets the signature) · LIST IT (the MLS description, written to convert and stay compliant) · LAUNCH IT (just-listed posts and Meta ad copy inside the character limits) · FILM IT (the room-by-room YouTube walkthrough script + full SEO package) · TOUR IT (listing photos → an animated cinematic home tour, no filming and no videographer) · CLIP IT (3 just-listed shorts with captions) · SHOW IT (the open house kit — invite, day-of stories, neighbours, follow-up) · CLOSE IT (the just-sold content queued for closing day). Plus the brochure, the postcards, and the person-to-person outreach. Every stage reads the AI Brain and the locked brand, so the whole launch matches. Requires Plugin 1 (the Brain) set up first; TOUR IT needs a Higgsfield connection and hands off to Plugin 6 (the AI Editor).",
   "author": {
     "name": "Mike Sherrard"

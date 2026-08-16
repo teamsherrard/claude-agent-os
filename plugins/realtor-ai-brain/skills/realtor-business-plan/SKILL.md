@@ -125,7 +125,8 @@ like the strategy centerpiece it is, with real tables (pipe rows):**
   milestones, dashboard). Every skill can now read what the agent is driving toward.
 - **If you captured the income/deal goal here** (because `strategy.md` didn't have one), also write it into
   `identity/strategy.md` — so the two never diverge and no later skill re-asks the goal.
-- **Refresh the Business Brain Book** (per `${CLAUDE_PLUGIN_ROOT}/shared/brain-doc.md` + setup Step 7.4's
+- **Refresh the Business Brain Book** (per `${CLAUDE_PLUGIN_ROOT}/shared/brain-book-spec.md` — the
+  canonical Book contract (structure, grounding laws, gates) + setup Step 7.4's
   naming: "📕 [Agent]'s Business Brain Book — [date]", saved to `01 · AI Brain/`) so its **Business Plan
   section fills in** — everything stays in the one book, always current. Hand them the **direct link** to the
   refreshed Book. *(Optional: a standalone "🎯 [Agent]'s 90-Day Business Plan" one-pager via

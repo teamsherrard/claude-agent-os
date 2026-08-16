@@ -50,7 +50,8 @@ Two identities it must never lose:
   never walls of plain paragraphs.
 - **Byline once** (title block) — never repeat the full credential line in the Snapshot or elsewhere.
 - **No raw markup:** any `<w:` in the extracted text = corrupt build = rebuild.
-- **Never fabricate** — no invented voice samples, stories, testimonials, or statistics. **Every
+- **Never fabricate** — no invented voice samples, stories, testimonials, or statistics. This invariant
+  is expanded into the **GROUNDING LAWS** below — all seven bind every build and every regenerate. **Every
   researched number carries its source + as-of date** ("researched [Month YYYY], [source]"). These
   numbers flow into published content and on-camera scripts — **an unsourced stat in published content
   is a compliance incident, not a shortcut.** Can't verify it? Write what you verified, omit the rest,
@@ -59,6 +60,54 @@ Two identities it must never lose:
   (identity files are third-person for Claude; the Book converts the voice).
 - **Never narrate a failed render or the retry to the agent** — they only ever see the finished Book.
 - **Placeholder behavior for unbuilt sections is unchanged** (see Placeholders below).
+
+---
+
+## GROUNDING LAWS — zero fabrication, true to THIS agent
+
+Why this section exists: agents in other tools got books naming the **wrong competitor**, claiming
+**neighbourhoods they don't serve**, in a voice that **doesn't sound like them**. Any one of those in a
+premium deliverable is a refund-level error. These laws bind every build and every regenerate, and they
+outrank style, length, and word targets: a Book that misses a word range is thin; a Book that breaks a
+grounding law is wrong.
+
+1. **Geography lock.** Only communities/neighbourhoods the agent themselves named or confirmed appear
+   as THEIR areas — anywhere in the Book. Research may add adjacent communities ONLY in Chapter 6
+   (Chapters 7–9 may reference an adjacent once it's introduced there), capped at the contract's 2–4,
+   each explicitly labeled "adjacent" / expansion candidate, and only after verifying it actually
+   borders the agent's stated city/region. On regenerate, a research refresh **REPLACES** the adjacent
+   set — never grows it past 4; superseded adjacents retire from `market.md`. **Same-name-city guard:**
+   every research query carries city + state/province ("Springfield, Illinois", never "Springfield");
+   a result whose geography doesn't match the agent's market is discarded, never adapted.
+2. **Competitor rule.** Name a competitor ONLY when research verified they actively serve this agent's
+   market AND niche, with source + as-of date on the verification. Otherwise describe the landscape
+   without names ("two established teams dominate [niche] in [city] as of [Month YYYY]"). **A missing
+   name beats a wrong name** — a wrong competitor in a client deliverable is a refund-level error.
+3. **Voice & identity fidelity.** Every claim about the agent — years, credentials, awards, story,
+   philosophy, USP — traces to their interview answers or Brain files. Reuse their own phrasing
+   wherever it exists. NEVER invent quotes, client anecdotes, testimonials, or stats about them. Where
+   the Book paraphrases, it must still sound like `voice.md` / `voice-print.md`.
+4. **Numbers.** Every figure is from their Brain (labeled as theirs) or from research (source + as-of
+   date) — no third source, and no invented precision (a verified "the $400s" never becomes
+   "$412,500"). Locale, currency, and units come from `config.md`.
+5. **Uncertainty protocol.** Cannot verify → omit it, or mark it `[confirm: …]` inline for the agent.
+   A wrong specific is worse than a gap; never fill silence with plausible detail. Markers go
+   mid-sentence (never at line start), NEVER on researched numbers in Chapters 6–9 (omit those
+   instead) — and more than 3 in the whole draft means the Brain isn't ready: capture the answers with
+   the agent first, then render.
+6. **Pre-render grounding audit** (pipeline step 6). Before rendering, enumerate every proper noun
+   (community, competitor, school, employer, brokerage) and every number in the draft; trace each to a
+   Brain file or a sourced research result; CUT anything untraceable. Trace the **PAIRING**, not just
+   the noun — each fact verified in the context it's used (school↔community, employer↔metro): a real
+   school attached to the wrong community fails the audit. And Brain-file provenance alone doesn't
+   clear geography — re-verify city + state/province on every place-fact, so a wrong-city fact planted
+   in a brain file earlier dies here instead of surviving because "it traces." If cuts drop a chapter
+   below its word minimum, the owning brain file is thin: re-run that chapter's research mandate
+   (pipeline step 2), write back, re-assemble — never pad, never loop on rebuild alone. Report the
+   tally — "N facts traced, M cut" — to the agent in the hand-off message.
+7. **Read-back check** (pipeline step 5). After assembly, re-read `identity/voice.md` +
+   `voice-print.md` (if built) and confirm the Book's characterization of the agent matches those
+   files; fix mismatches before rendering.
 
 ---
 
@@ -76,18 +125,84 @@ Two identities it must never lose:
    (Chapter 11 contract) from the captured brain + the now-current researched facts, and write/overwrite
    it to `identity/strategy.md` (already part of the Brain's scaffold). This keeps the Book rebuildable:
    even the analysis lives in the Brain, not only in the render. Push it (write → push → verify).
-4. **Assemble the structured text** per `doc-formatting.md`'s grammar — and ONLY that grammar (the
-   renderer knows nothing else): title line + meta line; each PART and each CHAPTER as a CAPS band
-   wrapped in divider rules; **sub-headings inside chapters as sub-bands** (`──── Label ────` — one per
-   community, per avatar, per Strategic-Position section); `•` bullets; numbered steps as `1.  …` lines;
-   `Label:` lead-ins — this is also how the Book's "callout" treatment is written (a bold `Label:` line
-   introducing the quoted text on the same or next line; the renderer has no separate callout block);
-   pipe-row tables (optional `| --- |` separator); generous blank-line spacing. No Markdown
-   `#`/`**`/backticks in the body.
-5. **Render** with `render_doc.py` to `.docx`.
-6. **Verify** against the hard gate (below). FAIL → rebuild from the full brain-file contents and
+4. **Assemble the structured text** per the **Book structure** contract (below) — and ONLY that grammar
+   (the renderer knows nothing else): the cover title block; the `[[TOC]] … [[/TOC]]` contents block;
+   every PART and CHAPTER as a CAPS band (`PART I — …` / `CHAPTER N — TITLE`) wrapped in divider rules;
+   **sub-headings inside chapters as sub-bands** (`──── Label ────` — one per community, per avatar, per
+   Strategic-Position section); `•` bullets; numbered steps as `1.  …` lines; `Label:` lead-ins (e.g.
+   testimonials, signature phrases, the compliance disclaimer); `>> ` lines for each chapter's 1–2
+   key-insight callouts; pipe-row tables (optional `| --- |` separator); generous blank-line spacing.
+   No Markdown `#`/`**`/backticks in the body.
+5. **Read-back check** (Grounding Law 7). Re-read `identity/voice.md` + `voice-print.md` (if built) and
+   confirm the draft's characterization of the agent — story, philosophy, phrasing, tone — matches those
+   files. Fix every mismatch before rendering.
+6. **Pre-render grounding audit** (Grounding Law 6). Enumerate every proper noun (community, competitor,
+   school, employer, brokerage) and every number in the draft; trace each — as the pairing it's used in —
+   to a Brain file or a sourced research result; CUT anything untraceable. Keep the tally — "N facts
+   traced, M cut" — for the hand-off message.
+7. **Render** with `render_doc.py` to `.docx`. **Renderer stderr must show ZERO unresolved-TOC
+   warnings** — a warning means a contents row and a chapter band don't match character-for-character:
+   fix the structured text, re-emit, re-render.
+8. **Verify** against the hard gate (below). FAIL → rebuild from the full brain-file contents and
    re-verify. Never upload a failed render.
-7. **Upload to `01 · AI Brain/`, push, hand over the direct link.**
+9. **Upload to `01 · AI Brain/`, push, hand over the direct link** — with the grounding-audit tally
+   ("N facts traced, M cut") in the hand-off message.
+
+---
+
+## Book structure — cover, contents, parts, chapters (the render grammar)
+
+The Book must read and navigate like a real book, not a long memo. The renderer understands exactly this
+grammar — emit it exactly; anything else renders as plain text.
+
+**Page 1 — the cover.** The title block and nothing else:
+- Eyebrow: `Realtor AI Brain` (pass `--eyebrow "Realtor AI Brain"` — the letter-spaced kicker).
+- Title: `[Agent]'s Business Brain Book` (pass `--title`; no 📕 on the cover — the emoji lives in the
+  filename).
+- Byline: `--subtitle "[Agent] · [City]"`, with the full credential line as the meta line under it —
+  this is the byline's ONE appearance (the byline-once invariant).
+- Date: `[Month D, YYYY]` on its own meta line — the same date as the filename's ISO stamp.
+
+**Page 2 — CONTENTS.** Immediately after the title/meta lines, emit one `[[TOC]] … [[/TOC]]` block —
+the renderer builds a linked contents page (each row an internal link to its chapter's bookmark) and
+page-breaks around it so CONTENTS is page 2. One row per chapter — all fifteen, in order — with the four
+PART rows (no summary) grouping them:
+
+[[TOC]]
+PART I — WHO YOU ARE
+CHAPTER 1 — SNAPSHOT :: [one line, written for THIS agent]
+CHAPTER 2 — WHO YOU ARE :: [one line, written for THIS agent]
+…
+PART IV — EXECUTION
+…
+CHAPTER 15 — COMPLIANCE :: [one line, written for THIS agent]
+[[/TOC]]
+
+Each `::` summary is one line **written for that agent** — it names their actual niche, market,
+community, or edge, pulled from the Brain. *"Why relocating tech families trust Sarah from Frisco to
+Prosper — and what they're afraid of"* passes; *"An overview of the agent's target audience"* is a
+FAILED contents page — the swap test applies to every row. The contents page alone must read like a book
+about them. Row text left of `::` must match its chapter band **character-for-character** — that match
+is what resolves the internal link (mismatch = unresolved-TOC warning on stderr = pipeline step 7 fails).
+
+**PART and CHAPTER bands.** Every chapter heading is emitted as `CHAPTER N — TITLE` and every part as
+`PART I — WHO YOU ARE` / `PART II — YOUR MARKET INTELLIGENCE` / `PART III — HOW YOU WIN` /
+`PART IV — EXECUTION` — CAPS bands wrapped in divider rules, chapter numbers sequential 1–15 with no
+gaps. The renderer gives these bands their eyebrow treatment, a page break before each, the bookmark
+the contents page links to, and an outline level — so the converted Google Doc lists every part and
+chapter in its outline sidebar, and navigation survives even where a viewer drops link conversion.
+Sub-headings inside chapters stay sub-bands (`──── Label ────`).
+
+**`>> ` callouts.** A line starting `>> ` renders as a shaded callout box. Each chapter surfaces its
+**1–2 key insights** this way (placeholder chapters exempt) — the most decision-relevant, agent-specific
+line in the chapter: a sourced fact plus what it means for them, or their own sharpest line. Where a
+chapter already mandates a climax (Chapter 7's implications, Chapter 8's white space, Chapter 11's one
+move), the callout carries the single sharpest one. Never more than two per chapter — a callout is a
+spotlight, not a highlighter — and never generic advice (the swap test applies). Testimonials and
+signature phrases keep their `Label:` lead-in treatment; `>> ` is reserved for insight.
+
+**Tables** stay pipe rows, exactly where the chapter contract mandates them — the renderer shades the
+header row itself; emit nothing extra.
 
 ---
 
@@ -95,7 +210,8 @@ Two identities it must never lose:
 
 The Book runs a deliberate arc: **who you are → the market you play in → how you win → what you do
 about it.** Each PART opens with its CAPS band and a 2–4 sentence consultant-voiced bridge (what this
-part establishes and why it feeds the next). Chapter headings are exact — the verify gate checks all
+part establishes and why it feeds the next). Chapter headings are exact — emitted as `CHAPTER N — TITLE`
+bands per the Book structure above — the verify gate checks all
 fifteen, and the fifteen are a **strict superset of Setup Step 7.4's eleven required headings** (Snapshot
 · Who You Are · Who You Serve · Your Market · Your Offer & USP · Your Voice & Proof · Your Brand
 Direction · Your Content Plan · Your 90-Day Business Plan · How You Operate · Compliance), so any build
@@ -151,8 +267,9 @@ failed chapter. Prose per avatar; the table is the summary, never the substitute
 
 ### Chapter 4 — YOUR VOICE & PROOF
 Full tone rules (**bullets**), sounds-like / never-sound-like lists (**bullets**), signature phrases
-each written as a **`Label:` lead-in line** with the phrase (the Book's callout treatment — the renderer
-bolds the label), spoken voice-print if built, the writing samples from `voice-samples.md`, then proof:
+each written as a **`Label:` lead-in line** with the phrase (the renderer bolds the label; the `>> `
+shaded box is reserved for the chapter's key insights per the Book structure), spoken voice-print if
+built, the writing samples from `voice-samples.md`, then proof:
 testimonials as `Label:` lead-in quotes (verbatim, attributed as captured — never invented or
 "improved"), stats with their provenance, and the story bank's stories written out in full.
 If `voice-print.md` / `story-bank.md` aren't built, note in one friendly line how to add them ("say
@@ -325,16 +442,34 @@ Extract the text back out of the rendered `.docx` and check ALL of:
    satisfies Setup's eleven-heading gate.)
 3. **Byline appears once** (title block only).
 4. **No `<w:` markup** anywhere in the text.
-5. **Market structure** — one sub-heading per named community, ≥2 adjacent communities marked
-   "adjacent", and NO surviving one-line community list.
+5. **Market structure** — one sub-heading per named community, 2–4 adjacent communities marked
+   "adjacent" (more than 4 = FAIL — a refresh replaces the set, never accumulates), and NO surviving
+   one-line community list.
 6. **Source discipline** — every number in Chapters 6–9 carries source + as-of date. One unsourced
-   researched stat = FAIL (it's a compliance incident waiting to publish).
+   researched stat = FAIL (it's a compliance incident waiting to publish). And no stale stamps: an
+   as-of older than its staleness window (3 months for market + outlook numbers, 6 months for
+   competitive + search) = FAIL — refresh, write back, re-render.
 7. **Tables rendered where the contract says table** (Snapshot card, avatar-at-a-glance, colours,
    price bands, outlook indicators, competitive table, query-family table, cadence, money math + KPIs
    when built) — tabular data as wall-of-prose = FAIL.
 8. **Anti-fluff spot check** — read Chapters 7–9 + 11: any paragraph failing the swap test = FAIL that
    chapter; rebuild it from the agent's data.
 9. **Placeholders only where allowed** (rule above).
+10. **Contents page** — the linked CONTENTS renders on page 2 (exactly one CONTENTS page) with all
+    FIFTEEN chapter rows, in order, each carrying its one-line summary written for THIS agent; any
+    summary failing the swap test = FAIL.
+11. **Chapter labels** — bands read `CHAPTER 1` through `CHAPTER 15`, sequential with no gaps, each
+    inside its correct `PART I–IV` band.
+12. **TOC resolution** — the render's stderr showed ZERO unresolved-TOC warnings (pipeline step 7). A
+    warning = a contents row / chapter band mismatch: fix the structured text, re-emit, re-render.
+13. **Grounding audit ran** (pipeline step 6) and its "N facts traced, M cut" tally is in the hand-off
+    message.
+14. **Grounding laws hold** — spot-check: no community outside the agent's named/confirmed list is
+    presented as theirs (adjacents labeled, introduced in Chapter 6, ≤4); no competitor named without a
+    sourced + dated verification of market AND niche; no quote, anecdote, testimonial, stat, or
+    biographical claim about the agent that isn't in their Brain.
+15. **`[confirm:]` discipline** — every marker enumerated in the hand-off message; none on researched
+    numbers in Chapters 6–9; more than 3 total = FAIL (capture the answers with the agent, then render).
 On any FAIL: rebuild the failing chapters from the full brain-file contents and re-verify. **Never
 upload a failed render. Never narrate the retry** — the agent only ever sees the finished Book.
 
@@ -351,7 +486,8 @@ upload a failed render. Never narrate the retry** — the agent only ever sees t
   stale or missing — never re-run everything blindly): market prices + 12-month outlook older than
   **3 months** → refresh; competitive landscape + search demand older than **6 months** → refresh;
   anything missing → run it now (research-on-render). Refreshed research writes back to the brain files
-  first, always (write → push → verify).
+  first, always (write → push → verify). A refresh **REPLACES** the adjacent-community set in
+  `market.md` (cap 4) — retire superseded adjacents rather than accumulating them.
 - **Strategic Position is re-synthesized on every build** (step 3) so it always reflects the current
   brain + current research — and always lands in `identity/strategy.md` before it lands in the Book.
 - After upload: push, then hand the agent the direct link with the standing line — this is their

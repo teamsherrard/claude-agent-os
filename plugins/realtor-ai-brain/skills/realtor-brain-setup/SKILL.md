@@ -280,7 +280,9 @@ skill formats prices, dates, and measurements to this), and pull the **default C
 4. **Build the master "Your AI Brain" document — the agent's BUSINESS BOOK. This is the flagship
    deliverable; treat it like the product it is.** **The canonical contract is
    `${CLAUDE_PLUGIN_ROOT}/shared/brain-book-spec.md` — follow it in full** (its four-part, fifteen-chapter
-   arc with the strategic + researched chapters, its build pipeline, and its verify gate; it supersedes
+   arc with the strategic + researched chapters, its Book structure — cover page, linked CONTENTS page,
+   `CHAPTER N — TITLE` bands, `>> ` callouts — its GROUNDING LAWS, its build pipeline, and its verify
+   gate; it supersedes
    `brain-doc.md` and contains every rule below as a strict superset). The gates below remain the floor:
    follow `brain-book-spec.md` for the section order (Snapshot → Who You Are → Who You Serve → Market → Offer & USP → Voice & Proof → Brand
    Direction → Content Plan → **Business Plan** → Operations → Compliance), and obey these NON-NEGOTIABLES:
@@ -315,8 +317,19 @@ skill formats prices, dates, and measurements to this), and pull the **default C
      present** (Snapshot · Who You Are · Who You Serve · Your Market · Your Offer & USP · Your Voice &
      Proof · Your Brand Direction · Your Content Plan · Your 90-Day Business Plan · How You Operate ·
      Compliance) — a missing section (especially Offer & USP or Voice & Proof) = failed; (c) the byline
-     appears ONCE (title block) — don't repeat the full credential line again in Snapshot. Under 3,000
-     words, a missing section, ANY `<w:` markup in the text, or
+     appears ONCE (title block) — don't repeat the full credential line again in Snapshot; (d) the
+     linked **CONTENTS page renders on page 2** with all FIFTEEN chapter rows, each carrying its
+     one-line summary written for THIS agent — a summary any other agent could reuse = failed; (e)
+     chapter bands read **CHAPTER 1 through CHAPTER 15, sequential**, inside the four PART I–IV bands;
+     (f) the render's stderr showed **ZERO unresolved-TOC warnings** — any warning means a contents row
+     and a chapter band don't match: fix the structured text, re-emit, re-render; (g) the spec's
+     **GROUNDING LAWS hold** — the pre-render grounding audit ran (its "N facts traced, M cut" tally
+     goes in the hand-off message), no community outside the agent's named/confirmed list is presented
+     as theirs (researched adjacents labeled, introduced in the Market chapter, ≤4), no competitor is
+     named without a sourced + dated verification, and nothing about the agent appears that isn't in
+     their Brain. Under 3,000
+     words, a missing section, ANY `<w:` markup in the text, a missing or incomplete contents page,
+     out-of-sequence chapter labels, an unresolved-TOC warning, a grounding-law breach, or
      wall-of-text sections with no tables/bullets where the data is clearly tabular = **FAILED render —
      rebuild immediately by writing each section from the full identity-file contents with the formatting
      grammar above, then re-verify. Never upload a failed render, and never narrate the retry to the

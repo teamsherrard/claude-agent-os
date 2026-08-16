@@ -60,3 +60,21 @@ for this system; the documents must feel like it.
   separator after the header) → the renderer builds a real styled table (charcoal header, alternating
   rows). Use for anything tabular: KPI dashboards, brand colours + roles, avatar-at-a-glance, money math.
 - Plain structured text in the body (no Markdown `#`/`**`/backticks) — the renderer applies the formatting.
+
+**BOOK MODE (long deliverables — the Business Brain Book).** The renderer switches into book mode when
+the input contains a `[[TOC]]` block (or `--book` is passed); everything below is inert in normal docs,
+which render exactly as before:
+- **Cover page** — the title block becomes page 1 (title, eyebrow, byline, date), then a page break.
+- **Contents page** — a `[[TOC]] … [[/TOC]]` block right after the title/meta lines; one row per
+  chapter as `Chapter Title :: one-line summary` (PART rows carry no summary). Renders as a linked
+  CONTENTS on page 2 — each row an internal link to its chapter — followed by a page break. Row text
+  left of `::` must match the chapter band character-for-character; a mismatch prints
+  `WARNING: TOC entry "…" has no matching heading` on stderr — treat any warning as a failed build.
+- **`PART I — TITLE` / `CHAPTER N — TITLE` CAPS bands** get an eyebrow kicker, a page break before
+  each, the bookmark the contents links to, and an outline level (Google Docs shows every chapter in
+  its outline sidebar).
+- **`>> ` insight callouts** — a line starting `>> ` renders as a shaded key-insight box (script cue
+  heads `ON SCREEN` / `PAUSE` / `FACT:` stay cues even in book mode).
+- **Footer page numbers** render automatically in book mode.
+The Book's full structure contract (what goes in the TOC rows, callout discipline, chapter labels)
+lives in `brain-book-spec.md` — this file only documents the grammar.
