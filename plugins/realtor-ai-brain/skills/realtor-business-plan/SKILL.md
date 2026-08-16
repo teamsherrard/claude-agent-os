@@ -70,9 +70,16 @@ Every number is theirs and adjustable — if they say "my average is higher" or 
 ## Phase 2 — THE ENGINE (where the deals come from → 3 weekly moves)
 Deals don't come from hoping. Map them to sources, then convert sources into weekly activity.
 
-1. **Lead sources.** Which of these actually produce for them (pick their real ones, add their own): sphere /
-   database, past clients + referrals, content / YouTube / social, open houses, geographic farming, online
-   leads, networking/events. Weight each: roughly how many of the [N] deals come from each?
+0. **NEW Q — their real track record:** *"Think about your last 3–5 closings — where did each one actually
+   come from?"* This calibrates everything: their true conversion sources beat any generic ratio. (Brand-new
+   agent with no closings → totally fine; say so and use the doctrine defaults, labeled as assumptions.)
+1. **NEW Q — their real capacity:** *"Roughly how many people know you're an agent — your phone contacts,
+   sphere? And honestly, how many hours a week can you give to lead-gen + content?"* Sphere size sizes the
+   sphere engine; hours size the whole plan. A plan built for 20 hours an agent doesn't have is fiction.
+2. **Lead sources.** Which of these actually produce for them (pick their real ones, add their own, and
+   START from where their last closings actually came from): sphere / database, past clients + referrals,
+   content / YouTube / social, open houses, geographic farming, online leads, networking/events. Weight
+   each: roughly how many of the [N] deals come from each?
 2. **Convert to activity (planning assumptions, labelled as such).** Work backwards with reasonable ratios the
    agent can tune — e.g. sphere/referral ~ a handful of real conversations per opportunity; content ~ consistent
    volume compounding over the quarter; open houses ~ X per month → Y leads. The point isn't false precision —
@@ -90,8 +97,20 @@ Deals don't come from hoping. Map them to sources, then convert sources into wee
 ---
 
 ## Phase 3 — THE 90-DAY PLAN + DAILY/WEEKLY KPIs + DASHBOARD
-Assemble it into something they'll actually keep and revisit.
+Assemble it into something they'll actually keep and revisit — **this is the Book's ★ chapter; build it
+like the strategy centerpiece it is, with real tables (pipe rows):**
 - **The one-line target** (the 90-day deal number + GCI).
+- **Scenario math (table):** three columns — **Conservative / Target / Stretch** — deals, GCI, and the
+  weekly activity each requires. Agents commit harder when they can see the floor and the ceiling.
+- **The conversion funnel (table):** conversations → appointments → signed clients → closings, with the
+  conversion rates used at each step — THEIR rates when the track-record question gave them, doctrine
+  defaults (labeled as assumptions) when not. This is where "[N] deals" becomes "this many conversations."
+- **Month-by-month ramp (never flat):** month 1 = build (pipeline + content foundations), month 2 =
+  momentum (appointments converting), month 3 = harvest + compounding. Real estate lags ~30–60 days —
+  a flat plan sets them up to quit in week 3 when closings haven't caught up to activity.
+- **The "why this plan works for YOU" narrative** — 2–3 paragraphs connecting their niche + their
+  researched market (`market.md` numbers, sourced) + their capacity hours to this exact plan. Strategy
+  voice, specific to them; never generic coach-speak.
 - **The 3 weekly non-negotiables** (their commitments — one is always content: short-form + YouTube).
 - **Daily & weekly KPIs.** Break the plan into the small numbers that actually get done — translate the weekly
   activity into **daily** actions (e.g. ~5 outreach conversations/day, 1 short-form post/day, X follow-ups/day)

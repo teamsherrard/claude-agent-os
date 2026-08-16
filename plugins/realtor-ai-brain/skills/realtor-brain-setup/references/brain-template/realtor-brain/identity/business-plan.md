@@ -17,6 +17,27 @@
 2. [direct-lead activity]
 3. [direct-lead activity]
 
+## Scenario math
+| Scenario | Deals (90d) | GCI | Weekly activity required |
+|---|---|---|---|
+| Conservative | | | |
+| Target | | | |
+| Stretch | | | |
+
+## The conversion funnel (rates labeled: theirs vs assumed)
+| Stage | Weekly # | Conversion → next |
+|---|---|---|
+| Conversations | | |
+| Appointments | | |
+| Signed clients | | |
+| Closings | | |
+
+## Month-by-month ramp
+- **Month 1 — build:** [ ] · **Month 2 — momentum:** [ ] · **Month 3 — harvest:** [ ]
+
+## Why this plan works for [Agent] (the strategy narrative)
+[2–3 paragraphs: niche + sourced market numbers + real capacity → this plan]
+
 ## Daily & weekly KPIs
 - **Daily:** [e.g. ~5 outreach conversations · 1 short-form post · X follow-ups]
 - **Weekly:** [the weekly totals — conversations, posts, appointments, open houses]
