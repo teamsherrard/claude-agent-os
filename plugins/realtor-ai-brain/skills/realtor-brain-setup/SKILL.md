@@ -92,7 +92,7 @@ the cloud with a fresh empty one** at the finalize push. So:
      confirmation after you tell them their existing Brain will be replaced.
    - **"Review it" / "show me my Brain" / "regenerate my Brain document"** → don't re-interview; just
      **rebuild the master "Your AI Brain" document** from the current identity files (per
-     `${CLAUDE_PLUGIN_ROOT}/shared/brain-doc.md`), save it to the workspace's `01 · AI Brain/` (dated
+     `${CLAUDE_PLUGIN_ROOT}/shared/brain-book-spec.md` — the canonical Book contract, incl. its research-refresh rules), save it to the workspace's `01 · AI Brain/` (dated
      filename), and share it. It always reflects the latest Brain, including the Business Plan section
      once that's built.
 
@@ -278,8 +278,11 @@ skill formats prices, dates, and measurements to this), and pull the **default C
    you'll notice: a folder called `_engine` — that's your AI's internal memory. You never need to touch
    it; everything in it, readable, is in your 📕 Business Brain Book."*
 4. **Build the master "Your AI Brain" document — the agent's BUSINESS BOOK. This is the flagship
-   deliverable; treat it like the product it is.** Follow `${CLAUDE_PLUGIN_ROOT}/shared/brain-doc.md` for the
-   section order (Snapshot → Who You Are → Who You Serve → Market → Offer & USP → Voice & Proof → Brand
+   deliverable; treat it like the product it is.** **The canonical contract is
+   `${CLAUDE_PLUGIN_ROOT}/shared/brain-book-spec.md` — follow it in full** (its four-part, fifteen-chapter
+   arc with the strategic + researched chapters, its build pipeline, and its verify gate; it supersedes
+   `brain-doc.md` and contains every rule below as a strict superset). The gates below remain the floor:
+   follow `brain-book-spec.md` for the section order (Snapshot → Who You Are → Who You Serve → Market → Offer & USP → Voice & Proof → Brand
    Direction → Content Plan → **Business Plan** → Operations → Compliance), and obey these NON-NEGOTIABLES:
    - **RENDER THE FULL CONTENT of every identity file — never summarize, never compress.** Each section
      carries everything its file holds, written out for the agent: **Who You Serve** = EVERY avatar in full
