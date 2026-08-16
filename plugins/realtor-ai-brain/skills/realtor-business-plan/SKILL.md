@@ -70,21 +70,21 @@ Every number is theirs and adjustable — if they say "my average is higher" or 
 ## Phase 2 — THE ENGINE (where the deals come from → 3 weekly moves)
 Deals don't come from hoping. Map them to sources, then convert sources into weekly activity.
 
-0. **NEW Q — their real track record:** *"Think about your last 3–5 closings — where did each one actually
+1. **Their real track record:** *"Think about your last 3–5 closings — where did each one actually
    come from?"* This calibrates everything: their true conversion sources beat any generic ratio. (Brand-new
    agent with no closings → totally fine; say so and use the doctrine defaults, labeled as assumptions.)
-1. **NEW Q — their real capacity:** *"Roughly how many people know you're an agent — your phone contacts,
+2. **Their real capacity:** *"Roughly how many people know you're an agent — your phone contacts,
    sphere? And honestly, how many hours a week can you give to lead-gen + content?"* Sphere size sizes the
    sphere engine; hours size the whole plan. A plan built for 20 hours an agent doesn't have is fiction.
-2. **Lead sources.** Which of these actually produce for them (pick their real ones, add their own, and
+3. **Lead sources.** Which of these actually produce for them (pick their real ones, add their own, and
    START from where their last closings actually came from): sphere / database, past clients + referrals,
    content / YouTube / social, open houses, geographic farming, online leads, networking/events. Weight
    each: roughly how many of the [N] deals come from each?
-2. **Convert to activity (planning assumptions, labelled as such).** Work backwards with reasonable ratios the
+4. **Convert to activity (planning assumptions, labelled as such).** Work backwards with reasonable ratios the
    agent can tune — e.g. sphere/referral ~ a handful of real conversations per opportunity; content ~ consistent
    volume compounding over the quarter; open houses ~ X per month → Y leads. The point isn't false precision —
    it's translating "[n] deals" into "**this many conversations / posts / open houses per week**."
-3. **Lock THREE weekly non-negotiables.** The 20% of activity that drives 80% of the result — chosen around what
+5. **Lock THREE weekly non-negotiables.** The 20% of activity that drives 80% of the result — chosen around what
    they'll *actually* do (respect `operations.md` capacity + `content-engine.md` cadence). **Three, not ten** —
    this is the whole game.
    - **Content is required, not optional — and it MUST include short-form + YouTube.** One of the three moves is
