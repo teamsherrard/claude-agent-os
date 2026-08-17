@@ -90,6 +90,21 @@ the cloud with a fresh empty one** at the finalize push. So:
      only the relevant phase. **Never silently overwrite a complete Brain — and never push a fresh
      empty Brain over a real one in Drive.** Rebuild-from-scratch requires the agent's explicit
      confirmation after you tell them their existing Brain will be replaced.
+   - **Explicit DEMO request** ("build a demo/mock/fake/fictional/test agent brain") → run the normal
+     flow on the fictional agent they describe, in **demo mode** per `brain-book-spec.md`'s DEMO BRAINS
+     section: NO live research (skip the research mandates + grounding audit — a demo takes minutes),
+     every number tagged "(illustrative — demo)" with NO fabricated source attributions, NO real
+     competitor/vendor names, and the Book watermarked ("… — DEMO — [date]" filename + demo cover
+     line). Full structure and formatting gates still apply — the demo shows the real product. Demo
+     mode only ever triggers on THEIR explicit fictional framing about a persona who is NOT them —
+     demo keywords aimed at their own identity or market ("mock something up for MY market", "test
+     run on my brain") are a REAL build, and any doubt about the subject gets the one question
+     ("Fictional demo agent, or your real Brain?"). **Isolation:** demo builds scaffold locally at
+     `~/realtor-brain-demo/` and create their OWN workspace named "[name] — DEMO" — never into an
+     existing real workspace, and the demo Book never lands in a real `01 · AI Brain/`. And if Step
+     0's pull ever finds a brain whose `config.md` says `Demo brain: yes`, say so up front ("this is
+     a DEMO brain — fictional [name]") and offer demo continuation or a fresh real setup — never
+     resume it as their real Brain.
    - **"Review it" / "show me my Brain" / "regenerate my Brain document"** → don't re-interview; just
      **rebuild the master "Your AI Brain" document** from the current identity files (per
      `${CLAUDE_PLUGIN_ROOT}/shared/brain-book-spec.md` — the canonical Book contract, incl. its research-refresh rules), save it to the workspace's `01 · AI Brain/` (dated
@@ -294,7 +309,8 @@ skill formats prices, dates, and measurements to this), and pull the **default C
      angle — plus **surrounding/nearby communities worth knowing** beyond the ones the agent named
      (numbers always carry source + date). **If `market.md` holds only one-liners for any community
      (captured before the research mandate, or thin), RUN THE RESEARCH NOW — during this build or any
-     regenerate — write it back to `market.md` first, then render.** And **RESTRUCTURE, don't append**:
+     regenerate — write it back to `market.md` first, then render.** *(Demo brains: no live research —
+     demo mode per the spec's DEMO BRAINS section; illustrative labels instead of sources.)* And **RESTRUCTURE, don't append**:
      keeping the agent's one-line community list and adding a separate research block at the end does
      NOT satisfy this — the community list itself must BECOME the per-community sub-sections, each
      merging the agent's own view ("your underrated pick") WITH the researched data (sourced prices,
@@ -333,7 +349,11 @@ skill formats prices, dates, and measurements to this), and pull the **default C
      wall-of-text sections with no tables/bullets where the data is clearly tabular = **FAILED render —
      rebuild immediately by writing each section from the full identity-file contents with the formatting
      grammar above, then re-verify. Never upload a failed render, and never narrate the retry to the
-     agent** — they only ever see the finished book.
+     agent** — they only ever see the finished book. **Retry caps and the exhaustion STOP in
+     `brain-book-spec.md` govern:** a build that exhausts its bounded retries (research refresh once
+     per chapter · TOC re-render twice · rebuild cycles twice) STOPS and tells the agent plainly
+     what's blocking — that stop is the honest terminal state, not narration, and it never uploads
+     the failed render.
    - Render premium via `shared/render_doc.py`, save to the workspace's **`01 · AI Brain/`** — and name it
      so it's UNMISSABLE: **"📕 [Agent]'s Business Brain Book — [YYYY-MM-DD]"** (the emoji + the words
      "Business Brain Book" make it instantly findable in a folder; dated so regenerations never collide —

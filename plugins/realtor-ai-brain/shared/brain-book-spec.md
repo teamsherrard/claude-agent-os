@@ -103,11 +103,69 @@ grounding law is wrong.
    clear geography — re-verify city + state/province on every place-fact, so a wrong-city fact planted
    in a brain file earlier dies here instead of surviving because "it traces." If cuts drop a chapter
    below its word minimum, the owning brain file is thin: re-run that chapter's research mandate
-   (pipeline step 2), write back, re-assemble — never pad, never loop on rebuild alone. Report the
+   (pipeline step 2) — ONCE per chapter per build; if refreshed research still can't support the
+   minimum, render the honest gap and what would fill it (the anti-fluff rule's honest-gap clause) —
+   never pad, never loop on rebuild alone. Report the
    tally — "N facts traced, M cut" — to the agent in the hand-off message.
 7. **Read-back check** (pipeline step 5). After assembly, re-read `identity/voice.md` +
    `voice-print.md` (if built) and confirm the Book's characterization of the agent matches those
-   files; fix mismatches before rendering.
+   files; fix mismatches before rendering — ONE fix pass per build. A mismatch surviving it is flagged
+   in the hand-off message, never re-fixed in a loop (`voice.md` and `voice-print.md` can legitimately
+   differ — written voice vs spoken voice; don't ping-pong between them).
+
+---
+
+## DEMO BRAINS — explicitly fictional, for training + demos only
+
+When the person in the session **explicitly asks for a fictional brain** — the words "demo", "mock",
+"fake", "fictional", "test agent", "sample agent" in THEIR OWN request (a coach demoing for a cohort, a
+test drive of the system) — the build runs in **demo mode**. Two conditions, both required:
+
+- **The subject is fictional** — a named persona who is NOT the person in the session. Demo keywords
+  aimed at their OWN identity or market ("mock something up for MY market", "let's just do a test run
+  on my brain", "I'm kind of a test agent at my brokerage") are a REAL build — the grounding laws bind.
+- **When there is ANY doubt who the subject is, ask the one question** — "Fictional demo agent, or
+  your real Brain?" — before proceeding. An unambiguous fully-fictional framing (a named third-party
+  persona + explicit demo/training intent) proceeds without asking.
+
+In demo mode:
+
+- **No live research.** Skip the research passes (pipeline step 2), the staleness rules, and the
+  grounding audit's tracing entirely. Fill the researched chapters with plausible, clearly-labeled
+  illustrative content instead — a demo build should take minutes, not research cycles.
+- **Every number is tagged "(illustrative — demo)"** — and NEVER carries a fabricated source
+  attribution. Putting "per [board], [Month YYYY]" on an invented number is exactly the compliance
+  incident the grounding laws exist to prevent — demo or not.
+- **No real competitor or vendor names.** Fictional names only ("the Lakeline team") — a demo must
+  never put claims about a real person or business on a training screen.
+- **Watermark it, unmissably:** filename **"📕 [Agent]'s Business Brain Book — DEMO — [YYYY-MM-DD]"**;
+  eyebrow `Realtor AI Brain · Demo`; one meta line on the cover: *"Demo document — illustrative data,
+  not researched."*
+- **Total isolation from real Brains.** A demo scaffolds locally at `~/realtor-brain-demo/` and
+  creates/pushes to its OWN workspace folder named **"[Workspace name] — DEMO"** (own marker, also
+  demo-stamped) — NEVER into an existing real workspace. The demo Book saves inside that demo
+  workspace only — never into a real `01 · AI Brain/`, and it is excluded from "newest = current":
+  Claude Design's "upload your AI Brain file" must never be handed a demo Book by accident.
+- **Every demo brain file opens with the banner line** `DEMO BRAIN — fictional agent, illustrative
+  data — never publish.` — so ANY skill that ever reads the file (market update, YouTube scripts,
+  listing kit, health, migrate) sees what it's holding before it quotes a single number.
+- **Demo-to-real never converts.** "Love it — now build mine" starts a REAL build from a fresh
+  template scaffold with every gate re-armed; demo files, demo answers, and demo mode's relaxations
+  are never carried into a real build.
+- **Everything else holds at full strength:** the complete 15-chapter structure, the linked contents
+  page, chapter bands, formatting gates, word floors, voice conversion — a demo shows the real product,
+  just on fictional data.
+- **The demo marker travels with the BRAIN, not just the Book.** A demo build writes `Demo brain: yes`
+  into `config.md` and keeps the "(illustrative — demo)" tags **inside the brain files themselves**
+  (`market.md`, `market-intel.md`, `proof.md` …), so the label follows the data wherever it's quoted.
+  Any build, regenerate, or skill that touches a brain whose `config.md` says `Demo brain: yes` STAYS
+  in demo mode — research-on-render never fires on a demo brain, and real research is never mixed into
+  a fictional identity. A real agent resuming setup on a brain marked demo is told plainly it's a demo
+  brain and offered a fresh real setup — never a silent conversion.
+- **Demo mode is NEVER inferred.** Thin answers, a rushed agent, "just fill it in", or "use defaults"
+  do NOT trigger it — only the explicit fictional framing above does (and a `Demo brain: yes` already
+  in `config.md`, which is that explicit request persisted). A real agent's Book never
+  contains an illustrative number; when in doubt, it is a real build and the grounding laws bind.
 
 ---
 
@@ -135,14 +193,15 @@ grounding law is wrong.
    No Markdown `#`/`**`/backticks in the body.
 5. **Read-back check** (Grounding Law 7). Re-read `identity/voice.md` + `voice-print.md` (if built) and
    confirm the draft's characterization of the agent — story, philosophy, phrasing, tone — matches those
-   files. Fix every mismatch before rendering.
+   files. One fix pass; survivors are flagged in the hand-off message, not looped on.
 6. **Pre-render grounding audit** (Grounding Law 6). Enumerate every proper noun (community, competitor,
    school, employer, brokerage) and every number in the draft; trace each — as the pairing it's used in —
    to a Brain file or a sourced research result; CUT anything untraceable. Keep the tally — "N facts
    traced, M cut" — for the hand-off message.
 7. **Render** with `render_doc.py` to `.docx`. **Renderer stderr must show ZERO unresolved-TOC
    warnings** — a warning means a contents row and a chapter band don't match character-for-character:
-   fix the structured text, re-emit, re-render.
+   fix the structured text, re-emit, re-render (at most twice — it's a copy-paste alignment fix,
+   never a rebuild).
 8. **Verify** against the hard gate (below). FAIL → rebuild from the full brain-file contents and
    re-verify. Never upload a failed render.
 9. **Upload to `01 · AI Brain/`, push, hand over the direct link** — with the grounding-audit tally
@@ -434,6 +493,8 @@ a silently skipped heading.
 Extract the text back out of the rendered `.docx` and check ALL of:
 1. **Count** — complete brain: 5,000+ words (target band 5,000–6,500+); first-run with the two allowed
    placeholders: 4,400+; **absolute floor in all cases: 3,000** (the Setup gate — below it, always FAIL).
+   An honest-gap chapter rendered per Grounding Law 6 is exempt from its per-chapter range, like a
+   placeholder — the 3,000 absolute floor still binds.
 2. **All FIFTEEN chapter headings present** (Snapshot · Who You Are · Who You Serve · Your Voice &
    Proof · Your Brand Direction · Your Market · Your 12-Month Market Outlook · Your Competitive &
    Content Landscape · Your Search & Content Opportunity · Your Offer & USP · Your Strategic Position ·
@@ -446,14 +507,19 @@ Extract the text back out of the rendered `.docx` and check ALL of:
    "adjacent" (more than 4 = FAIL — a refresh replaces the set, never accumulates), and NO surviving
    one-line community list.
 6. **Source discipline** — every number in Chapters 6–9 carries source + as-of date. One unsourced
-   researched stat = FAIL (it's a compliance incident waiting to publish). And no stale stamps: an
-   as-of older than its staleness window (3 months for market + outlook numbers, 6 months for
-   competitive + search) = FAIL — refresh, write back, re-render.
+   researched stat = FAIL (it's a compliance incident waiting to publish). And no stale research: the
+   number was **verified current within its staleness window** (research RUN within 3 months for
+   market + outlook, 6 for competitive + search — the researched-stamp, NOT the source's publication
+   date: boards lag and forecasts are quarterly, so when the newest published data is older than the
+   window, cite it as the newest available and say so — that PASSES). At most ONE refresh per chapter
+   per build (Grounding Law 6's cap): if refreshed research finds the same numbers, they ARE current —
+   ship them, never re-research in a circle.
 7. **Tables rendered where the contract says table** (Snapshot card, avatar-at-a-glance, colours,
    price bands, outlook indicators, competitive table, query-family table, cadence, money math + KPIs
    when built) — tabular data as wall-of-prose = FAIL.
 8. **Anti-fluff spot check** — read Chapters 7–9 + 11: any paragraph failing the swap test = FAIL that
-   chapter; rebuild it from the agent's data.
+   chapter; rebuild it from the agent's data (a chapter rebuild spends a rebuild cycle; if the brain
+   genuinely can't support specifics, the honest-gap render is the terminal state — never another loop).
 9. **Placeholders only where allowed** (rule above).
 10. **Contents page** — the linked CONTENTS renders on page 2 (exactly one CONTENTS page) with all
     FIFTEEN chapter rows, in order, each carrying its one-line summary written for THIS agent; any
@@ -470,8 +536,31 @@ Extract the text back out of the rendered `.docx` and check ALL of:
     biographical claim about the agent that isn't in their Brain.
 15. **`[confirm:]` discipline** — every marker enumerated in the hand-off message; none on researched
     numbers in Chapters 6–9; more than 3 total = FAIL (capture the answers with the agent, then render).
+
+**Demo builds** (DEMO BRAINS above) swap checks 6, 13, and 14 for the demo checks: every number tagged
+"(illustrative — demo)"; ZERO real source attributions; ZERO real competitor or vendor names; the
+watermark present (filename + eyebrow + cover line). Every other check binds unchanged. **Real builds
+get the mirror tripwire:** the string "(illustrative — demo)", a DEMO watermark, or the demo cover
+line appearing ANYWHERE in a non-demo render = automatic FAIL — rebuild from the brain files.
+
 On any FAIL: rebuild the failing chapters from the full brain-file contents and re-verify. **Never
 upload a failed render. Never narrate the retry** — the agent only ever sees the finished Book.
+
+**Bounded retries — a gate may fail a build, never trap one.** Research refresh: at most ONCE per
+chapter per build. TOC re-render: at most TWICE (then align the contents rows to the bands by
+copy-paste — it is a mechanical fix, never a rebuild). Rebuild cycles: at most TWO — **a cycle is ANY
+post-gate rebuild + re-verify pass, full-book or single-chapter** (chapter rebuilds under checks 1 and
+8 count; their terminal state is the honest-gap render, never another loop). A build still
+failing a gate after its bounded retries **STOPS and tells the agent plainly** what's blocking (the one
+gate, the one chapter, what would fill it) — a visible blocker beats an invisible loop. "Never upload a
+failed render" still holds absolutely; "never narrate the retry" applies to retries that succeed, not
+to a build that has exhausted them.
+
+The same discipline covers the edges: **wrong file in Drive** (raw `════` text visible) = ONE
+corrective re-upload of the already-rendered `.docx` — a second failure spends a rebuild cycle;
+**push verify-fails** = TWO attempts per file, then `realtor-brain-sync`'s recovery path;
+**renderer unavailable** = `pip install python-docx` once → the docx skill once → STOP and tell the
+agent the renderer is unavailable (never upload raw text, never retry installs in a loop).
 
 ---
 
@@ -479,7 +568,9 @@ upload a failed render. Never narrate the retry** — the agent only ever sees t
 
 - **When:** end of Setup (Step 7.4) · immediately after the Business Plan is built · "show me my Brain" /
   "regenerate my Brain document" · whenever the Brain materially changes (new avatar, new offer, brand
-  change, migration).
+  change, migration). **A build's OWN write-backs** (its research, its `strategy.md` synthesis, the
+  migrations it performs) **are never a material change and never trigger another regenerate** — one
+  build per trigger, always.
 - **Refresh, don't fork:** same name pattern, new date, saved beside the old — newest = current; the old
   dated copies are the version history. Never a second differently-named master doc.
 - **Research staleness on regenerate** (check the as-of stamps in the brain files; refresh only what's

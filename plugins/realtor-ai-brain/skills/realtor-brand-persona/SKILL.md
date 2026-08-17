@@ -207,6 +207,10 @@ Write what you verified and omit what you couldn't. Clearly separate **"what [Ag
 words, their positioning) from **"researched market intelligence"** (sourced facts) in the file.
 This is a big part of what they're paying for — the Brain should know their market better than a
 brand-new agent does on day one.
+*(EXCEPTION — demo brains: when the session's request explicitly framed this as a demo/mock/fictional
+agent, skip the live research entirely and label every number "(illustrative — demo)" — never a
+fabricated source — per `brain-book-spec.md`'s DEMO BRAINS section. Explicit framing only, never
+inferred.)*
 | Target avatars — each one captured separately | `~/realtor-brain/identity/avatars.md` |
 | Voice — tone, never-sounds-like, signature phrases, CTA + content topics | `~/realtor-brain/identity/voice.md` |
 

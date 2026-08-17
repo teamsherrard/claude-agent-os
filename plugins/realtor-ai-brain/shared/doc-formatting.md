@@ -18,9 +18,12 @@ automatically.
 **NEVER upload the raw structured text as the deliverable.** The structured text (CAPS bands, `────`
 rules, `Label:` lead-ins) is the RENDERER'S INPUT, not a document. If a Google Doc ever shows literal
 `════`/`────` dash lines as text, the raw input was uploaded instead of the rendered file — that is a
-FAILED delivery: re-render and upload the `.docx`. The fallback chain when rendering breaks is:
-`render_doc.py` → (`pip install python-docx`) → the **docx skill** building the same styled look →
-**never** "just upload the text." A plain-text wall is not an acceptable output at any step.
+FAILED delivery: re-render and upload the `.docx` (ONE corrective re-upload — if it happens again,
+stop and tell the agent instead of re-uploading in a loop). The fallback chain when rendering breaks is:
+`render_doc.py` → (`pip install python-docx`, ONCE) → the **docx skill** building the same styled look,
+ONCE → if that also fails, **STOP and tell the agent the renderer is unavailable** —
+**never** "just upload the text," and never retry installs in a loop. A plain-text wall is not an
+acceptable output at any step.
 **Build + verify (EVERY document):** build ONLY via `render_doc.py` (or the docx skill matching the same
 look) — never hand-write document XML. Before uploading, read the finished `.docx` text back and check:
 (a) no raw `<w:` markup in the content — if you see any, the build is corrupt: rebuild; (b) **depth matches
