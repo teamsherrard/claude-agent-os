@@ -153,8 +153,9 @@ In demo mode:
   template scaffold with every gate re-armed; demo files, demo answers, and demo mode's relaxations
   are never carried into a real build.
 - **Everything else holds at full strength:** the complete 15-chapter structure, the linked contents
-  page, chapter bands, formatting gates, word floors, voice conversion — a demo shows the real product,
-  just on fictional data.
+  page, chapter bands, formatting gates, voice conversion — a demo shows the real product, just on
+  fictional data. Word counts: the 3,000 absolute floor binds; the 4,400/5,000 bands are TARGETS in
+  demo mode, not gates — never burn rebuild cycles padding fictional prose.
 - **The demo marker travels with the BRAIN, not just the Book.** A demo build writes `Demo brain: yes`
   into `config.md` and keeps the "(illustrative — demo)" tags **inside the brain files themselves**
   (`market.md`, `market-intel.md`, `proof.md` …), so the label follows the data wherever it's quoted.
