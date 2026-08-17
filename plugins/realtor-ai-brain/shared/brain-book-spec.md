@@ -146,6 +146,10 @@ In demo mode:
   demo-stamped) — NEVER into an existing real workspace. The demo Book saves inside that demo
   workspace only — never into a real `01 · AI Brain/`, and it is excluded from "newest = current":
   Claude Design's "upload your AI Brain file" must never be handed a demo Book by accident.
+  Isolation cuts BOTH ways: a demo build never modifies, renames, retires, or "cleans up" anything
+  outside its own workspace — not markers, not folders — multiple markers are expected (the demo
+  stamp disambiguates; real sessions skip demo-stamped markers). Demo pushes are LIGHT: create the
+  files, one folder-listing verify at the end — no per-file verification, housekeeping, or snapshots.
 - **Every demo brain file opens with the banner line** `DEMO BRAIN — fictional agent, illustrative
   data — never publish.` — so ANY skill that ever reads the file (market update, YouTube scripts,
   listing kit, health, migrate) sees what it's holding before it quotes a single number.

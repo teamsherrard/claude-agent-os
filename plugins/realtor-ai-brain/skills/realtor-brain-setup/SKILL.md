@@ -25,6 +25,18 @@ skill reads it automatically. The agent should never again have to re-explain wh
 This is the most important session the agent will have with the system. Make it feel like a warm,
 smart onboarding — not a form. They are often beginners. Encourage honesty over polish.
 
+## How you speak — plain language, ALWAYS
+
+The agent sees a warm onboarding, never the machinery. **Do the mechanics silently; narrate only
+human milestones:** *"✓ Connected to your Google Drive"* · *"✓ No existing Brain found — building
+yours fresh"* · *"✓ Your workspace is ready — here's the link."* NEVER surface internal vocabulary
+in anything the agent sees: no step numbers ("Step 0 —"), no "locate ladder", "marker",
+"`_workspace.md`", "`config.md`", "sandbox", "scaffold", "probe", "schema", "provider detected",
+"sync/pull/push/verify", no file paths, no notes-to-self about what you're skipping or why. If a
+decision is worth telling the agent, say it in their words (*"I found an older folder from before —
+I'm leaving it completely untouched"*) — otherwise don't say it at all. This binds every phase,
+every regenerate, and ESPECIALLY demo builds, which get recorded for training videos.
+
 ---
 
 ## The Brain you are building
@@ -104,7 +116,11 @@ the cloud with a fresh empty one** at the finalize push. So:
      existing real workspace, and the demo Book never lands in a real `01 · AI Brain/`. And if Step
      0's pull ever finds a brain whose `config.md` says `Demo brain: yes`, say so up front ("this is
      a DEMO brain — fictional [name]") and offer demo continuation or a fresh real setup — never
-     resume it as their real Brain.
+     resume it as their real Brain. **A demo build NEVER modifies, renames, retires, or "cleans up"
+     ANYTHING outside its own — DEMO workspace** — not markers, not folders, not files, no matter how
+     it might tidy the locator: other workspaces are read-never-touch, and multiple markers are fine
+     (the demo stamp disambiguates). Demo pushes are LIGHT: create the files, then verify with one
+     listing of the demo folder — no per-file verification, no housekeeping, no snapshots.
    - **"Review it" / "show me my Brain" / "regenerate my Brain document"** → don't re-interview; just
      **rebuild the master "Your AI Brain" document** from the current identity files (per
      `${CLAUDE_PLUGIN_ROOT}/shared/brain-book-spec.md` — the canonical Book contract, incl. its research-refresh rules), save it to the workspace's `01 · AI Brain/` (dated

@@ -35,6 +35,10 @@ Agents may rename the workspace folder to their business name. Locate it in this
 2. **Marker search — the canonical cold-start locator.** Search the agent's storage for the
    `_workspace.md` marker file (setup writes it as the workspace's FIRST file); its parent folder IS the
    workspace, whatever it's called now. Re-cache the ID + current name + link into `config.md`.
+   **Demo markers don't count:** a marker whose workspace `config.md` says `Demo brain: yes` (or whose
+   folder name ends `— DEMO`) is SKIPPED when locating a real Brain — keep looking. Multiple markers
+   are expected and fine: the demo stamp is the disambiguator. **NEVER retire, rename, move, or "clean
+   up" another workspace's marker to make the search unambiguous** — that orphans a Brain.
    **Self-heal:** after ANY successful locate, if the marker is missing, drop it.
 3. **Legacy name** — a folder named `Realtor AI Brain` (pre-workspace brains). If found, adopt it: cache
    its ID into `config.md` and drop the `_workspace.md` marker into it for next time.
@@ -80,6 +84,11 @@ Agents may rename the workspace folder to their business name. Locate it in this
    (`\#`, `\-`, `\_`) — strip that escaping before diffing pulled-vs-local, or every file looks changed
    and every session pushes a phantom duplicate. Compare *meaning*, not bytes.
 2. **Verify each push:** search for the file and confirm the new copy exists (newest timestamp = yours).
+   **Verify = existence, scoped to the workspace folder — NEVER a content read-back** (reading content
+   back invites the escaping trap above, and a global search can match a same-named file in an older
+   folder and "fail" a push that succeeded). **Batch scaffolds** (10+ files created together, e.g. a
+   fresh setup or demo): verify with ONE listing of the workspace folder at the end — never per-file
+   searches — and skip housekeeping (a fresh folder has no superseded copies).
    - Verify fails → retry once. Still failing → **tell the agent their work is NOT saved yet**, keep the
      written content visible in chat so nothing is silently lost, and troubleshoot the connector.
    - **Microsoft org-gating:** a permission-style failure on `microsoft` = write actions disabled by
