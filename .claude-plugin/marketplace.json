@@ -53,6 +53,12 @@
       "source": "./plugins/realtor-market-system",
       "version": "0.4.1",
       "description": "PLUGIN 8 — the Monthly Market System, powered by the Market Update AI Agent. It schedules itself the moment the agent installs it, times itself to when their local real estate board actually publishes (and re-times itself as it learns), then every month pulls the fresh local numbers and builds the entire package off them: the branded PRESENTATION they screen-record (talking points under every slide — no script needed), the sendable PDF market report that doubles as a green-screen asset and the lead magnet, three short-form concepts, the Instagram 1:1 infographic AND carousel, and the distribution pack with a two-CTA newsletter. Every asset ships as a paste-ready Claude Design brief with the real numbers already in it. The realtor's only job is to film. Numbers are researched once into the Brain and quoted everywhere, so nothing ever disagrees; sourced and dated or it doesn't ship. Text, data, and design briefs only — it never designs, films, or publishes. Requires Plugin 1 (the Brain) set up first."
+    },
+    {
+      "name": "cohort-claude-support",
+      "source": "./plugins/cohort-claude-support",
+      "version": "0.1.0",
+      "description": "PLUGIN 9 — Cohort Claude Support. The calm support desk inside Cowork: say \"help\" and it answers every Claude question, diagnoses breakage with real checks (brain missing, connector expired, skill won't fire, Claude slow), teaches in plain English with diagrams and vetted official articles, audits setup and resumes at the first missing step, tracks the cohort week with a catch-up plan, and escalates to Mike's team with a complete pre-built ticket the member pastes straight into the support portal. Knows all 9 plugins and routes every fix to the skill that owns it — support itself never touches the member's data (READ-ONLY by constitution). Stays current by design: money/limit answers are always fetched live from official pages; a weekly digest reads the Claude Apps release notes so answers stand on this week's Claude, not launch-week Claude. Works best with Plugin 1 (the Brain); helps even without it."
     }
   ]
 }

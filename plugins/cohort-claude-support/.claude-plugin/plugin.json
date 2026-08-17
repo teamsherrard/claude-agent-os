@@ -1,0 +1,23 @@
+{
+  "name": "cohort-claude-support",
+  "displayName": "Cohort Claude Support (Plugin 9)",
+  "version": "0.1.0",
+  "description": "PLUGIN 9 — Cohort Claude Support. The calm, always-available support desk inside Cowork. One phrase — \"help\" — and it takes over: answers every Claude question (Cowork vs Chat, connectors, plans and limits, permission prompts, sessions), diagnoses breakage with real look-only checks down proven decision trees (brain missing, connector expired, skill won't fire, Claude slow), teaches concepts in plain realtor English, audits setup and resumes at the first missing step, tracks the member's cohort week with a catch-up plan, and — when a human is needed — builds the complete ticket ready to paste straight into Mike's support portal. Knows all 9 plugins deeply and routes every fix to the skill that owns it; support itself is READ-ONLY by constitution. Stays current by design: money and limit answers are always fetched live from official pages, and a weekly digest cycle reads Anthropic's changelogs so answers stand on this week's Claude. Requires Plugin 1 (the Brain) for personalization; helps even without it.",
+  "author": {
+    "name": "Mike Sherrard"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "support",
+    "help desk",
+    "cohort",
+    "claude help",
+    "cowork",
+    "troubleshooting",
+    "diagnostics",
+    "onboarding",
+    "escalation",
+    "concierge"
+  ],
+  "homepage": "https://github.com/teamsherrard/claude-agent-os"
+}
