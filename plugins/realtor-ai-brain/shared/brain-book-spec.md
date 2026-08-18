@@ -436,7 +436,9 @@ answer the demand the research found. The 20/80 mix note appears here labeled as
 
 ### Chapter 13 — YOUR 90-DAY BUSINESS PLAN
 Captured in **Setup Phase 8** — part of every first run, so a first Book renders this chapter FILLED:
-the whole plan from `business-plan.md` with the math — the income target, the **money-math
+**the chapter OPENS with their Why** (the why-line from `## The Why`, verbatim, as this chapter's `>> `
+callout — the numbers serve the why), then the whole plan from `business-plan.md` with the math — the
+income target, the **money-math
 table** (| Goal | Avg price | Commission | Deals needed |), where the deals come from, the **3 weekly
 non-negotiables** (one is always content), the scenario table, and the **daily/weekly KPI dashboard
 table**. Never summarize the math. The placeholder (below) renders ONLY when the agent explicitly

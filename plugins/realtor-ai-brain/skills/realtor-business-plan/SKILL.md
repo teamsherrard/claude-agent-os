@@ -51,10 +51,47 @@ this skill can set it. If `~/realtor-brain/` doesn't exist, run **Setup** first.
 
 ---
 
+## Phase 0 — THE WHY + WHERE THEY ARE (2 minutes that power everything else)
+
+**A. Where they are — read the Brain FIRST, never ask what it knows.** `profile.md` (years in, team),
+`proof.md` (track record), and `strategy.md` usually already answer this. Only when genuinely unclear,
+one warm question: *"Quick calibration — where are you in your real estate journey right now?"* Chips
+as examples (+ always their own words): **Brand new — working toward my first deal** · **A few deals
+in** · **Established — 10+ a year** · **I lead a team**. This one answer selects the question set for
+everything below — **never ask a question their level makes unanswerable** (a brand-new agent asked
+about their last closings doesn't feel planned-for, they feel disqualified).
+
+**B. The Why — the emotional engine of the plan.** The cohort spans first-deal rookies to 40-deal
+teams; the numbers differ wildly, but every plan runs on a why. Two questions, their words sacred:
+1. *"Before any numbers — who are you really building this for?"* Chips as examples, never boxes:
+   my kids · my family / my partner · myself — proving I can do this · my parents · my team ·
+   their own words + context.
+2. *"And when this works — what does it actually buy you? What's the life this is for?"* Let them
+   type freely; offer examples only if they stall: time with my kids while they're young · out of
+   debt · the house · retiring my partner · never asking permission for a day off again.
+Distill both into **one Why-line in THEIR phrasing**, read it back, get the nod: *"So this plan is
+for: [why]. That's what we're actually building — the deals are just how."* Write it verbatim to
+`business-plan.md` (`## The Why`, at the top) and `identity/strategy.md`.
+**The Why is USED, not filed:** the Book's Business Plan chapter OPENS with it (it's the chapter's
+callout), the weekly check-in opens with it, and the calendar audit closes with it — when the numbers
+slip, the why is what re-anchors the conversation. Honour a skip like anything else — but ask warmly
+first; this is the question agents thank you for.
+
+---
+
 ## Phase 1 — THE MONEY (do the math for them)
 Reverse-engineer the goal into deals. Show the working — agents love seeing the number become concrete.
 
-1. **The target.** Use `strategy.md`'s GCI / income goal. If it's an *income* (take-home) goal, gross it up
+1. **The target — asked at their level (Phase 0's calibration):**
+   - **Brand new:** *"What would a GREAT first year look like — an income number or a deals number,
+     whichever feels more real to you?"* Consultant duty: if the number is fantasy or they have no
+     idea, recommend a strong-start band for THEIR market (in most markets, 4–8 closed deals is an
+     excellent first year) and show what one deal is worth so the goal feels earned, not assigned.
+     Never let a new agent anchor on a number that sets them up to feel behind by March.
+   - **A few deals in / established:** use `strategy.md`'s GCI / income goal as before.
+   - **Team lead:** the target is TEAM GCI — ask team size and realistic per-agent production; the
+     leader's plan is the team's plan.
+   If it's an *income* (take-home) goal, gross it up
    to GCI (before splits/expenses) — ask their brokerage split if unknown, default a sensible one and label it.
 2. **Average commission per deal.** = average sale price × commission %.
    - **Average sale price:** `market.md` stores price *ranges*, not a single number — so take the **midpoint of
@@ -76,9 +113,18 @@ Every number is theirs and adjustable — if they say "my average is higher" or 
 ## Phase 2 — THE ENGINE (where the deals come from → 3 weekly moves)
 Deals don't come from hoping. Map them to sources, then convert sources into weekly activity.
 
-1. **Their real track record:** *"Think about your last 3–5 closings — where did each one actually
-   come from?"* This calibrates everything: their true conversion sources beat any generic ratio. (Brand-new
-   agent with no closings → totally fine; say so and use the doctrine defaults, labeled as assumptions.)
+1. **Their real track record — the calibration question, asked at their level (never one-size):**
+   - **A few deals in / established:** *"Think about your last few closings — where did each one
+     actually come from?"* (Works for 2 deals or 40 — never name a count their history can't match.)
+     Their true sources beat any generic ratio.
+   - **Brand new (NEVER ask about past closings):** *"Where do the people who already know and trust
+     you live? Who are the first ten people who'd cheer you on — and refer you?"* Their engine starts
+     warm: sphere + open houses + content, the proven new-agent mix, with doctrine ratios labeled as
+     assumptions until real closings replace them.
+   - **Team lead:** *"Where did the TEAM's last quarter of closings come from — and how much of that
+     engine depends on YOU personally?"* (The answer usually reveals the real risk; the engine then
+     includes at least one leader-level move — accountability cadence or recruiting — not just
+     personal production.)
 2. **Lead sources.** Which of these actually produce for them (pick their real ones, add their own, and
    START from where their last closings actually came from): sphere / database, past clients + referrals,
    content / YouTube / social, open houses, geographic farming, online leads, networking/events. Weight
@@ -102,7 +148,11 @@ Deals don't come from hoping. Map them to sources, then convert sources into wee
 ## Phase 3 — THE 90-DAY PLAN + DAILY/WEEKLY KPIs + DASHBOARD
 Assemble it into something they'll actually keep and revisit — **this is the Book's ★ chapter; build it
 like the strategy centerpiece it is, with real tables (pipe rows):**
-- **The one-line target** (the 90-day deal number + GCI).
+- **Open with THE WHY** (Phase 0's why-line, verbatim, in their words) — the plan's first line, and the
+  chapter's `>> ` callout in the Book. The numbers serve the why, and the chapter says so.
+- **The one-line target** (the 90-day deal number + GCI). **Brand-new agents get a momentum-framed
+  plan:** lead with the leading indicators (conversations, appointments, content shipped, first
+  pipeline) and the first-deal milestone — never a GCI pace that makes month one feel like failure.
 - **Scenario math (table):** three columns — **Conservative / Target / Stretch** — deals, GCI, and the
   weekly activity each requires. Agents commit harder when they can see the floor and the ceiling.
 - **The conversion funnel (table):** conversations → appointments → signed clients → closings, with the
@@ -145,6 +195,9 @@ like the strategy centerpiece it is, with real tables (pipe rows):**
 
 ## WEEKLY CHECK-IN mode (trigger: "weekly check-in" / "review my plan" / "am I on track")
 Keep the plan alive — a plan nobody revisits is wallpaper. ~3 minutes:
+0. **Open with the Why** — one line, theirs, from `business-plan.md`'s `## The Why` (*"Week [n] of the
+   plan you're running for [why-line] — here's the score."*). When they're behind, the why is the
+   re-anchor, never guilt.
 1. Read `identity/business-plan.md` + pull real progress from memory: `memory/clients.md` (pipeline / new
    opportunities), `memory/content-log.md` (content shipped), `memory/deadlines.md`, `memory/performance.md`.
 2. **Update the dashboard** row for this week. Compare to the milestone pace — are they on/ahead/behind?

@@ -257,10 +257,14 @@ These are **not optional** — they're part of every setup. (Graceful defaults k
   `identity/voice-samples.md`, `proof.md`. *(~5 min — biggest lever on content quality; if they have nothing handy, capture what's real and move on — the phase always runs, no field is forced.)*
 - **Phase 5 — Content Engine** (`realtor-content-engine`): a simple content plan → `identity/content-engine.md`.
   Asks just 2 things; generates the rest if the agent's unsure. *(~3–5 min.)*
-- **Phase 8 — 90-Day Business Plan** (`realtor-business-plan`, capture mode): the money conversation —
-  12-month income/GCI goal, commission % (avg price comes from `market.md`'s midpoint as a labeled
-  assumption), "your last 3–5 closings — where did each come from?", and the **3 weekly non-negotiables
-  (content is always one)**. Then Claude builds the FULL plan silently — deals needed, scenario table,
+- **Phase 8 — 90-Day Business Plan** (`realtor-business-plan`, capture mode): opens with **THE WHY**
+  (who they're building this for + what the life it buys looks like — one why-line in their words,
+  used by the Book, the weekly check-in, and the calendar audit), then the money conversation **at
+  their level** (the skill's Phase 0 calibration: brand-new · a few deals in · established · team —
+  read from the Brain, confirmed only if unclear): goal framed for their level, commission %
+  (avg price from `market.md`'s midpoint as a labeled assumption), the track-record question ONLY for
+  agents with a track record (brand-new agents get the warm-sphere question — never "your last
+  closings"), and the **3 weekly non-negotiables (content is always one)**. Then Claude builds the FULL plan silently — deals needed, scenario table,
   conversion funnel, month-by-month ramp, daily & weekly KPIs, strategy narrative — and writes
   `identity/business-plan.md` **before the Book renders, so Chapter 13 is filled on the very first
   Book**. *(~5–7 min. Runs after Content Engine because content is one of the three moves. During

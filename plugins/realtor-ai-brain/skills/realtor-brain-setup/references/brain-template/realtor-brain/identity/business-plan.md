@@ -1,5 +1,10 @@
 # [Agent] — 90-Day Business Plan
 *identity · the goal made real — deals needed, where they come from, the 3 weekly moves · refreshed each quarter*
+
+## The Why
+**For:** [who they're building this for — their words] · **The life it buys:** [their words]
+**The Why-line:** "[one line, verbatim — opens the Book's Business Plan chapter, every weekly check-in,
+and closes every calendar audit]"
 *(Captured during Brain Setup — Phase 8, part of every first run. Refreshed via "review my business
 plan" / quarterly. Prior quarters are archived to `exports/`.)*
 
