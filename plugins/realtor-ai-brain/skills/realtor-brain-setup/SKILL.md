@@ -373,8 +373,10 @@ skill formats prices, dates, and measurements to this), and pull the **default C
    - Render premium via `shared/render_doc.py`, save to the workspace's **`01 · AI Brain/`** — and name it
      so it's UNMISSABLE: **"📕 [Agent]'s Business Brain Book — [YYYY-MM-DD]"** (the emoji + the words
      "Business Brain Book" make it instantly findable in a folder; dated so regenerations never collide —
-     newest = current). Sections not built yet (Business Plan, Operations) render as a friendly placeholder —
-     the Business Plan section fills in the moment they build it. The same standard AND the same name apply
+     newest = current). Sections not built yet (Business Plan, Operations) render as the spec's DESIGNED
+     placeholder page (lead line + callout + "what will appear here" — never one orphan line;
+     demo brains never placeholder at all) — the Business Plan section fills in the moment they
+     build it. The same standard AND the same name apply
      to EVERY regeneration ("show me my Brain" / after the Business Plan).
    - **Hand them the DOC, not just the folder.** After uploading, give the agent the **direct link to the
      Book itself** and say exactly where it lives: *"Your **Business Brain Book** is in your workspace →

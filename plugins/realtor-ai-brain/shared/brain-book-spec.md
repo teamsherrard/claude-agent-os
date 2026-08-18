@@ -156,6 +156,9 @@ In demo mode:
 - **Demo-to-real never converts.** "Love it — now build mine" starts a REAL build from a fresh
   template scaffold with every gate re-armed; demo files, demo answers, and demo mode's relaxations
   are never carried into a real build.
+- **No placeholder chapters.** A demo Book renders all fifteen chapters FILLED — Chapters 13 and 14
+  get illustrative content like everything else (a demo shows the finished product, and an
+  almost-blank page on a training screen reads as broken).
 - **Everything else holds at full strength:** the complete 15-chapter structure, the linked contents
   page, chapter bands, formatting gates, voice conversion — a demo shows the real product, just on
   fictional data. Word counts: the 3,000 absolute floor binds; the 4,400/5,000 bands are TARGETS in
@@ -478,13 +481,25 @@ capture it — an honest gap beats confident fluff every time.
 
 ---
 
-## Placeholders (unchanged behavior)
+## Placeholders (real builds only — demo brains NEVER placeholder)
 
 Only **Business Plan** and **Operations** may render as placeholders — they are unbuilt-by-design after
-a perfect first run. Each renders its CAPS heading + one friendly line:
-- YOUR 90-DAY BUSINESS PLAN → *"Run 'build my business plan' and this section fills in — your income
-  target turned into deals, KPIs, and the three weekly moves."*
-- HOW YOU OPERATE → *"Set up when you build your AI Admin — say 'set up my operations'."*
+a perfect first run. **Demo brains render NO placeholders** — Chapters 13 and 14 fill with illustrative
+content like every other chapter; a demo shows the finished product.
+
+A placeholder is a DESIGNED page, not an orphan line on white space — it sells the next step. Every
+placeholder line is emitted as ONE line of structured text (never split mid-sentence — a wrapped source
+line renders as two broken paragraphs). Exact treatment:
+
+- **YOUR 90-DAY BUSINESS PLAN** → one lead line: *"This chapter is waiting on one 15-minute
+  conversation."* Then the callout: `>> Say "build my business plan" — your income goal becomes the
+  exact deals you need, your daily and weekly KPIs, and your three weekly non-negotiables, with all
+  the math shown.` Then a short **"What will appear here"** bullet list: the money-math table · where
+  your deals come from · the three weekly moves · the scenario table (conservative / target / stretch) ·
+  your daily & weekly KPI dashboard · the month-by-month ramp.
+- **HOW YOU OPERATE** → one lead line: *"This chapter fills in when you set up your AI Admin."* Then
+  the callout: `>> Say "set up my operations" — your hours, booking rules, follow-up cadence, and
+  trusted vendor list live here so your AI runs your day the way YOU run it.`
 Voice-print and story-bank get the one-line "how to add" note inside Chapter 4, not a placeholder
 chapter. (Strategy never placeholders — pipeline step 3 synthesizes it fresh on every build.) **No other
 chapter may placeholder on a complete brain.** If a first-run identity file is genuinely missing, render
