@@ -1,6 +1,7 @@
 # [Agent] — 90-Day Business Plan
 *identity · the goal made real — deals needed, where they come from, the 3 weekly moves · refreshed each quarter*
-*(Empty until they run "build my business plan". Prior quarters are archived to `exports/`.)*
+*(Captured during Brain Setup — Phase 8, part of every first run. Refreshed via "review my business
+plan" / quarterly. Prior quarters are archived to `exports/`.)*
 
 ## The target (90 days)
 **GCI / income goal (year):** [ ] · **90-day deal target:** [ ] · **Deals/month:** [ ]

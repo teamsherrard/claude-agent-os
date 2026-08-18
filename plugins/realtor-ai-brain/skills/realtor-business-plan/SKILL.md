@@ -26,6 +26,12 @@ from **here**, so your three weekly moves are **X, Y, Z** — and here's your da
 Built on the proven **Money → Engine → Future** structure. It reads the Brain, does the math *for* them, and
 produces a premium plan book — not a worksheet. **~10–15 minutes for the plan; ~3 minutes for a weekly check-in.**
 
+**Where this runs:** first capture happens INSIDE Brain Setup as **Phase 8** (capture mode: the money
+questions + the silent full build → `identity/business-plan.md`, no separate deliverable — the Book
+carries the plan). This standalone skill is the **deep dive and the rhythm**: the premium plan book +
+dashboard, the weekly check-in, the calendar audit, and the quarterly refresh. When the Brain already
+holds a Phase-8 plan, READ it and refresh/deepen — never re-ask what setup captured.
+
 ## Step 0 — Follow the setup principle
 Read `${CLAUDE_PLUGIN_ROOT}/shared/ask-once-default.md`: ask once, default-if-unsure, honour "skip"/"use
 defaults". **Defaults are full-quality** — an agent who's unsure on every number still walks away with a real,

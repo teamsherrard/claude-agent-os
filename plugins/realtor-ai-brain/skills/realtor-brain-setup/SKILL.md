@@ -54,7 +54,7 @@ phases, and **push after every phase**. Local engine structure:
 ├── identity/                 # filled by the phase skills
 │   ├── profile.md  market.md  avatars.md  voice.md  offer.md  brand-visual.md     (Phases 1–3)
 │   ├── voice-samples.md  voice-print.md  proof.md  story-bank.md  content-engine.md  (Phases 4–5 + spoken layer)
-│   ├── operations.md  vendors.md  strategy.md  business-plan.md  compliance.md    (Phases 6–7 + capstone)
+│   ├── operations.md  vendors.md  strategy.md  business-plan.md  compliance.md    (Phases 6–8 + capstone)
 │   └── publishing.md             # scaffolded empty — the Short-Form System's setup writes it
 ├── memory/                   # scaffolded empty — skills fill these over time
 │   └── clients.md  listings.md  content-log.md  deadlines.md  ideas.md  performance.md  market-data.md
@@ -91,10 +91,11 @@ the cloud with a fresh empty one** at the finalize push. So:
    - **No Brain in Drive (and none locally) →** fresh setup. Go to Step 1.
    - **Brain exists but incomplete** → tell the agent "Looks like we started this before — want to pick
      up where we left off?" and resume at the first incomplete phase. **"Incomplete" is judged ONLY on the
-     first-run ten** (`profile · market · avatars · voice · offer · brand-visual · voice-samples · proof ·
-     content-engine · compliance`) — `operations`, `vendors`, `strategy`, `business-plan`, `publishing`,
+     first-run ELEVEN** (`profile · market · avatars · voice · offer · brand-visual · voice-samples · proof ·
+     content-engine · business-plan · compliance`) — `operations`, `vendors`, `strategy`, `publishing`,
      `voice-print`, and `story-bank` are placeholders BY DESIGN after a perfect first run; never count
-     them. (Best: read the `Setup progress:` line in `config.md` — a stamped fact beats inference.)
+     them. (`business-plan` joined first-run when the plan became Phase 8 — brains set up before that
+     legitimately have it empty; resume offers the money conversation rather than counting it against them.) (Best: read the `Setup progress:` line in `config.md` — a stamped fact beats inference.)
      **On ANY resume, skip Step 1's scaffold-and-create entirely** — the workspace, marker, and files
      already exist; re-running Step 1 would overwrite the pulled Brain with template placeholders.
    - **Brain exists and complete** → ask what they want: "Your Brain's already set up. Want to **update
@@ -136,14 +137,16 @@ Say something like:
 > Welcome — I'm building your complete AI Brain. We do this once, and from then on every tool already
 > knows you — your market, your voice, your offer — so you never have to re-explain yourself again.
 >
-> It takes about **45 minutes**, and we **save as we go** — to your cloud, after every step — so you can
+> It takes about **50 minutes**, and we **save as we go** — to your cloud, after every step — so you can
 > pause anytime and pick up exactly where you left off. Nothing is lost. Your Drive/OneDrive is already
 > connected, so I'm setting up your workspace right now; email and calendar we'll confirm at the end.
 >
 > Ready? Let's build it properly.
 
 **Always build the full Brain — there is no fast-track and no "how deep" choice.** Every agent gets the
-complete version. First-run runs **Phases 1–5 + 7**, then connectors, then finalize. Don't offer a
+complete version. First-run runs **Phases 1–5 + 8 + 7** (the 90-Day Business Plan is **Phase 8 — part
+of every first run**, so the Book renders with the plan already inside), then connectors, then finalize.
+Don't offer a
 shorter path; if an agent is short on time, reassure them they can **pause and resume** (we checkpoint
 after every phase) — never by skipping phases.
 
@@ -164,7 +167,7 @@ skip it entirely.** Every action here is find-or-create, never re-create:
    write a second marker** (two markers make every future cold-start ambiguous). Otherwise: create the
    workspace **root folder**, then **immediately write `_workspace.md`** (workspace name · folder ID ·
    link · owner account) into it — **on `microsoft`, THIS write is the write-actions probe**: if it fails
-   org-gated, stop and surface it now (per `shared/connectors.md`), *before* 45 minutes of interviewing,
+   org-gated, stop and surface it now (per `shared/connectors.md`), *before* 50 minutes of interviewing,
    with the free-Google-account fallback. Only after the marker succeeds, build the rest of the map per
    `${CLAUDE_PLUGIN_ROOT}/shared/drive-map.md` (01–06 + the Content sub-buckets) — and drop a signpost
    file at the TOP of `_engine/` named **"⚙️ WHAT IS THIS FOLDER — read me.md"** containing exactly this:
@@ -244,7 +247,7 @@ re-run "set my brand direction" anytime.)*
 
 ---
 
-## Step 5 — Complete the Brain (Phases 4, 5, 7 — always run)
+## Step 5 — Complete the Brain (Phases 4, 5, 8, 7 — always run)
 
 Run these as their own skills, in order, checkpointing after each. The agent can stop after any one and
 resume later — every one **defaults gracefully** if they're unsure (per `shared/ask-once-default.md`).
@@ -254,15 +257,25 @@ These are **not optional** — they're part of every setup. (Graceful defaults k
   `identity/voice-samples.md`, `proof.md`. *(~5 min — biggest lever on content quality; if they have nothing handy, capture what's real and move on — the phase always runs, no field is forced.)*
 - **Phase 5 — Content Engine** (`realtor-content-engine`): a simple content plan → `identity/content-engine.md`.
   Asks just 2 things; generates the rest if the agent's unsure. *(~3–5 min.)*
+- **Phase 8 — 90-Day Business Plan** (`realtor-business-plan`, capture mode): the money conversation —
+  12-month income/GCI goal, commission % (avg price comes from `market.md`'s midpoint as a labeled
+  assumption), "your last 3–5 closings — where did each come from?", and the **3 weekly non-negotiables
+  (content is always one)**. Then Claude builds the FULL plan silently — deals needed, scenario table,
+  conversion funnel, month-by-month ramp, daily & weekly KPIs, strategy narrative — and writes
+  `identity/business-plan.md` **before the Book renders, so Chapter 13 is filled on the very first
+  Book**. *(~5–7 min. Runs after Content Engine because content is one of the three moves. During
+  setup, the Brain file is the output — the standalone skill's separate plan book + dashboard are for
+  the deep-dive/refresh later.)* An explicit skip is honoured (Chapter 13 then renders the designed
+  placeholder) — but never offer skipping; the plan is part of the Brain.
 - **Phase 7 — Compliance** (`realtor-compliance`): brokerage disclaimer, license display, claims to avoid →
-  `identity/compliance.md`. *(~2 min — mostly confirming safe defaults.)*
+  `identity/compliance.md`. *(~2 min — mostly confirming safe defaults. Runs last — the natural closer.)*
 
 **Operations (Phase 6) + Vendors are deliberately NOT here** — they're only needed by the AI Admin, so
 they run just before **"Set up my AI Admin"** (mostly one-click defaults, ~3 min). Leaving them out of
 first-run keeps onboarding short.
 
 Tell the agent they can deepen anytime — "add my writing samples", "set up my content engine", "set up my
-compliance" — and "set up my operations" when they're ready for their AI Admin.
+compliance", "review my business plan" — and "set up my operations" when they're ready for their AI Admin.
 
 ---
 
@@ -373,10 +386,10 @@ skill formats prices, dates, and measurements to this), and pull the **default C
    - Render premium via `shared/render_doc.py`, save to the workspace's **`01 · AI Brain/`** — and name it
      so it's UNMISSABLE: **"📕 [Agent]'s Business Brain Book — [YYYY-MM-DD]"** (the emoji + the words
      "Business Brain Book" make it instantly findable in a folder; dated so regenerations never collide —
-     newest = current). Sections not built yet (Business Plan, Operations) render as the spec's DESIGNED
-     placeholder page (lead line + callout + "what will appear here" — never one orphan line;
-     demo brains never placeholder at all) — the Business Plan section fills in the moment they
-     build it. The same standard AND the same name apply
+     newest = current). The Business Plan is captured in Phase 8, so **Chapter 13 renders FILLED on the
+     first Book**; only Operations (and Business Plan solely after an explicit Phase-8 skip) renders
+     as the spec's DESIGNED placeholder page (lead line + callout + "what will appear here" — never
+     one orphan line; demo brains never placeholder at all). The same standard AND the same name apply
      to EVERY regeneration ("show me my Brain" / after the Business Plan).
    - **Hand them the DOC, not just the folder.** After uploading, give the agent the **direct link to the
      Book itself** and say exactly where it lives: *"Your **Business Brain Book** is in your workspace →
@@ -391,9 +404,10 @@ skill formats prices, dates, and measurements to this), and pull the **default C
 > 🎉 Your AI Brain is built. From now on, every skill already knows you — you'll never re-explain your
 > market, your voice, or your offer again.
 >
-> **Recommended first move — "Build my business plan."** Now that your Brain knows you, let's point it at a
-> goal: I'll turn your income target into the exact number of deals, where they come from, and the three
-> weekly moves to hit them — a real 90-day plan with a dashboard. Want to do that now?
+> **Your 90-day plan is already inside your Book** — Chapter 13 has your income goal turned into deals,
+> KPIs, and your three weekly moves. **Recommended first move: do this week's three moves.** Say "weekly
+> check-in" every Friday and I'll keep score with you — and "review my business plan" anytime to go
+> deeper or refresh the numbers.
 >
 > Then, anytime:
 > • "Set up my AI Admin" — your AI assistant (uses the email + calendar you just connected). It takes

@@ -304,15 +304,15 @@ placeholder text.
 | 11 | YOUR STRATEGIC POSITION | `identity/strategy.md` (built step 3) | 400–700 | synthesis |
 | — | PART IV — EXECUTION | — | 40–80 bridge | — |
 | 12 | YOUR CONTENT PLAN | `identity/content-engine.md` | 250–450 | no |
-| 13 | YOUR 90-DAY BUSINESS PLAN | `identity/business-plan.md` | 400–700 · placeholder OK | no |
+| 13 | YOUR 90-DAY BUSINESS PLAN | `identity/business-plan.md` (Setup Phase 8) | 400–700 · placeholder only if skipped | no |
 | 14 | HOW YOU OPERATE | `operations.md` + `vendors.md` | 150–300 · placeholder OK | no |
 | 15 | COMPLIANCE | `identity/compliance.md` | 150–250 | no |
 
 **Total: target 5,000–6,500+ words for a complete brain** (chapter minimums plus the four Part bridges
 sum to ~5,050 when everything is built). **The setup gate's 3,000 words remains the ABSOLUTE floor** —
-below it the render fails regardless of state. A first-run Book (Business Plan + Operations still
-placeholders) should land **≥ 4,400** (its minimums sum to ~4,500); if it doesn't, a rendered chapter is
-thin — fix the chapter, never pad. Never compress.
+below it the render fails regardless of state. A first-run Book (Business Plan captured in Phase 8;
+only Operations a placeholder) should land **≥ 4,800**; with an explicitly-skipped plan, **≥ 4,400**;
+if it doesn't, a rendered chapter is thin — fix the chapter, never pad. Never compress.
 
 ### Chapter 1 — SNAPSHOT
 The one-page "who is this agent" card. **Table** (pipe rows, Label | Value): name · market · niche ·
@@ -435,10 +435,12 @@ bridging paragraph tying each pillar to the search opportunities in Chapter 9 �
 answer the demand the research found. The 20/80 mix note appears here labeled as doctrine.
 
 ### Chapter 13 — YOUR 90-DAY BUSINESS PLAN
-When built: the whole plan from `business-plan.md` with the math — the income target, the **money-math
+Captured in **Setup Phase 8** — part of every first run, so a first Book renders this chapter FILLED:
+the whole plan from `business-plan.md` with the math — the income target, the **money-math
 table** (| Goal | Avg price | Commission | Deals needed |), where the deals come from, the **3 weekly
-non-negotiables** (one is always content), and the **daily/weekly KPI dashboard table**. Never
-summarize the math. When not built: the exact placeholder (below).
+non-negotiables** (one is always content), the scenario table, and the **daily/weekly KPI dashboard
+table**. Never summarize the math. The placeholder (below) renders ONLY when the agent explicitly
+skipped Phase 8, or on a pre-Phase-8 brain that hasn't run the plan yet.
 
 ### Chapter 14 — HOW YOU OPERATE
 When built: `operations.md` in full (hours, booking rules, communication preferences) + the vendor list
@@ -483,9 +485,10 @@ capture it — an honest gap beats confident fluff every time.
 
 ## Placeholders (real builds only — demo brains NEVER placeholder)
 
-Only **Business Plan** and **Operations** may render as placeholders — they are unbuilt-by-design after
-a perfect first run. **Demo brains render NO placeholders** — Chapters 13 and 14 fill with illustrative
-content like every other chapter; a demo shows the finished product.
+Only **Operations** is unbuilt-by-design after a perfect first run (it's captured with the AI Admin).
+The **Business Plan is captured in Setup Phase 8** — its placeholder renders ONLY after an explicit
+Phase-8 skip or on a pre-Phase-8 brain. **Demo brains render NO placeholders** — Chapters 13 and 14
+fill with illustrative content like every other chapter; a demo shows the finished product.
 
 A placeholder is a DESIGNED page, not an orphan line on white space — it sells the next step. Every
 placeholder line is emitted as ONE line of structured text (never split mid-sentence — a wrapped source
@@ -511,8 +514,9 @@ a silently skipped heading.
 ## The verification gate (hard PASS/FAIL — run on EVERY build before upload)
 
 Extract the text back out of the rendered `.docx` and check ALL of:
-1. **Count** — complete brain: 5,000+ words (target band 5,000–6,500+); first-run with the two allowed
-   placeholders: 4,400+; **absolute floor in all cases: 3,000** (the Setup gate — below it, always FAIL).
+1. **Count** — complete brain: 5,000+ words (target band 5,000–6,500+); first-run (plan captured in
+   Phase 8, Operations the one placeholder): 4,800+; plan explicitly skipped: 4,400+; **absolute floor
+   in all cases: 3,000** (the Setup gate — below it, always FAIL).
    An honest-gap chapter rendered per Grounding Law 6 is exempt from its per-chapter range, like a
    placeholder — the 3,000 absolute floor still binds.
 2. **All FIFTEEN chapter headings present** (Snapshot · Who You Are · Who You Serve · Your Voice &
@@ -586,7 +590,8 @@ agent the renderer is unavailable (never upload raw text, never retry installs i
 
 ## Regeneration rules
 
-- **When:** end of Setup (Step 7.4) · immediately after the Business Plan is built · "show me my Brain" /
+- **When:** end of Setup (Step 7.4 — with the Phase-8 plan already inside) · after the Business Plan is
+  built or refreshed outside setup (skipped-phase agents · quarterly refreshes) · "show me my Brain" /
   "regenerate my Brain document" · whenever the Brain materially changes (new avatar, new offer, brand
   change, migration). **A build's OWN write-backs** (its research, its `strategy.md` synthesis, the
   migrations it performs) **are never a material change and never trigger another regenerate** — one
