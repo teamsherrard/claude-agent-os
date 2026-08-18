@@ -43,6 +43,22 @@ Priority list to record/collect (from the support question map):
 | First edit in the AI Editor | `[NOT SET]` |
 | The monthly market run | `[NOT SET]` |
 
+**Lessons that already EXIST — Mike supplies links + timestamps:**
+
+| Moment | Lesson |
+|---|---|
+| "Can I skip the branding videos and just start posting?" | Brand module opener — "What a personal brand actually is" (the 5 benefits; know-like-trust) · link + timestamp `[NOT SET]` · call it "Mike's why-brand-first video" |
+| "What's due in Week 1 / what gets approved at the coaching call?" | The Week 1 brand-clarity checkpoint lesson (niche → UVP → avatar → persona → headshots → style guide; Agent Prompt era — pair with the Q34 bridge) · link `[NOT SET]` |
+| "I'm not ready / imposter syndrome / my brand isn't dialed in yet" | "The Evolution of Your Personal Brand" (chapter 1 vs chapter 20; act as if; refinement→expansion→legacy) · link `[NOT SET]` |
+| "How do I pick a niche? What's my UVP?" | "Creating Your Blue Ocean" (6 steps + the I-help formula + the workbook) · link `[NOT SET]` · call it "Mike's niche video" |
+| "What do I actually post / how do I sound like me on social?" | "Branding Yourself on Social Media" (5 content types; voice; nuggets) · link `[NOT SET]` |
+| "The full brand workbook, start to finish" | The 3-step personal-brand foundation lesson (values/strengths/niche/passions → statement/visuals/voice → presence/content/networking/reviews) · link `[NOT SET]` · call it "the long one — Mike says pause-and-fill as you go" |
+| "Why YouTube / is it too late / when do results come?" | "The YouTube Advantage" — the YouTube week opener (search engine not social; compounding; 12-month horizon; 2/wk cadence) · link `[NOT SET]` |
+| "What's a lead magnet / mine feels too small" | The Lead Magnets lesson (start of a relationship; one person one problem; HVC; short vs long delivery) · link `[NOT SET]` |
+| "The 4 daily habits / feed the Brain / the monthly brain check" | Week 1 Video 6 — "Keeping Your Brain (and Yourself) Current" (DEFAULT·CAPTURE·TEACH·CHECK) · link `[NOT SET]` |
+| "How the funnel machine works / when do the leads actually start?" | Week 3 Video 1 — "How Attention Becomes Appointments" (net before the fish; the four-part machine; honest Week-5 timing) · link `[NOT SET]` |
+| "The weekly lead check / refreshing my magnet" | Week 3 Video 6 — "The Lead Capture Habit" (THE RULE · THE CHECK · THE REVIEW · THE LAB; ~2 hrs/month) · link `[NOT SET]` |
+
 Until set: cohort recordings live at the recordings-library door in `cohort-kb.md` — point there
 ("the Week N recording covers this") rather than inventing a deep link.
 

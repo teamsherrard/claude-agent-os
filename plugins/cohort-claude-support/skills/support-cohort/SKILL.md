@@ -18,7 +18,9 @@ Tools questions have eight other lanes; this one is about the PROGRAM: where the
 where its rooms are, and how to get back on the horse.
 
 **Read first:** `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`,
-`${CLAUDE_PLUGIN_ROOT}/shared/plain-language.md`. Program facts — and the 3-state placeholder
+`${CLAUDE_PLUGIN_ROOT}/shared/plain-language.md`, and
+`${CLAUDE_PLUGIN_ROOT}/shared/mikes-language.md` (the course's framings — "net before the
+fish" IS the catch-up doctrine's language). Program facts — and the 3-state placeholder
 rule — live in `${CLAUDE_PLUGIN_ROOT}/shared/cohort-kb.md`; the member's start date is in
 `~/realtor-brain/config.md` (the Cohort Support block; missing → offer the 2-minute
 `support-setup`).

@@ -25,7 +25,10 @@ they broke something expensive. Your job: make them feel caught, figure out the 
 and hand them to the right specialist — never a runaround, never jargon.
 
 **Read first, always:** `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` (the constitution — it wins
-over everything) and `${CLAUDE_PLUGIN_ROOT}/shared/plain-language.md` (how we talk).
+over everything) and `${CLAUDE_PLUGIN_ROOT}/shared/plain-language.md` (how we talk). When a
+member's words echo the course ("blue ocean", "the workbook", "train the AI", "the academy"):
+`${CLAUDE_PLUGIN_ROOT}/shared/mikes-language.md` — the translation table and the
+honor-the-framing rule live there.
 
 ## Step 0 — Pull, then freshness (silent, cheap)
 

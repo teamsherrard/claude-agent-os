@@ -14,7 +14,26 @@ technical.*
 
 **Curriculum week map** (per week: theme · what they ship · skill(s) unlocked · deliverable — any
 format, I'll structure it):
->
+> ✅ PARTIALLY MINED 2026-08-18 from your decks + 8 lesson transcripts: Weeks 1-5, 9, 10
+> evidenced and wired in. Still needed: Weeks 6-8, Week 2 deliverable, the Week 4 title.
+
+**New confirms surfaced by the transcript mining (one line each):**
+- One member-facing program name — decks say "Social Agent OS", kb says "$10MM Short-Form
+  Cohort", lessons say "the academy": >
+- The exact "5 connectors" from the Week 1 scoreboard (Q13 names email/calendar/drive — which 2
+  more?): >
+- AI headshots + done-for-you style guide (Agent Prompt-era promise) — included in THIS cohort
+  or bridged?: >
+- Week 3 build-along tools (Netlify · Zapier · Bitly · ManyChat · CRM) — which run free? (your
+  "only required subscription is Claude" claim depends on it): >
+- Fixed Monday starts — decks strongly suggest it; one-word confirm: >
+
+**Agency verifies before launch (from deck claims support can't back yet):**
+- [ ] "Client stories get anonymized automatically" — verify the story-bank/content skills
+      actually do this, or soften the Week 1 slide
+- [ ] "The system bakes the CTA into every script" — verify vs Plugins 3/4, then doctrine it
+- [ ] Week 1 deck's "what you say in the truck shows up at the desk" — soften to "every CAPTURE
+      teaches it" (chat questions don't persist; captures do)
 
 **Video links for the resource library** (existing recordings + rough timestamps are perfect):
 - System tour / support-desk walkthrough: >

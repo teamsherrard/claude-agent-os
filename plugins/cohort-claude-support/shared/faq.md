@@ -283,3 +283,73 @@ The zip — always the whole zip. Here's the whole thing:
 
 Next step: upload it, then just describe what you want — if the zip throws an error, screenshot
 it and say "help."
+
+## Promoted from the course lessons (mining pass, 2026-08-18)
+
+**Q31. The video says to put the prompt into ChatGPT — do I need a ChatGPT account?**
+No — everything ChatGPT does in those lessons, your system already does, and better, because it knows your Brain.
+
+- Those lessons were filmed before your Claude system existed — same method, upgraded engine
+- Niche and brand exercises → "set up my brain" or "update my brand" (it interviews you; no prompts to paste)
+- Niche content → your YouTube and Short-Form skills
+- Nothing wrong with the video — you just have the newer tool
+
+Next step: tell me what the video asked ChatGPT for, and I'll start the matching skill.
+
+**Q32. Where's the workbook from the video? And what do I do with a finished workbook?**
+You don't need to hunt for the download — the workbook's job is built into your system.
+
+- The brand and niche interviews ("set up my brain", "update my brand") ARE the workbook — same questions, asked out loud, written straight into your Brain
+- Already filled it in on paper or PDF? Say "import my materials" — Claude reads it and files every answer where the skills look
+- Halfway through? Finish in the interview — it's faster than the worksheet
+
+Next step: say "set up my brain" (not done yet) or "import my materials" (workbook in hand).
+
+**Q33. Mike said my brand gets LOCKED in Week 1 — am I stuck with my niche for the whole program?**
+Locked means approved for now — not prison. Mike's own words: it's a living, breathing thing, and he overhauls his own brand every other year.
+
+- The lock is a coaching-call checkpoint: brand approved → you move forward without second-guessing mid-program
+- Nothing locks in the software — "update my brand" or "update my offer" reopens any piece, any time, then you're relocked and rolling
+- Niche shifts in month 3? Update that one section — never redo the whole setup
+
+Next step: happy with it → keep moving. Want to change something → say "update my brand."
+
+**Q34. He keeps mentioning the Social Agent Academy / Agent Prompt / the brand studio / the social media accelerator — where do I find those?**
+Same coach, earlier eras — those names come from Mike's previous programs, and their lessons live in your course library because the strategy still holds.
+
+- Social Agent Academy = Mike's original course; several cohort lessons come straight from it
+- Agent Prompt and "the brand studio" = an earlier Mike tool; in THIS cohort that same work is your Brain setup (persona, offer, brand direction)
+- "The social media accelerator" = a section of the academy, not a cohort week
+- The play is always: take the lesson's strategy, run it through your Claude skills
+
+Next step: tell me what the lesson asked you to do and I'll hand you the matching skill.
+
+**Q35. How do I set up the "comment AUSTIN" auto-DM? And which CRM do the leads go into?**
+Two halves — your system builds one, the Week 3 build-along wires the other.
+
+- Your Claude system builds the magnet and the funnel page ("build my lead magnet", then the funnel)
+- The comment-keyword auto-DM and the CRM follow-up are separate tools on YOUR accounts, connected in the Week 3 build-along videos — they're not part of the plugins
+- Wire acting up? Test it like a buyer: comment the keyword yourself, click your own links, watch where it stops — that's the break
+- Which tools and what they cost: their own sites are the authority — I'll check live, never from memory
+
+Next step: magnet or funnel → I'll start it now. The DM or CRM wire → re-watch the Week 3 build-along; still stuck → say "escalate this."
+
+**Q36. Mike said YouTube "requires no money, just time" — but you're telling me I need a paid Claude plan. Which is it?**
+Both are true — they're about different wallets.
+
+- Mike's line is about AD SPEND: publishing to YouTube costs $0, versus the $1M+ a year he spends on paid ads
+- The Claude plan is the one subscription running your WHOLE system — scripts, SEO, market data, admin — and you already have it for the cohort
+- Starting the YouTube week adds no new cost
+
+Next step: you're set — say "set up my YouTube system" when you reach that week.
+
+**Q37. Mike said no results for 12 months — so what's the point? And is it 1 video a week or 2?**
+Straight from Mike: plan for 12 months, and members doing it properly usually see results sooner.
+
+- The cadence: 2 videos a week is the target — starting with 1 is officially fine; improve before you add volume
+- Videos compound: Mike still gets clients from 5-year-old videos — on January 1 you keep last year's foundation instead of starting at zero
+- Shorts don't count toward the 2 — short-form gets people to KNOW you; YouTube search videos build the TRUST
+- The #1 failure Mike names is quitting before the compound kicks in — not talent, not gear
+
+Next step: put the 2 filming slots on your calendar and say "give me video ideas."
+

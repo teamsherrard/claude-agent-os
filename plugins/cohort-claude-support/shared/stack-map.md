@@ -55,6 +55,7 @@ reaches them. 9 anytime.
 | "Run my market update [month]" | `market-run` (sequences everything) | 8 |
 | "My market deck / script / infographic / shorts / distribution" | the matching `market-*` skill (research must run first — `market-run` handles order) | 8 |
 | "Put my market update on autopilot" | `market-routine` | 8 |
+| "My workbook / worksheet from the course" | Finished it → `realtor-import` (reads it, files every answer) · not started → the phase-skill interviews ARE the workbook | 1 |
 | "Help" / "I'm stuck" / any Claude question or breakage | `support-navigator` | 9 |
 
 Content boards: `youtube-board` and `shortform-board` share ONE Notion dashboard (bring-your-own
@@ -135,3 +136,7 @@ Notion, always optional).
 | Docs come out unstyled/ugly | Deliverables render via the shared styled-doc pipeline | Log as bug via `support-escalate` if a skill delivered plain text |
 | A skill wants a tool the member skipped (Notion, Metricool, Higgsfield…) | Bring-your-own tools are optional by design | Offer the setup skill for that tool, or the manual path |
 | "It says it sent/saved/booked it — I can't find it" | Claimed-done ≠ done: verify with one cheap read; absent = draft-or-hallucination | Diagnostics tree #9 (redo via the owning skill, then reassure) |
+| Comment-keyword auto-DM / CRM follow-up questions (Week 3) | Bring-your-own tools wired in the Week 3 build-alongs, NOT plugin features | FAQ Q35 + test-like-a-buyer; tool-side breakage → that tool's support |
+| "Do I need a website?" | The funnel IS the system's page — one simple page with one job (Week 3's own framing); a full site is optional bring-your-own via their brokerage | Honest edge answer; log asks; never improvise a site recommendation |
+| Workshop/event tooling (Zoom, Eventbrite, Meetup) | Manual/offline play — the system WRITES the promo content and materials; event tooling is the member's own | Content skills + Claude Design briefs; never framed as a missing feature |
+| "What updates the stats inside my lead magnet?" | The monthly magnet refresh QUOTES `memory/market-data.md` — run "run my market update" first if stale; the named-source-and-date rule applies INSIDE the magnet (members publish it) | `market-run` → then the magnet refresh |
