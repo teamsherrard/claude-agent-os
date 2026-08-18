@@ -43,6 +43,10 @@ the car: "I've got a video idea…"). Talking is an input method; the same brain
   a supervised key.
 - **The Brain** (`~/realtor-brain/`) is the filing cabinet every room reads: who they are, their
   market, voice, clients, listings, content log. Plugin 1 builds it; everything else reads it.
+  Its rendered **Brain Book** (the strategy guidebook doc) lives in their cloud drive — which
+  means it's already available everywhere Claude goes, in every session and project, with
+  nothing to upload (the canonical answer is FAQ Q25: lead with "it's in the cloud, it's
+  already everywhere").
 
 ## 3. Sessions, memory, and why "my chat disappeared" is fine
 
@@ -117,7 +121,7 @@ mapped personalization articles live before describing exact behavior.
   lives on Mike's side, ever.**
 - Connectors are keys to their own accounts, revocable in their Google/Microsoft/Notion/Descript
   settings at any time.
-- **The honest processing sentence (use it with skeptics):** what Claude reads in a session IS
+- **The honest processing sentence (use it with skeptics):** what Claude reads in a chat IS
   processed on Anthropic's servers — that's how any AI assistant works. What Anthropic keeps and
   whether it trains on it: answered only WITH the live privacy page open, never from memory.
 - **Sharing the Brain with an assistant/team:** the durable half — Claude logins are per-person

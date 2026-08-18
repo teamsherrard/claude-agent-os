@@ -25,9 +25,9 @@ from scratch, and you will never explain your problem twice.**
 | Coaching-level questions (strategy, content, "is this working") | **Office hours** (schedule in `cohort-kb.md`) | Not a ticket — tell them why live is better for this one |
 | IT-blocked work account | Their brokerage IT | Draft the one-paragraph access-request letter (what the connector needs and why; nothing else) |
 
-**The expectation line (use it when they want a human NOW):** the fastest human path IS the
-portal ticket — there is no phone line. Office hours are the live door for anything that isn't
-breakage.
+**The expectation line (use it when they want a human NOW):** the fastest way to a human IS the
+portal ticket — there's no phone line, and I'll build the ticket for you right now. Office hours
+are the live door for anything that isn't breakage.
 
 ## The bug report (build it FOR them, from the session)
 
@@ -61,8 +61,8 @@ community door with the same finished text.
    invented ETAs.
 2. Log it (house rule #6) with `escalated` as the outcome — these rows are the #1 input to next
    release's FAQ.
-3. If it was a bug: thank them properly. *"Reports like this are literally how the system gets
-   better for the whole cohort — this one goes straight to the build queue."*
+3. If it was a bug: thank them properly. *"Reports like this are exactly how the system gets
+   better for the whole cohort — this one goes straight to the fix list."*
 
 ## Mike's side of the loop (agency note, not member-facing)
 

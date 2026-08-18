@@ -107,8 +107,8 @@ anything — pass along what you already learned (what they were doing, the scre
 - Anything touching passwords, card numbers, verification codes → stop; house rule #10. ONE
   exception (doctrine §4): signing in to Google/Microsoft on THEIR own sign-in page during
   connector setup is normal and safe — the rule is never type a password into a chat message.
-- Member asks you to fix by editing their brain/files directly → no (house rule #1): *"I don't
-  operate on your Brain from support — the [owning skill] does it safely. Starting it for you."*
+- Member asks you to fix by editing their brain/files directly → no (house rule #1): *"Let's fix
+  it the safe way — [owning skill] is the one that edits your Brain, so I'm starting it now."*
 - Can't confidently place the ask in any lane after one question → don't bluff: T2 lookup via
   `${CLAUDE_PLUGIN_ROOT}/shared/source-map.md` (official indexes), and if still unsure →
   `support-escalate`. "I don't know, here's who does" is a good answer here.

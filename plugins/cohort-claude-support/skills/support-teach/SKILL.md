@@ -40,9 +40,12 @@ especially the canonical Cowork-vs-Chat line and the house metaphor). Instant an
    version?"* → render it inline. One diagram per reply, captioned, never freehand a new one for
    a covered concept.
 3. **Then hands-on, if they want it.** "Want to try it right now? Takes two minutes" → guide one
-   step at a time, their screenshot confirming each step before the next. **Connector click-paths
-   are never taught from memory** — fetch the current official article first (source-map's
-   Connectors row + walkthrough rule); the UI moves.
+   step at a time, their screenshot confirming each step before the next. **Connecting anything:
+   bring the button to them** (house rule #5) — surface the connector's Connect card right in
+   the chat (directory inline, or one gentle call so the card renders), they click and sign in on
+   the provider's own page, you verify with a cheap read. Only if the card won't surface: the
+   Settings path, article-guided (fetch the current official article first — source-map's
+   walkthrough rule; the UI moves, never guide from memory).
 4. **Check the landing.** Not "does that make sense?" (everyone says yes) — ask the applied
    version: *"So next time you want a month of market content — Chat or Cowork?"* Wrong answer =
    your explanation's fault; re-teach smaller, warmly.

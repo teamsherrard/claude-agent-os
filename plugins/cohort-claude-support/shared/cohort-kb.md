@@ -2,7 +2,7 @@
 
 The program facts `support-cohort` and `support-escalate` read. **Placeholder rule (3-state, house
 pattern):** a field is either SET (use it) · `[NOT SET]` (be honest: "that's not wired up yet —
-here's the interim door"; NEVER invent a link, date, or address) · or marked skip-and-flag (Mike
+here's where to go in the meantime"; NEVER invent a link, date, or address) · or marked skip-and-flag (Mike
 declined it; don't re-ask). Every `[NOT SET]` a member bumps into gets logged — that's how Mike
 sees which gaps matter.
 
@@ -21,9 +21,10 @@ Until set, `support-cohort` may use ONLY this coarse arc, verbatim-safe because 
 install order the plugins themselves enforce, and must say it's the rough shape, not the official
 syllabus:
 
-> Early weeks = foundations (Claude + Brain + AI Admin) → middle = the content engines (YouTube +
-> Short-Form + Editor, incl. the market routine) → late = the money layers (Lead Capture, Listing
-> Launch) and putting the whole machine on rhythm.
+> The early weeks build the foundations (Claude + your Brain + the AI Admin). The middle weeks are
+> the content engines (YouTube, Short-Form, and the Editor, plus the market routine). The late
+> weeks are the money layers (Lead Capture, Listing Launch) — and putting the whole machine on
+> rhythm.
 
 When Mike provides it, each week gets: `Week N — theme · what ships this week · the skill(s) they
 unlock · the deliverable they leave with`.

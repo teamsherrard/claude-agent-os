@@ -37,19 +37,19 @@ exactly there — five minutes of progress beats an hour of "let's start over."
 | 3 | Cowork available and open | Same — where are we running right now? In Chat → that's the finding |
 | 4 | Mike's plugins installed + current | The owning plugins' skills appear in your available skill listing (that's the installed signal you can SEE); versions live in the member's plugin settings panel — ask for a screenshot; missing → install from the official link in cohort-kb |
 | 5 | The Brain built + populated | List `~/realtor-brain/` and judge by `brain.md` (folder without it = never built); placeholders → route `realtor-brain-setup` (never built) / `realtor-brain-sync` (exists in their cloud drive) / `realtor-brain-health` (thin) |
-| 6 | Core connectors live (Gmail · Calendar · Drive — or Microsoft 365 for Outlook/OneDrive-world members; `config.md` says which) | One cheap read each; failures → diagnose tree #2 handling (route the owner) |
+| 6 | Core connectors live (Gmail · Calendar · Drive — or Microsoft 365 for Outlook/OneDrive-world members; `config.md` says which) | One cheap read each; missing/expired → surface that connector's Connect card right in the chat (house rule #5 — never a Settings safari), member signs in on the provider's page, re-verify; card won't surface → diagnose tree #2 fallback |
 | 7 | Optional tools for the systems they'll use | Descript → `editor-setup` · posting tool → `shortform-setup` · Notion board / Higgsfield → offered, never pushed (bring-your-own is optional BY DESIGN) |
 
 **The audit ritual:** *"Give me a minute to check your setup top to bottom — then I'll tell you
 the one thing to do next, not a list of twenty."* Run the checks quietly, then report like a
-score: *"Good news: 5 of 7 links are solid. You're missing just [X] — that's a [N]-minute fix,
+score: *"Good news: 5 of 7 steps are solid. You're missing just [X] — that's a [N]-minute fix,
 let's do it now."*
 
 ## Walking a step (the manner)
 
 - One step, their confirmation (screenshot when visual), then the next — house rule #5.
 - **Route the builds:** onboard never builds anything itself (house rule #1). It walks the member
-  TO each owning skill and stays as the thread: *"Next link is your Brain — I'm starting 'Set up
+  TO each owning skill and stays as the thread: *"Next step is your Brain — I'm starting 'Set up
   my brain' for you; when it finishes, come back with 'am I set up right' and we'll check the
   rest."*
 - Windows vs Mac differences: keep instructions per-OS (ask once which they're on; remember it in
@@ -61,7 +61,8 @@ let's do it now."*
 ## Special modes
 
 - **Second computer** (FAQ Q15): the short chain — app → plugins → `realtor-brain-sync` restore →
-  connector spot-check. Say up front chats don't travel and the Brain does.
+  connector spot-check. Say up front: your chats follow your Claude account on their own — it's
+  the local Brain folder we're restoring, and that takes minutes.
 - **Post-update checkup:** after a major Claude or plugin update (often sent here by
   `support-whatsnew`): plugins current? → any skill reporting schema-behind → `realtor-brain-migrate`
   → one connector spot-check. Three minutes, quiet confidence.
@@ -69,6 +70,6 @@ let's do it now."*
   set the expectation that setup is chatty ONCE, then daily use is one-line asks. Hand them the
   one phrase to keep: **"help"**.
 
-Close per house rule #6: confirm ("you're fully set up — all seven links green") → log. If the
+Close per house rule #6: confirm ("you're fully set up — all seven steps green") → log. If the
 member should come back after an owning skill finishes its build, say exactly what to say when
 they return.

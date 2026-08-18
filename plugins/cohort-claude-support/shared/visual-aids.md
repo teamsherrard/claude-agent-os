@@ -70,7 +70,7 @@ flowchart TB
     W1 --> CLOUD["☁️ your cloud drive"] --> B2
     style CLOUD fill:#e6f4ea,stroke:#1a7f37
 ```
-Caption: *"Sessions are workdays; the Brain is what clocks the memory. New day, fresh desk, same
+Caption: *"Chats are workdays; the Brain keeps the memory. New day, fresh desk, same
 filing cabinet."*
 
 ## 5. What happens when you say "help"

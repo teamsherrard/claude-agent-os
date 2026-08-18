@@ -9,10 +9,13 @@ release (3+ repeats earns a slot).
 ## Claude basics
 
 **Q1. What's the difference between Chat and Cowork?**
-Chat is a conversation you steer turn by turn — great for quick questions. Cowork is a delegation:
-you describe the goal, Claude works across your files and tools, and you come back to finished
-work. Your whole system — the Brain, the admin, YouTube, listings, all of it — lives in Cowork.
 Rule of thumb: output is a *thought* → Chat; output is a *thing* → Cowork.
+
+- **Chat** — a conversation you steer turn by turn; great for quick questions
+- **Cowork** — a delegation: you describe the goal, Claude works across your files and tools, and
+  you come back to finished work
+
+Your whole system — the Brain, the admin, YouTube, listings, all of it — lives in Cowork.
 
 **Q2. Do I need Claude Code?**
 No. Code is the engineering room where Mike's team builds your plugins. You live in Cowork. If a
@@ -91,16 +94,24 @@ bypass a hit limit. Your options, in order:
 - **Buy usage credits** — paid plans can top up mid-window and keep working
 - **Upgrade** — only if you're hitting the wall weekly
 
-Two footnotes: a lighter model makes your pool last longer BEFORE the wall (a limit week is the
-one exception to Q6's "leave the model picker alone" — switch back after), and your work and
-Brain are untouched — limits pause Claude, they never delete anything. **[check live for reset
-timing and credit prices]**
+Two footnotes:
+
+- A lighter model makes your pool last longer BEFORE the wall (a limit week is the one exception
+  to Q6's "leave the model picker alone" — switch back after)
+- Your work and Brain are untouched — limits pause Claude, they never delete anything
+
+**[check live for reset timing and credit prices]**
 
 **Q11. What does the whole system cost me monthly, all-in?**
 Claude's paid plan is the only REQUIRED subscription. Everything else is bring-your-own and
-optional by design: Descript (only if you use the AI Editor), Metricool or GoHighLevel (only for
-auto-publishing — manual posting is free), Notion (only for the content board), Higgsfield (only
-for photo tours). Ask me for today's prices on any of them and I'll check live. **[check live]**
+optional by design:
+
+- **Descript** — only if you use the AI Editor
+- **Metricool or GoHighLevel** — only for auto-publishing (manual posting is free)
+- **Notion** — only for the content board
+- **Higgsfield** — only for photo tours
+
+Ask me for today's prices on any of them and I'll check live. **[check live]**
 
 **Q12. Is my client data safe? Does anyone else see my Brain?**
 Fair question — here's exactly who can see what:
@@ -154,9 +165,14 @@ Mac's privacy settings (I'll walk you through it), or better — keep working fi
 and campaign folders, which is where the system expects them anyway.
 
 **Q17. My brokerage's Google admin blocks the connector.**
-That's an IT policy on your work account, not something we can fix from here. Two paths: use a
-personal Google account for the system, or I'll draft a short note to your IT admin explaining
-exactly what access the connector needs and why. Say "escalate this" and we'll do the letter.
+This one has two clean paths. The block is an IT policy on your work account — not something we
+can change from here, and nothing you did wrong:
+
+- Use a personal Google account for the system
+- Or I'll draft a short note to your IT admin explaining exactly what access the connector needs
+  and why
+
+Say "escalate this" and we'll do the letter.
 
 ## The system
 
@@ -166,12 +182,16 @@ the trigger. Say "help" and tell me what you were trying to do — I know every 
 words and I'll either hand you the right phrase or fix the install.
 
 **Q19. Do the plugins update by themselves? Am I on the latest version?**
-Plugin updates arrive through the marketplace — but your Brain's DATA doesn't reshape itself when
-the structure changes. If a skill ever says your brain looks out of date, say "upgrade my brain"
-(that's the migrate skill — it renames and reorganizes WITHOUT losing your content). Want to
-check versions? Open your plugin settings panel and screenshot it for me — I'll read it and tell
-you if anything looks off. (I can see which skills are available to me, but the settings panel is
-where YOUR installed versions live.)
+Yes — plugin updates arrive on their own through the marketplace. Two things to know:
+
+- Your Brain's DATA doesn't reshape itself when the structure changes — if a skill ever says your
+  brain looks out of date, say "upgrade my brain" (that's the migrate skill — it renames and
+  reorganizes WITHOUT losing your content)
+- I can see which skills are available to me, but YOUR installed versions live in your plugin
+  settings panel
+
+To check versions: open that settings panel and screenshot it for me — I'll read it and tell you
+if anything looks off.
 
 **Q20. The editor stopped in the middle of my video.**
 It saves checkpoints per clip, so nothing is lost. Re-open the edit and say "resume" — it picks up
@@ -197,9 +217,25 @@ once; daily use is one confirmation per meaningful action.
 Yes — separate chats. One chat = one job is the rhythm (one video, one listing, one month's
 market). Kick off the long edit in one chat, plan your batch day in another.
 
+**Q25. Do I upload my Brain Book (the strategy guidebook doc) into a project? What do I do
+with it?**
+Nothing — and that's the magic. Your Book lives in your cloud drive (Google Drive or OneDrive),
+and the cloud goes everywhere Claude goes:
+
+- Every Cowork session, every project, every machine — Claude reads it straight from your drive
+  through your Google/Microsoft connection. No uploading, ever.
+- The Book is the printed version of your Brain — the skills read the Brain itself, so your
+  system already knows everything in it.
+- Want something in it changed? Update the Brain ("update my brand," "capture this"), then
+  rebuild the Book — never edit the Book directly.
+
+The one exception: a Claude Design skill may ask for the doc when designing (lead magnets,
+decks) — hand it over then. Otherwise: leave it right where it is. It's already everywhere you
+are.
+
 ## When things break
 
-**Q25. Claude is slow / stuck / erroring on everything.**
+**Q26. Claude is slow / stuck / erroring on everything.**
 First move, every time: I check Claude's status page. Then:
 
 - **Incident showing** → it's their side. Nothing to fix, your work is safe, try again shortly.
@@ -209,20 +245,41 @@ First move, every time: I check Claude's status page. Then:
 
 Next step: say "help, Claude's acting up" and I'll run it down with you.
 
-**Q26. This chat got slow and Claude says it's too long.**
-The chat's working memory is full — normal on marathon jobs. Start a fresh chat, then re-say the
-job's trigger phrase ("run my market update," "edit my video") — finished pieces are already
-saved in your Drive folders, and the editor picks up mid-edit with "resume." (This is why the
-house rhythm is one chat = one job.)
+**Q27. This chat got slow and Claude says it's too long.**
+The chat's working memory is full — normal on marathon jobs, and why the house rhythm is one
+chat = one job. Nothing is lost: finished pieces are already saved in your Drive folders, and the
+editor picks up mid-edit with "resume." Next step: start a fresh chat and re-say the job's
+trigger phrase ("run my market update," "edit my video").
 
-**Q27. I can't log in / billing charged me twice / account problem.**
-That's on Anthropic's side of the wall — account and billing issues can only be fixed by them. Say
-"escalate this" and I'll point you to the exact official support path and help you write the
-message. One rule with no exceptions: never share your password or card details in ANY chat,
-including this one.
+**Q28. I can't log in / billing charged me twice / account problem.**
+This is fixable — it just has to go to Anthropic directly, since account and billing live on
+their side of the wall. One rule with no exceptions: never share your password or card details in
+ANY chat, including this one. Say "escalate this" and I'll point you to the exact official
+support path and help you write the message.
 
-**Q28. Where do I ask a human?**
-Three doors, by urgency: the cohort community for "anyone else hit this?", office hours for
-coaching-level questions, and Mike's support portal for real breakage — and for that one, I'll
-build the whole ticket FOR you (what you did, what happened, screenshot, versions); you just
-paste it into the portal and hit submit. Say "escalate this."
+**Q29. Where do I ask a human?**
+Three doors, by urgency:
+
+- **The cohort community** — for "anyone else hit this?"
+- **Office hours** — for coaching-level questions
+- **Mike's support portal** — for real breakage. For that one, I'll build the whole ticket FOR
+  you (what you did, what happened, screenshot, versions); you just paste it into the portal and
+  hit submit.
+
+Say "escalate this."
+
+**Q30. How do I upload a skill — the whole zip or just the MD file?**
+The zip — always the whole zip. Here's the whole thing:
+
+- **Upload the ZIP**, not the loose .md — a skill is a folder with a `SKILL.md` inside, zipped;
+  a bare .md fails
+- **Where:** claude.ai/customize/skills → the **+** button → **Upload a skill** → pick your zip
+  *(page moved? I'll fetch the current path live)*
+- **Using it:** it lands in your skills list switched on — then just ask in plain English;
+  Claude picks it up when it's relevant. No special command.
+- **The catch that matters:** Mike's PLUGINS never install this way — those come from the
+  marketplace link and update themselves. Uploading is only for standalone one-off skills you
+  were handed (like the course skill zips).
+
+Next step: upload it, then just describe what you want — if the zip throws an error, screenshot
+it and say "help."

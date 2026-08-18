@@ -24,7 +24,8 @@ confidence stays low, `support-escalate`. Never bend a tree around a symptom it 
        copy lives in your own cloud drive — let's pull it down; takes minutes").
 2. **Is it populated or placeholder?** Read `brain.md` + spot-check `identity/profile.md`,
    `identity/voice.md`. Mostly `[set later]` / empty → route **`realtor-brain-health`** ("the
-   brain exists but it's running on fumes — health check will show the 2–3 highest-impact gaps").
+   brain exists but it's running on fumes — a quick health check will show the 2–3 things worth
+   filling in first").
 3. **Is it stale vs Drive?** If sync is set up, a quick pull-check via **`realtor-brain-sync`**
    (newest-wins makes this safe). Symptom "it lost what I added yesterday (on my other
    machine/session)" → this, almost always. Clean pull but the content still absent → the OTHER
@@ -42,9 +43,11 @@ confidence stays low, `support-escalate`. Never bend a tree around a symptom it 
    `list_projects` for Descript. Works → the connector is fine; the real issue is the ask or the
    skill → tree #3.
 3. **Auth error on the read** → the link expired. Plain words: "The link between Claude and your
-   [Google/Microsoft/Descript/…] needs a refresh — 60 seconds." Route the OWNER: Google/Microsoft
-   connectors → the walkthrough in `support-teach` (which FETCHES the current official connectors
-   article first — source-map's walkthrough rule; never guide connector UI from memory) ·
+   [Google/Microsoft/Descript/…] needs a refresh — 60 seconds." Then BRING THE BUTTON TO THEM
+   (house rule #5): surface the connector's Connect card right in this chat (directory inline, or
+   one gentle call so the card renders) — the member clicks, signs in on the provider's page,
+   done; verify with the cheap read again. Card won't surface → route the OWNER: Google/Microsoft
+   → the walkthrough in `support-teach` (card-first, article-guided Settings as fallback) ·
    Descript → **`editor-setup`** step 1 · Metricool/GHL/Buffer → **`shortform-setup`** · Notion →
    the board skill's connect step.
 4. **Read works but the SKILL can't see the thing** (folder/calendar/project) → scope or location:
@@ -83,7 +86,7 @@ confidence stays low, `support-escalate`. Never bend a tree around a symptom it 
    - One task → error text/screenshot → `error-codes.md`; retry once; two fails → escalate.
    - Everything, status clean → 3.
 3. **The usual suspect: a marathon chat.** Long chat = slow chat. Fresh chat, invoke the same
-   skill; Brain carries context (FAQ Q26).
+   skill; Brain carries context (FAQ Q27).
 4. **The boring checklist**, one at a time: is the desktop app current · restart the app ·
    is their internet OK. (Never uninstall/reinstall as a support step — that's escalate-level.)
 5. Still broken → **`support-escalate`** (this pattern = real bug or account state; humans).
@@ -110,7 +113,7 @@ confidence stays low, `support-escalate`. Never bend a tree around a symptom it 
 1. **Check BEFORE reassuring:** does `~/realtor-brain/brain.md` exist? WITH a Brain → reassure
    with confidence (FAQ Q4/Q5): chats are workbenches; the Brain + their cloud drive are the
    memory. WITHOUT a Brain (day-one member) → be honest instead: *"Right now nothing saves your
-   work between sessions — that's exactly what the Brain fixes, and it's the next setup step.
+   work between chats — that's exactly what the Brain fixes, and it's the next setup step.
    Let's build it."* Never recite "nothing is lost" to someone with nowhere for it to be saved.
 2. **Looking for a DELIVERABLE from that chat?** Deliverables live in Drive (campaign/video/
    listing folders), not in the chat — find it there with them.

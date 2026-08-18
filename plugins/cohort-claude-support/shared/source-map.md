@@ -51,8 +51,12 @@ confidence is still low, say so and route to `support-escalate`. Never bluff.
 |---|---|
 | Connect / reconnect / manage connectors | https://support.claude.com/en/ → "Connectors" collection (find the exact article via the sitemap) |
 
-**Walkthrough rule:** before guiding any connector click-path (teach or diagnose), fetch the
-current article — connector UI moves; never guide from memory.
+**Walkthrough rule (card first, article second):** the FIRST move for any connect/reconnect is
+to surface the connector's own **Connect** card right in the chat — open the connector directory
+inline, or make one gentle call against the target connector so Cowork renders its card — then
+the member clicks it and signs in on the provider's page. Only if the card won't surface do you
+guide the Settings path — and for THAT, fetch the current article first (connector UI moves;
+never guide click-paths from memory).
 
 ### Cowork (the members' home surface)
 | Topic | URL |

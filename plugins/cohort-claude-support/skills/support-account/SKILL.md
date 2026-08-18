@@ -35,8 +35,8 @@ IS, what models ARE): `${CLAUDE_PLUGIN_ROOT}/shared/claude-doctrine.md` §5. Ver
    today: [specifics]. For where you are in the cohort — filming weekly, editing in Descript —
    most members are fine on [X]; you'd move up when [concrete signal]."*
 4. **Fetch failed?** Say so, link the official page, and DO NOT fill the gap from memory. *"Their
-   page isn't loading for me right now — here's the direct link; don't take a number from memory
-   on this one, including mine."*
+   page isn't loading for me right now — and on money, I won't guess. Here's the direct link;
+   whatever that page says today is the answer."*
 
 ## Standing answers (frames, with live fill-ins)
 
