@@ -37,6 +37,12 @@ decision is worth telling the agent, say it in their words (*"I found an older f
 I'm leaving it completely untouched"*) — otherwise don't say it at all. This binds every phase,
 every regenerate, and ESPECIALLY demo builds, which get recorded for training videos.
 
+**Breadcrumbs + the handoff rule (per `shared/ask-once-default.md`'s "A question is a HANDOFF"):**
+at every phase transition, place them in the journey in human terms — *"That's 5 of 7 sections done —
+about 15 minutes left."* Every question stop explicitly says it's their turn; and when a reply is
+confusion instead of an answer ("what's it stuck on?"), say you're waiting on them, give the
+breadcrumb, and re-ask only the one pending question in its shortest form.
+
 ---
 
 ## The Brain you are building
