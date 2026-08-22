@@ -1,6 +1,7 @@
 # Funnel Guide — the opt-in page that converts
 
-One page, one job: **get the visitor to opt into the lead magnet** (name + email). It's a **value-led capture
+One page, one job: **get the visitor to opt into the lead magnet** (a pop-up form: name, email, phone —
+then a thank-you page with the instant download). It's a **value-led capture
 page** — it EARNS the opt-in with genuine local authority, real proof, and a real offer, never hype.
 Trust-building, skimmable, focused on the opt-in as the one action. (Read
 `${CLAUDE_PLUGIN_ROOT}/shared/copywriting-kb.md` for how to write each line.)
@@ -51,7 +52,7 @@ The first screen. If it's vague, they leave. Three parts:
 - **Subhead** (1–2 lines) — expand the promise, name who it's for, remove doubt.
   *"A plain-English walkthrough of every step, incentive, and number — from a Calgary new-build specialist
   who tells you the truth, not a sales pitch."*
-- **CTA button** — first-person, specific: *"Get my free guide."*
+- **CTA button** — first-person, specific: *"Grab Your Free Guide."*
 The headline MUST equal the magnet's promise (alignment — house rules #7).
 
 ## SECTION 2 — THE PROBLEM (agitate before you pitch)
@@ -79,6 +80,13 @@ step renders it). From the magnet's actual pages (alignment — house rules #7):
 Specificity + the visual is what earns the email.
 
 ## SECTION 4 — ABOUT THE AGENT (WHO they are — earns the trust to opt in)
+**The welcome video slot (conditional — strongest trust element on the page).** If the agent has or will film
+a **30–60s face-to-camera welcome clip**, it sits beside the About copy (left/right). Spec it structurally +
+write the 3-beat talking outline: **(1)** who I am + who I help, one breath · **(2)** what the guide gives
+you, in their words · **(3)** "grab it below" — warm, zero pitch. Rules: never autoplays with sound; a play
+button, not a rival CTA; the opt-in stays the one action. No video and no plans to film one → skip the slot
+entirely (never an empty placeholder). These agents film for YouTube anyway — this is 5 minutes of their
+existing muscle, and faces convert.
 People don't give a stranger their email. Three beats, every one framed back to the reader:
 - **What makes them amazing** — niche + why it matters *to this reader*. Specific expertise beats generic
   "top agent." *"I only do new builds in Calgary, so I know which builders cut corners and which incentives
@@ -122,6 +130,20 @@ A *dedicated* proof block beats proof sprinkled in passing — it's a top trust 
 Tie it straight back to the reader's fear. If proof is thin, keep it small and honest (one real result +
 experience) — **never pad with fake reviews** (house rules #5).
 
+**The PROOF PHOTO STRIP (the moving part of the page).** Under the testimonials, spec a **horizontal,
+auto-scrolling strip of the agent's real photos** — a slow, continuous glide across the section (a
+marquee/carousel; the design step builds the motion — it's standard for a built page, and page builders have
+slider widgets for it). What goes in it, in the agent's real photos:
+- **wins** — clients getting keys, sold signs, closing-day moments
+- **the agent working with people** — showings, signings, consults
+- **the agent in the community** — the real places from the Local Market section
+- **testimonial moments** — the handshake, the review screenshot, the thank-you
+Spec it structurally, not visually: *"photo strip: 8–12 real photos, auto-scrolling, slow"* + the photo list.
+**Real photos only, theirs to use — client faces need the client's OK** (house rules #5). Fewer than ~6 good
+photos → skip the strip entirely (thin reads worse than none) and put photos on the assets-to-gather list.
+Why it works: motion draws the eye, and a wall of *real* moments proves "this person actually does this" in a
+way text never can — it's the un-fakeable section's visual twin.
+
 ## SECTION 8 — AS SEEN ON / FOLLOW ALONG (their YouTube + socials) — ONLY if they have any
 **Conditional. Include this section only if the agent actually has channels** (check `profile.md` /
 `content-engine.md`). If they have none yet, **SKIP it entirely** — never render an empty or placeholder
@@ -135,18 +157,38 @@ content-driven agent:
   links, NOT a big rival button. The one action on the page is still the email (one primary CTA — copywriting
   KB). For a content-driven brand the YouTube channel is the hero here, and the page doubles as a sub driver.
 
-## SECTION 9 — THE OPT-IN (the ask)
-Make grabbing the magnet a no-brainer:
+## SECTION 9 — THE OPT-IN (the ask) — button → pop-up → thank-you page
+Make grabbing the magnet a no-brainer. The flow is **two steps** (house rules #4): every CTA button on the
+page opens the **opt-in pop-up**; submitting lands on the **thank-you page** with the download. Write all
+three pieces:
+
+**On the page (the section itself):**
 - **Name the magnet** + a one-line promise.
 - **A quick recap — top 3 "what you'll get" bullets** (the full stack is in §3 above; here just the highlights).
   These MUST match the guide's actual pages (alignment — house rules #7).
-- **The form** — name + email only. Nothing else (every extra field costs leads).
-- **Reassurance** by the button — *"Free. Instant download. No spam — unsubscribe anytime."*
-- **CTA button** — same promise as the hero: *"Get my free guide."*
-- **Thank-you state** (after submit) — a warm confirmation + **the guide as an instant download right on the
-  page** (*"You're in — here's your guide, grab it below"*), in the agent's voice. **Instant download ONLY,
-  NEVER email delivery — no "check your inbox" copy, and never ask how to deliver it (house rules #4).** No
-  call booking — the follow-up is the agent's job.
+- **The mini-FAQ — 3 one-liners, right at the ask.** The last-moment objections, dissolved where they occur
+  (not a separate section — three short Q&As in the agent's voice):
+  - *"Is this a sales pitch?"* → No — it's the guide. If you ever want help, you know where I am.
+  - *"Will I get spammed?"* → No — instant download, and you can unsubscribe from anything anytime.
+  - *"I'm 6–12 months out — is this still for me?"* → That's exactly when it helps most; the best moves
+    happen before you're "ready."
+  Keep each answer to one honest line; adapt the third to the magnet's audience (relocation: "I haven't even
+  decided if I'm moving").
+- **CTA button** — same promise as the hero: *"Grab Your Free Guide."*
+
+**The OPT-IN POP-UP (every CTA button on the page opens this one modal):**
+- **A one-line headline** restating the promise (*"Grab the free [City] relocation guide"*).
+- **The form** — **name, email, phone number.** Three fields, nothing else.
+- **Reassurance** by the button — *"Free. Instant. No spam — unsubscribe anytime."*
+- **The submit button** — same CTA promise.
+
+**The THANK-YOU PAGE (where submitting lands):**
+- A warm confirmation in the agent's voice (*"You're in — here's your guide"*).
+- **The direct link to the guide PDF as a big instant-download button, right there.** The email is never
+  needed to deliver it. **Instant download ONLY, NEVER email delivery — no "check your inbox" copy, and never
+  ask how to deliver it (house rules #4).**
+- One soft "here's where to find me" line (their channels/contact from the Brain). **No call booking** — the
+  follow-up is the agent's job.
 
 ---
 

@@ -2,6 +2,40 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.112.0] — 2026-08-21
+
+### Lead Capture (Plugin 5) → v0.8.0 — the front door + the relocation lock
+- **NEW `leadcapture-navigator` — the front door:** orients in two lines, pulls the Brain first, checks the
+  offer's health (missing / placeholder / thin / ready) BEFORE anything starts, detects fresh vs. half-built
+  vs. finished campaigns from Drive, catches the "build my funnel" cold start (guide first, same sitting,
+  never bounced), and routes. Out-of-scope table + one-question rule, matching the editor navigator's shape.
+- **★ The relocation lock (house rule #11):** the FIRST magnet is the relocation guide — stated as the plan,
+  not offered as a menu ("removes the overthinking"; hold the line once on pushback, respect a second no).
+  A 5-question intake (`references/intake-questions.md`) collects only what the Brain can't know — feeder
+  markets, target communities, the #1 question, one relocation proof story, what everyone gets wrong — each
+  pre-answered from the Brain so the agent just nods. Choice (brand-led vs. niche) unlocks from campaign 2.
+  The magnet skill honours a locked handoff (skips its Phase 1) and applies the same law when entered
+  directly; magnet-guide gains the relocation guide's page-by-page structure.
+- **Funnel: the proof photo strip (§7):** an auto-scrolling horizontal strip of the agent's REAL photos —
+  wins/keys, working with clients, community, testimonial moments — spec'd structurally (8–12 photos, slow
+  glide; skip under ~6; client OK where faces show); the design step builds the motion.
+- **Funnel: the opt-in is now a two-step flow (§9 + house rule #4):** every CTA button opens the OPT-IN
+  POP-UP (name, email, PHONE — three fields), and submitting lands on the THANK-YOU PAGE hosting the direct
+  link to the guide PDF as an instant download — email never needed for delivery. Skeletons, copywriting KB,
+  and checklists all updated to the pop-up flow.
+- **Reads the AI Brain Book's strategy chapters:** both build skills now read `identity/strategy.md` +
+  `identity/business-plan.md` (the source files the rendered "[Agent] — AI Brain" Book doc is built from;
+  the session-start sync PULL guarantees they're current) so the magnet serves the 90-day plan.
+- **Funnel: the welcome-video slot (§4, conditional):** a 30–60s face-to-camera clip beside the About copy
+  with a 3-beat script outline (who I am → what the guide gives you → grab it below); never autoplays, never
+  a rival CTA; skipped cleanly when the agent has no video — no empty placeholder.
+- **Funnel: the mini-FAQ (§9):** three one-line Q&As folded into the opt-in section right at the ask ("Is
+  this a sales pitch?" · "Will I get spammed?" · "I'm not ready yet — is this for me?"), agent's voice,
+  third line adapted to the magnet's audience — objections dissolved where they occur, not a tenth section.
+- **Distribution close:** the finished funnel points the agent's page link at their Google Business Profile
+  (website field + one announcement post) and their video descriptions/social bios — the traffic systems
+  aim here.
+
 ## [0.90.0] — 2026-08-11
 
 ### AI Admin (Plugin 2) → v0.7.0 — full deep-sweep backlog cleared (highs + mediums + lows)

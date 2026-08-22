@@ -21,7 +21,8 @@ like the agent, not like a generic marketer or AI. If a line fails one of the pr
    one exception is the About section, and even there, frame everything as "here's why that matters for you."
 6. **Proof everywhere.** People don't trust claims; they trust evidence. Weave in real wins, numbers, and
    testimonials from the Brain (`identity/proof.md`). One specific result beats ten adjectives.
-7. **Reduce friction.** The opt-in asks for as little as possible (name + email — nothing more). Reassure:
+7. **Reduce friction.** The opt-in pop-up asks for exactly three things (name, email, phone — nothing
+   more), and the guide is an instant download on the thank-you page. Reassure:
    free, instant, no spam, unsubscribe anytime. Every extra field or ounce of doubt costs leads.
 8. **Sound like the agent.** Match `identity/voice.md` + `identity/voice-samples.md` exactly. If their voice
    is calm and no-BS, the copy is calm and no-BS — never hyped-up guru-speak. Voice mismatch kills trust.
@@ -163,20 +164,27 @@ a content-driven agent):
 
 ## The opt-in & CTA — make grabbing the magnet a no-brainer
 
-The opt-in section presents the magnet and asks for the email:
-- **Name the magnet** + a one-line promise ("The Calgary New-Build Buyer's Guide — everything you need
-  before you sign").
-- **A quick recap — top 3 "what you'll get" bullets** (the full value-stack is up in the Guide section; here
-  just the highlights). These MUST match what the guide delivers (house rules #7).
-- **The form:** name + email only. Nothing else.
-- **Friction reducers** right by the button: "Free. Instant download. No spam — unsubscribe anytime."
-- **The thank-you state** (after submit): warm confirmation + **the guide as an instant download right on the
-  page** ("You're in — grab your guide below"), in the agent's voice. **Instant download, NEVER email delivery
-  — no "check your inbox" copy, and never ask how to deliver it** (house rules #4). No call booking — just the
-  handoff.
+The opt-in flow is **button → pop-up → thank-you page** (house rules #4). Write all three — plus the
+**mini-FAQ**: three one-line Q&As in the section, right before the button, dissolving the final objections
+("Is this a sales pitch?" · "Will I get spammed?" · "I'm not ready yet — is this for me?"). One honest line
+each, agent's voice, third one adapted to the magnet's audience. Objections dissolve best at the moment they
+occur — which is at the ask, not in a separate section:
+- **On the page:** name the magnet + a one-line promise ("The Calgary New-Build Buyer's Guide — everything
+  you need before you sign"), a **top-3 "what you'll get" recap** (the full value-stack is up in the Guide
+  section) — these MUST match what the guide delivers (house rules #7) — and the CTA button.
+- **The pop-up** (every CTA button opens it): a one-line headline restating the promise, **the form — name,
+  email, phone. Nothing else**, friction reducers right by the button ("Free. Instant. No spam — unsubscribe
+  anytime."), and the submit button.
+- **The thank-you page** (after submit): warm confirmation + **the direct link to the guide PDF as a big
+  instant-download button right on the page** ("You're in — grab your guide below"), in the agent's voice.
+  **Instant download, NEVER email delivery — no "check your inbox" copy, and never ask how to deliver it**
+  (house rules #4). No call booking — just the handoff.
 
-**CTA button copy** — specific and first-person beats generic:
-- ✅ "Get my free guide" · "Get the Calgary buyer's guide" · "Grab the free guide"
+**CTA button copy** — ONE phrase, everywhere: **"Grab Your Free Guide."** It's the system's canonical CTA —
+the same words on the hero, the mid-page repeat, the opt-in, the pop-up submit, the link-in-bio hero button,
+and every video/social CTA — so a prospect meets one consistent ask at every touchpoint. Don't improvise
+variants per page.
+- ✅ "Grab Your Free Guide" (canonical) · a guide-named variant is allowed ONLY in body copy, never on the button
 - ❌ "Submit" · "Sign up" · bare "Download" (generic one-word buttons — a specific, download-framed CTA like
   "Download the Calgary buyer's guide" is fine)
 - ❌ "Send me the guide" or any send/email framing — delivery is an **instant download on the page** (house

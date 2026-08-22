@@ -4,7 +4,32 @@ A lead magnet earns the email. It works when it solves **one real problem** for 
 one avatar for a niche guide, or the whole audience under one brand-level promise for a brand-led guide —
 fast, and leaves them thinking "if the free thing is this good, I want this agent." Build from the offer.
 
-## The two magnet shapes (SKILL.md Phase 1 picks one)
+## The FIRST magnet is always the relocation guide (house rules #11)
+Campaign one is locked: a **relocation guide** — *"Moving to [City]? Start Here."* Relocation is the #1
+highest-intent search traffic in every market; someone planning a move is the most valuable lead there is,
+and they're searching for exactly this before they ever talk to an agent. Locking it removes the overthinking
+that stalls agents. The shapes below are for the **second campaign onward.**
+
+### Relocation guide structure (built from the navigator's 5-question intake + the Brain)
+Still 5–9 pages, but the value pages are relocation-shaped:
+1. **Cover / the promise** — *"Moving to [City]? Start Here"* + who it's for (people relocating from
+   [feeder markets]).
+2. **The framing page** — moving to a city you don't know is the highest-stakes purchase there is; here's
+   the way through. Work in **the #1 question they always get** (intake Q3) — it's the reader's question too.
+3. **Coming from [feeder]? What changes** — the comparison page (intake Q1): what your money gets you there
+   vs. here, commute, cost of living, taxes, weather. Real numbers from `market.md`.
+4. **Where to live — the communities that fit** (intake Q2): the 3–5 communities the agent wants to be known
+   for, each in facts — price band, what it's near, who it suits *by lifestyle and budget, never by who
+   "belongs"* (Fair Housing).
+5. **What everyone gets wrong** (intake Q5) — the honest, experience-based page competing guides won't
+   write. Misconceptions, surprises, the unflattering-but-true detail. This is the page that earns trust.
+6. **The mistakes relocating buyers make** — timelines, buying sight-unseen, wrong-community regret,
+   underestimating costs. Experience-based, specific.
+7. **What good looks like** — the relocation story from intake Q4 (real only; if none, lean on local depth).
+8. **How [agent] helps next** — the soft close in their voice; the relocation-specific offer from
+   `offer.md`. No call booking.
+
+## The two magnet shapes — SECOND campaign onward (SKILL.md Phase 1 picks one)
 - **A. Brand-led (general) — the default for most agents.** ONE comprehensive guide for the agent's **whole
   audience and full offer suite** (buyers AND sellers), built around their personal brand. Core promise
   example: *"Everything you need to buy or sell in [city] with confidence."* It still carries **ONE clear

@@ -108,7 +108,7 @@ Your page copy + structure, ready for your design step. This doc is the words; t
 SECTION 1 — HERO
 Headline: ...        (= the magnet's promise)
 Subhead: ...
-CTA button: "Get my free guide"
+CTA button: "Grab Your Free Guide"
 
 ────────────────────────────────────────────
 SECTION 2 — THE PROBLEM
@@ -122,13 +122,15 @@ SECTION 3 — THE GUIDE  (what's inside + value · mockup left or right)
 What you'll get:
    •  ...   (4–7 concrete outcomes, one per guide page — never teases)
 Why it's worth more than free: ...
-CTA button: "Get my free guide"   (mid-page repeat)
+CTA button: "Grab Your Free Guide"   (mid-page repeat)
 
 ────────────────────────────────────────────
 SECTION 4 — ABOUT [AGENT]  (WHO they are)
 What makes them amazing: ...
 Why I'm qualified: ...   (one credibility line — testimonials live in Proof)
 My process: ...   (3 steps max)
+Welcome video: 30–60s, sits LEFT or RIGHT   (ONLY if they have/want one — else delete this line)
+   Script outline: (1) who I am + who I help  (2) what the guide gives you  (3) "grab it below" — no pitch
 
 ────────────────────────────────────────────
 SECTION 5 — WHY WORK WITH [AGENT]  (the OFFER + USP)
@@ -147,6 +149,9 @@ SECTION 7 — PROOF / RESULTS
 Testimonials / results: ...   (2–4, real only from proof.md — name · situation · outcome)
 The numbers: ...   (homes sold, $ saved, years in the niche)
 Tied to your fear: ...
+Proof photo strip: 8–12 real photos, auto-scrolling horizontal strip (slow) — wins/keys · working with
+   clients · in the community · testimonial moments.   (Skip if fewer than ~6 usable photos.)
+Photos in the strip: ...   (which of their photos go in — real, theirs to use, client OK where faces show)
 
 ────────────────────────────────────────────
 SECTION 8 — AS SEEN ON / FOLLOW ALONG   (socials + YouTube)
@@ -156,19 +161,34 @@ Follow for more free value: ...   (esp. YouTube; real follower counts if worth s
 (Opt-in stays the primary CTA — these are secondary trust links, not a rival button.)
 
 ────────────────────────────────────────────
-SECTION 9 — THE OPT-IN
+SECTION 9 — THE OPT-IN   (flow: button → pop-up → thank-you page)
 Top 3 you'll get: ...   (quick recap — full stack is in §3)
-Form: Name + Email
-Reassurance: Free. Instant download. No spam.
-CTA button: "Get my free guide"
-Thank-you state: ...   (warm confirmation + the guide as an INSTANT DOWNLOAD on this page — NEVER "check your inbox" / email delivery)
+Mini-FAQ (3 one-liners, agent's voice):
+   Is this a sales pitch? ...
+   Will I get spammed? ...
+   I'm not ready yet — is this for me? ...
+CTA button: "Grab Your Free Guide"
+
+THE OPT-IN POP-UP   (every CTA button on the page opens this)
+Pop-up headline: ...   (the promise in one line)
+Form: Name + Email + Phone
+Reassurance: Free. Instant. No spam.
+Submit button: "Grab Your Free Guide"
+
+THE THANK-YOU PAGE   (where submitting lands)
+Confirmation: ...   (warm, in the agent's voice)
+Download button: ...   (the DIRECT LINK to the guide PDF — an INSTANT DOWNLOAD, NEVER "check your inbox" / email delivery)
+Where to find me: ...   (one soft line — their channels/contact; no call booking)
 
 ════════════════════════════════════════════
 ▸ NEXT — HAND TO YOUR DESIGN STEP
 This doc is the copy + structure. Your design step turns it into the built page; then host it
 (your site / GoHighLevel / Carrd).
-Assets to gather:  guide mockup/cover (The Guide §3, left/right) · community/area photos (Local Market) ·
-   headshot (About) · social/channel handles (Socials, if used) · logo (header/footer).   Real places only.
+Assets to gather:  guide mockup/cover (The Guide §3, left/right) · 8–12 proof-strip photos (Proof §7 —
+   wins, clients, community, testimonial moments) · community/area photos (Local Market) · headshot (About) ·
+   30–60s welcome video (About §4, if filming one — outline's in the section) ·
+   social/channel handles (Socials, if used) · logo (header/footer) · the finished guide PDF uploaded
+   somewhere linkable (the thank-you page's download button points at it).   Real places + real photos only.
 
 ════════════════════════════════════════════
 ▸ COMPLIANCE

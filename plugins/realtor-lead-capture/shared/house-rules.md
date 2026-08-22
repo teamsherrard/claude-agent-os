@@ -53,15 +53,22 @@ prompt** (a separate design skill owns that), and never publishes anything live.
 
 ## 4. Lead capture only — never book a call · instant download, never email delivery
 
-The entire goal of the funnel is **one action: opt into the lead magnet** (name + email). That's it.
+The entire goal of the funnel is **one action: opt into the lead magnet.** That's it. The opt-in is a
+**two-step flow** — a pop-up form, then a thank-you page:
+
+1. **Every CTA button on the page opens the OPT-IN POP-UP** — a simple modal form: **name, email, and phone
+   number**, plus the submit button. No form is embedded mid-page; the buttons all open this one pop-up.
+2. **Submitting lands on the THANK-YOU PAGE**, which hosts **the direct link to the guide (the PDF) as an
+   instant download** — a big download button right there. No email needed to deliver it.
 
 - **Never** add a "book a call," "schedule a consult," or calendar step to the funnel. No appointment
   integration — it's deliberately out of scope (it's where these things break).
 - **The guide is delivered as an INSTANT DOWNLOAD on the thank-you page — NEVER by email.** The plugin sets up
   no email automation, so "check your inbox / your guide's on the way" would be a broken promise. The
-  thank-you state hands them the guide right there (a download button / the PDF on the page). **Never write
-  "check your inbox"-style copy, and never ask the agent how they want to deliver the guide — it is ALWAYS the
-  instant download.** (The email is captured for the agent's own follow-up, not to deliver the guide.)
+  thank-you page hands them the guide right there (the download button / the PDF link on the page). **Never
+  write "check your inbox"-style copy, and never ask the agent how they want to deliver the guide — it is
+  ALWAYS the instant download.** (The email + phone are captured for the agent's own follow-up, not to
+  deliver the guide.)
 - After the opt-in: a warm thank-you + the instant download. **Follow-up is the agent's job** — the funnel
   hands them the lead and stops there.
 - Every section of the page should push toward the opt-in, and nothing else.
@@ -131,6 +138,22 @@ the magnet and its funnel live together in one campaign folder; each doc is **re
 ALL-CAPS section headers with divider rules, generous spacing, and bullets, and the renderer turns it into
 real headings, bullet lists, and tables. Always tell the agent where it is in plain words, and deliver the
 copy in chat too.
+
+---
+
+## 11. The first magnet is the RELOCATION GUIDE — locked, not a menu
+
+Every agent's **first** campaign is a **relocation guide** for their market (*"Moving to [City]? Start
+Here."*). This is deliberate: relocation is the #1 highest-intent search traffic in every market, it works
+every time, and locking it **removes the overthinking** that stalls agents before they ever ship anything.
+
+- **Don't present it as a choice.** State it as the plan with the reason, then move. The agent's job on
+  campaign one is to answer five easy questions, not to make strategy decisions.
+- **If they push back, hold the line once** — warmly, with the reason — then respect a second no.
+- **Second campaign onward, the choice opens up** (brand-led vs. audience-specific, the full menu). They've
+  shipped one; now they've earned the options.
+- The navigator (`leadcapture-navigator`) owns this rule's enforcement; the magnet skill honours a locked
+  focus handed to it and applies the same rule when entered directly.
 
 ## The write-back law (an unsynced write is a lost write)
 Any write to the Brain (`memory/content-log.md`, `memory/listings.md`, anything in `~/realtor-brain/`) is

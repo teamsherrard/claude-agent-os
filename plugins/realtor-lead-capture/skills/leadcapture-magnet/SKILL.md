@@ -6,9 +6,11 @@ description: >
   the agent's voice. Saves it as a clean, formatted doc (styled .docx) in the Drive campaign folder, then hands off to the funnel that gives
   it away. CONTENT ONLY — it writes the guide's content (the design is a separate skill); it NEVER designs the PDF.
 
-  Trigger on: "build my lead magnet", "create a lead magnet", "lead magnet for my offer", "make my buyer
-  guide", "make my seller guide", "make my brand guide", "set up my lead capture", "build my lead capture system", "I need a free
-  guide to give away", or any request to create the downloadable freebie an opt-in gives away.
+  Trigger on: "build my lead magnet", "create a lead magnet", "lead magnet for my offer", "make my
+  relocation guide", "moving to [city] guide", "make my buyer guide", "make my seller guide", "make my brand
+  guide", "I need a free guide to give away", or any request to create the downloadable freebie an opt-in
+  gives away. ("Set up my lead capture" and other system-level or first-time requests go through
+  leadcapture-navigator — the front door — which locks the first campaign and runs the intake first.)
 ---
 
 # Lead Magnet Builder (Step 1 — spec only)
@@ -32,6 +34,11 @@ Read `~/realtor-brain/brain.md` first, then:
 - `identity/market.md` — city, communities, price bands, local specifics (the magnet is full of these).
 - `identity/profile.md` — name, niche, credentials, where to reach them.
 - `identity/compliance.md` — the disclaimer/claims rules (house rules #5).
+- `identity/strategy.md` + `identity/business-plan.md` — the strategy chapters of their **AI Brain Book**
+  (their goals, what they want to be known for, and the 90-day plan this magnet feeds). The rendered
+  "[Agent] — AI Brain" doc in their Drive/OneDrive is built FROM these files — the sync PULL in the missing-
+  Brain step below is what guarantees you're reading the current ones. The magnet should serve the plan:
+  same niche, same audience the plan says they're chasing.
 - `memory/ideas.md` (tag `leadmagnet`) — any lead-magnet ideas the agent captured on the go; build from these first, and mark each Used.
 
 **Read the Brain; never re-ask what it knows (house rules #2).** If `identity/offer.md` is thin or empty,
@@ -44,25 +51,35 @@ stop and tell the agent kindly that the magnet is only as strong as the offer be
 
 ---
 
-## Phase 1 — Pick the magnet's focus (the shape that fits their brand)
-A magnet can take one of two shapes. **Present both and let the agent choose** — they fit different brands:
+## Phase 1 — Lock the magnet's focus (the first one is NOT a choice)
 
-- **A. Brand-led (general) — the default for most agents.** ONE comprehensive, on-brand guide that speaks to
-  the agent's **whole audience and full offer suite** (buyers, sellers, relocations) and gives any prospect
-  real value — built around their **personal brand**, not a single avatar. E.g. *"The Complete [City] Buying
-  & Selling Playbook," "[Agent]'s [City] Market Insider Guide," "Thinking of Buying or Selling in [City]?
-  Start Here."* It still needs **ONE clear brand-level promise** (so the funnel has a headline) — e.g. *"everything
-  you need to make your next move in [City] with confidence."* General must stay genuinely valuable and
-  **comprehensive — never vague filler.**
-- **B. Audience-specific (niche) — when the agent has one dominant focus.** A focused buyer, seller, or niche
-  guide (first-time buyer, new-build buyer, downsizer seller) matched to their strongest avatar + offer.
-  Converts hardest for that one person; best when the agent genuinely leans into one niche.
+**First: did the navigator hand you a locked focus?** If `leadcapture-navigator` routed here with the
+relocation guide locked and the 5 intake answers in hand, **skip this phase entirely** — the focus is set,
+the promise is *"Moving to [City]? Start Here"*-shaped, and the intake bundle joins the Brain as your source
+material. Go straight to Phase 2.
 
-**Advise (house rules #9):** read the Brain and recommend. If their brand/offer spans buyers AND sellers, or
-they're generalist / brand-led → recommend **A**. If `avatars.md`/`offer.md` show one dominant niche →
-recommend **B**. Lead with the ONE you'd pick + one line of why, and offer the other. If the agent named a
-focus, use it. Lock the **single core promise** (brand-level or audience-level) — it becomes the funnel
-headline. Confirm in one friendly line. *(Whatever they pick, the funnel in Step 2 matches that same scope.)*
+**No navigator, and this is their FIRST magnet** (no campaign folder exists yet — check per the output
+standard)? **Apply house rules #11: the first magnet is the RELOCATION GUIDE. Locked, not a menu.** State it
+as the plan with the reason in one confident line — relocation is the #1 highest-intent search traffic in
+every market, and it works every time — and gather the relocation intake (the 5 questions in
+`${CLAUDE_PLUGIN_ROOT}/skills/leadcapture-navigator/references/intake-questions.md`, one at a time, each
+pre-answered from the Brain). If they push back, hold the line once, warmly; respect a second no and fall
+through to the open choice below.
+
+**Second campaign onward** (a finished campaign already exists), the choice opens up — two shapes;
+**recommend one and let the agent choose** (house rules #9):
+
+- **A. Brand-led (general).** ONE comprehensive, on-brand guide that speaks to the agent's **whole audience
+  and full offer suite** (buyers, sellers, relocations) — built around their **personal brand**, not a single
+  avatar. E.g. *"The Complete [City] Buying & Selling Playbook."* It still needs **ONE clear brand-level
+  promise** (so the funnel has a headline). Comprehensive — never vague filler.
+- **B. Audience-specific (niche).** A focused buyer, seller, or niche guide (first-time buyer, new-build
+  buyer, downsizer seller) matched to their strongest avatar + offer. Converts hardest for that one person.
+
+**Advise (house rules #9):** read the Brain and recommend — brand/offer spans buyers AND sellers → **A**;
+one dominant niche in `avatars.md`/`offer.md` → **B**. Lead with the ONE you'd pick + one line of why, and
+offer the other. Whatever the shape, lock the **single core promise** — it becomes the funnel headline.
+Confirm in one friendly line. *(Whatever they pick, the funnel in Step 2 matches that same scope.)*
 
 ## Phase 2 — Build the guide content
 Following `references/magnet-guide.md` + the copywriting KB, produce as clean copyable text:
@@ -97,7 +114,8 @@ applies, strip any guarantees or Fair-Housing proxies, keep claims honest. Flag 
 
 ## Quality checklist
 - [ ] Brain read; offer used as the anchor; nothing re-asked
-- [ ] One clear core promise — brand-led (whole audience) OR audience-specific — ready to become the funnel's headline
+- [ ] First campaign = the relocation guide, locked (house rules #11) — intake answers woven in; choice only from campaign 2
+- [ ] One clear core promise — ready to become the funnel's headline
 - [ ] 5–9 pages of REAL, local, specific value — worth an email, not a tease (house rules #8)
 - [ ] Offer + one real proof woven in near the end; soft close, **no call booking**
 - [ ] Voice matches `voice.md` + `voice-samples.md`
