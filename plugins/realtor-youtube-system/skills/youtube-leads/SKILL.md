@@ -1,6 +1,6 @@
 ---
 name: youtube-leads
-description: The Lead Engine for the Realtor YouTube System — turns each video into a lead capture. For a video, produces a complete Lead Magnet MAP — a page-by-page content + framework + offer + CTA spec the agent copies into their own design tool (we map; we do not design) — engineered from the avatar's real fear plus that video's topic. Runs inside that video's one chat as part of the video package (one chat = one video). Reads the AI Brain (offer, USP, avatars, CTA, booking link). Saves the "Lead Magnet Map" Google Doc in the video's folder. Triggers on "make a lead magnet", "lead magnet for this video", "map my lead magnet".
+description: The Lead Engine for the Realtor YouTube System — turns each video into a lead capture. For a video, produces a complete Lead Magnet MAP — a page-by-page content + framework + offer + CTA spec the agent copies into their own design tool (we map; we do not design) — engineered from the avatar's real fear plus that video's topic. Runs inside that video's one chat as part of the video package (one chat = one video). Reads the AI Brain (offer, USP, avatars, CTA, booking link). Saves the "Lead Magnet Map" Google Doc in the video's folder. Triggers on "lead magnet for this video", "map my lead magnet", or "make a lead magnet" ONLY inside a video's chat. (A standalone "build my lead magnet" / "set up my lead capture" with no video in play belongs to the Lead Capture System — Plugin 5 — not here.)
 ---
 
 # Lead Engine

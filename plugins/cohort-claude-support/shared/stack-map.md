@@ -12,7 +12,7 @@ fails, and who fixes what. **Support routes here instead of answering "how do I 
 | 2 | **AI Admin** (Agent Leverage OS) | Calendar, email drafts, client memory, daily admin | "Set up my AI Admin" |
 | 3 | **YouTube System** | Game Plan → ideas → scripts → SEO → leads → repurposing | "Set up my YouTube system" |
 | 4 | **Short-Form System** | Daily green-screen, talking-head, carousels, publishing | "Set up my short-form system" |
-| 5 | **Lead Capture** | Lead magnet + opt-in funnel copy | "Build my lead magnet" |
+| 5 | **Lead Capture** | Relocation guide first (locked), then the opt-in funnel copy | "Set up my lead capture" |
 | 6 | **AI Editor** | Directs Descript to edit long-form + reels on their account | "Set up my video editor" |
 | 7 | **Listing Launch** | One address in → the whole listing launch out (8 stages) | "Launch my listing" |
 | 8 | **Market System** | One command → the complete monthly market package | "Run my market update" |
@@ -45,7 +45,7 @@ reaches them. 9 anytime.
 | "Make a carousel" | `shortform-carousel` | 4 |
 | "Schedule / post this" · "publish my folder of finished content" | `shortform-publish` / `shortform-batch-publish` | 4 |
 | "How did my posts do / analyze my reels" | `shortform-analytics` | 4 |
-| "Build my lead magnet" → then "build the funnel page" | `leadcapture-magnet` → `leadcapture-funnel` | 5 |
+| "Set up my lead capture" (also "build my lead magnet", "build my funnel", any first-time lead-capture ask) | `leadcapture-navigator` (front door: offer check + resume detection; first campaign = the relocation guide, 5-question intake) → `leadcapture-magnet` → `leadcapture-funnel` | 5 |
 | "Edit my video" (any vague edit ask) | `editor-navigator` (it translates + routes) | 6 |
 | ONE small video fix ("just add captions", "fix the caption font", "just trim the start") | `editor-quick` (cheap single pass — also the fix for off-brand captions/colors) | 6 |
 | "Edit my YouTube video" / "make a reel from this" / "edit my listing tour" | `edit-longform` / `edit-shortform` / `edit-listing` | 6 |
@@ -100,7 +100,7 @@ Notion, always optional).
 ### Plugin 5 — Lead Capture
 - Depends on: Brain (offer/USP must exist — thin offer → route `realtor-offer-usp` first) + Drive
   campaign folder. Copy + strategy only: the .docx is rendered styled, and the DESIGN happens in
-  Claude Design from the brief. Capture only (name + email), no booking — by design.
+  Claude Design from the brief. Capture only (a pop-up: first name + email + phone → thank-you page with the guide as an instant download), no booking — by design.
 
 ### Plugin 6 — AI Editor
 - Depends on: Brain + **Descript connector (their own account + credits)**. Stock keys optional.

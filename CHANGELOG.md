@@ -2,6 +2,53 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.113.1] — 2026-08-21
+
+### Lead Capture (Plugin 5) → v0.9.1 — full-plugin audit: 90 verified findings fixed
+A 9-lens audit (consistency · flow · realtor UX · compliance · renderer · Brain contract · relocation
+doctrine · triggers · copy craft) with 3-way adversarial verification per finding (125 candidates → 90
+confirmed). Everything confirmed is fixed:
+- **Offer + Brain + compliance become ONE rule each (house rules #2, #5):** the offer's three states
+  (missing / `[bracketed]` placeholder / thin → default to building) and the pull-first Brain rule are
+  canonical in house rules and every skill points there — the navigator/magnet "stop vs. build" contradiction
+  is gone, and the funnel gained its missing pull-first path. Compliance splits into (a) claims checks that
+  ALWAYS run and (b) disclaimer/licence lines only when `compliance.md` is FILLED — a scaffolded placeholder
+  (`[exact disclaimer text…]`) can no longer be stamped into a doc (was critical).
+- **Write-back, finally:** a finished magnet writes a real row to `offer.md → ## Lead magnets` (so the
+  YouTube/Short-Form systems route CTAs to it) + a content-log line; the 5 intake answers persist to
+  `market.md → ## Relocation intake` so a wiped session never re-asks; ideas marked Used only when built.
+- **Relocation guide is now relocation-shaped end to end:** 7 body pages incl. a "what to do, and when"
+  timeline and an honest-trade-off communities page; numbers strictly sourced (market.md / market-data.md /
+  a noted check — else qualitative, never from memory); offer close uses only services in `offer.md`; the
+  funnel's strategy, Problem, hero/subhead examples, Local Market (SAME communities as the guide, read off
+  the magnet doc), proof fallback (empty proof.md) and mini-FAQ all carry a relocation branch. Small-market
+  rule: title on the metro people search. Fair Housing: feeder places are PLACES only; audiences are kinds of
+  move; "describe the place, never the people."
+- **Navigator:** silent checks before any opener (resume/finished cases get their own lines); detours carry a
+  way back; Step 2 rows ordered (half-built wins); "make my relocation guide" runs the full front door with
+  the pitch shrunk; second campaign offers ONE Brain-derived recommendation; all five intake questions
+  pre-filled (Q4/Q5 were open-ended).
+- **Opt-in micro-copy:** labels `First name · Email · Phone`, an honest contact line under Phone (from
+  `operations.md`), thank-you footer disclaimer, never the Brain's booking link anywhere; welcome-video slot
+  always written as optional (no mid-build question, spoken outline from `voice-print.md`); photo strip lists
+  types, not files. CTA rules de-contradicted ("Download the … guide" no longer blessed; "first-person" gone).
+- **Output standard:** docs live in the workspace's `03 · Content/Guides/` (per the Brain's drive map; legacy
+  root folder still read); Google or OneDrive by `config.md`; READ-ONLY org-gated handled; renderer fallback
+  chain; page-title 70-char rule; skeleton guidance-vs-content rule; FAQ as bullets; save-failure step (chat
+  copy is the deliverable). Plus 20+ smaller wording, numbering, and example fixes; YouTube `youtube-leads`
+  trigger scoped to "inside a video's chat" to end the "make a lead magnet" collision.
+
+## [0.113.0] — 2026-08-21
+
+### Lead Capture (Plugin 5) → v0.9.0 — wired to its two Claude Design skills
+- **Both docs now name their design step.** The funnel skill, the magnet skill, and the output standard's
+  `▸ NEXT` appendices point to the exact Claude Design skills that consume them: `Lead Capture Funnel — [Guide]`
+  → the **Sales Funnel Pages** skill (reads the doc, builds the 9 sections in order with the copy verbatim,
+  every button → the one pop-up → inline thank-you, and deploys to Netlify); `Lead Magnet — [Guide]` → the
+  **Lead Magnet Designer** skill (one designed page per `── PAGE N - TITLE ──` block, the close with no call
+  booking). Design-suite side: both skills gained a "doc path" with a section/structure map, the verbatim
+  law, the proof photo strip spec, the welcome-video slot, the relocation + brand-led guide structures.
+
 ## [0.112.1] — 2026-08-21
 
 ### Lead Capture (Plugin 5) → v0.8.1 — one CTA phrase, everywhere

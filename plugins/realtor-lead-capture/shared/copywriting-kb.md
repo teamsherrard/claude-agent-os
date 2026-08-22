@@ -14,7 +14,8 @@ like the agent, not like a generic marketer or AI. If a line fails one of the pr
 2. **Clarity beats cleverness.** A confused reader leaves. In 5 seconds the visitor must know: what this is,
    who it's for, and what they get. Never sacrifice clarity for a cute headline.
 3. **Benefit beats feature.** Lead with what the reader GETS, not what the agent does. Not "I do buyer
-   consultations" → "Know exactly what you can afford — and never overpay — before you tour a single home."
+   consultations" → "Know exactly what you can afford — and what a fair price looks like — before you tour a
+   single home."
 4. **Specific beats vague.** Real numbers, real neighbourhoods, real outcomes. "Save money" is noise;
    "the 3 new-build incentives in Calgary most buyers never ask for" is believable and irresistible.
 5. **"You" beats "I."** Talk about the reader's situation, fears, and goals. The page is about *them* — the
@@ -58,22 +59,30 @@ a specific audience, in their market. Proven shapes (adapt to voice — don't so
 - **The Without formula:** *"How to [outcome] without [pain/fear]."*
   → "How to buy your first home without overpaying or getting talked into the wrong one."
 - **The Question formula:** *"Thinking of [decision] in [market]? Here's what you need to know first."*
+  → *"Moving to Calgary? Start Here."* (the locked first-campaign title — house rules #11)
 
 **The subhead** (right under the headline) does three jobs in one or two lines: expand the promise, name who
-it's for, and remove doubt. → "A plain-English walkthrough of every step, incentive, and number — from a
-Calgary new-build specialist who'll tell you the truth, not a sales pitch."
+it's for, and remove doubt. → Relocation: "The honest guide to where to live, what it really costs, and what
+nobody tells you before you move — from a Calgary agent, not a listings site." · New-build: "A plain-English
+walkthrough of every step, incentive and number — written for first-time buyers by a Calgary new-build
+specialist. Straight answers, no pressure."
 
 Headline rules: specific, benefit-led, no hype words ("INSANE," "secret," "you won't believe"), no clickbait,
-readable in one breath. It must match the magnet exactly (house rules #7).
+readable in one breath. **Phone-length:** most visitors tap in from a bio link or a video description on a
+phone — headline ~6–10 words, subhead one to two short lines, value-stack bullets one line each. It must
+match the magnet exactly (house rules #7). An "[Audience]" in any formula is a kind of move, never a
+protected class or family type (house rules #5).
 
 ---
 
 ## The Problem section — agitate the fear before you pitch
 
 Right after the hero, name the reader's pain so they feel understood before you offer anything. From
-`identity/avatars.md`, take their **single most acute fear** and make it concrete and honest:
+`identity/avatars.md` (or, for the relocation guide, the magnet's framing page + the intake — the reader
+doesn't live there yet), take their **single most acute fear** and make it concrete and honest:
 - **Name it in their words** — the specific thing that goes wrong ("negotiating against the builder's own rep,
-  alone, and overpaying by $20–40K on upgrades that add nothing to resale").
+  alone, and overpaying on upgrades that add nothing to resale"; relocation: "picking a community from photos
+  and finding out after possession the commute is double"). No figure unless it's real and sourced.
 - **Agitate honestly** — the real cost (money, stress, the wrong home for years). Real stakes, never fake doom.
 - **Turn the corner** — one line: there's a better way, and this guide is it (bridges into What's Inside).
 Keep it tight (3–5 lines). Empathy + stakes, not a pitch — it's what makes the rest of the page land.
@@ -175,18 +184,29 @@ occur — which is at the ask, not in a separate section:
 - **The pop-up** (every CTA button opens it): a one-line headline restating the promise, **the form — name,
   email, phone. Nothing else**, friction reducers right by the button ("Free. Instant. No spam — unsubscribe
   anytime."), and the submit button.
+
+**Pop-up micro-copy (the hardest moment on the page — write it, don't wing it):**
+- **Labels:** `First name` · `Email` · `Phone`. Plain, no asterisks, no "required."
+- **The contact line under Phone** — one honest sentence on what the agent will actually do with it, built
+  from `identity/operations.md`'s new-lead routine: *"I'll text or call once to make sure you got it — no
+  drip, no pressure."* Expectation set = trust earned; a phone field with no reason costs opt-ins.
+- **Reassurance by the button:** *"Free. Instant. No spam — unsubscribe anytime."*
+- **Headline:** restate the promise, not the mechanics — *"Your free Moving-to-[City] guide — one step away."*
+- **Button:** the canonical phrase, nothing else.
 - **The thank-you page** (after submit): warm confirmation + **the direct link to the guide PDF as a big
   instant-download button right on the page** ("You're in — grab your guide below"), in the agent's voice.
   **Instant download, NEVER email delivery — no "check your inbox" copy, and never ask how to deliver it**
   (house rules #4). No call booking — just the handoff.
 
-**CTA button copy** — ONE phrase, everywhere: **"Grab Your Free Guide."** It's the system's canonical CTA —
-the same words on the hero, the mid-page repeat, the opt-in, the pop-up submit, the link-in-bio hero button,
-and every video/social CTA — so a prospect meets one consistent ask at every touchpoint. Don't improvise
-variants per page.
-- ✅ "Grab Your Free Guide" (canonical) · a guide-named variant is allowed ONLY in body copy, never on the button
-- ❌ "Submit" · "Sign up" · bare "Download" (generic one-word buttons — a specific, download-framed CTA like
-  "Download the Calgary buyer's guide" is fine)
+**CTA button copy** — ONE phrase, everywhere: **"Grab Your Free Guide."** It's this plugin's canonical CTA —
+the same words on the hero, the mid-page repeat, the opt-in, and the pop-up submit; when the agent writes a
+link-in-bio button or a video/social CTA that points at this page, recommend the same phrase — so a prospect
+meets one consistent ask at every touchpoint. Don't improvise variants per page.
+- ✅ "Grab Your Free Guide" — the ONLY label on any CTA button (hero, mid-page repeat, opt-in, pop-up submit).
+  A guide-named variant ("the Calgary relocation guide") is allowed ONLY in body copy — the sentence above
+  the button — never on the button itself.
+- ❌ "Submit" · "Sign up" · "Download" · "Download the [City] guide" · "Get my free guide" — any button text
+  other than the canonical phrase.
 - ❌ "Send me the guide" or any send/email framing — delivery is an **instant download on the page** (house
   rules #4), so the button must never promise the guide will be sent.
 Repeat the CTA ~3× — hero, mid-page (the Guide), and the opt-in — same promise each time.
