@@ -31,8 +31,6 @@ available, follow them — they are the authority on how my Brain works.
    by its _workspace.md marker file (NEVER by assuming a folder name; I may
    have renamed the folder). Then read brain.md and config.md (my storage
    provider — Google or Microsoft — and workspace info are recorded there).
-   SKIP any workspace marked as a demo (config.md says "Demo brain: yes" or
-   the folder name ends "— DEMO") — a demo is never my real Brain.
 2. Pull ONLY the Brain's text files. NEVER download my Content, Listings, or
    Materials folders — they can contain gigabytes of video.
 
