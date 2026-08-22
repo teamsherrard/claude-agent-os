@@ -2,6 +2,14 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.112.1] — 2026-08-21
+
+### Lead Capture (Plugin 5) → v0.8.1 — one CTA phrase, everywhere
+- **"Grab Your Free Guide" is the canonical CTA** across the funnel: hero, mid-page repeat, opt-in, pop-up
+  submit (was "Get my free guide"). Copywriting KB now names it as the system-wide phrase — the same
+  words the link-in-bio hero button and video/social CTAs use — so a prospect meets ONE consistent ask at
+  every touchpoint. Guide-named variants are body-copy only, never on a button.
+
 ## [0.112.0] — 2026-08-21
 
 ### Lead Capture (Plugin 5) → v0.8.0 — the front door + the relocation lock
