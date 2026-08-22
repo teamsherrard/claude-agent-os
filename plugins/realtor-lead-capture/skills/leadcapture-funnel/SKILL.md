@@ -83,8 +83,8 @@ Brain** (house rules #2: realtor-brain-sync PULL; only a truly empty cloud goes 
 ---
 
 ## Phase 1 — Confirm what it's selling (and match its scope)
-In one line, confirm the magnet this page gives away (its name + promise), so the agent sees the page and the
-guide are the same story. If they want a different angle on the headline, note it — but the promise must
+In one line — a plain message, never a question box (house rules #1) — confirm the magnet this page gives
+away (its name + promise), so the agent sees the page and the guide are the same story. If they want a different angle on the headline, note it — but the promise must
 still match what the guide delivers. **Match the magnet's scope:** if it's **brand-led** (whole audience),
 write the page to the agent's **personal brand and broad audience** of buyers and sellers; if it's
 **audience-specific**, speak to that one reader. The page is always as general or as focused as the magnet.

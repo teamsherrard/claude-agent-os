@@ -1,7 +1,7 @@
 {
   "name": "realtor-lead-capture",
   "displayName": "Realtor Lead Capture (Plugin 5)",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "Turns the agent's offer into a lead-capture machine. A navigator front door starts every agent the same proven way: the FIRST lead magnet is locked as the relocation guide (the #1 highest-intent search traffic in every market) with a 5-question intake pre-filled from the Brain — no overthinking; niche and brand-led guides unlock from campaign two. Then it maps the opt-in funnel that gives the guide away — the page copy section by section, a proof photo strip, and a pop-up opt-in (name, email, phone) landing on a thank-you page with the guide as an instant download. Text only: it writes the words and the strategy (a separate design skill builds the visuals); it never hosts. Lead capture only — no call booking. Requires Plugin 1 (the Brain) set up first.",
   "author": {
     "name": "Mike Sherrard"

@@ -2,6 +2,20 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.113.2] — 2026-08-21
+
+### Lead Capture (Plugin 5) → v0.9.2 — the welcome message; question boxes banned
+- **"Launch lead capture plugin" now gets ONE warm message, not a menu.** The navigator's fresh-start opener
+  is scripted word for word: *"Hey [First name], great to see you. I'm your lead magnet and sales funnel
+  expert…"* → the plan (a Moving-to-[City] guide, "the one Mike recommends in the cohort," with the reason)
+  → *"Ready to get started? Just say yes — or tell me exactly what you'd rather build."* A yes goes straight
+  into the intake; anything else follows the hold-the-line-once rule.
+- **House rule #1: never a question box.** No option widgets, no numbered pick-lists, no "Step 1 / Step 2 /
+  both" — on any turn, in any of the three skills. Every ask is a plain sentence with the answer already
+  recommended. (The "where do you want to start?" pick-list a cohort member hit is exactly what this removes.)
+- Magnet skill uses the same welcome when entered directly; its second-campaign recommendation and the
+  funnel's confirm line are explicitly plain messages. "Launch lead capture plugin" added as a trigger.
+
 ## [0.113.1] — 2026-08-21
 
 ### Lead Capture (Plugin 5) → v0.9.1 — full-plugin audit: 90 verified findings fixed

@@ -83,8 +83,9 @@ first branch that matches:
   it away first. Your next guide comes right after."* — and hand to `leadcapture-funnel` (say which doc).
 - **No campaign yet — this is their FIRST magnet** (entered directly, or pointed here without the intake)?
   **Apply house rules #11: the first magnet is the RELOCATION GUIDE. Locked, not a menu.** Check the offer
-  (Step 1's three states), state the plan with the reason in one confident line — relocation is the #1
-  highest-intent search traffic in every market, and it works every time — and run the relocation intake
+  (Step 1's three states), then send the navigator's **scripted welcome message** word for word (its
+  "The opener" section — a personal hello, the plan, "Mike recommends in the cohort," and the yes-or-tell-me
+  line; never a question box), and on a yes run the relocation intake
   exactly as the front door does (`${CLAUDE_PLUGIN_ROOT}/skills/leadcapture-navigator/references/intake-questions.md`:
   saved-intake check first, then 5 questions, one at a time, each pre-answered from the Brain, write back
   what's new). If they push back, hold the line once, warmly; respect a second no and fall through to the
@@ -110,8 +111,9 @@ one dominant niche in `avatars.md`/`offer.md` → **B**. Lead with the ONE you'd
 offer the other. **Say it in plain words — never the labels.** The agent never hears "brand-led",
 "audience-specific", "shape A/B" or "niche"; they hear what the guide is *for*: *"Next I'd do a complete
 [City] buying-and-selling playbook — it covers everyone you work with. Or we could go narrower with a
-first-time buyer guide. I'd start with the playbook — want me to?"* Whatever the shape, lock the **single
-core promise** — it becomes the funnel headline. Confirm in one friendly line. *(Whatever they pick, the
+first-time buyer guide. I'd start with the playbook — want me to?"* Said as a normal message — **never an
+option widget or pick-list** (house rules #1). Whatever the shape, lock the **single core promise** — it
+becomes the funnel headline. Confirm in one friendly line. *(Whatever they pick, the
 funnel in Step 2 matches that same scope.)*
 
 ## Phase 2 — Build the guide content

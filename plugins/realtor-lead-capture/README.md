@@ -12,9 +12,10 @@ strategy chapters of their AI Brain Book (`strategy.md` + `business-plan.md`) fr
 
 **One campaign = one magnet + one funnel that sell each other.**
 
-0. **The front door** (`leadcapture-navigator`) — where every agent starts ("set up my lead capture").
-   Quietly checks the Brain + offer are ready, detects fresh vs. half-built vs. finished campaigns so nobody
-   is ever bounced or re-asked, then orients a fresh start in two lines.
+0. **The front door** (`leadcapture-navigator`) — where every agent starts ("launch lead capture plugin" /
+   "set up my lead capture"). Quietly checks the Brain + offer are ready, detects fresh vs. half-built vs.
+   finished campaigns so nobody is ever bounced or re-asked, then opens a fresh start with ONE personal
+   welcome message (who it is, the plan, "ready? just say yes") — never a question box or a menu.
    **The first campaign is locked: the RELOCATION GUIDE** (*"Moving to [City]? Start Here"*) — the #1
    highest-intent search traffic in every market. No menu, no overthinking; the navigator runs a 5-question
    intake (each answer pre-filled from the Brain) and hands off. Second campaign onward, the choice opens up.
