@@ -43,6 +43,23 @@ about 15 minutes left."* Every question stop explicitly says it's their turn; an
 confusion instead of an answer ("what's it stuck on?"), say you're waiting on them, give the
 breadcrumb, and re-ask only the one pending question in its shortest form.
 
+## Keep it lean — usage discipline (a setup must fit inside ONE Max session)
+
+A live tester burned a whole week's Fable allowance and most of a 5-hour session on one setup. Every
+turn of a long interview replays the entire context, so the cost levers are turns and loaded text:
+- **Lazy-load, never front-load.** Read a shared file ONLY at the step that needs it — `connectors.md`
+  at Step 0, `drive-map.md` at Step 1, `ask-once-default.md` at the first interview phase,
+  `brain-book-spec.md` + `doc-formatting.md` only at Step 7.4, `project-instructions.md` at Step 7.5.
+  Never read a file already in context again. Never "skim everything to be safe."
+- **Fewer stops, not fewer questions.** Group each phase's questions into stops of 2–4 related questions
+  (the question card holds four) — a phase is 2–3 stops, not ten one-question turns. Still warm, still
+  conversational; just not one-at-a-time for an hour.
+- **Phase skills read the Brain, not the transcript.** Each phase skill loads the specific files it
+  needs (`profile.md`, `market.md` …) — not every identity file, and never the whole Book spec.
+- **The Book build is bounded** by `brain-book-spec.md`'s research budget and retry caps — rebuild the
+  failing CHAPTER, never the whole Book; never re-research a chapter whose brain file is already current.
+- **Pushes are cheap, verification isn't:** batch scaffolds verify with one listing (per `realtor-brain-sync`).
+
 ---
 
 ## The Brain you are building
@@ -147,7 +164,9 @@ Say something like:
 > pause anytime and pick up exactly where you left off. Nothing is lost. Your Drive/OneDrive is already
 > connected, so I'm setting up your workspace right now; email and calendar we'll confirm at the end.
 >
-> Ready? Let's build it properly.
+> One quick tip before we start: this session is long, so run it on **Opus 5** at **Medium** effort
+> (the model picker is at the bottom of this window). Fable 5 has its own, smaller weekly limit —
+> save it for the heavy lifting later. Ready? Let's build it properly.
 
 **Always build the full Brain — there is no fast-track and no "how deep" choice.** Every agent gets the
 complete version. First-run runs **Phases 1–5 + 8 + 7** (the 90-Day Business Plan is **Phase 8 — part

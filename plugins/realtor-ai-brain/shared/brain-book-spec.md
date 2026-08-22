@@ -181,7 +181,13 @@ In demo mode:
 
 1. **Pull + read.** Sync the Brain (`realtor-brain-sync` PULL), then read every identity file that
    exists, plus `brain.md`, `memory/market-data.md` if present, and `shared/brand-doctrine.md`.
-2. **Research pass — backfill the brain files FIRST.** Check each researched chapter's source file
+2. **Research pass — backfill the brain files FIRST — inside a budget.** The whole build gets
+   **~30 web searches/fetches, total**, spent by priority: the agent's NAMED communities first (≤3 each:
+   prices+movement · buyer/schools/amenities · construction+angle), then the outlook (≤6), the
+   competitive landscape (≤6), search demand (≤4), adjacents last (≤2 each, only with budget left). One
+   search per fact-family, never one per fact; stop the moment a chapter's must-appear list is covered;
+   a brain file that is already current (staleness windows) costs ZERO searches. Budget exhausted =
+   render what's verified with honest gaps — never exceed it to chase a detail. Check each researched chapter's source file
    against its research mandate (below). For anything missing or stale (staleness windows in
    Regeneration rules): run the web research now, write it into the owning brain file
    (`identity/market.md` for market + outlook; `identity/market-intel.md` for competitive + search),
