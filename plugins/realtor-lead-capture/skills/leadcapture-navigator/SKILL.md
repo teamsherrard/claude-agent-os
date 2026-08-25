@@ -181,6 +181,8 @@ the thing it depends on first.
 | "make my buyer guide", "seller guide" — **and NO relocation guide exists** | a first campaign, wrong door | **here** → Step 3 (the lock, with the one pushback allowance) |
 | "finish my lead magnet", "pick up my lead capture", "continue my funnel" | resume | Step 2 → resume at the right step |
 | "build my offer" is what they actually need | the offer is thin/empty | the Brain's offer skill, with the way-back line |
+| "set up my Google Business Profile", "GBP", "show up on Google Maps", "Google posts", "connect my socials to Google" | the Google kit | `leadcapture-gbp` (standalone — no magnet required; it points at the funnel when one exists) |
+| "write my bios", "Instagram bio", "about section", "LinkedIn about", "optimize my profiles" | the bio stack | `leadcapture-profiles` (standalone — no magnet required; CTA falls back to booking link) |
 
 ## Out-of-scope asks → the closest thing we CAN do
 

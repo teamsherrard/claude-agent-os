@@ -56,6 +56,7 @@ If `~/realtor-brain/` is missing files, tell the agent to run **Realtor AI Brain
 - `identity/story-bank.md` — real career stories, tagged by topic (weave into scripts/emails/posts)
 - `identity/content-engine.md` — content plan: pillars, platforms, cadence, series, video default
 - `identity/publishing.md` — how the agent posts short-form (platforms, cadence, posting tool) — written by the Short-Form System
+- `identity/profiles.md` — the entity line + every platform's bio (written by the Lead Capture System; quote, don't re-write)
 - `identity/operations.md` — hours, signature, booking rules, follow-up cadence
 - `identity/vendors.md` — trusted partner network (AI Admin referrals)
 - `identity/strategy.md` — goals + positioning + competitors + the Book's Strategic Position synthesis

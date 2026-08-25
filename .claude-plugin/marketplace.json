@@ -9,7 +9,7 @@
     {
       "name": "realtor-ai-brain",
       "source": "./plugins/realtor-ai-brain",
-      "version": "0.57.2",
+      "version": "0.57.3",
       "description": "PLUGIN 1 — install first. The Realtor AI Brain: one shared brain (the agent's identity + memory) that powers every other system. Run 'Set up my Brain' once, and every tool already knows the agent. Plus a system-wide Capture layer: talk on the go and your ideas, wins, vendors, and market notes file themselves into the Brain."
     },
     {
@@ -33,8 +33,8 @@
     {
       "name": "realtor-lead-capture",
       "source": "./plugins/realtor-lead-capture",
-      "version": "0.9.2",
-      "description": "PLUGIN 5 — the Lead Capture System. A navigator front door starts every agent the same proven way: the FIRST lead magnet is locked as the relocation guide (the #1 highest-intent search traffic in every market) with a 5-question intake pre-filled from the Brain — no overthinking; niche and brand-led guides unlock from campaign two. Then it maps the opt-in funnel that gives the guide away — two aligned documents: the page copy section by section with a proof photo strip, and a pop-up opt-in (name, email, phone) landing on a thank-you page with the guide as an instant download. Text only: it writes the words and the strategy (a separate design skill builds the visuals), never hosts; lead capture only, no call booking. Requires Plugin 1 (the Brain) set up first."
+      "version": "0.8.0",
+      "description": "PLUGIN 5 — the Lead Capture System. A navigator front door starts every agent the same proven way: the FIRST lead magnet is locked as the relocation guide (the #1 highest-intent search traffic in every market) with a 5-question intake pre-filled from the Brain — no overthinking; niche and brand-led guides unlock from campaign two. Then it maps the opt-in funnel that gives the guide away — two aligned documents: the page copy section by section with a proof photo strip, and a pop-up opt-in (name, email, phone) landing on a thank-you page with the guide as an instant download. Plus the local-presence layer: the complete Google Business Profile kit (description, services, seeded Q&A, a month of Google posts, review replies, and the social-links setup that puts their reels on Google Maps) and platform-optimized bios for every network — Instagram to LinkedIn to YouTube — each sized to its real character limit with one consistent entity line so AI search can find them. Text only: it writes the words and the strategy (a separate design skill builds the visuals), never hosts; lead capture only, no call booking. Requires Plugin 1 (the Brain) set up first."
     },
     {
       "name": "realtor-ai-editor",
