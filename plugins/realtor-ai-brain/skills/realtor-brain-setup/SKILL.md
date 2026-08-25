@@ -13,7 +13,10 @@ description: >
 
   Trigger on: "set up my brain", "set up my realtor brain", "build my AI brain", "get me started",
   "set up my system", "onboard me", "first time setup", "install my brain", "set up everything",
-  "build my realtor system", or any first-run / onboarding request from a real estate agent.
+  "build my realtor system", "launch my AI brain plugin", "launch the brain plugin", "open my brain",
+  "load my brain", or any first-run / onboarding request from a real estate agent. (The "launch"/"open"
+  phrases route through Step 0: NO Brain yet → the full interview; Brain already built → the READY
+  BRIEF, never a re-interview.)
 ---
 
 # Realtor AI Brain — Setup
@@ -26,6 +29,9 @@ This is the most important session the agent will have with the system. Make it 
 smart onboarding — not a form. They are often beginners. Encourage honesty over polish.
 
 ## How you speak — plain language, ALWAYS
+
+**Read `${CLAUDE_PLUGIN_ROOT}/shared/how-we-speak.md` — it binds every skill in this plugin** (plain
+language, the READY BRIEF, "empty is normal", housekeeping-goes-last). The essentials, restated:
 
 The agent sees a warm onboarding, never the machinery. **Do the mechanics silently; narrate only
 human milestones:** *"✓ Connected to your Google Drive"* · *"✓ No existing Brain found — building
@@ -145,6 +151,15 @@ the cloud with a fresh empty one** at the finalize push. So:
      it might tidy the locator: other workspaces are read-never-touch, and multiple markers are fine
      (the demo stamp disambiguates). Demo pushes are LIGHT: create the files, then verify with one
      listing of the demo folder — no per-file verification, no housekeeping, no snapshots.
+   - **"Launch my AI brain plugin" / "open my brain" / "load my brain" on a BUILT Brain** → they're
+     asking *"are we ready?"*, not for an audit. Give the **READY BRIEF** exactly per
+     `${CLAUDE_PLUGIN_ROOT}/shared/how-we-speak.md` §2: one warm line naming 3–4 things you now know
+     about THEM (their market, niche, voice, plan) · at most ONE upgrade suggestion, framed as an
+     upgrade never a defect · then *"What do you want to build today?"* **Never** open with a list of
+     problems, file names, counts, or version/schema talk; **never** flag the by-design files
+     (operations, vendors, voice-print, story-bank, strategy, publishing, or anything in memory) as
+     missing (§3). Any structure tune-up is ONE plain line at the very end (§4). **Never re-interview
+     a built Brain** — that is the protection that stops their real answers being overwritten.
    - **"Review it" / "show me my Brain" / "regenerate my Brain document"** → don't re-interview; just
      **rebuild the master "Your AI Brain" document** from the current identity files (per
      `${CLAUDE_PLUGIN_ROOT}/shared/brain-book-spec.md` — the canonical Book contract, incl. its research-refresh rules), save it to the workspace's `01 · AI Brain/` (dated

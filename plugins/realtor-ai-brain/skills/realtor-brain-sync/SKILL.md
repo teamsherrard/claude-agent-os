@@ -27,6 +27,10 @@ OneDrive). If it isn't connected, walk the agent through connecting it first —
 assume the local copy is safe.
 
 ## Locating the workspace (rename-proof — NEVER by name alone)
+**How you report any of this to the agent: `${CLAUDE_PLUGIN_ROOT}/shared/how-we-speak.md`** — plain
+language only (no file names, paths, counts, or schema/version talk), empty memory and the by-design
+files are NEVER reported as problems, and housekeeping nudges are one plain line at the end.
+
 Agents may rename the workspace folder to their business name. Locate it in this order:
 1. **Folder ID from `config.md`** (`Workspace folder ID`) — **a within-session cache only**: `config.md`
    lives inside the workspace, so on a cold start (wiped sandbox, no local config) this rung simply isn't
