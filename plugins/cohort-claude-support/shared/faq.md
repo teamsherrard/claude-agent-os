@@ -371,5 +371,10 @@ skills UPLOADED to your account. When one is missing there, check three things, 
    gradually by account: screenshot both screens (customize/skills + Design's panel) and say
    "escalate this" — that pattern is worth reporting.
 
-Meanwhile nothing is stuck: the skill still runs from a regular chat, and the design lands in
+**The can't-fail backup (works even while you sort the above):** attach the skill's ZIP file
+straight into your Design chat — the + / attach button → pick the zip → say "use this skill for
+this design." Claude reads the file directly; no panel needed. You already have the zip from the
+course download.
+
+And nothing is ever stuck: the skill still runs from a regular chat too, and the design lands in
 Claude Design to polish.

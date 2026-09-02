@@ -28,11 +28,11 @@ BULLETS: Open claude.ai/customize/skills · See your skill listed, toggle ON? �
 SUB: ⚠️ Installing plugins ≠ uploading skills. The course zips go HERE.
 SAY: Check two: open the drawer and look. If the skill is listed with the toggle on, you're good — go to check three. If it's NOT there, that's your whole problem: the zip never landed. And here's the trap — installing my plugins does not put skills in this drawer. Those are different things. The course skill zips get uploaded on this exact page. Upload it, and it shows up in Design immediately.
 
-## Slide 5 — Check #3
-HEADLINE: Still Missing? Do This.
-BULLETS: Close Design completely — reopen it · Check the "type to filter" box is empty · STILL gone? Screenshot both screens → support ticket
-SUB: Those 2 screenshots tell us exactly what to flag.
-SAY: Check three, the cleanup: close Design all the way and reopen — the panel refreshes. Make sure that little filter box is empty; it hides skills if there's text in it. And if you've passed all three checks and it's STILL missing — you've found something real. Screenshot your skill drawer and Design's panel, drop both in a ticket, and we take it from there. You did everything right.
+## Slide 5 — Check #3 + the can't-fail backup
+HEADLINE: Still Missing? Two More Moves.
+BULLETS: Close Design completely — reopen it, filter box empty · **The backup that always works: attach the skill ZIP right into your Design chat (+ → the zip → "use this skill")** · Want it fixed properly? Screenshot both screens → support ticket
+SUB: You already have the zip from the course download. Design reads it directly.
+SAY: Check three: close Design all the way and reopen — the panel refreshes — and make sure the filter box is empty. Now here's the move nobody knows: you don't even NEED the panel. Take the same zip you downloaded from the course, attach it right into your Design chat with the plus button, and tell Claude "use this skill for this design." It reads the file directly and off you go. And if the panel still won't show your skill after all that, screenshot your skill drawer and Design's panel, drop both in a ticket — that's something we'll flag, and you did everything right.
 
 ## Slide 6 — The wrap
 HEADLINE: Nothing Is Ever Blocked
