@@ -386,3 +386,20 @@ And the pro move for brand specifically: set up your design system IN Design (yo
 fonts, logo live there as "your design system") — then every design wears your brand whether a
 skill is involved or not. Half of "the skill didn't work" is really "it doesn't look like my
 brand," and this fixes that at the root.
+
+**Q39. The skill zip won't download ("File wasn't available on site") — or uploads as "Invalid zip file."**
+Two different hiccups, one ladder — and the course files themselves are fine:
+
+- **"File wasn't available on site" while DOWNLOADING** → that download link on the course page
+  is broken — not you, not your browser. Worth one retry in a different browser, then report it
+  in a ticket (name the file); Mike's team re-uploads it fast.
+- **"Invalid zip file" while UPLOADING** → the copy that landed on your computer got damaged or
+  changed on the way. In order:
+  1. Re-download fresh from the workbook
+  2. Check the file size — course zips run roughly 10–40 KB; a 1 KB "zip" is an error page
+     wearing a zip name (that means the LINK is broken — report it)
+  3. Upload the file EXACTLY as downloaded — never unzip and re-zip it. Safari users: Safari
+     auto-opens zips; use Chrome for this, or turn off "Open safe files after downloading"
+  4. Still invalid → ticket, with the filename and the size you saw
+
+Next step: fresh download → straight upload, untouched. Error again → say "escalate this."

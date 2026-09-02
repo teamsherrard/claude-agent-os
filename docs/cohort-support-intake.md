@@ -29,6 +29,11 @@ format, I'll structure it):
 - Fixed Monday starts — decks strongly suggest it; one-word confirm: >
 
 **Agency verifies before launch (from deck claims support can't back yet):**
+- [ ] ⚠️ URGENT: audit ALL 40 skill-zip download links in the workbook — 04-print-kit's link is
+      confirmed dead (Justin B., "File wasn't available on site"), and Jordan E.'s "Invalid zip
+      file" on link-in-bio suggests a second link may be serving corrupted copies. Healthy
+      source zips verified 2026-08-20 (04-print-kit 17KB · 14-link-in-bio 15.6KB — sent to
+      Mike for re-upload). One dead link found usually means more.
 - [ ] "Client stories get anonymized automatically" — verify the story-bank/content skills
       actually do this, or soften the Week 1 slide
 - [ ] "The system bakes the CTA into every script" — verify vs Plugins 3/4, then doctrine it
