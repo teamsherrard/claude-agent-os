@@ -353,18 +353,23 @@ Straight from Mike: plan for 12 months, and members doing it properly usually se
 
 Next step: put the 2 filming slots on your calendar and say "give me video ideas."
 
-**Q38. The video says to run the skill inside Claude Design — but Design can't find it. Is my install broken?**
-Nothing's broken — and if the skill fires in a regular chat, your install is perfect. Here's the
-thing to know:
+**Q38. The skill works in chat, but I can't see it in Claude Design's skill list.**
+Design DOES show your skills — the "Your skills" panel in the design chat box — and it reads the
+skills UPLOADED to your account. When one is missing there, check three things, in order:
 
-- Skills live in CHAT and COWORK — that's official (Anthropic's skills guide lists those
-  surfaces; Design isn't one). Design has no skill picker, so /skill-name won't come up there.
-- The working path: run the skill from a regular chat or Cowork — "/logo-designer",
-  "/brand-style-guide" — it does the thinking there, and the visuals land in Claude Design for
-  you to polish.
-- Design gets your BRAND a different way: through your design project — which is why a guide
-  built there comes out in YOUR colors, not the demo's blue. Different from the course video =
-  usually means it worked: check whether it's wearing YOUR brand.
+1. **Same account, everywhere.** Design must be signed into the EXACT same account (and
+   workspace) where you uploaded the skill — skills never transfer between accounts, and a team
+   workspace and a personal account each have their OWN skill list. Check the account
+   email/initials in the corner of both screens first; it's the most common cause.
+2. **Uploaded in the right place — and actually there.** Course skill zips go to
+   **claude.ai/customize/skills** (Q30). Installing Mike's plugins or adding a skill inside a
+   Cowork chat does NOT put it on that account list — and Design reads that list. The proof:
+   open claude.ai/customize/skills and SEE the skill listed with its toggle on. Not listed →
+   the upload didn't finish; upload the zip and it appears in Design.
+3. **Listed, toggled on, same account — still missing?** Close and reopen Design, and check the
+   little filter box in the skills panel isn't hiding it. Still gone → features roll out
+   gradually by account: screenshot both screens (customize/skills + Design's panel) and say
+   "escalate this" — that pattern is worth reporting.
 
-Next step: run the skill from chat, then open Design to refine. Skill won't fire in chat
-either? Say "help" and we'll check the install together.
+Meanwhile nothing is stuck: the skill still runs from a regular chat, and the design lands in
+Claude Design to polish.

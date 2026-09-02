@@ -34,11 +34,15 @@ format, I'll structure it):
 - [ ] "The system bakes the CTA into every script" — verify vs Plugins 3/4, then doctrine it
 - [ ] Week 1 deck's "what you say in the truck shows up at the desk" — soften to "every CAPTURE
       teaches it" (chat questions don't persist; captures do)
-- [ ] The design-skills video says "run the skill through Claude Design" — skills officially
-      live in chat/Cowork only (Design has no skill picker; confirmed vs Anthropic docs
-      2026-08-19, already generating community posts — Dallas K., Elise A.). Re-cut that
-      instruction to: run the skill from chat → polish in Design. Heidi's replacement video
-      should teach that path.
+- [ ] Members can't see course skills in Claude Design's "Your skills" panel (Dallas K.,
+      Elise A.) — Mike's account shows the panel working, so the video's path is FINE. Likely
+      cause: upload-location confusion (zips must go to claude.ai/customize/skills; installing
+      plugins or adding in Cowork ≠ uploading — Design reads the account list) AND same-account
+      mismatches (team vs personal workspace = two separate skill lists; Mike's call). Heidi's
+      video should show, in order: same account in both places (check the corner) → the zip
+      upload at customize/skills with the toggle on → where Design's skill panel lives. ALSO: collect 2 screenshots from one affected member (customize/skills
+      list + Design panel) — if a correctly-uploaded skill still misses on a Pro account,
+      that's a rollout gap to report to Anthropic.
 
 **Video links for the resource library** (existing recordings + rough timestamps are perfect):
 - System tour / support-desk walkthrough: >

@@ -112,6 +112,12 @@ never guide click-paths from memory).
 
 ## Fetch etiquette
 
+0. **Docs silence ≠ feature absence.** Products ship ahead of their articles. NEVER tell a
+   member a feature doesn't exist because the official docs don't mention it — a screenshot
+   showing the feature outranks the article, every time. When a screen and a doc disagree:
+   believe the screen, answer from it, and flag the docs gap in the whatsnew digest. (Learned
+   the hard way 2026-08-19: Claude Design's "Your skills" panel exists and works — the skills
+   articles didn't mention it, and support briefly taught that it didn't exist.)
 1. One fetch per answer when possible — this map exists so you don't wander.
 2. Prefix volatile answers with "as of today" and name the page in plain words ("Claude's official
    pricing page says…").
