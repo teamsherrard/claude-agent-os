@@ -34,6 +34,11 @@ format, I'll structure it):
 - [ ] "The system bakes the CTA into every script" — verify vs Plugins 3/4, then doctrine it
 - [ ] Week 1 deck's "what you say in the truck shows up at the desk" — soften to "every CAPTURE
       teaches it" (chat questions don't persist; captures do)
+- [ ] The design-skills video says "run the skill through Claude Design" — skills officially
+      live in chat/Cowork only (Design has no skill picker; confirmed vs Anthropic docs
+      2026-08-19, already generating community posts — Dallas K., Elise A.). Re-cut that
+      instruction to: run the skill from chat → polish in Design. Heidi's replacement video
+      should teach that path.
 
 **Video links for the resource library** (existing recordings + rough timestamps are perfect):
 - System tour / support-desk walkthrough: >

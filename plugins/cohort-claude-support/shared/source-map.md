@@ -92,6 +92,7 @@ never guide click-paths from memory).
 ### Everyday Claude features (members meet these in-product)
 | Topic | URL |
 |---|---|
+| Use skills in Claude (which surfaces; upload; toggle) | https://support.claude.com/en/articles/12512180 |
 | Voice mode | https://support.claude.com/en/articles/11101966 |
 | Artifacts (the preview panel) | https://support.claude.com/en/articles/9487310 |
 | File uploads | https://support.claude.com/en/articles/8241126 |
