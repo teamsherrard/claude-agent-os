@@ -93,6 +93,11 @@ format, I'll structure it):
 - What's-new digest: on-demand only (current) or also pushed to members? >
 - Escalation reply-time promise ("1 business day" / "at office hours" / none): >
 - Rough Google vs Microsoft split in the cohort: >
+- OFFICIAL account recommendation for the cohort: individual Pro/Max, or support Team
+  workspaces too? (Community wave 2026-09-01: "plugins not working at team level" — on Team
+  plans the workspace OWNER must enable Cowork + Skills and add your marketplace in Organization
+  settings → Plugins. If you bless Team setups, the onboarding needs an owner-setup step;
+  if you recommend individual accounts, say it once officially and support will teach it.): >
 
 ## 6. Go/no-go triggers
 

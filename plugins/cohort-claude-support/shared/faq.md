@@ -403,3 +403,50 @@ Two different hiccups, one ladder — and the course files themselves are fine:
   4. Still invalid → ticket, with the filename and the size you saw
 
 Next step: fresh download → straight upload, untouched. Error again → say "escalate this."
+
+**Q40. I'm on a Team plan and the plugins aren't working / won't install. Why?**
+Team workspaces put the plugin switches in the WORKSPACE OWNER's hands — that's the whole
+difference. Three checks, in order:
+
+1. **Which workspace are you in?** Click your workspace switcher (your initials/name, top of
+   Claude). A personal account and a team workspace are two separate worlds — plugins installed
+   in one don't exist in the other (same rule as skills, Q38). If your plugins live on your
+   personal profile, switch to it.
+2. **Are the two master switches ON?** In a team workspace, BOTH "Cowork" and "Skills" must be
+   enabled in **Organization settings** — if either is off, plugins and marketplaces are dead
+   for everyone. If you bought the Team plan yourself, YOU are the Owner: turn both on.
+3. **Is Mike's marketplace added to the ORG?** On Team plans, plugin marketplaces are managed by
+   the workspace Owner in **Organization settings → Plugins**: add the official marketplace,
+   then set the plugins to "Installed by default" (or "Available") for members.
+
+Someone ELSE owns your workspace (a brokerage)? Forward them the three lines above — or the
+simpler path most members choose: run the cohort system on your own individual account (your
+Brain lives in YOUR cloud drive either way, so nothing is lost). **[check live if org settings
+have moved]**
+
+Next step: solo Team plan → do steps 2-3 yourself now. Brokerage workspace → say "escalate
+this" and I'll draft the note to your admin.
+
+**Q41. Can my whole real-estate TEAM run this system? ("The plugins don't work at team level")**
+First, one sorting question — "team" means two different things, with two different answers:
+
+**If you mean your Claude TEAM PLAN** (the subscription) → that's fixable in settings: see Q40 —
+the workspace Owner enables Cowork + Skills and adds Mike's marketplace in Organization
+settings → Plugins.
+
+**If you mean your REAL-ESTATE TEAM** (multiple agents on one system) → here's the honest
+picture:
+
+- The system is built **one Brain per agent, on purpose** — your Brain holds ONE identity: one
+  voice, one license number, one compliance file, one calendar. Two agents can't safely share
+  one Brain any more than they'd share one license.
+- **What works today:** every agent on the team runs their own install with their own Brain
+  (same 7-step setup), and the TEAM's shared assets — brand, offer, team bio, listings info —
+  get pulled into each Brain with "import my materials." Same brand, personal voice.
+- **Your assistant** working inside YOUR account is a different question (account/seat rules —
+  I'll check the current official answer live).
+- A true shared-team mode (shared client ledger, shared listings, per-member voices in one
+  Brain) doesn't exist today — if your team needs it, say "escalate this" as a feature request;
+  team demand is exactly what Mike's team tracks.
+
+Next step: tell me which "team" you meant, and I'll take you down the right path.

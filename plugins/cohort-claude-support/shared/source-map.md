@@ -45,6 +45,9 @@ confidence is still low, say so and route to `support-escalate`. Never bluff.
 | Usage credits (Team/Enterprise seats) | https://support.claude.com/en/articles/12005970 |
 | Model lineup & picker | Help Center → "Claude" collection, models article |
 | Team/Enterprise seats & admin | https://support.claude.com/en/ → "Team and Enterprise plans" |
+| Cowork on Team/Enterprise (org toggles) | https://support.claude.com/en/articles/13455879 |
+| Manage plugins for your organization (owner-side) | https://support.claude.com/en/articles/13837433 |
+| Use plugins in Claude (member-side) | https://support.claude.com/en/articles/13837440 |
 
 ### Connectors (connecting / reconnecting Google, Drive, and the rest)
 | Topic | URL |
