@@ -360,21 +360,29 @@ skills UPLOADED to your account. When one is missing there, check three things, 
 1. **Same account, everywhere.** Design must be signed into the EXACT same account (and
    workspace) where you uploaded the skill — skills never transfer between accounts, and a team
    workspace and a personal account each have their OWN skill list. Check the account
-   email/initials in the corner of both screens first; it's the most common cause.
+   email/initials in the corner of both screens first; it's the most common cause. (Genuinely
+   work in two accounts? Upload the zip in BOTH — thirty seconds, and this never bites again.)
 2. **Uploaded in the right place — and actually there.** Course skill zips go to
    **claude.ai/customize/skills** (Q30). Installing Mike's plugins or adding a skill inside a
    Cowork chat does NOT put it on that account list — and Design reads that list. The proof:
    open claude.ai/customize/skills and SEE the skill listed with its toggle on. Not listed →
    the upload didn't finish; upload the zip and it appears in Design.
-3. **Listed, toggled on, same account — still missing?** Close and reopen Design, and check the
-   little filter box in the skills panel isn't hiding it. Still gone → features roll out
-   gradually by account: screenshot both screens (customize/skills + Design's panel) and say
-   "escalate this" — that pattern is worth reporting.
+3. **Listed, toggled on, same account — still missing?** In order: close and reopen Design ·
+   check the little filter box in the skills panel isn't hiding it · log fully OUT of claude.ai
+   and back in (refreshes the account state, not just the page) · open Design in a private/
+   incognito window — if it appears there, it was a stale browser, not the account. Still gone →
+   features roll out gradually by account: screenshot both screens (customize/skills + Design's
+   panel) and say "escalate this" — that pattern is worth reporting.
 
 **The can't-fail backup (works even while you sort the above):** attach the skill's ZIP file
 straight into your Design chat — the + / attach button → pick the zip → say "use this skill for
 this design." Claude reads the file directly; no panel needed. You already have the zip from the
 course download.
 
-And nothing is ever stuck: the skill still runs from a regular chat too, and the design lands in
-Claude Design to polish.
+Backup #2: run the skill in a regular chat and CARRY the result — paste or attach what it
+produced into Design. The skill's job is the thinking; Design's job is the polish.
+
+And the pro move for brand specifically: set up your design system IN Design (your colors,
+fonts, logo live there as "your design system") — then every design wears your brand whether a
+skill is involved or not. Half of "the skill didn't work" is really "it doesn't look like my
+brand," and this fixes that at the root.
