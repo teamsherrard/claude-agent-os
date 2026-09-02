@@ -57,7 +57,7 @@
     {
       "name": "cohort-claude-support",
       "source": "./plugins/cohort-claude-support",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "description": "PLUGIN 9 — Cohort Claude Support. The calm support desk inside Cowork: say \"help\" and it answers every Claude question, diagnoses breakage with real checks (brain missing, connector expired, skill won't fire, Claude slow), teaches in plain English with diagrams and vetted official articles, audits setup and resumes at the first missing step, tracks the cohort week with a catch-up plan, and escalates to Mike's team with a complete pre-built ticket the member pastes straight into the support portal. Knows all 9 plugins and routes every fix to the skill that owns it — support itself never touches the member's data (READ-ONLY by constitution). Stays current by design: money/limit answers are always fetched live from official pages; a weekly digest reads the Claude Apps release notes so answers stand on this week's Claude, not launch-week Claude. Works best with Plugin 1 (the Brain); helps even without it."
     }
   ]

@@ -41,7 +41,10 @@ confidence stays low, `support-escalate`. Never bend a tree around a symptom it 
    personal or work?" (Wrong-account is ~a third of these.)
 2. **Cheap read test** on the failing connector: list today's calendar / one recent Drive file /
    `list_projects` for Descript. Works → the connector is fine; the real issue is the ask or the
-   skill → tree #3.
+   skill → tree #3. **Server-class error while clearly signed in** (e.g. Microsoft's
+   "SearchPlatformResolutionFailed") → that's the provider's servers, NOT the connection: use
+   error-codes' Microsoft row (browse-don't-search + the onedrive.com split test) — reconnecting
+   fixes nothing here.
 3. **Auth error on the read** → the link expired. Plain words: "The link between Claude and your
    [Google/Microsoft/Descript/…] needs a refresh — 60 seconds." Then BRING THE BUTTON TO THEM
    (house rule #5): surface the connector's Connect card right in this chat (directory inline, or
