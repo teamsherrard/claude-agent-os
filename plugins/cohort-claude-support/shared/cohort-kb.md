@@ -81,9 +81,12 @@ so if the Freshdesk account lapses, the support door dies with it.
   Buffer (auto-publishing; manual posting is free) · Notion (content board) · Higgsfield (photo
   tours). Third-party prices: their own sites are the authority — never quoted from memory.
 - **Week 3 build-along stack (outside the plugins, wired in the build-along videos):** Netlify ·
-  Zapier · Bitly · ManyChat · the member's own CRM. Free-vs-paid tiers: `[NOT SET — Mike to
-  confirm which run free; the "only required subscription is Claude" claim depends on it]`.
-  Until set: their sites are the authority, checked live.
+  Zapier · Bitly · ManyChat · the member's own CRM. Tiers: **ManyChat = SET (verified 2026-09):
+  free plan builds + tests the flow, but LIVE use needs Pro (~$39/mo entry tier, check live) —
+  free caps ~25 active contacts/month and lacks the email-lead-notify step. The comment-DM
+  automation itself is OPTIONAL: the funnel page captures leads without it (Q43).** Netlify /
+  Zapier / Bitly free tiers: `[NOT SET — Mike to confirm the build-alongs stay within them]`.
+  Prices always checked live; their sites are the authority.
 - Positioning rule: optional tools are presented as unlocks, never as requirements to keep up.
 
 ## Catch-up doctrine (for "I'm behind")

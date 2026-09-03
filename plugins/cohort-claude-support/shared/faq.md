@@ -471,3 +471,20 @@ other side yet. In order:
 Remember the build-along order: **page deployed → one test submission → then wire Zapier.**
 Zapier being broken on Zapier's side is their support's job — but that's rare; it's almost
 always step 1.
+
+**Q43. Do I need ManyChat Pro, or does the free plan work? (the comment-DM automation)**
+Build free, launch Pro — here's the honest math:
+
+- **Free is for building and testing.** Construct the whole Week 3 flow on the free plan and
+  test it on yourself — it all works at test volume.
+- **Going live needs Pro.** Free now caps around 25 active contacts a MONTH — one good reel
+  eats that in a day, then messaging just stops. And the "email the lead to you" step (the
+  speed-to-lead piece) isn't on Free at all.
+- **Current Pro pricing:** roughly $39/month at the entry tier — but they restructured pricing
+  recently, so I'll check manychat.com/pricing live before you decide. **[check live]**
+- **Remember what's optional:** your funnel page captures name + email all by itself, no
+  ManyChat needed. The comment-to-DM automation is an accelerator on top — skip it or add it
+  later, and the machine still works.
+
+Next step: build it free during the week; budget the Pro upgrade for the day you switch it on
+for real traffic.
