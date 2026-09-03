@@ -450,3 +450,24 @@ picture:
   team demand is exactly what Mike's team tracks.
 
 Next step: tell me which "team" you meant, and I'll take you down the right path.
+
+**Q42. Zapier says "No options are available" when I try to pick my form (Week 3 build-along).**
+Zapier can only list what already exists — and 9 times out of 10, the form doesn't exist on the
+other side yet. In order:
+
+1. **Deploy first, submit once, THEN pick.** Your funnel page must be live on Netlify before the
+   form exists — and Zapier often won't list a form until it has received at least ONE
+   submission. So: deploy the page → fill out your own form once, like a buyer → back in Zapier,
+   hit **Refresh** in that dialog. This fixes most of them.
+2. **Right account?** Check the account picker on that Zap step — it must be the same account
+   that owns your site (two accounts = two different form lists).
+3. **Reconnect the app** — in Zapier: your profile → App connections → reconnect it → Refresh.
+4. **The bypass that skips the list:** click the **⋮ / Custom value** option next to the
+   dropdown and TYPE your form's name manually (it's the form name from your funnel page — also
+   visible in Netlify under Forms). The Zap works fine without the dropdown ever loading.
+5. Still nothing after all four → wait a few minutes (their side hiccups), Refresh once more,
+   then ticket with a screenshot of the step + which app and account it shows connected.
+
+Remember the build-along order: **page deployed → one test submission → then wire Zapier.**
+Zapier being broken on Zapier's side is their support's job — but that's rare; it's almost
+always step 1.
