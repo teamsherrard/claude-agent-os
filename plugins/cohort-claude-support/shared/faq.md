@@ -476,18 +476,20 @@ always step 1.
 Yes — the cohort flow is BUILT for the free plan, on purpose. The design:
 
 - **Comment trigger → guide DM → the button links to your FUNNEL PAGE** — the page captures the
-  email and your Zapier wire notifies you. ManyChat never needs the (Pro-only) email step.
-- **Qualify question with 4 buttons + timeline tags** — all core free features
-- **Two simple automations** (IG, and optionally story replies) — no condition splits, no custom
-  fields; keep your total tag list to ~5
+  email and your Zapier wire notifies you. ManyChat's own email-to-agent step is Pro-only, so
+  the flow never uses it.
+- **Qualify question with 4 buttons + timeline tags** — core free features. The single
+  `lead_timeline` field is fine to keep too (free allows a limited number of fields).
+- **Two simple automations** (IG, and optionally story replies), tags trimmed to ~5.
+- **The universal truth-test:** anything your plan can't run wears a **PRO badge right on the
+  block** and the flow won't activate — the app itself is the feature list. See a badge on a
+  step from the video? Delete that one step; everything else stands.
 - **The one free limit to know:** ~25 new DM conversations a month, then the DM lane pauses
   until reset. That's why every caption also says "or grab it from the link in my bio" — the
   page lane never pauses.
 
-If your reel pops and you hit the cap mid-month: congratulations, that's success — upgrading to
-Pro (~$39/mo, check live) is YOUR choice at that point, never a requirement. Pro adds the
-in-ManyChat email notify, custom fields, and no cap — nice-to-haves, not the machine.
+Hit the cap mid-month? That's success, not breakage — Pro (~$39/mo, check live) becomes YOUR
+choice at that point, never a requirement.
 
-Next step: build it exactly like the Week 3 video — if your flow has a "Set User Field" or
-"email to agent" step, that's the old Pro version; delete those two and point the button at
-your funnel page.
+Next step: build it like the Week 3 video; if any block shows a PRO badge in your account,
+delete that block and say "help" if you're unsure what replaces it.
