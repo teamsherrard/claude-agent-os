@@ -472,19 +472,22 @@ Remember the build-along order: **page deployed → one test submission → then
 Zapier being broken on Zapier's side is their support's job — but that's rare; it's almost
 always step 1.
 
-**Q43. Do I need ManyChat Pro, or does the free plan work? (the comment-DM automation)**
-Build free, launch Pro — here's the honest math:
+**Q43. Does the comment-DM automation work on FREE ManyChat? (Week 3)**
+Yes — the cohort flow is BUILT for the free plan, on purpose. The design:
 
-- **Free is for building and testing.** Construct the whole Week 3 flow on the free plan and
-  test it on yourself — it all works at test volume.
-- **Going live needs Pro.** Free now caps around 25 active contacts a MONTH — one good reel
-  eats that in a day, then messaging just stops. And the "email the lead to you" step (the
-  speed-to-lead piece) isn't on Free at all.
-- **Current Pro pricing:** roughly $39/month at the entry tier — but they restructured pricing
-  recently, so I'll check manychat.com/pricing live before you decide. **[check live]**
-- **Remember what's optional:** your funnel page captures name + email all by itself, no
-  ManyChat needed. The comment-to-DM automation is an accelerator on top — skip it or add it
-  later, and the machine still works.
+- **Comment trigger → guide DM → the button links to your FUNNEL PAGE** — the page captures the
+  email and your Zapier wire notifies you. ManyChat never needs the (Pro-only) email step.
+- **Qualify question with 4 buttons + timeline tags** — all core free features
+- **Two simple automations** (IG, and optionally story replies) — no condition splits, no custom
+  fields; keep your total tag list to ~5
+- **The one free limit to know:** ~25 new DM conversations a month, then the DM lane pauses
+  until reset. That's why every caption also says "or grab it from the link in my bio" — the
+  page lane never pauses.
 
-Next step: build it free during the week; budget the Pro upgrade for the day you switch it on
-for real traffic.
+If your reel pops and you hit the cap mid-month: congratulations, that's success — upgrading to
+Pro (~$39/mo, check live) is YOUR choice at that point, never a requirement. Pro adds the
+in-ManyChat email notify, custom fields, and no cap — nice-to-haves, not the machine.
+
+Next step: build it exactly like the Week 3 video — if your flow has a "Set User Field" or
+"email to agent" step, that's the old Pro version; delete those two and point the button at
+your funnel page.
