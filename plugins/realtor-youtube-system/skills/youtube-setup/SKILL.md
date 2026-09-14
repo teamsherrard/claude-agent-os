@@ -132,4 +132,5 @@ This is the system's "wow" — lead with it, don't bury it.
 - [ ] Drive confirmed connected (it's all that's needed) — Calendar/Gmail deferred to point-of-need; no YouTube connection (V1 = Studio export)
 - [ ] Drive set up (Videos + Setup only — NO tracker spreadsheets)
 - [ ] **YouTube Game Plan** built (audit + 3 pillars + exact titles + goal-math + 90-day calendar) and saved to the workspace
+- [ ] **Channel page offered** (new/empty channels especially): *"want your channel page built too — description, playlists, banner text, the works? Say 'set up my channel page.'"* (`youtube-channel` owns it; offer once, never push)
 - [ ] Folder link shared

@@ -86,6 +86,7 @@ realtor-youtube-system/
 │   ├── youtube-coach/             # Coach
 │   ├── youtube-consistency/       # Consistency Engine (batch days · month plans · 30/60/90)
 │   ├── youtube-board/             # Content Dashboard in THEIR Notion (seeded from the Game Plan; one board shared with Short-Form)
+│   ├── youtube-channel/           # Channel Page Kit — the actual channel page (description, about, playlists, banner brief, upload defaults)
 │   └── youtube-briefing/          # OPTIONAL Monday Kickoff (off by default)
 └── README.md
 ```

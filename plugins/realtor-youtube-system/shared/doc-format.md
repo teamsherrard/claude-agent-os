@@ -174,6 +174,43 @@ numbered `1 · LABEL · MM:SS` body sections (3–5, §7) → optional brief mid
 book + the next best video) → heavy band `CHAPTERS` → heavy band `30-SECOND SHORT` → footer. (Detailed
 skeleton: `${CLAUDE_PLUGIN_ROOT}/skills/youtube-script/references/script-format.md`.)
 
+### Channel Page Kit
+```
+CHANNEL PAGE KIT — [AGENT NAME]
+[Channel handle]  ·  [market]  ·  [YYYY-MM-DD]
+
+──────────────── CHANNEL DESCRIPTION ────────────────
+   >> PASTE INTO:  Studio → Customization → Basic info → Description (opening paragraph)
+{the 2–3 keyworded sentences}
+
+──────────────── ABOUT SECTION ────────────────
+   >> PASTE INTO:  same field, directly below the description
+{who it serves · the pillars · proof line · CTA + link · disclosure}
+
+──────────────── LINKS ────────────────
+   •  {Booking link} — {why}
+   •  {Lead magnet} — {why}
+
+──────────────── CHANNEL KEYWORDS ────────────────
+   >> PASTE INTO:  Studio → Settings → Channel → Basic info
+{comma-separated keyword list}
+
+──────────────── PLAYLISTS ────────────────
+   •  {Playlist name}:  {one-line keyworded description}
+
+──────────────── BANNER TEXT BRIEF ────────────────
+Headline:  {…}
+Subline:  {…}
+   >> Build in your design tool; finished image → Customization → Branding → Banner
+
+──────────────── UPLOAD DEFAULTS ────────────────
+   >> SET ONCE IN:  Studio → Settings → Upload defaults
+{default description block (§18.2 CTA-first) · default tags · category · visibility · language}
+
+────────────────────────────────────────────
+Compliance — Fair Housing + disclosure checked.  ✓
+```
+
 ### SEO Package
 ```
 {VIDEO TITLE} — SEO PACKAGE

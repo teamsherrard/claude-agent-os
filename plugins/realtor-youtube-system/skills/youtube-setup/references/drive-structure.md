@@ -18,7 +18,8 @@ they're redundant with data the system can read live.)
 │                 ├── Lead Magnet Map    (Doc — Lead Engine)
 │                 └── Repurposing Pack   (Doc — Repurposing Engine)
 ├── Setup/
-│     └── YouTube Layer                  (Doc — channel, goal, cadence, pillars, voice; references AI Brain)
+│     ├── YouTube Layer                  (Doc — channel, goal, cadence, pillars, voice; references AI Brain)
+│     └── Channel Page Kit               (Doc — youtube-channel: the paste-by-paste channel-page kit)
 └── YouTube Game Plan — [Agent]          (Doc at workspace root — saved by youtube-gameplan; holds the
                                           title backlog + 90-day calendar, house rules #10)
 ```
@@ -32,7 +33,7 @@ folder's ID in the YouTube Layer so every skill saves to the same place.
 - **Video folder:** `{YYYY-MM-DD} · {Video Title}`  →  e.g. `2026-06-13 · BoC Holds Rates`
   (date = film/created date; Title Case; strip emojis and slashes from the title)
 - **Docs inside a video folder — FIXED names:** `Script` · `SEO Package` · `Lead Magnet Map` · `Repurposing Pack`
-- **Setup doc:** `YouTube Layer`
+- **Setup docs:** `YouTube Layer` · `Channel Page Kit`
 - **Game Plan doc (workspace root):** `YouTube Game Plan — {Agent Name}`
 - A **monthly market report** is just a normal video (the agent records it): a `{date} · {Month} Market Update`
   video folder with its own `Script` + `SEO Package`.
@@ -73,7 +74,7 @@ The system is stateless, so it RE-FINDS the structure every time instead of reme
 Every video's docs live together in that one video folder — nothing loose, nothing orphaned.
 
 > Only CONTENT files are saved to Drive (Script, SEO Package, Lead Magnet Map, Repurposing Pack, YouTube
-> Layer, the YouTube Game Plan, market-report script). Live analysis — research brief, ad-hoc weekly idea
+> Layer, the Channel Page Kit, the YouTube Game Plan, market-report script). Live analysis — research brief, ad-hoc weekly idea
 > lists, analytics read — stays in chat by design; it's regenerated fresh, never stored. (The Game Plan's
 > title backlog IS stored — in the Game Plan doc at the workspace root, house rules #10.) That's the
 > stateless model, not a gap.
