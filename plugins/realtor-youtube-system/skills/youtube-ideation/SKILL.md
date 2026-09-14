@@ -27,7 +27,9 @@ Find the scope in one friendly question:
 **Start from the Game Plan (house rules #10):** read the agent's active pillars + goal (YouTube Layer) and
 their planned title backlog (the **YouTube Game Plan** Doc) — the next ideas should advance THAT strategy,
 not random topics. Then pull, at ask-time so everything's current: the **AI Brain** (market, clientele,
-niche), **fresh research** (market data + local news + trends), **local-event triggers**, the **outlier
+niche), **fresh research** (market data + local news + trends), **local-event triggers**, **what their own
+comments are asking** (the Comment Engine's mined themes — comment-proven demand beats keyword guesses;
+light: only when they have real comments), the **outlier
 scan** (kept light — refreshed at ask time; long-form doesn't move daily), and the **live coverage read** (Videos folders + channel —
 what's already made). Also read the agent's **captured idea backlog** (`memory/ideas.md`, tag `youtube`) —
 their own on-the-go ideas; bring these into the batch FIRST (make-video marks a backlog idea Used when its
