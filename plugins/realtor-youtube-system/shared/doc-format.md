@@ -16,6 +16,16 @@ into real Word formatting — headings, bullet lists, tables — automatically. 
 3. Upload the **`.docx`** to the agent's Drive folder — the structured text was only the renderer's input; the
    deliverable is the `.docx`.
 
+**NEVER upload the raw structured text as the deliverable.** The CAPS bands and `────`/`════` rules are the
+RENDERER'S INPUT, not a document — if a saved doc ever shows literal dash lines as text, the raw input was
+uploaded: that is a FAILED delivery. Re-render and upload the `.docx` (ONE corrective re-upload; if it fails
+again, stop and tell the agent — never loop). The fallback chain when rendering breaks: `render_doc.py` →
+(`pip install python-docx`, ONCE) → the **docx skill** matching the same look, ONCE → then STOP and say the
+renderer is unavailable — never "just upload the text."
+**Verify before uploading (every doc):** read the finished `.docx` back — (a) no raw `<w:` markup in the
+content (corrupt build → rebuild); (b) depth matches the deliverable — a rich source rendered thin is a
+failed render, rebuild with the full content. Agents pay a premium; the documents must feel like it.
+
 ## The look the renderer produces (match it if you ever build by hand)
 - **Arial** everywhere (installed on every platform — never a serif). **Near-black (#111)** titles /
   headings / body — crisp, never grey; a legible **dark grey** only for the small byline + stamp.

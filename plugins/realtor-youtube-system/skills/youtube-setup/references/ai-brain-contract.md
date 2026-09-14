@@ -30,7 +30,7 @@ sync with the AI Brain plugin.**
 | Offer, USP, CTA, booking link            | `offer.md`                                     |
 | Existing lead magnets                    | `offer.md`                                     |
 | Proof (testimonials, wins, stats)        | `proof.md`                                     |
-| Business goals (drive the goal-math)     | `strategy.md`                                  |
+| Business goals (drive the goal-math)     | `strategy.md` + `business-plan.md` (the Book's confirmed target/math — reuse, never re-derive) |
 | Posting cadence + content pillars        | `content-engine.md`                            |
 | Disclaimers + claims rules               | `compliance.md`                                |
 | Brand kit (colors/fonts/logo direction)  | `brand-visual.md`                              |

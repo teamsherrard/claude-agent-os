@@ -45,8 +45,10 @@ Read `~/realtor-brain/brain.md`, then:
 - `identity/offer.md` — offer, USP, CTA, booking link, lead magnets (the plan's conversion path).
 - `identity/proof.md` — real wins/results (credibility in the plan; never invented).
 - `identity/voice.md` (+ `voice-samples.md`) — write the whole plan in their voice.
-- **`identity/strategy.md` — their BUSINESS goals** (deals/year, income, lead targets). This anchors the
-  goal-math (Phase 4). If it's empty, ask once for their goal and write it back to the Brain.
+- **`identity/strategy.md` + `identity/business-plan.md` — their BUSINESS goals + the 90-day plan.** The
+  Brain's business plan (built at Brain Setup Phase 8) already holds their target, the deals-math, and their
+  3 weekly activities — this anchors the goal-math (Phase 4). If both are empty, ask once for their goal and
+  write it back to the Brain.
 - `identity/compliance.md` — disclaimers + claims rules (titles ship publicly).
 - **The YouTube Layer** (`Setup/`) — channel URL + status, plus the plan anchors (the 12-month YouTube
   target, cadence, pillars + playlists) if a prior Game Plan set them. Competitors come from the Brain +
@@ -133,10 +135,13 @@ layout for that pillar (3–5 words beside a ~33% headshot; home tours = the hom
 they build it in their thumbnail/design tool from that exact text, so the plan and the real thumbnail match.
 
 ## Phase 4 — Your Goal → The Plan (the math that builds confidence)
-Reverse-engineer their **business goal** (from `strategy.md`) into the content plan, per the framework:
-`goal (deals/income) ÷ close rate → leads needed ÷ conversion → views/reach → cadence + pillars → 90-day
-milestones.` Show the numbers, **state the assumptions**, and frame it as a **credible path — NEVER a
-guarantee** (house rules #3 + #6). Reframe gently: subscribers are a vanity metric unless they convert — tie
+Reverse-engineer their **business goal** into the content plan, per the framework: `goal (deals/income) ÷
+close rate → leads needed ÷ conversion → views/reach → cadence + pillars → 90-day milestones.` **If the
+Brain's `business-plan.md` exists, START from its numbers** — the target and deals-math are already done and
+agent-confirmed there; this section shows YouTube's share of THAT plan (never a second, disagreeing math).
+Only derive from scratch when no business plan exists (then from `strategy.md`, or ask once). Show the
+numbers, **state the assumptions**, and frame it as a **credible path — NEVER a guarantee** (house rules
+#3 + #6). Reframe gently: subscribers are a vanity metric unless they convert — tie
 subs → leads → deals. This is the section that makes them believe *"this is genuinely possible."*
 
 ## Phase 5 — The Strategic Shifts + Video Structure + Playlists

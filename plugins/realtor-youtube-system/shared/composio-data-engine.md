@@ -3,7 +3,10 @@
 The engine that turns the Strategy layer (audit → pillars → titles → 90-day plan) and the Growth layer
 (analytics → coaching → planning → market report) from good judgment into **verified data**. It runs on the
 agent's **Composio connection** (the cohort's data connector in Cowork), which exposes YouTube's real API +
-a search/trends/news stack. **An identical copy of this file ships in the Short-Form plugin — change both.**
+a search/trends/news stack. **Sync note:** the Short-Form plugin ships a SIBLING of this file — recipes
+1–6 (YouTube + news) are shared and must stay in step across both, but its **§7 (Instagram + short-form
+recipes) is Short-Form-specific and does not exist here. Never overwrite either copy wholesale with the
+other** — sync the shared recipes only.
 
 **To the agent this is "your live data connection" — never "Composio", "API", "toolkit", or tool names.**
 
