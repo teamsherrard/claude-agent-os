@@ -30,6 +30,19 @@ the CURRENT month.**
   out June"). The title serves search; the body serves honesty. Both are satisfied.
 - **Never use partial-month data as a headline figure.** An incomplete month is not a month.
 
+### Running late in the month (the catch-up rule)
+
+Life happens and the 3rd becomes the 18th. The update is still worth making — but the title changes:
+
+| When they're actually filming | What to title it |
+|---|---|
+| First ~10 days of the month | **Current month** — the normal rule above |
+| Roughly days 10–20 | **Current month**, but lead the hook with the freshness (*"the numbers that just closed out [data period]"*) so it doesn't read as stale |
+| After ~day 20 | **Next month** — it's about to be the month everyone's searching, and a video titled for a month that's nearly over has days of life left |
+
+Never skip a month to "catch up." Two updates close together beats a gap — the gap is what breaks the
+habit, and the habit is the whole asset.
+
 ---
 
 ## 3. Interpret, don't recap (the single biggest quality lever)
@@ -59,21 +72,28 @@ Every report and every script covers all three. This is what turns one recording
 
 ---
 
-## 5. The 8 headline metrics (pull all of these)
+## 5. The 7 headline metrics — pull all of them, each with its year-over-year change
+
+**Every metric below is pulled twice: this period, and the same period last year.** The YoY change is
+an attribute of each metric, not a metric of its own — a number without its comparison is half a
+number, and half a number is useless on camera.
 
 | Metric | Why it matters |
 |---|---|
 | Benchmark / average / median price | The most-watched number — buyers and sellers lead with it |
-| YoY price change | Context: is this higher or lower than a year ago? |
 | Total sales volume | How active is the market right now? |
-| YoY sales change | Momentum: is activity building or fading? |
 | New listings | Supply entering the market this month |
 | Active inventory | Total supply available right now |
 | Days on market | How fast homes sell — the clearest demand signal |
 | Months of supply | The single best indicator of market condition |
+| Sale-to-list ratio | How close to asking homes are actually closing |
 
-**Secondary (pull if published):** sale-to-list ratio · property-type breakdowns (detached, condo,
-townhouse) · absorption rate · new-construction starts and incentives · rental vacancy and rates.
+**The eighth glance tile is the market condition** — seller's / balanced / buyer's — which is
+*derived* from months of supply (§6), not pulled. Seven pulled metrics plus the condition is what
+fills the deck's 4×2 glance grid.
+
+**Secondary (pull if published):** property-type breakdowns (detached, condo, townhouse) · absorption
+rate · new-construction starts and incentives · rental vacancy and rates.
 
 ---
 

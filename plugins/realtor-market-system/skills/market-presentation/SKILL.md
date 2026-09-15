@@ -31,8 +31,9 @@ from drifting apart.**
 ---
 
 ## Step 1 — Load the numbers, then the Brain
-1. `~/realtor-brain/memory/market-data.md` — **this month's block.** Not there? Hand to
-   **Market Research** first, then come back. Never search here.
+1. `~/realtor-brain/memory/market-data.md` — **this month's block.** **Confirm the block's month is
+   the month you're building** — building an August deck on June's numbers puts wrong figures on
+   camera under their licence. Wrong month, or missing? Hand to **Market Research**. Never search here.
 2. `~/realtor-brain/brain.md`, then `identity/brand-visual.md` (colours and fonts — the deck is the
    most visible branded thing they make), `identity/profile.md` (name, brokerage, booking link),
    `identity/voice.md` + `identity/voice-print.md` (the talking points are **spoken** — write them
@@ -77,6 +78,12 @@ the number is the biggest thing on it, arrows are direction-only, no animation.
 This is what the agent pastes into claude.ai/design to get the actual deck. It reproduces the
 presentation **slide by slide with the real values in it** — never a summary, never a template.
 
+**The faster path — if the agent has the design kits installed:** skip the paste. They upload this
+whole doc (`Presentation — [Month Year]`) to their Brand HQ project in claude.ai/design and run the
+**Monthly Market Report Kit** — it reads the doc directly (or straight from Drive when their Drive
+connector is connected there) and builds the deck plus the month's full visual set. Mention it in one
+line when delivering. The paste-ready brief below remains for Canva and kit-less agents.
+
 ```
 DECK — [City] Market Update · [Month Year]
 16:9 · 1920×1080 · [N] slides
@@ -112,6 +119,15 @@ glance, three-lens, and CTA slides (`deck-spec.md` §6).
 - **One CTA** — the secondary CTA from doctrine §9, usually the recurring report itself
 - 250–400 words. Longer than that and it's the deck, not an email.
 
+## Phase 4b — Capture the prediction
+
+The "my take" slide usually carries a forward-looking call. **Write it into this month's block in
+`memory/market-data.md` as the `PREDICTION:` line** — direction and rough magnitude, so it's testable.
+Next month, **Market Review** grades it on camera, which is the segment that builds more trust than
+any stat in the deck.
+
+No call worth grading on the slide? Leave the line out rather than inventing one.
+
 ## Phase 5 — Compliance pass
 Run the slides, the talking points, and the email through `identity/compliance.md` — disclaimer and
 licence number where the display rule applies (on a deck that's usually the CTA slide), nothing on
@@ -125,9 +141,12 @@ talking points, then the Claude Design brief, then the email version, then the D
 
 The Slide Map must be at the top — the script skill reads it from there.
 
-Then one line: *"Deck's ready — want the word-for-word script that runs on it?"*
+Then one line: *"Deck's ready — want the word-for-word script that runs on it?"* (And when they take
+it to design: *"Upload the Presentation doc to your Brand HQ design project and run the Market Report
+Kit — or paste the brief if you build in Canva."*)
 
 ## Quality checklist
+- [ ] Data block's month verified as the month being built.
 - [ ] Every figure came from the data block; nothing researched or invented here.
 - [ ] Conditionals resolved deliberately; a niche slide only exists if it has real data.
 - [ ] **Slide Map published first**, fully renumbered, with slide · script beat · running time.
@@ -141,6 +160,7 @@ Then one line: *"Deck's ready — want the word-for-word script that runs on it?
 - [ ] Email version stands alone, leads with a number, 250–400 words, one CTA.
 - [ ] Source and data period on the title and glance slides.
 - [ ] Compliance and fair-housing pass done.
+- [ ] Any forward-looking call written to the block as `PREDICTION:` — never invented.
 
 ## End every run with
 

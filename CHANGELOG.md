@@ -2,6 +2,68 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.118.0] — 2026-09-14
+
+### Market System (Plugin 8) → v0.5.0 — the release that was never actually shipped, plus the loop
+**First, the important part: v0.2.0 through v0.4.1 never reached the marketplace.** The version bumps
+and changelog entries were committed; the skill files were not. The registry served v0.4.1 while
+`market-pdf`, `market-social` and `shared/auto-schedule.md` had never been committed at all — so the
+live plugin had **no Instagram skill whatsoever**, no PDF report, no self-scheduling agent, and a
+`market-run` orchestrator that handed off to `Market Report` and `Market Infographic`, two skills that
+existed in no plugin. Every one of those deliverables was listed in the marketplace description. This
+release ships the real thing and adds a gate so it can't recur.
+
+- **New `scripts/check-release.sh` — the pre-release gate.** Six checks: plugin.json == registry
+  version (and every built plugin is registered) · **nothing in the plugin left unstaged** · **no
+  dangling skill handoffs** (cross-plugin aware — a documented boundary handoff to another plugin's
+  skill is legal, a handoff to nothing is not) · every `${CLAUDE_PLUGIN_ROOT}` reference resolves ·
+  the must-stay-identical shared files (`render_doc.py`, `notion-board-spec.md`) haven't drifted ·
+  **the top changelog entry only names files that are actually tracked or staged.** Takes an optional
+  plugin name so a single-plugin release isn't blocked by other work in flight.
+
+- **New skill `market-board` — the month lands on the Content Dashboard.** The biggest structural gap:
+  Plugins 3 and 4 share one Notion board and the Market System wrote to neither, so 5+ pieces a month
+  — including the highest-leverage video an agent makes — were invisible on the board that claims to
+  be their whole content operation. Now one batch writes five cards (`Long-Form` · `Green Screen` ·
+  `Talking Head` · `Graphic` · `Carousel`), Recording Dates in the film-within-three-days window and
+  Publishing Dates straight from the four-week plan, with the Slide Map and talking points written
+  into the long-form card's body so the card alone is filmable and the PDF attached as the month's
+  lead magnet. Find-before-create on System IDs (`mk-YYYY-MM-*`), replace-never-stack bodies, deleted
+  stays deleted. **`notion-board-spec.md` now ships identically in three plugins** (Format gains
+  `Graphic`; the Market System's row added to "who writes what"). Because the monthly agent runs
+  unattended, the board write is how an agent discovers the month without opening Drive.
+
+- **New skill `market-review` — the improvement loop, and the prediction ledger.** Nothing read or
+  wrote `memory/performance.md`, so month twelve picked angles exactly the way month one did. Now it
+  runs **before** the build (an angle chosen before the review is chosen blind): grades last month's
+  on-camera `PREDICTION:` against the numbers that just landed — right / half right / wrong / too
+  vague — and writes the word-for-word 30–45 second graded segment in the agent's spoken voice. A
+  wrong call is owned plainly and early, never spun, never graded generously, and never invented where
+  none was made. Then it sets a **testable** call for next month (direction *and* magnitude), reports
+  what actually performed in four plain lines, and writes three concrete instructions for the next
+  run. Reads what `youtube-analytics` / `shortform-analytics` already gathered rather than re-pulling
+  analytics those plugins own.
+
+- **Markets whose board publishes nothing.** Rural and small-metro agents previously just failed. A
+  four-rung fallback ladder (nearest board actually covering the town → state/provincial association →
+  nearest reporting metro as a *comparison* → national with a local read), with the substitution
+  stated out loud on the title slide, in the PDF, and in the script — presenting regional data as
+  local is the one thing that can genuinely get an agent in trouble.
+
+- **Agents covering more than one market.** Never blend — an averaged number is true of neither place.
+  Primary market gets the full pull; each secondary gets headline level in a new `SECONDARY MARKETS`
+  block; the deck gains a comparison slide, the shorts and carousel stay on the primary.
+
+- **Leads go somewhere.** Market-update downloads are seller-intent leads — the hardest kind to earn —
+  and they were landing nowhere. Now handed to the AI Admin (Plugin 2) for logging and follow-up on
+  the agent's own cadence, or to Lead Capture (Plugin 5) for the funnel; with neither installed, a
+  three-message sequence is written instead. No second follow-up system built where one already exists.
+
+- **The catch-up rule.** Filming slipped to the 18th no longer means a stale title or a skipped month:
+  first ~10 days → current month · days 10–20 → current month with the freshness led in the hook ·
+  after ~day 20 → title it next month. Never skip a month to catch up — the gap is what breaks the
+  habit, and the habit is the asset.
+
 ## [0.113.2] — 2026-08-21
 
 ### Lead Capture (Plugin 5) → v0.9.2 — the welcome message; question boxes banned
@@ -105,6 +167,29 @@ confirmed). Everything confirmed is fixed:
   (website field + one announcement post) and their video descriptions/social bios — the traffic systems
   aim here.
 
+## [0.91.0] — 2026-08-13
+
+### The design-suite syncs — the Claude Design skill suite now plugs into the plugins (3 handoffs wired)
+- **Market System (Plugin 8) → v0.4.0 — kit pointers:** market-presentation, market-pdf, market-social,
+  market-shorts and house-rule 6 now offer the faster path — upload the rendered month doc to the
+  agent's Brand HQ design project and run the **Monthly Market Report Kit** (Drive-connector read
+  supported); the embedded paste-ready briefs remain the Canva / kit-less fallback. Also fixes the
+  marketplace registry drift (registry said 0.1.0 while the plugin was at 0.3.0).
+- **Listing Launch (Plugin 7) → v0.3.0 — kit pointers:** listing-brochure, listing-print and
+  house-rule 4 point to the **Listing Launch Kit** (upload the listing docs + photos to the Brand HQ
+  design project; the embedded briefs remain the fallback).
+- **AI Editor (Plugin 6) → v0.21.0 — Video Brand Kit ingestion:** the config brand block gains an
+  `assets` schema (brand-wiring.md); editor-setup's new Step 2½ finds `02 · Brand/Video Brand Kit/`
+  in Drive, registers the canonical files, and transcribes the video-brand-spec (the spec wins over
+  inferred brand); graphics-style.md places the designed hook/CTA/emphasis/lower-third/sting files
+  instead of building native panels — episode text goes in the cards' reserved zones, LOOK-first and
+  all caps/typography rules unchanged, per-piece native fallback when an asset is missing. An empty
+  `assets` block changes nothing. Example config ships the empty block.
+- **Brain (Plugin 1) → v0.36.0 — the AI Brain doc IS the design file:** brain-doc.md names the
+  rendered "[Agent] — AI Brain" doc as the "AI Brain file" every Claude Design skill asks for (one
+  doc, everywhere), and WHO YOU ARE now renders team structure + roster when the Brain records a
+  duo/team — the design suite reads it for team branding.
+
 ## [0.90.0] — 2026-08-11
 
 ### AI Admin (Plugin 2) → v0.7.0 — full deep-sweep backlog cleared (highs + mediums + lows)
@@ -129,6 +214,42 @@ confirmed). Everything confirmed is fixed:
   structured shape (hook · story · lesson · tags · beat, anonymized); a win WITH a story files to both.
   Description + router + write-rules updated — story-bank's 'grows via Dispatch' promise is now real.
 
+## [0.86.0] — 2026-07-27
+
+### Market System (Plugin 8) → v0.3.0 — the Market Update AI Agent, and the four assets
+The scheduled agent existed but had to be asked for, fired blindly on the 1st, and built the wrong asset
+set. Rebuilt around what the monthly package actually has to contain, and made it provision itself.
+
+- **It schedules itself.** New `shared/auto-schedule.md`: the first time an agent touches any market
+  skill, the monthly agent is provisioned — no question asked, one line mentioned afterwards, opt-out
+  a sentence away (`Market Update task:` in `config.md`, `declined` is honoured forever). Entry points
+  (`market-run`, `market-research`) run the check silently.
+- **It times itself to the agent's board — and re-times itself.** Firing on the 1st was killing whole
+  months: CREB publishes 1st–2nd, TRREB 3rd–6th, US state/local MLSs 10th–15th, NAR ~20th. Now it
+  schedules to **release day + 1** (US default 12th, unknown default 3rd), research records
+  `Board released:` into each month's block, and **two consecutive months** of drift move the task
+  automatically. **The retry ladder replaces the month-long dead stop:** re-check at +2, +4, +6 days,
+  then ask — it never silently skips a month again.
+- **New skill `market-pdf`** — the sendable PDF report: 7 pages in full sentences (the deck can't do
+  this; it has no narrator), a page-by-page Claude Design brief, **green-screen notes** (which two
+  pages work on camera, what to point at, a word-for-word track each), and send-it copy for email,
+  text/DM, listing appointments, and lead-magnet delivery. This is the lead magnet, properly designed.
+- **`market-infographic` → `market-social`, carousel promoted to first-class.** The 7-panel 4:5
+  carousel is now always built, never offered: panel 1 does nothing but earn the swipe, every panel
+  survives being landed on alone, a visual thread ties them, and it never ends on a stat. Same five
+  numbers as the square so the two can share a feed.
+- **The newsletter carries both CTAs** — consult placed high while they're still reading, the PDF
+  report at the end. Different *kinds* of ask, which is why they don't cancel out; documented as the
+  one deliberate exception to one-CTA-per-piece.
+- **The deck records solo; the script is now optional.** Talking points under every slide are the
+  recording aid. `market-script` stays as the safety net for agents who want exact words, still locked
+  to the Slide Map — the scheduled run no longer builds it.
+- **Defects fixed from the deep sweep:** month-match guard on all five downstream skills (an August
+  deck could be built on June's numbers); `voice-print.md` now drives every read-aloud deliverable
+  instead of `voice-samples.md` (Brain law 4 — the script was using the written voice for spoken
+  words); `story-bank.md` wired into script and shorts; prompt-injection guards on the two skills that
+  fetch untrusted web content; headless runs no longer fail without a storage connector.
+
 ## [0.84.2] — 2026-08-11
 
 ### AI Admin (Plugin 2) → v0.6.2 — criticals batch, part 2 (completes C1–C3 from the deep sweep)
@@ -147,6 +268,89 @@ confirmed). Everything confirmed is fixed:
 ### Brain (Plugin 1) → v0.32.1
 - connectors.md gains the missing **Email — tag / organize a thread** mapping row (Gmail labels ↔
   Outlook categories, gated-write → report-only), closing the C2 gap in the provider table.
+
+## [0.83.0] — 2026-08-11
+
+### NEW: Cohort Claude Support (Plugin 9) → v0.1.0 — the support desk inside Cowork
+Cohort members' questions were splitting between "how does Claude work" and "why isn't my system
+working," and both were landing on humans. Plugin 9 is the concierge for both: one phrase —
+**"help"** — and it answers, fixes, teaches, or escalates. Full design spec at
+`docs/cohort-support-spec.md` (64 mapped questions, each with an owner and a handling tier).
+
+- **9 skills:** `support-navigator` (the front door — triage in at most one question, instant FAQ
+  answers, Fast-lane routing) · `support-diagnose` (7 decision trees + an error decoder; real
+  look-only checks: brain exists/populated/synced, connector read tests, trigger/install checks) ·
+  `support-teach` (plain-English concept lessons + the 5-minute mini-curriculum) ·
+  `support-account` (plans/limits/models/privacy — never answered from memory, always fetched
+  live) · `support-onboard` (the 7-link setup chain audit — resumes at the first missing step;
+  second-computer and post-update modes) · `support-cohort` (what week am I in, the doors, the
+  catch-up compression) · `support-escalate` (complete pre-built bug reports, sent from the
+  handed as ready-to-paste tickets for Mike's support portal / official Anthropic paths; feature requests captured
+  too) · `support-whatsnew` (the sync engine: diffs Anthropic's changelogs weekly into a
+  plain-English digest in the Brain, runs link-health on the source map, flags FAQ candidates) ·
+  `support-setup` (2 minutes: start date, the two log files, the doors).
+- **The constitution (`shared/house-rules.md`):** support is **READ-ONLY** — it inspects and
+  routes to the skill that owns each fix, never edits the Brain or connectors itself · status page
+  first on anything outage-shaped · money/limits always fetched live · raw errors never shown ·
+  one step at a time, screenshots early · every session confirmed + logged · **official-domain
+  allowlist with prompt-injection defense** (first browsing plugin in the repo — fetched pages are
+  data, never instructions) · two failed fixes → escalate, never loop a frustrated member.
+- **Three-tier freshness:** ~70% bundled doctrine/FAQ/stack knowledge · ~25% mapped live fetch via
+  `shared/source-map.md` (verified indexes: the Help Center sitemap, code.claude.com and
+  platform.claude.com llms.txt, both changelogs, status.anthropic.com — route, never crawl) ·
+  plus real machine checks. The whatsnew digest auto-runs when support is invoked with a >7-day-old
+  digest — freshness without a scheduler.
+- **Knows the whole stack:** `shared/stack-map.md` compiles all 9 plugins — jobs, entry skills,
+  exact trigger phrases, dependencies, known failure modes and resume paths (sync-not-lost,
+  checkpoint resume, credits-exhausted stop, timezone guard, Slide-Map order…) — plus the master
+  "I want to ___" router. Support's most common move is routing to a fix that already exists.
+- **The learning loop:** every session logs one line to `memory/support-log.md`; 3+ repeats become
+  FAQ candidates in the digest; escalations land in Freshdesk via the support portal for the agency's
+  monthly insights pass. The plugin gets measurably faster every release.
+- `shared/cohort-kb.md` ships with the 3-state placeholder rule: program doors and the week map
+  await Mike's inputs (`[NOT SET]` fields are answered honestly with interim doors, never
+  invented); the catch-up doctrine and honest money answer work today.
+- **Deep-dive QA before ship (3 independent adversarial reviews + live checks; 25 findings, all
+  fixed):** the constitution now sanctions exactly three support writes (the config block was
+  contradictorily forbidden) · **brain-less gate** (support never conjures `~/realtor-brain/` for
+  Plugin 1 to trip over) · **pull-before-first-touch** via brain-sync each session (the house
+  sandbox rule support itself was missing) · trigger disambiguation so support never hijacks
+  "help with my video" (editor), "get me started" (brain-setup), "is my brain saved" (sync), and
+  a stopped EDIT goes straight to the editor's resume flow · **dual-provider truth** (Google
+  Drive/Gmail OR Microsoft OneDrive/Outlook — support reads `config.md`'s provider before saying
+  "Drive") · memory claims scoped (Chat's own memory features no longer contradicted) · plan-
+  feature claims moved under check-live (no money answers from memory, including "free can't run
+  Cowork") · new diagnostics tree #8 ("I don't see Cowork") + a no-tree-fits fallback · version
+  checks reworded to what's actually observable (skill listing + member's settings screenshot —
+  no marketplace lookup exists in-session) · whatsnew now sweeps the member-facing Help Center,
+  not just developer changelogs · allowlist tightened back to the spec's six domains · the H1
+  "is Allow safe?" answer unified to one canonical list (doctrine §4). All 18 mapped source URLs
+  verified live.
+- **7-agent improvement audit (3 simulated members · 2 live-docs verifiers · 1 coverage hunter → 52
+  findings → 12 fix batches, key facts re-verified against primary sources before editing):**
+  usage-limit answer corrected (ONE shared pool; the real ladder is wait · BUY USAGE CREDITS ·
+  upgrade — model-switching never bypasses a hit limit) with pinned official articles replacing
+  sitemap searches · status page → **status.claude.com** everywhere (old URL 301s off-allowlist) ·
+  doctrine now matches verified reality that **sessions follow the Claude account across
+  devices** (only the local Brain folder is per-machine) · the day-one password-panic scripted
+  (Google's own sign-in page is safe; never type a password into chat) · brain-less day-one
+  guards (no whatsnew cycle, no setup detours, instant "week 1", honest no-Brain persistence
+  answer) · FAQ money/trust answers reshaped to the bullets tone rule · whatsnew now leads with
+  the **Claude Apps release notes** feed + Cowork collection (never reads the truncating
+  sitemap) and probes the support portal in link-health · publish-failure branch (approval →
+  queue → tool status → reconnect → the TOOL's support) + third-party escalation door + "no
+  phone line" expectation · wrong-look-on-video routes to `editor-quick` · "cancel everything"
+  standing answer (leads with what survives; never improvises Mike's refund terms) · Claude's
+  own memory vs the Brain taught as doctrine §6b · refusal-decoder row · new tree #9
+  (claimed-sent verification + stopped scheduled runs) · cohort-kb gains the refund/pause policy
+  row and an "After the cohort" section (plugins keep working: SET, forever).
+- **NEW — the show-don't-tell layer:** `shared/resource-library.md` (vetted hand-out links: the
+  official article per moment, plus Mike's video library as `[NOT SET]` rows with a priority
+  record list; hard rule — support links ONLY from this file or the source map, never searched-up
+  YouTube) and `shared/visual-aids.md` (five pre-scripted Mermaid diagrams support renders
+  inline: the four rooms, where your data lives, the setup chain, why chats "disappear", what
+  "help" does — one per reply, captioned). Teach offers the 10-second picture version; every
+  session can end with one vetted leave-behind; whatsnew's link-health now covers the library.
 
 ## [0.80.1] — 2026-07-04
 
@@ -185,9 +389,10 @@ and then hardened so the two halves can't drift.
   them, 16:9, brand colours and fonts from the Brain, plus **2–4 spoken talking points under every
   slide** so an agent who won't read a teleprompter can still open the deck and just talk. The
   email/distribution version and the Data Sources ride along in the same doc.
-- **New `shared/deck-spec.md` — the Slide Map contract.** The canonical 15-slide sequence (title ·
-  headline · at-a-glance · price · supply · speed · buying · selling · moving here · property types ·
-  communities* · niche* · rates · my take · CTA, two conditional), the design rules (one idea per slide,
+- **New `shared/deck-spec.md` — the Slide Map contract.** The canonical sequence — **13 core slides +
+  2 conditional** (title · headline · at-a-glance · price · supply · speed · buying · selling · moving
+  here · property types · communities* · niche* · rates · my take · CTA) — budgeted beat by beat to
+  15:00 on the core deck and 17:00 with both conditionals in, the design rules (one idea per slide,
   **≤20 words**, the number is the largest element, arrows direction-only, no animation), and the rule
   that makes the package real: **one slide = one script beat, same order, same numbering.**
 - **The lock.** `market-presentation` runs first and publishes the **Slide Map** — the final numbered

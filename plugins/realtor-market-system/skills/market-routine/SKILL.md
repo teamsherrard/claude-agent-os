@@ -1,12 +1,13 @@
 ---
 name: market-routine
 description: >
-  Puts the monthly market update on autopilot — the Market Update AI Agent. Sets up a real scheduled
-  task that fires on the 1st of every month, pulls the new numbers as soon as the board release lands,
-  builds the month's package, and leaves it waiting with a short note so the agent's only job is to
-  film. Also teaches the monthly rhythm itself (the Weeks 5–6 routine): what happens on which day,
-  how long each part takes, and what to do when the data is late. Adopts an existing task rather than
-  creating a twin, and never schedules anything without explicit approval.
+  Owns the Market Update AI Agent — the scheduled workflow that runs every month on its own. It is
+  provisioned automatically the first time the agent touches this plugin, timed to when their local
+  board actually publishes (not blindly the 1st), and it re-times itself as it learns their board's
+  real release day. When it fires it pulls the new numbers, builds the whole package — presentation,
+  PDF report, three shorts, Instagram infographic + carousel, and the distribution pack — and leaves
+  a five-line note. This skill also teaches the monthly rhythm (the Weeks 5–6 routine) and handles
+  changing, pausing, or turning the schedule off.
 
   Trigger on: "set up my market routine", "run my market update every month", "automate my market
   update", "the 1st of the month agent", "market update on autopilot", "my monthly market rhythm",
@@ -19,8 +20,13 @@ The system only pays off if it happens every month. This is what makes it happen
 remembering to make it happen.
 
 **Apply house rules** (`${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`).
+**Apply the auto-schedule rules** (`${CLAUDE_PLUGIN_ROOT}/shared/auto-schedule.md`) — provisioning,
+the release-day rule, self-correction, and how to turn it off. **This skill owns that file.**
 **Apply the doctrine** (`${CLAUDE_PLUGIN_ROOT}/shared/market-doctrine.md`) — the timing rule (§2) is
-the reason this is scheduled for the 1st and not the 15th.
+why this runs early in the month rather than mid-month.
+
+> **The agent never has to set this up.** It provisions itself the first time they use the plugin.
+> This skill exists for the rhythm, and for when they want to change, pause, or stop it.
 
 ---
 
@@ -38,50 +44,45 @@ table, not a lecture:
 
 | When | What happens | Who does it | How long |
 |---|---|---|---|
-| **1st** | The new numbers get pulled the moment the board release lands | The system | — |
-| **1st–2nd** | The report, script, shorts, graphic, and distribution pack get built | The system | — |
-| **Days 2–5** | **Film the market update** — read the script, share the report on screen | **The agent** | ~30 min |
-| **Days 3–6** | Video goes up · newsletter goes out · infographic posts | The agent | ~20 min |
-| **Weeks 2–4** | The three shorts and the story set go out on the posting plan | The agent | ~10 min/wk |
+| **Release day** | The new numbers get pulled the moment the board publishes | The system | — |
+| **+1 day** | Deck, PDF report, shorts, infographic, carousel, and distribution pack get built | The system | — |
+| **Within 3 days** | **Film the market update** — share the deck on screen and talk through it | **The agent** | ~30 min |
+| **+1 day** | Video goes up · newsletter goes out (PDF attached) · infographic posts | The agent | ~20 min |
+| **Weeks 2–4** | Shorts, carousel, and story set go out on the posting plan | The agent | ~10 min/wk |
 | **End of month** | Glance at what performed, so next month's angles improve | Both | ~5 min |
 
 The two rules that make it stick:
-- **Film in the first week.** The numbers are freshest, the search traffic is highest, and a market
-  update filmed on the 20th is a market update nobody watches.
+- **Film within three days of the numbers landing.** They're freshest, search traffic is highest, and
+  a market update filmed on the 20th is a market update nobody watches.
 - **One recording, one month of content.** Everything else is already written. They never sit down
   to "make content" again — they sit down once, to film.
 
-If the board release is late that month, the routine slides — it doesn't get skipped. Late data
-beats invented data, always.
+If the board release is late, **the routine slides — it never skips.** The agent gets told, the run
+re-checks every two days, and late data beats invented data every time.
 
-## Phase 2 — Offer the automation (once, plainly)
+## Phase 2 — Confirm the schedule is live (it usually already is)
 
-> Want me to just do this on the 1st of every month? I'll pull the new numbers as soon as they're
-> out and have everything built and waiting for you — you'd only ever get a note saying it's ready.
+Run the auto-schedule check (`${CLAUDE_PLUGIN_ROOT}/shared/auto-schedule.md`).
 
-If no: leave the rhythm with them, say they can start it any time, and stop. Don't ask twice.
+- **Already provisioned** → tell them when it runs and why that day: *"It's already on — runs the 4th
+  of each month, because that's when [Board] publishes."* Nothing else to do.
+- **Not provisioned** (they declined before, or something failed) → provision it now per that file,
+  and say the one line.
 
-## Phase 3 — Set it up (only with an explicit yes)
+**Never ask permission to schedule it.** It's the plugin's default behaviour; opting out is a
+sentence away and is handled in Phase 4.
 
-1. **Check the existing scheduled tasks first.** If a Market Update task already exists,
-   **adopt and update it** — never create a twin.
-2. **Create the task:** monthly, on the **1st at 9:00am in the agent's timezone** (from
-   `operations.md`), using the prompt in `references/monthly-task-prompt.md` **verbatim**.
-3. **Save the task id in `~/realtor-brain/config.md`** and **push the Brain to Drive immediately** —
-   a crash between creating and saving is how duplicate tasks get born.
-4. **Confirm in one plain line:** *"Done — on the 1st of every month I'll pull [City]'s numbers and
-   have your whole package ready. You'll get a note when it's waiting."*
-
-## Phase 4 — Run it once, together
+## Phase 3 — Run it once, together
 Don't leave them wondering what it'll do. Offer to run this month's package right now by handing to
 **Market Run**, so they see the output before the first scheduled fire. This is also how you catch a
 missing connector or an empty `market.md` while someone is still at the keyboard.
 
-## Phase 5 — Changing or stopping it
-Handle these plainly whenever asked:
+## Phase 4 — Changing, pausing, stopping
+Per `${CLAUDE_PLUGIN_ROOT}/shared/auto-schedule.md`, handled plainly whenever asked:
 - **"Change the day/time"** → update the existing task, keep the same id in `config.md`.
 - **"Pause it"** → pause rather than delete, so the id and history survive.
-- **"Stop it"** → delete the task, clear the id from `config.md`, push the Brain, and confirm.
+- **"Stop it"** → delete the task, write `Market Update task: declined` to `config.md`, push,
+  confirm in one line, and **never re-offer.**
 - **"Is it on?"** → check the task list and answer in one line.
 
 ---
@@ -91,15 +92,19 @@ Handle these plainly whenever asked:
   Brain must be synced — an unsynced Brain means a scheduled run with no city and no voice.
 - It **never posts, sends, or schedules anything.** It builds and leaves it waiting. Publishing is
   always the agent's own move.
-- If the board release isn't out on the 1st, it says so and retries rather than shipping partial-month
-  data as a headline (doctrine §2 and §7).
+- If the board release isn't out when it fires, it **re-checks every 2 days, up to 3 times** — it does
+  not wait a month and it does not ship partial-month data as a headline (doctrine §2 and §7).
+- It **learns the board's real release day** from two consecutive months and re-times itself.
+- It **does not write the word-for-word script.** The deck's talking points are the recording aid;
+  the script is built on request.
 
 ## Quality checklist
-- [ ] The rhythm was taught before the automation was offered.
-- [ ] Filming in the first week was stated as the rule that makes it work.
+- [ ] The rhythm was taught, not just the automation.
+- [ ] Filming within three days of the numbers landing was stated as the rule that makes it work.
 - [ ] Existing scheduled tasks checked; an existing task adopted rather than duplicated.
-- [ ] Task created only after an explicit yes.
-- [ ] Scheduled monthly on the 1st, in the agent's real timezone from `operations.md`.
+- [ ] Scheduled to the board's real release day + 1 — never blindly the 1st — in the agent's real
+      timezone from `operations.md`.
+- [ ] Permission was NOT asked for; opting out was left one sentence away.
 - [ ] Task prompt used verbatim from `references/monthly-task-prompt.md`.
 - [ ] Task id saved to `config.md` and the Brain pushed to Drive immediately.
 - [ ] Offered one live run so they see it work before the first scheduled fire.

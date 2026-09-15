@@ -36,6 +36,10 @@ Read `~/realtor-brain/brain.md` first, then:
 
 If `~/realtor-brain/` is missing, send them to **Realtor AI Brain — Setup** and stop.
 
+**Then run the auto-schedule check** (`${CLAUDE_PLUGIN_ROOT}/shared/auto-schedule.md`) — silently. If
+this is their first time here, the monthly agent gets provisioned now; you mention it in one line at
+the very end, never at the start.
+
 ## Step 2 — Settle the month (one line, then move)
 
 Apply the timing rule: **the current month goes in the title; the previous complete month is the
@@ -57,6 +61,15 @@ Read `~/realtor-brain/memory/market-data.md`.
 
 ---
 
+## Phase 0 — Grade last month (only if there is one)
+
+If `memory/market-data.md` has a previous month's block, hand to **Market Review** first. It grades
+last month's on-camera prediction, reads what actually performed, and writes three concrete
+instructions into `memory/performance.md` for this run to follow.
+
+**This runs before the build, not after** — its whole value is sharpening this month's angles, and an
+angle chosen before the review is an angle chosen blind. First month ever? Skip it silently.
+
 ## Phase 1 — Show the month
 
 Before building, show them what this month actually says. Three lines, no more:
@@ -72,35 +85,46 @@ angle is worth filming.
 
 Offer the whole thing first, one piece second:
 
-> That's the month. Want me to build the whole package now — the report, your YouTube script, three
-> shorts, the Instagram graphic, and the newsletter and captions? Or just the report and script so
-> you can film today?
+> That's the month. Want me to build the whole package now — your presentation, the PDF report,
+> three shorts, your Instagram graphic and carousel, and the newsletter? Or just the deck so you can
+> film today?
 
 Then hand off **in this order**, one at a time, saying in plain words what's coming next:
 
 | Order | Piece | Hand off to | Why this order |
 |---|---|---|---|
-| 1 | The screen-share report + email version | **Market Report** | Everything else references its pages |
-| 2 | The word-for-word YouTube script | **Market Script** | Built to walk through the report page by page |
-| 3 | Three short-form concepts | **Market Shorts** | Pulled from the report's strongest numbers |
-| 4 | The branded 1:1 Instagram infographic brief | **Market Infographic** | Uses the glance page's stats |
-| 5 | Lead magnet + newsletter + captions + CTAs | **Market Distribution** | Points at the finished report and video |
+| 1 | The presentation deck (+ talking points, email version) | **Market Presentation** | It publishes the Slide Map everything else is built against |
+| 2 | The sendable PDF report + green-screen notes | **Market PDF** | The lead magnet and the thing that travels |
+| 3 | Three short-form concepts | **Market Shorts** | Pulled from the deck's strongest numbers |
+| 4 | The 1:1 infographic **and** the carousel | **Market Social** | Both from the glance slide's stats |
+| 5 | Lead magnet + newsletter (2 CTAs) + captions + plan | **Market Distribution** | Points at the finished deck, PDF, and video |
+| 6 | The month's cards on their content board | **Market Board** | Makes the month visible next to their other content |
+
+**The word-for-word script is not in the default build.** The deck ships with talking points under
+every slide, so it records on its own — no teleprompter. Mention once, at the end, in a single line:
+*"Want the words written out too? I can script it line by line."* Then hand to **Market Script**.
 
 - **You never write these yourself.** You sequence them and hand them over by name. Each one already
   reads the same data block, so the agent answers nothing twice and every number matches.
 - If they asked for one piece only, hand straight to it and keep the rest warm for later.
-- Between pieces, one short line: *"Report's done — script next?"* Never a status report.
+- **The deck runs first, always.** It publishes the Slide Map, and everything else quotes it — the
+  PDF, the carousel, and any script are all written against what's on those slides.
+- Between pieces, one short line: *"Deck's done — script next?"* Never a status report.
 
 ## Phase 3 — Close the month
 
 Per `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`:
 - Everything lands in the month's Drive folder (the one the research made — find it, don't make a
   second).
-- Append one row per deliverable to `~/realtor-brain/memory/content-log.md` — the long-form and each
-  short — status `Scripted`, so next month picks fresh angles.
+- **Don't write the content log yourself.** Each skill logs its own rows as it finishes — the script
+  logs the long-form, the shorts log three, the infographic logs one. Your job is to **check** the log
+  has a row for everything that was built this month and fill only a genuine gap. Writing rows here
+  would double-log every piece.
 - **Push the Brain to Drive** (`realtor-brain-sync`). An unsynced write is a lost write.
-- If they haven't set up the monthly routine yet, offer it once in one line and hand to
-  **Market Routine**. Don't push it twice.
+- **Hand to Market Board last**, so the month lands on the same Notion board as their YouTube and
+  short-form content. No board and no interest in one → skip it silently; it's never required.
+- If the monthly agent was provisioned during this run, say so now — one line, at the end:
+  *"Also set up: on the [Nth] of every month I'll have all of this built and waiting."*
 
 ## Quality checklist
 - [ ] Brain read; nothing asked that the Brain already answers.
@@ -108,9 +132,13 @@ Per `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`:
 - [ ] The month's data block on file before anything was built; research run first if it wasn't.
 - [ ] No searches run here — every figure came from the block.
 - [ ] The month shown in three lines before the build started.
-- [ ] Hand-offs happened in order, by name — no piece written here.
+- [ ] Auto-schedule check run; if newly provisioned, mentioned in ONE line at the end.
+- [ ] Hand-offs happened in order, by name — no piece written here; the deck ran first.
+- [ ] The script was offered, not assumed — the deck records on its own.
+- [ ] Review ran BEFORE the build when a previous month existed; its instructions shaped the angles.
+- [ ] Board cards written last (or skipped cleanly if they have no board).
 - [ ] All deliverables quote identical numbers.
-- [ ] Everything saved to the month folder; content log updated; Brain pushed.
+- [ ] Everything saved to the month folder; content log checked (not re-written); Brain pushed.
 
 ## End every run with
 

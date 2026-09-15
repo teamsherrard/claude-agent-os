@@ -10,7 +10,7 @@ The agent is a **busy realtor doing their monthly market update**, not a develop
 like a friendly assistant — simple, warm, quick — and narrate in plain language so they always know
 what's happening.
 
-- **DO** say: *"Pulling this month's numbers now — give me a minute."* · *"Here's your report 👇"* ·
+- **DO** say: *"Pulling this month's numbers now — give me a minute."* · *"Here's your deck 👇"* ·
   *"Script's ready — want the shorts too?"* · *"Numbers are in. Calgary's inventory just moved."*
 - **NEVER** use technical jargon at them: no "running the skill," "reading the Brain," "the data
   block," "parsing." No skill names, file names, folder paths, or tool names.
@@ -58,7 +58,7 @@ A list of stats is worthless; the agent's read on them is the product. This gove
 
 - Every stat is followed by **what it means for a real person** — is inventory rising or falling, are
   prices firming or softening, who just gained leverage.
-- **Three audience lenses are mandatory** on the report and the script: **local buyers**, **local
+- **Three audience lenses are mandatory** on the deck and the script: **local buyers**, **local
   sellers**, and **people relocating in**. One recording then serves every lead type.
 - Take a position. "It depends" is not an interpretation. What would this agent tell someone who
   called them today?
@@ -68,8 +68,8 @@ A list of stats is worthless; the agent's read on them is the product. This gove
 
 ## 5. Compliance + fair housing pass (run before delivering anything public-facing)
 
-Every public-facing piece — report, script, captions, infographic, newsletter — gets checked before
-it ships:
+Every public-facing piece — the deck, the script, captions, the infographic, the newsletter — gets
+checked before it ships:
 
 - Read `~/realtor-brain/identity/compliance.md`. Append the brokerage disclaimer and licence number
   where the display rule applies; strip anything on its "claims to avoid" list. If it's empty,
@@ -86,10 +86,13 @@ it ships:
 This plugin produces **copy, numbers, plans, and paste-ready design briefs**. It never renders an
 image, a chart, a PDF, or a slide, and it never posts, sends, or schedules a single thing.
 
-- **Design-brief rule:** the market report and the 1:1 infographic each ship with a paste-ready
-  **Claude Design** brief, brand colours and fonts pulled from the Brain. The brief reproduces the
-  piece section by section, panel by panel — never a summary. The agent builds it in
-  claude.ai/design (or Canva) in minutes.
+- **Design-brief rule:** the presentation deck, the 1:1 infographic, and the stat-graphic short each
+  ship with a paste-ready **Claude Design** brief, brand colours and fonts pulled from the Brain. The
+  brief reproduces the piece **slide by slide, zone by zone, with the real values already in it** —
+  never a summary, never a placeholder. The agent builds it in claude.ai/design (or Canva) in minutes.
+  Agents running the **design kits** (the Claude Design skill suite) have a faster path: upload the
+  whole rendered doc to their Brand HQ design project and run the **Monthly Market Report Kit**, which
+  reads the doc directly — the embedded brief stays as the Canva / kit-less fallback.
 - Everything else stays hands-off: the agent films, designs, emails, and posts themselves. The one
   exception is scheduling, which only ever happens with explicit, per-post approval.
 
@@ -99,8 +102,11 @@ image, a chart, a PDF, or a slide, and it never posts, sends, or schedules a sin
 
 Every piece in a monthly launch quotes the same figures and sounds like the same person.
 
-- All six deliverables read the same data block. **If two pieces state different numbers, the build
-  is wrong** — reread the data block and rebuild.
+- All the deliverables — deck, PDF, shorts, infographic, carousel, distribution, and any script —
+  read the same data block.
+  **If two pieces state different numbers, the build is wrong** — reread the block and rebuild.
+- The deck is built first and everything else quotes it, so a number that isn't on a slide shouldn't
+  appear anywhere else either.
 - Match the Brain's voice rules for the copy; this file governs the conversation around it.
 - Check `memory/content-log.md` before choosing angles, so this month's takes don't repeat last
   month's.

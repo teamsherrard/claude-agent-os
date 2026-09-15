@@ -41,9 +41,14 @@ offer and the booking link, one natural line, right here while attention is high
 
 ## The Market at a Glance
 
-The money slide. All 8 headline stats at once, so the viewer gets the shape of the month before the
+The money slide. All eight stats at once, so the viewer gets the shape of the month before the
 detail. Tiles in a 4×2 grid; each tile: metric name small above · the number large · YoY with arrow
 below.
+
+**The eight tiles, in this order:** price · sales volume · new listings · active inventory · days on
+market · months of supply · sale-to-list ratio · **market condition** (the derived one — words, not a
+figure). A metric the board didn't publish this month gets a tile reading "not published" rather than
+a gap or a guess.
 
 Close it with the condition in words: *"[Month] in [City] is a [seller's / balanced / buyer's] market."*
 

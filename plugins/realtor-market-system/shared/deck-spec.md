@@ -25,12 +25,13 @@ presentation doc, and it looks like this:
 
 ```
 SLIDE MAP — July 2026   ·   14 slides   ·   ~15 min
+(13 core + the community slide; no niche slide this month)
 
 | # | Slide | Script beat | Time |
 |---|---|---|---|
-| 1 | Title — Calgary Market Update, July 2026 | Hook + intro | 0:00–1:00 |
-| 2 | The headline — "More choice than buyers have had in two years" | Intro + primary CTA | 1:00–1:40 |
-| 3 | The Market at a Glance | Section 1 opens | 1:40–3:00 |
+| 1 | Title — Calgary Market Update, July 2026 | Beat: the hook | 0:00–0:30 |
+| 2 | The headline — "More choice than buyers have had in two years" | Beat: headline + primary CTA | 0:30–1:15 |
+| 3 | The Market at a Glance | Beat: at a glance | 1:15–2:15 |
 …
 ```
 
@@ -40,40 +41,42 @@ build is wrong — fix it before delivering. This check is in both skills' check
 
 ---
 
-## 3. The canonical sequence (14 slides, 2 conditional)
+## 3. The canonical sequence (13 core slides + 2 conditional)
 
 | # | Slide | What's on it | Script beat |
 |---|---|---|---|
 | 1 | **Title** | "[City] Real Estate Market Update · [Month Year]" · agent name + brokerage · the data-period line in small type | Hook, then intro |
 | 2 | **The headline** | The one-sentence story of the month, big. Nothing else | Intro + **primary CTA** |
-| 3 | **The Market at a Glance** | All 8 headline stats as tiles with YoY arrows — the money slide | Section 1 opens |
-| 4 | **Price** | The benchmark/average price, huge, with its YoY and one line of meaning | Section 1 |
-| 5 | **Supply** | New listings · active inventory · months of supply, and the condition it implies | Section 1 |
-| 6 | **Speed** | Days on market · sale-to-list ratio, and what that says about demand | Section 1 closes with the verdict |
-| 7 | **If you're buying here** | 3 takeaways for local buyers + one concrete move | Section 2 |
-| 8 | **If you're selling here** | 3 takeaways for local sellers + one concrete move | Section 3 |
-| 9 | **If you're moving here** | 3 takeaways for relocators + one concrete move | Section 4 |
-| 10 | **Property types** | Detached / condo / townhouse side by side, with the divergence called out | Section 5 |
-| 11 | **Community spotlight** *(conditional)* | The agent's named communities + one line each | Section 6 |
-| 12 | **[Niche slide]** *(conditional)* | Only if `identity/market.md` names a specific niche with real data (e.g. new-construction starts and incentives) | Section 5b |
-| 13 | **Rates & what it actually costs** | The rate, the change, and the real monthly-payment examples | Section 7 |
+| 3 | **The Market at a Glance** | The 8 glance tiles — the money slide | Beat: at a glance |
+| 4 | **Price** | The benchmark/average price, huge, with its YoY and one line of meaning | Beat: price |
+| 5 | **Supply** | New listings · active inventory · months of supply, and the condition it implies | Beat: supply |
+| 6 | **Speed** | Days on market · sale-to-list ratio, and what that says about demand | Beat: speed, closing on the verdict |
+| 7 | **If you're buying here** | 3 takeaways for local buyers + one concrete move | Beat: buying here |
+| 8 | **If you're selling here** | 3 takeaways for local sellers + one concrete move | Beat: selling here |
+| 9 | **If you're moving here** | 3 takeaways for relocators + one concrete move | Beat: moving here |
+| 10 | **Property types** | Detached / condo / townhouse side by side, with the divergence called out | Beat: property types |
+| 11 | **Community spotlight** *(conditional)* | The agent's named communities + one line each | Beat: communities |
+| 12 | **[Niche slide]** *(conditional)* | Only if `identity/market.md` names a specific niche with real data (e.g. new-construction starts and incentives) | Beat: the niche |
+| 13 | **Rates & what it actually costs** | The rate, the change, and the real monthly-payment examples | Beat: rates + real cost |
 | 14 | **My take + what I'd do** | The agent's 2–3 sentence read, then the three lenses' one move each | Outro opens |
 | 15 | **CTA** | The real offer, booking link, handles, "send this to someone who needs it" | Outro + **secondary CTA** |
 
-*(That's 15 with both conditionals in, 13 with both out. The Slide Map states the real number.)*
+*(13 slides with both conditionals out, 14 with one, 15 with both. **The numbers in the table above
+are illustrative only** — the Slide Map carries the real ones.)*
 
-**Slides 3–6 are the doctrine's "3–4 stat slides."** Slide 3 shows everything at once so the viewer
-gets the shape of the month; 4, 5, and 6 then go deep on one idea each. Don't merge them — the glance
-slide is what the agent holds on while they set up the story, and the deep slides are what they talk
-over.
+**The four stat slides — glance, price, supply, speed — are the doctrine's "3–4 stat slides."** The
+glance slide shows everything at once so the viewer gets the shape of the month; price, supply, and
+speed then go deep on one idea each. Don't merge them: the glance slide is what the agent holds on
+while they set up the story, and the deep slides are what they talk over.
 
 ### The conditional rules
-- **Slide 11 drops** when the board doesn't publish community-level data. The script's Section 6
-  drops with it, and that time goes to the buyer and seller beats.
-- **Slide 12 only exists** when the agent has a named niche *and* there's real published data for it.
-  Never add a niche slide with no numbers on it.
-- **When a conditional drops, renumber the whole deck**, and the Slide Map carries the real numbers.
-  The script uses the map's numbers, never this file's. That's the entire reason the map exists.
+- **The community slide drops** when the board doesn't publish community-level data. Its beat drops
+  with it, and that time goes to the buying and selling beats.
+- **The niche slide only exists** when the agent has a named niche *and* there's real published data
+  for it. Never a niche slide with no numbers on it.
+- **When a conditional drops, the whole deck renumbers** — and the Slide Map carries the real numbers.
+  **Refer to slides by name, never by the number in this file.** The script uses the map's numbers
+  only. That is the entire reason the map exists.
 
 ---
 
@@ -112,13 +115,15 @@ script is the same content expanded — it never contradicts the points, it just
 
 ## 6. What the deck feeds
 
-Build it once, and it's the source for three other pieces — which is why it runs first:
+Build it once, and it's the source for everything else — which is why it runs first:
 
 | Piece | Takes from the deck |
 |---|---|
-| The script | The Slide Map, beat for beat |
-| The email / distribution version | Slides 2, 3, 7, 8, 9, and 15 rewritten as prose |
-| The 1:1 infographic | Slide 3's stats and slide 2's headline |
-| The stat-graphic short | Slide 4, 5, or 6 — whichever number is most arresting |
+| The PDF market report | The same content, rewritten in full sentences for a reader with no narrator |
+| The 1:1 infographic | The glance slide's stats and the headline slide's line |
+| The Instagram carousel | The headline, glance, and three-lens slides, one per panel |
+| The stat-graphic short | The price, supply, or speed slide — whichever number is most arresting |
+| The email / newsletter | The headline, glance, three-lens, and CTA slides, rewritten as prose |
+| The script *(on request)* | The Slide Map, beat for beat |
 
 If any of those state a number the deck doesn't, the build is wrong.

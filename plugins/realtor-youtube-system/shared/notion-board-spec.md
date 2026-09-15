@@ -30,16 +30,16 @@ plugins (like `render_doc.py`); if you change it, change both.
 
 **Page + database name:** `[Agent Name] — Content Dashboard` · icon 🎬
 **Description line:** *"Your videos and posts, from idea → script → recording → published. Built and updated
-by your AI system."* *(Today the YouTube + Short-Form systems write here; other systems' content may join later.)*
+by your AI system."* *(The YouTube, Short-Form, and Market systems all write here.)*
 
 **Columns (database properties)** — Mike's dashboard, adapted to what this system actually produces:
 
 | Column | Kind | What goes in it |
 |---|---|---|
 | **Topic** | Title | The exact video/post title (search-intent title for long-form) |
-| **Format** | Select | `Long-Form` · `Green Screen` · `Talking Head` · `Carousel` |
+| **Format** | Select | `Long-Form` · `Green Screen` · `Talking Head` · `Carousel` · `Graphic` |
 | **Status** | Select | `Idea` → `Scripted` → `Ready to Film` → `Recorded` → `Published` |
-| **Pillar** | Select | Long-form: the agent's 3 Game-Plan pillars (create the options from THEIR pillar names). Short-form: the funnel role — `Reach` · `Value` · `Trust` · `Convert` |
+| **Pillar** | Select | Long-form: the agent's 3 Game-Plan pillars (create the options from THEIR pillar names). Short-form: the funnel role — `Reach` · `Value` · `Trust` · `Convert`. Market-update cards: their market-update pillar if they have one, else `Market Update` |
 | **Context** | Text | Two short bullets, Mike-style: `• What: …` `• Outcome: …` (what the video covers + what the viewer walks away with) |
 | **Script** | URL | Link to the script doc in their Drive (added when the script is made) |
 | **SEO / Post Package** | URL | Link to the SEO package (long-form) or the post package (short-form) in Drive |
@@ -89,7 +89,15 @@ that's your YouTube view; do the same for the other formats for your Short-Form 
   the content is made (`Ready to Film`, Format + funnel role set, package link attached) and flips it to
   `Published` when the agent confirms it went out. (The Brain's `content-log` row is still written — the
   board mirrors it, never replaces it.)
-- **Either plugin can create the board** — whichever runs first. The other finds it and adds its view + rows.
+- **Market System (Plugin 8)** — writes the **whole month in one batch**, after the monthly package is built.
+  One `Long-Form` card for the market update video (the deck's talking points + the Slide Map into the body,
+  the PDF report as its lead magnet in Resource Assets, Status `Ready to Film`), plus one card per short
+  (`Green Screen` · `Talking Head` · `Graphic`) and one `Carousel` card. Recording Date = the film-within-
+  three-days window; Publishing Dates come from the distribution pack's four-week plan, so the month lands
+  on the calendar already spaced out. System IDs are `mk-YYYY-MM-*`. Because the monthly agent runs
+  unattended, the board write is the **only** way the agent sees the month waiting for them without opening
+  Drive.
+- **Any plugin can create the board** — whichever runs first. The others find it and add their views + rows.
 
 ## Two-way sync — the board and the chat always agree (no duplicates, ever)
 

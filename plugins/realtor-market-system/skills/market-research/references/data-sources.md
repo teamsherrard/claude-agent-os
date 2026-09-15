@@ -150,3 +150,49 @@ Board releases vary in timing and detail. When something's missing:
    "[city]-specific days-on-market wasn't published this month; the provincial average was [X]."
 5. **A figure looks wrong** (a 40% jump, a number out of line with every neighbouring month) → check a
    second source before using it. Most such figures are a methodology change or a misread table.
+
+---
+
+## No local board publishes for this market
+
+Rural markets, small metros, and some US counties have no board release at all. **The month still
+ships** — it just says clearly where the numbers come from. Work down this ladder and stop at the
+first rung that has real data:
+
+1. **The nearest board that actually covers this town.** Many small markets are inside a larger
+   board's reporting area under a sub-region name. Search `[town] [larger board] statistics` and
+   `[county/region] real estate statistics` before concluding there's nothing.
+2. **The provincial / state association.** Always publishes, always monthly. Label it plainly:
+   *"[State] Association data — the closest published figures to [town]."*
+3. **The nearest reporting metro, as a comparison rather than a substitute.** *"[Town] doesn't get
+   its own published stats; here's [Metro], 40 minutes away, and here's how ours usually differs."*
+4. **National, last.** Only with a local interpretation attached — a national number read out with no
+   local read is the exact failure doctrine §10.7 warns about.
+
+**Say the substitution out loud, every time** — on the title slide, in the PDF's data-period line, and
+in the script. *"There's no published board data for [town], so these are [State] numbers"* is honest
+and costs nothing. Presenting regional data as local is the one thing that can actually get an agent
+in trouble.
+
+**The upside worth telling them:** in a market with no published stats, the agent who publishes a
+monthly read owns that search term completely, because literally nobody else is doing it.
+
+---
+
+## The agent covers more than one market
+
+`identity/market.md` sometimes names two genuinely separate markets (a city and a commuter town, two
+sides of a metro). Don't average them — an averaged number is true of neither place.
+
+- **One market is primary.** Whichever their `market.md` leads with, or the one most of their business
+  is in. Ask once if it's genuinely unclear, then record the answer in `market.md` so it's never asked
+  again.
+- **The primary gets the full pull** — all 7 metrics, communities, property types, affordability.
+- **Each secondary gets headline level only** — price, sales, days on market, months of supply, each
+  with its YoY. Enough to speak to it credibly, not enough to bloat the month.
+- **The data block carries a `SECONDARY MARKETS` section** with those headline figures per market.
+- **Downstream:** the deck adds one comparison slide (*"[Primary] vs [Secondary] this month"*), and
+  the PDF gets a short section. The shorts and the carousel stay on the primary — splitting a
+  30-second video across two markets serves neither.
+- **Never blend two markets into one figure**, and never let a secondary market's number appear
+  without its market named next to it.

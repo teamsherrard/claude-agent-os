@@ -87,7 +87,8 @@ Built for the scroll. One number, big enough to read at a glance, that works wit
 pays off when it's turned on. The most shareable of the three and the best fit for stories.
 
 ### Choosing the number
-The single most arresting stat of the month. Best candidates: the biggest YoY swing · the number that
+The single most arresting stat of the month — in practice, whichever of the deck's stat slides
+(price · supply · speed) hit hardest, so the short and the video reinforce the same number. Best candidates: the biggest YoY swing · the number that
 crosses a threshold (a market flipping from balanced to buyer's) · the affordability figure · the
 outlier community. Say why it's the one.
 

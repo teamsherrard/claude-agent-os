@@ -14,11 +14,12 @@ clean and scannable — never a wall of text.**
 [Agent Name] — Market Updates/
 └── 2026-07 · July 2026/                     (one month — created by the research skill)
       ├── Market Data — July 2026            (the researched numbers + sources; the source of truth)
-      ├── Market Report — July 2026          (screen-share report + the email version)
-      ├── YouTube Script — July 2026
+      ├── Presentation — July 2026           (Slide Map · slides + talking points · design brief · email version)
+      ├── Market Report PDF — July 2026      (the sendable doc · green-screen notes · send-it copy)
       ├── Short-Form Pack — July 2026
-      ├── Infographic Brief — July 2026
-      └── Distribution Pack — July 2026
+      ├── Instagram Pack — July 2026         (the 1:1 infographic + the carousel)
+      ├── Distribution Pack — July 2026
+      └── YouTube Script — July 2026         (only if the agent asked for the word-for-word script)
 ```
 
 One folder per month, created by the **Market Research** skill and reused by every other skill.
@@ -35,11 +36,20 @@ anything the agent will reuse, film from, or hand to a designer gets saved.
 The folder's month is the month in the **title** of the update (the current month), not the month the
 data covers — that's what the agent will look for later. The data period is stated inside each doc.
 
+## 2b. What is NOT a file
+
+Two parts of the month don't live in Drive:
+- **The content board cards** (Market Board) live in the agent's Notion. The Drive docs stay the
+  record; the board is the view.
+- **The review** (Market Review) writes to `~/realtor-brain/memory/performance.md`, not the month
+  folder — it's memory that shapes the next run, not a deliverable for this one.
+
 ## 3. The data block — the one file every skill reads
 
 The researched numbers live in the Brain at **`~/realtor-brain/memory/market-data.md`**, appended as
 one dated block per month (newest at the top). This is what makes "one command" work: research runs
-once, and the report, script, shorts, infographic, and distribution pack all quote the same figures.
+once, and the presentation, script, shorts, infographic, and distribution pack all quote the same
+figures.
 
 - **Never research from a skill other than Market Research.** Read the block.
 - If the block for the requested month doesn't exist, hand to **Market Research** first.
