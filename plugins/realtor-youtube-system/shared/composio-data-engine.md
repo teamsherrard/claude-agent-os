@@ -1,3 +1,13 @@
+# ⛔ PARKED — PRO TIER ONLY (not active in this version)
+
+**No skill in this plugin uses this file today. Do not call the data connection, do not offer it, do not
+mention it to agents.** The current product runs entirely on the classic paths (public channel/web reads +
+the agent's YouTube Studio export/screenshots). This file preserves the verified recipes and hard rules for
+the future PRO tier — the team will map that out separately. Until then, treat this file as documentation
+only.
+
+---
+
 # The Live Data Engine (Composio) — real numbers behind Strategy + Growth
 
 The engine that turns the Strategy layer (audit → pillars → titles → 90-day plan) and the Growth layer

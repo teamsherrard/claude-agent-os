@@ -6,8 +6,8 @@ description: >
   keywords, the playlist structure (their real Game Plan playlists), a banner text brief, upload defaults
   (with the doctrine's CTA-first default description), and a channel trailer plan — delivered as a
   paste-by-paste checklist in YouTube Studio's own order, plus a saved Channel Page Kit doc. Works for a
-  brand-new channel (week-1: page ready before the first video) or as a fix for a messy existing one (with
-  the data connection it reads their REAL current page first). This owns the channel PAGE only — full
+  brand-new channel (week-1: page ready before the first video) or as a fix for a messy existing one (it
+  reads their real current page — they just share the link). This owns the channel PAGE only — full
   system onboarding ("set up my YouTube system") belongs to youtube-setup.
 
   Triggers on "set up my channel page", "set up my youtube channel", "channel setup", "fix my channel",
@@ -28,11 +28,9 @@ description order — it governs the upload-defaults template), **§15.1 + Shift
 one per focus), **§16** (search language: write words people actually type), **§21** (compliance on
 everything public). The channel page is doctrine §18 applied to the CHANNEL instead of a video.
 
-**The Live Data Engine** (`${CLAUDE_PLUGIN_ROOT}/shared/composio-data-engine.md`): with the data
-connection, the EXISTING-channel path reads their real current page first (recipe 1 with the snippet part —
-current description, handle, country) so the fix is grounded in what's actually there. Read-only, always.
-Without it: ask them to paste their channel link (public read) or their current about text. **Never say
-"connect your channel"** — it's a link or a paste.
+**EXISTING-channel path:** ground the fix in what's actually there — ask them to share their channel link
+(read the public page) or paste their current about text. **Never say "connect your channel"** — it's a
+link or a paste, nothing technical.
 
 ## Step 1 — Load everything (ask NOTHING the system knows)
 - **The Brain:** `profile.md` (name, brokerage, market), `market.md` (communities by name), `avatars.md`

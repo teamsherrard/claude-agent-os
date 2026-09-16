@@ -31,9 +31,7 @@ the spot in plain words and suggest the agent name this chat after the video.
 **First, actually RUN the competitive audit (§11.5/§16.4) — search YouTube now, don't skip this:** find the
 **top 3–5 real videos on this exact topic in THEIR market** (per the competitive-audit lane in
 `${CLAUDE_PLUGIN_ROOT}/skills/youtube-research/references/research-method.md` — market-first, comparable
-markets only as the fallback, quality bar applied). **With the data connection, run it through the Live Data
-Engine (`${CLAUDE_PLUGIN_ROOT}/shared/composio-data-engine.md`, recipes 3–4) — references then carry EXACT
-view counts from the API instead of approximations.** Capture each as `link · channel · ~views · the read`
+markets only as the fallback, quality bar applied). Capture each as `link · channel · ~views · the read`
 (what works, what's missing, how we beat it). REAL links you actually found — never invented; if a view
 count isn't visible, leave it off rather than guess.
 Then, informed by that read: confirm or refine the final **Title**, the **Hook**, and **3 short thumbnail

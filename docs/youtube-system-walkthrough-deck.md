@@ -60,11 +60,10 @@ What happens:
 - It reads your Brain. It asks nothing it already knows.
 - It asks ONE question: your channel link, or "starting fresh."
 - It builds your folders in Google Drive.
-- It offers the live data sign-in. **Say yes.**
 Takes about 5 minutes.
 
-**SAY:** One question — that's the whole setup. When it offers the data sign-in, say yes. That's what
-puts real numbers into your audit, your titles, and your reference videos instead of guesses.
+**SAY:** One question — that's the whole setup. No connections, no sign-ins, nothing technical. It reads
+your Brain, asks about your channel, builds your folders, and moves straight into your Game Plan.
 
 ---
 
@@ -195,7 +194,7 @@ just uploading. The system gives you the filming order so you're not changing sh
 **ON SLIDE:**
 ## After every video, two commands
 - `"Repurpose this"` → shorts scripts, a blog post, an email, social posts
-- `"Check my comments"` → it reads your real comments and:
+- `"Check my comments"` → drop screenshots of your comments, and it:
   - flags the **leads** — "2 of these are buyers, answer today"
   - drafts the replies in your voice — you paste them
   - pulls video ideas from what viewers asked
@@ -315,5 +314,5 @@ Open Cowork and type:
 ### `"Set up my YouTube system"`
 Your Game Plan is 10 minutes away.
 
-**SAY:** Don't watch this twice — go run it. Type the command, say yes to the data sign-in, and film the
-first title on your plan this week. See you in the community with your first video.
+**SAY:** Don't watch this twice — go run it. Type the command and film the first title on your plan this
+week. See you in the community with your first video.

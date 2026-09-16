@@ -59,11 +59,6 @@ Read `~/realtor-brain/brain.md`, then:
 ## Step 2 — Read the framework + line up the engines
 - `references/gameplan-framework.md` — **the backbone** (Mike's structure, the audit-scaling, pillar logic,
   the exact-title method, the goal-math, the 90-day calendar + metrics, the stamp).
-- **The Live Data Engine** (`${CLAUDE_PLUGIN_ROOT}/shared/composio-data-engine.md`) — **the setup-time
-  FIRST Game Plan runs on the classic paths only** (public channel reads + Studio export; no engine calls,
-  no permission cards mid-onboarding — engine rule). On **later runs and refreshes**, the engine powers
-  every data step: the audit (recipe 1), competitor scan (2), the gap analysis + keyword research (3) —
-  with the plain-words heads-up before the session's first call. Read-only, always.
 - This skill **orchestrates the existing engines** — don't reinvent them:
   - Audit → `${CLAUDE_PLUGIN_ROOT}/skills/youtube-analytics/SKILL.md` (their channel/CSV/screenshot read)
   - Competitor analysis → `${CLAUDE_PLUGIN_ROOT}/skills/youtube-outliers/SKILL.md`
@@ -73,10 +68,8 @@ Read `~/realtor-brain/brain.md`, then:
 
 ## Step 3 — Get the channel data for the audit (scaled — house rules #7 plain talk)
 The audit flexes to wherever they are (full detail in the framework). The channel is mostly **public**, so:
-- **Active channel** → **setup-time first plan: research the public channel from its URL** (titles, view
-  counts, lengths, top performers, upload cadence — no engine calls during onboarding). **Later runs /
-  refreshes: pull it live** (engine recipe 1: channel stats → the catalog → per-video views/lengths/dates —
-  real numbers on every claim, with the plain-words heads-up before the session's first call). Either way, offer the
+- **Active channel** → research the public channel from its URL: titles, view counts, lengths, top
+  performers, upload cadence. Either way, offer the
   deeper read in one plain line: *"Want me to go deeper? Drop a screenshot of your YouTube Studio analytics
   or your export and I'll add your watch-time and click data."* Never required.
 - **Empty / none / starting fresh** → skip the audit numbers entirely; lead with competitor analysis + the
@@ -99,11 +92,10 @@ insight: *"your best-performing content has always been X — there's an audienc
 
 ## Phase 2 — The 3 Pillars (the agent's thematic FOCUSES, chosen by LEAD TYPE + the GAP)
 Pick **3 high-intent pillars** from the Brain (niche, market, avatars) + real demand (Research) + what's
-winning locally (Outliers). **With the data connection, run the gap analysis (engine recipe 3) on the
-candidate angles first** — real demand signals + weak/stale/non-local coverage = the pillar bet, with the
-evidence named HONESTLY in the plan (*"the top videos on this topic pull 100k+ views and none are local —
-nobody here owns it"* — top-video views and who ranks, NEVER result counts dressed up as "searches" or
-"demand volume"; engine hard rule #3). Each pillar
+winning locally (Outliers). **Run the gap check on the candidate angles first** (web/YouTube
+search): real demand signals + weak/stale/non-local coverage = the pillar bet, with the evidence named
+HONESTLY in the plan (*"the top videos on this topic pull 100k+ views and none are local — nobody here owns
+it"* — top-video views and who ranks, NEVER result counts dressed up as "searches" or "demand volume"). Each pillar
 targets a specific motivated lead. For each: a short *"why this
 pillar generates leads"* (the lead psychology) + a named playlist. (e.g., a new-construction specialist: New
 Builds / [City] Market Updates / Relocation to [City].)
@@ -117,8 +109,7 @@ test all six types in the first 90 days before over-committing to a focus (§15.
 For each pillar, generate **15–20 EXACT, search-optimized titles** (not vague ideas), each annotated with
 **Search Intent & Lead Type**, ordered **broad → niche** (highest search volume → highest lead intent). Use
 real search language (the "type it into YouTube" test) + the idea-templates + competitor outlier patterns —
-**and with the data connection, ground them in the keyword research (engine recipe 3):** what people
-demonstrably search in their market, what ranks, and where the coverage gaps are.
+grounded in what people demonstrably search in their market, what ranks, and where the coverage gaps are.
 **Three hard gates on every title + ranked list (cohort feedback — these shipped wrong once):**
 1. **The market IS in the title.** Every title names their city/community ("…in Austin", "Austin vs …",
    "[Community] …"). A title that could run on any city's channel — e.g. "Do You Even Need a Realtor if the

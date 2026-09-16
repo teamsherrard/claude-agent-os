@@ -88,13 +88,10 @@ it stalls them. Just confirm Drive's good and keep moving. One plain line is ple
   *"one-time connect for that — takes a sec"* and set it up then, at the point of need.
 - **YouTube — no connection required** (analytics via their Studio export; competitor scans via the web).
   Never ask them for API keys.
-- **The live data connection: NOT during setup — don't mention it, don't check it, don't touch it.**
-  Setup makes ZERO calls to the data connection (no listing, no checking, no sign-in) — a technical
-  permission card popping up mid-onboarding confuses agents and kills the moment. The data engine
-  activates on its own LATER, at the first real data job after onboarding (see
-  `${CLAUDE_PLUGIN_ROOT}/shared/composio-data-engine.md` — "When it activates"). Setup and the first Game
-  Plan run entirely on the classic paths (public channel reads + Studio export). Nothing is lost — the
-  engine upgrades everything from the first post-setup task onward.
+- **No data connections in this version — don't mention one, don't check one, don't touch one.** The
+  whole system runs on public channel reads + the agent's Studio export/screenshots. (A live data
+  connection is parked for the future PRO tier — `shared/composio-data-engine.md` — and is not used by
+  any skill today.)
 
 ## Step 5 — Provision the Drive workspace (minimal)
 Using the Google Drive connector, create the structure in `references/drive-structure.md`: the top

@@ -1,6 +1,18 @@
 # Changelog
 
-All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
+All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.## [0.121.0] — 2026-09-15
+
+### Composio removed from the current product — parked for the PRO tier (YouTube v0.14.0 · Short-Form v0.13.5)
+Mike's call from the live cold-test: no data connections in this version at all. Everything runs on the
+classic paths — public channel/web reads + the agent's Studio export/screenshots.
+- `shared/composio-data-engine.md` carries a ⛔ PARKED banner (PRO tier; documentation only — the verified
+  recipes are preserved for the later mapping) and NO skill references it as an active path anymore.
+- De-wired across 13 YouTube files (setup, gameplan, make-video, research + method, outliers, analytics,
+  market-report, coach, consistency, seo, comments, channel, Layer template) + Short-Form's greenscreen.
+- The comment engine now works from comment screenshots/pastes (still real-comments-only, never invented);
+  the channel-page fix reads the public page from the shared link.
+- Walkthrough deck updated (no sign-in step; comments = drop screenshots); marketplace descriptions cleaned.
+
 ## [0.120.1] — 2026-09-15
 
 ### Cold-test fix: no Composio during onboarding (YouTube v0.13.1 · Short-Form v0.13.4)
