@@ -98,6 +98,20 @@ image, a chart, a PDF, or a slide, and it never posts, sends, or schedules a sin
 
 ---
 
+## 6b. Never install anything, and never let a command stall the month
+
+Nothing in this plugin needs a package, a login, or a build step. Every command it asks for finishes
+in seconds.
+
+- **Never run `pip`, `npm`, `brew`, or any installer.** Not to fix a missing dependency, not to "make
+  the doc look right." In a sandbox these block for minutes and read as a hang to the agent watching.
+- **A tool that isn't available is a fallback, not a blocker.** No renderer → plain text. No Drive →
+  deliver in chat. No Notion → skip the board. Say one plain line and keep going.
+- **If a command is still running after a few seconds, stop it.** Then take the fallback. The agent is
+  sitting there watching a spinner; a text version now beats a styled version never.
+
+---
+
 ## 7. One month, one set of numbers, one voice
 
 Every piece in a monthly launch quotes the same figures and sounds like the same person.

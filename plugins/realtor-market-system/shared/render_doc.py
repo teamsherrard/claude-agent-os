@@ -104,7 +104,13 @@ try:
     from docx.oxml.ns import qn
     from docx.oxml import OxmlElement
 except ImportError:
-    sys.stderr.write("ERROR: python-docx is required.  Install it with:  pip install python-docx\n")
+    sys.stderr.write(
+        "RENDERER-UNAVAILABLE: python-docx is not installed in this environment.\n"
+        "DO NOT attempt to install it. DO NOT run pip, and do not retry this command --\n"
+        "in a sandbox a package install can block for many minutes and looks like a hang.\n"
+        "Fall back immediately: save the structured text as a .md/.txt file instead, upload\n"
+        "THAT, and tell the agent in one plain line that the styled version needs the\n"
+        "renderer. Never let this stop the delivery.\n")
     sys.exit(2)
 
 # ---------- the one house style (neutral PREMIUM — no client branding, no colour) ----------

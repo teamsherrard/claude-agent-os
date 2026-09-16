@@ -81,7 +81,8 @@ Resource Assets, Publishing/Recording (whichever isn't shown), System ID — the
 click away. If the connector can't set column visibility, tell the agent in one line how (*"click any
 column header → Hide in view — hide everything except Topic, Format, Pillar, Status, and the date"*).
 
-**Card icons (set per card, consistent):** 🎬 Long-Form · 🟩 Green Screen · 🎤 Talking Head · 🖼 Carousel —
+**Card icons (set per card, consistent):** 🎬 Long-Form · 🟩 Green Screen · 🎤 Talking Head · 🖼 Carousel ·
+📊 Graphic —
 the board reads at a glance; never mix ad-hoc icons.
 
 ## Who writes what

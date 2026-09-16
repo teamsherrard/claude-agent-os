@@ -10,7 +10,10 @@ description: >
 
   Trigger on: "run my market update", "run my market update for [month]", "my monthly market update",
   "build my market package", "market update for [month]", "do my market update", "it's the 1st — run
-  my market update", or whenever the agent wants the whole monthly launch rather than one single piece.
+  my market update", "launch market update plugin", "launch the market plugin", "launch my market
+  system", "start my market update", "open my market system", "market update plugin", or whenever the
+  agent wants the whole monthly launch rather than one single piece. This is the DEFAULT entry point
+  for the plugin — any vague or first-time market request lands here.
 ---
 
 # Run My Market Update

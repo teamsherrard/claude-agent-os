@@ -40,6 +40,25 @@ the technical moment onboarding must never show. Locked in both engine copies:
 - The setup-time FIRST Game Plan runs classic paths only (public reads + Studio export); later runs get
   the live data.
 
+## [0.121.2] — 2026-09-16
+
+### Hang fix — a missing renderer could stall a run for half an hour (all plugins)
+Live cohort test: "Launch Market Update Plugin" sat on one command for **28 minutes**. Two causes, both fixed.
+
+- **Root cause — `render_doc.py` told Claude to install a package.** Its missing-dependency message read
+  *"Install it with: pip install python-docx"*, so in a sandbox Claude would dutifully try, and a blocked
+  package install stalls for many minutes and looks exactly like a freeze. The message is now
+  `RENDERER-UNAVAILABLE` and says explicitly: **do not install, do not run pip, do not retry** — fall back
+  to a `.md` and keep going. Propagated to all **6** copies (the release gate enforces they stay identical).
+- **New house rule (Market System §6b) + output-standard fallback:** never run an installer; a tool that
+  isn't there is a fallback, not a blocker (no renderer → plain text · no Drive → chat · no Notion → skip
+  the board); **no command in this plugin should take more than a few seconds — if one is still running,
+  stop it and take the fallback.** The month always ships.
+- **Trigger gap:** *"Launch Market Update Plugin"* — the phrase the walkthrough deck and a new cohort
+  student both naturally produce — matched **no skill in Plugin 8**, so the run never routed to the market
+  system at all. `market-run` now takes the launch/open/start phrasings and is declared the plugin's
+  default entry point, matching how `brain-setup` and `leadcapture-navigator` already work.
+
 ## [0.120.0] — 2026-09-15
 
 ### Brain (Plugin 1) → v0.59.0 — two market leftovers that never landed (found by the new release gate)

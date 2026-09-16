@@ -65,6 +65,13 @@ figures.
   renderer's input; the deliverable is the `.docx`.
 - **No Drive connector?** Deliver the same content in chat as clean copy blocks and say plainly that
   connecting Google Drive means it saves itself next time. Never block the month on setup.
+- **If the renderer won't run** (it prints `RENDERER-UNAVAILABLE`): **do not install anything, do not
+  run `pip`, do not retry the command.** In a sandbox a package install can block for many minutes and
+  looks exactly like a freeze. Save the structured text as a `.md` instead, upload that, and say one
+  plain line — *"saved as a text version; the styled one needs a component this environment doesn't
+  have."* The month always ships.
+- **No command in this plugin should take more than a few seconds.** If one is still running after
+  that, stop it and use the fallback rather than waiting.
 
 ## 5. How every doc reads
 - Title block: the piece + the month + the agent's name and market + the **data period** the numbers cover.
