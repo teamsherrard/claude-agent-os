@@ -28,6 +28,10 @@ clean and scannable — never a wall of text.**
       └── Sold — 412 Maplewood Drive
 ```
 
+**The board and the queue are not files.** `listing-board` mirrors these docs into Notion and
+`listing-publish` pushes the captions into the agent's posting tool — neither writes anything new
+into Drive. The folder above stays the complete saved record.
+
 **WIN IT is the exception:** the listing presentation is built *before* there's a listing, so it
 saves loose in `[Agent Name] — Listings/`. When the agent wins it, the intake creates the dated
 folder — move the presentation into it if the connector allows, otherwise leave it and don't fuss.

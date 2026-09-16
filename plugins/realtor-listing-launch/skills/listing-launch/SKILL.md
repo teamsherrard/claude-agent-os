@@ -48,17 +48,26 @@ Day 1 and it decides which stages are even in play.
 
 ## Step 3 — Pick the stages that apply
 
-Read **Built so far** in the listing block, then work out where this listing actually is:
+Read **`Built:`** in the listing block (per `${CLAUDE_PLUGIN_ROOT}/shared/listing-schema.md` — and
+read an older `Built so far:` line with its migration rules), then work out where this listing is:
 
 | If they're… | Start at | Skip |
 |---|---|---|
 | Pitching, not signed | **WIN IT** | Everything else until they win it |
 | Signed, not in the MLS | **LIST IT** | WIN IT |
-| Live now | **LAUNCH IT** | WIN IT, LIST IT if the description exists |
+| Live now | **LAUNCH IT** | WIN IT, LIST IT if `description` is already built |
+| Open house within 7 days | **SHOW IT** | Anything that can wait until after it |
+| Live 4+ weeks, no offers | **REVIVE IT** — the honest read first | New launch content until the read says why |
+| An offer in, or a deadline set | **SELL IT** | Everything else — this one is same-day |
 | Under contract | **CLOSE IT** | Everything before it |
+| `Expired` · `Withdrawn` · `Terminated` | **Nothing.** Say one plain line and stop | All of it |
 
 **Skip forward freely, never backward.** Say each skip in one plain line — never make them justify it,
 and never run a stage whose trigger hasn't happened (no just-sold content on day one).
+
+**A live listing also needs SERVE IT running quietly in the background** — the weekly seller update
+is what keeps the listing long enough for the rest of the plan to work. Mention it once when the
+launch is done, not during it.
 
 **FILM IT or TOUR IT — ask which, don't run both.** One question: *"Can you get back to the house with
 your phone, or should I build the tour from the photos?"* Filming → FILM IT. Can't or won't → TOUR IT.
@@ -96,7 +105,11 @@ Offer the whole thing first, one piece second:
 > That's the plan. Want me to build all of it now — description, posts, ads, the video, the shorts,
 > and the open house kit? Or just the first piece so you can post tonight?
 
-Then hand off **in stage order**, one at a time, saying in plain words what's coming next:
+Then hand off **in the plan's own order** — the order the table in Phase 1 puts them in, because
+that's what the agent is looking at. The stage list below is the *catalogue* of who does what, not a
+running order: if the plan says the shorts go out on day 2, the shorts get built second, not seventh.
+
+Hand off one at a time, saying in plain words what's coming next:
 
 | Order | Stage | What they get | Hand off to |
 |---|---|---|---|
@@ -108,7 +121,10 @@ Then hand off **in stage order**, one at a time, saying in plain words what's co
 | 6 | TOUR IT | Cinematic tour from the photos | **`listing-tour`** |
 | 7 | CLIP IT | Three shorts + captions | **`listing-clips`** |
 | 8 | SHOW IT | The open house kit | **`listing-openhouse`** |
-| 9 | CLOSE IT | Just-sold content, queued | **`listing-sold`** |
+| 9 | SERVE IT | Feedback, weekly seller update, marketing report | **`listing-seller`** |
+| 10 | REVIVE IT | The honest read, price, re-launch, expiry | **`listing-revive`** |
+| 11 | SELL IT | Offer deadline, final calls, under-bidders | **`listing-offers`** |
+| 12 | CLOSE IT | Just-sold content, queued | **`listing-sold`** |
 
 And the supporting pieces, offered when the stage calls for them:
 
@@ -118,6 +134,19 @@ And the supporting pieces, offered when the stage calls for them:
 | Postcards + door hanger | **`listing-print`** | LAUNCH IT and CLOSE IT |
 | Database email, neighbour texts, buyer matches | **`listing-outreach`** | LAUNCH IT and SHOW IT |
 
+And the system layer, when it's the right moment:
+
+| Need | Hand off to |
+|---|---|
+| First time through, or the MLS limit / farm / print rules keep getting asked | **`listing-setup`** |
+| "Schedule these for me" / the launch is written and they don't want to paste | **`listing-publish`** |
+| More than one listing on the go, or "what needs attention?" | **`listing-board`** |
+| "Keep an eye on my listings" / the open house crept up on them | **`listing-routine`** |
+| "Did any of this work?" / "do my listings sell faster with video?" | **`listing-analytics`** |
+
+**Never run setup mid-launch.** If it hasn't been run, note it once at the *end* — *"Want me to set
+this up properly? Two minutes, and I'll stop asking about your MLS limit."* — and keep going.
+
 - **You never write these yourself.** You sequence them and hand them over by name. Each one already
   reads the listing block, so the agent answers nothing twice.
 - If they asked for one piece only, hand straight to it and keep the plan warm for later.
@@ -125,11 +154,14 @@ And the supporting pieces, offered when the stage calls for them:
 
 ## Phase 3 — "What's left?"
 
-An agent will come back mid-launch and ask what's still open. Answer from **Built so far** in the
+An agent will come back mid-launch and ask what's still open. Answer from **`Built:`** in the
 listing block — never re-derive it and never re-ask:
 
 > On Maplewood you've got the description, the posts, and the walkthrough done. Still open: the ad
 > plan, the shorts, and the open house kit. Want the ad plan next?
+
+If a **listing board** exists, read its **Next Up** instead of re-deriving — it's the same answer,
+already computed, and it covers every listing at once.
 
 Three things done, three things left, one offer. Never a full audit.
 
@@ -138,23 +170,28 @@ Three things done, three things left, one offer. Never a full audit.
 Per `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`:
 - Save the plan as **`Launch Plan — [Street Address]`** into that listing's Drive folder (the one the
   intake made — find it, don't make a second). The 14 days go in a bordered table.
-- As each piece finishes, update the **`Built so far:`** line in that listing's block in
-  `~/realtor-brain/memory/listings.md` — so a week later they can ask what's left and get an answer.
+- As each piece finishes, append its token to the **`Built:`** line in that listing's block in
+  `~/realtor-brain/memory/listings.md`, from the controlled vocabulary in `listing-schema.md` — so a
+  week later they can ask what's left and get an answer, and the board and the morning watch agree.
+- **Any market figure in the plan comes from `~/realtor-brain/memory/market-data.md`** if this
+  month's block is there — it's already sourced and dated. Never re-research it, and never put an
+  uncited number in front of a seller.
 - No Drive connector? Deliver clean copy blocks in chat, say kindly that connecting Drive means it
   saves itself next time, and never let it hold up the launch.
 
 ## Quality checklist
 - [ ] Brain read; nothing asked that the Brain or the listing block already answers.
 - [ ] Listing on file before anything is built — intake run first if it wasn't.
-- [ ] **Built so far** read, and the starting stage chosen from where the listing actually is.
+- [ ] **`Built:`** read, and the starting stage chosen from where the listing actually is.
 - [ ] FILM IT vs TOUR IT asked as one question — never both run by default.
 - [ ] Plan is 14 days in a table: day · what goes out · where · which piece.
 - [ ] First 72 hours carry the most, and the stage sets Day 1 (−3 · day 1 · backward from the date).
 - [ ] Plan rows written in the agent's words — no stage names said out loud, ever.
 - [ ] Only their platforms; only real dates; nothing invented about the home.
 - [ ] Fair housing pass run on everything public-facing.
-- [ ] Hand-offs happen in stage order, by name — no piece written here.
-- [ ] Plan saved to the listing's folder and `Built so far` kept current.
+- [ ] Hand-offs happen **in the plan's order**, by name — never the stage-table order, and no piece
+      written here.
+- [ ] Plan saved to the listing's folder and `Built:` kept current.
 
 ## End every run with
 

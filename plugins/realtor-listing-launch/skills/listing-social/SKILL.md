@@ -58,7 +58,9 @@ neighbourhood, their brand tag from the content engine — not generic #realesta
    Label it clearly: **HOLD — post only if the price changes.**
 6. **Just sold** — pre-written for the finish. Thank the sellers, name what buyers responded to, close
    with the soft "thinking of selling on this street?" line. Label it clearly: **HOLD — post after it
-   closes.**
+   closes.** This is a *placeholder*, not the final piece: when it actually closes, **CLOSE IT**
+   (`listing-sold`) writes the real sold post with the real numbers and the real story, and it
+   **replaces** this one. Say that in the label so nothing gets posted from here on closing day.
 
 **Platform adaptation** (only if the content engine names their platforms):
 - **Instagram** — caption ~125–150 words max, hook in the first line before the "more" cut, hashtags
@@ -89,8 +91,8 @@ Run every caption and slide through this before it ships:
   Missing fact the caption genuinely needs → **[CONFIRM]** and keep going.
 - No price predictions, no guarantees, no "won't last." Urgency = a real date or nothing.
 - Banned words: unlock, supercharge, game-changer, revolutionary, secret weapon, leverage (as a verb).
-- Append the brokerage disclaimer and licence number where compliance calls for it. If that file is
-  empty, deliver anyway and mention in one line that it's unset.
+- **Run the compliance gate** (`${CLAUDE_PLUGIN_ROOT}/shared/compliance-gate.md`) for the disclaimer — a
+  bracketed template counts as unset. Withhold it rather than posting placeholder text.
 
 ## Phase 4 — Deliver + save
 
@@ -101,14 +103,22 @@ Save to Drive (`${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`) as **Social Pa
 in the listing's folder. No Drive connector? Deliver in chat, say kindly that connecting Google Drive
 means it saves itself next time, and never block on it.
 
-Then update the listing block in `~/realtor-brain/memory/listings.md` — add `Social pack` to
-**Built so far** with today's date.
+Then update the listing block in `~/realtor-brain/memory/listings.md` — append `social` to
+**`Built:`** (`${CLAUDE_PLUGIN_ROOT}/shared/listing-schema.md`).
+
+Also write a row per piece to `~/realtor-brain/memory/content-log.md` — that's what stops the
+YouTube and Short-Form systems building content for a property this launch already covered.
 
 Close warm and short:
 
 > That's your whole run of posts. Post the just listed tonight — the first 72 hours are where a
 > listing gets its traffic. Want the three shorts to go with it?
 
+
+**Then offer to schedule it.** One line, once — never a nag:
+> Want me to put these in your queue so you're not pasting them between showings?
+
+Yes → hand to **`listing-publish`**. No, or they post manually → drop it and move on.
 ## Quality checklist
 - [ ] Brain and listing block read; nothing re-asked that either one answers.
 - [ ] Every caption names something real about THIS home — the kitchen, the cul-de-sac, the street.

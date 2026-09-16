@@ -143,8 +143,10 @@ Before anything ships:
 - Every claim traces to the listing block. Anything that doesn't is `[CONFIRM]` or gone.
 - No "won't last," no price predictions, no invented urgency — urgency is the open house date or
   nothing.
-- The description carries the brokerage/licence line where their market requires it. Empty
-  `compliance.md`? Proceed and say once that it's unset.
+- The description carries the brokerage/licence line where their market requires it — resolved
+  through the compliance gate (`${CLAUDE_PLUGIN_ROOT}/shared/compliance-gate.md`). A bracketed template
+  counts as unset: withhold the line and say so once. Never put placeholder text in a public
+  YouTube description.
 - Banned words: unlock, supercharge, game-changer, revolutionary, secret weapon, leverage.
 
 ## Phase 5 — Deliver + save
@@ -153,8 +155,11 @@ In chat, in this order: **the walkthrough script** → **the shot list** → **t
 description, tags, hashtags, thumbnail brief).
 
 Then save to Drive per `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md` as
-`Walkthrough + SEO — [Street Address]` in the listing's folder, and add `Walkthrough script + SEO` to
-**Built so far** in the listing block. No Drive connector? Deliver in chat, say so kindly, keep moving.
+`Walkthrough + SEO — [Street Address]` in the listing's folder, and append `walkthrough` to
+**`Built:`** in the listing block (`${CLAUDE_PLUGIN_ROOT}/shared/listing-schema.md`). No Drive connector? Deliver in chat, say so kindly, keep moving.
+
+Also write a row per piece to `~/realtor-brain/memory/content-log.md` — that's what stops the
+YouTube and Short-Form systems building content for a property this launch already covered.
 
 End with one plain line: *"Film the kitchen twice — that's your hook, and it's the only shot worth a
 second take."*
@@ -165,6 +170,11 @@ Then offer what's next: the three shorts (**CLIP IT**), or the ad plan.
 can take this further with live search data — this package is complete on its own, and that one goes
 deeper.
 
+
+**Then offer to schedule it.** One line, once — never a nag:
+> Want me to put these in your queue so you're not pasting them between showings?
+
+Yes → hand to **`listing-publish`**. No, or they post manually → drop it and move on.
 ## Quality checklist
 - [ ] Brain and listing block read; nothing re-asked.
 - [ ] **Spoken-word test:** every line said out loud in one breath, while walking. Any line needing a
@@ -181,4 +191,4 @@ deeper.
 - [ ] 15–20 tags ordered specific → broad; 3–5 hashtags; thumbnail brief with overlay words.
 - [ ] Compliance pass run over script, description, AND tags; CTA matches the Brain.
 - [ ] Offered TOUR IT if they can't film, and CLIP IT for the shorts.
-- [ ] Saved to the listing's folder and logged in **Built so far**.
+- [ ] Saved to the listing's folder and logged in **`Built:`**.

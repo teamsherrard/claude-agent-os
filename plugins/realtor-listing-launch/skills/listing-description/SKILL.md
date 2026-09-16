@@ -45,7 +45,8 @@ it isn't, ask once — one line, nothing else:
 > sure, I'll use that.)
 
 Then **save it to the Brain** (`config.md`, as `MLS character limit: 1,000`) so it's never asked
-again. No answer or "not sure" → default to **1,000 / 500 / 250** and say that's what you used.
+again. If `config.md` shows `Listing Launch setup: done` but carries no limit, they skipped it during
+setup — use 1,000, say so in one line, and save it now rather than asking twice. No answer or "not sure" → default to **1,000 / 500 / 250** and say that's what you used.
 
 **Sizing the three cuts:** the long version is their limit. The cuts are roughly 500 and 250. If
 their limit is already 500 or less, step the cuts down proportionally instead (e.g. a 400 limit →
@@ -60,7 +61,8 @@ Sized to their limit. Structure that works every time:
 - **Then the home** — beds, baths, square footage, and the features in the order a buyer cares, not
   the order they were typed.
 - **Then the location and lifestyle** — the street, the walk, the commute, the greenway. What it's
-  like to live there, never who lives there.
+  like to live there, never who lives there. Any market figure comes from `~/realtor-brain/memory/market-data.md`
+  if this month's block exists — sourced and dated, never re-researched and never guessed.
 - **Close on the real next step** — the open house date, the showing instructions, the status. If
   there's no real date, close on the home, not on urgency.
 
@@ -95,8 +97,9 @@ Run this on all four versions before delivering. This is where MLS copy usually 
   demographic hints of any kind.
 - **No "walking distance"** or ability-based framing (`"steps from"` → say the distance).
 - **Fair Housing Act / equal-opportunity wording** and the **brokerage disclaimer + licence number**
-  from `identity/compliance.md` — append where their MLS requires it. If that file is empty, deliver
-  anyway and say in one line that their disclaimer isn't set yet.
+  resolved through the compliance gate (`${CLAUDE_PLUGIN_ROOT}/shared/compliance-gate.md`) — append where
+  their MLS requires it. A bracketed template counts as unset: withhold the line, deliver everything
+  else, and say so once. **Never put placeholder text in MLS remarks.**
 - No price predictions, no income or investment-return claims, no guarantees.
 
 Anything flagged gets rewritten, not deleted — replace the coded phrase with a true, concrete fact.
@@ -114,8 +117,8 @@ Then save to Drive per `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md` — `ML
 Address]` in that listing's folder, character counts in a bordered table. No Drive connector? Deliver
 in chat and mention once that connecting it means this saves itself next time.
 
-Update the listing block in `~/realtor-brain/memory/listings.md` — add `MLS description` to
-"Built so far." Then offer the next piece in one line: the brochure, the social pack, or the full launch.
+Update the listing block in `~/realtor-brain/memory/listings.md` — append `description` to
+**`Built:`** (`${CLAUDE_PLUGIN_ROOT}/shared/listing-schema.md`). Then offer the next piece in one line: the brochure, the social pack, or the full launch.
 
 ## Quality checklist
 - [ ] Brain and listing block read; no property fact re-asked.

@@ -40,11 +40,23 @@ open house date. **Never re-ask any of it.** Not on file → **Listing Intake** 
 
 > When's the open house — day and time?
 
-Then write it into the listing block so nothing asks again. If they haven't set one, say the honest
-thing in one line — *"Saturday 1–3 is the workhorse if you're picking"* — and stop until they choose.
+Then write it into the listing block's **`Open house:`** field so nothing asks again — and add it to
+`~/realtor-brain/memory/deadlines.md`, so it shows up in their morning briefing and not only here. If
+they haven't set one, say the honest thing in one line — *"Saturday 1–3 is the workhorse if you're
+picking"* — and stop until they choose.
 
-**Already built the social pack?** Reuse its open house invite rather than writing a competing one.
-Two different invites for the same event is exactly the inconsistency the house rules forbid.
+**Check what already exists before writing a word** (house rule 7 — one deliverable, one owner):
+
+| Piece | Owner | What you do |
+|---|---|---|
+| The invite post | `listing-social` | **Reuse it** as written if `Built:` has `social` |
+| Neighbour invite · agent-to-agent · buyer-match texts | `listing-outreach` | **Reuse them** if `Built:` has `outreach` |
+
+Two different neighbour texts about the same house, sent days apart, is exactly the inconsistency the
+house rules forbid — and the neighbours are the people most likely to notice. Found → reuse it and say
+so in one plain line (*"I'll use the neighbour text we already wrote"*). Not found → hand to the owner
+for those pieces, and write only what's genuinely yours: **the day-of stories, the sign-in question,
+and the after-the-event follow-ups.** Those four are this skill's own, always.
 
 ---
 
@@ -125,7 +137,8 @@ the message most agents forget.
 - Nothing invented about the home or the market — cite any stat with its source and month.
 - No "won't last," no price predictions. Urgency is the date.
 - Don't post photos of visitors who haven't agreed to it.
-- Disclaimer and licence per `compliance.md`. Unset? Deliver and say so once.
+- **Run the compliance gate** (`${CLAUDE_PLUGIN_ROOT}/shared/compliance-gate.md`) for the disclaimer — a
+  bracketed template counts as unset. Never put placeholder text in a message to a real neighbour.
 - Banned words: unlock, supercharge, game-changer, revolutionary, secret weapon, leverage.
 
 ## Phase 6 — Deliver + save
@@ -135,13 +148,18 @@ stories** → **the sign-in question** → **the four follow-ups**. Label the fo
 after-the-event so nothing gets sent early.
 
 Save per `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md` as **`Open House Kit — [Street Address]`**
-in the listing's folder, and add `Open house kit` to **Built so far**.
+in the listing's folder, and append `openhouse` to **`Built:`** (`${CLAUDE_PLUGIN_ROOT}/shared/listing-schema.md`).
 
 End with one plain line:
 
 > Text the neighbours yourself — that's the one that fills the room, and it's the one that turns into
 > your next listing.
 
+
+**Then offer to schedule it.** One line, once — never a nag:
+> Want me to put these in your queue so you're not pasting them between showings?
+
+Yes → hand to **`listing-publish`**. No, or they post manually → drop it and move on.
 ## Quality checklist
 - [ ] Brain and listing block read; nothing re-asked.
 - [ ] A real open house date on file — asked alone if missing, written back to the listing block.
@@ -153,4 +171,4 @@ End with one plain line:
 - [ ] Four follow-ups written — interested, neighbour, just-looking, **and the seller update**.
 - [ ] Every message personalisable, none blast-shaped.
 - [ ] Fair housing pass run twice on the neighbour messages; nothing invented.
-- [ ] Saved to the listing's folder and logged in **Built so far**.
+- [ ] Saved to the listing's folder and logged in **`Built:`**.

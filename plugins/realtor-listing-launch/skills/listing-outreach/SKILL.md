@@ -104,8 +104,9 @@ Run every message through this before it ships:
 - Banned words: unlock, supercharge, game-changer, revolutionary, secret weapon, leverage (as a verb).
 - These go to people they already know — say once, kindly, at delivery that local anti-spam and
   do-not-call rules still apply.
-- Append the brokerage disclaimer and licence number where compliance calls for it. If that file is
-  empty, deliver anyway and mention in one line that it's unset.
+- **Run the compliance gate** (`${CLAUDE_PLUGIN_ROOT}/shared/compliance-gate.md`) for the disclaimer — a
+  bracketed template counts as unset, and an unset disclaimer is withheld, never placeheld in a
+  message to a real person.
 
 ## Phase 5 — Deliver + save
 
@@ -115,7 +116,7 @@ phone. Put the named buyer matches at the top so the agent sends those first.
 Save to Drive (`${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`) as **Outreach — [Street Address]** in
 the listing's folder. No Drive connector? Deliver in chat, say kindly that connecting Google Drive means
 it saves itself next time, and never block on it. Then update the listing block in
-`~/realtor-brain/memory/listings.md` — add `Outreach` to **Built so far** with today's date.
+`~/realtor-brain/memory/listings.md` — append `outreach` to **`Built:`** (`${CLAUDE_PLUGIN_ROOT}/shared/listing-schema.md`).
 
 Close warm and short:
 

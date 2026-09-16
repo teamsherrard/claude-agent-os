@@ -118,6 +118,11 @@ This is where listings are lost, so script it honestly.
 
 - **Never invent a price or a CMA.** We don't have their comps. Write the *structure* of the
   conversation and leave `[YOUR NUMBER]` and `[YOUR COMPS]` where the agent's own analysis goes.
+- **Quote this month's real numbers, don't go looking for them.** If `~/realtor-brain/memory/market-data.md`
+  has a current block, the market section and the pricing frame use those figures — already sourced,
+  already dated. Never re-research them, and never put an uncited number in front of a seller. No
+  block on file → describe the market qualitatively from `identity/market.md` and say plainly that
+  they should drop their own current stats in.
 - **Give them the three-part frame:** here's what the market says · here's what I'd list at and why ·
   here's what happens if we go higher (with the real cost: days on market, the stale-listing problem,
   the eventual reduction that nets less than the honest price would have).
@@ -148,7 +153,8 @@ decision by a real date.
 - Fair housing applies: describe the home and the market, never who will buy it or who lives nearby.
 - Commission is negotiable and must never be described as fixed, standard, or set by anyone.
 - Any market stat carries its source and month, or it doesn't appear.
-- Append the brokerage disclaimer and licence number per `compliance.md`. Empty? Deliver and say so.
+- **Run the compliance gate** (`${CLAUDE_PLUGIN_ROOT}/shared/compliance-gate.md`) — a bracketed template
+  counts as unset, and an unset disclaimer is withheld rather than placeheld in a seller document.
 - Banned words: unlock, supercharge, game-changer, revolutionary, secret weapon, leverage.
 
 ## Phase 6 — Deliver + save

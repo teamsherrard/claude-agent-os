@@ -58,8 +58,9 @@ cul-de-sac, the greenway. If a sentence could sell any house anywhere, rewrite i
   HOA/parking/heating only if given). **Only what's in the listing block** — every gap is written
   **[CONFIRM]** in the cell. Never guess a year, a lot size, or a tax number.
 - **Agent block** — name, title, brokerage, phone, email, and their CTA from the Brain in their own
-  words ("Text me for a private showing"). Compliance line underneath; if `compliance.md` is unset,
-  put `[Brokerage · Licence #]` and say so once after delivery.
+  words ("Text me for a private showing"). Compliance line underneath, per the compliance gate
+  (`${CLAUDE_PLUGIN_ROOT}/shared/compliance-gate.md`) — when the disclaimer is missing **or a bracketed
+  template**, leave `[Brokerage · Licence #]` visible for them to fill and say so once after delivery.
 
 ## Phase 2 — The photo plan
 
@@ -81,7 +82,11 @@ two of everything.
 
 Per house rule 4's design-brief exception, this skill ships a paste-ready brief: one copy block the
 agent pastes into **claude.ai/design**, with **the full brochure copy inside it**, section by
-section. The brief must reproduce the piece, never summarize it. In order, the block contains:
+section. The brief must reproduce the piece, never summarize it. *(Kit path: agents with the
+**Listing Launch Kit** design skill can instead upload the whole `Brochure — [Address]` doc — plus
+their listing photos — to their Brand HQ design project; it designs the brochure and the full launch
+set from the docs directly. This brief stays as the Canva / kit-less fallback.)* In order, the block
+contains:
 
 1. **What to make** — a one-page property brochure, 8.5×11 portrait, print-ready, print + email.
 2. **Brand** — exact hex colours and font names from `brand-visual.md` (or the neutral defaults
@@ -116,9 +121,10 @@ python3 "${CLAUDE_PLUGIN_ROOT}/shared/render_doc.py" /tmp/brochure.txt "Brochure
 No Drive connector? Deliver the same content in chat as clean copy blocks and mention once that
 connecting Google Drive means it files itself next time. Never block the launch on setup.
 
-Then add `Brochure` to **Built so far** in the listing block. Show the copy in chat too (agents send
-it from their phone), the design brief as its own block, close with one line — *"Paste the design
-brief into Claude Design while your photos are fresh — that's tonight's job."* — and offer the next
+Then append `brochure` to **`Built:`** in the listing block (`${CLAUDE_PLUGIN_ROOT}/shared/listing-schema.md`). Show the copy in chat too (agents send
+it from their phone), the design brief as its own block, close with one line — *"Upload the Brochure doc
+to your Brand HQ design project and run the Listing Launch Kit — or paste the design brief into
+Claude Design — while your photos are fresh; that's tonight's job."* — and offer the next
 piece: the MLS description, the postcard, or the social pack.
 
 ## Quality checklist

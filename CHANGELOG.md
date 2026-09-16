@@ -2,6 +2,64 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.119.0] — 2026-09-15
+
+### Listing Launch (Plugin 7) → v0.5.0 — the whole listing lifecycle ships
+Plugin 7 was registered at v0.4.0 but **only its 14 original skills were ever committed** — the
+registry advertised a version the repo didn't contain. This release ships everything: the system
+layer, the three post-launch stages, and the audit fixes. **14 skills → 22; 3 shared files → 11.**
+(Consolidates the v0.2.0–v0.5.0 arc; the intermediate CHANGELOG entries were lost to a concurrent
+edit.)
+
+**The critical fix — `shared/compliance-gate.md`.** Every skill checked compliance in TWO states
+(missing / set). The Brain scaffolds `identity/compliance.md` as a **bracketed template**, and
+compliance is a *later* Brain phase — so for most new agents that file exists, is not empty, and is
+completely unfilled. All 12 public-facing skills would have read that as "set" and stamped
+`[exact disclaimer text the brokerage requires]` onto MLS remarks, mailed postcards, Meta ads, and
+YouTube descriptions. The gate ports Plugin 6's proven **three-state rule** (MISSING / FILLED /
+**UNFILLED TEMPLATE**, detected by bracket token, treated as missing), never prints a placeholder,
+never blocks the launch, and nudges once. It now also carries the whole fair-housing, claims,
+Special Ad Category, print, and sold-price pass in one place.
+
+**`shared/listing-schema.md` — one shape for the listing block.** The Brain's own `listings.md`
+template and Plugin 7's intake were writing **two incompatible shapes into the same file**, so the
+Brain's anti-duplication mechanism was bypassed. The schema reconciles both, adds the fields skills
+were reading but nobody wrote (`Open house:`, `Photos:`, `Type:`, `Target buyer:`, `Showings:`,
+`Feedback:`, `Price history:`), adds the **dead statuses** `Expired` / `Withdrawn` / `Terminated`
+(before this an expired listing stayed `Active` forever, so the board kept showing it and the morning
+watch kept nagging about a house the agent no longer represents), and replaces freehand
+`Built so far:` labels with a **controlled vocabulary** the navigator, board, and watch all read.
+
+**Three new stages — eight become eleven.** The launch was covered; the weeks between launch day and
+closing were not.
+- **SERVE IT (`listing-seller`)** — showing feedback grouped by theme with counts, the 150–250 word
+  weekly seller update **including the hard feedback**, and the marketing report built from `Built:`.
+- **REVIVE IT (`listing-revive`)** — leads with an honest read whose three answers include
+  **"be patient"** as a real one. Then the evidence-first price conversation (`[YOUR NUMBER]` never
+  invented), the re-launch, the expiry conversation **before** the expiry, and back-on-market —
+  which never states why a deal collapsed.
+- **SELL IT (`listing-offers`)** — the deadline post, final calls to every agent who showed, the
+  multiple-offer checklist marked *for the agent, never to send*, and the under-bidder follow-up.
+  **Never states the number of offers, never invents interest, never advises which offer to accept,
+  never records offer terms in the Brain, never publishes sold content before it closes.**
+
+**The system layer** — `listing-setup` (one-time config; locks compliance in first; normalizes old
+blocks) · `listing-board` (the Listing Pipeline in Notion, with Next Up, Needs Attention, and a
+Seller Check-in view) · `listing-publish` (Metricool / GoHighLevel / Buffer; never queues against
+`Photos: not yet` and never queues a HOLD piece) · `listing-routine` (the **event-triggered** Listing
+Launch AI Agent — 11 triggers, ceilings written back to the Brain, silence on a quiet day) ·
+`listing-analytics` (the read side of `performance.md`; states sample size on every comparison and
+refuses to call an observation a trend under ~8 closed listings).
+
+**Also** — house rule 7 (one deliverable, one owner) resolves the duplicate neighbour/agent/sold
+messages; the navigator now hands off **in the plan's own order** rather than contradicting its own
+14-day plan; `market-data.md`, `deadlines.md`, `content-log.md`, and `performance.md` are wired in
+(they had zero references before); and the plugin gets its first README.
+
+**`shared/listing-doctrine.md` ships deliberately empty** — a structured scaffold with an UNFILLED
+banner and a hard read rule: a filled section outranks the skill's own guidance, **an unfilled
+section is silent and is never guessed, paraphrased, or attributed.** Content needs Mike.
+
 ## [0.118.0] — 2026-09-14
 
 ### Market System (Plugin 8) → v0.5.0 — the release that was never actually shipped, plus the loop

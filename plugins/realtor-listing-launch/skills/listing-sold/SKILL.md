@@ -110,7 +110,9 @@ specific to them, asking for nothing. This is the one that doesn't convert and m
 
 **The neighbour follow-up** — the "just sold on your street" message to the same neighbours who got
 the open house invite. What it sold for (if publishable), what that means for their street, and a
-plain offer to tell them what theirs is worth. **One message, not a campaign.**
+plain offer to tell them what theirs is worth. **One message, not a campaign.** Any market figure in
+it comes from `~/realtor-brain/memory/market-data.md` — sourced and dated. And remember the rule: a
+sold price is a fact, "the market's back" is a forecast and doesn't ship.
 
 If the agent wants it mailed, hand to **`listing-print`** for the Just Sold postcard rather than
 writing a competing one here.
@@ -124,7 +126,13 @@ This is the step that compounds, and the one everyone skips.
 - Append the result to `~/realtor-brain/identity/proof.md` — the outcome as a usable proof line, and
   the review text once it arrives. **This is what makes the next listing presentation stronger**, and
   what `listing-win` reads.
-- Add `Sold content` to **Built so far**.
+- Append the outcome to `~/realtor-brain/memory/performance.md` — address, days on market, at/over/
+  under asking, and which pieces were built (`Built:`). **This is the loop that compounds:** after ten
+  listings the agent can be told which of their launches actually sold faster, and WIN IT stops
+  arguing from anecdote.
+- Clear this listing's dates out of `~/realtor-brain/memory/deadlines.md` — a closed listing should
+  stop appearing in tomorrow's briefing.
+- Append `sold` to **`Built:`** (`${CLAUDE_PLUGIN_ROOT}/shared/listing-schema.md`).
 
 Say it plainly in one line: *"I've added this one to your proof — your next listing presentation just
 got better."*
@@ -137,7 +145,8 @@ got better."*
   street suits.
 - No market predictions off one sale. "Over asking" is a fact; "the market's back" is a forecast.
 - Nothing invented — no days-on-market, no offer count, no number the agent didn't give.
-- Disclaimer and licence per `compliance.md`. Unset? Deliver and say so once.
+- **Run the compliance gate** (`${CLAUDE_PLUGIN_ROOT}/shared/compliance-gate.md`) — it resolves the disclaimer's
+  three states (a bracketed template counts as unset) **and** the sold-price rule below.
 - Banned words: unlock, supercharge, game-changer, revolutionary, secret weapon, leverage.
 
 ## Phase 7 — Deliver + save
@@ -155,7 +164,7 @@ End with one plain line:
 > trick.
 
 ## Quality checklist
-- [ ] Brain and listing block read, **including Built so far** — the sold post pays off what the
+- [ ] Brain and listing block read, **including `Built:`** — the sold post pays off what the
       launch led on.
 - [ ] Only three questions asked, in one message.
 - [ ] Sold price used only if the agent cleared it and compliance allows; every piece works without it.

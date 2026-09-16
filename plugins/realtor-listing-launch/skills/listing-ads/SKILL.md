@@ -95,9 +95,9 @@ Then check the copy itself:
   never schools as code for anything, never demographics.
 - No "won't last," no invented urgency, no price predictions, no guarantees, no result promises.
   Urgency is the open house date or nothing.
-- Append the brokerage disclaimer and licence number from `identity/compliance.md`. Empty file →
-  deliver anyway and say plainly it's unset. Banned words: unlock, supercharge, game-changer,
-  revolutionary, secret weapon, leverage.
+- **Run the compliance gate** (`${CLAUDE_PLUGIN_ROOT}/shared/compliance-gate.md`) — it decides the disclaimer's
+  three states (a bracketed template counts as unset), and carries the fair-housing, claims, and
+  Special Ad Category rules. Never stamp a placeholder disclaimer onto an ad.
 
 ## Phase 5 — Deliver + save
 
@@ -116,8 +116,8 @@ Lead with the recommendation, not the copy.
    - **What happened offline** — calls, texts, RSVPs, neighbours mentioning it. The realest signal.
 
 Save as **`Ad Plan — [Street Address]`** in the listing folder per
-`${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`, and add "Ad Plan" to the **Built so far** line in
-the listing block. No Drive connector? Clean copy blocks in chat, and say connecting Drive means it
+`${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`, and append `ads` to the **`Built:`** line in
+the listing block (`${CLAUDE_PLUGIN_ROOT}/shared/listing-schema.md`). No Drive connector? Clean copy blocks in chat, and say connecting Drive means it
 saves itself next time. Then offer the next piece — the social posts, the postcard, or the neighbour
 outreach texts that pair with a neighbour-reach ad.
 

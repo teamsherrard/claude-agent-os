@@ -83,7 +83,10 @@ the Just Sold at the same time as the Just Listed so it's ready the day it close
 
 Per house rule 4's design-brief exception, this skill ships paste-ready briefs — **one block per
 side, front and back separately**, for each card built. The agent pastes each into
-**claude.ai/design**. The brief must reproduce the card, never summarize it. Each block, in order:
+**claude.ai/design**. The brief must reproduce the card, never summarize it. *(Kit path: the
+**Listing Launch Kit** design skill builds the postcards and door hanger from the
+`Postcard — [Address]` doc directly — the agent uploads the doc to their Brand HQ design project
+instead of pasting; these briefs stay as the Canva / kit-less fallback.)* Each block, in order:
 
 1. **What to make** — postcard front (or back), 6×4 inches landscape, print-ready at 300dpi, 0.125"
    bleed, 0.25" safe margin. Door hanger: 4.25×11 inches with a 1.75" hook cutout at top.
@@ -108,8 +111,10 @@ Before delivery, read every card back against house rule 5:
 
 **PRINT COMPLIANCE — a note to the agent, never printed on the card.** After the cards, say plainly:
 brokerage name and licence number have to appear on every mailed piece, plus any required disclaimer
-from `compliance.md`. If it's unset, leave `[Brokerage Name]` and `[Licence #]` in the contact block
-and tell them once to confirm the exact wording with their broker before it goes to print.
+from `compliance.md` — resolved through the compliance gate (`${CLAUDE_PLUGIN_ROOT}/shared/compliance-gate.md`),
+which treats a bracketed template as unset. When it's unset, leave `[Brokerage Name]` and
+`[Licence #]` visible in the contact block and tell them once to confirm the exact wording with
+their broker before it goes to print. **Never print a placeholder disclaimer as if it were real.**
 
 ## Phase 5 — Deliver + save
 
@@ -123,7 +128,7 @@ python3 "${CLAUDE_PLUGIN_ROOT}/shared/render_doc.py" /tmp/print.txt "Postcard �
 
 No Drive connector? Deliver the same content in chat as clean copy blocks and mention once that
 connecting Google Drive means it files itself next time. Never block the launch on setup. Either
-way, add `Print pack` to **Built so far** in the listing block, show the card copy in chat, give
+way, append `print` to **`Built:`** in the listing block (`${CLAUDE_PLUGIN_ROOT}/shared/listing-schema.md`), show the card copy in chat, give
 each design brief its own copy block, then close with one line and offer the next piece — the
 brochure, the social pack, or the neighbour outreach texts:
 

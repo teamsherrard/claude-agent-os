@@ -73,7 +73,9 @@ the audience, and the reason this clip exists.
 - **The turn** — one line, late, that connects the area back to the home: *"...and this one's right
   on it."*
 - **CTA** — the Brain's CTA.
-- **Research rule:** you may look up a genuinely public local fact (a park, a transit line, a main
+- **Research rule:** check `~/realtor-brain/memory/market-data.md` FIRST — if this month's block is
+  there, its figures are already sourced and dated, and they're the only market numbers that go in
+  this clip. Beyond that you may look up a genuinely public local fact (a park, a transit line, a main
   street) and cite it. **Never** invent an amenity, a school, a commute time, or a statistic. No
   school quality claims and no "great for families" — fair housing lives in this clip more than any
   other.
@@ -110,7 +112,8 @@ Instagram hook-first before the "more" cut · TikTok under 150 characters · Sho
 - Nothing invented — every feature, number, and local fact traces to the listing block, `market.md`,
   or a cited source. Otherwise `[CONFIRM]`.
 - No price predictions, no "won't last." Urgency is a real date or nothing.
-- Append the brokerage disclaimer and licence per `compliance.md`; if unset, deliver and say so once.
+- **Run the compliance gate** (`${CLAUDE_PLUGIN_ROOT}/shared/compliance-gate.md`) for the disclaimer — a
+  bracketed template counts as unset, so withhold the line rather than posting placeholder text.
 - Banned words: unlock, supercharge, game-changer, revolutionary, secret weapon, leverage.
 
 ## Phase 7 — Deliver + save
@@ -119,7 +122,10 @@ In chat: **three scripts** (each with hook, beats, shots, on-screen text) → **
 → **three captions**. Label them clearly so nothing gets mixed up on a phone.
 
 Save per `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md` as **`Shorts — [Street Address]`** in the
-listing's folder, and add `3 shorts` to **Built so far**.
+listing's folder, and append `shorts` to **`Built:`** (`${CLAUDE_PLUGIN_ROOT}/shared/listing-schema.md`).
+
+Also write a row per piece to `~/realtor-brain/memory/content-log.md` — that's what stops the
+YouTube and Short-Form systems building content for a property this launch already covered.
 
 End with one plain line:
 
@@ -128,6 +134,11 @@ End with one plain line:
 
 Then offer what's next: the YouTube walkthrough (**FILM IT**), or the open house kit if there's a date.
 
+
+**Then offer to schedule it.** One line, once — never a nag:
+> Want me to put these in your queue so you're not pasting them between showings?
+
+Yes → hand to **`listing-publish`**. No, or they post manually → drop it and move on.
 ## Quality checklist
 - [ ] Brain and listing block read; nothing re-asked.
 - [ ] **Three genuinely different clips** — different hooks, different angles, no shared beats. If two
@@ -140,4 +151,4 @@ Then offer what's next: the YouTube walkthrough (**FILM IT**), or the open house
 - [ ] Shot list is in FILMING order and covers all three clips in one pass.
 - [ ] Three captions, 5–8 market-anchored hashtags each, platform lengths adapted.
 - [ ] Compliance pass run; `[CONFIRM]` used instead of any guess.
-- [ ] Saved to the listing's folder and logged in **Built so far**.
+- [ ] Saved to the listing's folder and logged in **`Built:`**.

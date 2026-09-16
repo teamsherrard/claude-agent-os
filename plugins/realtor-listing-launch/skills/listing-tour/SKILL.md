@@ -36,7 +36,13 @@ If `~/realtor-brain/` is missing, send them to **Realtor AI Brain — Setup** an
 
 ## Step 2 — Load the listing
 Read `~/realtor-brain/memory/listings.md` and pull this address — beds/baths/sqft, price, features,
-status. **Never re-ask.** Not on file → hand to **Listing Intake**, then come straight back.
+status, and **`Photos:`**. **Never re-ask.** Not on file → hand to **Listing Intake**, then come
+straight back.
+
+**`Photos:` already has a folder link?** Use it. Don't ask where the photos are — that's the whole
+point of the field. Only ask (Step 4) when it reads `not yet` or is missing. When the agent does give
+you a folder, **write it back to `Photos:`** so the brochure, the editor hand-off, and the morning
+watch all find it without asking again.
 
 ## Step 3 — Check the connection before promising anything
 
@@ -124,8 +130,10 @@ The caption carries the disclosure line:
 
 > Cinematic tour generated from the listing photos.
 
-Read `identity/compliance.md` and follow it if it requires more, or requires it on-screen. Never
-present a generated tour as filmed footage.
+Run the compliance gate (`${CLAUDE_PLUGIN_ROOT}/shared/compliance-gate.md`) and follow it if the disclaimer
+requires more, or requires it on-screen. **The disclosure line above is not the disclaimer** — it
+ships on every generated tour regardless of what state `compliance.md` is in. Never present a
+generated tour as filmed footage.
 
 ## Phase 5 — Hand off to the editor
 
@@ -144,13 +152,18 @@ line what would finish it. **Never half-build a second editor here.**
 ## Phase 6 — Save + log
 
 Per `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`, save the shot plan and caption as
-**`Tour — [Street Address]`** in the listing's folder, and add `Cinematic tour` to **Built so far**
+**`Tour — [Street Address]`** in the listing's folder, and append `tour` to **`Built:`** (`${CLAUDE_PLUGIN_ROOT}/shared/listing-schema.md`)
 in the listing block with today's date.
 
 End with one plain line:
 
 > Every listing gets a tour now — even the ones you never film.
 
+
+**Then offer to schedule it.** One line, once — never a nag:
+> Want me to put these in your queue so you're not pasting them between showings?
+
+Yes → hand to **`listing-publish`**. No, or they post manually → drop it and move on.
 ## Quality checklist
 - [ ] Brain and listing block read; nothing re-asked.
 - [ ] `tour-rules.md` read before any generation.
@@ -164,4 +177,4 @@ End with one plain line:
 - [ ] Disclosure line on the caption; compliance file read.
 - [ ] Handed to `edit-listing` in shot order with brand and listing facts — or delivered cleanly if
       the editor isn't installed.
-- [ ] Saved to the listing's folder and logged in **Built so far**.
+- [ ] Saved to the listing's folder and logged in **`Built:`**.
