@@ -88,12 +88,13 @@ it stalls them. Just confirm Drive's good and keep moving. One plain line is ple
   *"one-time connect for that — takes a sec"* and set it up then, at the point of need.
 - **YouTube — no connection required** (analytics via their Studio export; competitor scans via the web).
   Never ask them for API keys.
-- **The live data connection (optional, offer ONCE, right here):** if the cohort's data connection
-  (`${CLAUDE_PLUGIN_ROOT}/shared/composio-data-engine.md`) is available, offer it in one plain line:
-  *"Want me to hook into live YouTube data? One sign-in, and your audit, titles, and reference videos run
-  on real numbers instead of estimates."* Yes → the one-click sign-in (the engine handles it); no → fine,
-  everything works the classic way. **Record the answer in the YouTube Layer and never re-offer.** Never
-  block setup on it; never say "connect your channel" (it's a sign-in, and it's optional).
+- **The live data connection: NOT during setup — don't mention it, don't check it, don't touch it.**
+  Setup makes ZERO calls to the data connection (no listing, no checking, no sign-in) — a technical
+  permission card popping up mid-onboarding confuses agents and kills the moment. The data engine
+  activates on its own LATER, at the first real data job after onboarding (see
+  `${CLAUDE_PLUGIN_ROOT}/shared/composio-data-engine.md` — "When it activates"). Setup and the first Game
+  Plan run entirely on the classic paths (public channel reads + Studio export). Nothing is lost — the
+  engine upgrades everything from the first post-setup task onward.
 
 ## Step 5 — Provision the Drive workspace (minimal)
 Using the Google Drive connector, create the structure in `references/drive-structure.md`: the top

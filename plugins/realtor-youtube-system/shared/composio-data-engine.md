@@ -10,15 +10,20 @@ other** — sync the shared recipes only.
 
 **To the agent this is "your live data connection" — never "Composio", "API", "toolkit", or tool names.**
 
-## When to use it
-- **Connection available in this session** (the Composio tools are present) → USE IT for every data job
-  below. Real numbers beat estimates, always.
-- **Not available** → fall back to the classic paths (public web search + the YouTube Studio CSV/screenshot)
-  — everything still works; say nothing about what's missing. `youtube-setup` may offer the one-click
-  sign-in ONCE, in plain words (*"want me to hook into live YouTube data? One sign-in, and your audits,
-  titles, and references run on real numbers"*) — record the answer in the YouTube Layer; never re-offer,
-  never block. (The old "never say connect" rule was about fake technical steps; this is a REAL one-click
-  sign-in — still say "sign in," not "connect your channel.")
+## When it activates (LATER — never during onboarding)
+- **NEVER during setup or the setup-time first Game Plan.** Onboarding runs entirely on the classic paths
+  (public channel reads + the Studio export). No listing connections, no availability checks, no sign-in
+  offers, no tool calls — a technical permission card mid-onboarding confuses agents. Cohort feedback,
+  locked.
+- **From the first real data job AFTER onboarding** (a make-video references audit, an analytics read, a
+  Game Plan refresh, an outlier scan): if the Composio tools are present in the session, use them for the
+  job. **The first call in a session may pop a one-time permission card — warn the agent in plain words
+  RIGHT BEFORE it:** *"quick one — a permission box will pop up so I can pull real YouTube numbers; hit
+  Allow and we're set."* Never let the card appear unexplained.
+- **NEVER call the connection-management tool** (listing, adding, or checking connections) — availability
+  = the toolkit's tools being present, nothing more. If they aren't there, or the agent denies the card,
+  fall back to the classic paths silently and completely — everything still works; never nag, never
+  re-trigger the card in that session.
 
 ## HARD RULES (read before any call)
 1. **READ-ONLY, always.** The YouTube toolkit also contains write tools (upload video, update video/title/

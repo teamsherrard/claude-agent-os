@@ -59,10 +59,11 @@ Read `~/realtor-brain/brain.md`, then:
 ## Step 2 — Read the framework + line up the engines
 - `references/gameplan-framework.md` — **the backbone** (Mike's structure, the audit-scaling, pillar logic,
   the exact-title method, the goal-math, the 90-day calendar + metrics, the stamp).
-- **The Live Data Engine** (`${CLAUDE_PLUGIN_ROOT}/shared/composio-data-engine.md`) — when the agent's data
-  connection is available, EVERY data step below runs on it: the audit (recipe 1), competitor scan (2), the
-  **gap analysis + keyword research** that picks the pillars and grounds the titles (3). Read-only, always;
-  fall back to the classic public/CSV paths without it.
+- **The Live Data Engine** (`${CLAUDE_PLUGIN_ROOT}/shared/composio-data-engine.md`) — **the setup-time
+  FIRST Game Plan runs on the classic paths only** (public channel reads + Studio export; no engine calls,
+  no permission cards mid-onboarding — engine rule). On **later runs and refreshes**, the engine powers
+  every data step: the audit (recipe 1), competitor scan (2), the gap analysis + keyword research (3) —
+  with the plain-words heads-up before the session's first call. Read-only, always.
 - This skill **orchestrates the existing engines** — don't reinvent them:
   - Audit → `${CLAUDE_PLUGIN_ROOT}/skills/youtube-analytics/SKILL.md` (their channel/CSV/screenshot read)
   - Competitor analysis → `${CLAUDE_PLUGIN_ROOT}/skills/youtube-outliers/SKILL.md`
@@ -72,9 +73,10 @@ Read `~/realtor-brain/brain.md`, then:
 
 ## Step 3 — Get the channel data for the audit (scaled — house rules #7 plain talk)
 The audit flexes to wherever they are (full detail in the framework). The channel is mostly **public**, so:
-- **Active channel** → **data connection available? Pull it live** (engine recipe 1: channel stats → the
-  catalog → per-video views/lengths/dates — real numbers on every claim). Otherwise research the public
-  channel from its URL: titles, view counts, lengths, top performers, upload cadence. Either way, offer the
+- **Active channel** → **setup-time first plan: research the public channel from its URL** (titles, view
+  counts, lengths, top performers, upload cadence — no engine calls during onboarding). **Later runs /
+  refreshes: pull it live** (engine recipe 1: channel stats → the catalog → per-video views/lengths/dates —
+  real numbers on every claim, with the plain-words heads-up before the session's first call). Either way, offer the
   deeper read in one plain line: *"Want me to go deeper? Drop a screenshot of your YouTube Studio analytics
   or your export and I'll add your watch-time and click data."* Never required.
 - **Empty / none / starting fresh** → skip the audit numbers entirely; lead with competitor analysis + the

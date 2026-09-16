@@ -1,6 +1,20 @@
 # Changelog
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
+## [0.120.1] — 2026-09-15
+
+### Cold-test fix: no Composio during onboarding (YouTube v0.13.1 · Short-Form v0.13.4)
+Live Cowork test surfaced a scary "Manage connections from Composio" permission card mid-setup — exactly
+the technical moment onboarding must never show. Locked in both engine copies:
+- **Setup makes ZERO data-connection calls** — no listing, no availability checks, no sign-in offer (the
+  setup-time offer is removed; the Layer field is now set automatically later).
+- **The engine activates lazily** — from the first real data job AFTER onboarding (references audit,
+  analytics, a Game Plan refresh, the daily green-screen search), with a plain-words heads-up right before
+  the session's first call so the permission card never appears unexplained.
+- **The connection-management tool is banned outright** (listing/adding/checking) — availability = the
+  tools being present; a denied card → silent, complete classic-path fallback, no re-prompts.
+- The setup-time FIRST Game Plan runs classic paths only (public reads + Studio export); later runs get
+  the live data.
 
 ## [0.120.0] — 2026-09-15
 

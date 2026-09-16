@@ -31,7 +31,8 @@ Listed only so you know what's already available. Source mapping: see `ai-brain-
   voice — never replacing it
 - **YouTube compliance notes:** channel/brokerage-specific disclaimers for descriptions (only if different from the Brain)
 - **Workspace folder ID:** the top `{Agent} — YouTube System` folder's Drive ID (the save-anchor every skill uses)
-- **Live data connection:** `yes` / `declined [date]` — the one-time sign-in offer's answer (never re-offer)
+- **Live data connection:** `active` / `declined [date]` / blank — set AUTOMATICALLY the first time a
+  post-onboarding data pull is allowed or denied (setup never asks about it, never touches it)
 
 **Read live from the Brain — NOT captured here** (the #1 rule): goals (YouTube/business/life/personal),
 competitors they admire/follow, posting cadence, niche, neighbourhoods, avatars, voice, offer, lead magnets.
