@@ -53,6 +53,14 @@ here describing the exact transformation. Each entry is idempotent and safe to r
      reviews (→ `memory/performance.md`) and on-the-go captures (→ `memory/ideas.md` via
      **realtor-capture**) if they aren't already there.
 
+- **2 → 3 (2026-07):** the brain gained the monthly market-data layer (Market System, Plugin 8). Same
+  idempotent rules — skip what exists, never delete data.
+  1. Create `memory/market-data.md` if missing — copy its header from the shipped template
+     (`realtor-brain-setup` skill → `references/brain-template/realtor-brain/memory/`).
+  2. In `brain.md`: add it to "The files" map (*the local market numbers, one dated block per month*)
+     and add law 2's routing line — this month's researched market numbers → `memory/market-data.md`,
+     researched once and quoted by every market piece.
+
 ## Step 3 — Finalize
 - Confirm the brain now reports the current schema in `config.md`.
 - Run a quick read of `brain.md` + a couple of identity files to confirm nothing broke.

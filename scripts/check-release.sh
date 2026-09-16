@@ -122,7 +122,12 @@ tracked=set(subprocess.run(["git","ls-files","plugins/"],capture_output=True,tex
 staged=set(subprocess.run(["git","diff","--cached","--name-only"],capture_output=True,text=True).stdout.split())
 known={os.path.basename(p) for p in tracked|staged}
 known|={os.path.basename(os.path.dirname(p)) for p in tracked|staged}
-missing=[n for n in names if ("-" in n or n.endswith((".md",".py"))) and n not in known
+# The changelog names skills by their SHORT name (brain-setup) while the directory
+# carries the plugin prefix (realtor-brain-setup). Accept a suffix match so the repo's
+# own long-standing naming convention isn't reported as a missing file.
+def seen(n):
+    return n in known or any(k.endswith("-"+n) or k == n for k in known)
+missing=[n for n in names if ("-" in n or n.endswith((".md",".py"))) and not seen(n)
          and not n.endswith(("/",)) and len(n)>4]
 if missing:
     print(f"  ✗ v{ver} names files/skills that are neither tracked nor staged:")

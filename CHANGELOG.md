@@ -2,6 +2,24 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.120.0] — 2026-09-15
+
+### Brain (Plugin 1) → v0.59.0 — two market leftovers that never landed (found by the new release gate)
+Both were written months ago, both sat uncommitted, and both were live defects. `scripts/check-release.sh`
+caught the first within an hour of existing.
+
+- **The Brain template never shipped `memory/market-data.md`.** The committed `brain.md` index referenced
+  it twice and `brain-setup`'s tree listed it, but the scaffold itself never contained the file — so every
+  new agent's Brain promised the one file the **entire Market System** reads and writes, and never created
+  it. The file now ships, and the two skills that were written to know about it but never committed ship
+  with it: `brain-health` scans `market-data.md` in its memory sweep, and `brain-migrate` gains the 2 → 3
+  step that creates the file in existing brains without touching their data.
+- **The superseded `realtor-market-update` skill was still shipping.** Plugin 8 replaced it in v0.1.0 and
+  the deletion was never committed, so the Brain still carried the 500-line monolith — triggering on
+  *"run my market update"*, the **exact phrase** Plugin 8's `market-run` uses. Any agent with both plugins
+  got a coin flip between the old single-doc version and the current 11-skill system. Removed; its four
+  reference guides were rewritten into Plugin 8 long ago.
+
 ## [0.119.0] — 2026-09-15
 
 ### Listing Launch (Plugin 7) → v0.5.0 — the whole listing lifecycle ships

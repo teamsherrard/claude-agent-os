@@ -26,7 +26,7 @@ For each, mark ✅ complete · 🟡 thin (present but sparse/generic) · ⬜ emp
 **Identity:** profile · market · avatars · voice · offer · brand-visual · voice-samples · proof ·
 content-engine · operations · vendors · strategy · compliance · publishing *(written by the Short-Form
 System's setup — report as "not set up yet", don't penalize if that plugin isn't installed)*
-**Memory:** clients · listings · content-log · deadlines · ideas · performance *(these fill over time —
+**Memory:** clients · listings · content-log · deadlines · ideas · performance · market-data *(these fill over time —
 don't penalize a new brain for sparse content, but do flag a FILE that's missing entirely)*
 **Assets:** logo present? · headshot present?
 **Connectors** (from `config.md`): Gmail · Calendar connected?
