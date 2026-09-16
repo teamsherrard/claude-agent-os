@@ -6,6 +6,9 @@ SAME database; each has its own **view**. This file is the canonical spec — an
 plugins (like `render_doc.py`); if you change it, change both.
 
 **Golden rules**
+- **The board is a schedule, never an idea dump.** Every card carries a Recording or Publishing date inside
+  the rolling ~2-week window, or is actively in production. Loose ideas live in the Game Plan backlog and
+  `memory/ideas.md` — NEVER as undated cards. Seeding or mirroring must not create a card without a date.
 - **Bring-your-own Notion, never required.** Everything works without it — the board is a premium *view*,
   not the system. The **Game Plan + the Brain (content-log) stay the source of truth**; the board mirrors them.
 - **One board per agent, ever — and the Brain remembers where it is.** The board's link is stored in
@@ -39,8 +42,8 @@ by your AI system."* *(The YouTube, Short-Form, and Market systems all write her
 | **Topic** | Title | The exact video/post title (search-intent title for long-form) |
 | **Format** | Select | `Long-Form` · `Green Screen` · `Talking Head` · `Carousel` · `Graphic` |
 | **Status** | Select | `Idea` → `Scripted` → `Ready to Film` → `Recorded` → `Published` |
-| **Pillar** | Select | Long-form: the agent's 3 Game-Plan pillars (create the options from THEIR pillar names). Short-form: the funnel role — `Reach` · `Value` · `Trust` · `Convert`. Market-update cards: their market-update pillar if they have one, else `Market Update` |
-| **Context** | Text | Two short bullets, Mike-style: `• What: …` `• Outcome: …` (what the video covers + what the viewer walks away with) |
+| **Pillar** | Select | **STRICT — never invent options.** Long-form: EXACTLY the agent's 3 Game-Plan pillar names. Short-form: EXACTLY `Reach` · `Value` · `Trust` · `Convert`. The ONLY other allowed option: `Market Update` for the monthly video when none of their 3 pillars is a market pillar. Content types, avatars ("Local Buyer"), and ad-hoc labels are NOT pillars — mixed options make every filter meaningless. |
+| **Context** | Text | Two short bullets, Mike-style: `• What: …` `• Outcome: …` — **HARD CAP ~12 words per bullet** (one line each; detail lives on the card page, never in the cell) |
 | **Script** | URL | Link to the script doc in their Drive (added when the script is made) |
 | **SEO / Post Package** | URL | Link to the SEO package (long-form) or the post package (short-form) in Drive |
 | **References** | Text | **The top 3 (2–4) PROVEN videos on this exact topic** — real YouTube links from the competitive audit (doctrine §11.5/§16.4, capture rules in the research method): same concept **in THEIR market first** ("pros and cons of moving to Calgary" → Calgary videos); comparable markets only as the fallback, labeled as such. Each as `link · channel · ~views · the one thing to beat` (e.g. *"their thumbnail wins but they skip prices — we'll show real numbers"*). Quality bar: same concept · genuinely performed (outlier logic, not just big channels) · recent (~2–3 yrs unless an evergreen ranker). REAL links actually found in search — NEVER invented; a view count that can't be seen is left off, never guessed. These are gold: watch them before filming, then beat them. |
@@ -66,10 +69,20 @@ copy so the agent never hunts through folders on filming day.
 **Views to create** (via the Notion connection's view tools; if view creation isn't available, create the
 board anyway and tell the agent in one line: *"In Notion, click `+ Add view`, filter Format to Long-Form —
 that's your YouTube view; do the same for the other formats for your Short-Form view."*):
-1. **🎬 YouTube — Long-Form** — filter `Format = Long-Form`, grouped by Status (board/pipeline), sorted by
-   Recording Date.
+1. **🎬 YouTube — Long-Form** — **this is the FIRST/default view** (never a flat everything-table): filter
+   `Format = Long-Form`, **grouped by Status** (the pipeline is the point), sorted by Recording Date.
 2. **📱 Short-Form** — filter `Format ≠ Long-Form`, grouped by Status, sorted by Publishing Date.
 3. **🗓 Calendar** — calendar view on Publishing Date (everything).
+
+**Visible columns (per view) — hide everything else.** A table showing every property is a wall of empty
+cells, not a board. Show ONLY: **Topic · Format · Pillar · Status · Recording Date** (Short-Form view swaps
+Recording for Publishing Date). Hide from every table view: Context, Script, SEO links, References,
+Resource Assets, Publishing/Recording (whichever isn't shown), System ID — they all live ON the card, one
+click away. If the connector can't set column visibility, tell the agent in one line how (*"click any
+column header → Hide in view — hide everything except Topic, Format, Pillar, Status, and the date"*).
+
+**Card icons (set per card, consistent):** 🎬 Long-Form · 🟩 Green Screen · 🎤 Talking Head · 🖼 Carousel —
+the board reads at a glance; never mix ad-hoc icons.
 
 ## Who writes what
 

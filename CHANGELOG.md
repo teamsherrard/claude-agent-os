@@ -12,6 +12,18 @@ classic paths — public channel/web reads + the agent's Studio export/screensho
 - The comment engine now works from comment screenshots/pastes (still real-comments-only, never invented);
   the channel-page fix reads the public page from the shared link.
 - Walkthrough deck updated (no sign-in step; comments = drop screenshots); marketplace descriptions cleaned.
+## [0.121.1] — 2026-09-16
+
+### Board looks like Mike's dashboard now (YouTube v0.14.1 · Short-Form v0.13.6)
+From Mike's live board build (Sam Smith test) — six fixes to the board spec + title gates:
+- Default view = the 🎬 pipeline grouped by Status (never a flat everything-table); per-view visible
+  columns locked to Topic · Format · Pillar · Status · date — everything else hidden (it lives on the card);
+  consistent per-format card icons.
+- The board is a SCHEDULE, never an idea dump: every card carries a date in the ~2-week window or is in
+  production; loose ideas stay in the plan/backlog.
+- Context bullets hard-capped (~12 words each); Pillar options locked STRICT (3 pillar names · funnel
+  roles · Market Update only) — no avatars or ad-hoc labels.
+- NEW title gate 0: one promise, ≤70 characters — no colon-stapled double titles.
 
 ## [0.120.1] — 2026-09-15
 

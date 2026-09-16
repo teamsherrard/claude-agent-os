@@ -110,7 +110,11 @@ For each pillar, generate **15–20 EXACT, search-optimized titles** (not vague 
 **Search Intent & Lead Type**, ordered **broad → niche** (highest search volume → highest lead intent). Use
 real search language (the "type it into YouTube" test) + the idea-templates + competitor outlier patterns —
 grounded in what people demonstrably search in their market, what ranks, and where the coverage gaps are.
-**Three hard gates on every title + ranked list (cohort feedback — these shipped wrong once):**
+**Four hard gates on every title + ranked list (cohort feedback — these shipped wrong once):**
+0. **One promise, ≤70 characters.** A title is ONE search query answered — never two ideas stapled with a
+   colon, never a list of neighbourhoods + features + audiences in one line ("Hill Country Living Without
+   the Long Drive: A Belterra & Travisso Trails, Views & Top-Schools Tour" = FAIL; "Living in Belterra:
+   Austin's Hill Country Without the Commute" = pass). If it can't be typed into a search bar, cut it.
 1. **The market IS in the title.** Every title names their city/community ("…in Austin", "Austin vs …",
    "[Community] …"). A title that could run on any city's channel — e.g. "Do You Even Need a Realtor if the
    Builder Has One?" — FAILS; rewrite it local ("…When Buying a New Build in Austin?"). §16: local specificity
