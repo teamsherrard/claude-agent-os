@@ -54,6 +54,27 @@ Read `identity/brand-visual.md` (and `identity/voice.md`, `identity/compliance.m
 - **(b) Brain present but brand fields EMPTY** (file exists but colour/font are blank) → ask only those **two essentials** (main colour + font feel) and save them into the **`"brand"` block of `config.json`**. Don't run a full brand interview — that's the brain skill's job.
 - **(c) Brain populated** → pull the brand **silently** and just confirm it back in one line (e.g. "Using your purple + SF Pro brand"). Don't re-ask anything it already knows.
 
+## Step 2½ — Video Brand Kit (register it if they have one)
+
+If the Google Drive connector is on, look for the agent's **Video Brand Kit** — the designed card set
+their Claude Design suite exports to the workspace folder **`02 · Brand/Video Brand Kit/`**
+(canonical files: `hook-16x9.png`, `hook-9x16.png`, `cta-16x9.png`, `cta-9x16.png`,
+`lower-third-16x9.png`, `emphasis-16x9.png`, `emphasis-9x16.png`, `end-screen.png`, optional
+`logo-sting.mp4`, plus a `video-brand-spec` doc).
+
+- **Found** → record each file's Drive path/link into the **`brand.assets`** block of `config.json`
+  (schema in `${CLAUDE_PLUGIN_ROOT}/shared/brand-wiring.md`), read the `video-brand-spec`, and
+  transcribe its values (colours, fonts, caption + karaoke accent, style pack) into the brand block —
+  **the spec wins** over anything inferred in Step 2, because the agent approved it in design.
+  Confirm in one line: *"Found your Video Brand Kit — your videos will use your designed cards."*
+  Report any canonical file that's missing so they can re-export it.
+- **Not found (or no Drive connector)** → skip silently; nothing changes (cards are built natively).
+  If the agent ASKS about branded cards, point them once: *"Design them with the Video Brand Kit
+  skill in Claude Design, drop the export into `02 · Brand/Video Brand Kit/` in your Drive, then tell
+  me 'register my video brand kit'."*
+- **Re-runs:** "register my video brand kit" touches ONLY the `brand.assets` block + the spec
+  transcription — never the rest of a good config.
+
 ## Step 3 — The short questionnaire (only what you can't infer)
 
 Ask these one at a time, each with a recommended default they can just accept:

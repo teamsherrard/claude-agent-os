@@ -1,6 +1,18 @@
 # Changelog
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
+## [0.123.0] — 2026-09-18
+
+### Repo sync — publish the unshipped work (Short-Form v0.14.0 · Editor v0.21.0 manifest fix)
+The live marketplace was advertising the Short-Form scorecard + deep dive while their skill files sat
+uncommitted locally — a student install would have promised features that weren't there. Published:
+- **NEW `shortform-scorecard`** — the scheduled 1st-of-month one-page scorecard (reach, followers, best
+  hook/format, DMs/leads → winners written back to the Brain).
+- **NEW `shortform-deepdive`** — the on-demand full audit (growth, every post ranked by format + funnel
+  role, hook + retention patterns, funnel leaks).
+- Supporting Short-Form edits (optimizer/publish/batch/setup/analytics/board + output standard) and the
+  AI Editor's brand-wiring pass — incl. the editor plugin.json 0.21.0 bump that the live marketplace
+  already claimed (manifest and marketplace now agree).
 
 ## [0.122.0] — 2026-09-17
 

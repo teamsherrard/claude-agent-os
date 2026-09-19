@@ -29,7 +29,13 @@ Read brand in this exact order — first hit wins:
   "fonts": { "heading": "", "body": "" },
   "logo": "",
   "caption": { "font": "", "accent": "", "weight": "900", "anim": "karaoke" },
-  "style_pack": "bold-kinetic"
+  "style_pack": "bold-kinetic",
+  "assets": {
+    "dir": "", "spec": "",
+    "hook_16x9": "", "hook_9x16": "", "cta_16x9": "", "cta_9x16": "",
+    "lower_third": "", "emphasis_16x9": "", "emphasis_9x16": "",
+    "end_screen": "", "logo_sting": ""
+  }
 }
 ```
 
@@ -37,4 +43,12 @@ Read brand in this exact order — first hit wins:
 - **`colors` → what each field is actually FOR:** `bg` or `primary` (whichever is dark) is the **card panel**; `text` (default `#FFFFFF`) is the card text; `accent` is the **karaoke active word**, never inside a card (a single text object can't do per-word colour). If every brand colour is light, the panel falls back to `#1F2A37` — see "Panel colour" in `graphics-style.md` for the dark test.
 - `caption.accent` drives the active-word colour.
 - `cta` holds the CTA wording captured at setup (`text` e.g. "DM me COST", `details` e.g. the phone number or link) — `cta-pack.md` reads it for the closing card; `cta_url` stays the link-only field.
+- **`assets` — the Video Brand Kit** (designed once in the agent's Claude Design suite, stored in the
+  workspace Drive at `02 · Brand/Video Brand Kit/` under canonical names: `hook-16x9.png`,
+  `hook-9x16.png`, `cta-16x9.png`, `cta-9x16.png`, `lower-third-16x9.png`, `emphasis-16x9.png`,
+  `emphasis-9x16.png`, `end-screen.png`, optional `logo-sting.mp4`, plus the `video-brand-spec` doc).
+  Editor Setup registers the paths here and transcribes the spec into this brand block — the spec WINS
+  over inferred values (the agent approved it in design). When `assets` is populated, cards are
+  **PLACED from these files, not built natively** — see "Video Brand Kit" in `graphics-style.md`. An
+  empty `assets` block changes nothing: native cards as always.
 - Compliance: read `identity/compliance.md` before any public-facing export (brokerage disclaimer, license display, claims to avoid).

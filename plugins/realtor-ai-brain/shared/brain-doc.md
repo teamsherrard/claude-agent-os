@@ -1,7 +1,8 @@
 # The AI Brain Document — one organized master doc (the deliverable)
 
 Every agent gets **ONE comprehensive "Your AI Brain" document** — a premium, well-organized render of their
-whole Brain, saved to Drive. It is a **render of the identity files** (which stay the source of truth), never a
+whole Brain, saved to Drive. It is also **the "AI Brain file"** that every skill in the agent's Claude
+Design suite asks them to upload — one doc, everywhere. It is a **render of the identity files** (which stay the source of truth), never a
 new source — so it's always rebuildable and never drifts. Generated at the end of Setup, refreshed whenever the
 Brain materially changes (especially after the **Business Plan** is built), and on demand ("show me my Brain").
 
@@ -19,7 +20,9 @@ Brain materially changes (especially after the **Business Plan** is built), and 
 
 ## The sections (in this order)
 1. **SNAPSHOT** — name · market · niche · voice-in-one-line · primary CTA · booking link · socials (from `brain.md` quick-ref)
-2. **WHO YOU ARE** — `identity/profile.md`
+2. **WHO YOU ARE** — `identity/profile.md` (when the Brain records a duo/team: include the structure
+   and the roster — each member's name · title · contact · licence # — the design suite reads it for
+   team branding)
 3. **WHO YOU SERVE** — `identity/avatars.md` (each avatar, with their fears/motivations)
 4. **YOUR MARKET** — `identity/market.md` (communities, price bands, local intel)
 5. **YOUR OFFER & USP** — `identity/offer.md`
@@ -35,5 +38,9 @@ Brain materially changes (especially after the **Business Plan** is built), and 
 ## Rules
 - Written **for the agent** — clear headings, second person, genuinely useful as a reference; premium via `render_doc.py`.
 - **Never invent** — render only what's actually in the Brain; use placeholders for what isn't built yet.
+- **This is the "AI Brain file" for design.** Every Claude Design skill in the design suite asks the
+  agent to upload their "AI Brain file" — it means THIS document. When an agent asks which file to
+  take to Claude Design: this one — download it from Drive (or let Claude Design read it via the
+  Drive connector), and regenerate it here whenever the Brain materially changes.
 - **Refresh, don't fork** — regenerate the same "[Agent] — AI Brain" doc after the Business Plan is built, and on
   "show me my Brain" / "regenerate my Brain document". One doc, always current.

@@ -48,7 +48,10 @@ keep it plain and warm, never technical. (Usually you're invoked behind the scen
 Pull voice, market, avatar, offers, lead magnets, and handles straight from these files — do not ask the
 agent for anything that's in them.
 
-- **If `~/realtor-brain/` doesn't exist:** tell the agent to run _Realtor AI Brain — Setup_ first.
+- **If `~/realtor-brain/` doesn't exist:** don't assume there's no Brain — a fresh session or a different
+  project just starts with an empty local sandbox, while the Brain lives in the agent's cloud workspace
+  (Google Drive or OneDrive). **Pull it first with realtor-brain-sync** (its locate ladder finds the workspace
+  by ID/marker, never folder name). Only if the CLOUD has no Brain either, run _Realtor AI Brain — Setup_.
 - **If a genuinely needed field is missing** (most commonly: no lead magnets listed in `offer.md`, so a
   DM-keyword CTA has nothing to point to): ask for it **once**, use it, then **write it back to the Brain**
   (append it to the relevant identity file and push to Drive per `brain.md`) so it's never asked again.

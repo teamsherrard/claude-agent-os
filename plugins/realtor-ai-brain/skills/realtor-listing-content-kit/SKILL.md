@@ -14,6 +14,11 @@ description: >
   content", "just listed content", "content for [address]", "listing content package",
   or any request where the agent wants to create YouTube or short-form content for a
   specific property listing.
+
+  BOUNDARY: if the dedicated Realtor Listing Launch plugin (Plugin 7) is installed, defer to it —
+  its listing-intake captures the property once, and FILM IT (listing-video), CLIP IT (listing-clips),
+  and TOUR IT (listing-tour) go further than this skill does. This is the built-in version for agents
+  who don't have Plugin 7.
 ---
 
 # Realtor Listing Content Kit

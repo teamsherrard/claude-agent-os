@@ -7,8 +7,10 @@ to do. This guide is how you turn raw metrics into that.
 
 | Metric | What it really means | If it's low… |
 |---|---|---|
-| **Views / reach / impressions** | Did the algorithm push it out? Mostly driven by the **hook + first 3 seconds**. | Weak or slow hook; topic too narrow; posted at a dead time. Fix the hook first. |
+| **Views / reach** | Did the algorithm push it out? Mostly driven by the **hook + first 3 seconds**. | Weak or slow hook; topic too narrow; posted at a dead time. Fix the hook first. |
 | **Watch time / retention / avg view %** | Did people *stay*? The truest quality signal. | Slow middle, no payoff, too long. Tighten; one idea per video. |
+| **Reel avg watch time** *(live connection only)* | Seconds actually watched. Read it **against the video's length** — 18s watched on a 30s reel (60%) is strong; 18s on a 60s reel (30%) is weak. | Middle sags or it runs too long for the payoff. Cut to one idea; front-load the value. |
+| **Reel skip rate** *(live connection only)* | % who swiped away fast — **the cleanest hook verdict there is.** High skip = the first 3 seconds didn't earn the next 3. | The **hook**. Rewrite the open: bolder first line, no throat-clearing, no slow logo intro. |
 | **Saves** | "This is useful, I'll come back." Gold for realtors. | Not actionable/valuable enough. Make it more practical (carousels, checklists, how-tos). |
 | **Shares / sends** | "This is relevant to someone I know." Drives reach. | Not relatable or local enough. Add the "send this to someone who's moving" angle. |
 | **Comments** | Engagement + algorithm fuel. | No question/hook to react to. End with a question. |
@@ -25,6 +27,20 @@ Walk the funnel in order — the first weak link is usually the cause:
 4. **Good engagement, no DMs/leads?** → the **CTA** is weak or missing (or not tied to a lead magnet).
 
 Name the specific weak link in plain words — that's the insight a dashboard can't give.
+
+**When you have the reel-retention numbers (live connection), you can settle hook-vs-middle exactly** instead
+of guessing from views alone:
+- **High skip rate** → it's the **hook**. Even great content dies if the first 3 seconds don't hold. Rewrite
+  the open (bolder first line, cut the intro).
+- **Low skip rate but low avg-watch-time-vs-length** → the hook worked, the **middle** sagged. Tighten to one
+  idea; get to the payoff faster.
+- **Good watch time, low saves/shares** → the content held but wasn't **useful/relatable** enough to pass on.
+This is the exact edge Metricool can't give you — use it whenever the live connection is on.
+
+**Demographics (live connection):** if `follower_demographics` / `reached_audience_demographics` show the
+audience is mostly **other agents or out-of-market**, that's the "agent-bait" trap — steer toward green screen
++ local lifestyle to pull in real local buyers/sellers (Mike's frameworks §4). If the top cities match the
+agent's market, say so — it's proof the local strategy is working.
 
 ## Turn it into advice (always)
 Every analysis ends with: **what's working → do more of it**, and **the one weak link → here's the fix.**

@@ -15,12 +15,41 @@
     "city": "",
     "website": "",
     "cta_url": "",
-    "cta": { "text": "", "details": "" },
-    "colors": { "primary": "", "accent": "", "text": "#FFFFFF", "bg": "" },
-    "fonts": { "heading": "", "body": "" },
+    "cta": {
+      "text": "",
+      "details": ""
+    },
+    "colors": {
+      "primary": "",
+      "accent": "",
+      "text": "#FFFFFF",
+      "bg": ""
+    },
+    "fonts": {
+      "heading": "",
+      "body": ""
+    },
     "logo": "",
-    "caption": { "font": "", "accent": "", "weight": "900", "anim": "karaoke" },
-    "style_pack": "bold-kinetic"
+    "caption": {
+      "font": "",
+      "accent": "",
+      "weight": "900",
+      "anim": "karaoke"
+    },
+    "style_pack": "bold-kinetic",
+    "assets": {
+      "dir": "",
+      "spec": "",
+      "hook_16x9": "",
+      "hook_9x16": "",
+      "cta_16x9": "",
+      "cta_9x16": "",
+      "lower_third": "",
+      "emphasis_16x9": "",
+      "emphasis_9x16": "",
+      "end_screen": "",
+      "logo_sting": ""
+    }
   },
   "own_footage": {
     "google_drive_folder": "",
@@ -28,18 +57,39 @@
     "per_video_uploads": "ask each time",
     "use_listing_photos_for_property_videos": true
   },
-  "platforms": ["youtube", "instagram"],
+  "platforms": [
+    "youtube",
+    "instagram"
+  ],
   "caption_style": "bold-karaoke",
   "publish": "needs-approval",
   "expectations_shown": false,
   "stock_sources": {
-    "pexels":   { "enabled": false, "api_key": "" },
-    "pixabay":  { "enabled": false, "api_key": "" },
-    "coverr":   { "enabled": false, "api_key": "" },
-    "unsplash": { "enabled": false, "api_key": "" }
+    "pexels": {
+      "enabled": false,
+      "api_key": ""
+    },
+    "pixabay": {
+      "enabled": false,
+      "api_key": ""
+    },
+    "coverr": {
+      "enabled": false,
+      "api_key": ""
+    },
+    "unsplash": {
+      "enabled": false,
+      "api_key": ""
+    }
   },
   "real_place_sources": {
-    "wikimedia":         { "enabled": true,  "note": "no key needed" },
-    "google_streetview": { "enabled": false, "api_key": "" }
+    "wikimedia": {
+      "enabled": true,
+      "note": "no key needed"
+    },
+    "google_streetview": {
+      "enabled": false,
+      "api_key": ""
+    }
   }
 }

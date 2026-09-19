@@ -42,9 +42,11 @@ offer, compliance). Reflect back what you know so it's clear you won't re-ask:
 > "Here's what I've got: you're [name] in [city], you help [avatar], and your style is [voice in plain
 > words]. I won't ask you any of that again."
 
-If the Brain is missing or thin, say so kindly and point them to set it up first ("the more your Brain
-knows you, the more your posts sound like *you* and not generic"). If `~/realtor-brain/` doesn't exist,
-tell them to run **Realtor AI Brain — Setup** first.
+If `~/realtor-brain/` isn't there, **don't assume it's a brand-new agent** — a fresh session or a different
+project starts with an empty local sandbox while the Brain lives in their cloud workspace (Google Drive or
+OneDrive). **Pull it first with realtor-brain-sync** (located by ID/marker, never folder name). Only if the
+cloud truly has no Brain do you point them to **Realtor AI Brain — Setup** first ("the more your Brain knows
+you, the more your posts sound like *you* and not generic"). If it's there but thin, say so kindly and proceed.
 
 ## Step 3 — Capture ONLY the short-form layer (one question at a time)
 Ask only these, conversationally, one at a time — skip any the Brain already answers:
@@ -104,6 +106,11 @@ connect your socials there once, then sign in when I ask." Reassure them it's qu
    `[Agent Name] — Short-Form System/` with a `Content/` and a `Performance/` folder inside. Don't
    pre-create month folders — those get made the first time content is saved. Share the folder link so
    they know where their content will live.
+3. **Turn on their monthly scorecard** — run Step A of `${CLAUDE_PLUGIN_ROOT}/skills/shortform-scorecard/SKILL.md`
+   to provision the 1st-of-month agent (it stores its own task id in `config.md` and never double-provisions).
+   Don't ask permission — it's the default; opting out is one sentence away. Mention it in plain words as part
+   of the wrap-up: *"And on the 1st of each month I'll send you a one-page scorecard of how your short-form did
+   — say 'stop my scorecard' any time."*
 
 ## Step 6 — Explain how it works (3 simple formats) + first post
 Explain it the way they'll actually use it — plainly:
@@ -117,6 +124,11 @@ Explain it the way they'll actually use it — plainly:
 
 Then get them a quick win:
 > "Want to start right now? Say *'give me today's green screen'* and I'll find something for you to film."
+
+And plant the insight side for later (one line, no jargon):
+> "Once you're posting, just ask *'how did my reels do?'* any time — and if you do a quick one-time sign-in to
+> your Instagram and YouTube, your monthly scorecard and a full *'run my deep dive'* analysis run on your real
+> numbers." *(Optional, never forced — the connection mechanics live in `${CLAUDE_PLUGIN_ROOT}/shared/composio-data-engine.md`; it powers analytics, the scorecard, and the deep dive.)*
 
 ---
 

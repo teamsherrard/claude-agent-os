@@ -25,7 +25,9 @@ they connected. The agent speaks naturally; you handle the rest.
 - **The post(s):** use what's already in the conversation (a green screen / talking head / carousel just
   produced), or what the agent pasted. If it's unclear which post they mean, ask once, simply.
 - **The posting tool:** read `~/realtor-brain/identity/publishing.md` for their method (Metricool /
-  GoHighLevel / Buffer / manual) and connected platforms. If it's "manual" or unset, just hand them the
+  GoHighLevel / Buffer / manual) and connected platforms. (If `~/realtor-brain/` is empty — a fresh session
+  or a different project — **pull it first with realtor-brain-sync**; it lives in their cloud workspace,
+  Google Drive or OneDrive, located by ID/marker.) If it's "manual" or unset, just hand them the
   copy-paste post and mention (once) they can connect a tool to have you schedule it.
 - **When:** if they gave a time ("tomorrow at 10am"), use it. If they said "best time" or gave none, pull
   their best-time-to-post from the connector and use that slot. Convert natural language to a real

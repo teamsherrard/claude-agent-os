@@ -42,7 +42,9 @@ A truly hands-off month only works if these are true. Confirm them kindly at the
 ## Step 1 — Point it at the folder + load context
 - **The folder:** the agent names it or pastes the Drive link ("my Reels folder," "October content").
   If they don't specify, ask once, simply. List the folder's files via the Drive connector.
-- **Load the Brain:** `~/realtor-brain/brain.md`, then `identity/voice.md` + `voice-samples.md` (voice),
+- **Load the Brain** (if `~/realtor-brain/` is empty — a fresh session or a different project — **pull it
+  first with realtor-brain-sync**; it lives in the agent's cloud workspace, Google Drive or OneDrive, located
+  by ID/marker): `~/realtor-brain/brain.md`, then `identity/voice.md` + `voice-samples.md` (voice),
   `profile.md` + `market.md` + `avatars.md` (who/where), `offer.md` (lead magnets for CTAs),
   `content-engine.md` (platform priority), `compliance.md` (the third law), and
   `identity/publishing.md` (which tool is connected + platforms). If no posting tool is connected, send

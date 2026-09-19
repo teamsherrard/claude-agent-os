@@ -2,6 +2,32 @@
 
 Graphics are done **natively in Descript**, and kept **MINIMAL** — cards are the most credit-expensive thing Descript does, so use just what each format needs. On a **short-form reel** the karaoke captions (with the brand-accent active word) already carry the keyword emphasis, so you rarely need extra text cards. On **long-form** there's no karaoke — so the emphasis lives in **pop-up cards every ~2–3 min** (a key-phrase callout; ~3–5 on a 10-min video; see below). (See `${CLAUDE_PLUGIN_ROOT}/shared/credit-tiers.md` for the credit rationale.)
 
+## Video Brand Kit — when designed cards EXIST, place them (don't build)
+
+**Check `config.json` → `brand.assets` FIRST.** If the agent's Video Brand Kit is registered (designed
+in their Claude Design suite; schema + canonical files in `brand-wiring.md`), the standard cards come
+from those files — imported and placed, not built natively. Same discipline: the counts and caps
+below still hold, and off-face still rules.
+
+- **Hook card** — `import_media` the format-matched file ONCE per project (`hook_9x16` vertical /
+  `hook_16x9` horizontal), place it full-frame for the hook window (~1.5–2.5s), and add the episode's
+  hook line as **ONE text object inside the card's reserved zone** (vertical: the top zone;
+  horizontal: the lower-third region). Every typography rule and the 4K sizing rule below apply to
+  that text.
+- **CTA card** — place the CTA file full-frame at the end. It ships COMPLETE (CTA, contact, headshot,
+  logo, compliance) — add nothing on top. `cta-pack.md` still governs timing and duration.
+- **Emphasis pop-ups (long-form)** — the transparent emphasis file + the key phrase as one text
+  object in its zone, same cadence (~every 2–3 min).
+- **Lower-third (long-form)** — place the transparent strip for ~4–6s when the agent first appears on
+  camera (per-member files when the spec's roster lists them).
+- **Logo sting** *(optional, long-form only)* — the `logo_sting` MP4 at the very start, ≤5s, only
+  when the agent wants an intro; never on reels (the hook owns the first second).
+- **LOOK first still applies** — the kit's zones were designed off-face, but extract a frame anyway;
+  if the speaker's framing collides, time the card over B-roll instead.
+- **Any asset missing or broken → fall back to the native build below for that piece.** Never block
+  an edit on the kit; say in one line which piece fell back.
+- **Import once, reuse the layer** across the edit (credit discipline).
+
 ## What to add — and ONLY this, by default
 
 - **A hook card** — first ~1.5–2.5s: the claim or number.

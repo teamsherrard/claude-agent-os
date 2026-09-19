@@ -25,7 +25,9 @@ Check whether Notion tools are available. **Not connected** → the spec's "Conn
 (never block; deliver the content normally, one plain line + click-path + reassurance). **Connected** → on.
 
 ## Step 2 — Find-or-create THE board (the Brain knows where)
-Read the `Content board:` line in `~/realtor-brain/identity/publishing.md` first: a URL → go straight to
+(If `~/realtor-brain/` is empty — a fresh session or a different project — **pull it first with
+realtor-brain-sync**; the Brain lives in the agent's cloud workspace, Google Drive or OneDrive, located by
+ID/marker.) Read the `Content board:` line in `~/realtor-brain/identity/publishing.md` first: a URL → go straight to
 that board (search only if the link is dead); `declined` → only proceed if they're asking for it right now;
 no line → search Notion for `[Agent Name] — Content Dashboard` once. Exists → record its URL in the Brain,
 reuse it, ensure the 📱 Short-Form view (filter: Format ≠ Long-Form) + any missing columns (incl. System ID).
