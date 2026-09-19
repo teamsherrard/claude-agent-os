@@ -9,7 +9,7 @@ description: >
   database. It runs first and publishes the structure everything else follows —
   including the optional word-for-word script, locked to the same Slide Map if the agent asks for it.
 
-  Trigger on: "build my market presentation", "my market update deck", "the slides for my market
+  Trigger on: "walk me through the deck", "help me build the slides", "get my deck into Claude Design", "build my market presentation", "my market update deck", "the slides for my market
   update", "market report presentation", "build my market report", "the screen share for my market
   video", "make my market slides", or as step 1 of a full monthly run.
 ---

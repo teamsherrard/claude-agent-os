@@ -8,7 +8,7 @@ description: >
   dumped in a day. Reads the month's data block and the finished pieces — never researches, never
   sends or schedules anything without explicit approval.
 
-  Trigger on: "distribute my market update", "the newsletter for my market update", "my market
+  Trigger on: "schedule my market posts", "schedule my posts", "draft my newsletter email", "send my market newsletter", "distribute my market update", "the newsletter for my market update", "my market
   update lead magnet", "captions for my market update", "how do I post my market update", "market
   distribution plan", or as step 5 of a full monthly run.
 ---

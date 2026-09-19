@@ -1,6 +1,43 @@
 # Changelog
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
+## [0.124.0] — 2026-09-19
+
+### Market System (Plugin 8) → v0.6.0 — the monthly agent actually gets created, and the run doesn't dead-end
+Live cohort test: the full run finished, saved everything to Drive — and **never created the monthly
+scheduled workflow**, the one thing the plugin is sold on. Then it just stopped.
+
+- **Why the schedule never got created.** The plugin said *"create the task"* and never named the tool
+  (no plugin in this repo does), and ran the step as a **silent one-liner at the start** of a long run,
+  where it got skipped. `shared/auto-schedule.md` is rewritten around the real tools —
+  `list_scheduled_tasks` → `create_scheduled_task` (`taskId: market-update-monthly`, a monthly
+  `cronExpression` in the agent's **local** time) → **`list_scheduled_tasks` again to verify** before the
+  agent is told anything. It now runs as a **visible, mandatory last step of `market-run`**, never silent,
+  and never claims a schedule it didn't just see saved. No scheduling tool in the session → it says so and
+  gives the one phrase that sets it up from the desktop app.
+- **When it runs:** the day after their board publishes — the 3rd for Calgary, 5th Vancouver, 7th Toronto,
+  6th for most Canadian boards, the **15th** for most US markets, capped at the 28th. So: early in the month
+  for most Canadian agents, the second week for most US agents. It re-times itself after two months of drift
+  with `update_scheduled_task`.
+- **The retry ladder couldn't physically run.** A monthly task can't "re-check in 2 days" — a run can't
+  wait. It now schedules its own **one-time** follow-ups (`create_scheduled_task` with `fireAt`, +2 days, up
+  to three), and the retry run builds the package when the numbers land.
+- **The agent is told Claude must be open** on the scheduled day (the desktop app runs tasks while open, or
+  on next launch) — otherwise the first missed run reads as a bug.
+- **The off switch routed nowhere.** *"Stop my market schedule"* — taught in the walkthrough deck — was not a
+  trigger in any skill. `market-routine` now takes stop / pause / change the day / is it on / run it now.
+- **New skill `market-ask` — the market advisor, in chat.** Asking *"how's my market?"* used to trigger a
+  full re-research. Now questions are answered instantly from the numbers on file: communities, price ranges,
+  property types, month-over-month trends read across the stacked blocks, monthly-payment math, what a metric
+  means — and the most-used one, **conversation prep**: what to tell a seller who asks if now's the time,
+  how to answer a buyer who thinks prices will crash, market talking points for tomorrow's listing
+  appointment, a text to a past client (draft only). Never values a specific home; pricing stays with their
+  CMA. Only researches when the month isn't on file.
+- **The run no longer ends at "saved to Drive."** A new closing step hands the agent a short menu of what
+  they can do next, right in the chat — walk through the deck, build the slides, write the script, prep a
+  client conversation, schedule the posts, draft the newsletter — filtered to what they have connected.
+  Every menu item routes to a real skill.
+
 ## [0.123.2] — 2026-09-19
 
 ### Market System (Plugin 8) → v0.5.2 — the newsletter was shipping with one CTA, not two

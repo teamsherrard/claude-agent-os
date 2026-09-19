@@ -9,9 +9,9 @@ description: >
   actually asking right now. Researches once per month so nothing downstream ever re-searches or
   disagrees. Never estimates, never forecasts as fact.
 
-  Trigger on: "pull my market data", "get this month's numbers", "research my market", "what are the
-  numbers this month", "market stats for [month]", "refresh my market data", "what's happening in my
-  market", or as the data step that runs before every other piece in a monthly run.
+  Trigger on: "pull my market data", "get this month's numbers", "research my market", "market stats for [month]", "refresh my market data", or as the data step that runs before every other piece in a monthly run. (Questions ABOUT the
+  numbers — "what's happening in my market", "how's [community] doing" — go to **Market Ask**, which
+  answers from what's already on file and only comes here when this month hasn't been pulled yet.)
 ---
 
 # Market Research
@@ -42,8 +42,6 @@ Read `~/realtor-brain/brain.md` first, then:
 If `~/realtor-brain/` is missing, send them to **Realtor AI Brain — Setup** and stop. If `market.md`
 is blank, ask only for the city and the communities — nothing else.
 
-**Then run the auto-schedule check** (`${CLAUDE_PLUGIN_ROOT}/shared/auto-schedule.md`) silently — if
-this is their first run, the monthly agent provisions itself now.
 
 ## Step 2 — Settle the period
 Apply the timing rule: **the previous complete month is the data; the current month goes in the

@@ -10,7 +10,10 @@ description: >
 
   Trigger on: "set up my market routine", "run my market update every month", "automate my market
   update", "the 1st of the month agent", "market update on autopilot", "my monthly market rhythm",
-  "schedule my market update", or offer it once at the end of a first successful monthly run.
+  "schedule my market update", "set up my monthly market schedule", "is my market schedule on", "when
+  does my market update run", "stop my market schedule", "turn off my market schedule", "pause my
+  market update", "change my market update day", "run my monthly market update now", or whenever the
+  agent asks anything about the monthly schedule.
 ---
 
 # Market Routine — the 1st-of-the-month agent
@@ -61,7 +64,7 @@ re-checks every two days, and late data beats invented data every time.
 
 ## Phase 2 — Confirm the schedule is live (it usually already is)
 
-Run the auto-schedule check (`${CLAUDE_PLUGIN_ROOT}/shared/auto-schedule.md`).
+Follow `${CLAUDE_PLUGIN_ROOT}/shared/auto-schedule.md` → *Provisioning* with the real tools: `list_scheduled_tasks` first, `create_scheduled_task` if it's missing, then **`list_scheduled_tasks` again to verify** before saying anything.
 
 - **Already provisioned** → tell them when it runs and why that day: *"It's already on — runs the 4th
   of each month, because that's when [Board] publishes."* Nothing else to do.

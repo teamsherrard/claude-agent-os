@@ -12,7 +12,7 @@ description: >
   so the video is ready to publish, not just ready to film. Reads the month's data block — never
   researches.
 
-  Trigger on: "write my market update script", "my YouTube script for [month]", "script my market
+  Trigger on: "write the script", "give me the words", "write my market update script", "my YouTube script for [month]", "script my market
   video", "the market update video script", "write the script for my market report", or as step 2 of
   a full monthly run.
 ---

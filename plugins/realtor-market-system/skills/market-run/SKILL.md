@@ -40,9 +40,8 @@ Read `~/realtor-brain/brain.md` first, then:
 
 If `~/realtor-brain/` is missing, send them to **Realtor AI Brain — Setup** and stop.
 
-**Then run the auto-schedule check** (`${CLAUDE_PLUGIN_ROOT}/shared/auto-schedule.md`) — silently. If
-this is their first time here, the monthly agent gets provisioned now; you mention it in one line at
-the very end, never at the start.
+*(The monthly agent is set up at the **end** of this run, as its own visible step — Phase 3, last step.
+Don't do it here; a silent step at the start of a long run is exactly how it got skipped before.)*
 
 ## Step 2 — Settle the month (one line, then move)
 
@@ -127,8 +126,32 @@ Per `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`:
 - **Push the Brain to Drive** (`realtor-brain-sync`). An unsynced write is a lost write.
 - **Hand to Market Board last**, so the month lands on the same Notion board as their YouTube and
   short-form content. No board and no interest in one → skip it silently; it's never required.
-- If the monthly agent was provisioned during this run, say so now — one line, at the end:
-  *"Also set up: on the [Nth] of every month I'll have all of this built and waiting."*
+- **Set up the monthly agent — every run checks, the first run creates it.** Follow
+  `${CLAUDE_PLUGIN_ROOT}/shared/auto-schedule.md` → *Provisioning*, step by step, with the real tools:
+  `list_scheduled_tasks` → `create_scheduled_task` (monthly `cronExpression` in local time, on the
+  board's release day + 1, the task prompt verbatim) → **`list_scheduled_tasks` again to verify it
+  saved** → write the `Market Update task:` line to `config.md` → push the Brain.
+  This is **not optional and not silent.** If it's already set up, confirm it in one line with the
+  next run date. If this session has no scheduling tool, say so plainly and tell them the one phrase
+  that sets it up from the desktop app. **Never tell the agent the schedule exists unless you just saw
+  it in `list_scheduled_tasks`.**
+
+## Phase 4 — Hand them the next move (don't end at "saved to Drive")
+
+A run that ends with "everything's in your Drive" leaves the agent staring at a folder. End with
+what they can do **now**, in this chat — short, as a menu, in plain words:
+
+> **Your month is ready. Here's what you can do next, right here:**
+> - 🎬 **"Walk me through the deck"** — I'll take you slide by slide so you're ready to film
+> - 🎨 **"Help me build the slides"** — I'll get the deck into Claude Design with your brand
+> - ✍️ **"Write the script"** — every line word-for-word, if you want it
+> - 💬 **"What do I tell a seller who asks about the market?"** — ask me anything about your numbers
+> - 📅 **"Schedule my posts"** — the shorts and carousel into your posting tool, on the plan's dates
+> - 📧 **"Draft my newsletter email"** — ready to send from your inbox
+> - 📊 **"How's [a community] doing?"** — a street-level read from this month's numbers
+
+Show **four or five of these, not all seven** — pick the ones that fit what they have connected (no
+posting tool → leave out scheduling; no Gmail → leave out the draft). Then stop and let them choose.
 
 ## Quality checklist
 - [ ] Brain read; nothing asked that the Brain already answers.
@@ -136,7 +159,8 @@ Per `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`:
 - [ ] The month's data block on file before anything was built; research run first if it wasn't.
 - [ ] No searches run here — every figure came from the block.
 - [ ] The month shown in three lines before the build started.
-- [ ] Auto-schedule check run; if newly provisioned, mentioned in ONE line at the end.
+- [ ] Monthly agent provisioned at the END with the real tools, and **verified with `list_scheduled_tasks`** before being claimed.
+- [ ] Ended on the next-move menu, not on "saved to Drive."
 - [ ] Hand-offs happened in order, by name — no piece written here; the deck ran first.
 - [ ] The script was offered, not assumed — the deck records on its own.
 - [ ] Review ran BEFORE the build when a previous month existed; its instructions shaped the angles.
@@ -146,5 +170,5 @@ Per `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`:
 
 ## End every run with
 
-"Film the script this week while the numbers are still the freshest thing anyone's seen — everything
-else is already written and waiting behind it."
+The Phase 4 menu, then one line: *"Film the deck this week while the numbers are the freshest thing
+anyone's seen — everything else is already written and waiting behind it."*
