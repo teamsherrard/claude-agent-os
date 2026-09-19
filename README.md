@@ -40,6 +40,8 @@ In **Claude Cowork** (everything is UI — there are no commands to type):
    - **Plugin 6 · Realtor AI Editor** — install when you start the editing module (connects to
      your own Descript account)
 5. *(Recommended)* Open the marketplace card → toggle **Sync automatically** so you get future updates
+   - **Plugin 10 · Realtor AI Editor — Riverside engine** — the same editor on Riverside instead of
+     Descript: Claude edits directly, no per-edit credits, and it can publish to the agent's channels.
 
 That's it — the whole system is installed.
 
@@ -101,7 +103,7 @@ This repo is **both** the marketplace and the plugin.
 - **Add a skill:** drop it in `plugins/realtor-ai-brain/skills/<name>/SKILL.md`. It ships on next release.
 - **The contract every skill follows:** see [`docs/BRAIN-CONTRACT.md`](docs/BRAIN-CONTRACT.md). Three
   laws — read `brain.md` first; write back to `memory/` then push to Drive; stay compliant.
-- **Reference retrofit pattern:** [`realtor-market-update`](plugins/realtor-ai-brain/skills/realtor-market-update/SKILL.md)
-  shows how a consumer skill loads the Brain (Step 1) and writes back + syncs (Phase 7).
+- **Reference retrofit pattern:** [`realtor-listing-content-kit`](plugins/realtor-ai-brain/skills/realtor-listing-content-kit/SKILL.md)
+  shows how a consumer skill loads the Brain (Step 1) and writes back + syncs.
 
 Current version: see [`VERSION`](VERSION).

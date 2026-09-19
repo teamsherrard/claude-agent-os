@@ -1,0 +1,23 @@
+{
+  "name": "realtor-riverside-editor",
+  "displayName": "Realtor AI Editor — Riverside (Plugin 10)",
+  "version": "0.1.1",
+  "description": "The AI Editor, Riverside engine. The agent talks to Claude in plain English; Claude edits the video DIRECTLY in Riverside (on the agent's own account) — cuts, filler words, dead air, Magic Audio, a bare-minimum grade, captions, B-roll, a hook card + CTA, chapters — with every change verifiable (revision diffs) and no per-edit AI credits. Long-form and short-form in one tool, plus native PUBLISHING to YouTube / Shorts / TikTok / Instagram / Facebook / LinkedIn / X with scheduling, gated behind the agent's explicit yes. Same brand, same house rules, same 80/20 hand-off as the Descript editor (Plugin 6) — a different engine, the same editor. Requires Plugin 1 (the Brain) set up first, plus a Riverside connection.",
+  "author": {
+    "name": "Mike Sherrard"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "real estate",
+    "realtor",
+    "video editing",
+    "riverside",
+    "reels",
+    "shorts",
+    "youtube",
+    "b-roll",
+    "captions",
+    "publishing"
+  ],
+  "homepage": "https://github.com/teamsherrard/claude-agent-os"
+}

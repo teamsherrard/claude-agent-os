@@ -59,6 +59,12 @@
       "source": "./plugins/cohort-claude-support",
       "version": "0.2.11",
       "description": "PLUGIN 9 — Cohort Claude Support. The calm support desk inside Cowork: say \"help\" and it answers every Claude question, diagnoses breakage with real checks (brain missing, connector expired, skill won't fire, Claude slow), teaches in plain English with diagrams and vetted official articles, audits setup and resumes at the first missing step, tracks the cohort week with a catch-up plan, and escalates to Mike's team with a complete pre-built ticket the member pastes straight into the support portal. Knows all 9 plugins and routes every fix to the skill that owns it — support itself never touches the member's data (READ-ONLY by constitution). Stays current by design: money/limit answers are always fetched live from official pages; a weekly digest reads the Claude Apps release notes so answers stand on this week's Claude, not launch-week Claude. Works best with Plugin 1 (the Brain); helps even without it."
+    },
+    {
+      "name": "realtor-riverside-editor",
+      "source": "./plugins/realtor-riverside-editor",
+      "version": "0.1.1",
+      "description": "PLUGIN 10 — the AI Editor, Riverside engine. The sister of Plugin 6: same brand, same house rules, same 80/20 hand-off — but Claude EDITS DIRECTLY in Riverside (the agent's own account) with precise, verifiable operations instead of prompting an AI editor: cuts by transcript, filler words and dead air, Magic Audio, a bare-minimum grade, karaoke captions, B-roll to the cap, punch-ins, a hook card + CTA, a lower third, native chapters — every pass proven by a revision diff, no per-edit AI credits. Long-form and short-form in one tool, PLUS native publishing and scheduling to YouTube / Shorts / TikTok / Instagram / Facebook / LinkedIn / X behind the agent's explicit yes. Record straight into Riverside and there's nothing to upload. Requires Plugin 1 (the Brain) set up first, plus a Riverside connection."
     }
   ]
 }

@@ -1,6 +1,41 @@
 # Changelog
 
-All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.## [0.121.0] — 2026-09-15
+All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
+
+## [0.122.0] — 2026-09-17
+
+### NEW Plugin 10 — Realtor AI Editor, Riverside engine (`realtor-riverside-editor` v0.1.0)
+The Descript editor (Plugin 6, v0.21.0) ported line by line onto the Riverside connector's real tool
+surface (61 tools; the connector's own editing guide read in full). Same brand block, same house rules,
+same 80/20 hand-off, same three-state compliance gate, same review-draft delivery — a different engine.
+- **Claude IS the editor.** No Underlord: every cut, caption, card, and clip is a precise operation
+  (`resolve_transcript_selection` → `cut_time_ranges`, `remove_fillers`, `remove_pauses`, `set_magic_audio`,
+  `set_color_correction`, `set_captions`, `insert_stock_media`/`insert_overlay`, `add_lower_third`,
+  `add_chapter`, `apply_brand`), and **every pass is proven with `compare_revisions`** — the checkpoint log
+  now records revisions, and a missing log is recovered from Riverside's own history.
+- **No per-edit AI credits** → `credit-tiers.md` becomes `cost-discipline.md` (time, plan limits, the look).
+  ONE render stays the rule; aspect ratio must be set BEFORE any overlay (connector constraint).
+- **Native publishing** (`riverside-publish` + `shared/publishing.md`): YouTube/Shorts, TikTok, Instagram,
+  Facebook Reels, LinkedIn, X, with scheduling — summary + explicit yes, Content-ID check, status verified,
+  no unpublish exists so it says so.
+- **Honest re-baselines:** no transitions/SFX library on the connector (energy = punch-in keyframes; swoosh
+  only if the agent uploads one); a native boxed card can't take a brand panel colour (kit PNGs preferred);
+  the main recording must be recorded in or uploaded to Riverside (no import-by-URL; media upload ≤500 MB
+  is for B-roll/music/logo); exports return an S3 key, not a link → new `shared/frame-qa.md` ladder
+  (downloaded export via ffmpeg → editor-preview screenshots → rule-placed + `UNVERIFIED` honesty state).
+- 8 skills (`riverside-setup`, `riverside-navigator`, `riverside-longform`, `riverside-shortform`,
+  `riverside-listing`, `riverside-quick`, `riverside-broll`, `riverside-publish`) · 21 shared refs incl.
+  `tool-map.md` (the Descript→Riverside crosswalk) and `riverside-playbooks.md` (the pass plans).
+- Shares `~/realtor-brain/editor/config.json` with Plugin 6 (adds a `riverside` block) so brand + CTA are
+  set once for both engines.
+- **v0.1.1 — first live run** on a 12-min 16:9 realtor video (27 revisions, one 1080p export, zero credits). Four
+  connector facts the guide omits are now in the playbooks: stock overlays insert at 90% with a border (scale batch
+  mandatory), `add_lower_third` lands on the face (move it), a Riverside-made edit can arrive with captions ON
+  (long-form switches them off), placement tools take SOURCE time vs the transcript's PLAYABLE time (offset table).
+  Plus: 640×360 reference canvas, fontSize 64 boxed = the card, AI chapters to merge, editor preview can draw phantom
+  text the render doesn't have — verify on the export (`frame-qa.md` rung 2 recipe for Chrome added).
+
+## [0.121.0] — 2026-09-15
 
 ### Composio removed from the current product — parked for the PRO tier (YouTube v0.14.0 · Short-Form v0.13.5)
 Mike's call from the live cold-test: no data connections in this version at all. Everything runs on the

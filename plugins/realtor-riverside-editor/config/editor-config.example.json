@@ -1,0 +1,116 @@
+{
+  "_comment": "Saved to ~/realtor-brain/editor/config.json by riverside-setup. This is the SAME config file the Descript editor (Plugin 6) uses — the brand block is shared so both engines look identical. Only the Riverside connection is required for this plugin; everything else is optional.",
+  "riverside": {
+    "connected_via": "mcp-oauth",
+    "note": "Connected in Claude → Settings → Connectors → Riverside. No API key is stored here.",
+    "studio_id": "",
+    "studio_name": "",
+    "production_id": "",
+    "default_project_id": "",
+    "brand_kit_written": false,
+    "caption_preset_id": "",
+    "publish_accounts": {}
+  },
+  "descript": {
+    "connected_via": "",
+    "note": "Filled by the Descript editor's setup if that engine is also installed. Leave blank otherwise."
+  },
+  "brand_source": "~/realtor-brain/identity/brand-visual.md",
+  "_brand_source_comment": "FALLBACK POINTER ONLY — where the brand block below gets refreshed FROM. Skills read the 'brand' block below at edit time (resolution order #1).",
+  "_brand_comment": "SINGLE SOURCE OF TRUTH for the editor's brand (both engines). Setup writes the captured colours/font here. If blank, readers fall back to the Brain's identity/brand-visual.md, then tasteful defaults. There is NO separate brand.json file.",
+  "brand": {
+    "agent_name": "",
+    "brokerage": "",
+    "brand_name": "",
+    "tagline": "",
+    "city": "",
+    "website": "",
+    "cta_url": "",
+    "cta": {
+      "text": "",
+      "details": ""
+    },
+    "colors": {
+      "primary": "",
+      "accent": "",
+      "text": "#FFFFFF",
+      "bg": ""
+    },
+    "fonts": {
+      "heading": "",
+      "body": ""
+    },
+    "logo": "",
+    "logo_media_id": "",
+    "caption": {
+      "font": "",
+      "accent": "",
+      "weight": "900",
+      "anim": "karaoke"
+    },
+    "style_pack": "bold-kinetic",
+    "assets": {
+      "dir": "",
+      "spec": "",
+      "hook_16x9": "",
+      "hook_9x16": "",
+      "cta_16x9": "",
+      "cta_9x16": "",
+      "lower_third": "",
+      "emphasis_16x9": "",
+      "emphasis_9x16": "",
+      "end_screen": "",
+      "logo_sting": "",
+      "riverside_media_ids": {}
+    }
+  },
+  "own_footage": {
+    "google_drive_folder": "",
+    "local_folder": "",
+    "per_video_uploads": "ask each time",
+    "use_listing_photos_for_property_videos": true
+  },
+  "sfx": {
+    "swoosh_media_id": "",
+    "note": "Optional. Riverside has no built-in SFX library reachable from the connector. If the agent drops a licensed swoosh (MP3/WAV) into Your Media, record its media id here and the energy pass uses it."
+  },
+  "platforms": [
+    "youtube",
+    "instagram"
+  ],
+  "caption_style": "bold-karaoke",
+  "publish": "needs-approval",
+  "expectations_shown": false,
+  "stock_sources": {
+    "riverside_stock": {
+      "enabled": true,
+      "note": "Built in (Pexels via Riverside). No key needed."
+    },
+    "pexels": {
+      "enabled": false,
+      "api_key": ""
+    },
+    "pixabay": {
+      "enabled": false,
+      "api_key": ""
+    },
+    "coverr": {
+      "enabled": false,
+      "api_key": ""
+    },
+    "unsplash": {
+      "enabled": false,
+      "api_key": ""
+    }
+  },
+  "real_place_sources": {
+    "wikimedia": {
+      "enabled": true,
+      "note": "no key needed"
+    },
+    "google_streetview": {
+      "enabled": false,
+      "api_key": ""
+    }
+  }
+}
