@@ -1,6 +1,6 @@
 ---
 name: youtube-setup
-description: One-time onboarding for the Realtor YouTube System. READS everything from the agent's existing Realtor AI Brain (identity, market, niche, avatars, offer, voice) and only captures what's genuinely YouTube-specific — channel, goals, posting cadence — never re-asking what the AI Brain already knows. Then connects Google, provisions a clean Google Drive workspace (Videos + Setup), and delivers the agent's full YouTube Game Plan (built on Mike Sherrard's frameworks) as their first deliverable — no YouTube connection needed (V1 analytics come from their YouTube Studio export). Use when a real estate agent wants to set up / build / start / onboard their YouTube system or connect their channel. Triggers on "set up my YouTube system", "build my YouTube system", "start my YouTube system", "onboard me", "connect my YouTube channel".
+description: One-time onboarding for the Realtor YouTube System. READS everything from the agent's existing Realtor AI Brain (identity, market, niche, avatars, offer, voice) and only captures what's genuinely YouTube-specific — channel, goals, posting cadence — never re-asking what the AI Brain already knows. Then connects Google, provisions a clean Google Drive workspace (Videos + Setup), and delivers the agent's full YouTube Game Plan (built on Mike Sherrard's frameworks) as their first deliverable — no YouTube connection needed (V1 analytics come from their YouTube Studio export). Use when a real estate agent wants to set up / build / start / onboard their YouTube system or connect their channel. Triggers on "set up my YouTube system", "build my YouTube system", "start my YouTube system", "onboard me", "connect my YouTube channel" — AND on every bare launch phrase: "launch the YouTube plugin", "launch YouTube plugin", "launch my YouTube system", "open my YouTube system", "start the YouTube plugin", "open the YouTube system". A bare launch NEVER gets a which-door menu: Step 0 routes it automatically (no YouTube Layer yet → run this onboarding; already set up → a one-line ready brief, then straight into "what should I film?").
 ---
 
 # Realtor YouTube System — Setup
@@ -36,6 +36,18 @@ and only captures the few things that are genuinely YouTube-specific.
 - Confirm before creating Drive files. Everything is created in the agent's own account.
 
 ---
+
+## Step 0 — LAUNCH ROUTING (never ask "which door")
+When the agent says any bare launch phrase ("launch the YouTube plugin", "open my YouTube system") —
+**never present a menu, never ask what they want to launch.** Route silently:
+- **No YouTube Layer / no workspace yet** → they're new: run THIS onboarding, starting at Step 1. Don't
+  announce the routing — just welcome them and go.
+- **Layer exists (already set up)** → never re-onboard. One-line ready brief in plain words (*"your YouTube
+  system's up — Game Plan's in your Drive and your next videos are on the plan"*), then move straight into
+  ideation: *"want to see what to film this week?"* (= `youtube-ideation`).
+- If they named a specific job in the same breath ("launch the YouTube plugin and make this video"), skip
+  the brief and go do that job.
+A menu of internal "doors" is developer thinking — the agent should never see the system's insides.
 
 ## Step 1 — Welcome
 Set the tone that this will be quick because you already know them:
