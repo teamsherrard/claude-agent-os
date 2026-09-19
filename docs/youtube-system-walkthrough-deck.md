@@ -1,6 +1,6 @@
 # The YouTube System — Cohort Walkthrough Deck (copy for Claude Design)
 
-**Design brief (paste to Claude Design):** 16:9 slide deck, 20 slides. Mike Sherrard brand — deep purple +
+**Design brief (paste to Claude Design):** 16:9 slide deck, 22 slides. Mike Sherrard brand — deep purple +
 charcoal, gold accents, SF Pro. Dark slides, ONE idea per slide, big step numbers, trigger phrases styled
 as chat bubbles or `code chips` so students see "this is what I literally type." Generous whitespace.
 Plain, direct wording everywhere — no marketing language. This deck is recorded once, then lives in the
@@ -39,7 +39,43 @@ already knows your market, your niche, and how you talk.
 
 ---
 
-## SLIDE 3 — Do this first
+## SLIDE 3 — What this replaces
+
+**ON SLIDE:**
+## One system. A whole team's job.
+- **A YouTube strategist** → your Game Plan: audit, 3 pillars, ~50 titles, the 90-day calendar
+- **A scriptwriter** → every video written in your voice, ready to read
+- **An SEO manager** → titles, descriptions, and tags done the way YouTube actually ranks
+- **A community manager** → comments triaged, replies drafted, leads flagged
+- **A coach** → Mike's frameworks checking every step, and the honest read when you're stuck
+Built on Mike's real YouTube methodology — **installed, not taught.**
+
+**SAY:** If you hired people for these five jobs, that's a full-time payroll. Here it's one system that
+already knows your market, your niche, and how you talk — and it never takes a day off. And it's not
+generic AI advice: every rule inside is my actual YouTube method, the same one behind my own channel. You
+don't learn my system — it comes pre-installed.
+
+---
+
+## SLIDE 4 — The 19 skills you're getting
+
+**ON SLIDE:**
+| | |
+|---|---|
+| **PLAN** | Setup · Game Plan · Channel Page · Content Board (Notion) |
+| **CREATE** | Video Ideas · Make This Video · Scripts · SEO · Lead Magnets · Repurposing |
+| **GROW** | Comment Engine · Analytics · Coach · Monthly Market Report |
+| **STAY CONSISTENT** | Filming Days + Check-ins · Monday Email (optional) |
+| **BEHIND THE SCENES** | Market Research · Competitor Intel · News Triggers |
+Every skill reads your Brain, writes in your voice, and checks Fair Housing before anything ships.
+
+**SAY:** Nineteen specialist skills in one plugin — and you don't learn any of them. You just talk: "what
+should I film," "make this video," "check my comments" — and the right specialist fires automatically. The
+behind-the-scenes ones you never even see working; they just make everything else smarter.
+
+---
+
+## SLIDE 5 — Do this first
 
 **ON SLIDE:**
 ## Do this first (one time)
@@ -51,7 +87,7 @@ you those questions again. The install takes one minute, same as the install les
 
 ---
 
-## SLIDE 4 — Step 1: Set it up
+## SLIDE 6 — Step 1: Set it up
 
 **ON SLIDE:**
 # Step 1
@@ -67,7 +103,7 @@ your Brain, asks about your channel, builds your folders, and moves straight int
 
 ---
 
-## SLIDE 5 — Step 2: You get your Game Plan
+## SLIDE 7 — Step 2: You get your Game Plan
 
 **ON SLIDE:**
 # Step 2
@@ -84,7 +120,7 @@ you set in the Brain week, so there's one set of numbers everywhere. Everything 
 
 ---
 
-## SLIDE 6 — Step 3: Build your content board
+## SLIDE 8 — Step 3: Build your content board
 
 **ON SLIDE:**
 # Step 3
@@ -100,7 +136,7 @@ is on it. And it's two-way — if you move a filming day to Thursday, the system
 
 ---
 
-## SLIDE 7 — Step 4: Set up your channel page
+## SLIDE 9 — Step 4: Set up your channel page
 
 **ON SLIDE:**
 # Step 4
@@ -117,7 +153,7 @@ to reach out. When it offers your channel trailer, that's one command too.
 
 ---
 
-## SLIDE 8 — Your weekly routine
+## SLIDE 10 — Your weekly routine
 
 **ON SLIDE:**
 ## Your weekly routine
@@ -132,7 +168,7 @@ automatically. Two a week builds the channel. One a week still works. Zero is th
 
 ---
 
-## SLIDE 9 — What "Make this video" gives you
+## SLIDE 11 — What "Make this video" gives you
 
 **ON SLIDE:**
 ## `"Make this video"` gives you:
@@ -147,7 +183,7 @@ topic, and you know exactly how yours beats them. No other agent in your market 
 
 ---
 
-## SLIDE 10 — You can ask for one piece at a time
+## SLIDE 12 — You can ask for one piece at a time
 
 **ON SLIDE:**
 ## You don't have to run the full flow
@@ -161,7 +197,7 @@ Tuesday morning? Tell it — you'll have a script Tuesday afternoon.
 
 ---
 
-## SLIDE 11 — Then you film
+## SLIDE 13 — Then you film
 
 **ON SLIDE:**
 # Then you film
@@ -175,7 +211,7 @@ beats a perfect one you didn't.
 
 ---
 
-## SLIDE 12 — Batch filming days
+## SLIDE 14 — Batch filming days
 
 **ON SLIDE:**
 ## Type: `"Plan my filming day"`
@@ -189,7 +225,7 @@ just uploading. The system gives you the filming order so you're not changing sh
 
 ---
 
-## SLIDE 13 — After you publish
+## SLIDE 15 — After you publish
 
 **ON SLIDE:**
 ## After every video, two commands
@@ -205,7 +241,7 @@ ones matter today.
 
 ---
 
-## SLIDE 14 — Every month
+## SLIDE 16 — Every month
 
 **ON SLIDE:**
 ## Every month, three commands
@@ -221,7 +257,7 @@ coach works from.
 
 ---
 
-## SLIDE 15 — Where your files are
+## SLIDE 17 — Where your files are
 
 **ON SLIDE:**
 ## Where everything is saved
@@ -235,7 +271,7 @@ months from now you can find any script in ten seconds.
 
 ---
 
-## SLIDE 16 — How it works with your other systems
+## SLIDE 18 — How it works with your other systems
 
 **ON SLIDE:**
 ## It's connected to everything else you own
@@ -251,7 +287,7 @@ your funnel, your footage feeds the editor. One connected system.
 
 ---
 
-## SLIDE 17 — Every command in one list
+## SLIDE 19 — Every command in one list
 
 **ON SLIDE:**
 | Type this… | You get |
@@ -275,7 +311,7 @@ your funnel, your footage feeds the editor. One connected system.
 
 ---
 
-## SLIDE 18 — The rules it follows
+## SLIDE 20 — The rules it follows
 
 **ON SLIDE:**
 ## The rules it follows
@@ -291,7 +327,7 @@ without your hands pressing the button. You're always in control.
 
 ---
 
-## SLIDE 19 — The 90-day path
+## SLIDE 21 — The 90-day path
 
 **ON SLIDE:**
 ## The 90-day path
@@ -306,7 +342,7 @@ calendar for 90 days and you own a lead source no ad budget can match.
 
 ---
 
-## SLIDE 20 — Start now
+## SLIDE 22 — Start now
 
 **ON SLIDE:**
 # "Done is better than perfect."
