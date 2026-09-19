@@ -43,11 +43,16 @@ step, and verify it exists afterwards.** A schedule that's "probably" set up is 
 
 1. **Read `~/realtor-brain/config.md`** for a `Market Update task:` line.
    - `declined` → they turned it off. Skip, say nothing, never re-offer.
-   - A task id → call `list_scheduled_tasks` and confirm it still exists and is enabled. It does →
-     done, say nothing. It's gone → treat as "no line."
+   - A task id → call `list_scheduled_tasks` and confirm it still exists and is enabled. It's gone →
+     treat as "no line." It exists → **check its instructions are current:** read the task's `path`
+     (its stored prompt) and compare it with the task prompt in this plugin. **A task keeps the
+     instructions it was created with — plugin updates never reach it on their own.** Different →
+     `update_scheduled_task` with the current prompt (same id, same schedule), then one short line at
+     the end: *"Also refreshed your monthly agent to the latest version."* Same → say nothing.
    - No line → provision now.
-2. **`list_scheduled_tasks` first.** A task whose id starts `market-update` already exists → **adopt
-   it**; write its id to `config.md`. Never create a twin.
+2. **`list_scheduled_tasks` first.** Any task that is clearly the market update — its id, title, or
+   description mentions *market update* (older versions didn't fix the id) — already exists → **adopt
+   it**: refresh its instructions as above and write its id to `config.md`. Never create a twin.
 3. **Create it:**
    - `taskId`: `market-update-monthly`
    - `title`: `Monthly Market Update — [City]`

@@ -1,6 +1,18 @@
 # Changelog
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
+## [0.124.1] — 2026-09-19
+
+### Market System (Plugin 8) → v0.6.1 — scheduled tasks keep themselves current
+- **A scheduled task keeps the instructions it was created with; plugin updates never reach it.** Found
+  live: an agent's monthly task was created from the plugin version loaded in their chat, so v0.6.0's
+  fixes (including the late-board retry that can actually run) would never apply to it. Two-sided fix:
+  every monthly run now **checks its own saved instructions against the plugin's current task prompt and
+  updates itself** with `update_scheduled_task` before running; and provisioning compares an existing
+  task's stored prompt and refreshes it when it's out of date.
+- **Adoption widened:** older versions didn't fix the task id, so an existing task is now recognised by
+  any id, title, or description that mentions *market update* — adopted and refreshed, never twinned.
+
 ## [0.124.0] — 2026-09-19
 
 ### Market System (Plugin 8) → v0.6.0 — the monthly agent actually gets created, and the run doesn't dead-end
