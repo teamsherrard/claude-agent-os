@@ -167,7 +167,9 @@ the headline, glance, three-lens, and CTA slides.
 - **Preview text** — ~90 characters, not a repeat of the subject.
 - **Body** — the headline story · 4–5 stats in a scannable list · the three lenses in three short
   blocks · one line of the agent's take.
-- **One CTA** — the recurring report, or the consult. Not both.
+- **Both CTAs** — the **consult** high, straight after the headline story; the **report** at the end. This
+  is the one written piece that carries both (doctrine §9): the reader is already opted in, and a call and
+  a download are different kinds of ask, so they don't compete. This draft becomes the newsletter.
 - **250–400 words.** Longer and it's the deck, not an email.
 - Disclaimer and licence per `compliance.md`.
 

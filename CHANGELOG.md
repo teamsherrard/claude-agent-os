@@ -1,6 +1,22 @@
 # Changelog
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
+## [0.123.2] — 2026-09-19
+
+### Market System (Plugin 8) → v0.5.2 — the newsletter was shipping with one CTA, not two
+- **Your spec's newsletter requirement was being silently overridden.** `market-presentation` builds the
+  email draft first and was told **"One CTA… Not both."** `market-distribution` then builds the newsletter
+  and is told to **reuse that draft, never write a second one** — while also requiring both CTAs. Two
+  instructions in direct conflict, and reuse wins, so the agent's newsletter shipped with a single CTA.
+  The draft now carries both (consult high, the report at the end), and distribution checks for both
+  before reusing an older draft. One CTA per short and per social post is unchanged — that rule is right.
+- **`market-run`'s routing description was still the v0.1.0 one** — naming `the market report` and `the
+  Instagram infographic brief` (skills that no longer exist by those names) and promising the agent
+  would "film the script," which the default run no longer builds. Cowork routes on this text. Rewritten
+  to the real package: deck, PDF, shorts, infographic + carousel, 2-CTA newsletter, board.
+- `market-presentation`'s description no longer implies a script is always written; `market-routine`'s
+  says "six lines at most," matching the task prompt it describes.
+
 ## [0.123.0] — 2026-09-18
 
 ### Repo sync — publish the unshipped work (Short-Form v0.14.0 · Editor v0.21.0 manifest fix)

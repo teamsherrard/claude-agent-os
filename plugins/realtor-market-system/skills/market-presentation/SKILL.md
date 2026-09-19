@@ -6,8 +6,8 @@ description: >
   script is then written against), a paste-ready Claude Design brief that builds the deck slide by
   slide with this month's real numbers already in it, 2–4 talking points under every slide so they
   can film from the deck alone, and the email/distribution version of the same content for their
-  database. The deck and the script are one package — this runs first and sets the structure the
-  script follows exactly.
+  database. It runs first and publishes the structure everything else follows —
+  including the optional word-for-word script, locked to the same Slide Map if the agent asks for it.
 
   Trigger on: "build my market presentation", "my market update deck", "the slides for my market
   update", "market report presentation", "build my market report", "the screen share for my market
@@ -116,7 +116,10 @@ glance, three-lens, and CTA slides (`deck-spec.md` §6).
 - **Preview text** — one line, ~90 characters, not a repeat of the subject
 - **The body** — the headline story, the 4–5 stats that matter most in a scannable list, the three
   lenses in three short blocks, one line of the agent's take
-- **One CTA** — the secondary CTA from doctrine §9, usually the recurring report itself
+- **Both CTAs**, exactly as the newsletter needs them (doctrine §9) — the **consult** placed high, right
+  after the headline story, and the **report** at the end. This draft *becomes* the newsletter: **Market
+  Distribution** reuses it rather than writing a second email, so if this carries one CTA, the agent's
+  newsletter ships with one CTA.
 - 250–400 words. Longer than that and it's the deck, not an email.
 
 ## Phase 4b — Capture the prediction
@@ -157,7 +160,7 @@ Kit — or paste the brief if you build in Canva."*)
 - [ ] 2–4 spoken talking points under every slide, in their voice.
 - [ ] Design brief reproduces every slide individually with real content — not a summary.
 - [ ] Both CTAs placed: primary on the headline slide, secondary on the CTA slide.
-- [ ] Email version stands alone, leads with a number, 250–400 words, one CTA.
+- [ ] Email version stands alone, leads with a number, 250–400 words, carries BOTH CTAs (consult high, report at the end).
 - [ ] Source and data period on the title and glance slides.
 - [ ] Compliance and fair-housing pass done.
 - [ ] Any forward-looking call written to the block as `PREDICTION:` — never invented.

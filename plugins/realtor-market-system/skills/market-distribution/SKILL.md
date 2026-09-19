@@ -86,7 +86,9 @@ Produce:
 - **Send timing** — the day the video goes up, or the day after
 
 *(**Market Presentation** already produced an email version — refine and reuse it, never write a
-second, different one. Same month, same numbers, one email.)*
+second, different one. Same month, same numbers, one email. **Check it carries both CTAs before
+reusing it;** if an older draft has only one, add the missing one — the newsletter always ships with
+both.)*
 
 ## Phase 3 — The captions
 

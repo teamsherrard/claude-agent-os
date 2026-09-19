@@ -3,10 +3,11 @@ name: market-run
 description: >
   The front door of the Monthly Market System — one command, one complete monthly launch. Confirms
   which month, makes sure that month's numbers are on file (hands to the research if they aren't),
-  then runs every piece off those exact figures in order: the market report, the YouTube script, the
-  three short-form concepts, the Instagram infographic brief, and the distribution pack. It sequences
-  and hands off; it never researches or writes the pieces itself. The agent's only job at the end is
-  to film the script.
+  grades last month's prediction if there was one, then builds every piece off those exact figures in
+  order: the presentation they screen-record (talking points on every slide — no script needed), the
+  sendable PDF report, three short-form videos, the Instagram infographic and carousel, the newsletter
+  with both CTAs, and the month's cards on their content board. It sequences and hands off; it never
+  researches or writes the pieces itself. The agent's only job at the end is to film the deck.
 
   Trigger on: "run my market update", "run my market update for [month]", "my monthly market update",
   "build my market package", "market update for [month]", "do my market update", "it's the 1st — run

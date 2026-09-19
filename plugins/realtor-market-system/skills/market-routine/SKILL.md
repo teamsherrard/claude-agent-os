@@ -5,8 +5,7 @@ description: >
   provisioned automatically the first time the agent touches this plugin, timed to when their local
   board actually publishes (not blindly the 1st), and it re-times itself as it learns their board's
   real release day. When it fires it pulls the new numbers, builds the whole package — presentation,
-  PDF report, three shorts, Instagram infographic + carousel, and the distribution pack — and leaves
-  a five-line note. This skill also teaches the monthly rhythm (the Weeks 5–6 routine) and handles
+  PDF report, three shorts, Instagram infographic + carousel, and the distribution pack — and leaves a short note (six lines at most). This skill also teaches the monthly rhythm (the Weeks 5–6 routine) and handles
   changing, pausing, or turning the schedule off.
 
   Trigger on: "set up my market routine", "run my market update every month", "automate my market
