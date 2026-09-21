@@ -20,7 +20,7 @@ description: >
 # Daily Green Screen
 
 The agent's daily reaction post. Find the one timely thing happening locally right now that's worth a
-45–60 second take, hand them a hook and the talking points, and let them film it in two minutes.
+30–60 second take, hand them a hook and the talking points, and let them film it in two minutes.
 
 **Green screen is Mike's #1 tool for reaching LOCALS, not just agents** (`${CLAUDE_PLUGIN_ROOT}/shared/mike-frameworks.md`).
 So it's not only real-estate news — alternate across **local news, "things to do this week," top lists

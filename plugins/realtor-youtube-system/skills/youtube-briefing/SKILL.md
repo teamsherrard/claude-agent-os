@@ -1,52 +1,113 @@
 ---
 name: youtube-briefing
-description: OPTIONAL Monday Kickoff for the Realtor YouTube System — OFF by default. The core system is fully on-demand (the agent just asks for their next batch of content); this exists only for agents who explicitly want a scheduled Monday message. When enabled, it runs the same Ideation flow (fresh research → ranked ideas with data-backed whys, gaps baked in), pre-builds the #1 idea so it's film-ready, flags anything timely, and emails ONE short message from the agent's Gmail. Requires a scheduled task set up during onboarding. Triggers on "set up my Monday kickoff", "turn on my weekly briefing", "run my Monday kickoff", "send my kickoff now", "weekly briefing".
+description: >
+  Market Pulse — the weekly Monday Kickoff for the realtor content system. Once a week (Monday morning) it
+  reads what's happening in the agent's market — local news, "things to do", new developments, rate moves,
+  and what buyers & sellers are asking — and turns it into ONE organized briefing: this week locally, the
+  market moves that matter, and a ranked content menu for the week (2 YouTube topics AND 3–5
+  short-form/green-screen themes, each with a hook). The agent picks their whole week in 5 minutes. It
+  provisions its OWN weekly schedule (no team setup) and also runs on demand; sends one short email from the
+  agent's Gmail when connected.
+
+  Triggers on: "set up my market pulse", "turn on my market pulse", "turn on my weekly briefing", "run my
+  market pulse", "run my Monday kickoff", "send my kickoff now", "market pulse", "weekly briefing", "my
+  content for the week", "stop my market pulse".
 ---
 
-# Monday Kickoff (OPTIONAL — off by default)
+# Market Pulse — the weekly Monday Kickoff
 
-The system's core is **on-demand** — one idea flow, least friction, least breakage. This skill exists ONLY
-for agents who explicitly ask for a scheduled Monday nudge. **Never enable it by default, never imply it's
-required.** Apply `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
+One Monday briefing that turns *"what's happening in my market this week"* into the week's content — for both
+long-form and short-form — so the agent never sits down to a blank screen. Apply
+`${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
 
-**Applies the YouTube Doctrine** (`${CLAUDE_PLUGIN_ROOT}/shared/youtube-doctrine.md`) — the kickoff is the
-front of the doctrine's **weekly workflow (§22.4)**: topic & search intent → research & outline → record →
-edit → upload/optimize → publish/respond → review. It also carries the **cadence (§15.3, §22.4):** 2 videos/
-week ideal, 1/week minimum. The first kickoff of the month leans into the **monthly workflow (§22.5)**.
+**Applies the YouTube Doctrine** (`${CLAUDE_PLUGIN_ROOT}/shared/youtube-doctrine.md`) — this is the front of
+the doctrine's **weekly workflow (§22.4)** and carries the **cadence (§15.3, §22.4): 2 videos/week ideal,
+1/week minimum.** The first Monday of the month leans into the **monthly workflow (§22.5)**.
 
-## What it does (when an agent turns it on)
-1. Runs **Ideation** fresh — research → triggers → outlier scan (weekly max) → ranked ideas, gaps baked in.
-2. Tees up the **#1 idea** — final title + hook + one line on why it wins this week — and the email's one
-   click-worthy ask: *"reply 'make it' or open a chat and say 'make this video' — it'll be film-ready in one
-   pass."* (Never pre-build script/SEO docs outside the video's own chat — that skips the references audit +
-   board card and collides with make-video's fixed doc names.)
-3. Flags anything **timely** this week.
-4. Composes ONE short, warm, skimmable email and sends it from the agent's **Gmail**.
+> **Two ways it runs:** it provisions its own **weekly schedule** (Step A) so it fires every Monday on its
+> own, and it also runs **on demand** whenever the agent says *"run my market pulse."* Same briefing either
+> way. If the schedule ever fails, nothing is lost — everything here is available by just asking.
 
+---
+
+## Step A — Provision the weekly schedule (it sets itself up; never ask permission)
+Mirrors the Market System's auto-schedule pattern — provisioning is the default; **opting out is one sentence
+away** (bottom of this step).
+1. Read `~/realtor-brain/config.md` for a `Market Pulse task:` line. **A task id** → it's on; say nothing.
+   **`declined`** → they turned it off; never re-offer. **No line** → provision now.
+2. **`list_scheduled_tasks`** first — if a Market Pulse task already exists, **adopt it** (write its id to
+   `config.md`); never create a twin.
+3. **`create_scheduled_task`** — `taskId: market-pulse-weekly`, a **weekly** `cronExpression: 0 9 * * 1`
+   (Mondays 9:00am in the agent's **LOCAL** time from `identity/operations.md` — no timezone math), and the
+   `prompt` set **verbatim** from
+   `${CLAUDE_PLUGIN_ROOT}/skills/youtube-briefing/references/weekly-task-prompt.md`.
+4. **Verify** — call **`list_scheduled_tasks`** again and confirm the task is there, enabled, with a
+   `nextRunAt`. **Not there → say so plainly; never claim a schedule that didn't save.**
+5. **Write `Market Pulse task: market-pulse-weekly · runs Mondays 9:00am` to `config.md` and push the Brain
+   immediately** (a crash between creating and writing is how duplicate tasks are born). Then, in one line
+   after whatever they asked for: *"Also on: every Monday I'll send your Market Pulse — this week's market +
+   your content menu. Say 'stop my market pulse' any time."*
+
+**Changing / pausing / stopping:** `update_scheduled_task` to change the day (keep the id); pause = disable;
+*"stop my market pulse"* → `delete_scheduled_task`, write `Market Pulse task: declined` to `config.md`, push,
+confirm once, never re-offer.
+
+## Step 1 — Load the Brain
+Read `~/realtor-brain/brain.md`, then `identity/profile.md` (city, niche, handles), `identity/market.md`
+(communities, local terms), `identity/operations.md` (**timezone** — the schedule needs it),
+`identity/content-engine.md` (pillars, platform priority), `memory/content-log.md` (so ideas stay fresh), and
+`memory/performance.md` (lean on what worked). **If `~/realtor-brain/` is empty** (a fresh session or a
+different project), pull it first with **realtor-brain-sync** — the Brain lives in the agent's cloud
+workspace; only if the cloud has none, send them to **Realtor AI Brain — Setup**.
+
+## Step 2 — Read the market (ONE research pass feeds everything)
+Run the gather fresh via `${CLAUDE_PLUGIN_ROOT}/skills/youtube-research` + `${CLAUDE_PLUGIN_ROOT}/skills/youtube-triggers`.
+Surface, for the **last 7 days**:
+- **This week locally** — things to do, events, new restaurants/spots, top lists (the local-color that pulls
+  in locals, not just agents).
+- **Market moves** — rate changes, new developments, policy, and what buyers & sellers are suddenly asking.
+- Rising **local search interest**.
+One pass; don't research twice.
+
+## Step 3 — Build the week's content menu (long-form + short-form)
+From that one pass, produce ONE ranked menu:
+- **🎬 YouTube (2 topics)** — final title + hook + a one-line data-backed *why*, gaps baked in (via
+  `${CLAUDE_PLUGIN_ROOT}/skills/youtube-ideation`).
+- **📱 Short-form / green-screen (3–5 themes)** — each a bold hook + the angle + the **source article link**,
+  ready to film against. These are the *what*; the agent expands the ones they pick into a film-ready script
+  on demand via the Short-Form System's **shortform-greenscreen** (*"give me today's green screen"* with the
+  picked theme). This skill does not write the short-form scripts itself.
+- **🔥 Timely** — anything worth jumping on this week.
+
+Keep the **4-3-2-1 mix** balanced silently across the menu (reach / value / trust / conversion).
+
+## Step 4 — Deliver + (optional) email
+Deliver the briefing in chat — short and skimmable. If Gmail is connected, also send ONE warm email:
 ```
-GOOD MORNING, {Agent} — your YouTube week
+GOOD MORNING, {Agent} — your Market Pulse
 
-🎬 FILM THIS WEEK: {#1 title} — already scripted ✅ (link)
-💡 ALSO READY: {ideas #2–#5, one line each — each with its data-backed why}
+📍 THIS WEEK IN {City}: {1–2 local things worth reacting to}
+📊 MARKET MOVES: {the one number or story that matters}
+🎬 FILM (YouTube): {topic 1} · {topic 2}
+📱 SHORTS: {3–5 green-screen themes, one line each, each with its hook}
 🔥 TIMELY: {any local event worth jumping on}
 ```
+The agent picks their 2 YouTube topics + the shorts they want in ~5 minutes — the week's content is decided.
 
 ## First Monday of the month — the monthly workflow (§22.5)
-The first kickoff of each month does a little more, following the doctrine's monthly rhythm (§22.5):
-- Lead with the **market update** — §22.5 says record it in the first week; include the market-report offer
-  (the same line Ideation uses) as the #1 film-this-week.
-- A one-line nudge to **review last month's analytics** and **note which videos drove comments, calls, or
-  booked appointments** (hand to Analytics / the Coach).
-- The doctrine's key reminder (§22.5, §23.2): **ask every new lead "Which video made you decide to reach
-  out?"** — so they're collecting the signal that tells them what's really working.
-- Point to **one content pillar to improve** this month.
+The first Market Pulse of each month does a little more (doctrine §22.5): lead with the **market update** as
+the #1 film-this-week; a one-line nudge to **review last month's analytics** (hand to Analytics / the Coach);
+the reminder to **ask every new lead "which video made you reach out?"**; and point to **one content pillar to
+improve** this month.
+
+## Board (optional)
+If a Notion Content Dashboard exists (the `Content board:` line in `identity/publishing.md`), the agent can
+say *"add these to my board"* → dated cards drop onto the shared board (the YouTube + Short-Form systems share
+it). The menu itself is never auto-dumped as undated cards — the board is a schedule, not an idea dump.
 
 ## Rules
-- ONE short message; every idea carries its real "why"; plain, warm tone (house rules §6, §7).
-- Reflect the doctrine's cadence (§15.3) — 2/week ideal, 1/week minimum; never push volume over quality.
-- The first kickoff of a month runs the monthly-workflow add-ons above (market update first, §22.5).
-- If the schedule ever fails, nothing is lost — everything here is available on demand by asking.
-
-## Setup + honesty
-Requires a scheduled task (host scheduler), set up with team help — only if the agent asks for it. Be clear
-when enabling: "You can always just ask me for ideas anytime — this only adds the Monday email."
+- ONE short briefing; every idea carries its real *why*; plain, warm tone (house rules §6, §7).
+- Cadence (§15.3): 2/week ideal, 1/week minimum — never push volume over quality.
+- **One research pass feeds both long-form and short-form** — don't research twice (saves tokens, stays
+  consistent).
+- **Never post, send content, or schedule content** — it briefs; the agent chooses and films.

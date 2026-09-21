@@ -7,8 +7,8 @@ description: >
   a number dump. Handles any "analyze / how did it do / what's my data" request: "analyze my last 10 posts,"
   "analyze my ads," "how did my reels do," "how's my follower growth," "what's my best post this month,"
   "how did this post do." Also runs the structured 2-week performance review that records what worked to the
-  agent's Brain so the next round of content leans on it. (For a full month-over-month "state of the union"
-  the agent gets `shortform-scorecard`; for an exhaustive competitor + own-account breakdown, that's `shortform-deepdive` — this skill is the everyday read and the 2-week loop.)
+  agent's Brain so the next round of content leans on it. (For an exhaustive competitor + own-account
+  breakdown, that's `shortform-deepdive` — this skill is the everyday read and the 2-week loop.)
 
   Trigger on: "analyze my posts", "analyze my last [N] posts", "analyze my ads", "how did my reels do",
   "how's my account doing", "what's my data", "tell me my numbers", "my best post", "how did this post

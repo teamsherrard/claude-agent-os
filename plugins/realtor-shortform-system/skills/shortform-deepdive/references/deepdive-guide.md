@@ -13,7 +13,7 @@ agent names. State the window up front.
 ---
 
 ## Part 1 — The account audit (their own short-form, in full)
-Go deeper than the monthly scorecard — this is the diagnostic, not the summary.
+Go deeper than the everyday analytics read — this is the diagnostic, not the summary.
 
 ### 1a. Growth & audience
 - Follower trend + growth rate (vs the counts stored in `performance.md`); YouTube subs trend.

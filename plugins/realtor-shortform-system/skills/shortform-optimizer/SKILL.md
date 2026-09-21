@@ -86,8 +86,8 @@ The agent thinks in formats; you keep the funnel balanced by matching the right 
 | Funnel role | CTA direction |
 |---|---|
 | Awareness (reach) | follow / save / "send this to someone who…" |
+| Value (education) | "DM me '[KEYWORD]' for the [guide]" — tied to a real lead magnet |
 | Trust (connection) | invite a reply, comment, or DM'd question — no ask for business |
-| Authority (education) | "DM me '[KEYWORD]' for the [guide]" — tied to a real lead magnet |
 | Conversion | book a call / download the lead magnet / request a valuation (Primary CTA from `voice.md`) |
 
 Apply the **full CTA map** — the topic-level routing (DM "BUYER"/"SELLER"/"RELOCATION", market report,

@@ -34,7 +34,6 @@ Don't pre-create empty month folders — create the current month's folder the f
 | Month folder | `YYYY-MM · Month` | `2026-06 · June` |
 | Content doc | `YYYY-MM-DD · [Format] · [Short Topic]` | `2026-06-13 · Green Screen · Calgary Rate Hold` |
 | Performance doc | `YYYY-MM-DD–DD · Performance Review` | `2026-06-01–14 · Performance Review` |
-| Monthly scorecard | `YYYY-MM · Short-Form Scorecard` | `2026-06 · Short-Form Scorecard` |
 | Deep dive | `YYYY-MM-DD · Short-Form Deep Dive` | `2026-06-30 · Short-Form Deep Dive` |
 
 Format = **Green Screen · Talking Head · Carousel**. Topic = 3–6 plain words (Title Case), no punctuation

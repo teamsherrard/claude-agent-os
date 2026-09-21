@@ -12,7 +12,7 @@ description: >
   "analyze my short form in detail", "full breakdown of my content", "audit my short form", "analyze my
   competitors", "competitor analysis", "where do I stand", "how do I compare to other agents", or any request
   for a thorough/detailed short-form + competitor analysis. (A quick per-post or 2-week read is
-  `shortform-analytics`; the monthly one-pager is `shortform-scorecard`.)
+  `shortform-analytics`.)
 ---
 
 # Short-Form Deep Dive
@@ -77,7 +77,7 @@ the specific bets to `shortform-greenscreen` / `shortform-talkinghead` / `shortf
    named `[YYYY-MM-DD] · Short-Form Deep Dive`. Share the link.
 2. **Seed `memory/performance.md`** with a short dated block capturing the headline findings (best format,
    best hook styles, the funnel leak, the competitor gap to attack, and the stored follower/sub counts), then
-   push the Brain to Drive — so the everyday workflows and the next scorecard inherit what this found.
+   push the Brain to Drive — so the everyday workflows inherit what this found.
 
 ---
 
