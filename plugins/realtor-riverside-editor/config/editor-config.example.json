@@ -1,5 +1,7 @@
 {
-  "_comment": "Saved to ~/realtor-brain/editor/config.json by riverside-setup. This is the SAME config file the Descript editor (Plugin 6) uses — the brand block is shared so both engines look identical. Only the Riverside connection is required for this plugin; everything else is optional.",
+  "_comment": "Saved to ~/realtor-brain/editor/config.json by studio-setup. This is the SAME config file the Descript editor (Plugin 6) uses — the brand block is shared so both engines look identical. Only the Riverside connection is required for this plugin; everything else is optional.",
+  "default_engine": "riverside",
+  "_default_engine_comment": "Which video editor owns a plain 'edit my video' when BOTH engines are installed: 'riverside' (the AI Editing Studio) or 'descript' (Plugin 6). Saying the engine's name always wins.",
   "riverside": {
     "connected_via": "mcp-oauth",
     "note": "Connected in Claude → Settings → Connectors → Riverside. No API key is stored here.",
@@ -61,14 +63,22 @@
       "emphasis_9x16": "",
       "end_screen": "",
       "logo_sting": "",
-      "riverside_media_ids": {}
+      "riverside_media_ids": {},
+      "icons_dir": "",
+      "animated": {
+        "hook_16x9": "",
+        "hook_9x16": "",
+        "cta_16x9": "",
+        "cta_9x16": ""
+      }
     }
   },
   "own_footage": {
     "google_drive_folder": "",
     "local_folder": "",
     "per_video_uploads": "ask each time",
-    "use_listing_photos_for_property_videos": true
+    "use_listing_photos_for_property_videos": true,
+    "library_index": "~/realtor-brain/editor/broll-library.md"
   },
   "sfx": {
     "swoosh_media_id": "",
@@ -112,5 +122,15 @@
       "enabled": false,
       "api_key": ""
     }
+  },
+  "publish_route": "riverside",
+  "_publish_route_comment": "ONE posting route per post. 'riverside' = Riverside's connected accounts (studio-publish). 'shortform-tool' = the Short-Form System's Metricool/GoHighLevel/Buffer. Long-form YouTube can use 'riverside' while reels use the short-form tool; never both for the same post.",
+  "preferences": {
+    "_comment": "Learned from revisions (Review and Revise, Audio Enhance). Each new video starts here.",
+    "magic_audio_mix": null,
+    "caption_font_size": null,
+    "punch_in_strength": null,
+    "music_on_longform": null,
+    "notes": []
   }
 }

@@ -23,8 +23,8 @@ The #1 rule survives unchanged: **do the high-value basics brilliantly, then STO
 5. **Colour grade** — subtle, natural, flattering (`set_color_correction` — the bare-minimum values in `footage-look.md`). Always.
 6. **Captions / on-screen text** — short-form: **karaoke** (big, below the face, active word in the brand accent). Long-form: **no word-by-word karaoke — an emphasis pop-up every ~2–3 min** instead.
 7. **9:16** (short-form), face centred (`update_aspect_ratio` → smart layout FullScreen → slot offset if needed).
-8. **A bit of energy (mandatory minimum, KEY beats only):** 2–3 gentle **punch-ins** (scale keyframes ~1.06×) on the key lines. A swoosh SFX on each **only if** the agent has a licensed swoosh in their library (`config.sfx.swoosh_media_id`) — Riverside exposes no SFX library. Transitions aren't a tool here; Riverside's straight cuts are clean, and that's fine.
-9. **The graphics essentials only:** a hook card, the CTA, and B-roll on the key lines (short-form up to 3; long-form ~1 per 45–60s). Long-form also gets a **lower third** on the agent's first appearance (`add_lower_third`) and **native chapters** (`add_chapter`).
+8. **A bit of energy (mandatory minimum, KEY beats only):** 2–3 gentle **punch-ins** (zoomed scenes at about 1.08×, cut in and out on phrase boundaries) on the key lines. A swoosh SFX on each **only if** the agent has a licensed swoosh in their library (`config.sfx.swoosh_media_id`) — Riverside exposes no SFX library. Transitions aren't a tool here; Riverside's straight cuts are clean, and that's fine.
+9. **The graphics essentials only:** a hook card, the CTA, and B-roll on the key lines (short-form up to 3; long-form ~1 per 45–60s). Long-form also gets a **lower third** on the agent's first appearance (`add_lower_third`) and a **section map** handed to the YouTube System, whose chapter titles are then placed as native markers.
 
 That clean core is the whole job. Everything past it is the agent's 20%.
 
@@ -48,7 +48,7 @@ That clean core is the whole job. Everything past it is the agent's 20%.
 | **Music** | **bed ON at -18 dB** | — (offered as the agent's optional 20%) | **bed ON at -18 dB** | — (optional subtle bed) |
 | **Magic Audio** | **0.55** (0.85 phone) | **0.55** (0.85 phone) | **0.55** (0.85 phone) | **0.55** (0.85 phone) |
 | **Colour grade** | **on** | **on** | **on** | **on** |
-| **Chapters** | — | **yes (native + description)** | — | **yes** |
+| **Section map → YouTube System** | — | **yes** (it names the chapters) | — | **yes** |
 | **Logo** | optional (brand kit) | **yes if the kit has one** (top-right, ~70% opacity) | optional | yes if the kit has one |
 
 This is the recipe the delivery "what's inside" line should restate back to the agent. If they want more than the table says, that's the 20% they add by hand.

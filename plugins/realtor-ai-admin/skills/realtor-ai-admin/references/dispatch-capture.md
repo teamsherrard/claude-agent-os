@@ -27,7 +27,7 @@ double-handle.
 ## The flow (every dispatch)
 1. **Load the Brain** (SKILL.md Step 0 — pull from Drive if the local copy is missing).
 2. **Parse** the request into one or more intents (note · reminder · draft · book · cancel/move ·
-   recall · debrief · open-house).
+   recall · prep · wrap · debrief · open-house · sibling hand-offs below).
 3. **Resolve names** with the **Name-Resolution Ladder** (SKILL.md): Brain → Gmail search →
    Calendar → Google Contacts → create the record from what you found → if truly nothing, park it
    in the capture-log. (Never guess an email; only use one you actually found.)
@@ -46,15 +46,21 @@ double-handle.
 | **Quick Capture** | "remember…", "note that…", "jot down…" | Resolve the name, then log the note to that client's `clients.md` block |
 | **Quick Reminder** | "remind me to…", "don't let me forget…" | Add a dated `deadlines.md` Follow-up (+ a calendar reminder if a time is given — a guestless, free/transparent event; Conflict Guard not needed). **No date given → due TOMORROW**, and say "assumed tomorrow" in the report — an undated row never surfaces anywhere |
 | **Quick Draft** | "draft a… to…", "email … saying…" | Write it in their voice → save a Gmail **draft** → log it |
-| **Quick Book** | "book…", "put … on my calendar" | Auto-Booking (Conflict Guard, guest invite, auto video link). If Conflict Guard blocks: don't ask — skip the booking, park the clash + the nearest open slots in the capture-log, and flag it in the report |
-| **Quick Cancel / Move** | "cancel my 3pm", "push the Lees to 4" | Rescheduling & Cancelling flow (attendees notified automatically) — log it |
+| **Quick Book** | "book…", "put … on my calendar" | Auto-Booking (Conflict Guard, guest invite, auto video link). If Conflict Guard blocks: don't ask — skip the booking, park the clash + the nearest open slots in the capture-log, and flag it in the report. **If the time was assumed, hold WITHOUT guests and park the invite** — a client never gets an invite for a guessed time |
+| **Quick Cancel / Move** | "cancel my 3pm", "push the Lees to 4" | Rescheduling & Cancelling flow — organizer rule applies: agent's own event → delete (cancels for all); someone else's → decline + draft a note to the organizer, and never claim people were notified when they weren't. Log it |
 | **Quick Recall** | "what do I know about…", "when did I last talk to…" | Total Client Recall — answer inside the report (read-only) |
+| **Quick Prep** | "prep me for my next…", "prep me for [client]" | Meeting Prep 5-line brief (WHO · LAST · OPEN · WATCH · SAY) — answer inside the report (read-only) |
+| **End-of-Day Wrap** | "wrap my day — [outcomes…]" | Log each stated outcome as a mini-debrief, mark mentioned promises Done, roll today's leftovers to tomorrow, then report: tomorrow's first appointment (with prep line) + follow-ups due + one first move. Never ask for missing outcomes in dispatch — note them as unreviewed |
 | **Post-Showing Debrief** | "just showed [client] [address] — [reaction], [next step]" | Log the showing + reactions to the client, set the next action / follow-up, and optionally draft the follow-up email. **If the debrief holds a story-worthy moment** ("she cried at closing") hand that story to the Brain's realtor-capture (story bank) too — capture it, don't lose it |
 | **Open-House Capture** | "log the open house at [address] — [groups], [hot leads]" | Create/update a record for each named lead; start a follow-up for each |
 | **Multi-Intent** | several of the above in one breath | Parse all, execute each, then ONE combined report |
+| **Sibling hand-offs** | "just listed [address]" / "start the content" → the Listing Launch intake's dispatch door · "schedule/post this" → the Short-Form publisher | Route to the sibling plugin if installed; otherwise park in the capture-log with a note — never file a new listing as a client note |
 
 ## The report (what they see when it's done)
-Plain text, glanceable, one line per action. Example:
+Plain text, glanceable. **Format fork: 1–2 intents → one warm sentence. 3+ intents → one
+tagged line per action** (Booked: · Drafted: · Reminder: · Cancelled: · Parked:), any recall
+or prep answer last after a blank line — never a comma-joined run-on at volume. Example (two
+intents):
 > Done — logged the Lees (loved the kitchen, basement concern), set a Thursday follow-up to send 2
 > comps, and drafted a thank-you in your Gmail to review. (Couldn't place "the Johnsons" — two
 > match in your contacts; I'll ask in tomorrow's briefing.)

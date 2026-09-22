@@ -8,7 +8,7 @@ Riverside can post the finished edit straight to the agent's connected channels 
 2. **Discover, don't assume:** `social_get_connected_platforms(studioId)` → the accounts, their `platformAccountId`, YouTube `channelId`s, TikTok `privacyLevelOptions` and `maxVideoPostDurationSec`, X `characterLimit`. An empty list = nothing connected → *"Connect your YouTube / Instagram in Riverside (Studio settings → Social accounts) and I'll post for you next time."*
 3. **Read the rules first:** `social_get_publishing_guidelines(platform)` — title/caption limits, duration and aspect-ratio constraints (Shorts ≤ 3 min 9:16; Facebook Reels ≤ 90 s; Instagram 5 s–15 min, 4:5–9:16; LinkedIn ≤ 15 min, ≤ 200 MB; TikTok rejects watermarks).
 4. **YouTube: check Content ID first** — `editing_get_export_publish_data(editId)`: a non-null `youtubeCode` flags a copyright match (a music bed you didn't expect to be flagged). Tell the agent before posting.
-5. **Write the copy from the Brain + compliance:** `identity/voice.md` for tone, the CTA from config, `identity/compliance.md` for the disclaimer/license line where the Brain says it goes (description / caption). Compliance three-state rule applies (`final-check.md`): missing or unfilled → no claims, no placeholder text, nudge once. If the Realtor YouTube System plugin is installed, its SEO pack owns the YouTube title/description — use it.
+5. **Fetch the copy from its owner — never write it** (`${CLAUDE_PLUGIN_ROOT}/shared/boundaries.md`). YouTube title, description, chapters, tags, and pinned comment come word for word from the YouTube System's **SEO Package** Google Doc in that video's folder. A reel's caption, hashtags, and slot come from the Short-Form System. Your only checks: the text fits the platform limits below, and it passes compliance (three-state rule in `final-check.md`; a required disclaimer line that is missing is a stop, not something you add). **No package yet?** Say *"Say 'SEO for this' and I'll have your title and description written properly, then I'll post it."* If they want it up anyway, post under THEIR words as **unlisted** and say it has no SEO yet. Also check the double-post rule: same video already Scheduled or Published on that channel (shared board, `memory/content-log.md`) → stop and say so.
 6. **Show the summary and get an explicit yes.** Human-readable, no IDs:
    > *"Ready to post to **YouTube — Mike Sherrard Real Estate** as **unlisted**: title "…", description below, 4 chapters. Publishes **now** (or: scheduled Thu 9:00 am MT). This can't be undone from here — if you want it changed later you'd do that on YouTube. Go?"*
    Privacy on YouTube is **always explicit** — never default to public. Default recommendation: **unlisted** first (they can flip it to public on YouTube after a last look), unless they say public.
@@ -27,15 +27,15 @@ Riverside can post the finished edit straight to the agent's connected channels 
 
 ## Scheduling
 
-`scheduledAt` is ISO-8601 with a timezone (`2026-09-24T09:00:00-06:00`). Convert from the agent's plain words using the Brain's timezone (`config.md`). If the Short-Form System or Listing Launch plugin planned the slot, use theirs. Say the local time back in the summary.
+`scheduledAt` is ISO-8601 with a timezone (`2026-09-24T09:00:00-06:00`). Convert from the agent's plain words using the Brain's timezone (`~/realtor-brain/config.md`, not the editor's `config.json`). If the Short-Form System or Listing Launch plugin planned the slot, use theirs. Say the local time back in the summary.
 
-## Per-platform copy shape (from the guidelines)
+## Per-platform limits — a checklist for the OWNER'S copy (never a writing guide)
 
-- **YouTube:** title ≤100 (aim ≤60, keyword-led), description ≤5000 bytes (hook in the first ~150 chars, then CTA/links, then `00:00` chapters), `privacyStatus` explicit, `youtubePlatform: YOUTUBE_SHORTS` for a vertical ≤3 min.
-- **Instagram:** caption ≤2200, ~40 words, ≤1 emoji, end on the CTA; `shareToFeed: true` unless told otherwise.
-- **TikTok:** the caption IS the title (≤2200), hashtags matter, `privacyLevel` from the account's options.
+- **YouTube:** title ≤100 characters, description ≤5000 bytes, `privacyStatus` explicit, `youtubePlatform: YOUTUBE_SHORTS` for a vertical ≤3 min.
+- **Instagram:** caption ≤2200 characters, ≤30 hashtags, ≤20 tags; `shareToFeed: true` unless told otherwise.
+- **TikTok:** the caption field is called title (≤2200); `privacyLevel` from the account's options.
 - **Facebook Reels:** ≤90 s, 9:16 only; description optional.
-- **LinkedIn:** ≤3000, hook in the first ~140 chars, 3–5 hashtags, `visibility` PUBLIC unless told.
+- **LinkedIn:** ≤3000 characters; `visibility` PUBLIC unless told.
 - **X:** honour the account's `characterLimit`; every URL counts 23.
 
 ## What it is NOT

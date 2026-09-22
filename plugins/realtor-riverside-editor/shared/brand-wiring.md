@@ -11,7 +11,7 @@ Read brand in this exact order — first hit wins:
 3. Tasteful defaults — never placeholders.
 4. Ask one friendly question (main colour + font feel) only if there's nothing in 1–3.
 
-**Home that setup writes to:** `riverside-setup` captures the agent's colour/font and writes it into `config.json`'s `brand` block (synced from the Brain). It ALSO writes the brand into the **Riverside studio brand kit** once (`editing_set_brand`: colours, background, logo) so `editing_apply_brand` can place the logo/design on every edit — and records `riverside.brand_kit_written: true`. If `set_brand` is feature-gated, the brand still works: every card and caption is styled from the config block directly.
+**Home that setup writes to:** `studio-setup` captures the agent's colour/font and writes it into `config.json`'s `brand` block (synced from the Brain). It ALSO writes the brand into the **Riverside studio brand kit** once (`editing_set_brand`: colours, background, logo) so `editing_apply_brand` can place the logo/design on every edit — and records `riverside.brand_kit_written: true`. If `set_brand` is feature-gated, the brand still works: every card and caption is styled from the config block directly.
 
 ## Schema (brand block)
 
@@ -42,3 +42,5 @@ Read brand in this exact order — first hit wins:
 - `cta` holds the CTA wording captured at setup — `cta-pack.md` reads it for the closing card.
 - **`assets` — the Video Brand Kit** (designed once in the agent's Claude Design suite, stored in the workspace Drive at `02 · Brand/Video Brand Kit/` under canonical names). Setup registers the Drive paths AND uploads each PNG into Riverside's Your Media, recording the media ids in `assets.riverside_media_ids` (`{"hook_9x16":"<24-hex>", …}`) — so an edit places a card with ONE `insert_overlay` call and no re-upload. The spec WINS over inferred values. When `assets` is populated, cards are **PLACED from these files, not built natively**. Empty `assets` → native cards.
 - Compliance: read `identity/compliance.md` before any public-facing export or post (brokerage disclaimer, license display, claims to avoid).
+- `caption.weight` is shared with the Descript engine. On Riverside the weight is whatever the chosen family carries (`Poppins ExtraBold` = 800, `Inter Bold` = 700), so pass the family's own weight when the two differ.
+- `default_engine` (top level of the config, `"riverside"` or `"descript"`) decides which video editor owns a plain "edit my video" when both are installed.

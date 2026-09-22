@@ -1,6 +1,6 @@
 ---
 name: youtube-repurpose
-description: The Repurposing Engine for the Realtor YouTube System — turns one long-form video/script into a full pack of written assets, no editing. From the script it writes short-form scripts (Reels/Shorts/TikTok), a blog post (to rank on Google as well as YouTube — the double-dip), an email newsletter, LinkedIn + Facebook posts, and an Instagram carousel script — all in the agent's voice. Reads the AI Brain. Saves a "Repurposing Pack" Google Doc in the video's folder. Triggers on "repurpose this", "turn this into posts", "blog + email from this video", "repurposing pack", "make shorts from this".
+description: The Repurposing Engine for the Realtor YouTube System — turns one long-form video/script into a full pack of written assets, no editing. From the script it writes short-form scripts (Reels/Shorts/TikTok), a blog post (to rank on Google as well as YouTube — the double-dip), an email newsletter, LinkedIn + Facebook posts, and an Instagram carousel script — all in the agent's voice. Reads the AI Brain. Saves a "Repurposing Pack" Google Doc in the video's folder. Triggers on "repurpose this", "turn this into posts", "blog + email from this video", "repurposing pack", "write shorts scripts from this". Written assets ONLY: it never edits or cuts a video file. Cutting actual reels out of a recording is the AI Editing Studio's job (studio-repurpose), which uses this pack's short-form hooks to choose its moments.
 ---
 
 # Repurposing Engine

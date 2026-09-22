@@ -40,8 +40,8 @@ In **Claude Cowork** (everything is UI — there are no commands to type):
    - **Plugin 6 · Realtor AI Editor** — install when you start the editing module (connects to
      your own Descript account)
 5. *(Recommended)* Open the marketplace card → toggle **Sync automatically** so you get future updates
-   - **Plugin 10 · Realtor AI Editor — Riverside engine** — the same editor on Riverside instead of
-     Descript: Claude edits directly, no per-edit credits, and it can publish to the agent's channels.
+   - **Plugin 10 · The AI Editing Studio (Riverside engine)** — a 25-skill editing team in five stages
+     (Direct, Cut, Polish, Repurpose, Ship): Claude edits directly in Riverside, no per-edit credits, and it publishes.
 
 That's it — the whole system is installed.
 

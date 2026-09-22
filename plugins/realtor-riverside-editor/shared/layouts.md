@@ -8,10 +8,10 @@ Riverside has named **layouts** (`editing_list_layouts`) and **smart layouts** (
 
 ## Horizontal b-roll on a vertical reel — pick by what the shot shows
 
-1. **Full-bleed cover-fill** — ONLY if the subject still reads after the sides are cropped (a centred skyline). Insert the overlay, then `modify_scale` the overlay **track** to the full canvas (`scaleW=1080, scaleH=1920` on a 1080×1920 canvas — the engine covers and crops the sides). If cover-fill zooms so far you can't tell what it is, **don't**.
+1. **Full-bleed cover-fill** — ONLY if the subject still reads after the sides are cropped (a centred skyline). Insert the overlay, then `modify_scale` that overlay CLIP (`clipId`, never the shared overlay track) to the full reference canvas (`scaleW=360, scaleH=640` on a 9:16 edit; the engine covers and crops the sides). If cover-fill zooms so far you can't tell what it is, **don't**.
 2. **Split-screen (preferred for most horizontal b-roll)** — speaker in one band, the b-roll shown **in full** in the other. Two steps:
    - the scene(s) under the cutaway → `batch` op `change_layout {layoutId:"solo-half-vertical-side-1-tile-portrait", sceneIds:[…]}` (speaker tile = top ~50%; the layout can `canVflip` if you'd rather have the speaker at the bottom). Split the scene first at the cutaway's in/out (`split_scene_at_time`) so only that window changes.
-   - the b-roll overlay → `insert_overlay` at `position {x:1/2, y:3/4}` then `modify_scale` to the band (`scaleW=1080, scaleH=960` for a 16:9 clip shown ~full width; the engine letterboxes inside the band cleanly).
+   - the b-roll overlay → `insert_overlay` at `position {x:1/2, y:3/4}` then `modify_scale` to the band (`scaleW=360, scaleH=320` on the 360×640 reference canvas for a 16:9 clip shown ~full width; the engine letterboxes inside the band cleanly).
    - **Reframe the speaker to FIT the band** — the layout does a head-and-shoulders crop; check headroom on a frame. If the face won't fit cleanly, use `solo-two-third-side-1-tile-portrait` (speaker top 67%) and a smaller b-roll band.
    - Captions in that layout sit middle-centre by default — re-pin them to the bottom of the speaker band for those scenes (`update_scene_caption_settings`, `position.y ≈ 0.47`), still below the face.
 3. **Never:** a floating or letterboxed horizontal clip with the speaker's head poking out, or an over-zoomed crop.

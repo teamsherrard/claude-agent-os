@@ -36,7 +36,9 @@ YOU TODAY instead.
    failed connector, say "open Settings → Connectors, reconnect, then say 'rerun my sweep'",
    and build whatever partial output the working connectors allow, clearly marked partial.
    Read `brain.md`, `memory/clients.md`, `memory/deadlines.md` (so you don't duplicate
-   follow-ups), and the sweep settings in `config.md` (archive junk: yes/no).
+   follow-ups), `identity/voice.md` + `identity/compliance.md` (every suggested reply and
+   draft is client-facing text — write it in the agent's voice, sendable as-is), and the
+   sweep settings in `config.md` (archive junk: yes/no; VA/assistant addresses if recorded).
 2. **Collect** inbox threads from the last 2 days (Gmail search, `in:inbox newer_than:2d` —
    the one-day overlap makes a missed run self-healing, and the don't-relabel rule makes it
    free). **On Mondays use `newer_than:3d`** — the sweep doesn't run on weekends, and
@@ -60,8 +62,11 @@ YOU TODAY instead.
    seven that don't exist (setup normally makes them; never fail on a missing label/category).
    **If tagging fails with permission-style errors** (some Microsoft orgs gate write actions),
    switch to REPORT-ONLY mode: keep classifying, deliver the full report with each thread's
-   category named in NEEDS YOU TODAY, and say once: "I couldn't apply labels — your admin has
-   write actions off for the mail connector; triage still ran." Never die on a tagging error.
+   category named in NEEDS YOU TODAY, and say once, in plain words by provider — Google: "I
+   sorted your inbox but couldn't add the labels (a permissions hiccup) — triage is below;
+   reconnecting Gmail in Settings → Connectors usually fixes it." Microsoft: "I sorted your
+   inbox but couldn't tag it — your brokerage's IT controls that switch; triage is below."
+   Never die on a tagging error, and never say "write actions" or "connector" jargon.
    Don't relabel threads that already carry one of these. If more than one fits:
    - `Under Contract` beats `Active Client` AND `Lender-Title` — deal content beats sender
      identity; label the deal, not the relationship.
@@ -79,7 +84,14 @@ YOU TODAY instead.
    days waiting.
 6. **Write back:** for any `Hot Lead` or clear client commitment found, add a row to
    `memory/deadlines.md` (type Follow-up) — **unless an open row for that client/item already
-   exists** (a lead sitting in the inbox two days must not create two rows) — and a one-line note
+   exists** (a lead sitting in the inbox two days must not create two rows) — and a one-line note.
+   **VA guard:** if `config.md` lists assistant/VA addresses, check the thread for an existing
+   reply from the agent's side first — an already-answered lead gets neither a NEEDS YOU TODAY
+   flag nor a Follow-up row (note it in SWEPT counts instead).
+   **Speed-to-lead: every `Hot Lead` also gets an actual draft reply** — in the agent's voice
+   (`voice.md`), compliance-checked, referencing the property/source, offering to set up a time
+   (use the Brain's booking link if one exists). Speed wins these; the agent should only have
+   to review and hit send. Also add the one-line note
    to that client's block in `memory/clients.md` (create the block for a new lead). **New blocks
    use exactly this shape** (the whole system parses it): `## [Name] — [Buyer/Seller] — Stage:
    Lead` then `Looking:` / `Last contact:` / `Next action:` / `Key deadlines:` / `Notes:` lines.
@@ -90,7 +102,8 @@ YOU TODAY instead.
    confirm the new copy exists.
 7. **Report** (your output is delivered to the agent — keep it tight, plain text):
    - NEEDS YOU TODAY — the 1–5 threads that genuinely need the agent, each with a one-line why
-     and a suggested one-line reply.
+     and a suggested one-line reply; hot leads say "draft waiting in your Gmail — review and
+     send."
    - WAITING ON — who owes you a reply and for how long, each with a one-line nudge suggestion.
    - SWEPT — one line of counts: "Labeled 14 · 3 hot leads flagged · 6 promos archived."
    No lecture, no padding. If the inbox is clean, say so in one line.

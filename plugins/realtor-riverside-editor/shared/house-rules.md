@@ -36,7 +36,7 @@ Heavy AI effects (eye-contact correction, background removal, AI-generated B-rol
 ## Call & revision discipline (simplify, simplify)
 
 There are no per-pass AI credits in Riverside. The discipline is about **correctness and the agent's time**:
-- **Read before you write, every time.** Every write tool takes `expectedRevision` — pass the revision from your last read. A `CONFLICT` means the timeline moved (the agent may be in the editor at the same time): STOP, don't retry in the same turn, re-read, and ask before continuing.
+- **Read before you write, every time.** Every write tool takes `expectedRevision` — pass the revision from your last read. A `CONFLICT` means the timeline moved since your read. Re-read and look at what changed (`compare_revisions`): if nothing real changed (live-tested: the agent's open Riverside editor tab re-saves the scene on load and bumps the revision with no cuts, clips, or toggles touched), retry ONCE with the new revision. If real content changed, the agent is editing by hand: STOP, say so plainly, and continue only on their yes.
 - **Do the FREE prep first** (`${CLAUDE_PLUGIN_ROOT}/shared/preflight-check.md`) — transcript read, duplicate takes, hook line, chapters, compliance, B-roll moments, the quote. Reading costs nothing and changes nothing.
 - **Run THE PASS PLANS** (`${CLAUDE_PLUGIN_ROOT}/shared/riverside-playbooks.md`) — a reel is 4 passes, long-form ≤6. A "pass" is a group of related calls verified together; don't interleave passes.
 - **Verify every pass landed before saying it's done.** Each write returns the new `revision`; `editing_compare_revisions` from the pass's start revision to its end revision shows exactly what changed. Never narrate success you haven't confirmed.

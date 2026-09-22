@@ -1,6 +1,85 @@
 # Changelog
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
+## [0.127.0] — 2026-09-22
+
+### AI Admin (Plugin 2) → v0.8.0 — Meeting Prep + End-of-Day Wrap, all Ultracode fixes, ecosystem re-alignment
+- **NEW: Meeting Prep** — "prep me for my 2pm": 5-line brief (WHO · LAST · OPEN · WATCH · SAY), plus
+  auto-prep lines under each client appointment in the 7am briefing, plus dispatch Quick Prep.
+- **NEW: End-of-Day Wrap** — "wrap my day [+ outcomes]": logs outcomes as mini-debriefs, marks promises
+  Done, rolls leftovers, reports tomorrow's first appointment + first move. Chat roll-call or dispatch.
+- **HIGH fixes:** assumed booking times hold WITHOUT guests (no client ever gets an invite for a guessed
+  time); cancelling distinguishes organizer (delete) vs attendee (decline + draft to organizer) — no more
+  false "attendees notified"; bulk sick-day cancel defined with one sanctioned confirm.
+- **Ultracode batch:** URGENT moved to the top of the briefing; ~25-line briefing budget with follow-up
+  caps; dispatch report format fork (3+ intents = tagged lines); capture-log surfaces at session start when
+  no briefing task exists; multi-block name rule; calendars + VA question at setup; configurable
+  briefing/sweep times; Jarvis-era migration check; on-demand sweep lane ("sweep the rest" now lands);
+  "I'm slammed" overwhelm route; sweep loads voice+compliance and drafts a real reply for every hot lead
+  (speed-to-lead); VA guard; plain-English fallback wording; staleness horizon configurable + never archive
+  with open rows; first-run test cleans up its test client; locale-aware formatting; scoped send-policy.
+- **Ecosystem (6 weeks of drift):** boundaries written to Listing Launch (open-house kit hand-off,
+  just-listed dispatch door), Short-Form publisher, Market System, and Cohort Support (breakage routes to
+  diagnose); briefing reads listings.md (open houses/closings surface); TC removed from the v2 list
+  (Listing Launch owns deal stages).
+
+## [0.126.0] - 2026-09-21
+
+### AI Editing Studio v0.2.2: the branded-graphics route proven on a real edit, and a silent no-op found and replaced
+- **Punch-ins were doing nothing.** `modify_scale` on the recording track (the v0.1 to v0.2.1 recipe) returns success and
+  writes no keyframe, so the two earlier live edits shipped without their punch-ins. Tested four alternatives on a
+  throwaway edit; the one that persists AND renders is a split scene with
+  `update_scene_slot_settings {... positioning:{scale, offset}}`. It is a hard-cut zoom, so the rule is now: cut in on the
+  first word of the key line, out on the first word after it, slot scale about 1.08, read the scene back before logging.
+  Rewritten in `riverside-playbooks.md`, `tool-map.md`, `footage-look.md`, `effects-menu.md`, `cost-discipline.md`,
+  `dos-and-donts.md`, `final-check.md`, `graphics-style.md`, `studio-energy`, and the build spec.
+- **Brand-kit cards proven end to end.** Four transparent PNGs (hook panel, name strip, emphasis panel, icon) uploaded,
+  placed full-frame, animated with `set_overlay_clip_animations`, with the words as shadow text inside the panels; every
+  frame checked in the editor; exported at 1080p. New centring rule recorded: a text clip's anchor is its top, so
+  `positionY = panel centre - round(fontSize x 0.27)`; size the words to the panel's free zone before shrinking type.
+- `insert_text_overlay` returns the new clip id in `data.clipId`; the extra timeline read is gone from the recipes.
+- **Ken-Burns removed.** The listing-still recipe used mid-clip scale keyframes on an overlay clip, which is the exact
+  pattern that hangs the Riverside editor. Stills are now full-cover with an entrance animation only.
+
+## [0.125.0] - 2026-09-19
+
+### Plugin 10 becomes The AI Editing Studio (`realtor-riverside-editor` v0.2.1): 25 skills, two layers, one owner per output
+Restructured after three live edits and Mike's direction: the plugin should read as a full editing team, and it must
+never overlap the YouTube System.
+- **Two layers.** 20 single-job CRAFT skills, each a thin front door over exactly one reference file and the same seven
+  steps (`craft-contract.md`), plus 5 DIRECTOR / front-door skills that contain no craft detail and only open those
+  references in order. A long skill list with no duplicated rules.
+- **Five stages.** DIRECT `studio-direction` `studio-record` `studio-transcript` / CUT `studio-fluff` `studio-hook`
+  `studio-interview` / POLISH `studio-audio` `studio-color` `studio-captions` `studio-music` `studio-broll`
+  `studio-library` `studio-graphics` `studio-energy` / REPURPOSE `studio-repurpose` `studio-batch` `studio-podcast` /
+  SHIP `studio-check` `studio-review` `studio-publish` / front doors `studio-setup` `studio-navigator`
+  `studio-longform` `studio-reel` `studio-listing`. The old quick-fix skill dissolved into the crafts.
+- **One owner per output (`boundaries.md`).** The Studio no longer drafts titles, descriptions, chapter names, tags, or
+  hashtags anywhere (the long-form fallback is gone). It hands the YouTube System a section map, places the SEO
+  Package's chapter titles as native markers, posts the owner's copy word for word, and enforces ONE posting route per
+  post (`publish_route`) so a reel is never double-posted through both Riverside and the Short-Form System's tool.
+- **New craft references:** `creative-direction.md`, `recording.md`, `clean-cut.md`, `hook.md`, `interview.md`,
+  `audio.md`, `repurpose.md`, `batch.md`, `podcast.md`, `revisions.md`; the B-roll library index in
+  `footage-intake.md`; icon packs and full-frame animated cards in `graphics-style.md`.
+- **Live-tested facts carried in:** font sizes are 1080p export pixels (vertical captions 84, cards 72);
+  `create_edit_from_recording` is not gated on Grow; word-level source times from the transcript are the placement
+  method; the music bed maps onto source time across cuts; the editor tab re-saving a scene causes a harmless
+  revision conflict.
+- **Independent audit, same day (v0.2.1), 40+ findings fixed.** Trigger collisions removed inside the plugin (resume
+  phrases live only in `studio-navigator`; the opening belongs to `studio-hook`; caption tweaks to `studio-captions`;
+  music level to `studio-music`). **Engine tie-break:** both video editors claimed "edit my video" as the default, so a new
+  `default_engine` key in the shared editor config now decides, and BOTH navigators read it (`realtor-ai-editor` v0.21.1:
+  `editor-navigator` gains the reciprocal rule). `youtube-repurpose` now says it writes scripts only and never cuts a
+  video (`realtor-youtube-system` v0.14.3), so it no longer competes with `studio-repurpose`. Chapters removed from the
+  long-form pass plan (they are placed only after the SEO Package exists). Caption size corrected to 84 in every recipe,
+  caption width settled at 0.8 (the icon rail is not in the export), card positions restated on the 640x360 / 360x640
+  reference canvas, overlays scaled by clip id and never the shared track, one `CONFLICT` rule in `house-rules.md`
+  (a harmless editor-tab re-save gets one retry; a real hand edit means stop and ask), `studio-batch` and `studio-broll`
+  rewritten to match their layer, craft numbers removed from `studio-reel`.
+- **Transparency test (live):** transparent PNG overlays keep their alpha in Riverside; transparent WEBM does not
+  (the transcode flattens it to black). Animated name strips cannot be pre-rendered video.
+- Build spec: `docs/riverside-studio-spec.md`. Requires Riverside Grow or higher (the connector is not on Free or Pro).
+
 ## [0.124.1] — 2026-09-19
 
 ### Market System (Plugin 8) → v0.6.1 — scheduled tasks keep themselves current

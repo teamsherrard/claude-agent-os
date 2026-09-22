@@ -15,7 +15,7 @@ First, read `identity/compliance.md` from the agent's Brain. It can be in THREE 
 
 **States (1) and (3) are handled IDENTICALLY — and neither FAILS the gate:** warn the agent ONCE in plain language ("I couldn't find a finished compliance file, so I've kept the video free of any claim cards to be safe. Say 'set up my compliance' to lock your brokerage disclaimer + license #."), then **do NOT auto-add any claim-bearing card** (no stat cards, no "best/top/#1", no neighbourhood "who it's for" copy) and **NEVER stamp a `[placeholder]` disclaimer onto the video** — or into a publish description. Captions of what they actually said are fine. Deliver safely — do NOT stop or FAIL over a missing/unfilled disclaimer.
 
-When `identity/compliance.md` is **(2) FILLED**, every card, caption, AND publish caption/description must pass ALL of these:
+When `identity/compliance.md` is **(2) FILLED**, every card and on-video caption must pass ALL of these. Post copy (title, description, reel caption) is CHECKED against the same list but never edited here: a miss in the owner's copy is a stop, sent back to the plugin that wrote it (`boundaries.md`):
 - **No banned / superlative / guarantee claims** anywhere on screen or in the post copy — "best agent", "#1", "top agent", "guaranteed", "the only", "always", "never lose". If they literally said it on camera it can stay in the spoken captions, but never manufacture it into a card or a description.
 - **Required brokerage disclaimer + license #** wherever the file requires it (CTA card / description). Use exactly what the file specifies. A FILLED file that requires a disclaimer but gives no real text → FAIL → stop and ask.
 - **Fair-housing-safe language** on any neighbourhood or "who it's for" text — no steering ("great for families", "safe area", "good schools so you know the type", "perfect for young professionals"). Describe the HOME and the FACTS, never who should live there.
@@ -38,7 +38,7 @@ BLOCKERS auto-fail — cannot deliver. POLISH — fix if you can, doesn't block.
 **The diff rule (the Riverside upgrade):** every NON-visual blocker cites the revision diff or timeline read that proves it — e.g. `Magic Audio confirmed ON: PASS (track 3 mixLevel 0.55, rev 9)`.
 
 **BLOCKERS:**
-1. `Magic Audio confirmed ON (0.55 / 0.85 phone)` — every speaker track; not silently skipped. (timeline read — cite track + level)
+1. `Magic Audio confirmed at the chosen level (0.55 / 0.85 phone)` — every speaker track; not silently skipped. Deliberately lower or off is allowed only for a pro mic in a treated room (`audio.md`) and must be written in the log. (timeline read — cite track + level)
 2. `short-form captions present + below the face` — karaoke on, `position.y` 0.82–0.86, `widthRatio ≤ 0.8`. (VISUAL — cite frame)
 3. `opened on the hook` — no settling-in / silent lead-in. (transcript row 1 — cite the first words)
 4. `ended on a complete thought` — never mid-sentence. (last transcript row — cite)
@@ -54,7 +54,7 @@ BLOCKERS auto-fail — cannot deliver. POLISH — fix if you can, doesn't block.
 14. `aspect ratio correct` — reel canvas is portrait (`settings.canvas` from the timeline); long-form 16:9. (timeline read)
 15. `every pass in the checkpoint log has a revision that exists` — no pass claimed that the diff can't show. (compare_revisions)
 
-**POLISH (does NOT block):** caption size fine-tuning, bed level, punch-in smoothness, panel rounding, B-roll word-matching nuance. Note any you couldn't perfect so the agent knows it's part of their free 20%.
+**POLISH (does NOT block):** caption size fine-tuning, bed level, punch-in timing (a hard cut that lands a beat early or late), panel rounding, B-roll word-matching nuance. Note any you couldn't perfect so the agent knows it's part of their free 20%.
 
 **Hard stop rule:** any BLOCKER (or compliance item) that FAILS and is NOT fixable in ≤1 pass → STOP. Tell the agent EXACTLY which item failed, in plain language.
 

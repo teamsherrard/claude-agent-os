@@ -29,8 +29,10 @@ Produce this morning's briefing.
    that it doesn't exist.
 2. Read `brain.md` (name, market, voice), `identity/operations.md` (timezone, hours, signature),
    `memory/deadlines.md`, `memory/clients.md`, `memory/capture-log.md` if it exists (the
-   agent's on-the-go captures that still need a decision), and `identity/business-plan.md` if it
-   exists (their 90-day plan: the 3 weekly non-negotiable activities + dashboard).
+   agent's on-the-go captures that still need a decision), `identity/business-plan.md` if it
+   exists (their 90-day plan: the 3 weekly non-negotiable activities + dashboard), and
+   `memory/listings.md` if it exists (active listings: stage, open-house and closing dates).
+   Format every price and date to `config.md → Locale` (currency, units, date style).
 3. Get today's events from the Google Calendar connector (agent's timezone). Include all-day
    events — closings, offer deadlines, vacation — they're often the day's most important item.
 4. Scan Gmail unread from the last 24 hours — headlines only, at most the newest 50 (if more,
@@ -51,8 +53,15 @@ Produce this morning's briefing.
 6. Compose the briefing — warm, crisp, an executive assistant's note left on the desk. Plain
    text, no markdown symbols, capitalized section headers:
    - One-line greeting with the day.
+   - URGENT — deadlines due today or tomorrow **and not Done**. FIRST, right under the
+     greeting: a deal-killing date must survive a ten-second phone glance. Omit if none.
    - TODAY — all-day events first (prefixed "ALL DAY —"), then appointments in time order
-     (time, what, where). If light, suggest how to use the open time.
+     (time, what, where). **Meeting prep: for each appointment whose guest matches a ledger
+     client, add ONE indented line beneath it** — stage · last contact · open promise · the
+     thing to pre-empt — built only from files already read, no extra lookups; skip when no
+     match. If the day is light, suggest how to use the open time.
+   - LISTINGS — only if `listings.md` has active listings AND something is near: an open
+     house or closing within 7 days, or a stalled launch step. One line each. Omit otherwise.
    - TOP 3 MONEY-MAKING ACTIONS — the three highest-leverage moves today. **If
      `identity/business-plan.md` exists, anchor these to its 3 weekly non-negotiable
      activities** (which of the 3 moves does today advance, with the concrete next step), filled
@@ -60,10 +69,10 @@ Produce this morning's briefing.
      check-in' to score last week and set this one." Without a business plan, rank by revenue
      impact from Next actions + deadlines. **If the ledger is new/empty, give generic
      prospecting guidance and SAY it's generic — never invent clients or deals.**
-   - URGENT — deadlines due today or tomorrow **and not Done**. Omit if none.
-   - FOLLOW-UPS DUE — open Next actions + follow-ups due or overdue: who, why, and a suggested
-     one-line message for each. **A row with a missing or non-date due value counts as due
-     today** (a captured reminder must never vanish). Omit if none.
+   - FOLLOW-UPS DUE — open Next actions + follow-ups due or overdue. **Suggested one-line
+     messages for at most the 5 most overdue/highest-stakes; collapse the rest to one line**
+     ("…plus 4 more — say 'show all follow-ups'"). A row with a missing or non-date due value
+     counts as due today (a captured reminder must never vanish). Omit if none.
    - SPECIAL DATES — any birthday / closing-anniversary noted in client records that lands
      today or this week, with a one-line message suggestion. Omit if none.
    - ON-THE-GO NOTES — any still-Open rows in `memory/capture-log.md`: what the agent captured
@@ -71,8 +80,11 @@ Produce this morning's briefing.
    - INBOX — one line: how many unread, anything that looks important.
    - One short proactive suggestion to win the day.
    Sign with the assistant's name (from `config.md`; default: "Your AI Admin").
+   **Budget: the whole briefing should fit ~25 lines** — a note left on the desk, not a
+   report. Collapse before you sprawl.
 7. **Delivery:** the briefing must be your FINAL output — compose it and stop; no tool calls,
    sync notes, or maintenance chatter after it (Cowork delivers your last output as the task
-   result + notification). NEVER send it by email — **sending is forbidden BY POLICY on every
-   provider** (Gmail can't send; Outlook can but we never do): no tool is authorized to send on
-   the agent's behalf, ever.
+   result + notification). NEVER send it by email — **this assistant never sends anything**:
+   the briefing arrives as the task notification, and client email always lands as a draft the
+   agent reviews and sends themselves. (Other plugins may have their own explicitly opted-in
+   delivery; that's their policy, not a loophole in this one.)

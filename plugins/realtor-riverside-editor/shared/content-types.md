@@ -2,15 +2,15 @@
 
 Match the edit to the kind of video. These are the common realtor types — pull the right structure.
 
-**Graphics note:** graphics are placed in Riverside and kept OFF THE FACE — a hook card + a CTA card (brand-kit PNG preferred; native boxed text otherwise — `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`). **Short-form**: ≤2–3 cards; karaoke captions carry the keyword emphasis. **Long-form**: hook + CTA + an emphasis pop-up every ~2–3 min + a lower third (no karaoke). NO count-ups (not a tool anyway). Riverside does the cut, Magic Audio, B-roll, grade, punch-ins, captions/text, chapters, and the logo.
+**Graphics note:** graphics are placed in Riverside and kept OFF THE FACE — a hook card + a CTA card (brand-kit PNG preferred; native boxed text otherwise — `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`). **Short-form**: ≤2–3 cards; karaoke captions carry the keyword emphasis. **Long-form**: hook + CTA + an emphasis pop-up every ~2–3 min + a lower third (no karaoke). NO count-ups (not a tool anyway). Riverside does the cut, Magic Audio, B-roll, grade, punch-ins, captions/text, and the logo; it hands the section map to the YouTube System, which names the chapters.
 
 ## Market update / data (e.g. "Calgary market 2026")
 - Hook: a number or a myth-bust.
 - Structure: hook → current conditions → numbers by area → what it means → CTA.
-- Edit: an optional single stat card on the headline figure (off the face), punch-ins on the key stats, native chapters. Let the karaoke captions (short) or an emphasis pop-up every ~2–3 min (long) carry the rest. Restrained.
+- Edit: an optional single stat card on the headline figure (off the face), punch-ins on the key stats, and a section map for the YouTube System. Let the karaoke captions (short) or an emphasis pop-up every ~2–3 min (long) carry the rest. Restrained.
 
-## Listing / home tour (→ `riverside-listing`)
-- Property footage ONLY (own clips or listing photos as Ken-Burns stills) — never generic stock for the home.
+## Listing / home tour (→ `studio-listing`)
+- Property footage ONLY (own clips or listing photos as animated-entrance stills) — never generic stock for the home.
 - Structure: exterior/drone + address → room by room → yard → neighbourhood → book-a-showing CTA.
 - Edit: room-to-room cutaways, an address/price card (off the face), the CTA.
 

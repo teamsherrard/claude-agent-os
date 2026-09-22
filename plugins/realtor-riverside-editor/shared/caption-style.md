@@ -17,7 +17,7 @@ set_captions(editId, expectedRevision,
     effect: "outline",                    // thick dark outline = readable on any footage
     fontFamily: "<brand.caption.font>",   // e.g. "Poppins ExtraBold" — weight lives in the family name
     fontWeight: 800,                      // must match the family variant (800 ExtraBold / 700 Bold / 900 Black)
-    fontSize: 62,                         // see sizing below
+    fontSize: 84,                         // 9:16 reel; sizes are 1080p EXPORT pixels - see sizing below
     primaryColor: "#FFFFFF",
     secondaryColor: "<brand.caption.accent>",   // the active-word colour — set it EXPLICITLY
     textAlign: "Center",
@@ -26,7 +26,7 @@ set_captions(editId, expectedRevision,
   })
 ```
 
-**Sizing (live-tested).** `fontSize` is in **1080p export pixels** — on a 1080×1920 reel, `52` rendered at 2.7% of frame height, far too small for a phone (live miss). Our bar is "big and phone-legible": **`84` on 9:16** (bold-karaoke; 4.4% of height, 2–3 words per line at `widthRatio 0.9`), `76` clean-minimal, `80` cinematic. Riverside chunks the transcript into short segments for `lines_1`, so a big size does not wrap badly. Verify on a frame; never ship the preset default.
+**Sizing (live-tested).** `fontSize` is in **1080p export pixels** — on a 1080×1920 reel, `52` rendered at 2.7% of frame height, far too small for a phone (live miss). Our bar is "big and phone-legible": **`84` on 9:16** (bold-karaoke; 4.4% of height, 2–3 words per line at `widthRatio 0.8`; the first live reel shipped at 0.9 and looked fine in the export, but the feed's icon rail is not in the export, so 0.8 is the rule), `76` clean-minimal, `80` cinematic. Riverside chunks the transcript into short segments for `lines_1`, so a big size does not wrap badly. Verify on a frame; never ship the preset default.
 
 **Presets.** `get_captions_presets(studioId)` lists the studio's brand captions (`brandCaptionsList`, if the kit has any) and the built-in catalog (`CP22`… — Poppins ExtraBold Highlight, Sora SemiBold Karaoke, Montserrat Reveal, etc.). You may pass a `presetId` + `studioId` as the base and override only `secondaryColor` / `fontSize` / `position` — explicit style fields win over the preset. Note the preset's animation accent colour is NOT applied by the tool; the edit keeps its own — so **always set `secondaryColor` yourself**.
 
@@ -45,11 +45,11 @@ set_captions(editId, expectedRevision,
 
 ## Sample looks to show at setup (the 2–3 the agent points at)
 
-`riverside-setup` shows these NAMED looks in one plain line each; whichever they pick, write its exact values into `config.json` (`caption_style` + `brand.caption` + `style_pack`) so it reproduces on every video:
+`studio-setup` shows these NAMED looks in one plain line each; whichever they pick, write its exact values into `config.json` (`caption_style` + `brand.caption` + `style_pack`) so it reproduces on every video:
 
-1. **Bold Karaoke** (default): *"Big, heavy white words with a strong outline — the word you're saying pops in your brand colour."* → `caption_style: "bold-karaoke"` · `brand.caption: { "font": "Poppins ExtraBold", "accent": <brand accent>, "weight": "800", "anim": "karaoke" }` · `style_pack: "bold-kinetic"` · fontSize 62.
-2. **Clean Minimal**: *"Lighter, modern white text with a soft shadow — calmer, the active word still turns your brand colour."* → `caption_style: "clean-minimal"` · `brand.caption: { "font": "Inter Bold", "accent": <brand accent>, "weight": "700", "anim": "karaoke" }` · `style_pack: "clean-minimal"` · effect `shadow` · fontSize 56.
-3. **Cinematic**: *"Elegant condensed type with a subtle shadow — the luxury-listing feel, understated brand-colour highlight."* → `caption_style: "cinematic"` · `brand.caption: { "font": "Oswald", "accent": <brand accent>, "weight": "400", "anim": "karaoke" }` · `style_pack: "cinematic"` · textTransform `UpperCase` · fontSize 58.
+1. **Bold Karaoke** (default): *"Big, heavy white words with a strong outline — the word you're saying pops in your brand colour."* → `caption_style: "bold-karaoke"` · `brand.caption: { "font": "Poppins ExtraBold", "accent": <brand accent>, "weight": "800", "anim": "karaoke" }` · `style_pack: "bold-kinetic"` · fontSize 84.
+2. **Clean Minimal**: *"Lighter, modern white text with a soft shadow — calmer, the active word still turns your brand colour."* → `caption_style: "clean-minimal"` · `brand.caption: { "font": "Inter Bold", "accent": <brand accent>, "weight": "700", "anim": "karaoke" }` · `style_pack: "clean-minimal"` · effect `shadow` · fontSize 76.
+3. **Cinematic**: *"Elegant condensed type with a subtle shadow — the luxury-listing feel, understated brand-colour highlight."* → `caption_style: "cinematic"` · `brand.caption: { "font": "Oswald", "accent": <brand accent>, "weight": "400", "anim": "karaoke" }` · `style_pack: "cinematic"` · textTransform `UpperCase` · fontSize 80.
 
 (Every stored `caption_style` label maps to one of these — don't invent new labels per agent. Fonts named here are in Riverside's built-in preset catalog, so they're known to render.)
 

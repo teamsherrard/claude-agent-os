@@ -9,7 +9,7 @@ The one-page rulebook for editing a realtor's video in Riverside. The detailed r
 - DON'T narrate your steps. Speak at three moments: kickoff, one question (if needed), done.
 
 ## Make people look good
-- DO keep zooms gentle (~1.06×), keep good headroom, keep skin natural and flattering.
+- DO keep zooms gentle (1.05–1.08×), keep good headroom, keep skin natural and flattering.
 - DON'T push in tight on anyone's face. DON'T harshen brightness/contrast on a face.
 
 ## Sound (clean the audio — and DON'T under-do it)
@@ -30,7 +30,7 @@ The one-page rulebook for editing a realtor's video in Riverside. The detailed r
 - DON'T fake what the tool can't do: no transition you didn't apply, no swoosh you didn't have. Say it plainly in the delivery.
 
 ## Captions & graphics
-- DO make SHORT-FORM captions big and phone-legible (fontSize ~62, outline, white, active word in the brand accent via `secondaryColor`). **LONG-FORM has NO karaoke — an emphasis pop-up every ~2–3 min instead.**
+- DO make SHORT-FORM captions big and phone-legible (fontSize ~84 on a vertical reel, since sizes are 1080p export pixels; outline, white, active word in the brand accent via `secondaryColor`). **LONG-FORM has NO karaoke — an emphasis pop-up every ~2–3 min instead.**
 - DO keep graphics purposeful: short-form a hook card + a CTA card (≤2–3); long-form hook + CTA + pop-ups + a lower third. Big, one line, animated in, OFF the face.
 - DO prefer the Video Brand Kit PNGs when registered — they're the only way to get a brand-coloured panel in Riverside. Native boxed text is the fallback.
 - DON'T leave bare floating text on busy footage; DON'T build cramped multi-line cards (one short line wins).
@@ -44,7 +44,7 @@ The one-page rulebook for editing a realtor's video in Riverside. The detailed r
 - DO open on the hook (cut the settling-in), no black bars in the first second, end the instant the last word finishes.
 - DON'T leave dead air, fumbles, or the camera-off reach. NEVER cut the hook or the CTA.
 - DON'T end mid-sentence — end on a complete thought, then the CTA.
-- DON'T let a punch-in expose the frame edge — zoom IN only, ≥100%, keep it centred, verify on a frame.
+- DON'T let a punch-in expose the frame edge — zoom IN only, ≥100%, keep it centred, verify on a frame. And DON'T claim a punch-in you have not read back: the keyframe route reports success and writes nothing; only the zoomed-scene route is real.
 
 ## Always end with their call-to-action
 - DO close every video with the agent's CTA on screen (`cta-pack.md`).
