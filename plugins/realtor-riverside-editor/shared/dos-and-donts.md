@@ -13,7 +13,7 @@ The one-page rulebook for editing a realtor's video in Riverside. The detailed r
 - DON'T push in tight on anyone's face. DON'T harshen brightness/contrast on a face.
 
 ## Sound (clean the audio — and DON'T under-do it)
-- DO turn Magic Audio on for every speaker track on every video. **0.55 default** (a decent mic in a normal room). **Phone / echoey rooms → 0.80–0.90**, 1.0 for a bad room. Only lower it if the audio is genuinely pristine AND full strength is thinning the voice.
+- DO turn Magic Audio on for every speaker track on every video. **0.70 default** (a decent mic in a normal room; 0.55 was inaudible on a real edit). **Phone / echoey rooms → 0.80–0.90**, 1.0 for a bad room. Only lower it if the audio is genuinely pristine AND full strength is thinning the voice.
 - DON'T under-do it (a fishbowl echo survives at ~0.3), and DON'T ship raw audio. If the source is genuinely bad, a cheap lav mic fixes it at the source.
 - DO confirm it actually applied — if the recording is still processing, Magic Audio silently skips. Read the track back.
 - (The Descript voice-clone trap doesn't exist here — filler removal is a transcript-labelled cut/mute, never synthesis.)

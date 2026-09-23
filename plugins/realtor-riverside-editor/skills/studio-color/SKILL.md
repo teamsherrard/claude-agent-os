@@ -10,7 +10,7 @@ One job, done well. Run the craft contract (`${CLAUDE_PLUGIN_ROOT}/shared/craft-
 ## The job
 
 1. Read the speaker track.
-2. Apply the bare-minimum recipe (brightness, contrast, saturation; Kelvin only when the white balance is off). Halve it for punchy phone footage.
+2. Apply the visible-but-natural recipe (brightness +0.04, contrast +0.12, saturation +0.08; Kelvin only when the white balance is off). It must be noticeable side by side; it must never cross the over-cooked line. Halve it for punchy phone footage.
 3. Confirm the keyframe exists; check skin on a frame when one is reachable.
 4. Offer to dial it back. When in doubt, do less.
 

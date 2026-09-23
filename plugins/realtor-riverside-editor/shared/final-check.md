@@ -38,16 +38,21 @@ BLOCKERS auto-fail — cannot deliver. POLISH — fix if you can, doesn't block.
 **The diff rule (the Riverside upgrade):** every NON-visual blocker cites the revision diff or timeline read that proves it — e.g. `Magic Audio confirmed ON: PASS (track 3 mixLevel 0.55, rev 9)`.
 
 **BLOCKERS:**
-1. `Magic Audio confirmed at the chosen level (0.55 / 0.85 phone)` — every speaker track; not silently skipped. Deliberately lower or off is allowed only for a pro mic in a treated room (`audio.md`) and must be written in the log. (timeline read — cite track + level)
+1. `Magic Audio confirmed at an AUDIBLE level (0.70 / 0.85 phone)` — every speaker track; not silently skipped. Deliberately lower or off is allowed only for a pro mic in a treated room (`audio.md`) and must be written in the log. (timeline read — cite track + level)
 2. `short-form captions present + below the face` — karaoke on, `position.y` 0.82–0.86, `widthRatio ≤ 0.8`. (VISUAL — cite frame)
 3. `opened on the hook` — no settling-in / silent lead-in. (transcript row 1 — cite the first words)
 4. `ended on a complete thought` — never mid-sentence. (last transcript row — cite)
-5. `CTA on screen` — the agent's CTA card is present at the end. (VISUAL — cite frame)
+5. `CTA on screen` — the agent's CTA banner appears on the CTA line and holds to the end (or the end card closes the video). (VISUAL — cite frame)
 6. `colour grade applied` — a colorCorrection keyframe exists on the speaker track; skin not pale/orange/yellow. (timeline + VISUAL)
 7. `NO text/cards over the face` — captions AND cards clear of the face (or timed over B-roll). Zone matches the FORMAT (`graphics-style.md`): vertical → top edge; **16:9 → LOWER THIRD (~75–80% down)**. Remember Riverside inserts text CENTRED by default — if you didn't move it, it's on the face. (VISUAL — cite a frame at each card/caption moment)
 8. `no exposed black bars` — footage fills the frame; punch-ins ≥100% and centred; every B-roll overlay scaled to cover. (VISUAL)
 9. `no accidental background removal / blur` — no `video.background` keyframe on the speaker track; real room intact. (timeline + VISUAL)
-10. `b-roll within the cap + no repeats` — short-form ≤3; long-form ~1 per 45–60 s; no repeated `assetId` / `externalSourceId`; each recognisable in a 4-s glance. Long listing tour: room cutaways exempt from the per-minute scale. (count on the timeline; VISUAL for recognisability)
+11. `no bloopers or repeated takes remain` — full transcript re-read after the cut: no restart phrase, no six-word sentence twice, every Riverside AI retake flag cut or logged with a reason (`clean-cut.md`). (transcript read — cite the check)
+12. `audio at an audible level` — `enhancedAudioMix` ≥ 0.70 on every speaker track (0.85 phone), or a logged pro-mic reason. (timeline read)
+13. `grade inside the visible band` — the `colorCorrection` keyframe carries contrast 0.10–0.20 and saturation 0.06–0.12 (or a logged reason), and a frame shows natural skin with shadow detail. (timeline + VISUAL)
+14. `music present` — a bed on every format (-18 dB reel, -22 dB long-form) unless the agent said no or the topic is serious (logged); long-form also has section stingers. (timeline read — cite the audio clips)
+15. `energy at the rate` — zoomed scenes at the format's rate with no 90-second gap on long-form, editorial cuts covered. (scenes read — cite the count)
+10. `b-roll within the cap + no repeats` — short-form ≤3; long-form ~1 per 45–60 s; no repeated `assetId` / `externalSourceId`; each recognisable in a 4-s glance and **as bright as the speaker's shot** (no dusk, night, or moody-dark clips over a lit talking head; no fade through black). Long listing tour: room cutaways exempt from the per-minute scale. (count on the timeline; VISUAL for recognisability and brightness)
 11. `long-form emphasis pop-ups present (every ~2–3 min)` + `lower third on first appearance` — long-form only; N/A short-form. (timeline + one VISUAL)
 12. `text CONTAINED inside its panel` — for EVERY native card/pop-up/CTA: all words inside the boxed panel, nothing cut at the frame edge, one short line. (VISUAL — full-res crop per card)
 13. `card typography clean at FULL resolution` — centred to the panel, single spaces, panel hugs the text, no drift. Brand-kit PNGs: crisp, not upscaled soft. (VISUAL — full-res crop)
@@ -67,12 +72,12 @@ BLOCKERS auto-fail — cannot deliver. POLISH — fix if you can, doesn't block.
 - Opens ON THE HOOK. Ends on a complete thought + the CTA on screen.
 
 ## The basics (NON-NEGOTIABLE — the 80%, always done)
-- **Colour grade applied** — subtle, bare-minimum, natural (skin never pale, orange, or yellow).
+- **Colour grade applied and VISIBLE** — inside the band in `footage-look.md` (contrast 0.10–0.20, saturation 0.06–0.12), skin natural, shadows with detail.
 - **Magic Audio applied AND confirmed on.**
-- **Energy present (mandatory minimum)** — 2–3 punch-ins on key beats (swoosh only if available). A flat reel with none is a fail; an effect on every cut is the opposite fail.
-- **Music bed (short-form)** present and under the voice. Long-form ships without one — offer it.
+- **Energy present (mandatory minimum)** — zooms at the format's rate on real beats (long-form: no 90-second stretch without one; reel: at least 3), every editorial cut covered by a size change. Read from the scenes' `positioning.scale`. A flat video is a fail; a zoom on every sentence is the opposite fail.
+- **Music bed present on every format** (-18 dB reel, -22 dB long-form) and section stingers on long-form, unless the agent said no or the topic is serious (logged).
 - **Captions / on-screen text right for the format** — SHORT-FORM: karaoke, big, outline, active word in the brand accent set explicitly. LONG-FORM: no karaoke — emphasis pop-ups every ~2–3 min + a lower third.
-- **Clean cut** — fillers, dead air, duplicate takes, false starts removed.
+- **Clean cut, proven** — fillers, dead air, duplicate takes, false starts, restart phrases removed, and the post-cut re-read done (blocker 11).
 
 ## Captions & graphics
 - Graphics purposeful: short-form hook + CTA (≤2–3); long-form hook + CTA + pop-ups + lower third. Brand-kit PNGs when registered; native boxed text otherwise. Never bare floating text on busy footage.
@@ -101,7 +106,7 @@ BLOCKERS auto-fail — cannot deliver. POLISH — fix if you can, doesn't block.
 Always frame the export as a **REVIEW DRAFT** — never "done", "final", or "perfect". Four parts, plain language:
 
 1. **It's a review draft.** *"Here's your review draft — take a look before you post."* + where to find it (the edit link from `platform_get_edit.riversideUrl`, and the export in Riverside's Exports).
-2. **The spec you hit.** One or two lines: *"Cleaned up the audio, opened on your hook, karaoke captions, a couple of punch-ins, your CTA card, 3 cutaways, colour grade."*
+2. **The spec you hit.** One or two lines: *"Cleaned up the audio, opened on your hook, karaoke captions, zooms on your key lines, your CTA banner, 3 cutaways, colour grade."*
 3. **The 2–3 human-eyeball checks** — only what you genuinely couldn't verify:
    - "Does the audio FEEL right to your ear?" (no rung can hear)
    - "Any text that drifts near your face when you move?" (on-face nuance across motion)

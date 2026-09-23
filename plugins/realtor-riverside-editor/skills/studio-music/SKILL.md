@@ -5,6 +5,8 @@ description: Music for the AI Editing Studio. Picks a mood-matched bed from Rive
 
 # Music
 
+Long-form gets a quiet bed and section stingers by default now; a video with no sound design reads as unfinished.
+
 One job, done well. Run the craft contract (`${CLAUDE_PLUGIN_ROOT}/shared/craft-contract.md`), and do the work from this skill's one reference: **`${CLAUDE_PLUGIN_ROOT}/shared/music.md`**. Respect the ownership rules in `${CLAUDE_PLUGIN_ROOT}/shared/boundaries.md` and the house rules in `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
 
 ## The job

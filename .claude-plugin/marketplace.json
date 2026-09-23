@@ -63,7 +63,7 @@
     {
       "name": "realtor-riverside-editor",
       "source": "./plugins/realtor-riverside-editor",
-      "version": "0.3.1",
+      "version": "0.4.0",
       "description": "PLUGIN 10: The AI Editing Studio (Riverside engine). A full-time video editor inside the agent's Claude: 25 skills across five stages: DIRECT (creative direction, record coach, transcript read), CUT (remove the fluff, hook finder, interview edit), POLISH (audio enhance, color and look, captions, music, B-roll, B-roll library, brand graphics, energy), REPURPOSE (short-form repurpose, weekly batch, podcast), SHIP (quality check, review and revise, publish), plus setup, a plain-English navigator that also resumes any stopped edit, and three full recipes (long-form, reel, listing). Claude edits directly in the agent's own Riverside account with precise, verifiable operations: no per-edit AI credits, every change proven by a revision diff, every visual checked on real frames, and publishing to YouTube, Shorts, TikTok, Instagram, Facebook, LinkedIn, and X only on an explicit yes. One owner per output: it edits video and never writes titles, descriptions, chapters, captions, or designs; those come from the YouTube System, the Short-Form System, and Claude Design. Requires Plugin 1 (the Brain) and a Riverside Grow plan or higher."
     }
   ]

@@ -10,7 +10,7 @@ One job, done well. Run the craft contract (`${CLAUDE_PLUGIN_ROOT}/shared/craft-
 ## The job
 
 1. Gate 1, compliance, in its three states.
-2. Gate 2, the blockers: each one PASS, FAIL, FIXED, or UNVERIFIED with its evidence (a revision diff, a timeline read, or a frame and which rung of the ladder it came from).
+2. Gate 2, the blockers: each one PASS, FAIL, FIXED, or UNVERIFIED with its evidence (a revision diff, a timeline read, or a frame and which rung of the ladder it came from). The five that a viewer feels first are measured, not eyeballed: no bloopers left (a full re-read), audio at an audible level, the grade inside its band, music present, zooms at the rate.
 3. A fail you cannot fix in one pass stops the delivery; say which item and why in plain words.
 4. Gate 3, the hand-back: a review draft, the spec it hit, the 2 to 3 things only they can judge, and the 80/20 line.
 

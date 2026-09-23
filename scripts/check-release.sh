@@ -110,6 +110,23 @@ sys.exit(1 if bad else 0)
 PY
 
 say ""
+say "── 7. the Studio never drafts titles, descriptions, tags, or chapter names"
+python3 - <<'PY' || FAIL=1
+import glob,re,sys
+pat=re.compile(r"ready-to-paste|ready to paste|draft the title|title \+ description|title and description \(|title options|suggest(ed)? titles?|pick one\) title",re.I)
+allow=re.compile(r"never|not |no titles|owns|boundar|SEO Package|does not|doesn't|don't|removed|NEVER",re.I)
+bad=[]
+for p in glob.glob("plugins/realtor-riverside-editor/**/*.md",recursive=True):
+    for n,l in enumerate(open(p,encoding="utf-8"),1):
+        if pat.search(l) and not allow.search(l): bad.append(f"{p}:{n}: {l.strip()[:110]}")
+if bad:
+    print("  ✗ the Studio still drafts SEO copy (only the YouTube System may):")
+    for b in bad: print("      "+b)
+    sys.exit(1)
+print("  ✓ no title/description/chapter-name drafting in the Studio")
+PY
+
+say ""
 say "── 6. top changelog entry names files that are actually committed/staged"
 python3 - <<'PY' || FAIL=1
 import re,subprocess,sys,os

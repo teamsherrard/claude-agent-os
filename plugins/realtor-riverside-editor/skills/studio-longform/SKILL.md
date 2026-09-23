@@ -21,11 +21,12 @@ You run the line; the crafts do the work. **Read up front (only these):** `${CLA
 | 6 | POLISH | Color and look | `footage-look.md` |
 | 7 | POLISH | **Captions OFF** (long-form rule; an edit made in Riverside can arrive with them on) | `caption-style.md` |
 | 8 | POLISH | B-roll, about one per 45–60 seconds, own footage first, all full-cover | `broll-ladder.md` (+ `footage-intake.md`) |
-| 9 | POLISH | Energy: 2–3 punch-ins on the brief's featured moments | `effects-menu.md` |
+| 9 | POLISH | Energy: zooms on the emotional beats at one per 45–75 s, a step-back on the reveal, a size change on every editorial cut | `effects-menu.md` |
+| 9b | POLISH | Music bed at -22 dB across the final length + a section stinger at each section change | `music.md` |
 | 10 | POLISH | Brand graphics: hook card, then the name strip once the hook card has cleared (same zone, never both at once), a pop-up every 2–3 minutes, the CTA — all in the LOWER THIRD on 16:9 | `graphics-style.md`, `cta-pack.md` |
 | 11 | SHIP | ONE export at 1080p, then the quality check on it | `final-check.md`, `frame-qa.md` |
 
-Music is not in the long-form line. Offer it at delivery (`music.md`).
+Music is in the line: step 9b places a quiet bed (-22 dB) and a section stinger at each section change (`music.md`). Off only if the agent says so or the topic is serious.
 
 ## Sections, chapters, and SEO — the boundary
 

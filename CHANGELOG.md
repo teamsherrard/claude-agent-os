@@ -7,6 +7,42 @@ All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`
   Design-ready, same format as the Cohort Support deck): the pitch, safety rules, 4-step setup, the
   daily rhythm, all 17 skills with say-this lines, the 5-day test-drive plan, and the trust close.
 
+## [0.131.0] - 2026-09-23
+
+### AI Editing Studio v0.4.0: edits to the emotion, audible audio, a visible grade, music and sound design, bright B-roll, the overlay brand kit, and hard quality gates
+From Mike's first Cowork run (a 10-minute Spokane video): the video came back flat (no zooms at all), with dusk stock
+footage over a lit talking head, and with a title, description, and named chapters, which only the YouTube System may
+write. All of it fixed in the Studio. (The Descript editor, Plugin 6, is no longer in use and was not touched.)
+- **Emotion-driven energy (`effects-menu.md`, `studio-energy`).** Riverside's transcript carries emotion events
+  (`includeParalinguistics:true`: happiness, surprise, arousal, valence). They join the brief and the transcript cues
+  (numbers, reveals, questions, contrast turns, the CTA) as the beats. Rate by format: one zoom per 45–75 s on
+  long-form (a 10-minute video gets 9–13, was 2–3), one per 12–20 s on reels. Sizes 1.06 / 1.10 / 1.14 by strength.
+  Three moves: zoom in, step back on a reveal, and a size change on every editorial cut so jump cuts read as
+  deliberate. Riverside's free "transition" tracks are 7–19 s stingers, not swooshes; documented as such.
+  `preflight-check.md` and `creative-direction.md` now read the emotion data for the featured moments;
+  `cost-discipline.md`, `final-check.md`, `footage-look.md`, `riverside-playbooks.md`, `tool-map.md` carry the new caps.
+- **Bright B-roll (`broll-ladder.md`, `studio-broll`, `final-check.md`).** A cutaway is never darker than the
+  speaker's shot: daytime words in every query, no night/dusk/moody results, a midpoint frame check on every cutaway,
+  hard-cut entrances, never a fade through black.
+- **Video Brand Kit v3 contract (`brand-wiring.md`, `graphics-style.md`, `cta-pack.md`, `studio-setup`,
+  `studio-graphics`, `content-types.md`, `editor-config.example.json`).** Every kit piece is a full-canvas transparent
+  overlay drawn in its zone: the hook is a banner with an empty zone, the CTA is a banner with the words baked that pops
+  up on the CTA line, plus the name strip and the emphasis panel; the optional `end_card_*` is the only full-screen
+  piece. A **CTA pack** of eight quick-ask banners (subscribe, comment, guide, call, book, DM, link, follow) is popped
+  up on the line where the agent says that ask (`cta-pack.md` table). Setup refuses an opaque "hook card" or "CTA card"
+  slate and points at the v3 design skill. Matches the rewritten Claude Design skill 12.
+- **Audible audio, visible grade (`audio.md`, `footage-look.md`, and every file that quoted the old numbers).** Magic Audio
+  default 0.55 → 0.70 (0.85 phone); grade default +0.03/+0.06/+0.04 → +0.04/+0.12/+0.08 with an over-cooked line at
+  contrast 0.20 / saturation 0.12. On the live edit both were applied and neither could be seen or heard.
+- **Music and sound design (`music.md`, long-form line step 9b).** Long-form now gets a quiet bed (-22 dB) by default,
+  plus section stingers: a 1.8-second slice of a free `transition` track at each section change (`insert_audio` with
+  `durationMs`, live-tested). Swoosh on zooms still needs the agent's own SFX.
+- **Bloopers (`clean-cut.md`).** A second pass reads Riverside's own AI retake flags (`comments[]` on the recording
+  clip), hunts restart phrases and misplaced laughter, and re-reads the whole transcript after the cut.
+- **Hard quality gates (`final-check.md`, `studio-check`).** Five new measured blockers: no bloopers left, audio ≥ 0.70,
+  grade inside its band, music present, zooms at the rate. Release gate check 7 fails the Studio if any file drafts a
+  title, description, or chapter name.
+
 ## [0.130.0] — 2026-09-23
 
 ### AI Admin (Plugin 2) → v0.10.0 — six new skills (17 total): the little-tasks release

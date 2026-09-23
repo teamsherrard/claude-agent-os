@@ -10,7 +10,7 @@ One job, done well. Run the craft contract (`${CLAUDE_PLUGIN_ROOT}/shared/craft-
 ## The job
 
 1. Pick EVERY moment from the transcript first (free), to the cap for the format in the reference.
-2. Source down the ladder: the library index, then Riverside stock, then keyed libraries, then real-place imagery. Keep a running list so nothing repeats.
+2. Source down the ladder: the library index, then Riverside stock, then keyed libraries, then real-place imagery. Keep a running list so nothing repeats. Bright, daytime clips only: a cutaway is never darker than the speaker's shot.
 3. Place them all in one go, then one batch that scales every new overlay CLIP (by `clipId`, never the shared overlay track) to fill the frame.
 4. Verify: count the clips on the timeline, diff the revision, check one or two on a frame.
 

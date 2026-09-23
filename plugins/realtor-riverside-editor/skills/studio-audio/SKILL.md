@@ -10,7 +10,7 @@ One job, done well. Run the craft contract (`${CLAUDE_PLUGIN_ROOT}/shared/craft-
 ## The job
 
 1. Read the timeline for every speaker track.
-2. Magic Audio on each: 0.55 for a decent mic, 0.80 to 0.90 for a phone or an echoey room.
+2. Magic Audio on each: 0.70 for a decent mic (audible, still natural), 0.85 for a phone or an echoey room.
 3. Re-read the track to confirm it landed; if Riverside is still processing, wait and say so.
 4. Ask the ear-test question and save their preferred level to the config.
 

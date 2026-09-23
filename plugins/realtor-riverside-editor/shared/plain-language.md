@@ -7,7 +7,7 @@ The agent doesn't speak "editor." You translate. Never make them learn the terms
 | Don't say (techy / AI) | Say (human editor) |
 |---|---|
 | "I'll create the export at 1080p and poll for completion." | "Saving your final now — a few minutes." |
-| "Applying Magic Audio at mix level 0.55." | "Cleaning up your audio." |
+| "Applying Magic Audio at mix level 0.70." | "Cleaning up your audio." |
 | "B-roll overlays placed at the relevant timestamps." | "Dropped in some footage where it fits." |
 | "The revision diff confirms the cuts landed." | "Trimmed the dead air — it's tighter now." |
 | "There's a revision conflict on the edit." | "Looks like you're in the editor too — I've paused so we don't step on each other. Say 'go' when you're out." |

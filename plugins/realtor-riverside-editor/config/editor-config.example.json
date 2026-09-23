@@ -59,17 +59,19 @@
       "cta_16x9": "",
       "cta_9x16": "",
       "lower_third": "",
+      "lower_third_9x16": "",
       "emphasis_16x9": "",
       "emphasis_9x16": "",
+      "end_card_16x9": "",
+      "end_card_9x16": "",
+      "cta_pack": {},
       "end_screen": "",
       "logo_sting": "",
       "riverside_media_ids": {},
       "icons_dir": "",
       "animated": {
-        "hook_16x9": "",
-        "hook_9x16": "",
-        "cta_16x9": "",
-        "cta_9x16": ""
+        "end_card_16x9": "",
+        "end_card_9x16": ""
       }
     }
   },

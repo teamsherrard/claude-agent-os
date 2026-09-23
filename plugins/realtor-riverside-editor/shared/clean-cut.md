@@ -11,6 +11,14 @@ From `read_aligned_transcript` compact rows:
 - **Tangents** — a passage that does not serve the brief's takeaway. Propose, never assume: tangents are often the personality.
 - **Housekeeping** — "two quick things before we start," link reminders, sponsor reads. Stays in a YouTube video; comes out of a reel.
 
+## The second pass — Riverside's own flags, and the blooper hunt (added 2026-09-23 after a live run left retakes in)
+
+A transcript read alone misses things. Before you show the list, run two more free checks:
+
+1. **Riverside's AI flags.** The recording clip in `read_timeline_in_range` carries `comments[]` with `source:"ai"` and a source-time `timeRange`: these are Riverside's own Co-Creator notes, and most say "retake" or "highly repetitive". Read the transcript words inside each range (convert with the word-level `assetStart`), decide keep or cut, and put every one you agree with on the list. One you disagree with gets one line of why in the log.
+2. **The blooper hunt.** Search the rows for restart phrases: "let me start again", "start over", "hold on", "wait", "sorry", "cut that", "take two", "one more time", "where was I", "um okay so"; laughter events in `paralinguistics` that sit outside a joke; a clap; a silence over 2.5 s followed by the same opening words. Each is a cut candidate with the exact anchor words.
+3. **After the cut, re-read everything once** and confirm: no sentence of six or more words appears twice, no restart phrase remains, no AI flag is left uncut without a logged reason. This re-read is the gate the quality check enforces (`final-check.md` blocker 11).
+
 ## Show it, get one yes (the hard gate)
 
 > *"I'd take out 3 spots where you said the same section twice, the 2 seconds before your first line, and about 90 seconds of dead air. That takes it from 15:22 to about 12 minutes. Go?"*

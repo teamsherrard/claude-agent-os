@@ -13,7 +13,7 @@ Ask at most ONE question, only if the format is genuinely unclear: *"Is this a Y
 1. **Who and why** — "This is for relocating families deciding on Phoenix; the takeaway is that the honest downsides are manageable."
 2. **Shape** — format and target length: "16:9, about 12 minutes from 15" / "a 40-second reel."
 3. **What comes out** — the repeated takes, the dead air, any tangent that does not serve the takeaway. Named, with the line quoted.
-4. **What gets featured** — the 3 to 5 moments that carry the video: they get the punch-ins, the pop-ups, the best B-roll.
+4. **What gets featured** — the 3 to 5 moments that carry the video, chosen from what the agent said AND how they said it (Riverside's emotion events: the laugh, the surprise, the serious turn): they get the biggest zooms, the pop-ups, the best B-roll.
 5. **Feel** — the style pack in plain words (below) and the music call.
 
 The recipe per video type (market update, listing, tips, testimonial, interview) is in `${CLAUDE_PLUGIN_ROOT}/shared/content-types.md`.

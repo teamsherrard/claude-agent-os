@@ -2,7 +2,7 @@
 
 Match the edit to the kind of video. These are the common realtor types — pull the right structure.
 
-**Graphics note:** graphics are placed in Riverside and kept OFF THE FACE — a hook card + a CTA card (brand-kit PNG preferred; native boxed text otherwise — `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`). **Short-form**: ≤2–3 cards; karaoke captions carry the keyword emphasis. **Long-form**: hook + CTA + an emphasis pop-up every ~2–3 min + a lower third (no karaoke). NO count-ups (not a tool anyway). Riverside does the cut, Magic Audio, B-roll, grade, punch-ins, captions/text, and the logo; it hands the section map to the YouTube System, which names the chapters.
+**Graphics note:** graphics are placed in Riverside and kept OFF THE FACE — a hook banner + a CTA banner (brand-kit overlay PNGs preferred; native boxed text otherwise — `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`). **Short-form**: ≤2–3 cards; karaoke captions carry the keyword emphasis. **Long-form**: hook + CTA + an emphasis pop-up every ~2–3 min + a lower third (no karaoke). NO count-ups (not a tool anyway). Riverside does the cut, Magic Audio, B-roll, grade, punch-ins, captions/text, and the logo; it hands the section map to the YouTube System, which names the chapters.
 
 ## Market update / data (e.g. "Calgary market 2026")
 - Hook: a number or a myth-bust.

@@ -8,7 +8,7 @@ It does three jobs at once: it makes the edit **better** (you plan instead of re
 
 1. **Find the recording and confirm it's ready** — `platform_list_recordings`: its `status` must not be `uploading` / processing. If it is, say *"still uploading — give it a few minutes"* and stop here.
 2. **Create (or find) the working edit** — `create_edit_from_recording` (not gated on Grow; if it ever fails with `FAILED_PRECONDITION`, use an edit the agent makes in Riverside) — and `read_aligned_transcript(editId)`. Keep the `revision`.
-3. **Read the whole thing** — the compact rows (speaker, text, playable start/end, filler/pause counts, mid-sentence flags). For the plan you only need the rows; zoom to words later, when cutting.
+3. **Read the whole thing** — the compact rows (speaker, text, playable start/end, filler/pause counts, mid-sentence flags), with `includeParalinguistics:true` so the emotion events come along (a laugh, a happiness or surprise peak, an arousal rise, a serious turn). They are the raw material for the featured moments and the zooms (`effects-menu.md`). For the plan you only need the rows; zoom to words later, when cutting.
 4. **Find the problems and the plan:**
    - **Duplicate takes** — the same point delivered twice. Very common; agents re-record a section and keep rolling. Note which take is the keeper (usually the later, more complete one) and quote the distinguishing line of each — those quotes become the `boundary_range` anchors.
    - **Dead air / long gaps** — `pauseCount` on the rows, and gaps between `playableEndMs` → next `playableStartMs`.

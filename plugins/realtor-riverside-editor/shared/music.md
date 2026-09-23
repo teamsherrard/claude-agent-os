@@ -2,7 +2,14 @@
 
 A reel needs a music bed, always under the voice.
 
-**Long-form: no bed by default — but OFFER it.** At delivery, one line: *"I left music off this one to keep it clean — want a subtle bed under it? Quick to add, or drop one in yourself in Riverside."*
+**Long-form gets a bed too (changed 2026-09-23; a 10-minute video with no music anywhere read as unfinished).** Long-form: an `underscore`, **Low** intensity, at **-22 dB** (quieter than a reel), placed after the cut so it spans the final length, faded at both ends. Leave it off only when the agent says so, or on a serious or legal topic where music would feel wrong; say which.
+
+## Sound design (the layer that makes it feel edited)
+
+The connector has no sound-effect library, but two things work, both live-tested on 2026-09-23:
+- **Section stingers.** Riverside's free library has `transition` tracks (7 to 19 s). A short slice of one is a clean section hit: `insert_audio(assetId:<transition mediaId>, startMs:<section start, playable>, durationMs:1800, dB:-12, fadeOutMs:600)`. One per section change on long-form (the section map's times, `sections.md`), one on the hook reveal on a reel. Same collection as the bed so they belong together. The slice inserts correctly; whether it lands musically is the agent's ear, so ask once at hand-back.
+- **Swoosh on zooms.** Only from the agent's own uploaded SFX (`config.sfx.swoosh_media_id`), `insert_audio` at the zoom's start, -10 dB. Say once that a licensed swoosh dropped into their Riverside media makes every zoom land, then never nag.
+Never more than one hit every 30 seconds; never a hit over a spoken number or the CTA line.
 
 ## Where the music comes from
 
@@ -14,12 +21,12 @@ Riverside's **free built-in library** — `editing_get_stock_music(collection, s
 - Hype / just-listed / promo → `lifestyle` or `sportsRecreation`, High.
 - Story / client win / mindset → `lifestyle` underscore, Low.
 - Audience overrides genre — a luxury brand never gets `gaming`.
-- `intro` / `outro` / `transition` sections are short stings — usable as an open/close sting on long-form if the agent wants one; not a bed.
+- `intro` / `outro` / `transition` sections are short stings: `transition` slices are the section hits above, `intro`/`outro` can open and close a long-form. Not a bed.
 
 ## Placement & level
 
 `editing_insert_audio(editId, assetId:<mediaId>, startMs:0, dB:-18, fadeInMs:800, fadeOutMs:1500)`.
-- **-18 dB** under a normal voice (the -17 to -20 dB window); -20 for a soft speaker.
+- **-18 dB** under a normal voice on a reel (the -17 to -20 dB window); -20 for a soft speaker; **-22 dB on long-form**.
 - Ducking (music dipping when they talk) isn't a connector operation — a static bed at -18 dB is the safe default. If the agent wants true ducking, it's a quick manual adjust in Riverside (their 20%).
 - If the track is shorter than the reel, insert it again at its end, or pick the Long variant. Fade in/out at the ends; never start or stop abruptly.
 - On a reel, insert the bed **after** the cuts (pass 4) so it spans the final length.
