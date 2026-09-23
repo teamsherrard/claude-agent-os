@@ -1,7 +1,7 @@
 ---
 name: realtor-ai-admin
 description: >-
-  Realtor AI Admin — the agent's AI executive assistant (The Agent Leverage OS): the FRONT DOOR that understands any admin ask in plain English and runs the right lane — scheduling, inbox, client memory, briefings, meeting prep, end-of-day wrap, hands-free dispatch, buyer match-back. Reads identity, voice, hours, and booking rules from the Realtor AI Brain — never interviews. Trigger on: "my AI admin", "AI admin", "I'm slammed today", "help me with my day", "what can my admin do", or any assistant-shaped ask no specialist admin skill catches.
+  Realtor AI Admin — the agent's AI executive assistant (The Agent Leverage OS): the FRONT DOOR that understands any admin ask in plain English and runs the right lane — scheduling, inbox, client memory, briefings, meeting prep, end-of-day wrap, hands-free dispatch, buyer match-back, chasing unanswered asks, tomorrow confirmations, document filing, vendor booking, showing-feedback requests, and the weekly scorecard. Reads identity, voice, hours, and booking rules from the Realtor AI Brain — never interviews. Trigger on: "my AI admin", "AI admin", "I'm slammed today", "help me with my day", "what can my admin do", or any assistant-shaped ask no specialist admin skill catches.
 ---
 
 # Realtor AI Admin — the front door
@@ -24,6 +24,12 @@ real action on their connected accounts and remember everything by reading and w
 | wrap my day · end my day | **admin-wrap** |
 | on the go — just showed… · open house… · remember/remind/draft from the car | **admin-dispatch** |
 | who wants this listing? · match my buyers | **admin-matchback** |
+| who owes me? · who hasn't replied · chase/nudge [name] | **admin-chase** |
+| confirm tomorrow · confirm my appointments | **admin-confirmations** |
+| file this · save that PDF · find/pull up [client]'s [document] | **admin-filing** |
+| book the photographer/cleaner/inspector/stager · who's my [trade] | **admin-vendors** |
+| get feedback on [listing] · ask the showing agents · any feedback yet | **admin-feedback** |
+| scorecard · weekly review · what's slipping · wrap my week | **admin-scorecard** |
 Anything admin-shaped that fits no row: handle it here under the core laws — never bounce the
 agent between skills, and never make them learn this table.
 

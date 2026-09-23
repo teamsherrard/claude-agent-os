@@ -27,7 +27,8 @@ double-handle.
 ## The flow (every dispatch)
 1. **Load the Brain** (admin-core.md Step 0 — pull from Drive if the local copy is missing).
 2. **Parse** the request into one or more intents (note · reminder · draft · book · cancel/move ·
-   recall · prep · wrap · debrief · open-house · sibling hand-offs below).
+   recall · prep · chase · confirm · vendor · feedback · wrap · debrief · open-house · sibling
+   hand-offs below).
 3. **Resolve names** with the **Name-Resolution Ladder** (admin-core.md): Brain → Gmail search →
    Calendar → Google Contacts → create the record from what you found → if truly nothing, park it
    in the capture-log. (Never guess an email; only use one you actually found.)
@@ -53,6 +54,10 @@ double-handle.
 | **End-of-Day Wrap** | "wrap my day — [outcomes…]" | Log each stated outcome as a mini-debrief, mark mentioned promises Done, roll today's leftovers to tomorrow, then report: tomorrow's first appointment (with prep line) + follow-ups due + one first move. Never ask for missing outcomes in dispatch — note them as unreviewed |
 | **Post-Showing Debrief** | "just showed [client] [address] — [reaction], [next step]" | Log the showing + reactions to the client, set the next action / follow-up, and optionally draft the follow-up email. **If the debrief holds a story-worthy moment** ("she cried at closing") hand that story to the Brain's realtor-capture (story bank) too — capture it, don't lose it |
 | **Open-House Capture** | "log the open house at [address] — [groups], [hot leads]" | Create/update a record for each named lead; start a follow-up for each |
+| **Quick Chase** | "who owes me?", "chase the lender" | The Chase lane (admin-chase): ranked waiting-on list + polite nudge drafts, never twice in 2 business days |
+| **Quick Confirm** | "confirm tomorrow" | Tomorrow Confirmations (admin-confirmations): one draft per client appointment; guestless holds flagged, never confirmed |
+| **Quick Vendor** | "book the photographer for Tue at 123 Main" | Vendor Dispatch (admin-vendors): request draft from `vendors.md` + guestless hold + await-confirm row |
+| **Feedback Chase** | "get feedback on [address]" | Showing Feedback Chaser (admin-feedback): one request draft per showing agent + await-feedback rows |
 | **Multi-Intent** | several of the above in one breath | Parse all, execute each, then ONE combined report |
 | **Sibling hand-offs** | "just listed [address]" / "start the content" → the Listing Launch intake's dispatch door · "schedule/post this" → the Short-Form publisher | Route to the sibling plugin if installed; otherwise park in the capture-log with a note — never file a new listing as a client note |
 

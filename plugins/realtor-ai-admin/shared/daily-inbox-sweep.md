@@ -104,6 +104,7 @@ YOU TODAY instead.
    - NEEDS YOU TODAY — the 1–5 threads that genuinely need the agent, each with a one-line why
      and a suggested one-line reply; hot leads say "draft waiting in your Gmail — review and
      send."
-   - WAITING ON — who owes you a reply and for how long, each with a one-line nudge suggestion.
+   - WAITING ON — who owes you a reply and for how long, each with a one-line nudge suggestion
+     (end the section with: say "who owes me" any time for ready-to-send nudge drafts).
    - SWEPT — one line of counts: "Labeled 14 · 3 hot leads flagged · 6 promos archived."
    No lecture, no padding. If the inbox is clean, say so in one line.

@@ -15,8 +15,9 @@ back in one glance. **Follow `${CLAUDE_PLUGIN_ROOT}/shared/dispatch-capture.md`.
   assumption, queue real ambiguity to the briefing) · **parse every intent** · **safe by default**
   (emails = drafts, bookings = Conflict-Guarded, notes/reminders = just done).
 - Route each intent to the existing systems — **Quick Capture / Reminder / Draft / Book / Cancel /
-  Recall / Prep**, plus the compound ones realtors use most: **Post-Showing Debrief**,
-  **Open-House Capture**, and the **End-of-Day Wrap**.
+  Recall / Prep / Chase ("who owes me") / Confirm Tomorrow / Vendor Book**, plus the compound
+  ones realtors use most: **Post-Showing Debrief**, **Open-House Capture**, the **Showing
+  Feedback Chaser**, and the **End-of-Day Wrap**.
 - Resolve every name via the **Name-Resolution Ladder** (admin-core.md). Park anything unresolved in
   `memory/capture-log.md`; the 7am briefing surfaces it so nothing is lost.
 - **Knowledge captures aren't yours:** content ideas, wins, vendors, and market intel belong to

@@ -124,8 +124,11 @@ When these plugins are installed, hand off with one line instead of doing their 
   diagnose lane — never debug connectors ad hoc when support is installed.
 - **Knowledge captures** (ideas / wins / stories / vendors / intel): the Brain's
   realtor-capture, per the dispatch boundary above.
+- **Seller updates and marketing reports** for a listing: the Listing Launch plugin's SERVE
+  stage (`listing-seller`) owns the seller-facing words. The Admin's `admin-feedback` drafts
+  the feedback REQUESTS to showing agents and hands the gathered themes over.
 
 ## Out of scope (parked for v2)
-Meeting transcripts/notes and document filing are v2 — don't fake them. (Transaction
+Meeting transcripts/notes are v2 — don't fake them. (Transaction
 coordination lives with the Listing Launch plugin's deal stages.) The scheduled automations
 run from their own task prompts; the on-demand lanes above may run their flows in-chat.

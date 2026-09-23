@@ -18,7 +18,9 @@ The evening mirror of the briefing — close today, load tomorrow:
 2. **Housekeeping.** Anything due today still open → roll to tomorrow and say so. Run the
    monthly prune if due. Push to Drive.
 3. **Report — tomorrow in one glance:** first appointment (with its prep line) · follow-ups
-   due · any hot lead still unanswered · ONE first move for the morning. End there.
+   due · any hot lead still unanswered · ONE first move for the morning. If tomorrow has
+   client appointments, close with one offer: "say 'confirm tomorrow' and I'll draft the
+   confirmations" (admin-confirmations). End there.
 
 ---
 

@@ -15,8 +15,8 @@
     {
       "name": "realtor-ai-admin",
       "source": "./plugins/realtor-ai-admin",
-      "version": "0.9.0",
-      "description": "PLUGIN 2 — the AI Admin (The Agent Leverage OS). 11 skills: a plain-English front door plus Setup, Scheduling, Inbox, Inbox Sweep, 7am Briefing, Client Memory, Meeting Prep, End-of-Day Wrap, on-the-go Dispatch (talk while driving — it logs, reminds, and drafts for you), and Match-Back (name a listing and it finds the buyers already in your notes, with a personal draft to each). Requires Plugin 1 (the Brain) set up first."
+      "version": "0.10.0",
+      "description": "PLUGIN 2 — the AI Admin (The Agent Leverage OS). 17 skills: a plain-English front door plus Setup, Scheduling, Inbox, Inbox Sweep, 7am Briefing, Client Memory, Meeting Prep, End-of-Day Wrap, on-the-go Dispatch (talk while driving — it logs, reminds, and drafts for you), Match-Back (name a listing and it finds the buyers already in your notes), Chase (who owes me? with ready-to-send nudges), Tomorrow Confirmations, Filing (find any client document in seconds), Vendor Dispatch, the Showing Feedback Chaser, and the Friday Scorecard. Requires Plugin 1 (the Brain) set up first."
     },
     {
       "name": "realtor-youtube-system",

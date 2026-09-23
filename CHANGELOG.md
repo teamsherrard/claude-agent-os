@@ -1,19 +1,33 @@
 # Changelog
 
-All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.## [0.128.0] — 2026-09-23
+All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
+## [0.130.0] — 2026-09-23
 
-### AI Admin (Plugin 2) → v0.9.0 — one skill becomes eleven
-- Restructured the plugin from one monolithic skill into **11 skills**, so the roster shows what the admin
-  actually does: the `realtor-ai-admin` front door (plain-English routing + the "I'm slammed" lane) plus
-  admin-setup, admin-scheduling, admin-inbox, admin-sweep, admin-briefing, admin-memory, admin-prep,
-  admin-wrap, and admin-dispatch — v0.8.0 content redistributed verbatim, zero behavior change.
-- Shared foundations extracted to `shared/admin-core.md` (persona, Google/Microsoft provider mapping, the
-  Mike Test speed rules, the Step 0 Brain load, the Name-Resolution Ladder, sync rule, privacy law, sibling
-  boundaries); every skill applies it first. The three scheduled-task prompts moved `references/` → `shared/`.
-- **NEW skill: Match-Back (`admin-matchback`)** — "who wants this listing?": parses the property, scans the
-  full client ledger AND the archive for logged needs, returns an honest ranked top-5 with the logged-need
-  quote behind each match (never invents a need), and drafts a personal note per match in the agent's voice
-  (drafts only). The payoff for every note the agent ever logged; runs in dispatch with zero questions.
+### AI Admin (Plugin 2) → v0.10.0 — six new skills (17 total): the little-tasks release
+Everything a realtor presses buttons for. Each new lane obeys admin-core (draft-only email, the Mike
+Test, the Name-Resolution Ladder) and is wired into the front door's routing table and the dispatch
+job table.
+- **Chase (`admin-chase`)** — "who owes me?": scans sent mail + open await-rows for asks that never got
+  a reply, ranks them deal-critical-first (cap 8), and drafts a polite nudge per item; never nudges the
+  same thread twice in 2 business days. The daily sweep's WAITING ON section now points here.
+- **Tomorrow Confirmations (`admin-confirmations`)** — one confirmation draft per client appointment
+  (time · address/video link · what to bring); guestless assumed-time holds are flagged, never
+  confirmed; skips anyone confirmed in the last day. The End-of-Day Wrap offers it in one line.
+- **Filing (`admin-filing`)** — attachments → `Client Files/[Client]/` in the agent's own Drive with
+  self-sorting names + a pointer line in the client's block; retrieval searches Drive then mail. The
+  admin-core "document filing is v2" line is retired.
+- **Vendor Dispatch (`admin-vendors`)** — "book the photographer for Tue at 123 Main": request draft
+  from `identity/vendors.md` (mail-history fallback before ever asking), guestless hold until the
+  vendor confirms, await-confirm deadline row.
+- **Showing Feedback Chaser (`admin-feedback`)** — one request draft per showing agent (3 quick asks),
+  await-feedback rows, replies summarized by theme with counts; hands the themes to Listing Launch's
+  `listing-seller`, which keeps sole ownership of the weekly seller update and marketing report (new
+  boundary row in admin-core — the planned standalone "Seller Update" skill was dropped as a duplicate).
+- **Friday Scorecard (`admin-scorecard`)** — the weekly what's-slipping review: KEPT · SLIPPING (each
+  with its fix — "say 'draft them'") · GONE QUIET (staleness per operations cadence) · NEXT WEEK with
+  the top 3 money-making actions. Productivity only; pipeline/GCI stays out of scope.
+- Dispatch gains Quick Chase / Quick Confirm / Quick Vendor / Feedback Chase jobs; also repaired the
+  0.128.0 changelog entry (glued header, out-of-order placement).
 
 ## [0.129.1] - 2026-09-23
 
@@ -42,6 +56,21 @@ routing table, the README stage table, and the long-form line.
   closing card with the go-live day, captions, an energetic bed; 9:16 first, then a 16:9 clone for the community post;
   ad mode ends on the CTA with the compliance line. Posts' words stay with the Short-Form and YouTube Systems.
 - `cta-pack.md`: an end-screen-space rule for the last 20 seconds of 16:9 long-form.
+
+## [0.128.0] — 2026-09-23
+
+### AI Admin (Plugin 2) → v0.9.0 — one skill becomes eleven
+- Restructured the plugin from one monolithic skill into **11 skills**, so the roster shows what the admin
+  actually does: the `realtor-ai-admin` front door (plain-English routing + the "I'm slammed" lane) plus
+  admin-setup, admin-scheduling, admin-inbox, admin-sweep, admin-briefing, admin-memory, admin-prep,
+  admin-wrap, and admin-dispatch — v0.8.0 content redistributed verbatim, zero behavior change.
+- Shared foundations extracted to `shared/admin-core.md` (persona, Google/Microsoft provider mapping, the
+  Mike Test speed rules, the Step 0 Brain load, the Name-Resolution Ladder, sync rule, privacy law, sibling
+  boundaries); every skill applies it first. The three scheduled-task prompts moved `references/` → `shared/`.
+- **NEW skill: Match-Back (`admin-matchback`)** — "who wants this listing?": parses the property, scans the
+  full client ledger AND the archive for logged needs, returns an honest ranked top-5 with the logged-need
+  quote behind each match (never invents a need), and drafts a personal note per match in the agent's voice
+  (drafts only). The payoff for every note the agent ever logged; runs in dispatch with zero questions.
 
 ## [0.127.0] — 2026-09-22
 
