@@ -1,18 +1,20 @@
 # The AI Editing Studio — Riverside engine (Plugin 10)
 
-A full-time video editor inside the agent's Claude. They record, say "edit my video," and a **25-skill editing team** takes it from raw footage to a published post — directed, cut, polished, repurposed, and shipped — on the agent's own Riverside account, with no per-edit AI credits.
+A full-time video editor inside the agent's Claude. They record, say "edit my video," and a **28-skill editing team** takes it from raw footage to a published post — directed, cut, polished, repurposed, and shipped — on the agent's own Riverside account, with no per-edit AI credits.
 
 **Claude edits · Riverside renders · the agent approves.**
 
-## The five stages, 25 skills
+## The five stages, 28 skills
 
 | Stage | Skill | What it does |
 |---|---|---|
 | **1. DIRECT** | `studio-direction` — Creative Direction | The five-line edit brief before anything changes |
 | | `studio-record` — Record Coach | Script loaded, session set up, the 60-second frame / light / sound check |
-| | `studio-transcript` — Transcript Read | The free first look: repeated takes, dead air, the hook, the section map, the time quote |
+| | `studio-transcript` — Transcript Read | The free first look: repeated takes, dead air, the hook, the time quote |
+| | `studio-sections` — Section Map | Timestamps of the final cut for the YouTube System's chapters, plus navigation markers on the timeline |
 | **2. CUT** | `studio-fluff` — Remove the Fluff | Fillers, pauses, false starts, repeated takes — shown first, then cut |
 | | `studio-hook` — Hook Finder | Finds the strongest opening line and opens on it |
+| | `studio-rescue` — Rescue Cut | The recording that went badly: best pass of every point, or an honest re-record call with the outline |
 | | `studio-interview` — Interview Edit | Speaker-aware layouts, muted crosstalk, a name strip per person |
 | **3. POLISH** | `studio-audio` — Audio Enhance | Studio-quality voice at the right strength, confirmed applied |
 | | `studio-color` — Color and Look | Subtle, flattering correction; natural skin |
@@ -25,6 +27,7 @@ A full-time video editor inside the agent's Claude. They record, say "edit my vi
 | **4. REPURPOSE** | `studio-repurpose` — Short-Form Repurpose | Scores every moment, cuts the best into distinct reels |
 | | `studio-batch` — Weekly Batch | One recording in, a long-form plus reels out |
 | | `studio-podcast` — Podcast | Clean audio for Spotify and Apple |
+| | `studio-trailer` — Trailer | A 20-second teaser (hook, stake, tease, date card) for the day before, vertical and 16:9 |
 | **5. SHIP** | `studio-check` — Quality Check | Pass / fail with frame evidence before the agent sees it |
 | | `studio-review` — Review and Revise | Finds the one real cause, fixes only that, remembers the preference |
 | | `studio-publish` — Publish | Posts or schedules on the agent's yes, using the owning plugins' copy |
@@ -55,4 +58,4 @@ The Studio edits video. It does **not** write marketing. Titles, descriptions, c
 
 ## Status
 
-**v0.2.2 — branded kit cards proven on a real edit (PNG panels, icon, animated entrances, words centred inside the panels) and punch-ins rebuilt as zoomed scenes after the keyframe route was found to be a silent no-op.** Earlier, v0.2.1: restructured into the two-layer Studio (25 skills), independently audited (40+ fixes), and the graphics route proven:** transparent PNGs keep their alpha, the connector's in and out animations work on them, transparent video does not survive the transcode, and hand-written mid-clip keyframes on an overlay hang the editor (now banned). Live-tested on three real edits (a 12-minute long-form, a raw 70-second intro as long-form, and the same intro as a 46-second 9:16 reel): cuts, audio, colour, captions, B-roll, music, cards, lower third, punch-ins, frame checks in Chrome, and 1080p exports all verified; `create_edit_from_recording` confirmed not gated. Not yet run live: Setup, the brand-kit registration, Publish (no channels connected on the test account), Interview, Podcast and the Library index. Build spec: `docs/riverside-studio-spec.md` in the repository (not shipped inside the installed plugin).
+**v0.3.0 — three new crafts: Section Map (`studio-sections`), Rescue Cut (`studio-rescue`), and Trailer (`studio-trailer`), each a thin skill over one reference, wired into the navigator and the long-form line.** v0.2.2: branded kit cards proven on a real edit (PNG panels, icon, animated entrances, words centred inside the panels) and punch-ins rebuilt as zoomed scenes after the keyframe route was found to be a silent no-op.** Earlier, v0.2.1: restructured into the two-layer Studio (25 skills), independently audited (40+ fixes), and the graphics route proven:** transparent PNGs keep their alpha, the connector's in and out animations work on them, transparent video does not survive the transcode, and hand-written mid-clip keyframes on an overlay hang the editor (now banned). Live-tested on three real edits (a 12-minute long-form, a raw 70-second intro as long-form, and the same intro as a 46-second 9:16 reel): cuts, audio, colour, captions, B-roll, music, cards, lower third, punch-ins, frame checks in Chrome, and 1080p exports all verified; `create_edit_from_recording` confirmed not gated. Not yet run live: Setup, the brand-kit registration, Publish (no channels connected on the test account), Interview, Podcast and the Library index. Build spec: `docs/riverside-studio-spec.md` in the repository (not shipped inside the installed plugin).

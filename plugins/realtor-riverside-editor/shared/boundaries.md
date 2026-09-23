@@ -7,7 +7,7 @@ The Studio is one employee on a team of plugins. The product only works if every
 | Output | Owner | What the Studio does instead |
 |---|---|---|
 | YouTube **title, description, tags, hashtags, pinned comment** | **YouTube System** (`youtube-seo` → the "SEO Package" Google Doc in the video's folder) | Reads the SEO Package and uses it word for word at publish. Never drafts, "improves," or shortens it. |
-| YouTube **chapter names** | **YouTube System** (chapters are part of the SEO Package description) | Supplies the **section map** — timestamps of the FINAL cut with a plain note of what is said there — so `youtube-seo` can name them. Writes the package's chapter titles onto the timeline as native markers once they exist. |
+| YouTube **chapter names** | **YouTube System** (chapters are part of the SEO Package description) | Supplies the **section map** (`studio-sections`) — timestamps of the FINAL cut with a plain note of what is said there — so `youtube-seo` can name them. Timeline markers carry the first spoken words in quotes, for navigation only; the connector cannot rename a marker, so the viewer's chapter names live in the package's description. |
 | **Thumbnails** and thumbnail text | **Claude Design** (thumbnail skill) / YouTube System | Offers 3 clean still frames from the export as raw material. Never designs one. |
 | Short-form **post captions, hashtags, posting calendar, funnel balance** | **Short-Form System** (`shortform-talkinghead`, `shortform-publish`, `shortform-optimizer`) | Cuts the reel. Uses the Short-Form System's caption and slot at publish. |
 | **Scripts**, short-form scripts, blog, newsletter, carousel copy from a video | **YouTube System** (`youtube-script`, `youtube-repurpose` — written assets, no editing) | If a Repurposing Pack exists, uses its short-form scripts and hooks to choose WHICH moments to cut. Never rewrites them. |
@@ -34,6 +34,7 @@ Shorts can reach the agent's channels two ways: the Short-Form System's posting 
 ## The hand-offs the Studio gives the others
 
 - To **YouTube System**: the section map (timestamps + plain notes), the final length, the edit link.
-- To **Short-Form System**: each reel's hook line, length, and edit link, so its calendar can slot them.
+- To **Short-Form System**: each reel's hook line, length, and edit link, so its calendar can slot them; the trailer's link and its three lines for the Story the day before.
+- To **YouTube System** (again): the 16:9 trailer link for the community post.
 - To **Claude Design**: 3 still frames for a thumbnail, on request.
 - To **the Brain**: `memory/content-log.md` — what was edited and published, when, and where.

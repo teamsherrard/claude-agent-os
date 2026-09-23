@@ -1,6 +1,6 @@
 ---
 name: studio-navigator
-description: The friendly front door for the AI Editing Studio (Riverside engine) — 25 skills across five stages: Direct, Cut, Polish, Repurpose, Ship. Real estate agents don't know how to "prompt" — they give vague, messy, or contradictory requests. This skill does the translating: it turns any plain-English (or confused) request into one simple, confirmable plan, asks at most ONE easy question with a recommended answer, never overwhelms, and routes to the right Riverside editing skill. It handles tricky moments calmly — "just make it good", asking for something Riverside can't do, piling on requests, a frustrated agent. It also PICKS UP A STOPPED EDIT — if an edit halted partway (a closed session, a conflict with the agent in the editor, "I'll finish it tomorrow"), it finds the checkpoint log — or reads Riverside's own revision history — and resumes from the exact pass that stopped, without redoing anything. Trigger on: any vague or general video request ("edit my video", "help with my video", "make this better", "I have a video in Riverside", "make me a reel", "can you fix this", "I don't know what I want"); ALSO trigger on any request to resume or finish an interrupted edit — "finish my video", "pick up where we left off", "continue my edit", "my edit stopped", "resume my video", "carry on with my video"; or whenever a request is unclear, contradictory, or could overwhelm the agent. This is the DEFAULT entry point for the Riverside editor. ENGINE TIE-BREAK: both video editors can be installed. This one owns the request when the agent says Riverside, when the video lives in Riverside, or when `default_engine` in ~/realtor-brain/editor/config.json is `riverside`; when they say Descript or `default_engine` is `descript`, the Descript editor (Plugin 6) owns it.
+description: The friendly front door for the AI Editing Studio (Riverside engine) — 28 skills across five stages: Direct, Cut, Polish, Repurpose, Ship. Real estate agents don't know how to "prompt" — they give vague, messy, or contradictory requests. This skill does the translating: it turns any plain-English (or confused) request into one simple, confirmable plan, asks at most ONE easy question with a recommended answer, never overwhelms, and routes to the right Riverside editing skill. It handles tricky moments calmly — "just make it good", asking for something Riverside can't do, piling on requests, a frustrated agent. It also PICKS UP A STOPPED EDIT — if an edit halted partway (a closed session, a conflict with the agent in the editor, "I'll finish it tomorrow"), it finds the checkpoint log — or reads Riverside's own revision history — and resumes from the exact pass that stopped, without redoing anything. Trigger on: any vague or general video request ("edit my video", "help with my video", "make this better", "I have a video in Riverside", "make me a reel", "can you fix this", "I don't know what I want"); ALSO trigger on any request to resume or finish an interrupted edit — "finish my video", "pick up where we left off", "continue my edit", "my edit stopped", "resume my video", "carry on with my video"; or whenever a request is unclear, contradictory, or could overwhelm the agent. This is the DEFAULT entry point for the Riverside editor. ENGINE TIE-BREAK: both video editors can be installed. This one owns the request when the agent says Riverside, when the video lives in Riverside, or when `default_engine` in ~/realtor-brain/editor/config.json is `riverside`; when they say Descript or `default_engine` is `descript`, the Descript editor (Plugin 6) owns it.
 ---
 
 # Studio Navigator — the front door
@@ -60,8 +60,10 @@ If they don't answer or seem unsure, **pick the recommended default and proceed*
 |---|---|
 | "how should we edit this?", "plan my edit" | `studio-direction` |
 | "I'm about to record", "help me set up to film" | `studio-record` |
-| "what would you cut?", "read my video", "give me the timestamps" | `studio-transcript` |
+| "what would you cut?", "read my video", "how long will this take" | `studio-transcript` |
+| "give me the timestamps", "section map", "add chapter markers" | `studio-sections` |
 | "take out the ums", "tighten this up", "trim the end" | `studio-fluff` |
+| "this recording is a mess", "I rambled", "can you save this", "is this usable" | `studio-rescue` |
 | "the start is slow", "find my hook", "trim the start" | `studio-hook` |
 | "fix my audio", "it sounds echoey" | `studio-audio` |
 | "fix the color", "I look washed out" | `studio-color` |
@@ -72,6 +74,7 @@ If they don't answer or seem unsure, **pick the recommended default and proceed*
 | "add my CTA", "add my name", "use my brand kit", "text is on my face" | `studio-graphics` |
 | "it feels flat", "make it punchier" | `studio-energy` |
 | "make this a podcast", "export the audio" | `studio-podcast` |
+| "make a trailer", "teaser for this", "something for my story the day before", "make this an ad" | `studio-trailer` |
 | "is this ready to post?", "check my video" | `studio-check` |
 | "I don't like it", "something feels off", "undo that" | `studio-review` |
 | "post it", "schedule it for Thursday" | `studio-publish` |

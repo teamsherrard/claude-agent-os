@@ -15,6 +15,26 @@ All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`
   quote behind each match (never invents a need), and drafts a personal note per match in the agent's voice
   (drafts only). The payoff for every note the agent ever logged; runs in dispatch with zero questions.
 
+## [0.129.0] - 2026-09-23
+
+### AI Editing Studio v0.3.0: three new crafts (28 skills)
+On Mike's call after the skills review. Each is a thin SKILL.md over exactly one new reference, wired into the navigator's
+routing table, the README stage table, and the long-form line.
+- **Section Map (`studio-sections`, `shared/sections.md`).** Runs after the cut is locked; writes the timestamped map
+  (00:00 first, at least 3, at least 10 s apart, a ten-word plain note each, hook and CTA marked) for the YouTube System,
+  and places navigation markers on the Riverside timeline named by the first spoken words. Recorded the connector's real
+  limits: `add_chapter` / `move_chapter` only, no rename or delete, so chapter names stay in the SEO Package's
+  description. `studio-transcript` now only counts sections; the playbook and boundaries lines that promised "replace the
+  AI chapters with the package's titles" are corrected.
+- **Rescue Cut (`studio-rescue`, `shared/rescue.md`).** For the rambling take: symptom check, point list with every pass
+  and the keeper, an honest three-way call (rescue / rescue with a 30-second patch / re-record with the list as the
+  outline), snapshot clone before any cut, complement-of-keepers cut through the resolver, pauses never below 1500 ms,
+  a cutaway over hard joins, full re-read at the end. No reordering, no stitched sentences.
+- **Trailer (`studio-trailer`, `shared/trailer.md`).** 15 to 25 s: hook, stake, tease (never the payoff), hook card, a
+  closing card with the go-live day, captions, an energetic bed; 9:16 first, then a 16:9 clone for the community post;
+  ad mode ends on the CTA with the compliance line. Posts' words stay with the Short-Form and YouTube Systems.
+- `cta-pack.md`: an end-screen-space rule for the last 20 seconds of 16:9 long-form.
+
 ## [0.127.0] — 2026-09-22
 
 ### AI Admin (Plugin 2) → v0.8.0 — Meeting Prep + End-of-Day Wrap, all Ultracode fixes, ecosystem re-alignment
