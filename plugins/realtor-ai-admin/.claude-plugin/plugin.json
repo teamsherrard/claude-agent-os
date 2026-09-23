@@ -1,8 +1,8 @@
 {
   "name": "realtor-ai-admin",
   "displayName": "Realtor AI Admin (Plugin 2)",
-  "version": "0.8.0",
-  "description": "The Agent Leverage OS \u2014 a real estate agent's AI admin. Books the calendar (conflict-checked, guests invited, video link attached), drafts email in the agent's voice, sorts the inbox every weekday morning, remembers every client, and delivers a 7am briefing. REQUIRES the Realtor AI Brain plugin (same marketplace): install it and run 'Set up my Brain' first \u2014 AI Admin reads everything from the Brain and never re-interviews the agent. On-the-go Dispatch: just talk while mobile (remember this, remind me, draft a quick email, just showed the Lees) and it captures, acts, and reports back. Now with Meeting Prep (a 5-line brief before any appointment) and the End-of-Day Wrap (close today, load tomorrow, from the car).",
+  "version": "0.9.0",
+  "description": "The Agent Leverage OS — a real estate agent's AI executive assistant, 11 skills deep. The front door understands any admin ask in plain English, then the specialists take it: Scheduling (conflict-checked booking, guests invited, video link attached, reschedules and route planning), Inbox (drafts and replies in the agent's voice), the weekday Inbox Sweep, the 7am Briefing, Client Memory (total recall of every client, note, and promise), Meeting Prep (a 5-line brief before any appointment), End-of-Day Wrap (close today, load tomorrow, from the car), on-the-go Dispatch (just talk while mobile — it captures, acts, and reports back), and Match-Back (name a property and it finds the buyers already in their notes, with a personal draft to each). REQUIRES the Realtor AI Brain plugin (same marketplace): install it and run 'Set up my Brain' first — the AI Admin reads everything from the Brain and never re-interviews the agent.",
   "author": {
     "name": "Team Sherrard"
   },

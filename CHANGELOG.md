@@ -1,6 +1,20 @@
 # Changelog
 
-All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
+All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.## [0.128.0] — 2026-09-23
+
+### AI Admin (Plugin 2) → v0.9.0 — one skill becomes eleven
+- Restructured the plugin from one monolithic skill into **11 skills**, so the roster shows what the admin
+  actually does: the `realtor-ai-admin` front door (plain-English routing + the "I'm slammed" lane) plus
+  admin-setup, admin-scheduling, admin-inbox, admin-sweep, admin-briefing, admin-memory, admin-prep,
+  admin-wrap, and admin-dispatch — v0.8.0 content redistributed verbatim, zero behavior change.
+- Shared foundations extracted to `shared/admin-core.md` (persona, Google/Microsoft provider mapping, the
+  Mike Test speed rules, the Step 0 Brain load, the Name-Resolution Ladder, sync rule, privacy law, sibling
+  boundaries); every skill applies it first. The three scheduled-task prompts moved `references/` → `shared/`.
+- **NEW skill: Match-Back (`admin-matchback`)** — "who wants this listing?": parses the property, scans the
+  full client ledger AND the archive for logged needs, returns an honest ranked top-5 with the logged-need
+  quote behind each match (never invents a need), and drafts a personal note per match in the agent's voice
+  (drafts only). The payoff for every note the agent ever logged; runs in dispatch with zero questions.
+
 ## [0.127.0] — 2026-09-22
 
 ### AI Admin (Plugin 2) → v0.8.0 — Meeting Prep + End-of-Day Wrap, all Ultracode fixes, ecosystem re-alignment

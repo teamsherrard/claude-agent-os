@@ -25,10 +25,10 @@ double-handle.
    Notes / reminders → just done. Anything that leaves their name waits for their tap.
 
 ## The flow (every dispatch)
-1. **Load the Brain** (SKILL.md Step 0 — pull from Drive if the local copy is missing).
+1. **Load the Brain** (admin-core.md Step 0 — pull from Drive if the local copy is missing).
 2. **Parse** the request into one or more intents (note · reminder · draft · book · cancel/move ·
    recall · prep · wrap · debrief · open-house · sibling hand-offs below).
-3. **Resolve names** with the **Name-Resolution Ladder** (SKILL.md): Brain → Gmail search →
+3. **Resolve names** with the **Name-Resolution Ladder** (admin-core.md): Brain → Gmail search →
    Calendar → Google Contacts → create the record from what you found → if truly nothing, park it
    in the capture-log. (Never guess an email; only use one you actually found.)
 4. **Execute each intent** against the matching system, honoring the safety rules above.
