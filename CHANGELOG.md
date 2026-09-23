@@ -15,6 +15,14 @@ All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`
   quote behind each match (never invents a need), and drafts a personal note per match in the agent's voice
   (drafts only). The payoff for every note the agent ever logged; runs in dispatch with zero questions.
 
+## [0.129.1] - 2026-09-23
+
+### AI Editing Studio v0.3.1: a Cowork-safe path for the Video Brand Kit
+- `studio-setup` Step 2½ now has two ways to get the kit into Riverside: the automatic upload (shell push, proven in the
+  Code tab, unconfirmed in Cowork) and, when that step cannot run, a one-line ask to drag the files into Riverside's media
+  panel, after which setup finds them by canonical file name with `media_list_media` and records the ids. An agent who
+  uploads straight into Riverside and never uses Drive is registered the same way. `brand-wiring.md` says the same.
+
 ## [0.129.0] - 2026-09-23
 
 ### AI Editing Studio v0.3.0: three new crafts (28 skills)
