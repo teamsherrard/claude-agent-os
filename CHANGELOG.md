@@ -1,6 +1,12 @@
 # Changelog
 
-All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
+All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.## [0.130.1] — 2026-09-23
+
+### Docs: AI Admin launch & training deck
+- `docs/ai-admin-training-deck.md` — the 20-slide copy deck for the cohort training video (Claude
+  Design-ready, same format as the Cohort Support deck): the pitch, safety rules, 4-step setup, the
+  daily rhythm, all 17 skills with say-this lines, the 5-day test-drive plan, and the trust close.
+
 ## [0.130.0] — 2026-09-23
 
 ### AI Admin (Plugin 2) → v0.10.0 — six new skills (17 total): the little-tasks release
