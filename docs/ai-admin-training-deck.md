@@ -68,13 +68,15 @@ open your calendar to double-check it, because the proof is in every confirmatio
 **BULLETS:**
 1. Brain first — Plugin 1 installed, **"Set up my Brain"** done
 2. Install **Realtor AI Admin (Plugin 2)** from the same marketplace
-3. Say **"Set up my AI Admin"** — it connects Gmail, Calendar, Drive
+3. Say **"Set up my AI Admin"** — it walks you through connecting Gmail, Calendar, Drive
 4. Pick your briefing time — it schedules your 7am briefing + weekday inbox sweep
 
-SAY: Setup is a conversation, not a config screen. It checks your connections, asks the few
-questions your Brain doesn't already answer — like when you want your briefing — and installs
-the two automations that run without you. Zoom is optional; without it you still get a Meet link
-on every virtual booking, automatically.
+SAY: Setup is a conversation, not a config screen. It checks your connections, points you to
+exactly what to click for anything missing, asks the few questions your Brain doesn't already
+answer — like when you want your briefing — and installs the two automations that run without
+you. Zoom is optional; without it you still get a Meet link on every virtual booking,
+automatically. And if you're an Outlook person: everything in this video works the same — the
+Admin maps itself to Outlook, OneDrive, and Teams on its own.
 
 ---
 
@@ -149,7 +151,9 @@ Review, send, done — first responder wins the client.
 
 SAY: It knows your durations and buffers from your Brain — a showing books as a showing, a
 listing consult books longer, and a virtual meeting gets a video link every single time without
-you asking. The sick-day cancel is the one to demo: one sentence clears and notifies your whole day.
+you asking. The sick-day cancel is the one to demo: one sentence clears your whole day — your own
+meetings are cancelled for everyone, and for anyone else's meeting the decline note is drafted
+and waiting for your send.
 
 ---
 
@@ -163,8 +167,8 @@ you asking. The sick-day cancel is the one to demo: one sentence clears and noti
 **ON-SCREEN:** "What do I know about the Patels?" · "Remember: the Wus want a legal suite."
 
 SAY: This is the compounding asset. Every conversation you log makes every other skill smarter —
-your briefing, your prep, your follow-ups. Six months in, this file is worth more than most CRMs,
-because it holds what clients actually SAID.
+your briefing, your prep, your follow-ups. It's not your CRM and doesn't replace it — it's the
+layer your CRM never captures: what clients actually SAID.
 
 ---
 
@@ -276,7 +280,7 @@ slipped follow-up comes with its fix already drafted — say "draft them" and Mo
 
 ## Slide 19 — Your first week (the test drive)
 
-**HEADLINE:** Say These Seven Things This Week
+**HEADLINE:** One Habit a Day, Five Days
 **BULLETS:**
 - Day 1: **"Set up my AI Admin"** → then **"Run my briefing"**
 - Day 2: **"Book [a real client] [day] at [time]"** · **"Sweep my inbox"**
