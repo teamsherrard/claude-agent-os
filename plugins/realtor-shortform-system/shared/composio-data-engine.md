@@ -111,7 +111,7 @@ filming batch.
   number in the deck carries source + date, as always.
 
 ### 7. Short-form performance + competitors (Instagram + YouTube) — analytics · deep dive
-The read layer behind `shortform-analytics` and `shortform-deepdive`. **READ-ONLY**
+The read layer behind `shortform-analytics` (the quick reads AND the monthly deep dive — one skill). **READ-ONLY**
 (HARD RULE #1) — never touch the write/DM-send/comment tools these toolkits also carry. Instagram + YouTube
 are the two connected short-form surfaces; TikTok/Facebook are optional, shallower add-ons (see the ceilings).
 

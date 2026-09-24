@@ -5,7 +5,19 @@ All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`
 ### Docs: AI Admin launch & training deck
 - `docs/ai-admin-training-deck.md` — the 20-slide copy deck for the cohort training video (Claude
   Design-ready, same format as the Cohort Support deck): the pitch, safety rules, 4-step setup, the
-  daily rhythm, all 17 skills with say-this lines, the 5-day test-drive plan, and the trust close.
+  daily rhythm, all 17 skills with say-this lines, the 5-day test-drive plan, and the trust close.## [0.131.2] — 2026-09-23
+
+### Short-Form analytics + deep dive merged into ONE skill (Short-Form v0.15.0)
+Mike's call: students run analytics as a monthly ritual, not a daily habit — so one skill, one story.
+- `shortform-analytics` now owns everything: **THE DEEP DIVE is the main event** (monthly: full account
+  audit, competitor breakdown, content gaps, the 4-3-2-1-balanced 30-day plan, report saved + findings
+  seeded to the Brain), and **quick reads** answer scoped questions anytime at the size of the ask
+  ("how did this post do", "analyze my ads", the 2-week review — which still writes to performance.md,
+  keeping the improve-loop wiring intact).
+- `shortform-deepdive` deleted; its guide moved to `shortform-analytics/references/deepdive-guide.md`;
+  all its triggers absorbed; the engine's §7 header updated. Answer-sized-to-the-ask rule prevents a
+  quick question from triggering the full consult (offered once when a month has passed, never forced).
+
 ## [0.131.1] — 2026-09-23
 
 ### YouTube Analytics becomes the packaged live-data skill (YouTube v0.15.0)
