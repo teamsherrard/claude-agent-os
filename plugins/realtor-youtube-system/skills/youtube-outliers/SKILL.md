@@ -57,9 +57,8 @@ Be honest when the data's out of reach, and show the agent the manual method ins
 > view counts. Paste me that list and I'll turn them into your stronger versions."
 
 ## Honesty
-Web-based scans are imperfect (view/sub counts aren't always visible). Say so when precision is limited —
-and note that the **live data connection** (offered at setup) makes every number exact. Never present a
-guess as data.
+Web-based scans are imperfect (view/sub counts aren't always visible). Say so when precision is limited,
+or use the manual 5-minute method above for exact numbers. Never present a guess as data.
 
 ## Output
 Short, real lists only — outlier angles and the recreate list — fed into **Ideation** as "Signals for
