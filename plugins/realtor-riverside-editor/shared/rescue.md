@@ -21,7 +21,7 @@ List the distinct points the agent was trying to make, in the order that makes s
 Judge the keepers together, then say one of three things:
 
 - **Rescue works** — every point has a complete, clear pass, and they connect. Quote the new length: *"6 minutes from 38, every point kept once."*
-- **Rescue with a patch** — one or two points have no clean pass. Offer the patch: *"Point 3 never lands cleanly. Record just that one line, 30 seconds, and I'll drop it in."* The patch is a new Riverside recording the agent makes; it comes in as a scene (`insert_media_as_scene`) at the point's position. Do not stitch half sentences together to fake it.
+- **Rescue with a patch** — one or two points have no clean pass. Offer the patch: *"Point 3 never lands cleanly. Record just that one line, 30 seconds, and I'll drop it in."* The patch is a new take the agent records; it comes in one of two ways: they drop the clip into Riverside's media panel and it goes in as a scene (`insert_media_as_scene`, which takes a Your Media asset id and a PLAYABLE `startMs`), or they place it themselves in the editor at the marker you leave. Do not stitch half sentences together to fake it.
 - **Re-record** — most points have no clean pass, or the thread is not recoverable. Say it kindly and give them the outline: the point list from step 2 is their script for the retake, and the Record Coach (`studio-record`) sets them up in a minute. This is the most useful thing the skill can say, and it costs nothing.
 
 Nothing is cut until they choose. This is the hard gate, same as every destructive cut.
@@ -29,7 +29,7 @@ Nothing is cut until they choose. This is the hard gate, same as every destructi
 ## Step 4 — the cut (only on their yes)
 
 1. Snapshot first, always: `clone_edit` of the working edit, titled `<title> — original before rescue`. The raw recording is never modified, but the agent should hear that a copy exists.
-2. Because the video cannot be reordered on this engine (no move or reorder tools), keep the points in their recorded order unless a point's keeper is the only pass and it sits in the wrong place; then say so and keep it where it is. A slightly odd order beats a broken cut.
+2. The Studio does not rearrange speech (the clip-move ops exist, but a re-ordered talking head needs a human ear on every join), so keep the points in their recorded order unless a point's keeper is the only pass and it sits in the wrong place; then say so and keep it where it is. A slightly odd order beats a broken cut.
 3. Build the cut list as the complement of the keepers: everything between the end of one keeper and the start of the next comes out. Resolve each removal with `resolve_transcript_selection(intent:"remove", boundary_range …)` anchored on the exact first and last words; require `readyToApply`. Apply in one `cut_time_ranges`.
 4. Then the normal clean cut on what remains: `remove_fillers`, `remove_pauses 1500` (a rescued take is choppier than a clean one, so never go below 1500 on long-form).
 5. Bridges: where two keepers meet mid-thought, the join will feel abrupt. Two tools fix it without new words: a B-roll cutaway over the join (`broll-ladder.md`, full-cover, 3 to 4 s) hides the jump, and a chapter-style pause (leave up to 0.8 s of the natural gap) lets the ear reset. Never fabricate a sentence to bridge.

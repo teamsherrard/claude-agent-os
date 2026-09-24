@@ -10,14 +10,14 @@ One job, done well. Run the craft contract (`${CLAUDE_PLUGIN_ROOT}/shared/craft-
 ## The job
 
 1. Read compliance first (three states; never stamp a placeholder).
-2. Kit registered? Place each PNG with one call. No kit? One native text card each, then move it, because text inserts centred on the face.
-3. Counts: reel = hook + CTA; long-form = hook + CTA + a pop-up every 2 to 3 minutes + a name strip. Beyond that is their 20%.
+2. Kit registered? Each piece is insert → scale to the canvas at time 0 → animate → the words typed into its zone (hook and pop-ups only). No kit? One native text card each, then move it, because text inserts centred on the face.
+3. Counts: reel = hook banner + the CTA banner (+ a pack banner on a spoken ask); long-form = hook banner + name strip + a pop-up every 2 to 3 minutes + a pack banner on each spoken ask (at most one every 45 s) + the primary CTA banner to the end. Beyond that is their 20%.
 4. Check every card on a frame: off the face, inside its panel, readable, no collisions.
 
 ## Remember
 
 - Words go inside a kit panel with the centring rule in the reference (the text anchor is its top, so lift it by about a quarter of the font size). Check the first card on a frame before placing the rest.
 
-See cta-pack.md for the closing card and brand-wiring.md for where the brand and the kit's media ids live.
+The reference points at cta-pack.md (which banner on which spoken ask) and brand-wiring.md (where the kit's media ids live).
 
 If they actually want several things, or "make it good," say so and hand to the full edit: `studio-longform`, `studio-reel`, `studio-listing`, or `studio-batch`.

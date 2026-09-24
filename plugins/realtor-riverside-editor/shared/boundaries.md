@@ -11,13 +11,13 @@ The Studio is one employee on a team of plugins. The product only works if every
 | **Thumbnails** and thumbnail text | **Claude Design** (thumbnail skill) / YouTube System | Offers 3 clean still frames from the export as raw material. Never designs one. |
 | Short-form **post captions, hashtags, posting calendar, funnel balance** | **Short-Form System** (`shortform-talkinghead`, `shortform-publish`, `shortform-optimizer`) | Cuts the reel. Uses the Short-Form System's caption and slot at publish. |
 | **Scripts**, short-form scripts, blog, newsletter, carousel copy from a video | **YouTube System** (`youtube-script`, `youtube-repurpose` — written assets, no editing) | If a Repurposing Pack exists, uses its short-form scripts and hooks to choose WHICH moments to cut. Never rewrites them. |
-| **Designed assets** — hook card, CTA card, lower third, emphasis panel, icons, end screen, logo sting | **Claude Design** (Video Brand Kit, skill 12; Animated Content Kit, skill 13) | Places them. Builds a plain native card only when no kit is registered. |
+| **Designed assets** — hook banner, CTA banner and the eight-variant CTA pack, name strip, emphasis panel, icons, optional end card and animated end card, end screen, logo sting | **Claude Design** (Video Brand Kit, skill 12; Animated Content Kit, skill 13) | Places them. Builds a plain native card only when no kit is registered. |
 | **Listing facts, price, address, disclaimers** | **Listing Launch** + the Brain's `identity/compliance.md` | Reads them exactly. Never restates a price or writes a disclaimer. |
 | **Market numbers** on screen | **Market System** (`memory/market-data.md`) | Quotes that file. Never researches a number. |
 | **The Notion Content Dashboard** | YouTube System / Short-Form System (shared board) | Writes status only: Edited, Review draft ready, Published/Scheduled + date + link. |
 | **The edit itself** — cut, audio, colour, captions-on-video, B-roll, music, graphics placement, export, the act of publishing | **The Studio** | Owns it completely. |
 
-**On-screen words the Studio DOES write** (because they are part of the picture, not the marketing): the hook card line (taken from the agent's own first sentence or the script's hook), emphasis pop-ups (the agent's spoken phrase, verbatim), the lower third (name and title from the Brain), and the CTA card (from `brand.cta` in the config). All compliance-checked. None of them is SEO.
+**On-screen words the Studio DOES write** (because they are part of the picture, not the marketing): the hook card line (taken from the agent's own first sentence or the script's hook), emphasis pop-ups (the agent's spoken phrase, verbatim), the lower third (name and title from the Brain), the CTA banner (from `brand.cta` in the config), the trailer's closing card (the go-live day, from the planner), and a listing's address and price cards (from the listing record). All compliance-checked. None of them is SEO.
 
 ## When the owning plugin is not installed, or its package does not exist yet
 

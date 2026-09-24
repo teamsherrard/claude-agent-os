@@ -12,7 +12,7 @@ One job, done well. Run the craft contract (`${CLAUDE_PLUGIN_ROOT}/shared/craft-
 1. Find it free: repeated takes (quote the first and last words), false starts, gaps, tangents, housekeeping.
 2. Show the list with the length before and after. One yes covers the list.
 3. Editorial cuts through the resolver first, then filler words, then pauses (1500 ms long-form, 1000 ms reels).
-4. Verify with the revision diff and re-read the first 40 seconds and the last line.
+4. The second pass: Riverside's own retake flags (the recording clip's AI comments), the restart-phrase hunt, then the cut; verify with the revision diff and re-read the WHOLE transcript once (no sentence twice, no restart phrase left), plus the first 40 seconds and the last line.
 
 ## Remember
 

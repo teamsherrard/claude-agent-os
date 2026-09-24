@@ -5,7 +5,7 @@ description: Rescue Cut for the AI Editing Studio, for the recording that went b
 
 # Rescue Cut
 
-One job, done well. Run the craft contract (`${CLAUDE_PLUGIN_ROOT}/shared/craft-contract.md`), and do the work from this skill's one reference: **`${CLAUDE_PLUGIN_ROOT}/shared/rescue.md`** (it leans on `${CLAUDE_PLUGIN_ROOT}/shared/clean-cut.md` for the tool calls). Respect the ownership rules in `${CLAUDE_PLUGIN_ROOT}/shared/boundaries.md` and the house rules in `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
+One job, done well. Run the craft contract (`${CLAUDE_PLUGIN_ROOT}/shared/craft-contract.md`), and do the work from this skill's one reference: **`${CLAUDE_PLUGIN_ROOT}/shared/rescue.md`**. Respect the ownership rules in `${CLAUDE_PLUGIN_ROOT}/shared/boundaries.md` and the house rules in `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
 
 ## The job
 
@@ -17,6 +17,6 @@ One job, done well. Run the craft contract (`${CLAUDE_PLUGIN_ROOT}/shared/craft-
 
 ## Remember
 
-Nothing can be reordered on this engine, so the points stay in recorded order. Never stitch half sentences into a new one, and never make them feel bad about the take.
+The Studio never rearranges speech, so the points stay in recorded order. Never stitch half sentences into a new one, and never make them feel bad about the take.
 
 If they actually want several things, or "make it good," say so and hand to the full edit: `studio-longform`, `studio-reel`, `studio-listing`, or `studio-batch`.

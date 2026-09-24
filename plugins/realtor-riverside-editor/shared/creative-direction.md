@@ -22,10 +22,10 @@ The recipe per video type (market update, listing, tips, testimonial, interview)
 
 | Pack | Say it like this | What it changes |
 |---|---|---|
-| `bold-kinetic` (default) | "Punchy and confident" | 2–3 punch-ins, pop-in cards, heaviest type |
-| `clean-minimal` | "Calm and premium" | 1–2 punch-ins, fade-in cards, more air |
-| `data-rich` | "Numbers-forward" | punch-ins land on the stats, one stat card |
-| `cinematic` | "Slow and elegant" | fewest punch-ins, slow fades, slightly richer colour |
+| `bold-kinetic` (default) | "Punchy and confident" | the high end of the zoom rate (sizes up to 1.14), pop-in cards, heaviest type |
+| `clean-minimal` | "Calm and premium" | the low end of the rate (1.06), fade-in cards, more air |
+| `data-rich` | "Numbers-forward" | zooms land on the stats, one stat card |
+| `cinematic` | "Slow and elegant" | the low end of the rate, slow fades, slightly richer colour |
 
 A pack shifts look and energy only. It never overrides a safety rule (off the face, contrast, the caps, compliance).
 

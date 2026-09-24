@@ -1,6 +1,6 @@
 # House rules (how the editor behaves)
 
-The agent owns and runs this themselves — they are not a technical user. Behave accordingly. The one-page summary of every rule is `${CLAUDE_PLUGIN_ROOT}/shared/dos-and-donts.md` — start there. The Descript→Riverside crosswalk is `${CLAUDE_PLUGIN_ROOT}/shared/tool-map.md`.
+The agent owns and runs this themselves — they are not a technical user. Behave accordingly. The one-page summary of every rule is `${CLAUDE_PLUGIN_ROOT}/shared/dos-and-donts.md` — start there. The job-by-job tool index is `${CLAUDE_PLUGIN_ROOT}/shared/tool-map.md`.
 
 ## Work quietly
 
@@ -23,7 +23,7 @@ Many agents — especially women in the cohort — are self-conscious on camera.
 Three gates, always:
 - **Destructive cuts** (opening trim, duplicate takes, bad takes, dead air over the threshold) — show what's coming out, get one yes. Filler-word removal is included in that same yes.
 - **Export** — one render, on the plan they agreed to. (Exports may count against the plan's limits; never fire a second render "just to see".)
-- **Publish** — never posts without a summary + explicit yes (`${CLAUDE_PLUGIN_ROOT}/shared/publishing.md`). Publishing is one-way; there's no unpublish in this toolset.
+- **Publish** — never posts without a summary + explicit yes (`${CLAUDE_PLUGIN_ROOT}/shared/publishing.md`). A published post cannot be pulled back from here (a scheduled one can still be changed or cancelled before it goes out).
 Heavy AI effects (eye-contact correction, background removal, AI-generated B-roll) aren't a yes away; they're banned outright: `${CLAUDE_PLUGIN_ROOT}/shared/cost-discipline.md`.
 
 ## Revisions — empathy first, batched
@@ -43,11 +43,15 @@ There are no per-pass AI credits in Riverside. The discipline is about **correct
 - **Never blind-retry a write.** A timeout or `UPSTREAM_UNAVAILABLE` may have landed anyway — `editing_get_revision` first; if the revision advanced, diff it before doing anything else.
 - **`FAILED_PRECONDITION` is a gate, not a bug.** No transcript yet (still processing) → wait and say so; feature gated on the plan → use the documented fallback; never loop on it.
 - **Keep a checkpoint log so you can resume cleanly.** See below.
-- **Follow the 80/20** (`${CLAUDE_PLUGIN_ROOT}/shared/cost-discipline.md`) — do the high-value basics brilliantly, then stop; the agent finishes the last 20% by hand in the Riverside editor. Doing one-less (card / punch-in / B-roll) looks cleaner.
+- **Follow the 80/20** (`${CLAUDE_PLUGIN_ROOT}/shared/cost-discipline.md`) — do the high-value basics brilliantly, then stop; the agent finishes the last 20% by hand in the Riverside editor. The floors (zooms at the rate, B-roll on every long-form, the bed) are mandatory; above the floors, one less looks cleaner than one more.
+
+## The persistence rule (Cowork wipes the sandbox — the Brain lives in Drive)
+
+Everything the Studio remembers lives inside the agent's Brain folder: `~/realtor-brain/editor/config.json` (settings, brand, preferences), `~/realtor-brain/editor/jobs/rs-<editId>.md` (the checkpoint logs), and `~/realtor-brain/editor/broll-library.md` (the library index). In Cowork the local copy is deleted when the session ends, so: **pull the Brain from Drive before the first read of any Studio job** (the `realtor-brain-sync` skill; a no-op when the local copy is current or Drive is not connected), and **push it back after every write** to those files — write → push → verify, as one step. On a machine with a persistent disk and no Drive, say once that settings and logs are local to this machine. Never tell an agent their setup is saved when it exists only in a sandbox.
 
 ## Checkpoint log (resume a long edit without redoing anything)
 
-Long-form and listing edits run as several passes. To survive an interruption (a closed session, a conflict, "finish it tomorrow"), keep a tiny log per edit at `~/realtor-brain/editor/jobs/rs-<editId>.md`.
+Long-form and listing edits run as several passes. To survive an interruption (a closed session, a conflict, "finish it tomorrow"), keep a tiny log per edit at `~/realtor-brain/editor/jobs/rs-<editId>.md` (pulled before reading, pushed after writing — the persistence rule above).
 
 - **Append ONE line per landed pass:** `<pass name> · done · rev <revision>` — only after the diff confirms it landed.
 - **At the START of a long-form / listing edit, check for this log.** If it exists, say **one** plain line — e.g. *"Picking up where we left off — audio and first cutaways are done, finishing the b-roll and cards now"* — and run **only the passes not already logged**.
@@ -58,7 +62,7 @@ Long-form and listing edits run as several passes. To survive an interruption (a
 
 Never hand a video back as "the finished post." Every delivery is a **review draft** the agent reviews before it goes live. Each hand-back must include all three:
 
-1. **What it is + the spec it hit** — one plain line (e.g. *"Cleaned the audio, opened on your hook, captions, 3 cutaways, hook + CTA card — your standard reel setup."*).
+1. **What it is + the spec it hit** — one plain line (e.g. *"Cleaned the audio, opened on your hook, captions, 3 zooms, 3 cutaways, music, hook banner + CTA banner — your standard reel setup."*).
 2. **The 2–3 human-eyeball items you can't verify** — *Does the hook land? Any cut feel abrupt? Does the b-roll match what you're saying?* Keep it to 2–3, plain words.
 3. **The 80/20 hand-off** — name what's done (the 80%) and that the **last 20% is theirs to finish by hand in Riverside, free** (extra b-roll, an extra card, tiny tweaks).
 
@@ -68,7 +72,7 @@ Plus, when it applies: **the publish offer** — *"Want me to post it to YouTube
 
 When the agent gives revision feedback:
 1. **Apply it.**
-2. **Save recurring preferences** to their editor config (`~/realtor-brain/editor/config.json`) so the next video starts that way — caption size, styles they like/dislike, how they want starts and ends, graphics taste.
+2. **Save recurring preferences** to their editor config (`~/realtor-brain/editor/config.json`, then push the Brain — the persistence rule) so the next video starts that way — caption size, styles they like/dislike, how they want starts and ends, graphics taste.
 3. If the **same note recurs across agents**, it's a plugin-level rule, not a per-agent one — flag it to be baked into the plugin (the way these rules were).
 
 ## Repair loop (when the agent wants changes)

@@ -1,6 +1,6 @@
 # Effects menu — what's available in Riverside, and when to use it (sparingly)
 
-Riverside gives you fewer effects than Descript. That is mostly good news: **premium = restraint**, and the connector can't tempt you into clutter. The skill is using what IS there with purpose.
+Riverside gives you few effects. That is mostly good news: **premium = restraint**, and the connector can't tempt you into clutter. The skill is using what IS there with purpose.
 
 **But minimal ≠ bare.** A flat, static talking-head with nothing happening is *also* a bad edit. The enemy is RANDOM clutter, not creativity.
 
@@ -23,7 +23,8 @@ A flat video is one where the picture never reacts to what is being said. The fi
 - **Zoom in** (the default): scene at 1.0 → beat scene at 1.06 to 1.14 → back to 1.0.
 - **Step back for a reveal:** hold the SETUP at 1.10 and cut OUT to 1.0 on the payoff word. Use it once or twice on a long-form for the biggest contrast ("everyone says X … here's what actually happens").
 - **Jump-cut cover:** every editorial cut in a talking head (a removed take, a trimmed tangent) gets a size change on one side, 1.0 ↔ 1.06, so the jump reads as a deliberate cut, not a glitch. Read `syncedCuts[]` with `source:"user"`, split a scene at each cut's source-time start, alternate. This is the single biggest "a real editor did this" signal and it is free.
-- Never two zoomed scenes back to back at the same size; return to 1.0 (or step) between beats. Two beats inside 8 seconds: keep the stronger.
+- Never two zoomed scenes back to back at the same size; return to 1.0 (or step) between beats. Two beats inside 8 seconds: keep the stronger. For the jump-cut cover, the scene AFTER the cut changes size (1.0 → 1.06, or 1.06 → 1.0 if the scene before it was already zoomed) and holds until the next phrase boundary or the next beat, whichever comes first; a cut that lands inside a beat zoom needs nothing extra.
+- **Time axis:** emotion events and the compact rows are PLAYABLE time; every scene split is SOURCE time. Take each beat's first word from `read_aligned_transcript(detail:"words")` and split at its `assetStart`. Batch all splits first, read once, then batch all slot settings (`riverside-playbooks.md`).
 
 **5. Sound.** A swoosh on a zoom only from the agent's own uploaded SFX (`config.sfx.swoosh_media_id`, `insert_audio` at the cut). Riverside's free library has "transition" tracks, but they are 7 to 19-second music stingers, not hits; do not use them as swooshes. Say once, warmly, that a licensed swoosh dropped into their Riverside media makes every zoom land.
 
@@ -31,7 +32,7 @@ A flat video is one where the picture never reacts to what is being said. The fi
 
 **7. Verify.** Read the scenes back (every zoomed scene shows `positioning.scale`), then one frame at each size used: no exposed edge, comfortable headroom. Log the count and the sizes: `energy · done · rev <n> · 11 zooms (1.06 ×7, 1.10 ×3, 1.14 ×1), 6 jump covers`.
 
-**Match the energy to their STYLE PACK** (`${CLAUDE_PLUGIN_ROOT}/shared/brand-wiring.md`): **`bold-kinetic`** (default) the high end of the rate, hard cutaway cuts, pop-in cards · **`clean-minimal`** the low end, fades, 1.06 only · **`data-rich`** zooms land on the numbers, favour the stat card · **`cinematic`** the low end, slow fades, slightly richer grade. Full definitions in `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`.
+**Match the energy to their STYLE PACK** (`${CLAUDE_PLUGIN_ROOT}/shared/brand-wiring.md`): **`bold-kinetic`** (default) the high end of the rate, hard cutaway cuts, pop-in cards · **`clean-minimal`** the low end, fades, 1.06 by default (1.10 at most once) · **`data-rich`** zooms land on the numbers, favour the stat card · **`cinematic`** the low end, slow fades, slightly richer grade. Full definitions in `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`.
 
 ## What's available (and the operation behind it)
 
@@ -41,8 +42,8 @@ A flat video is one where the picture never reacts to what is being said. The fi
 - **Opacity / corner radius / rotation** on any overlay — `modify_opacity`, `modify_corner_radius`, `modify_rotate`. A PiP b-roll with rounded corners at 0.95 opacity is a clean look; use rarely.
 - **Layouts** — `apply_smart_layout` (Smart / FullScreen / PiP / SplitScreen / Grid) and `change_layout` to a named preset. Multi-speaker gold; on a solo talking head, FullScreen.
 - **Logo** — `insert_logo` / `apply_brand`: top-right, ~1/8 canvas width, ~70% opacity, long-form only by default.
-- **Chapters** — `add_chapter`: native markers on long-form, carrying the YouTube System's chapter titles once its SEO Package exists. The Studio never names one.
-- **Music bed** — the free library (`get_stock_music`), -18 dB, faded.
+- **Section markers** — `add_chapter` / `move_chapter`: navigation markers named by the first spoken words (`sections.md`). The Studio never names a chapter; the names live in the YouTube System's description.
+- **Music bed + section stingers** — the free library (`get_stock_music`): -18 dB on a reel, -22 dB on a long-form, faded; a 1.8 s transition slice at each long-form section change (`music.md`).
 - **Smart mutes** — `apply_smart_mutes` on multi-speaker recordings only.
 
 ## What is NOT available (don't promise it)

@@ -12,8 +12,8 @@ The cohort cadence is two long-forms and several reels a week. This runs the who
 ## Order of work (so a stop never wastes anything)
 
 1. Creative direction + transcript read, ONCE, for the whole batch. One paragraph, one yes that covers the long-form cuts and the reel picks.
-2. Long-form to a review draft. Log it.
-3. Reels, one at a time, each to done. Log each.
+2. Long-form to a review draft. Log it — including the cut-only MASTER it clones the moment the cut is locked (`master · <editId>`).
+3. Reels, one at a time, each cloned from the master (never from the finished long-form), each to done. Log each. Then the trailer from the master (`trailer.md`).
 4. Section map to the YouTube System; hook lines to the Short-Form System. Wait for their packages before any publish (`boundaries.md`).
 5. ONE delivery message: the long-form + the N reels, each labelled, each with its link and length, then the 2 to 3 things only they can judge.
 6. Publish only on their word, one summary covering every post, one route per post.

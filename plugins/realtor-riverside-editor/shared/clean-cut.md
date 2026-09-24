@@ -27,7 +27,7 @@ One yes covers the list. Anything not on the list needs its own yes.
 
 ## Do it (in this order)
 
-1. **Editorial cuts first** — `resolve_transcript_selection(intent:"remove", selections:[{type:"boundary_range", start:{type:"text", text:"<first words>"}, end:{type:"text", text:"<last words>"}}], revision)`. Require `readyToApply: true`; a warning means disambiguate (add `occurrence`), never guess timestamps. Execute the returned `cut_time_ranges` payload; if the revision moved since the resolve, pass the current `expectedRevision` and leave the ranges untouched.
+1. **Editorial cuts first** — `resolve_transcript_selection(intent:"remove", selections:[{type:"boundary_range", start:{type:"text", text:"<first words>"}, end:{type:"text", text:"<last words>"}}], revision)`. Require `readyToApply: true`; a warning means disambiguate (add `occurrence`), never guess timestamps. Execute the returned `cut_time_ranges` payload against the SAME revision you resolved on; if the revision moved between the resolve and the execute (a filler pass, a hand edit), the playable ranges have shifted — re-resolve, never execute a stale payload.
 2. **Filler words** — `remove_fillers(method:"Cut")`. If a fast talker reads choppy afterwards, `restore_audio_cleanup(cleanup:"fillers")` and re-run with `"Smart"`. No audio is ever synthesised on this engine.
 3. **Pauses** — `remove_pauses(thresholdMs)`: **1500** for long-form (avoid harsh cuts), **1000** for a reel. This also trims the silent lead-in and tail.
 4. **Verify** — `compare_revisions`: each cut is listed with the feature that made it; `durationBeforeMs → durationAfterMs` should match what you quoted. Re-read the first 40 seconds and the last row: opens on the first real line, ends on a complete thought.

@@ -11,7 +11,7 @@ Most revision notes are vague, and a vague note answered with a fresh re-edit fi
    - **Taste** (different music, more B-roll than the cap, a different hook angle) → it is their free 20% in the Riverside editor, OR one bounded change you describe before doing it.
 4. **Undo is cheap here.** `restore_audio_cleanup` reverses fillers, pauses, or smart mutes in one call. A cut can be restored by range. A card or clip is deleted by id. Say *"I can roll that back"* and mean it.
 5. **Re-save once**, quality-check the changed part, deliver as the next version.
-6. **Learn it.** A preference that will recur (caption size, punch-in strength, music on or off, how starts and ends should feel) is saved to `~/realtor-brain/editor/config.json` so the next video starts that way.
+6. **Learn it.** A preference that will recur (caption size, punch-in strength, music on or off, how starts and ends should feel) is saved to `~/realtor-brain/editor/config.json` (and the Brain is pushed) so the next video starts that way.
 7. **Cap at two rounds per video.** After two, walk them through the manual tweak in Riverside. It protects their time and the relationship.
 
 ## Words that help

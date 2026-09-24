@@ -38,7 +38,7 @@ set_captions(editId, expectedRevision,
 - **Set the accent explicitly** — never a tool default (one preset ships a green `#60FF44`; another a purple).
 - **Contrast is non-negotiable.** White text + outline always carries the caption; the accent is for the active word only.
 - **NEVER over the face — absolute.** Always set `position.y` yourself (≈0.82–0.86). In a split-screen scene (speaker in the top half) push captions to the bottom of the speaker band or use `update_scene_caption_settings` for those scenes.
-- **No overlapping elements.** Captions, the hook card, and the CTA card never collide — stagger timing (the hook card lives at the top edge; the CTA above the caption block or over closing B-roll).
+- **No overlapping elements.** Captions, the hook card, and the CTA card never collide — stagger timing (the hook, the pop-ups, and the CTA banners all live in the top zone on a reel; captions own the bottom).
 - **Stay inside the safe zones** — `widthRatio ≤ 0.8`, centred, never flush-right.
 - **Spelling.** Captions render from the Riverside transcript. There is no correction tool on the connector: check the aligned transcript for the name / brokerage / city / address; if wrong, the agent fixes it in the Riverside transcript panel before pass 2 (one minute), then you re-read. Never ship a misspelled name on their own reel.
 - Emphasis (the accent pop) is the active word — reserve extra weight for numbers, money, and the punchline via the cards, not by shouting every caption.

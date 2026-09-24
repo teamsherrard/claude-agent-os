@@ -1,6 +1,6 @@
 # The pre-flight check — read the video BEFORE you change anything
 
-**This runs first on EVERY edit, and it changes nothing.** Reading the transcript is free and safe; cutting is not. On a real 15-minute client video (the Descript live run) this step found **three duplicate takes and ~2 minutes of dead air** before a single change was made — it cut 3:21 off the runtime and made the plan accurate. Same step, same payoff here.
+**This runs first on EVERY edit, and it changes nothing.** Reading the transcript is free and safe; cutting is not. On a real 15-minute client video this step found **three duplicate takes and ~2 minutes of dead air** before a single change was made — it cut 3:21 off the runtime and made the plan accurate. Same step, same payoff here.
 
 It does three jobs at once: it makes the edit **better** (you plan instead of react), **faster** (you get it right the first time instead of over-correcting), and it **removes the agent's #1 anxiety** — not knowing what's about to happen to their video, or how long it'll take.
 
@@ -17,7 +17,7 @@ It does three jobs at once: it makes the edit **better** (you plan instead of re
    - **Spelling** — the agent's name, brokerage, city (and for listings the address + community) as they appear in the transcript. Captions render from this transcript, and there's no correction tool on the connector: if something's misspelled, the agent fixes it in the Riverside transcript panel before captions (a one-minute job) — flag it now.
    - **Compliance** — read `identity/compliance.md` now, before any on-screen text is planned (the three-state rule in `final-check.md`).
    - **Readiness** — if the aligned transcript comes back `FAILED_PRECONDITION` / `transcript_load_failed`, the upload is still processing → wait, don't retry in a loop.
-5. **Estimate the time.** No credits to quote. Say roughly how long: a reel ~15–20 min; a 10–20 min long-form ~45–60 min including the render. If they're short on time, offer the essentials-only version (clean cut + audio + grade + captions + the CTA card; B-roll and the other cards are skipped and marked N/A in the quality check).
+5. **Estimate the time.** No credits to quote. Say roughly how long: a reel ~15–20 min; a 10–20 min long-form ~45–60 min including the render. If they're short on time, offer the essentials-only version (clean cut + audio + grade + captions + zooms + the CTA banner; B-roll, pop-ups, and the name strip are skipped and marked N/A in the quality check with the agent's yes logged — the floors on audio, grade, zooms, and music still hold).
 
 ## Then say it in ONE short paragraph and get the go-ahead
 

@@ -8,7 +8,7 @@ Riverside has named **layouts** (`editing_list_layouts`) and **smart layouts** (
 
 ## Horizontal b-roll on a vertical reel — pick by what the shot shows
 
-1. **Full-bleed cover-fill** — ONLY if the subject still reads after the sides are cropped (a centred skyline). Insert the overlay, then `modify_scale` that overlay CLIP (`clipId`, never the shared overlay track) to the full reference canvas (`scaleW=360, scaleH=640` on a 9:16 edit; the engine covers and crops the sides). If cover-fill zooms so far you can't tell what it is, **don't**.
+1. **Full-bleed cover-fill** — ONLY if the subject still reads after the sides are cropped (a centred skyline). Insert the overlay, then `modify_scale {clipId, time:{n:0,d:1}, scaleW:360, scaleH:640, canvasWidth:360, canvasHeight:640}` on that overlay CLIP at time 0 (`clipId`, never the shared overlay track; the engine covers and crops the sides). If cover-fill zooms so far you can't tell what it is, **don't**.
 2. **Split-screen (preferred for most horizontal b-roll)** — speaker in one band, the b-roll shown **in full** in the other. Two steps:
    - the scene(s) under the cutaway → `batch` op `change_layout {layoutId:"solo-half-vertical-side-1-tile-portrait", sceneIds:[…]}` (speaker tile = top ~50%; the layout can `canVflip` if you'd rather have the speaker at the bottom). Split the scene first at the cutaway's in/out (`split_scene_at_time`) so only that window changes.
    - the b-roll overlay → `insert_overlay` at `position {x:1/2, y:3/4}` then `modify_scale` to the band (`scaleW=360, scaleH=320` on the 360×640 reference canvas for a 16:9 clip shown ~full width; the engine letterboxes inside the band cleanly).
@@ -36,6 +36,6 @@ Riverside has named **layouts** (`editing_list_layouts`) and **smart layouts** (
 
 On IG / TikTok / YouTube Shorts the app overlays its own UI **on top of** your vertical video — keep ALL text, cards, and panels inside a **centre-safe box**:
 - **Right ~12% — the icon rail.** Keep text + panels OUT of it: captions `widthRatio ≤ 0.8`, centred; cards centred; **never flush-right**.
-- **Bottom ~15% — the handle / caption bar.** Captions sit ABOVE it (`position.y ≈ 0.82–0.86`); the CTA card above it too.
+- **Bottom ~15% — the handle / caption bar.** Captions sit ABOVE it (`position.y ≈ 0.82–0.86`); banners never go near it — the hook, pop-ups, and CTA banners live in the TOP zone on a reel.
 - **Top ~8–10% — platform chrome.** The hook card sits just INSIDE this margin (centre ≈ 12–14% down), still above the head.
 - **Why this is easy to miss:** the export has NO UI overlaid, so a frame read can't show these collisions. Apply the margins by RULE, and have the agent eyeball it in the app before posting.

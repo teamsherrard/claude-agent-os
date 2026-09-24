@@ -7,9 +7,9 @@ A reel needs a music bed, always under the voice.
 ## Sound design (the layer that makes it feel edited)
 
 The connector has no sound-effect library, but two things work, both live-tested on 2026-09-23:
-- **Section stingers.** Riverside's free library has `transition` tracks (7 to 19 s). A short slice of one is a clean section hit: `insert_audio(assetId:<transition mediaId>, startMs:<section start, playable>, durationMs:1800, dB:-12, fadeOutMs:600)`. One per section change on long-form (the section map's times, `sections.md`), one on the hook reveal on a reel. Same collection as the bed so they belong together. The slice inserts correctly; whether it lands musically is the agent's ear, so ask once at hand-back.
+- **Section stingers.** Riverside's free library has `transition` tracks (7 to 19 s). A short slice of one is a clean section hit: `insert_audio(assetId:<transition mediaId>, startMs:<section start, playable>, durationMs:1800, dB:-12, fadeOutMs:600)`. One per section change on long-form (the section map's times, `sections.md`), none on a reel. Same collection as the bed so they belong together. The slice inserts correctly; whether it lands musically is the agent's ear, so ask once at hand-back.
 - **Swoosh on zooms.** Only from the agent's own uploaded SFX (`config.sfx.swoosh_media_id`), `insert_audio` at the zoom's start, -10 dB. Say once that a licensed swoosh dropped into their Riverside media makes every zoom land, then never nag.
-Never more than one hit every 30 seconds; never a hit over a spoken number or the CTA line.
+Pick the stinger with `get_stock_music(collection:<the bed's collection>, section:"transition", count:4)` and use the Low variant; the same `mediaId` at every section change is fine (it is the video's signature). One stinger per section change; if two section changes fall within 30 seconds, skip the second. Never a hit over a spoken number or the CTA line. Reels get the bed only, no stingers.
 
 ## Where the music comes from
 

@@ -26,7 +26,7 @@ Many agents — **especially women in the cohort** — are self-conscious on cam
 ## Punch-ins & framing — never expose the edge
 
 - Every clip must FILL the frame (cover, not fit) — no black bars anywhere, especially the first second.
-- Punch-ins are **zoom-IN only**: a short scene whose slot scale is `1.06`, `1.10`, or (once) `1.14` (`update_scene_slot_settings`, recipe in `riverside-playbooks.md`), cutting in on the first word of the key line and back out on the first word after it. Stay ≥ 1.0. Never scale below fill; keep the offset at 0,0 unless a frame shows the head crowding the top edge.
-- **A position offset must stay small relative to the zoom.** At 1.06× you have ~3% headroom each side — a bigger shift exposes an edge (a 7.5% offset at 1.05–1.08× exposed the top edge in the Descript live test). Keep it centred unless there's a reason.
+- Zooms never go below the frame: a short scene whose slot scale is `1.06`, `1.10`, or (once) `1.14` (`update_scene_slot_settings`, recipe in `riverside-playbooks.md`), cutting in on the first word of the key line and back out on the first word after it. Stay ≥ 1.0. Never scale below fill; keep the offset at 0,0 unless a frame shows the head crowding the top edge.
+- **A position offset must stay small relative to the zoom.** At 1.06× you have about 3% of the frame each side before an edge shows; keep the slot offset at 0,0 unless a frame shows the head crowding the top edge, and then move it by a few canvas pixels only.
 - **B-roll overlays insert at 90% of the canvas with a border, centred (live-tested)** — always scale them to the canvas for a full-cover cutaway, or deliberately to a band for a split-screen. An unscaled overlay is the Riverside version of the floating-clip mistake.
 - After any zoom or reframe, verify **zero canvas gaps** on a frame before calling it done.

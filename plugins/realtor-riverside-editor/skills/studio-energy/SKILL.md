@@ -12,7 +12,7 @@ One job, done well. Run the craft contract (`${CLAUDE_PLUGIN_ROOT}/shared/craft-
 1. Find the beats, free: the brief's featured moments, Riverside's emotion events (`includeParalinguistics:true`), and the transcript cues (numbers, reveals, questions, contrast turns, the CTA).
 2. Plan the zooms at the format's rate and size each to its beat: 1.06 normal, 1.10 strong, 1.14 for the one line of the video. Add a step-back on the biggest reveal and a size change on every editorial cut.
 3. Say the plan in one line ("eleven zooms on your key lines and six cut covers, about three minutes") and go. Every zoom is a split scene with a slot scale; scale keyframes on the speaker track do nothing on this connector.
-4. Animate card and cutaway entrances to the style pack (hard cuts and pops for bold, fades for calm).
+4. Entrances belong to the crafts that place things (graphics for cards, B-roll for cutaways); energy owns the zooms, the cut covers, and the swoosh.
 5. Read every zoomed scene back, check one frame per size used, and log the count and sizes.
 
 ## Remember

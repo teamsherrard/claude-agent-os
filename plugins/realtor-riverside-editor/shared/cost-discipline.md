@@ -1,6 +1,6 @@
 # The 80/20 rule — re-based for Riverside (READ FIRST)
 
-In the Descript editor this file protected the agent's AI credits. **Riverside has no per-edit credit meter** — the plan is metered by recording/upload hours and export limits, not by what Claude does to the timeline. So what are we protecting?
+**Riverside has no per-edit credit meter** — the plan is metered by recording/upload hours and export limits, not by what Claude does to the timeline. So what are we protecting?
 
 1. **The agent's time and attention.** Dozens of tool calls happen behind the scenes; every extra pass is another thing that can go wrong and another review round for them.
 2. **Their plan limits.** Exports count. A free or entry plan may watermark exports (the connector overwrites the watermark flag from the plan — you don't control it) and cap export quality/hours. **ONE render** is still the rule.
@@ -24,14 +24,15 @@ The #1 rule survives unchanged: **do the high-value basics brilliantly, then STO
 6. **Captions / on-screen text** — short-form: **karaoke** (big, below the face, active word in the brand accent). Long-form: **no word-by-word karaoke — an emphasis pop-up every ~2–3 min** instead.
 7. **9:16** (short-form), face centred (`update_aspect_ratio` → smart layout FullScreen → slot offset if needed).
 8. **Energy (mandatory minimum):** zooms on the emotional beats at the format's rate (long-form one every 45–75 s, reels one every 12–20 s; sizes 1.06 / 1.10 / 1.14 by strength), a step-back on the biggest reveal, and a size change on every editorial cut (`effects-menu.md`). A swoosh SFX on each **only if** the agent has a licensed swoosh in their library (`config.sfx.swoosh_media_id`) — Riverside exposes no SFX library. Transitions aren't a tool here; Riverside's straight cuts are clean, and that's fine.
-9. **The graphics essentials only:** a hook card, the CTA, and B-roll on the key lines (short-form up to 3; long-form ~1 per 45–60s). Long-form also gets a **lower third** on the agent's first appearance (`add_lower_third`) and a **section map** handed to the YouTube System, whose chapter titles are then placed as native markers.
+9. **The graphics essentials:** the hook banner, the CTA banners (the primary on the closing ask, a pack banner on each other spoken ask), and B-roll on the key lines (short-form up to 3; long-form ~1 per 45–60 s). Long-form also gets a **name strip** on the agent's first appearance and a **section map** handed to the YouTube System (markers on the timeline are navigation only, named by the first spoken words).
+10. **Music on every video** — -18 dB on a reel, -22 dB with section stingers on a long-form (`music.md`).
 
 That clean core is the whole job. Everything past it is the agent's 20%.
 
 ## The HARD CAPS — never exceed (this is what keeps it clean)
 
 - **B-roll — scale to length.** Short-form (≤ ~2 min): **MAXIMUM 3 clips.** Long-form: **~1 cutaway per ~45–60 seconds — a 10-min video ≈ 10–13 clips, a 15-min ≈ 15–20** (~10–15% of screen time), placed in ONE batched pass. Curated, never wall-to-wall. **If the agent wants more, they add it by hand.**
-- **Graphics — keep them purposeful.** Short-form: a hook card + a CTA card (**≤2–3 cards**) — the karaoke captions carry the keyword emphasis. Long-form: hook + CTA + **an emphasis pop-up every ~2–3 min** (~3–5 on a 10-min video). Beyond that, the agent adds more by hand.
+- **Graphics — keep them purposeful.** Short-form: a hook banner + the CTA banner, plus a pack banner only on an ask the agent actually says (**≤3 pieces**) — the karaoke captions carry the keyword emphasis. Long-form: hook + name strip + **an emphasis pop-up every ~2–3 min** (~3–5 on a 10-min video) + a pack banner per spoken ask (≤1 per 45 s) + the primary CTA. Beyond that, the agent adds more by hand.
 - **NO count-up animations** — not a tool here anyway; a number is a static card or lives in the caption.
 - **NO heavy AI effects** — `modify_eye_correction` (eye contact), `modify_background` (removal/replace/blur on a talking head), AI-generated B-roll. Warn and skip. (`modify_video_enhancement` is a plain enhancement toggle, not banned, but not part of the recipe either — the grade is.)
 - **Zooms — at the format's rate on real beats, never on every sentence.** A 10-minute video: 9–13. A 40-second reel: 3. Never two in a row at the same size.
@@ -40,7 +41,7 @@ That clean core is the whole job. Everything past it is the agent's 20%.
 
 | Element | SHORT-FORM reel | 10-MIN LONG-FORM | LISTING reel | LONG LISTING TOUR (16:9) |
 |---|---|---|---|---|
-| **Cards (total)** | hook card + CTA card (**≤2–3**) | hook card + CTA card | hook/address card + price card + CTA (**≤3**) | address/title card + price card + CTA (**≤3**) |
+| **Banners / cards** | hook banner + CTA banner (+ a pack banner on a spoken ask, **≤3**) | hook banner + name strip + pop-ups + pack banners (≤1 per 45 s) + the primary CTA | hook/address card + price card + CTA (**≤3**) | address/title card + price card + CTA (**≤3**) |
 | **Emphasis layer** | **karaoke captions ON** | **~4 emphasis pop-ups** (every ~2–3 min) — **NO karaoke** | **karaoke captions ON** | info cards + an **occasional** emphasis pop-up — **NO karaoke** |
 | **Lower third** | — | **yes**, first appearance, ~5s | — | **yes** |
 | **Zooms** | **3** (one per 12–20 s) | **9–13** (one per 45–75 s) + cut covers | 3 | one per 45–75 s |
@@ -55,8 +56,8 @@ This is the recipe the delivery "what's inside" line should restate back to the 
 
 ## Don't waste passes (the hidden drains)
 
-- **Run THE PASS PLANS** (`${CLAUDE_PLUGIN_ROOT}/shared/riverside-playbooks.md`): short-form ≈ 4 passes, long-form ≤ 6, listing reel ≈ 4. A pass = a small group of related writes, one revision diff to verify.
-- **Real expectations (from the Descript live run, translated):** a 15-min YouTube video cut to 12 min took ~60 min wall-clock and 8 passes with Descript. Riverside should take about the same wall-clock (more calls, each fast, no AI wait) with **zero credits**. Quote *time*, not credits: *"about an hour, I'll check in when the review draft is ready."*
+- **Run THE PASS PLANS** (`${CLAUDE_PLUGIN_ROOT}/shared/riverside-playbooks.md`): short-form ≈ 4 passes, long-form ≤ 7, listing reel ≈ 4. A pass = a small group of related writes, one revision diff to verify.
+- **Real expectations (live runs, Sept 2026):** a 12-minute long-form takes about an hour wall-clock including the render, a reel about 12 minutes, with **zero credits**. Quote *time*, not credits: *"about an hour, I'll check in when the review draft is ready."*
 - **Frame-QA before delivering** (`${CLAUDE_PLUGIN_ROOT}/shared/frame-qa.md`) so you're not re-exporting to fix things you couldn't see.
 - **The biggest drain is OVER-CORRECTING** — too-little-B-roll → swing to too-much; tiny-caption → guess again. Follow the safe defaults the FIRST time; don't swing.
 - **NEVER blind-retry a write** — check the revision first; the write usually landed.
