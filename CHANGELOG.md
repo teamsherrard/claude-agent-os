@@ -2,6 +2,15 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.132.3] — 2026-09-24
+
+### AI Editing Studio 0.4.2 — setup names the likely cause of an opaque kit file
+- `plugins/realtor-riverside-editor/skills/studio-setup/SKILL.md`: the kit sanity check no longer calls every fully opaque
+  `hook-*` / `emphasis-*` / `lower-third-*` / `cta-*` file an "old-style slate". Video Brand Kit v3.2 draws a design-time
+  stage under every overlay (the "Show stage" tweak) so the design board reads as a contact sheet; a file exported with it
+  still on is opaque, and setup now says so and tells the agent to switch the tweak off and export again.
+- `plugins/realtor-riverside-editor/README.md` status line.
+
 ## [0.132.2] — 2026-09-23
 
 ### AI Editing Studio 0.4.1 — the marketplace listing catches up; last references to the retired editor scrubbed
