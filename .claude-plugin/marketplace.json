@@ -9,7 +9,7 @@
     {
       "name": "realtor-ai-brain",
       "source": "./plugins/realtor-ai-brain",
-      "version": "0.59.1",
+      "version": "0.59.2",
       "description": "PLUGIN 1 — install first. The Realtor AI Brain: one shared brain (the agent's identity + memory) that powers every other system. Run 'Set up my Brain' once, and every tool already knows the agent. Plus a system-wide Capture layer: talk on the go and your ideas, wins, vendors, and market notes file themselves into the Brain."
     },
     {
@@ -21,19 +21,19 @@
     {
       "name": "realtor-youtube-system",
       "source": "./plugins/realtor-youtube-system",
-      "version": "0.16.0",
+      "version": "0.16.1",
       "description": "PLUGIN 3 — the YouTube System. Starts with a complete YouTube Game Plan (built on Mike Sherrard's frameworks) — channel audit, 3 high-intent pillars, ~50 exact titles, goal-math, and a 90-day plan — then the channel page itself (description, playlists, banner brief, upload defaults — paste-by-paste), ideation, research, SEO, scripting in the agent's own voice, lead magnets, repurposing, a monthly deep dive (your channel, your competitors, the gaps, the next 30 days — powered by the live data connection), coaching, and a comment engine (their real comments from screenshots — triage, reply drafts in their voice, leads flagged, comment-proven video ideas) — plus a live Content Dashboard in the agent's own Notion, seeded from their Game Plan, where every video card fills with the script, SEO, lead magnet, and top-3 reference videos. Requires Plugin 1 (the Brain) set up first."
     },
     {
       "name": "realtor-shortform-system",
       "source": "./plugins/realtor-shortform-system",
-      "version": "0.15.1",
+      "version": "0.15.2",
       "description": "PLUGIN 4 — the Short-Form System. A routine-based short-form OS: daily green-screen reactions, talking-head value, and carousels, each optimized for Instagram/Facebook, TikTok, and YouTube Shorts. The agent thinks in formats; Claude keeps the funnel balanced, schedules posts through their own Metricool / GoHighLevel / Buffer (bring-your-own), and reads performance from live Instagram + YouTube data — ONE analytics skill: the monthly deep dive (account + competitors + gaps + a 30-day plan) plus quick reads anytime, with reel watch-time/skip-rate hook intelligence no scheduler exposes. Shares one Notion Content Dashboard with the YouTube System (a Short-Form view of the same board). Text only — never films or designs. Requires Plugin 1 (the Brain) set up first."
     },
     {
       "name": "realtor-lead-capture",
       "source": "./plugins/realtor-lead-capture",
-      "version": "0.10.0",
+      "version": "0.10.1",
       "description": "PLUGIN 5 — the Lead Capture System. A navigator front door starts every agent the same proven way: the FIRST lead magnet is locked as the relocation guide (the #1 highest-intent search traffic in every market) with a 5-question intake pre-filled from the Brain — no overthinking; niche and brand-led guides unlock from campaign two. Then it maps the opt-in funnel that gives the guide away — two aligned documents: the page copy section by section with a proof photo strip, and a pop-up opt-in (name, email, phone) landing on a thank-you page with the guide as an instant download. Plus the local-presence layer: the complete Google Business Profile kit (description, services, seeded Q&A, a month of Google posts, review replies, and the social-links setup that puts their reels on Google Maps) and platform-optimized bios for every network — Instagram to LinkedIn to YouTube — each sized to its real character limit with one consistent entity line so AI search can find them. Text only: it writes the words and the strategy (a separate design skill builds the visuals), never hosts; lead capture only, no call booking. Requires Plugin 1 (the Brain) set up first."
     },
     {
@@ -45,13 +45,13 @@
     {
       "name": "realtor-listing-launch",
       "source": "./plugins/realtor-listing-launch",
-      "version": "0.5.0",
+      "version": "0.5.1",
       "description": "PLUGIN 7 — the Listing Launch System. One input — the address, or one sentence on the go (\"Just listed 14 Oak — start the content\") — and every listing becomes a content and lead-gen event. Eleven stages: WIN IT (the presentation + pre-listing package that gets the signature) · LIST IT (the MLS description) · LAUNCH IT (just-listed posts + Meta ad copy) · FILM IT (room-by-room YouTube walkthrough + full SEO package) · TOUR IT (listing photos → an animated cinematic home tour, no filming and no videographer) · CLIP IT (3 just-listed shorts) · SHOW IT (the open house kit) · SERVE IT (showing feedback, the weekly seller update, and the marketing report that proves the agent's value) · REVIVE IT (the honest read when it isn't selling, the price conversation, the re-launch, and the expiry conversation before the expiry) · SELL IT (the offer deadline, final calls to every agent who showed, multiple-offer process, and the under-bidder follow-up) · CLOSE IT (the just-sold content queued for closing day). Plus the brochure, the postcards, and the person-to-person outreach. Around the stages sits the system layer: a one-time setup that locks the brokerage disclaimer in so nothing ever ships a placeholder, a Listing Pipeline board in the agent's own Notion, one-command scheduling through their own Metricool / GoHighLevel / Buffer, an event-triggered morning watch (the Listing Launch AI Agent), and analytics that read back what actually worked from the agent's own closed listings. The property is captured once and never re-asked. Requires Plugin 1 (the Brain) set up first; TOUR IT needs a Higgsfield connection and hands its clips to Plugin 6 (the AI Editor)."
     },
     {
       "name": "realtor-market-system",
       "source": "./plugins/realtor-market-system",
-      "version": "0.6.1",
+      "version": "0.6.2",
       "description": "PLUGIN 8 — the Monthly Market System, powered by the Market Update AI Agent. It schedules itself the moment the agent installs it, times itself to when their local real estate board actually publishes (and re-times itself as it learns), then every month pulls the fresh local numbers and builds the entire package off them: the branded PRESENTATION they screen-record (talking points under every slide — no script needed), the sendable PDF market report that doubles as a green-screen asset and the lead magnet, three short-form concepts, the Instagram 1:1 infographic AND carousel, and the distribution pack with a two-CTA newsletter. It grades last month's on-camera prediction against the numbers that just landed — the ledger segment almost no agent runs — then writes the whole month onto the same Notion Content Dashboard the YouTube and Short-Form systems use, so an unattended run is actually visible. Between runs it's a market advisor in chat — ask how any community, price range, or property type is doing, what changed since last month, what a home costs per month at today's rates, or what to tell a seller who asks if now's the time, answered instantly from the numbers already on file. Every asset ships as a paste-ready Claude Design brief with the real numbers already in it. The realtor's only job is to film. Numbers are researched once into the Brain and quoted everywhere, so nothing ever disagrees; sourced and dated or it doesn't ship, with a stated fallback for markets whose board publishes nothing. Text, data, and design briefs only — it never designs, films, or publishes. Requires Plugin 1 (the Brain) set up first."
     },
     {

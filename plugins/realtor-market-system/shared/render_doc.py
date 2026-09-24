@@ -522,15 +522,15 @@ def _render_body(lines, i, doc, book_mode, collect=None, slug_iter=None):
             doc.table(["#", "Exact video title", "Search intent & lead type"], rows,
                       [Inches(0.4), Inches(4.05), Inches(2.25)])
             continue
-        WEEKV = r'^\s*Week\s+(\d+)\s*[·:]\s*Video\s*(\d+)\s*—\s*(.*?)\s*\(([^)]*)\)\s*$'
+        WEEKV = r'^\s*Week\s+(\d+)\s*[·:]\s*(Video|Post)\s*(\d+)\s*—\s*(.*?)\s*\(([^)]*)\)\s*$'
         mweekv = re.match(WEEKV, raw)
         if mweekv:
-            rows = []
+            rows = []; kind = mweekv.group(2)
             while i < n:
                 m = re.match(WEEKV, lines[i])
                 if not m: break
-                rows.append([f"Week {m.group(1)}", f"#{m.group(2)}", m.group(3).strip(), m.group(4).strip()]); i += 1
-            doc.table(["Week", "#", "Video to publish", "Type"], rows,
+                rows.append([f"Week {m.group(1)}", f"#{m.group(3)}", m.group(4).strip(), m.group(5).strip()]); i += 1
+            doc.table(["Week", "#", f"{kind} to publish", "Type"], rows,
                       [Inches(0.7), Inches(0.4), Inches(3.85), Inches(1.75)])
             continue
         mweek = re.match(r'^\s*Week\s+(\d+)\s+—\s+(.*)\((Pillar[^)]*)\)\s*$', raw)

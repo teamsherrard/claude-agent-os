@@ -1,11 +1,32 @@
 # Changelog
 
-All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.## [0.130.1] — 2026-09-23
+All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
+
+## [0.132.1] — 2026-09-23
+
+### Renderer: Short-Form plan rows now render as the calendar table (all 6 plugins)
+- `shared/render_doc.py` (byte-identical ×6): `Week N · Post N — hook (format · category)` rows — the
+  Short-Form Deep Dive Report's 30-day plan shape (output-standard §5b) — now build the same 4-column
+  calendar table as the YouTube `Week N · Video N` rows (the header follows the row kind: "Post to publish"
+  / "Video to publish"). Before this, a real Short-Form deep dive's plan fell back to plain paragraphs.
+- Patch bumps: YouTube 0.16.1 · Brain 0.59.2 · Lead Capture 0.10.1 · Short-Form 0.15.2 · Listing Launch
+  0.5.1 · Market System 0.6.2.
+
+### Docs: the two Composio deep-dive video decks, upgraded
+- `docs/youtube-deep-dive-composio-deck.md` + `docs/shortform-deep-dive-composio-deck.md` (10 slides each):
+  per-slide LAYOUT cues for Claude Design, example findings from a sample agent on the report slides, the
+  "what you'll see the first time" strip (question → sign-in → Allow) so the permission card never surprises
+  a student, a Studio/Instagram-vs-deep-dive comparison on the power slide, a DEMO cue to screen-share the
+  sample report, and the month-1-baseline / month-2-what-moved close.
+
+## [0.130.1] — 2026-09-23
 
 ### Docs: AI Admin launch & training deck
 - `docs/ai-admin-training-deck.md` — the 20-slide copy deck for the cohort training video (Claude
   Design-ready, same format as the Cohort Support deck): the pitch, safety rules, 4-step setup, the
-  daily rhythm, all 17 skills with say-this lines, the 5-day test-drive plan, and the trust close.## [0.131.2] — 2026-09-23
+  daily rhythm, all 17 skills with say-this lines, the 5-day test-drive plan, and the trust close.
+
+## [0.131.2] — 2026-09-23
 
 ### Short-Form analytics + deep dive merged into ONE skill (Short-Form v0.15.0)
 Mike's call: students run analytics as a monthly ritual, not a daily habit — so one skill, one story.

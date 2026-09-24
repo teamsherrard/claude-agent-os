@@ -1,68 +1,81 @@
 # Short-Form Deep Dive with Composio — Video Deck (copy for Claude Design)
 
 **Design brief (paste to Claude Design):** 16:9 slide deck, 10 slides. Mike Sherrard brand — deep purple +
-charcoal, gold accents, SF Pro. Dark slides, one idea per slide, commands styled as `chat chips`. Plain,
-direct wording — no marketing language. Slide 4 (the data) and slide 8 (the plan) can carry a simple table
-or two-column layout. Recorded once, then lives in the portal.
+charcoal, gold accents, SF Pro. Dark slides, one idea per slide, every command styled as a `chat chip`.
+Plain, direct wording — no marketing language. Each slide has a **LAYOUT** hint (a suggestion, not copy).
+Several slides carry an **EXAMPLE** block: findings from a sample agent ("Sam, Austin") — style these as a
+card with a small "example" tag so nobody reads them as a promise. Mike records over these slides once;
+the deck then lives in the portal. Same look as the YouTube Deep Dive deck — they're a pair.
 
 **Recording note:** ON SLIDE = the copy on the slide. SAY = your talking points (not on the slide).
+**DEMO** = a screen-share cue. The sample report to show is in Downloads: `SAMPLE — Short-Form Deep Dive Report.docx`.
 
 ---
 
 ## SLIDE 1 — Title
 
+**LAYOUT:** Full-bleed title, gold rule under it, stamp small at the bottom.
+
 **ON SLIDE:**
 # Short-Form Deep Dive
 ## Powered by Composio
-Your Instagram and YouTube Shorts, your competitors, the gaps, and your next 30 days — in one monthly report.
+Your Instagram and YouTube Shorts, your competitors, the gaps, and your next 30 days — one report, once a month.
 *Powered by Mike Sherrard Coaching Inc Frameworks*
 
-**SAY:** This is the monthly ritual for your short-form content. Once a month, one command, and you know
-which hooks are working, where your funnel leaks, and exactly what to post next. Same command as the
-YouTube deep dive — one habit covers both.
+**SAY:** Short-form moves fast, and the numbers pile up faster than anyone reads them. This is the one
+time a month you stop, look at the whole board, and reset the plan. Same command as the YouTube dive —
+one habit covers both.
 
 ---
 
 ## SLIDE 2 — What it is
 
+**LAYOUT:** Left: the command as one big chip. Right: the four parts, numbered. One line underneath.
+
 **ON SLIDE:**
-## One command. One monthly report.
-Type: `"Run my deep dive"`
-You get a full breakdown of:
+## One command. One report.
+`"Run my deep dive"`
 1. **Your account** — every post ranked, your best hooks, where the funnel leaks
 2. **Your competitors** — what they do that you don't
-3. **The gaps** — local topics nobody is filling
+3. **The gaps** — local topics and formats nobody is filling
 4. **Your next 30 days** — a post-by-post plan on Mike's 4-3-2-1 mix
-Saved to your Drive. Done once a month.
+**Not a dashboard.** A dashboard shows numbers. This tells you what they mean and what to post.
 
-**SAY:** Short-form moves fast and the numbers pile up. This is the one time a month you stop, read the
-whole board, and reset the plan. Everything else in the short-form system — green screens, talking
-heads, carousels — gets smarter from what this finds.
+**SAY:** Four parts, one document, saved to your Drive. Everything else in the short-form system — the
+green screens, the talking heads, the carousels — gets smarter from what this finds, because it writes
+the findings back into your Brain.
 
 ---
 
 ## SLIDE 3 — How it works: the live data connection
 
+**LAYOUT:** A three-step strip across the top (question → sign-in → allow). Rules underneath; the
+Instagram note as a small callout.
+
 **ON SLIDE:**
 ## Where the numbers come from
-- **Composio** is the connection that lets Claude read your real Instagram and YouTube data
-- **One sign-in, one time.** The first time you run your deep dive, it asks: *"want me to hook into your
-  live data?"* Say yes, log in, done forever.
-- **Read-only.** It reads your accounts. It never posts, replies, DMs, or changes anything.
-- **Never during setup.** It only comes up here, when you run the analysis.
-- Instagram needs a **Business or Creator account** (free to switch — it takes one minute in settings)
-- **Under 1,000 followers?** Instagram holds back the per-post numbers. The report says so, and reads a
-  screenshot of your Instagram insights instead — you still get the full dive.
+**Composio** is the connection that lets Claude read your real Instagram and YouTube numbers.
+**What you'll see — the first time only:**
+1. A question in chat: *"want me to hook into your live data?"* → say yes
+2. A sign-in window for Instagram, then YouTube → log in
+3. A small "Allow" box may pop up before it pulls data → click Allow
+**Read-only.** It reads your accounts. It never posts, replies, DMs, or changes anything.
+**Never at setup.** It only comes up here, when you run the dive.
+**Instagram needs a Business or Creator account** — free, one minute in settings.
+**Under 1,000 followers?** Instagram holds back the per-post numbers. The report says so and reads a
+screenshot of your Instagram insights instead — you still get the full dive.
 
-**SAY:** You never open Composio. You say yes once, log into Instagram and YouTube, and from then on the
-deep dive pulls your real numbers. Two things to know: Instagram only shares its data for Business or
-Creator accounts — if you're on a personal account, switch it, it's free and takes a minute. And if
-you're under a thousand followers, Instagram won't hand over the per-post numbers yet — so you drop in a
-screenshot from your Instagram insights, and the report is just as complete.
+**SAY:** You never open Composio. Once — yes, sign in, allow — and from then on it pulls your numbers by
+itself. If a box pops up asking to allow it, that's normal: click Allow. Two things to know about
+Instagram. It only shares data for Business or Creator accounts — if you're on a personal account, switch
+it; it's free and takes a minute. And under a thousand followers, Instagram won't hand over per-post
+numbers yet — so you drop in a screenshot from your insights, and the report is just as complete.
 
 ---
 
-## SLIDE 4 — The data it gives you
+## SLIDE 4 — The data it reads
+
+**LAYOUT:** Three columns: Instagram · YouTube Shorts + competitors · Also.
 
 **ON SLIDE:**
 ## What it reads
@@ -71,108 +84,148 @@ screenshot from your Instagram insights, and the report is just as complete.
 - **Reels: average watch time and skip rate** — the cleanest hook verdict there is
 - Account reach, profile visits, follower growth
 - **Who your audience is** — age, gender, and which cities
+- DMs started — counted, if you allow messages
 **YouTube Shorts (live):** views, likes, subscribers, growth
-**Competitors:** YouTube channels in full · Instagram accounts at surface level
-**Also:** Metricool for ad results · a screenshot works for anything else
+**Competitors:** YouTube in full · Instagram at the surface · TikTok by hand (no data)
+**Also:** Metricool for ad results and best posting times · a screenshot works for anything else
 
 **SAY:** Two numbers here change everything. Skip rate — how many people swiped away in the first
-seconds — is the honest answer to "was my hook good?" And the audience cities tell you whether you're
-reaching real local buyers or just other agents. No scheduler shows you either of those.
+seconds — is the honest answer to "was my hook good?" No scheduler shows you that. And the audience
+cities tell you whether you're reaching real local buyers or just other agents. That one surprises people
+every time.
 
 ---
 
 ## SLIDE 5 — How to use it
 
-**ON SLIDE:**
-## The monthly routine (about 10 minutes)
-1. Type `"Run my deep dive"`
-2. First time only: say yes to the live data sign-in
-3. Read the report. Start with the 3-sentence verdict.
-4. Say `"build the first 4 pieces"` — and go film
-Any time between dives: `"How did this post do?"` · `"Analyze my last 10 posts"` · `"Analyze my ads"` · `"Run my 2-week review"`
+**LAYOUT:** Numbered routine on the left. "Between dives" chips on the right.
 
-**SAY:** First run has the one-time sign-in; after that it's one command and a ten-minute read. And you
-don't have to wait a month for a quick question — "how did yesterday's reel do?" gets a quick answer,
-not the whole report.
+**ON SLIDE:**
+## The monthly routine — about 10 minutes
+1. `"Run my deep dive"`
+2. First time only: say yes to the sign-in
+3. Read the 3-sentence verdict first
+4. `"Build the first 4 pieces"` — go film
+**Any time between dives:** `"How did this post do?"` · `"Analyze my last 10 posts"` · `"Analyze my ads"` · `"Run my 2-week review"`
+
+**SAY:** First run has the sign-in; after that it's one command and a ten-minute read. And you don't
+wait a month for a quick question — "how did yesterday's reel do?" gets a straight answer. The 2-week
+review is a nice middle: best post, weakest, best hook, what drove DMs — and it remembers, so the next dive
+starts smarter.
 
 ---
 
 ## SLIDE 6 — Part 1: Your account
 
+**LAYOUT:** Left: what it finds (bullets). Right: the EXAMPLE card, tagged "example".
+
 **ON SLIDE:**
-## What it finds in your own posts
-- **Every post ranked** by format (green screen / talking head / carousel) and funnel category (reach / value / trust / convert)
-- **Which format and which category actually win** — the averages, not the guesses
-- **Your hooks, judged by skip rate** — which opening styles hold, and your 3 best hooks quoted word for word
-- **Locals vs. agents** — is your audience real buyers and sellers in your market, or other realtors?
+## What it finds in your posts
+- Every post ranked by format — green screen, talking head, carousel — and by job: reach, value, trust, convert
+- Which format and which job actually win — averages, not guesses
+- Your hooks judged by skip rate — and your 3 best, quoted word for word
+- **Locals vs. agents** — is your audience buyers and sellers in your market, or other realtors?
 - **The funnel leak** — reach → engagement → profile visits → follows → DMs. The one place it breaks.
-- **Cadence** — posts per week vs. Mike's minimum of three (the goal is daily, plus stories)
+- Cadence — posts per week vs. Mike's minimum of three (the goal is daily, plus stories)
+
+**EXAMPLE — Sam, Austin:** *"Your green screens reach 11,200 on average — 4× your talking heads — and 81%
+of that reach is local. 22% of your total reach is other agents, and all of it comes from your 3 home-tour
+reels."*
+*>> The leak: "Carousels get saved 3× more than anything else but produced 2 DMs — there's no CTA on the
+last slide. Add 'DM me GUIDE' on slide 10."*
 
 **SAY:** The audience read is the one that surprises people. Plenty of agents have great reach — with
-other agents. The report tells you straight: your top cities are your market, or they're not. If they're
-not, we steer the plan toward green screens and local lifestyle to pull in real buyers.
+other agents. Home tours are agent-bait. The report tells you straight: your top cities are your market,
+or they're not. And the leak is specific: not "post more," but "your carousels get saved and never
+asked for anything — put the ask on the last slide."
 
 ---
 
 ## SLIDE 7 — Parts 2 & 3: Your competitors and the gaps
 
+**LAYOUT:** Two stacked bands, each with its own EXAMPLE line at the right.
+
 **ON SLIDE:**
 ## Competitors
 - 3 to 5 accounts in your market
-- **YouTube: deep** — their outlier videos (3×, 5×, 10× their normal)
-- **Instagram: surface** — follower and post counts, recent posts (labelled honestly as a surface read)
-- **What they do that you don't** — and what you do better
+- **YouTube: deep** — their outlier videos, 3×, 5×, 10× their own normal
+- **Instagram: surface** — followers, posting pace, what's public (labelled honestly)
+- What they do that you don't — and what you do better
+**EXAMPLE:** *"Austin Home Pro — 4,800 followers. His 'new construction incentives RIGHT NOW' Short did
+38,000 — 11× his normal. Incentive and comparison topics work in your market."*
 ## The gaps
-- Local topics with real demand and weak, old, or non-local coverage — with the evidence
-- **Format openings** — formats competitors win with that you haven't used
-- **Trend openings** when they surface
+- Local topics with real demand and weak or non-local coverage — with the evidence
+- Formats competitors win with that you haven't used
+- The part of the 4-3-2-1 mix you're under-posting
+**EXAMPLE:** *"'Things to do in Austin this weekend' — nobody local posts it weekly, and it's the format that
+pulls locals, not agents."*
 
-**SAY:** We're honest about depth here. YouTube lets us read competitors fully. Instagram only shows the
-surface for other accounts, so we say that. TikTok gives no data at all — that one's a manual glance.
-What we can prove, we prove; what we can't, we label.
+**SAY:** We're honest about depth. YouTube lets us read competitors fully. Instagram only shows the
+surface for other accounts, so we say that. TikTok gives no data at all — that's a manual glance. What we
+can prove, we prove. What we can't, we label. And the gaps aren't opinions — they come with the evidence
+attached.
 
 ---
 
-## SLIDE 8 — Part 4: Your next 30 days
+## SLIDE 8 — Part 4: Your next 30 days — and the report itself
+
+**LAYOUT:** Left: the plan structure. Right: a small mock of the report page (verdict → scorecard →
+your account → competitors → gaps → next 30 days → the one move).
 
 **ON SLIDE:**
 ## The plan, ready to film
-- **Double down** — your 3 strengths, each with the number that proves it
-- **Fix** — your 3 fixes, each with the specific change
-- **The 30-day plan** — post by post, on the 4-3-2-1 mix: 4 reach · 3 value · 2 trust · 1 convert
+- **Double down** — 3 strengths, each with the number that proves it
+- **Fix** — 3 fixes, each with the exact change
+- **The plan** — post by post, week by week, on 4-3-2-1: 4 reach · 3 value · 2 trust · 1 convert
 - **The one move** — the single most important thing this month
-Then: `"build the first 4 pieces"` → straight into green screen, talking head, and carousel.
+**EXAMPLE:** *">> THE ONE MOVE: Put the CTA on the last slide of every carousel and repost your top two
+with it — the cheapest DMs you'll ever get."*
+**The report:** verdict → scorecard → your account → competitors → gaps → next 30 days. Saved to your
+Drive, dated, stamped.
 
-**SAY:** Every deep dive ends with content, not commentary. The plan is balanced to the 4-3-2-1 mix
-automatically, seeded from the hooks and formats that already worked for you, plus the gaps. You say
-"build the first four" and you're filming.
+**SAY:** **DEMO** — screen-share the sample report (Downloads → "SAMPLE — Short-Form Deep Dive Report").
+Scroll it: the verdict, the scorecard, the ranked posts, the hooks, the leak, the competitors, the gaps,
+the plan. Then: "Every dive ends with content, not commentary. The plan is balanced to 4-3-2-1 for you,
+seeded from the hooks and formats that already worked. Say 'build the first four pieces' and you're
+filming. In the beginning, chase reps — volume first. This tells you which reps to take."
 
 ---
 
 ## SLIDE 9 — The power behind it
 
-**ON SLIDE:**
-## Why this beats any dashboard
-- **It knows what each post WAS** — format, category, hook — so it talks in your language
-- **It diagnoses in order** — low reach = the hook · good reach, low watch time = the middle · watched but not saved = not useful enough · engaged but no DMs = the CTA
-- **Your own numbers are the benchmark** — your median, never a made-up industry number
-- **Mike's frameworks are the judge** — 4-3-2-1, the hook-value-CTA structure, locals not agents
-- **It teaches the whole system** — findings are saved to your Brain, so every green screen, talking head, and carousel after this leans on what worked
-- **It never invents a number.** Thin data is called thin.
+**LAYOUT:** Four rows, two columns. Left column "Instagram shows you" in grey; right column "The deep
+dive tells you" in gold. One bold line underneath.
 
-**SAY:** When it says "your carousels get saved but never drive a DM," that's your saves against your
-DM count, read against your own averages — and the fix is specific: add the guide CTA. And because it
-writes back into your Brain, next week's posts already lean on this month's winners.
+**ON SLIDE:**
+## Why this beats a dashboard
+| Instagram shows you | The deep dive tells you |
+|---|---|
+| "Reach 21,400" | "Your best reel opened by flipping a belief, with text on the first frame — 14% skip. Open that way again." |
+| "Skip rate 44%" | "Your talking heads lose people in 3 seconds. Cut 'hey guys, today…' — open on the flip." |
+| "212 saves" | "Saved, never asked for anything. Put the CTA on the last slide." |
+| "Followers +212" | "22% of your reach is agents, from the home tours. Swap them for 'what $500K gets you.'" |
+**It knows what each post was. It judges against your own numbers. It uses Mike's frameworks. It saves
+what it learns to your Brain. It never invents a number.**
+
+**SAY:** Instagram gives you numbers. This gives you the sentence after the number — why, and what to do.
+It diagnoses in order: low reach is the hook; good reach but low watch time is the middle; watched but not
+saved means it wasn't useful enough; saved but no DMs is the ask. Judged against your own averages, and
+against the frameworks from this program — locals not agents, 4-3-2-1, hook-value-CTA. And it writes back
+into your Brain, so next week's posts already lean on this month's winners.
 
 ---
 
 ## SLIDE 10 — Start now
 
+**LAYOUT:** One big chip in the center. A simple three-step loop under it (run → post → compare).
+
 **ON SLIDE:**
-## Once a month, one command.
+## Once a month. One command.
 ### `"Run my deep dive"`
+Month 1: your baseline. Month 2: what moved. Every month after: an account that compounds.
 Read the verdict. Fix the leak. Post the plan.
 Between dives: `"How did this post do?"`
 
-**SAY:** First of the month: run it, read the three sentences, build the first four pieces. That's the
-habit. Your short-form gets an honest coach every thirty days — and it never misses a month.
+**SAY:** First of the month. The first dive is your baseline — it's honest, and that's the point. The
+second one shows you what moved. Run it, read the three sentences, build the first four pieces. Your
+short-form gets a real coach every thirty days, and it never misses a month.
