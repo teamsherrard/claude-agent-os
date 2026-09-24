@@ -31,6 +31,8 @@ Read brand in this exact order — first hit wins:
     "lower_third": "", "lower_third_9x16": "", "emphasis_16x9": "", "emphasis_9x16": "",
     "end_card_16x9": "", "end_card_9x16": "", "end_screen": "", "logo_sting": "",
     "icons_dir": "", "animated": {"end_card_16x9": "", "end_card_9x16": ""},
+    "zones": {"hook_16x9": "x 320-1600 y 770-920 · 64px · 35 chars", "emphasis_16x9": "x 400-1520 · 64px · 30 chars", "hook_9x16": "x 140-940 y 160-340 · 72px · 20 chars"},
+    "members": {},
     "cta_pack": {"subscribe_16x9": "", "subscribe_9x16": "", "comment_16x9": "", "comment_9x16": "", "guide_16x9": "", "guide_9x16": "", "call_16x9": "", "call_9x16": "", "book_16x9": "", "book_9x16": "", "dm_16x9": "", "dm_9x16": "", "link_16x9": "", "link_9x16": "", "follow_16x9": "", "follow_9x16": ""},
     "riverside_media_ids": {}
   }
