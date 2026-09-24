@@ -7,20 +7,24 @@ one-pager (appendix below, for Claude Design).*
 
 **Format:** screen recording of Cowork for the typed beats; the dispatch beat is the phone-voice
 moment (QuickTime + USB cable, Mac mic as audio source — NOT iPhone Mirroring, which kills the
-mic). A clock graphic advances in the corner: 7:00 → 8:30 → 11:15 → 1:55 → 3:40 → 6:00.
+mic). A clock graphic advances in the corner: 7:00 → 8:30 → then jumps beat to beat through
+midday (11:15 · 11:20 · 1:55 · 3:40 · 4:15 · 4:30) → 6:00.
 
 **Prep before recording:** run on the demo Brain with 6–8 realistic clients seeded, 2 hot-lead
-emails planted in the inbox, one deliberately double-booked slot, one parked capture from
-"yesterday," and `identity/business-plan.md` filled in — the TOP 3 beat depends on it.
+emails planted in the inbox, one parked capture from "yesterday," and
+`identity/business-plan.md` filled in — the TOP 3 beat depends on it. If the scheduled sweep
+hasn't fired yet on recording day, say "sweep my inbox" off-camera first so Chapter 2 opens on a
+finished inbox. Optional: plant a calendar conflict if you want Conflict Guard blocking a booking
+on camera.
 
 ---
 
 ## COLD OPEN (0:00–0:50)
 
 **Say:** "I'm going to run my entire day as a realtor — bookings, inbox, client prep, follow-ups —
-and I'm never going to open my calendar, sort my inbox, or write an email from scratch. Once. This
-is one day with your AI Admin, and by the end I'll give you the exact daily, weekly, and monthly
-rhythm my agents run."
+and I'm never going to open my calendar, sort my inbox, or write an email from scratch. Not once.
+This is one day with your AI Admin, and by the end I'll give you the exact daily, weekly, and
+monthly rhythm my agents run."
 
 **On screen:** the clock graphic at 6:59am. No UI yet. Tension, not features.
 
@@ -76,7 +80,8 @@ Rapid-fire montage, clock jumping. Keep each beat under 30 seconds — the SPEED
 
 Read the confirmation aloud: conflict-checked, invite sent, duration pulled from my rules — and
 for a virtual consult, the Zoom link just appears. "One line. Proof embedded. I never open the
-calendar to double-check."
+calendar to double-check. And if that slot had clashed with something, it wouldn't have booked —
+it blocks the clash and hands me the nearest open slots instead. It never double-books me."
 
 **11:20am — the conflict (typed):**
 > "Push my 3pm to Thursday."
