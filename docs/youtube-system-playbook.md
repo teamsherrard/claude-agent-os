@@ -156,12 +156,18 @@ Your monthly market update video, built to record: the deck you screen-share, wi
 every slide. Data sourced and dated — never invented. The highest-leverage video most agents never make;
 here it's 20 minutes a month. *(Have the Monthly Market System plugin? It runs your whole month instead.)*
 
-### `"How's my channel doing?"`
+### `"Run my deep dive"` — the monthly ritual (YouTube Analytics, powered by the live data connection)
+Once a month, the whole picture in one report: **your channel** (every video ranked, what's pulling, your 3
+best hooks quoted, the single funnel leak), **your competitors** (their outlier videos, what they do that
+you don't), **the gaps** in your market nobody's filling, and **your next 30 days** — 8 exact titles ready
+to film. Saved to your Drive, and it teaches the whole system what worked.
+- First time: it offers the live data sign-in — one click, one time. Say yes and it pulls your real
+  numbers automatically from then on. (Or just drop a screenshot from YouTube Studio — that works too.)
+
+### `"How's my channel doing?"` — the quick read, anytime
 Your numbers in plain English — every metric explained the first time, compared against YOUR past videos,
-never generic benchmarks. And it tracks past views to what matters: which videos produced comments,
-calls, and booked appointments.
-- Just share your channel link for the standard read.
-- For the deep read (watch time, click-through): drop a screenshot or export from YouTube Studio.
+never generic benchmarks. Tracks past views to what matters: which videos produced comments, calls, and
+booked appointments. Share your channel link, or a Studio screenshot for the deep numbers.
 
 ### `"Coach me"`
 Mike-style coaching: what worked and why, the ONE highest-leverage fix (with the exact rewrite, not vague
@@ -238,7 +244,8 @@ own idea is first in line.
 | "Competition analysis" | The proven-topics recreate list |
 | "Audit this channel: [link]" | Honest breakdown of any channel |
 | "Market report" | The monthly deck + talking points |
-| "How's my channel doing?" | Your numbers in plain English, tracked to leads |
+| "Run my deep dive" *(monthly)* | The full report: channel, competitors, gaps, next 30 days |
+| "How's my channel doing?" | The quick read, in plain English, tracked to leads |
 | "Coach me" / "I'm not getting views" | The win, the one fix, the next action |
 | "Plan my filming day" | Batch filming order + calendar block |
 | "Am I on track?" / "Plan my month" | The honest check-in / the month laid out |

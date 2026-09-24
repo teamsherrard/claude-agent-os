@@ -92,6 +92,7 @@ on Analytics §23.3.)
 - **Every point cites her real number + ONE specific, encouraging next step.** No generic tips, ever.
 
 ## Inputs & modes
-Reads Analytics (what happened + the diagnosis), the Research Brief (market context), the AI Brain (goals,
-cadence, voice, proof), and the Videos folders / channel. On-demand only ("coach me", "audit my channel",
+Reads Analytics — **especially the latest monthly Deep Dive** (`memory/performance.md` block + the report
+in `Performance/`): its funnel leak, best hooks, and 30-day plan are the coach's starting facts — plus the
+Research Brief (market context), the AI Brain (goals, cadence, voice, proof), and the Videos folders / channel. On-demand only ("coach me", "audit my channel",
 "I'm not getting views", or alongside fresh stats). Output in chat — coaching is a conversation; nothing stored.

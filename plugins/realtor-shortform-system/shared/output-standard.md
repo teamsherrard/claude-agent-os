@@ -110,6 +110,67 @@ Tags:
 (Carousel docs use SLIDE 1 / SLIDE 2 … + DESIGN DIRECTION + the IG/FB block; performance docs use the
 review structure from `metrics-guide.md`. Same formatting rules throughout.)
 
+## 5b. The Deep Dive Report (the monthly analytics deliverable — stamped)
+The one document that isn't content: the monthly deep dive from `shortform-analytics`. Same house grammar,
+this fixed shape (mirrors the YouTube System's report so the two dives read as one ritual):
+```
+SHORT-FORM DEEP DIVE — [AGENT NAME], [CITY]  ·  [MONTH YYYY]
+Window: [dates]  ·  Sources: [live data · Metricool · screenshots]  ·  [N] posts reviewed
+Powered by Mike Sherrard Coaching Inc Frameworks
+
+════════════════════════════════════════════
+THE VERDICT
+════════════════════════════════════════════
+{3 sentences: where they stand · biggest strength · biggest fix}
+
+════════════════════════════════════════════
+THE SCORECARD   (this window vs last)
+════════════════════════════════════════════
+   Followers .............. {now}  ({+/- since last dive})
+   Posts published ........ {n}  ({per week} vs Mike's 3/wk minimum)
+   Avg reach / post ....... {n}  (your median: {n})
+   Reel skip rate ......... {n%}   — or "not available — needs the live data connection"
+   Saves + shares ......... {n}
+   DMs / leads ............ {n}  (from {which posts})
+
+════════════════════════════════════════════
+PART 1 — YOUR ACCOUNT
+════════════════════════════════════════════
+   {every post ranked & tagged: format · funnel category · hook · reach · skip rate}
+   ──── PER FORMAT / PER CATEGORY ────
+   {averages}
+   ──── HOOKS & RETENTION ────
+   •  Best hooks (verbatim): "{…}" · "{…}" · "{…}" — {why each held}
+   ──── THE FUNNEL LEAK ────
+   >> {one plain sentence + the fix}
+
+════════════════════════════════════════════
+PART 2 — YOUR COMPETITORS
+════════════════════════════════════════════
+   [Channel/handle] ........ {numbers} · outlier: "{…}"
+   •  What they do that you don't · What you do better · Positioning: {two sentences}
+
+════════════════════════════════════════════
+PART 3 — THE GAPS
+════════════════════════════════════════════
+   •  {gap} — {evidence}
+
+════════════════════════════════════════════
+PART 4 — THE NEXT 30 DAYS
+════════════════════════════════════════════
+   ──── DOUBLE DOWN ────   1.  {strength} — {number}
+   ──── FIX ────           1.  {fix} — {the specific change}
+   ──── THE PLAN (4-3-2-1) ────
+   Week 1 · Post 1 — {hook/topic}   ({format · category})
+   …
+   >> THE ONE MOVE:  {one sentence}
+
+────────────────────────────────────────────
+Sources — {…}.  Compliance — Fair Housing checked.  ✓
+Powered by Mike Sherrard Coaching Inc Frameworks
+```
+The stamp is a byline + footer only — never inside a caption or script block the agent pastes out.
+
 ## 6. The save flow (end of every content workflow)
 1. Build the doc's structured text following §4–§5; write it to a temp file (e.g. `/tmp/doc.txt`).
 2. Find-or-create `[Agent Name] — Short-Form System/Content/[YYYY-MM · Month]/` (or `/Performance/`).

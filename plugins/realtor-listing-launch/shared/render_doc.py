@@ -552,12 +552,16 @@ def _render_body(lines, i, doc, book_mode, collect=None, slug_iter=None):
                 mm = re.match(r'^(.+?)\s{2,}\((.+)\)\s*$', rest)
                 if mm: rest, note = mm.group(1).strip(), mm.group(2).strip()
                 rows.append([m.group(1).strip(), rest, note]); i += 1
-            if 'COMPETITOR' in (last_head or '').upper():
-                doc.table(["Channel", "Numbers", "Notes"], rows,
-                          [Inches(2.1), Inches(2.25), Inches(2.35)])
+            lh = (last_head or '').upper()
+            if 'COMPETITOR' in lh:
+                hdr = ["Channel", "Numbers", "Notes"]
+            elif 'SCORECARD' in lh:
+                hdr = ["Metric", "This window", "vs last / note"]
+            elif any(k in lh for k in ("CHANNEL", "ACCOUNT", "VIDEO", "POST", "CONTENT TYPE", "FORMAT", "CATEGORY")):
+                hdr = ["Item", "Result", "Note"]
             else:
-                doc.table(["Metric", "Target", "Why it matters"], rows,
-                          [Inches(2.1), Inches(2.25), Inches(2.35)])
+                hdr = ["Metric", "Target", "Why it matters"]
+            doc.table(hdr, rows, [Inches(2.1), Inches(2.25), Inches(2.35)])
             continue
 
         # generic pipe table:  | Head 1 | Head 2 |  /  | --- | --- |  /  | a | b |
@@ -593,7 +597,9 @@ def _render_body(lines, i, doc, book_mode, collect=None, slug_iter=None):
         mnum = re.match(r'^(\d+)\.\s+(.*)$', line)
         if mnum and 1 <= int(mnum.group(1)) <= 99:
             txt = mnum.group(2); i += 1
-            while i < n and lines[i].strip() and lines[i].startswith("   ") and not re.match(r'^\s*\d+\.\s', lines[i]) and not is_band(lines[i]):
+            while (i < n and lines[i].strip() and lines[i].startswith("   ")
+                   and not re.match(r'^\s*\d+\.\s', lines[i]) and not is_band(lines[i])
+                   and not SUBBAND.match(lines[i]) and not CUE.match(lines[i].strip())):
                 txt += " " + lines[i].strip(); i += 1
             ml = re.match(r'^([A-Z][A-Z0-9 ,\-–—/&]{3,55}?[\.\-—])\s*(.*)$', txt)
             if ml: doc.numbered(mnum.group(1), ml.group(1), ml.group(2))

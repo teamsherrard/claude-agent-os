@@ -93,8 +93,11 @@ the biggest fix* — then the scannable detail underneath. End by **offering to 
 first 4 pieces of that 30-day plan right now?"* → hand the bets to greenscreen / talkinghead / carousel.
 
 **Save + seed:**
-1. Render the report to a styled `.docx` (`render_doc.py`, per `${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`)
-   → `[Agent Name] — Short-Form System/Performance/`, named `[YYYY-MM-DD] · Short-Form Deep Dive`. Share the link.
+1. Build the report on the **Deep Dive Report shape** (`${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`
+   §5b — the verdict · scorecard · your account · competitors · gaps · next 30 days, one video per row) with
+   the byline + footer line `Powered by Mike Sherrard Coaching Inc Frameworks` (a flagship deliverable —
+   never inside copy the agent pastes out). Render to a styled `.docx` (`render_doc.py`) → `[Agent Name]
+   — Short-Form System/Performance/`, named `Deep Dive · [Month YYYY]`. Share the link.
 2. **Seed `memory/performance.md`** with a dated block: best format, best hook styles, the funnel leak, the
    competitor gap to attack, and today's follower/sub counts. Push the Brain to Drive — the content
    workflows read this, so the whole system inherits what the dive found.

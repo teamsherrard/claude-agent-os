@@ -1,6 +1,18 @@
 ---
 name: youtube-setup
-description: One-time onboarding for the Realtor YouTube System. READS everything from the agent's existing Realtor AI Brain (identity, market, niche, avatars, offer, voice) and only captures what's genuinely YouTube-specific — channel, goals, posting cadence — never re-asking what the AI Brain already knows. Then connects Google, provisions a clean Google Drive workspace (Videos + Setup), and delivers the agent's full YouTube Game Plan (built on Mike Sherrard's frameworks) as their first deliverable — no YouTube connection needed (V1 analytics come from their YouTube Studio export). Use when a real estate agent wants to set up / build / start / onboard their YouTube system or connect their channel. Triggers on "set up my YouTube system", "build my YouTube system", "start my YouTube system", "onboard me", "connect my YouTube channel" — AND on every bare launch phrase: "launch the YouTube plugin", "launch YouTube plugin", "launch my YouTube system", "open my YouTube system", "start the YouTube plugin", "open the YouTube system". A bare launch NEVER gets a which-door menu: Step 0 routes it automatically (no YouTube Layer yet → run this onboarding; already set up → a one-line ready brief, then straight into "what should I film?").
+description: >
+  One-time onboarding for the Realtor YouTube System. READS everything from the agent's existing Realtor AI
+  Brain (identity, market, niche, avatars, offer, voice) and only captures what's genuinely YouTube-specific —
+  channel, goals, posting cadence — never re-asking what the AI Brain already knows. Then connects Google,
+  provisions a clean Google Drive workspace (Videos + Setup), and delivers the agent's full YouTube Game Plan
+  (built on Mike Sherrard's frameworks) as their first deliverable — no YouTube connection needed (V1 analytics
+  come from their YouTube Studio export). Use when a real estate agent wants to set up / build / start / onboard
+  their YouTube system or connect their channel. Triggers on "set up my YouTube system", "build my YouTube
+  system", "start my YouTube system", "onboard me", "connect my YouTube channel" — AND on every bare launch
+  phrase: "launch the YouTube plugin", "launch YouTube plugin", "launch my YouTube system", "open my YouTube
+  system", "start the YouTube plugin", "open the YouTube system". A bare launch NEVER gets a which-door menu:
+  Step 0 routes it automatically (no YouTube Layer yet → run this onboarding; already set up → a one-line ready
+  brief, then straight into "what should I film?").
 ---
 
 # Realtor YouTube System — Setup

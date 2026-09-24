@@ -168,6 +168,92 @@ SUCCESS METRICS   (90-day milestones toward {goal})
 Powered by Mike Sherrard Coaching Inc Frameworks
 ```
 
+### Deep Dive Report (flagship — stamped; YouTube AND Short-Form use this shape)
+```
+YOUTUBE DEEP DIVE — [AGENT NAME], [CITY]  ·  [MONTH YYYY]
+Window: [dates]  ·  Sources: [live data · Studio export · public reads]  ·  [N] videos reviewed
+Powered by Mike Sherrard Coaching Inc Frameworks
+
+
+════════════════════════════════════════════
+THE VERDICT
+════════════════════════════════════════════
+{3 sentences: where they stand · the biggest strength · the biggest fix}
+
+
+════════════════════════════════════════════
+THE SCORECARD   (this window vs last)
+════════════════════════════════════════════
+   Subscribers ............ {now}  ({+/- since last dive})
+   Videos published ....... {n}  ({cadence}/wk vs plan {2}/wk)
+   Avg views / video ...... {n}  (your median: {n})
+   Click-through rate ..... {n%}  (Studio)   — or "not available — add your Studio export"
+   Avg view duration ...... {m:ss} / {% viewed}
+   Leads / calls booked ... {n}  (from {which videos})
+
+
+════════════════════════════════════════════
+PART 1 — YOUR CHANNEL
+════════════════════════════════════════════
+   #    VIDEO                                            TYPE · PILLAR · VIEWS · %VIEWED
+   1    {title}                                          {market update · Pillar 2 · 4,812 · 41%}
+   …    (every video in the window, best → worst)
+
+   ──── PER CONTENT TYPE ────
+   Relocation ............ {avg views}  ({n} videos)
+   Market updates ........ {avg}  ({n})
+   {…the 6 types}
+
+   ──── PACKAGING & HOOKS ────
+   •  Best packaged:  {3 titles} — {why}
+   •  Re-title / re-thumbnail:  {3 titles} — {the fix each}
+   •  Best openings (verbatim):  "{hook 1}" · "{hook 2}" · "{hook 3}" — {why each held}
+
+   ──── THE FUNNEL LEAK ────
+   >> {one plain sentence naming the single biggest leak — and the specific fix}
+
+
+════════════════════════════════════════════
+PART 2 — YOUR COMPETITORS
+════════════════════════════════════════════
+   [Channel A] ........ {subs} · {avg views} · outlier: "{title}" ({n} views)
+   [Channel B] ........ {…}
+   •  What they do that you don't:  {the transferable moves}
+   •  What you do better:  {…}
+   •  Positioning:  {two sentences}
+
+
+════════════════════════════════════════════
+PART 3 — THE GAPS
+════════════════════════════════════════════
+   •  {gap} — {the evidence: demand + who ranks + how stale}
+   •  Starving pillar:  {pillar} — {planned vs filmed}
+   •  Repeat from a new angle:  {your winner} → {2–3 new angles}
+
+
+════════════════════════════════════════════
+PART 4 — THE NEXT 30 DAYS
+════════════════════════════════════════════
+   ──── DOUBLE DOWN ────
+   1.  {strength} — {the number}
+   ──── FIX ────
+   1.  {fix} — {the specific change}
+   ──── THE PLAN ────
+   Week 1 · Video 1 — {exact title}   ({content type})
+   Week 1 · Video 2 — {exact title}   ({content type})
+   …  (~8 videos on the §22 mix, one per row)
+
+   >> THE ONE MOVE:  {one sentence}
+
+
+────────────────────────────────────────────
+Sources — {live data connection, pulled [date]} · {Studio export [date]} · {public reads}.
+Compliance — Fair Housing checked on every title.  ✓
+Powered by Mike Sherrard Coaching Inc Frameworks
+```
+(Short-Form's dive uses the same shape with its own labels: reels/carousels per format + funnel category,
+hook skip-rate, Instagram/YouTube competitors, the 4-3-2-1 30-day list.)
+
 ### Script
 TITLE/meta → bands for `HOOK · 0:00` (doctrine §5) → `PRIMARY CTA · ~0:45` (§6.2, right after the hook) →
 numbered `1 · LABEL · MM:SS` body sections (3–5, §7) → optional brief mid-reminder → `SECONDARY CTA` (§6.5 —

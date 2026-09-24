@@ -17,6 +17,8 @@ they're redundant with data the system can read live.)
 │                 ├── SEO Package        (Doc — SEO Engine)
 │                 ├── Lead Magnet Map    (Doc — Lead Engine)
 │                 └── Repurposing Pack   (Doc — Repurposing Engine)
+├── Performance/                         (created by the first deep dive)
+│     └── Deep Dive · [Month YYYY]       (Doc — youtube-analytics: the monthly deep dive report, stamped)
 ├── Setup/
 │     ├── YouTube Layer                  (Doc — channel, goal, cadence, pillars, voice; references AI Brain)
 │     └── Channel Page Kit               (Doc — youtube-channel: the paste-by-paste channel-page kit)
@@ -74,7 +76,7 @@ The system is stateless, so it RE-FINDS the structure every time instead of reme
 Every video's docs live together in that one video folder — nothing loose, nothing orphaned.
 
 > Only CONTENT files are saved to Drive (Script, SEO Package, Lead Magnet Map, Repurposing Pack, YouTube
-> Layer, the Channel Page Kit, the YouTube Game Plan, market-report script). Live analysis — research brief, ad-hoc weekly idea
+> Layer, the Channel Page Kit, the YouTube Game Plan, market-report script, the monthly Deep Dive report). Live analysis — research brief, ad-hoc weekly idea
 > lists, analytics read — stays in chat by design; it's regenerated fresh, never stored. (The Game Plan's
 > title backlog IS stored — in the Game Plan doc at the workspace root, house rules #10.) That's the
 > stateless model, not a gap.

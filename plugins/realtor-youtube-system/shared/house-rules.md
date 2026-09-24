@@ -94,8 +94,8 @@ Every output must be something a free chatbot couldn't produce:
 If an output could have come from ChatGPT with no knowledge of *this* agent, it isn't good enough — redo it.
 
 ## 9. The credibility stamp (flagship strategy deliverables)
-The flagship strategy deliverables — the **YouTube Game Plan** and the **Monthly Market Report** — carry a
-credibility stamp, so the agent feels the expertise behind the system (something they couldn't get by
+The flagship strategy deliverables — the **YouTube Game Plan**, the **Monthly Market Report**, and the
+**Monthly Deep Dive report** — carry a credibility stamp, so the agent feels the expertise behind the system (something they couldn't get by
 prompting Claude themselves):
 - A **byline under the title:** `Powered by Mike Sherrard Coaching Inc Frameworks`
 - The **same line as the final footer credit.**

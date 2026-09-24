@@ -17,6 +17,25 @@ Mike's call: students run analytics as a monthly ritual, not a daily habit — s
 - `shortform-deepdive` deleted; its guide moved to `shortform-analytics/references/deepdive-guide.md`;
   all its triggers absorbed; the engine's §7 header updated. Answer-sized-to-the-ask rule prevents a
   quick question from triggering the full consult (offered once when a month has passed, never forced).
+## [0.132.0] — 2026-09-23
+
+### The Monthly Deep Dive lands in YouTube (v0.16.0) + a shared premium report standard (Short-Form v0.15.1)
+Mike's call: analytics is a visible, monthly, "powered by Composio" skill in BOTH plugins — same ritual,
+same report. Built:
+- **`youtube-analytics` rebuilt around THE DEEP DIVE** (new `references/deepdive-guide.md`, 4 parts mirroring
+  Short-Form: channel audit w/ packaging + hook-vs-middle from retention + the funnel leak + cadence vs plan ·
+  competitor outliers by each channel's own median · evidence-backed gaps + starving pillar + new-angle plays
+  · top-3 strengths/fixes + ~8 exact titles on the §22 mix + the one move) and quick reads sized to the ask.
+  New `references/metrics-guide.md` (YouTube metrics → the funnel diagnosis, own-median benchmarks). Live
+  data via engine recipes 1/2/3/5 — the connection's only home; Studio export/screenshots + public reads
+  as fallbacks. Saves to a new `Performance/` folder; seeds `performance.md`; feeds the board window.
+- **Deep Dive Report skeleton** in doc-format (flagship, STAMPED — house-rules #9 now lists it) and the
+  matching §5b shape in Short-Form's output-standard so both dives read as one ritual; Short-Form's report
+  now carries the stamp too.
+- **Renderer:** context-aware table headers (Scorecard / Item-Result / Channel), numbered items no longer
+  swallow sub-bands or cue lines — synced to all 6 plugins. Coach reads the latest dive first.
+- Two broken YAML descriptions (setup, repurpose) fixed. Playbook, deck, and Start Here PDF updated with
+  "Run my deep dive". A SAMPLE deep-dive report (illustrative numbers) rendered for review.
 
 ## [0.131.1] — 2026-09-23
 

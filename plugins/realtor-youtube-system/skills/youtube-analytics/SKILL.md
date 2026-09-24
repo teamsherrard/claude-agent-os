@@ -1,96 +1,137 @@
 ---
 name: youtube-analytics
 description: >
-  YouTube Analytics — the Realtor YouTube System's data skill, powered by the live data connection
-  (Composio). Reads the agent's real YouTube performance and turns it into plain-English insight — what's
-  working, what's not, and WHY (weak title/thumbnail vs weak hook vs mid-video drop-off) — then feeds
-  Ideation and the Coach. Two ways in, never blocked: with the live data connection (one optional sign-in,
-  offered HERE on first use — never at setup) it pulls the channel + per-video numbers automatically; without
-  it, the agent drops their YouTube Studio export or a screenshot and gets the same analysis. This is the
-  ONLY YouTube skill that uses the live data connection. Triggers on "how's my channel doing", "analyze my
-  analytics", "how did my last video do", "review my YouTube stats", "here's my YouTube export", "set up my
-  analytics", "live analytics", "connect my analytics".
+  YouTube Analytics & the Monthly Deep Dive — the Realtor YouTube System's data skill, powered by the live
+  data connection (Composio; one optional sign-in, offered HERE on first use — never at setup), with the
+  agent's YouTube Studio export/screenshots and public channel reads as fallbacks so it's never blocked.
+  THE MAIN EVENT is the monthly DEEP DIVE: the full breakdown of their channel (growth, every video ranked by
+  pillar + content type, packaging + hook/retention read, the funnel leak, cadence), their COMPETITORS
+  (outlier analysis of any public channel), the content GAPS in their market, and a 30-day plan of exact
+  titles — saved as a stamped report and seeded back to the Brain so Ideation and the Coach get smarter.
+  Quick questions work anytime in the same skill ("how did my last video do", "how's my channel doing") —
+  answered at the size of the ask. This is the ONLY YouTube skill that uses the live data connection.
+
+  Trigger on: "run my deep dive", "run my youtube deep dive", "run my analysis", "run my monthly analysis",
+  "audit my channel", "analyze my channel", "full breakdown of my channel", "analyze my competitors",
+  "where do I stand", "how do I compare", "how's my channel doing", "analyze my analytics", "how did my
+  last video do", "review my YouTube stats", "here's my YouTube export", "audit this channel: [link]",
+  "set up my analytics", "live analytics", or any request to analyze YouTube performance or competitors.
 ---
 
-# Analytics
+# YouTube Analytics — the monthly deep dive + any quick question
 
-Know what actually worked — from the agent's real numbers, with zero technical setup. Apply `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
+One skill for all of it. **The ritual is monthly:** the agent runs their deep dive once a month and gets
+the whole picture — their channel, their competitors, the gaps, and the next 30 days. Between dives, any
+quick question gets a quick answer. Never a dashboard; a coach reading the board with them. Apply
+`${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` (plain-warm #7, honesty #6, the stamp #9).
 
-**Applies the YouTube Doctrine** (`${CLAUDE_PLUGIN_ROOT}/shared/youtube-doctrine.md`) — §23 (analytics &
-feedback: what to review §23.1, the key lead question §23.2, the 90-day audit §23.3, classifying videos by
-intent §23.4) and §24.5 (the channel-audit template). The doctrine's rule: **track through to leads &
-conversations, not just views** — and don't overreact to a single video.
+**Applies the YouTube Doctrine** (`${CLAUDE_PLUGIN_ROOT}/shared/youtube-doctrine.md`) — **§23** (what to
+review §23.1 · the key lead question §23.2 · the 90-day audit §23.3 · classify by intent §23.4), **§24.5**
+(the channel-audit template), **§3 "R"** (repeat winners from new angles), **§16–§17** (packaging is
+diagnosable), **§22** (the mix the 30-day plan follows). The rule under all of it: **track through to leads
+and conversations, not views** — and never overreact to a single video.
 
-## How you get the data (best-first — never blocked on anything)
-1. **The live data connection (best)** — if the Composio tools are present in this session, pull the real
-   numbers directly (`${CLAUDE_PLUGIN_ROOT}/shared/composio-data-engine.md`, recipes 1 + 5: channel stats →
-   the upload catalog → per-video views/likes/lengths/dates). READ-ONLY, always — never a write tool.
-   **First use in a session:** warn in plain words RIGHT BEFORE the first call — *"quick one — a permission
-   box will pop up so I can pull your real YouTube numbers; hit Allow and we're set."* Never let the card
-   appear unexplained. If they deny it, fall back to #2 silently and don't re-trigger it this session.
-   **Not connected at all?** Offer it ONCE, in plain words: *"want me to hook into live YouTube data? One
-   sign-in, and from then on I pull your numbers automatically."* Record the answer in the YouTube Layer
-   (`active` / `declined [date]`) and never re-offer. Never during setup or the Game Plan — this skill is
+**Match the size of the answer to the size of the ask:** "run my deep dive" / "audit my channel" / "analyze
+my competitors" / "where do I stand" → **THE DEEP DIVE** (the full monthly consult). A scoped question
+("how did my last video do", "how's my channel doing", "here's my export") → **QUICK READ** — answer that,
+nothing more. If it's been ~a month since the last dive, offer it in one line; never force it.
+
+---
+
+## Step 1 — Load the Brain + pick the data source
+Read `~/realtor-brain/brain.md`, then `identity/profile.md` (channel handle), `identity/strategy.md`
+(**competitors they admire** — the seed list; business goals), `identity/market.md` (communities + local
+terms — scopes the gap search), `identity/offer.md` (CTA, lead magnets — for the leads read),
+`memory/content-log.md` (what each video WAS), `memory/performance.md` (prior subscriber count = growth;
+past winners), plus the **YouTube Layer** + **Game Plan** (the 3 pillars + the calendar — the audit is
+measured against the plan). `~/realtor-brain/` empty? Pull it with realtor-brain-sync first.
+
+**Pick the data source, best-first — never blocked on any one:**
+1. **The live data connection (best)** — if the Composio tools are present, pull the real numbers directly
+   (`${CLAUDE_PLUGIN_ROOT}/shared/composio-data-engine.md`, recipes 1/2/3/5: channel stats → the upload
+   catalog → per-video views/likes/lengths/dates → competitor channels → gap searches). READ-ONLY, always.
+   **First call in a session:** warn in plain words RIGHT BEFORE it — *"quick one — a permission box will
+   pop up so I can pull your real YouTube numbers; hit Allow and we're set."* Denied? Fall to #2 silently,
+   no re-prompts this session. **Not set up?** Offer it ONCE, plainly: *"want me to hook into live YouTube
+   data? One sign-in, and from then on I pull your numbers automatically."* Record the answer in the YouTube
+   Layer (`active` / `declined [date]`); never re-offer; never during setup or the Game Plan — this skill is
    the connection's only home.
-2. **The Studio export / screenshot (always works, and the only source for private depth)** — watch time,
-   CTR, and retention aren't in the public data, so for the deep read walk them through it once:
-   **YouTube Studio → Analytics → Advanced mode → pick the range → Content tab → Export → CSV** — or just
-   a screenshot of the analytics screen; vision reads it fine.
-Plain-talk rule: it's "hook into live data — one sign-in," **never "connect your YouTube channel"** (that
-phrasing makes agents think there's a technical project; real testers froze on it).
+2. **The Studio export / screenshot** — the ONLY source for private depth (CTR, average view duration,
+   retention, traffic sources, search terms). For a deep dive, ask for it once in plain words: *"for the
+   full read, grab a screenshot of YouTube Studio → Analytics → Content (or the export) and drop it here."*
+   (Export path: Studio → Analytics → Advanced mode → range → Content tab → Export → CSV.)
+3. **Public channel reads** — titles, views, lengths, cadence, top performers from the channel link alone.
+   Works on ANY public channel (theirs, a competitor's, a channel a coach is testing on).
+Plain-talk rule: it's "hook into live data — one sign-in," **never "connect your YouTube channel."**
 
-**Works on ANY public channel — including someone else's.** Public reads (titles, views, lengths, cadence,
-top performers) only need a channel LINK — the agent's own, a competitor's, or another agent's channel a
-coach is testing on ("audit this channel: [URL]"). Only the private depth (watch time, CTR, retention) needs
-that channel owner's Studio export or screenshot.
+## Step 2 — Read the metrics + the method
+`references/metrics-guide.md` (what each YouTube metric tells you + the funnel diagnosis) — and for a deep
+dive, **`references/deepdive-guide.md` in full** (the 4-part structure and the pull method).
 
-## Step 1 — Parse what they gave you
-From the CSV(s), per video, review the doctrine's full set (§23.1): views, **impressions + CTR**, **average
-view duration / % viewed**, **retention graph** (where viewers drop), watch time, **traffic sources**,
-**search terms**, comments, and subscribers gained. Compare each video to the channel's own baseline.
+---
 
-**The numbers are only half of it (§23 — track through to leads, not just views).** The CSV can't see who
-booked a call, so ask the agent for it: which videos generated comments, calls, emails, or booked
-appointments — and, the single most important question (§23.2), **"Which video did you watch that made you
-decide to reach out?"** Tell the agent to ask every new lead that, and feed their answers in here. That's the
-real signal — a video with modest views that produces conversations beats a high-view video that produces
-none. (The Lead Engine and the Coach use this too.)
+## THE DEEP DIVE (the main event — run it monthly)
+**Window:** default the last 90 days (a month in = since the last dive). State it in one line, then go.
+**Follow `references/deepdive-guide.md` in full:**
+- **Part 1 — Channel audit:** growth vs. the stored count · every video ranked & tagged by pillar/content
+  type with per-type averages · packaging (CTR/title gates/§17 thumbnails) + hook-vs-middle from
+  retention · **the funnel leak** (views → clicks → watch → CTA → leads, §23.2) · cadence + pillar coverage
+  vs. the plan.
+- **Part 2 — Competitors:** 3–5 channels from the Brain (ask once if thin) → outliers by each channel's own
+  median (small local overperformers count double) → what they do that the agent doesn't → the positioning
+  verdict.
+- **Part 3 — Gaps:** demand + weak/stale/non-local coverage (evidence attached) · the starving pillar ·
+  repeat-from-new-angle plays · packaging fixes worth doing this week.
+- **Part 4 — Synthesis + 30-day plan:** top 3 strengths (with the proving number), top 3 fixes (with the
+  specific change), ~8 exact titles on the §22 mix (title gates apply) with type + week, and the one move.
 
-## Step 2 — Diagnose (the useful part)
-- **Low CTR** → packaging problem (title/thumbnail), not the content.
-- **Good CTR, low % viewed** → hook/pacing problem; note the likely drop point.
-- **Strong across the board** → a proven topic — feed it into Ideation to make more.
-Tie every diagnosis to one concrete next action.
+**Deliver it like a coach:** lead with the 3-sentence verdict — *where they stand, the biggest strength,
+the biggest fix* — then the scannable detail. End by **offering to act:** *"want me to start the first
+video on that plan right now?"* → `youtube-make-video` (new chat). The Coach reads this dive for its
+next session.
 
-**Classify each video by intent, not just performance (§23.4)** — a low-view video can still be a win.
-Sort them into: **awareness** · **trust-building** · **high-intent lead-gen** · **niche-authority** ·
-**underperforming → needs a new title or thumbnail** · **worth repeating from a new angle**. Judge each by
-whether it pulled the *right* intent (and leads), not by views alone. **Don't overreact to a single video**
-(§23) — look for the pattern across the catalog.
+**Save + seed:**
+1. Render the report on the **Deep Dive Report skeleton** (`${CLAUDE_PLUGIN_ROOT}/shared/doc-format.md`) via
+   `render_doc.py` — stamped (house rules #9) — and save as **`Deep Dive · [Month YYYY]`** in the
+   workspace's **`Performance/`** folder (create it the first time; resolve per
+   `${CLAUDE_PLUGIN_ROOT}/skills/youtube-setup/references/drive-structure.md`). Share the link.
+2. **Seed `memory/performance.md`** with a dated block: subscriber count, best content type + pillar, the
+   3 best hooks, the funnel leak, the competitor gap to attack, the 30-day plan's titles. Push to Drive —
+   Ideation reads the winners; the Coach reads the leak.
+3. If they have the **content board**, the 30-day plan's next ~2 weeks become the next cards
+   (`${CLAUDE_PLUGIN_ROOT}/shared/notion-board-spec.md` window rules — dated cards only).
 
-## Step 3 — Output
-A short, plain-English read — **explain each metric in human terms the first time**, benchmark against HER
-own past videos (not generic norms), and on a new/small channel don't over-read 1–2 videos (flag "too early
-to tell"). Top performer + why, weakest + why + the one fix, and 1–2 "do more of this" signals — each tied to
-a real next step. Where leads data exists, name which videos actually drove conversations (§23.2), not just
-views. Feed → **Ideation** (and the **Coach**, when asked). Deliver in chat. Nothing stored.
+## QUICK READ (any scoped question, anytime)
+For "how's my channel doing", "how did my last video do", "here's my export", "audit this channel: [link]":
+1. **Pull only what's asked** from the Step-1 source. Compare each video to the channel's OWN baseline.
+2. **Join to what the video was** (`content-log.md` / the plan) so you talk pillars and hooks, not IDs.
+3. **Diagnose (metrics-guide):** low CTR → packaging · good CTR, low % viewed → hook/pacing · strong
+   across → a proven topic (feed Ideation). Classify by intent (§23.4). Tie every read to one next action.
+4. **Leads over views:** ask which videos produced comments, calls, bookings — and push the §23.2 habit:
+   *"ask every new lead which video made them reach out, and tell me."*
+Deliver in chat; store nothing unless something genuinely notable surfaced (then a short dated block in
+`performance.md`).
 
-## The 90-day audit (§23.3) + channel-audit template (§24.5)
-When there's a real body of work (~90 days / a dozen-plus videos) or the agent asks for the big-picture read,
-run the doctrine's **90-day audit questions (§23.3):** which videos got the most views · highest CTR · best
-retention · most comments · the most **leads** · which were easiest to make / felt most natural · which
-pillars to increase · which topics to repeat from a new angle · which titles + thumbnails performed best.
+---
 
-For a full channel audit, walk the **§24.5 template:** niche clarity · local specificity · pillar balance ·
-search intent · title quality · thumbnail quality · hook strength · **CTA strength** · posting consistency ·
-description optimization · next-video strategy · **lead-conversion path** · 90-day recommendations. (The Coach
-owns the deep on-demand audit — hand off there for the full pass.)
+## How you talk about data
+- **Plain English first.** "Your relocation video did 3× your usual" — never "4,812 vs a 1,600 mean."
+- **Explain each metric the first time** it appears ("click-through rate — how often people who see your
+  thumbnail actually click").
+- **Always say what it means + what to do.** Numbers without a takeaway is a dashboard.
+- **Be honest.** Thin data, a fluke, no Studio export = say so; never invent a benchmark.
+- **Encourage.** YouTube compounds slowly — point at real progress.
 
 ## Scope — analytics is the connection's ONLY home
-The live data connection powers THIS skill and nothing else in the plugin. Setup, the Game Plan, references,
-make-video, comments, the channel page — all run on the classic paths and never touch it (locked after live
-cold-tests: no permission cards during onboarding, ever). The wider engine recipes stay parked for the
-future PRO tier (`shared/composio-data-engine.md`).
+The live data connection powers THIS skill and nothing else. Setup, the Game Plan, references, make-video,
+comments, the channel page — all run on the classic paths and never touch it (locked after live cold-tests).
 
-## Modes
-On-demand, whenever the agent brings fresh stats — monthly is the right cadence for long-form YouTube.
+## Quality checklist
+- [ ] Answer sized to the ask — deep dive only when they asked for the full picture (offered, never forced)
+- [ ] Real numbers only, source labelled; empties called unavailable; the agent's own median is the benchmark
+- [ ] Every video joined to what it WAS (pillar / content type / hook)
+- [ ] Growth computed against the stored count; today's count stored back
+- [ ] DEEP DIVE: all 4 parts · the funnel leak named · 3 best hooks quoted · competitors by their own median ·
+      gaps evidence-backed · ~8 exact titles on the §22 mix passing the title gates · the one move
+- [ ] Report rendered on the skeleton, stamped, saved to Performance/; findings seeded to `performance.md`
+- [ ] Led with the 3-sentence verdict; ended with the offer to start the first video
