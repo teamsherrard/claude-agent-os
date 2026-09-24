@@ -34,7 +34,7 @@ set_captions(editId, expectedRevision,
 
 - Brand caption style from `config.json`'s brand block (`brand.caption`): font (a Riverside family, named with its weight), accent, weight, animation. No standalone `brand.json` (`${CLAUDE_PLUGIN_ROOT}/shared/brand-wiring.md`).
 - Default look: heavy sans, thick outline, white text, the **active word** recoloured in the brand accent. No coloured chips with dark text.
-- **The active-word highlight must be the WORD recoloured — NOT a filled box behind it.** `karaoke` recolours; `karaokeBoxed` / `boxed` / `boxedInverted` put a panel behind the word (the Descript live-test failure where the box hid the word). Use `karaoke`. Verify on a frame that the word is readable.
+- **The active-word highlight must be the WORD recoloured — NOT a filled box behind it.** `karaoke` recolours; `karaokeBoxed` / `boxed` / `boxedInverted` put a panel behind the word (a live-test failure where the box hid the word). Use `karaoke`. Verify on a frame that the word is readable.
 - **Set the accent explicitly** — never a tool default (one preset ships a green `#60FF44`; another a purple).
 - **Contrast is non-negotiable.** White text + outline always carries the caption; the accent is for the active word only.
 - **NEVER over the face — absolute.** Always set `position.y` yourself (≈0.82–0.86). In a split-screen scene (speaker in the top half) push captions to the bottom of the speaker band or use `update_scene_caption_settings` for those scenes.

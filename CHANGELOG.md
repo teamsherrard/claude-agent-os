@@ -2,6 +2,20 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.132.2] — 2026-09-23
+
+### AI Editing Studio 0.4.1 — the marketplace listing catches up; last references to the retired editor scrubbed
+- `.claude-plugin/marketplace.json`: the Studio's listing still said 25 skills and never named Section Map, Rescue
+  Cut or Trailer. It now mirrors `plugins/realtor-riverside-editor/.claude-plugin/plugin.json` (28 skills, five stages).
+- `plugins/realtor-riverside-editor/shared/caption-style.md`, `plugins/realtor-riverside-editor/shared/graphics-style.md`,
+  `plugins/realtor-riverside-editor/shared/brand-wiring.md`, `plugins/realtor-riverside-editor/skills/studio-setup/SKILL.md`:
+  footnotes that still named the retired Descript editor as the place a rule was learned are reworded engine-free.
+  The `default_engine` migration lines in setup and the navigator stay, since an older config can still carry the
+  old value. `plugins/realtor-riverside-editor/README.md` status line added.
+- Verified at HEAD before this patch: tree clean and in sync with origin, gate green, no later commit touched the
+  Studio, blockers 1–16 in order, and the 0.70 audio / visible grade / emotion-driven zooms / stingers / blooper
+  pass / cut-only master / persistence rule present across the doctrine.
+
 ## [0.132.1] — 2026-09-23
 
 ### Renderer: Short-Form plan rows now render as the calendar table (all 6 plugins)

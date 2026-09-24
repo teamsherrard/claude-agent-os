@@ -71,7 +71,7 @@ Keep an agent's card pack and caption look in the same family (`caption-style.md
 **Never assume a zone — LOOK first** (`frame-qa.md`, any rung ≥2) to see where the speaker really sits. Then position with `modify_position` (pixels against the canvas from `settings.canvas`; the text clip's anchor is its TOP-centre — the centring rule above).
 
 ### VERTICAL 9:16 (reels) — reference canvas 360×640 (exports 1080×1920)
-- **Default: pin the card to the extreme TOP edge, above the hairline** — centre at **y ≈ 12–14% of height** (on the 360×640 reference canvas: `positionY ≈ 77–90`, `positionX = 180`; live-tested at 83); just inside the top ~8–10% platform-chrome margin (`layouts.md`). *Tested zone (Descript live).*
+- **Default: pin the card to the extreme TOP edge, above the hairline** — centre at **y ≈ 12–14% of height** (on the 360×640 reference canvas: `positionY ≈ 77–90`, `positionX = 180`; live-tested at 83); just inside the top ~8–10% platform-chrome margin (`layouts.md`). *Live-tested zone.*
 - **Or time it over a B-roll moment** — the safest option in any format.
 - Captions own the bottom (y≈0.84) — a card must never collide with them.
 - **Stay inside the vertical safe zones**: out of the right ~12% icon rail; **centre-align, never flush-right** — shorten the text rather than widen into the rail.

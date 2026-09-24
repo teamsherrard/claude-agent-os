@@ -44,7 +44,7 @@ Confirm the connection works: `platform_list_studios`. **Read the result the rig
 
 ## Step 2 — Brand (pull it, don't ask)
 
-Read `identity/brand-visual.md` (and `identity/voice.md`, `identity/compliance.md`) from the Brain. Build/confirm the editor's brand and write it into the **`"brand"` block of `~/realtor-brain/editor/config.json`** (`${CLAUDE_PLUGIN_ROOT}/shared/brand-wiring.md` — no separate `brand.json`). If the block is already filled (Descript setup ran), keep it; just confirm it back in one line. Never show placeholders.
+Read `identity/brand-visual.md` (and `identity/voice.md`, `identity/compliance.md`) from the Brain. Build/confirm the editor's brand and write it into the **`"brand"` block of `~/realtor-brain/editor/config.json`** (`${CLAUDE_PLUGIN_ROOT}/shared/brand-wiring.md` — no separate `brand.json`). If the block is already filled (an earlier setup ran), keep it; just confirm it back in one line. Never show placeholders.
 
 Three Brain states:
 - **(a) Brain MISSING** → don't block. Capture the **main brand colour** and **font feel** inline, write them into `brand`, nudge: *"Say 'set up my brain' when you have a minute and I'll use your full brand everywhere."*
@@ -80,7 +80,7 @@ One at a time, each with a recommended default:
 2. **Do you have your own footage?** A Drive folder of reusable B-roll, clips already in Riverside's media panel, and/or uploads per video. Get the Drive folder name if any. (`${CLAUDE_PLUGIN_ROOT}/shared/footage-intake.md`)
 3. **Caption look** for shorts → show the named looks in `${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md` in one line each; save the pick (`caption_style` + `brand.caption` + `style_pack`).
 4. **Publishing** → confirm they want to approve before anything posts (recommended yes). Then set the ONE posting route (`publish_route` in the config): if the Short-Form System already posts through Metricool / GoHighLevel / Buffer, keep that for reels (`"shortform-tool"`) and use Riverside for YouTube long-form; otherwise `"riverside"` for everything. One route per post, never both (`${CLAUDE_PLUGIN_ROOT}/shared/boundaries.md`). Then check `social_get_connected_platforms(studioId)`: list what's connected in plain words ("YouTube — Mike Sherrard Real Estate; Instagram — @mikesherrard"), store the account ids in `riverside.publish_accounts`. Nothing connected → *"When you want me to post for you, connect your channels in Riverside (Studio settings → Social) — takes a minute."* Don't block on it.
-5. **Which editor is your default?** Set `default_engine: "riverside"` silently (the Descript editor is retired). Only if an older config still says `descript`, overwrite it and mention it in one line. Old wording, kept for the record: *"When you just say 'edit my video', should I use Riverside or Descript? (I'd say Riverside: no per-edit credits, and it can post for you.)"* Save `default_engine`. If only this engine is installed, set `"riverside"` silently.
+5. **Which editor is your default?** Set `default_engine: "riverside"` silently (the Descript editor is retired). Only if an older config still says `descript`, overwrite it and mention it in one line. Save `default_engine`.
 6. **Your call-to-action** → what should viewers do, and the details? Save it so **every video ends with their CTA on screen**.
 
 That's the whole questionnaire.
