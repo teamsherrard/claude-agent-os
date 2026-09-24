@@ -1,12 +1,15 @@
 ---
 name: youtube-analytics
 description: >
-  The Analytics module for the Realtor YouTube System. Reads the agent's real YouTube performance and turns it
-  into plain-English insight — what's working, what's not, and WHY (weak title/thumbnail vs weak hook vs mid-
-  video drop-off) — then feeds Ideation and the Coach. V1 needs ZERO technical setup: the agent exports their
-  analytics CSV from YouTube Studio and uploads/pastes it; Claude parses and diagnoses it. (The agent never touches an API
-  key or a connector — the export and a screenshot are the whole toolkit.) Triggers on "how's my channel doing", "analyze my analytics", "how
-  did my last video do", "review my YouTube stats", "here's my YouTube export".
+  YouTube Analytics — the Realtor YouTube System's data skill, powered by the live data connection
+  (Composio). Reads the agent's real YouTube performance and turns it into plain-English insight — what's
+  working, what's not, and WHY (weak title/thumbnail vs weak hook vs mid-video drop-off) — then feeds
+  Ideation and the Coach. Two ways in, never blocked: with the live data connection (one optional sign-in,
+  offered HERE on first use — never at setup) it pulls the channel + per-video numbers automatically; without
+  it, the agent drops their YouTube Studio export or a screenshot and gets the same analysis. This is the
+  ONLY YouTube skill that uses the live data connection. Triggers on "how's my channel doing", "analyze my
+  analytics", "how did my last video do", "review my YouTube stats", "here's my YouTube export", "set up my
+  analytics", "live analytics", "connect my analytics".
 ---
 
 # Analytics
@@ -18,16 +21,23 @@ feedback: what to review §23.1, the key lead question §23.2, the 90-day audit 
 intent §23.4) and §24.5 (the channel-audit template). The doctrine's rule: **track through to leads &
 conversations, not just views** — and don't overreact to a single video.
 
-## V1 — how the agent gives you data (dead simple: no API, no keys, no console)
-The agent exports their stats from **YouTube Studio** — a tool they already use — and uploads/pastes the CSV.
-Walk them through it the first time:
-1. **YouTube Studio → Analytics → Advanced mode** (top-right).
-2. Choose the date range (e.g., last 28 or 90 days) and the **Content** tab for per-video rows.
-3. Click **Export → Comma-separated values (.csv)**.
-4. Upload the file here (or paste its contents).
-That's the whole setup. No Google Cloud project, no API key, no OAuth — and **never say "connect your
-YouTube" to the agent** (that word makes them think there's a technical step; real testers froze on it).
-It's just: drop the export here, or share the channel link.
+## How you get the data (best-first — never blocked on anything)
+1. **The live data connection (best)** — if the Composio tools are present in this session, pull the real
+   numbers directly (`${CLAUDE_PLUGIN_ROOT}/shared/composio-data-engine.md`, recipes 1 + 5: channel stats →
+   the upload catalog → per-video views/likes/lengths/dates). READ-ONLY, always — never a write tool.
+   **First use in a session:** warn in plain words RIGHT BEFORE the first call — *"quick one — a permission
+   box will pop up so I can pull your real YouTube numbers; hit Allow and we're set."* Never let the card
+   appear unexplained. If they deny it, fall back to #2 silently and don't re-trigger it this session.
+   **Not connected at all?** Offer it ONCE, in plain words: *"want me to hook into live YouTube data? One
+   sign-in, and from then on I pull your numbers automatically."* Record the answer in the YouTube Layer
+   (`active` / `declined [date]`) and never re-offer. Never during setup or the Game Plan — this skill is
+   the connection's only home.
+2. **The Studio export / screenshot (always works, and the only source for private depth)** — watch time,
+   CTR, and retention aren't in the public data, so for the deep read walk them through it once:
+   **YouTube Studio → Analytics → Advanced mode → pick the range → Content tab → Export → CSV** — or just
+   a screenshot of the analytics screen; vision reads it fine.
+Plain-talk rule: it's "hook into live data — one sign-in," **never "connect your YouTube channel"** (that
+phrasing makes agents think there's a technical project; real testers froze on it).
 
 **Works on ANY public channel — including someone else's.** Public reads (titles, views, lengths, cadence,
 top performers) only need a channel LINK — the agent's own, a competitor's, or another agent's channel a
@@ -76,10 +86,11 @@ search intent · title quality · thumbnail quality · hook strength · **CTA st
 description optimization · next-video strategy · **lead-conversion path** · 90-day recommendations. (The Coach
 owns the deep on-demand audit — hand off there for the full pass.)
 
-## Future PRO tier (parked — not used today)
-A live data connection that auto-pulls the public layer is parked for the PRO version
-(`shared/composio-data-engine.md`). In this version, everything runs on the channel link + the Studio
-export/screenshot — no connections, no permission cards.
+## Scope — analytics is the connection's ONLY home
+The live data connection powers THIS skill and nothing else in the plugin. Setup, the Game Plan, references,
+make-video, comments, the channel page — all run on the classic paths and never touch it (locked after live
+cold-tests: no permission cards during onboarding, ever). The wider engine recipes stay parked for the
+future PRO tier (`shared/composio-data-engine.md`).
 
 ## Modes
 On-demand, whenever the agent brings fresh stats — monthly is the right cadence for long-form YouTube.
