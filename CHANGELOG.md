@@ -6,6 +6,17 @@ All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`
 - `docs/ai-admin-training-deck.md` — the 20-slide copy deck for the cohort training video (Claude
   Design-ready, same format as the Cohort Support deck): the pitch, safety rules, 4-step setup, the
   daily rhythm, all 17 skills with say-this lines, the 5-day test-drive plan, and the trust close.
+## [0.131.1] — 2026-09-23
+
+### YouTube Analytics becomes the packaged live-data skill (YouTube v0.15.0)
+Analytics is now presented as a named skill in both content plugins — "powered by Composio" — while
+onboarding stays connection-free. Short-Form already worked this way; YouTube now matches:
+- `youtube-analytics` = the ONE YouTube skill using the live data connection: best-first data (live pull
+  when connected → Studio export/screenshot otherwise, never blocked), the guided offer-once sign-in
+  living IN the skill, the plain-words heads-up before the session's first permission card, read-only.
+- Engine banner rescoped "PARKED — PRO tier" → "ANALYTICS ONLY"; every other skill stays classic (no
+  onboarding cards, locked). New teachable triggers: "set up my analytics" / "live analytics".
+- (Also corrects a VERSION regression from the prior commit — the repo had advanced to 0.131.0.)
 
 ## [0.131.0] - 2026-09-23
 
