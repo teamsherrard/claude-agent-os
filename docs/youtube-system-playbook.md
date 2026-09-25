@@ -161,8 +161,12 @@ Once a month, the whole picture in one report: **your channel** (every video ran
 best hooks quoted, the single funnel leak), **your competitors** (their outlier videos, what they do that
 you don't), **the gaps** in your market nobody's filling, and **your next 30 days** — 8 exact titles ready
 to film. Saved to your Drive, and it teaches the whole system what worked.
-- First time: it offers the live data sign-in — one click, one time. Say yes and it pulls your real
-  numbers automatically from then on. (Or just drop a screenshot from YouTube Studio — that works too.)
+- **One time, before your first dive (2 minutes):** in Claude, click Customize → Connectors → + → Add
+  custom connector. Name it **Composio**, paste **https://connect.composio.dev/mcp**, click Connect, approve
+  in the browser window. That's what lets it read your real numbers. Setup never asks for this.
+- First time you run the dive: it asks "want me to hook into live YouTube data?" — say yes, click the
+  sign-in link it gives you, log into your YouTube account, come back and say "done." From then on it pulls
+  your numbers automatically. (Or just drop a screenshot from YouTube Studio — that works too.)
 
 ### `"How's my channel doing?"` — the quick read, anytime
 Your numbers in plain English — every metric explained the first time, compared against YOUR past videos,

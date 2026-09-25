@@ -22,9 +22,16 @@ search/trends/news stack.
   first call in a session may pop a one-time permission card — warn the agent in plain words RIGHT
   BEFORE it:** *"quick one — a permission box will pop up so I can pull live data; hit Allow and we're
   set."* Never let the card appear unexplained.
-- **NEVER call the connection-management tool** (listing, adding, or checking connections) — availability
-  = the toolkit's tools being present, nothing more. If they aren't there, or the agent denies the card,
-  fall back to the classic paths silently and completely — never nag, never re-trigger the card in that
+- **Availability has two parts — and only the analytics skill may act on the second.** (1) The Composio
+  tools are present in the session: the agent added the Composio connector in Claude once (Customize → Connectors → **+** → Add custom connector → name `Composio`, URL `https://connect.composio.dev/mcp` → Connect → approve in the browser; it's in the cohort install guide and the support desk, FAQ Q17a). No tools → classic paths, silently. (2) The toolkits have an
+  **active connection** — the agent signed into Instagram (a Business/Creator account) and YouTube through it.
+  The search/execute response says when they don't ("no active connection"): that is the ONE moment for the
+  offer-once sign-in, and **only `shortform-analytics` may make it** — `COMPOSIO_MANAGE_CONNECTIONS` with
+  `{"toolkits":[{"name":"instagram","action":"add"},{"name":"youtube","action":"add"}]}` → show both returned
+  links as markdown links → the agent logs in and says "done" → `action: "list"` to confirm `active` → pull.
+  **Every other skill, and setup above all, never calls the connection tool** — not to add, not to list, not
+  to "check"; an unexplained permission card mid-onboarding is exactly what confused agents in cold tests.
+  Card denied or offer declined → classic paths silently and completely — never nag, never re-trigger it that
   session.
 
 ## HARD RULES (read before any call)
@@ -157,10 +164,13 @@ are the two connected short-form surfaces; TikTok/Facebook are optional, shallow
   `YOUTUBE_GET_VIDEO_DETAILS_BATCH`. **An outlier = a video whose views are a multiple of its own channel's
   median** — a small local channel overperforming counts double (that's a topic that works *locally*, not just
   a big channel being big). Same outlier logic as recipe #2.
-- **Instagram — surface only:** `INSTAGRAM_GET_USER_INFO` via the **business_discovery** edge (competitor
-  username) → their follower_count + recent public media (likes/comments are visible). You **cannot** see a
-  competitor's reach, saves, or watch-time — those are private. Read their public engagement and what
-  topics/hooks they post; never present it as their "analytics."
+- **Instagram — NOT through the connection.** The toolkit runs on Instagram Login (`graph.instagram.com`),
+  which has no business_discovery edge, and `INSTAGRAM_GET_USER_INFO` only reads accounts the agent manages —
+  arbitrary public accounts cannot be queried (verified against the live toolkit 2026-09-25). Competitor
+  Instagram is a **manual glance, not a pull**: the agent opens the public profile (or drops screenshots) and
+  you read what's visible — follower count, posting pace, format mix, hook styles, which posts beat their own
+  usual likes/comments. Label it as a glance, never as their "analytics"; you cannot see reach, saves, or
+  watch-time.
 - **TikTok — not programmatic:** the API is authenticated-user-only, so competitor TikTok is a manual glance,
   not a pull. Say so; don't fake it.
 - **Content-gap read** (what locals search, who ranks, where the opening is) reuses recipe #3's logic with

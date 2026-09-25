@@ -86,14 +86,21 @@ Notion, always optional).
   member saying "it didn't send my email" is usually the approval step working as designed.
 
 ### Plugin 3 — YouTube System
-- Depends on: Brain + Google Drive (Videos folders). Notion optional (board). Analytics V1 = the
-  member's CSV export from YouTube Studio — no API key, no YouTube connection needed.
+- Depends on: Brain + Google Drive (Videos folders). Notion optional (board). Analytics
+  (`youtube-analytics`: the monthly deep dive + quick reads) runs on the member's YouTube Studio
+  screenshot/export by default; the optional **Composio connector** (FAQ Q17a: Customize → Connectors →
+  + → Add custom connector → `https://connect.composio.dev/mcp`) plus a YouTube sign-in offered INSIDE
+  that skill unlocks live numbers. Never at setup — "it never offered the sign-in" = the connector isn't
+  added in their Claude.
 - House rhythm: **one chat = one video** (`youtube-make-video` in a fresh chat). Members who cram
   five videos into one chat hit the full-chat wall — that's the fix, not a bug report.
 
 ### Plugin 4 — Short-Form System
 - Depends on: Brain. Publishing = **bring-your-own** (Metricool default, or GoHighLevel / Buffer /
   manual) — wired in `shortform-setup`.
+- Analytics (`shortform-analytics`: the monthly deep dive + quick reads): same Composio connector as
+  Plugin 3 (FAQ Q17a); the skill itself offers the Instagram (Business/Creator account required) +
+  YouTube sign-in. Competitor Instagram/TikTok are by hand — no data feed exists for other accounts.
 - Known modes: publish/analytics skills failing usually = posting tool not connected or its login
   expired → re-run `shortform-setup`. Nothing auto-posts; approval is always the last gate.
 
@@ -132,6 +139,7 @@ Notion, always optional).
 | "Brain missing" on a machine that had it | Fresh Cowork desk; Drive copy is fine | `realtor-brain-sync` pull |
 | Claude can't read a folder (often Downloads/Desktop on Mac) | The Mac protects those folders per-app | Diagnostics tree #7 (grant access once / use the brain folder) |
 | Connector "connected" but reads fail | Expired login or wrong Google account | Diagnostics tree #2 |
+| "It never offered the live data sign-in" (deep dive) | The Composio connector isn't added in their Claude — or they declined once (recorded, never re-asked) | FAQ Q17a |
 | "Nothing happened when I typed it" | Plugin not installed, or phrasing missed the trigger | Diagnostics tree #3 (exact phrases live in this file) |
 | Docs come out unstyled/ugly | Deliverables render via the shared styled-doc pipeline | Log as bug via `support-escalate` if a skill delivered plain text |
 | A skill wants a tool the member skipped (Notion, Metricool, Higgsfield…) | Bring-your-own tools are optional by design | Offer the setup skill for that tool, or the manual path |

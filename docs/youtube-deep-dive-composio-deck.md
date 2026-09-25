@@ -49,23 +49,28 @@ numbers. This reads them like a coach would.
 
 ## SLIDE 3 — How it works: the live data connection
 
-**LAYOUT:** A three-step strip across the top (question → sign-in → allow). Three short rules underneath.
+**LAYOUT:** A small boxed "one time" install callout at the top, then a three-step strip (question → link →
+allow). Three short rules underneath.
 
 **ON SLIDE:**
 ## Where the numbers come from
 **Composio** is the connection that lets Claude read your real YouTube numbers — the ones in YouTube Studio.
-**What you'll see — the first time only:**
+**One time, before your first dive (2 minutes):** in Claude, click Customize → Connectors → + → Add custom
+connector. Name: **Composio**. URL: **https://connect.composio.dev/mcp**. Click Connect, approve in the browser.
+**Then, the first time you run the dive:**
 1. A question in chat: *"want me to hook into live YouTube data?"* → say yes
-2. A Google sign-in window → log into your YouTube account
+2. A sign-in link appears → click it, log into your YouTube account, come back and say "done"
 3. A small "Allow" box may pop up before it pulls data → click Allow
 **Read-only.** It can look at your channel. It can never post, edit, or change anything.
 **Never at setup.** It only comes up here, when you run the dive.
 **Say no?** Nothing breaks — drop in a YouTube Studio screenshot instead.
 
-**SAY:** You never open Composio. You never see a dashboard. It's plumbing. Once — yes, sign in, allow —
-and from then on it pulls your numbers by itself. If a box pops up asking to allow it, that's normal:
-click Allow and keep going. It's read-only, so nothing on your channel ever changes without your hands on
-the keyboard. And if you'd rather not sign in at all, that's fine — a screenshot from Studio does the job.
+**SAY:** Two minutes, once: add the Composio connector in Claude — the exact clicks are on this slide and in
+your playbook. After that you never open Composio again. The first time you run the dive, it asks. Say yes,
+click the link, log into YouTube, come back and say "done." From then on it pulls your numbers by itself. If
+a box pops up asking to allow it, that's normal: click Allow. It's read-only, so nothing on your channel ever
+changes without your hands on the keyboard. And if you'd rather not sign in at all, that's fine — a
+screenshot from Studio does the job.
 
 ---
 

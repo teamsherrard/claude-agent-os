@@ -64,11 +64,14 @@ Per competitor: `YOUTUBE_GET_CHANNEL_ID_BY_HANDLE` → `YOUTUBE_GET_CHANNEL_STAT
 - Their top ~10 short-form topics + hook styles, posting cadence, and format mix.
 - **What they do that the agent doesn't** — the transferable moves.
 
-### 2b. Instagram competitors — surface (business_discovery)
-Per competitor username via `INSTAGRAM_GET_USER_INFO` (business_discovery edge): follower_count + recent public
-media (likes/comments visible). Read their format mix, hook styles, topics, cadence, and which posts beat
-*their own* average. **Be honest:** you cannot see a competitor's reach, saves, or watch-time — never present
-their public engagement as their "analytics."
+### 2b. Instagram competitors — by hand (a glance, not a pull)
+The live connection cannot read other people's Instagram accounts (its Instagram toolkit runs on Instagram
+Login, which has no business-discovery edge — verified against the live toolkit 2026-09-25). So competitor
+Instagram is a **glance, not a pull**: ask the agent to open each competitor's public profile (or drop
+screenshots of it) and read what's visible — follower count, posting pace, format mix, hook styles, topics,
+and which posts beat *their own* usual likes/comments. **Be honest:** label it as a public-profile glance;
+you cannot see their reach, saves, or watch-time, and never present it as their "analytics." (A competitor's
+YouTube channel, if they have one, IS a full pull — see 2a.)
 
 ### 2c. TikTok — manual glance
 The API is authenticated-user-only, so competitor TikTok can't be pulled. If the agent cares, they eyeball 2–3

@@ -174,6 +174,23 @@ can change from here, and nothing you did wrong:
 
 Say "escalate this" and we'll do the letter.
 
+**Q17a. How do I hook up live YouTube / Instagram data for the monthly deep dive?**
+Two small steps, once — and neither happens during setup (setup never asks):
+
+1. **Add the Composio connector in Claude (2 minutes):** Customize → Connectors → the **+** → **Add custom
+   connector** → name it **Composio**, paste **https://connect.composio.dev/mcp**, click **Connect**, approve
+   in the browser window that opens. Same clicks on the web, the desktop app, and Cowork.
+2. **Sign in when the deep dive offers it:** say "run my deep dive" in the YouTube or Short-Form system.
+   The first time, it asks *"want me to hook into live data?"* — say yes, click the sign-in link it gives
+   you (YouTube; in Short-Form, Instagram too — a Business or Creator account), log in, come back and say
+   "done." A small "Allow" box may pop up before the first pull — click Allow.
+
+From then on it pulls their real numbers automatically. Said no, or skipped the connector? Nothing breaks —
+the dive runs on a YouTube Studio screenshot (or Instagram insights screenshots) instead. **"It never
+offered the sign-in"** almost always means step 1 wasn't done. Under 1,000 Instagram followers = Instagram
+holds back per-post numbers; screenshots cover it. It's read-only: it can never post, reply, or change
+anything.
+
 ## The system
 
 **Q18. I typed the phrase and nothing happened.**

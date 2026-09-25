@@ -2,6 +2,34 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.133.0] — 2026-09-25
+
+### Live data connection — the sign-in can actually happen now (YouTube 0.17.0 · Short-Form 0.16.0 · Cohort Support 0.2.12)
+A readiness audit against the live Composio toolkits (run on Mike's own connected YouTube + Instagram accounts)
+found three blockers. All fixed:
+- **Sign-in flow.** The engine rule banned the connection tool outright — but that tool is the only thing
+  that produces the sign-in link, so a student saying "yes" got a silent screenshot fallback while the decks
+  promised a sign-in window. New rule in `shared/composio-data-engine.md` (both plugins): availability =
+  Composio tools present AND an active toolkit connection; when the response says "no active connection",
+  ONLY `youtube-analytics` / `shortform-analytics` may run the offer-once flow — `COMPOSIO_MANAGE_CONNECTIONS`
+  add → link in chat → "done" → list to confirm → pull. Setup and every other skill still never touch it.
+  Both analytics skills spell out the yes / no / no-connector branches; the no-connector branch points to the
+  install guide once and moves on to screenshots.
+- **The connector install step students were never given.** Deck slide 3 in both Composio decks, playbook
+  page 8, the Start Here one-pager, and the support desk (FAQ Q17a, stack-map dependency lines for Plugins 3
+  + 4, a triage row for "it never offered the sign-in") now carry the one-time path from Composio's own Claude
+  guide: Customize → Connectors → + → Add custom connector → `Composio` / `https://connect.composio.dev/mcp` →
+  Connect → approve in the browser.
+- **Instagram competitors are a glance, not a pull.** Composio's Instagram toolkit runs on Instagram Login —
+  no business_discovery edge, and `INSTAGRAM_GET_USER_INFO` reads only accounts the agent manages (verified
+  live). Engine §7 C, the Short-Form deep-dive guide 2b, the skill's Part 2, the Short-Form deck (slides 4 +
+  7) and the sample report now say competitor Instagram/TikTok are read by hand from the public profile or
+  screenshots; competitor YouTube stays a full pull.
+- Verified live 2026-09-25: channel stats + uploads (YouTube); profile, media list, media insights incl.
+  `ig_reels_avg_watch_time` + `reels_skip_rate`, account reach / profile views, follower cities (Instagram).
+  Per-post Instagram counts come only from the insights call — the media list returns none (as the engine
+  already assumed). Still untested: the Cowork end-to-end run, DMs as a lead proxy, accounts under 1,000.
+
 ## [0.132.3] — 2026-09-24
 
 ### AI Editing Studio 0.4.2 — setup names the likely cause of an opaque kit file

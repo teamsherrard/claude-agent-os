@@ -54,9 +54,24 @@ Brain lives in their cloud workspace, located by ID/marker); only if the cloud h
      present, prefer it for organic IG/YT reads. **Read
      `${CLAUDE_PLUGIN_ROOT}/shared/composio-data-engine.md` §7** for the exact recipes, metrics, and
      account gates (Business/Creator IG, ≥1,000 followers for per-media insights, YT gives counts not
-     watch-time). READ-ONLY — never a write/DM/comment tool. Not set up? For a deep dive, say plainly that
-     the full version (especially competitors + retention) needs it and **offer the one-time sign-in**;
-     meanwhile do what Metricool + screenshots allow — never block, never fabricate.
+     watch-time). READ-ONLY — never a write/DM/comment tool. **Tools present but no sign-in yet** (the
+     search/execute response says "no active connection")? For a deep dive, say plainly that the full
+     version (retention + audience + competitor YouTube) needs it, and offer the one-time sign-in ONCE:
+     *"want me to hook into your live Instagram and YouTube data? One sign-in each, and from then on I pull
+     your numbers automatically."*
+     - **Yes** → the ONE place the connection tool is allowed: `COMPOSIO_MANAGE_CONNECTIONS` with
+       `{"toolkits":[{"name":"instagram","action":"add"},{"name":"youtube","action":"add"}]}` → put both
+       returned links in your reply as markdown links (*"click each and log in — Instagram has to be a
+       Business or Creator account — then come back and say 'done'"*) → on "done", call it again with
+       `action: "list"` and confirm `active` → pull. Note `Live data: active [date]` at the top of
+       `memory/performance.md`.
+     - **No / not now** → note `Live data: declined [date]` there; never re-offer; do what Metricool +
+       screenshots allow.
+     - **Tools not present at all** (no Composio connector in their Claude) → say it once, plainly: *"the
+       full live version needs the 2-minute connector step from your install guide (say 'help' for it) —
+       for now, drop screenshots of your Instagram insights and I'll run it on those."* Never nag.
+     Never during setup, never a bare "list" just to check — this skill is the connection's only home.
+     Never block, never fabricate.
   2. **Metricool** — one call covers all platforms, plus **ads** and best-time. **"Analyze my ads" always
      comes from here** (spend, reach, cost-per-result — the live connection doesn't do ad spend).
   3. **GoHighLevel** — its social statistics, if that's their tool.
@@ -78,9 +93,10 @@ you're using, in one line, then go.
 - **Part 1 — Account audit:** growth & audience (incl. the locals-vs-agents demographics read), the full
   content inventory ranked & tagged (per-format / per-funnel-category averages), hook + reel-retention
   analysis (real watch-time/skip-rate — name the 3 best hooks verbatim), **the funnel leak**, cadence.
-- **Part 2 — Competitor breakdown:** YouTube deep (outlier analysis), Instagram surface
-  (business_discovery, honestly labelled), TikTok noted as manual — and the positioning verdict. Seed
-  competitors from `strategy.md`; fewer than 3 → ask once for a couple of handles.
+- **Part 2 — Competitor breakdown:** YouTube deep (outlier analysis — the only competitor data the connection
+  can pull), Instagram + TikTok by hand (a public-profile glance or the agent's screenshots, labelled as a
+  glance, never as their analytics) — and the positioning verdict. Seed competitors from `strategy.md`; fewer
+  than 3 → ask once for a couple of handles.
 - **Part 3 — Gaps & opportunities:** content gaps backed by evidence (real demand + weak/stale/non-local
   coverage), format and trend openings.
 - **Part 4 — Synthesis + the 30-day plan:** top 3 strengths, top 3 fixes, and a concrete 4-3-2-1-balanced

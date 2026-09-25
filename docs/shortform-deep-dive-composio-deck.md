@@ -49,15 +49,17 @@ the findings back into your Brain.
 
 ## SLIDE 3 — How it works: the live data connection
 
-**LAYOUT:** A three-step strip across the top (question → sign-in → allow). Rules underneath; the
-Instagram note as a small callout.
+**LAYOUT:** A small boxed "one time" install callout at the top, then a three-step strip (question → links →
+allow). Rules underneath; the Instagram notes as a small callout.
 
 **ON SLIDE:**
 ## Where the numbers come from
 **Composio** is the connection that lets Claude read your real Instagram and YouTube numbers.
-**What you'll see — the first time only:**
+**One time, before your first dive (2 minutes):** in Claude, click Customize → Connectors → + → Add custom
+connector. Name: **Composio**. URL: **https://connect.composio.dev/mcp**. Click Connect, approve in the browser.
+**Then, the first time you run the dive:**
 1. A question in chat: *"want me to hook into your live data?"* → say yes
-2. A sign-in window for Instagram, then YouTube → log in
+2. Two sign-in links appear — Instagram and YouTube → click each, log in, come back and say "done"
 3. A small "Allow" box may pop up before it pulls data → click Allow
 **Read-only.** It reads your accounts. It never posts, replies, DMs, or changes anything.
 **Never at setup.** It only comes up here, when you run the dive.
@@ -65,11 +67,13 @@ Instagram note as a small callout.
 **Under 1,000 followers?** Instagram holds back the per-post numbers. The report says so and reads a
 screenshot of your Instagram insights instead — you still get the full dive.
 
-**SAY:** You never open Composio. Once — yes, sign in, allow — and from then on it pulls your numbers by
-itself. If a box pops up asking to allow it, that's normal: click Allow. Two things to know about
-Instagram. It only shares data for Business or Creator accounts — if you're on a personal account, switch
-it; it's free and takes a minute. And under a thousand followers, Instagram won't hand over per-post
-numbers yet — so you drop in a screenshot from your insights, and the report is just as complete.
+**SAY:** Two minutes, once: add the Composio connector in Claude — the exact clicks are on this slide and in
+your playbook. After that you never open Composio again. The first time you run the dive, it asks; say yes,
+click the two links, log in, come back and say "done." From then on it pulls your numbers by itself. If a
+box pops up asking to allow it, that's normal: click Allow. Two things to know about Instagram. It only
+shares data for Business or Creator accounts — if you're on a personal account, switch it; it's free and
+takes a minute. And under a thousand followers, Instagram won't hand over per-post numbers yet — so you
+drop in a screenshot from your insights, and the report is just as complete.
 
 ---
 
@@ -86,7 +90,7 @@ numbers yet — so you drop in a screenshot from your insights, and the report i
 - **Who your audience is** — age, gender, and which cities
 - DMs started — counted, if you allow messages
 **YouTube Shorts (live):** views, likes, subscribers, growth
-**Competitors:** YouTube in full · Instagram at the surface · TikTok by hand (no data)
+**Competitors:** YouTube in full · Instagram and TikTok by hand (their public profiles — nobody gets a data feed on other people's accounts)
 **Also:** Metricool for ad results and best posting times · a screenshot works for anything else
 
 **SAY:** Two numbers here change everything. Skip rate — how many people swiped away in the first
@@ -149,7 +153,7 @@ asked for anything — put the ask on the last slide."
 ## Competitors
 - 3 to 5 accounts in your market
 - **YouTube: deep** — their outlier videos, 3×, 5×, 10× their own normal
-- **Instagram: surface** — followers, posting pace, what's public (labelled honestly)
+- **Instagram and TikTok: by hand** — open their public profile (or drop screenshots); it reads followers, posting pace, formats, hooks — labelled as a glance, never as their analytics
 - What they do that you don't — and what you do better
 **EXAMPLE:** *"Austin Home Pro — 4,800 followers. His 'new construction incentives RIGHT NOW' Short did
 38,000 — 11× his normal. Incentive and comparison topics work in your market."*
@@ -160,9 +164,10 @@ asked for anything — put the ask on the last slide."
 **EXAMPLE:** *"'Things to do in Austin this weekend' — nobody local posts it weekly, and it's the format that
 pulls locals, not agents."*
 
-**SAY:** We're honest about depth. YouTube lets us read competitors fully. Instagram only shows the
-surface for other accounts, so we say that. TikTok gives no data at all — that's a manual glance. What we
-can prove, we prove. What we can't, we label. And the gaps aren't opinions — they come with the evidence
+**SAY:** We're honest about depth. YouTube lets us read competitors fully — that's real data. Instagram
+and TikTok don't hand out other people's numbers to anyone, so those are a glance at the public profile —
+you open it or drop a screenshot, and the report says exactly that. What we can prove, we prove. What we
+can't, we label. And the gaps aren't opinions — they come with the evidence
 attached.
 
 ---

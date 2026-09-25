@@ -52,10 +52,20 @@ measured against the plan). `~/realtor-brain/` empty? Pull it with realtor-brain
    catalog → per-video views/likes/lengths/dates → competitor channels → gap searches). READ-ONLY, always.
    **First call in a session:** warn in plain words RIGHT BEFORE it — *"quick one — a permission box will
    pop up so I can pull your real YouTube numbers; hit Allow and we're set."* Denied? Fall to #2 silently,
-   no re-prompts this session. **Not set up?** Offer it ONCE, plainly: *"want me to hook into live YouTube
-   data? One sign-in, and from then on I pull your numbers automatically."* Record the answer in the YouTube
-   Layer (`active` / `declined [date]`); never re-offer; never during setup or the Game Plan — this skill is
-   the connection's only home.
+   no re-prompts this session. **Tools present but no YouTube sign-in yet** (the search/execute response says
+   "no active connection")? Offer it ONCE, plainly: *"want me to hook into live YouTube data? One sign-in, and
+   from then on I pull your numbers automatically."*
+   - **Yes** → the ONE place the connection tool is allowed: `COMPOSIO_MANAGE_CONNECTIONS` with
+     `{"toolkits":[{"name":"youtube","action":"add"}]}` → put the returned link in your reply as a markdown
+     link (*"click this, log into the YouTube account you film on, then come back and say 'done'"*) → on
+     "done", call it again with `action: "list"` and confirm the account shows `active` → pull. Record
+     `active` in the YouTube Layer.
+   - **No / not now** → record `declined [date]` in the YouTube Layer; never re-offer; carry on with #2/#3.
+   - **Tools not present at all** (no Composio connector in their Claude) → say it once, plainly: *"the full
+     live version needs the 2-minute connector step from your install guide (say 'help' for it) — for now,
+     drop a Studio screenshot and I'll run it on that."* Then #2/#3. Never nag.
+   Never during setup or the Game Plan, never a bare "list" just to check — this skill is the connection's
+   only home.
 2. **The Studio export / screenshot** — the ONLY source for private depth (CTR, average view duration,
    retention, traffic sources, search terms). For a deep dive, ask for it once in plain words: *"for the
    full read, grab a screenshot of YouTube Studio → Analytics → Content (or the export) and drop it here."*
