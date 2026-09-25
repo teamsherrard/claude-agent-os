@@ -36,7 +36,7 @@ other** — sync the shared recipes only.
   RIGHT BEFORE it:** *"quick one — a permission box will pop up so I can pull real YouTube numbers; hit
   Allow and we're set."* Never let the card appear unexplained.
 - **Availability has two parts — and only the analytics skill may act on the second.** (1) The Composio
-  tools are present in the session: the agent added the Composio connector in Claude once (Customize → Connectors → **+** → Add custom connector → name `Composio`, URL `https://connect.composio.dev/mcp` → Connect → approve in the browser; it's in the cohort install guide and the support desk, FAQ Q17a). No tools → classic paths, silently. (2) The toolkit has an
+  tools are present in the session: the agent added the Composio connector in Claude once (Customize → Connectors → **+** → Add custom connector → name `Composio`, URL `https://connect.composio.dev/mcp` → Connect → approve in the browser; it's in the cohort install guide and the support desk, FAQ Q17a). No tools → the analytics skill's **connector check (its Step 0)** tells the agent plainly, in chat, how to add it — the exact clicks — and offers the screenshot path meanwhile; a deep dive never fails silently. Every other skill stays silent. (2) The toolkit has an
   **active connection** — the agent signed into YouTube through it. The search/execute response says when it
   doesn't ("no active connection"): that is the ONE moment for the offer-once sign-in, and **only
   `youtube-analytics` may make it** — `COMPOSIO_MANAGE_CONNECTIONS` with

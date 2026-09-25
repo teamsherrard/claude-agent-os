@@ -156,7 +156,7 @@ Your monthly market update video, built to record: the deck you screen-share, wi
 every slide. Data sourced and dated — never invented. The highest-leverage video most agents never make;
 here it's 20 minutes a month. *(Have the Monthly Market System plugin? It runs your whole month instead.)*
 
-### `"Run my deep dive"` — the monthly ritual (YouTube Analytics, powered by the live data connection)
+### `"Run my YouTube deep dive"` — the monthly ritual (YouTube Analytics, powered by the live data connection)
 Once a month, the whole picture in one report: **your channel** (every video ranked, what's pulling, your 3
 best hooks quoted, the single funnel leak), **your competitors** (their outlier videos, what they do that
 you don't), **the gaps** in your market nobody's filling, and **your next 30 days** — 8 exact titles ready
@@ -164,6 +164,7 @@ to film. Saved to your Drive, and it teaches the whole system what worked.
 - **One time, before your first dive (2 minutes):** in Claude, click Customize → Connectors → + → Add
   custom connector. Name it **Composio**, paste **https://connect.composio.dev/mcp**, click Connect, approve
   in the browser window. That's what lets it read your real numbers. Setup never asks for this.
+  Skipped it? The dive notices, gives you these exact clicks in chat, and can run on a screenshot meanwhile.
 - First time you run the dive: it asks "want me to hook into live YouTube data?" — say yes, click the
   sign-in link it gives you, log into your YouTube account, come back and say "done." From then on it pulls
   your numbers automatically. (Or just drop a screenshot from YouTube Studio — that works too.)
@@ -248,7 +249,7 @@ own idea is first in line.
 | "Competition analysis" | The proven-topics recreate list |
 | "Audit this channel: [link]" | Honest breakdown of any channel |
 | "Market report" | The monthly deck + talking points |
-| "Run my deep dive" *(monthly)* | The full report: channel, competitors, gaps, next 30 days |
+| "Run my YouTube deep dive" *(monthly)* | The full report: channel, competitors, gaps, next 30 days |
 | "How's my channel doing?" | The quick read, in plain English, tracked to leads |
 | "Coach me" / "I'm not getting views" | The win, the one fix, the next action |
 | "Plan my filming day" | Batch filming order + calendar block |

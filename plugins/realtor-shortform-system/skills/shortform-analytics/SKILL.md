@@ -10,7 +10,8 @@ description: >
   seeded back to the Brain so every workflow gets smarter. Quick questions work anytime in the same skill
   ("how did this post do", "analyze my ads", "how's my follower growth") — answered at the size of the ask.
 
-  Trigger on: "run my deep dive", "run my analysis", "run my monthly analysis", "analyze my short form",
+  Trigger on: "run my social media deep dive" (the headline command), "run my short-form deep dive", "run my
+  instagram deep dive", "run my deep dive", "run my analysis", "run my monthly analysis", "analyze my short form",
   "audit my short form", "full breakdown of my content", "analyze my competitors", "competitor analysis",
   "where do I stand", "how do I compare to other agents", "analyze my posts", "analyze my last [N] posts",
   "analyze my ads", "how did my reels do", "how's my account doing", "what's my data", "my best post",
@@ -28,13 +29,30 @@ quick question gets a quick answer. Never a dashboard; a coach reading the board
 (`${CLAUDE_PLUGIN_ROOT}/shared/advisor-playbook.md`): interpret, don't dump. Every read ends with a plain
 takeaway and a recommendation.
 
-**Match the size of the answer to the size of the ask:** "run my deep dive" / "run my analysis" / "audit
+**Match the size of the answer to the size of the ask:** "run my social media deep dive" / "run my deep dive" / "run my analysis" / "audit
 my short form" / "analyze my competitors" / "where do I stand" → **THE DEEP DIVE** (the full monthly
 consult). A scoped question ("how did this post do", "analyze my ads", "how's my growth", "run my 2-week
 review") → **QUICK READ** — answer exactly that, nothing more. When in doubt and it's been ~a month since
 the last dive, offer the dive in one line; never force it.
 
 ---
+
+## Step 0 — The connector check (every deep dive, before anything else)
+A deep dive must never fail quietly. Before reading the Brain, look at the tools you actually have in this
+session:
+- **No Composio tools at all** (nothing named `COMPOSIO_…`) → the agent hasn't added the connector to their
+  Claude. Say so plainly, with the exact clicks, give them the choice — then stop and wait:
+  > "Quick check before we dive in — your Claude doesn't have the Composio connector yet, so I can't pull your
+  > live Instagram and YouTube numbers. It's a one-time, 2-minute step:
+  > 1. In Claude, click **Customize** → **Connectors** → **+** → **Add custom connector**
+  > 2. Name: **Composio** · URL: **https://connect.composio.dev/mcp**
+  > 3. Click **Connect**, approve in the browser window, then come back here and say **'run my social media
+  > deep dive'** again — I'll hand you the Instagram and YouTube sign-in links next.
+  > Or, if you'd rather skip it for now: drop screenshots of your Instagram insights (and YouTube Studio if you
+  > post Shorts) and I'll run the dive on those."
+  Once per deep dive (a quick read gets a one-line version of it); never nag; never during setup.
+- **Composio tools present, but no active Instagram/YouTube connection** → the offer-once sign-in in Step 1.
+- **Present and active** → carry on; nothing to say.
 
 ## Step 1 — Load the Brain + pick the data source
 **If `~/realtor-brain/` is empty** (fresh session/project), pull it first with **realtor-brain-sync** (the
@@ -67,9 +85,8 @@ Brain lives in their cloud workspace, located by ID/marker); only if the cloud h
        `memory/performance.md`.
      - **No / not now** → note `Live data: declined [date]` there; never re-offer; do what Metricool +
        screenshots allow.
-     - **Tools not present at all** (no Composio connector in their Claude) → say it once, plainly: *"the
-       full live version needs the 2-minute connector step from your install guide (say 'help' for it) —
-       for now, drop screenshots of your Instagram insights and I'll run it on those."* Never nag.
+     - **Tools not present at all** → Step 0 already gave them the clicks; if they chose to continue now,
+       Metricool + screenshots.
      Never during setup, never a bare "list" just to check — this skill is the connection's only home.
      Never block, never fabricate.
   2. **Metricool** — one call covers all platforms, plus **ads** and best-time. **"Analyze my ads" always

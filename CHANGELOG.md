@@ -2,6 +2,20 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.133.1] — 2026-09-25
+
+### Deep dive: the connector check + specific commands (YouTube 0.17.1 · Short-Form 0.16.1 · Cohort Support 0.2.13)
+- **Step 0 — the connector check** in `youtube-analytics` and `shortform-analytics`: before anything else, a
+  deep dive checks whether the Composio tools are in the session. Missing → it says so in chat with the exact
+  clicks (Customize → Connectors → + → Add custom connector → `Composio` / `https://connect.composio.dev/mcp`),
+  tells the agent to come back and say the command again, and offers the screenshot path meanwhile — then
+  stops and waits. A deep dive never fails quietly. The engine rule's "no tools → silently" now applies to
+  every other skill only.
+- **Specific headline commands:** "run my YouTube deep dive" (YouTube System) and "run my social media deep
+  dive" (Short-Form System; also "run my short-form deep dive" / "run my instagram deep dive"). The generic
+  "run my deep dive" still works inside each plugin. Updated in both skills, both Composio decks, both
+  walkthrough decks, the playbook (page 8 + the command table), the Start Here page, and FAQ Q17a.
+
 ## [0.133.0] — 2026-09-25
 
 ### Live data connection — the sign-in can actually happen now (YouTube 0.17.0 · Short-Form 0.16.0 · Cohort Support 0.2.12)

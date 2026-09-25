@@ -52,7 +52,7 @@ c.setFillColor(BODY); c.setFont("Helvetica",10); c.drawString(54,y-48,"2 videos 
 c.setFillColor(GOLD); c.setFont("Helvetica-Bold",10.5); c.drawString(40,y,"EVERY MONTH + WHEN YOU NEED THEM"); y-=17
 SUB="First time only: add the Composio connector in Claude (2 min, playbook page 8), then say yes to the sign-in link."
 assert c.stringWidth(SUB,"Helvetica-Oblique",8.8) < W-70-40, "sub-note too wide"
-for cmd,note,sub in [('"Run my deep dive"',"once a month — your channel, competitors, gaps, and next 30 days in one report",SUB),('"Plan my filming day"',"film 4 videos in one afternoon",None),('"Market report"',"your monthly market video, ready to record",None),('"Coach me"',"what worked, the one fix, your next move",None)]:
+for cmd,note,sub in [('"Run my YouTube deep dive"',"once a month: your channel, competitors, gaps, next 30 days in one report",SUB),('"Plan my filming day"',"film 4 videos in one afternoon",None),('"Market report"',"your monthly market video, ready to record",None),('"Coach me"',"what worked, the one fix, your next move",None)]:
     xe=chip(56,y,cmd); c.setFillColor(BODY); c.setFont("Helvetica",9.8); c.drawString(xe+8,y,"—  "+note); y-=13
     if sub: c.setFillColor(MUTE); c.setFont("Helvetica-Oblique",8.8); c.drawString(70,y,sub); y-=8
     y-=8

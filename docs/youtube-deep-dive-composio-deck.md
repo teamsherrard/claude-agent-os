@@ -34,7 +34,7 @@ and exactly what it hands you.
 
 **ON SLIDE:**
 ## One command. One report.
-`"Run my deep dive"`
+`"Run my YouTube deep dive"`
 1. **Your channel** — every video ranked, what's pulling, where it leaks
 2. **Your competitors** — what they do that you don't
 3. **The gaps** — what your market searches that nobody local owns
@@ -64,6 +64,7 @@ connector. Name: **Composio**. URL: **https://connect.composio.dev/mcp**. Click 
 **Read-only.** It can look at your channel. It can never post, edit, or change anything.
 **Never at setup.** It only comes up here, when you run the dive.
 **Say no?** Nothing breaks — drop in a YouTube Studio screenshot instead.
+**Skipped the connector step?** The dive notices, gives you the exact clicks in chat, and can run on a screenshot meanwhile.
 
 **SAY:** Two minutes, once: add the Composio connector in Claude — the exact clicks are on this slide and in
 your playbook. After that you never open Composio again. The first time you run the dive, it asks. Say yes,
@@ -105,7 +106,7 @@ system. That's how it learns which videos make you money, not just views.
 
 **ON SLIDE:**
 ## The monthly routine — about 10 minutes
-1. `"Run my deep dive"`
+1. `"Run my YouTube deep dive"`
 2. First time only: say yes to the sign-in
 3. Drop a screenshot of YouTube Studio → Analytics → Content
 4. Read the 3-sentence verdict first
@@ -225,7 +226,7 @@ thousand views that booked none — and this is the only report that knows the d
 
 **ON SLIDE:**
 ## Once a month. One command.
-### `"Run my deep dive"`
+### `"Run my YouTube deep dive"`
 Month 1: your baseline. Month 2: what moved. Every month after: a channel that compounds.
 Read the verdict. Fix the leak. Film the plan.
 Between dives: `"How's my channel doing?"`

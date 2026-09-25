@@ -23,7 +23,7 @@ Your Instagram and YouTube Shorts, your competitors, the gaps, and your next 30 
 *Powered by Mike Sherrard Coaching Inc Frameworks*
 
 **SAY:** Short-form moves fast, and the numbers pile up faster than anyone reads them. This is the one
-time a month you stop, look at the whole board, and reset the plan. Same command as the YouTube dive —
+time a month you stop, look at the whole board, and reset the plan. Same idea as the YouTube dive —
 one habit covers both.
 
 ---
@@ -34,7 +34,7 @@ one habit covers both.
 
 **ON SLIDE:**
 ## One command. One report.
-`"Run my deep dive"`
+`"Run my social media deep dive"`
 1. **Your account** — every post ranked, your best hooks, where the funnel leaks
 2. **Your competitors** — what they do that you don't
 3. **The gaps** — local topics and formats nobody is filling
@@ -63,6 +63,7 @@ connector. Name: **Composio**. URL: **https://connect.composio.dev/mcp**. Click 
 3. A small "Allow" box may pop up before it pulls data → click Allow
 **Read-only.** It reads your accounts. It never posts, replies, DMs, or changes anything.
 **Never at setup.** It only comes up here, when you run the dive.
+**Skipped the connector step?** The dive notices, gives you the exact clicks in chat, and can run on screenshots meanwhile.
 **Instagram needs a Business or Creator account** — free, one minute in settings.
 **Under 1,000 followers?** Instagram holds back the per-post numbers. The report says so and reads a
 screenshot of your Instagram insights instead — you still get the full dive.
@@ -106,7 +107,7 @@ every time.
 
 **ON SLIDE:**
 ## The monthly routine — about 10 minutes
-1. `"Run my deep dive"`
+1. `"Run my social media deep dive"`
 2. First time only: say yes to the sign-in
 3. Read the 3-sentence verdict first
 4. `"Build the first 4 pieces"` — go film
@@ -226,7 +227,7 @@ into your Brain, so next week's posts already lean on this month's winners.
 
 **ON SLIDE:**
 ## Once a month. One command.
-### `"Run my deep dive"`
+### `"Run my social media deep dive"`
 Month 1: your baseline. Month 2: what moved. Every month after: an account that compounds.
 Read the verdict. Fix the leak. Post the plan.
 Between dives: `"How did this post do?"`

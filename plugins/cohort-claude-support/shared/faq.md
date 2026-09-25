@@ -180,7 +180,7 @@ Two small steps, once — and neither happens during setup (setup never asks):
 1. **Add the Composio connector in Claude (2 minutes):** Customize → Connectors → the **+** → **Add custom
    connector** → name it **Composio**, paste **https://connect.composio.dev/mcp**, click **Connect**, approve
    in the browser window that opens. Same clicks on the web, the desktop app, and Cowork.
-2. **Sign in when the deep dive offers it:** say "run my deep dive" in the YouTube or Short-Form system.
+2. **Sign in when the deep dive offers it:** say "run my YouTube deep dive" in the YouTube System, or "run my social media deep dive" in the Short-Form System.
    The first time, it asks *"want me to hook into live data?"* — say yes, click the sign-in link it gives
    you (YouTube; in Short-Form, Instagram too — a Business or Creator account), log in, come back and say
    "done." A small "Allow" box may pop up before the first pull — click Allow.

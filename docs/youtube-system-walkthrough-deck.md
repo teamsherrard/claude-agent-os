@@ -247,7 +247,7 @@ ones matter today.
 ## Every month, three commands
 - `"Market report"` → your market update deck + talking points. Screen-record it.
   *(Have the Monthly Market System? It runs your whole month instead.)*
-- `"Run my deep dive"` → the monthly report: your channel, your competitors, the gaps, your next 30 days
+- `"Run my YouTube deep dive"` → the monthly report: your channel, your competitors, the gaps, your next 30 days
   *(first time it offers the live data sign-in — one click, once; or drop a Studio screenshot)*
 - `"How's my channel doing?"` → the quick read anytime, in plain English, tracked to leads — not views
 - `"Coach me"` → what worked, the ONE fix, your next action
@@ -304,7 +304,7 @@ your funnel, your footage feeds the editor. One connected system.
 | "Check my comments" | Replies drafted, leads flagged |
 | "What's working for competitors?" | Winning videos + your version |
 | "Market report" | The monthly deck + talking points |
-| "Run my deep dive" | The monthly report — channel, competitors, gaps, next 30 days |
+| "Run my YouTube deep dive" | The monthly report — channel, competitors, gaps, next 30 days |
 | "How's my channel doing?" | The quick read, in plain English |
 | "Coach me" | The one fix + next action |
 | "Am I on track?" | The honest check-in |

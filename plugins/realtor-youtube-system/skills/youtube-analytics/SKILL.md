@@ -11,7 +11,7 @@ description: >
   Quick questions work anytime in the same skill ("how did my last video do", "how's my channel doing") —
   answered at the size of the ask. This is the ONLY YouTube skill that uses the live data connection.
 
-  Trigger on: "run my deep dive", "run my youtube deep dive", "run my analysis", "run my monthly analysis",
+  Trigger on: "run my YouTube deep dive" (the headline command), "run my deep dive", "run my analysis", "run my monthly analysis",
   "audit my channel", "analyze my channel", "full breakdown of my channel", "analyze my competitors",
   "where do I stand", "how do I compare", "how's my channel doing", "analyze my analytics", "how did my
   last video do", "review my YouTube stats", "here's my YouTube export", "audit this channel: [link]",
@@ -38,6 +38,23 @@ nothing more. If it's been ~a month since the last dive, offer it in one line; n
 
 ---
 
+## Step 0 — The connector check (every deep dive, before anything else)
+A deep dive must never fail quietly. Before reading the Brain, look at the tools you actually have in this
+session:
+- **No Composio tools at all** (nothing named `COMPOSIO_…`) → the agent hasn't added the connector to their
+  Claude. Say so plainly, with the exact clicks, give them the choice — then stop and wait:
+  > "Quick check before we dive in — your Claude doesn't have the Composio connector yet, so I can't pull your
+  > live YouTube numbers. It's a one-time, 2-minute step:
+  > 1. In Claude, click **Customize** → **Connectors** → **+** → **Add custom connector**
+  > 2. Name: **Composio** · URL: **https://connect.composio.dev/mcp**
+  > 3. Click **Connect**, approve in the browser window, then come back here and say **'run my YouTube deep
+  > dive'** again — I'll hand you the YouTube sign-in link next.
+  > Or, if you'd rather skip it for now: drop a screenshot of YouTube Studio → Analytics → Content and I'll run
+  > the dive on that."
+  Once per deep dive (a quick read gets a one-line version of it); never nag; never during setup.
+- **Composio tools present, but no active YouTube connection** → the offer-once sign-in in Step 1 (#1).
+- **Present and active** → carry on; nothing to say.
+
 ## Step 1 — Load the Brain + pick the data source
 Read `~/realtor-brain/brain.md`, then `identity/profile.md` (channel handle), `identity/strategy.md`
 (**competitors they admire** — the seed list; business goals), `identity/market.md` (communities + local
@@ -61,9 +78,7 @@ measured against the plan). `~/realtor-brain/` empty? Pull it with realtor-brain
      "done", call it again with `action: "list"` and confirm the account shows `active` → pull. Record
      `active` in the YouTube Layer.
    - **No / not now** → record `declined [date]` in the YouTube Layer; never re-offer; carry on with #2/#3.
-   - **Tools not present at all** (no Composio connector in their Claude) → say it once, plainly: *"the full
-     live version needs the 2-minute connector step from your install guide (say 'help' for it) — for now,
-     drop a Studio screenshot and I'll run it on that."* Then #2/#3. Never nag.
+   - **Tools not present at all** → Step 0 already gave them the clicks; if they chose to continue now, #2/#3.
    Never during setup or the Game Plan, never a bare "list" just to check — this skill is the connection's
    only home.
 2. **The Studio export / screenshot** — the ONLY source for private depth (CTR, average view duration,

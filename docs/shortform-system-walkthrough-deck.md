@@ -116,7 +116,7 @@ Plus: 3–5 hashtags max · captions on every video · one idea per video.
 ## Slide 13 — It gets smarter every 2 weeks
 - **"How did my reels do?"** — reads your live Instagram + YouTube numbers, including reel **watch-time & skip-rate** (the truest hook signal)
 - The **2-week review** writes your winners into your Brain → your next batch leans on what worked
-- **"Run my deep dive"** — a full breakdown of your account + your competitors + where the openings are
+- **"Run my social media deep dive"** — a full breakdown of your account + your competitors + where the openings are
 > Data most tools can't even show you.
 
 ---
