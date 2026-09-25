@@ -35,13 +35,14 @@ one habit covers both.
 **ON SLIDE:**
 ## One command. One report.
 `"Run my social media deep dive"`
-1. **Your account** — every post ranked, your best hooks, where the funnel leaks
-2. **Your competitors** — what they do that you don't
-3. **The gaps** — local topics and formats nobody is filling
-4. **Your next 30 days** — a post-by-post plan on Mike's 4-3-2-1 mix
+1. **Your account** — what's pulling, your best hooks, who's watching, when to post, what turns into leads
+2. **The other agents in your market** — what they do that you don't
+3. **Where you show up** — when people search, or ask an AI assistant
+4. **The openings** — what locals want that nobody local is posting
+5. **Your next 30 days** — a post-by-post plan on Mike's 4-3-2-1 mix, at your best times
 **Not a dashboard.** A dashboard shows numbers. This tells you what they mean and what to post.
 
-**SAY:** Four parts, one document, saved to your Drive. Everything else in the short-form system — the
+**SAY:** Five parts, one document, saved to your Drive — and page one alone tells you what to do. Everything else in the short-form system — the
 green screens, the talking heads, the carousels — gets smarter from what this finds, because it writes
 the findings back into your Brain.
 
@@ -87,8 +88,11 @@ drop in a screenshot from your insights, and the report is just as complete.
 **Instagram (live):**
 - Every post: views, reach, saves, shares, comments
 - **Reels: average watch time and skip rate** — the cleanest hook verdict there is
-- Account reach, profile visits, follower growth
-- **Who your audience is** — age, gender, and which cities
+- Account reach, profile visits, follows and unfollows
+- **Who follows you, who saw you, who reacted** — by city, age and gender
+- **When your followers are online** — your 3 best posting slots, from your own audience
+- **Link taps and profile actions** — which posts made people tap your link, call, or text
+- Stories live today, and the comments on your top posts
 - DMs started — counted, if you allow messages
 **YouTube Shorts (live):** views, likes, subscribers, growth
 **Competitors:** YouTube in full · Instagram and TikTok by hand (their public profiles — nobody gets a data feed on other people's accounts)
@@ -126,12 +130,14 @@ starts smarter.
 
 **ON SLIDE:**
 ## What it finds in your posts
-- Every post ranked by format — green screen, talking head, carousel — and by job: reach, value, trust, convert
-- Which format and which job actually win — averages, not guesses
-- Your hooks judged by skip rate — and your 3 best, quoted word for word
-- **Locals vs. agents** — is your audience buyers and sellers in your market, or other realtors?
-- **The funnel leak** — reach → engagement → profile visits → follows → DMs. The one place it breaks.
-- Cadence — posts per week vs. Mike's minimum of three (the goal is daily, plus stories)
+- What's pulling — by format (green screen, talking head, carousel) and by job (reach, value, trust, convert)
+- Your best hooks, quoted word for word, with their skip rate
+- **Who's watching** — local buyers and sellers, or other agents?
+- **When to post** — your 3 best slots, from when your own followers are online
+- **What turns into leads** — link taps, profile actions, messages, and which posts drove them
+- What viewers are saying — leads and questions in your comments
+- **Where views stop turning into messages** — the one place it breaks, and the fix
+- How often you post vs. Mike's minimum of three (the goal is daily, plus stories)
 
 **EXAMPLE — Sam, Austin:** *"Your green screens reach 11,200 on average — 4× your talking heads — and 81%
 of that reach is local. 22% of your total reach is other agents, and all of it comes from your 3 home-tour
@@ -139,7 +145,8 @@ reels."*
 *>> The leak: "Carousels get saved 3× more than anything else but produced 2 DMs — there's no CTA on the
 last slide. Add 'DM me GUIDE' on slide 10."*
 
-**SAY:** The audience read is the one that surprises people. Plenty of agents have great reach — with
+**SAY:** Every finding is the same four lines — what we found, why it matters to you, do this, the proof —
+because you're a realtor, not a marketer. The audience read is the one that surprises people. Plenty of agents have great reach — with
 other agents. Home tours are agent-bait. The report tells you straight: your top cities are your market,
 or they're not. And the leak is specific: not "post more," but "your carousels get saved and never
 asked for anything — put the ask on the last slide."
@@ -151,17 +158,17 @@ asked for anything — put the ask on the last slide."
 **LAYOUT:** Two stacked bands, each with its own EXAMPLE line at the right.
 
 **ON SLIDE:**
-## Competitors
+## The other agents in your market
 - 3 to 5 accounts in your market
 - **YouTube: deep** — their outlier videos, 3×, 5×, 10× their own normal
 - **Instagram and TikTok: by hand** — open their public profile (or drop screenshots); it reads followers, posting pace, formats, hooks — labelled as a glance, never as their analytics
 - What they do that you don't — and what you do better
 **EXAMPLE:** *"Austin Home Pro — 4,800 followers. His 'new construction incentives RIGHT NOW' Short did
 38,000 — 11× his normal. Incentive and comparison topics work in your market."*
-## The gaps
-- Local topics with real demand and weak or non-local coverage — with the evidence
-- Formats competitors win with that you haven't used
-- The part of the 4-3-2-1 mix you're under-posting
+## Where you show up — and the openings
+- On YouTube: your position for the local phrases people type, and who's #1 today
+- When someone asks an AI assistant the buyer's question: are you in the answer?
+- The openings: what locals want that nobody local is posting — each one a post to make
 **EXAMPLE:** *"'Things to do in Austin this weekend' — nobody local posts it weekly, and it's the format that
 pulls locals, not agents."*
 
@@ -186,8 +193,9 @@ your account → competitors → gaps → next 30 days → the one move).
 - **The one move** — the single most important thing this month
 **EXAMPLE:** *">> THE ONE MOVE: Put the CTA on the last slide of every carousel and repost your top two
 with it — the cheapest DMs you'll ever get."*
-**The report:** verdict → scorecard → your account → competitors → gaps → next 30 days. Saved to your
-Drive, dated, stamped.
+**The report, page by page:** read this first (the verdict, the one move, three things to do this week)
+→ your numbers at a glance → your account → the other agents → where you show up → the openings → your
+next 30 days, with your best posting times → the full numbers at the back. Saved to your Drive, dated, stamped.
 
 **SAY:** **DEMO** — screen-share the sample report (Downloads → "SAMPLE — Short-Form Deep Dive Report").
 Scroll it: the verdict, the scorecard, the ranked posts, the hooks, the leak, the competitors, the gaps,

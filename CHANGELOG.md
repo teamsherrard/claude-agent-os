@@ -2,6 +2,41 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.134.0] — 2026-09-25
+
+### The deep dive, rebuilt on the full connection — and written for a realtor (YouTube 0.18.0 · Short-Form 0.17.0)
+Driven by the first real deep dive on Mike's channel and his read of it: "a lot of data missing", "not
+structured in a clean way", and "realtors are not marketers — I have no idea what I'm looking at."
+- **The capability map** (`shared/composio-data-engine.md`, a SHARED block now byte-identical in both
+  plugins): everything the connection can and cannot read, verified live 2026-09-25. YouTube = the public
+  Data API only — **no Analytics API** (no CTR, watch time, retention, traffic sources, search terms,
+  demographics; the third-party "analytics" toolkits are paid and out) → **the Studio pack** (four screenshots,
+  asked for once, mapped to named sections) is a first-class input and **"add my Studio numbers"** tops up a
+  dive later. New YouTube reads: the full video record (description, tags, length, captions flag, publish
+  time) → an automated **packaging & SEO audit**; own-video captions → hooks verbatim; playlists + channel
+  sections → the channel-page read; comment threads (once; 403 on this connection → the screenshot skill).
+  New **recipe 7 — search & AI visibility**: YouTube rank for the market's phrases + an AI answer engine
+  (Composio-hosted, no key) for the buyer's questions + trends/news. PRO-tier add-ons listed and excluded.
+  Instagram §7 is now the full native map: followers online (hourly → posting slots), website + profile-link
+  taps, profile actions per post, follows/unfollows, the three audiences, stories, comments, DMs.
+- **The report, reorganized for a non-marketer** (`doc-format.md` skeleton · `output-standard.md` §5b ·
+  both deep-dive guides · both metrics guides): page one = the verdict, exactly ONE move, three things to do
+  this week; "Your numbers at a glance" with the plain meaning beside every number; plain-English section
+  names ("Where views stop turning into calls", "The other agents in your market", "Where you show up when
+  people search", "The openings"); every finding as four lines — *what we found · why it matters to you ·
+  do this · the proof*; every section opens "In plain English:"; a plain name for every metric; long tables
+  in an appendix. New sections: titles & thumbnails audit, where viewers come from & who they are (Studio
+  pack), what viewers are saying, search & AI visibility, when to post (Short-Form), what turns into leads.
+- **Skills:** the Studio-pack ask before pulling (or "skip"), the Studio top-up procedure, one move only,
+  cadence math (standing series count toward 2/wk), the "which video made you reach out?" habit line,
+  competitors capped at 5 with no empty rows, and a closing save line as a hard gate ("saved · baseline
+  stored · Brain updated · live data active").
+- **Renderer** (all 6 plugins): indented 3-dot metric rows stay in their table (a scorecard row had fallen
+  out); pipe-table column widths follow content and set the grid too (title columns get the room); table
+  headers follow the new plain-English section names.
+- Docs: both Composio deep-dive decks, the Composio explainer and the playbook updated to the verified
+  picture; both sample reports regenerated in the new structure.
+
 ## [0.133.1] — 2026-09-25
 
 ### Deep dive: the connector check + specific commands (YouTube 0.17.1 · Short-Form 0.16.1 · Cohort Support 0.2.13)

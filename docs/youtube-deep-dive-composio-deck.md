@@ -35,13 +35,14 @@ and exactly what it hands you.
 **ON SLIDE:**
 ## One command. One report.
 `"Run my YouTube deep dive"`
-1. **Your channel** — every video ranked, what's pulling, where it leaks
-2. **Your competitors** — what they do that you don't
-3. **The gaps** — what your market searches that nobody local owns
-4. **Your next 30 days** — 8 exact titles, ready to film
+1. **Your channel** — what's pulling, your titles and thumbnails, your best openings, where views stop turning into calls
+2. **The other agents in your market** — what they do that you don't
+3. **Where you show up** — when people search YouTube, or ask an AI assistant
+4. **The openings** — topics people search that nobody local owns
+5. **Your next 30 days** — 8 exact titles, ready to film
 **Not a dashboard.** A dashboard shows numbers. This tells you what they mean and what to do.
 
-**SAY:** Four parts, one document, saved to your Drive. You don't log into anything, you don't build
+**SAY:** Five parts, one document, saved to your Drive — and page one alone tells you what to do. You don't log into anything, you don't build
 anything. You type one line and read. And it's not a dashboard — a dashboard leaves you staring at
 numbers. This reads them like a coach would.
 
@@ -83,18 +84,22 @@ screenshot from Studio does the job.
 ## What it reads
 **Live (automatic):**
 - Subscribers, and growth since last month's dive
-- Every video: views, likes, length, publish date
-- Your competitors' channels — every video
-- What's ranking in your market for any topic
-**Your Studio screenshot (it asks for one):**
-- Click-through rate — how many people who saw your thumbnail clicked
+- Every video: views, likes, comments, length, publish time
+- Each video's title, description, tags and captions — a titles-and-thumbnails check
+- Your playlists and channel page · your competitors' channels, every video
+- Where you rank for any phrase, and whether an AI assistant mentions you
+**Your Studio pack (it asks once — four screenshots, two minutes):**
+- Click-through rate — of the people who saw your thumbnail, how many clicked
 - Watch time — how long they stayed, and where they left
-- Traffic sources, and the exact search terms that found you
+- How people found you, and the exact search terms
+- Who's watching — age, location, and when they're online
 **From you (say it once, tracked forever):**
 - Which videos made someone call or book
 
-**SAY:** The live connection covers everything public — yours and your competitors'. The private numbers —
-click-through, watch time, search terms — only exist inside your Studio, so it asks for one screenshot.
+**SAY:** The live connection covers everything public — yours and your competitors', down to every title and
+description. The private numbers — click-through, watch time, search terms, who's watching — only exist
+inside your Studio; no connection anywhere can read them. So it asks you once for four screenshots. Two
+minutes, and it's the difference between a good report and a complete one.
 And the most important number comes from you. Ask every lead: "which video made you reach out?" Tell the
 system. That's how it learns which videos make you money, not just views.
 
@@ -108,7 +113,7 @@ system. That's how it learns which videos make you money, not just views.
 ## The monthly routine — about 10 minutes
 1. `"Run my YouTube deep dive"`
 2. First time only: say yes to the sign-in
-3. Drop a screenshot of YouTube Studio → Analytics → Content
+3. Drop the four Studio screenshots it asks for — or say "skip" and add them later with `"Add my Studio numbers"`
 4. Read the 3-sentence verdict first
 5. `"Start the first video"` — go film
 **Any time between dives:** `"How's my channel doing?"` · `"How did my last video do?"` · `"Audit this channel: [link]"`
@@ -127,12 +132,13 @@ it just tells you honestly when the data's thin.
 
 **ON SLIDE:**
 ## What it finds in your videos
-- Every video ranked by pillar and type — which lane is pulling
-- Packaging — which titles earn the click, and which 3 to re-title
-- Hook vs. middle — did they leave in the first minute, or drift later?
-- Your 3 best openings, quoted word for word
-- **The funnel leak** — the one spot where views stop turning into calls
-- Cadence vs. your plan — and the pillar you're starving
+- What's pulling — which kind of video works for you, in plain English
+- Titles & thumbnails — the 3 to fix, with the new titles already written
+- Your best openings, quoted word for word
+- Where viewers come from and who they are (from your Studio pack)
+- What viewers are saying — leads and questions sitting in your comments
+- **Where views stop turning into calls** — the one place it breaks, and the fix
+- How often you post, and your channel page
 
 **EXAMPLE — Sam, Austin:** *"Your new-build videos pull 3× your median and produced 3 of your 4 booked
 calls. Your market updates get shown but not clicked — 2.1% click-through vs. 5.4% on relocation — because
@@ -140,7 +146,8 @@ the titles read like news headlines instead of questions buyers type."*
 *>> The leak: "Community tours hold viewers (39%) but booked zero calls — the CTA sits at the end. Move it
 to right after the hook."*
 
-**SAY:** This is the first thing you read. Notice it never says "improve your titles." It says which
+**SAY:** Every finding in the report is the same four lines: what we found, why it matters to you, do
+this, and the proof — because you're a realtor, not a marketer. Notice it never says "improve your titles." It says which
 titles, why, and what to write instead. The funnel leak is the line most agents have never seen: views,
 then clicks, then watch time, then the call-to-action, then booked calls. The report names the one place
 that chain breaks. That's a fix, not a feeling.
@@ -152,16 +159,16 @@ that chain breaks. That's a fix, not a feeling.
 **LAYOUT:** Two stacked bands, each with its own EXAMPLE line at the right.
 
 **ON SLIDE:**
-## Competitors
+## The other agents in your market
 - 3 to 5 channels in your market — every video pulled
 - Their outliers — videos doing 3×, 5×, 10× their own normal. A small local channel over-performing counts double.
 - What they do that you don't — and what you do better
 **EXAMPLE:** *"Austin Home Pro — 6,900 subs, 1,100 views on a normal video. 'New Construction Incentives in
 Austin RIGHT NOW' did 9,800. That topic works in your market."*
-## The gaps
-- Topics your market searches where the top result is old, weak, or not local
-- The pillar your plan said to film that you haven't
-- Your own winners, from new angles
+## Where you show up — and the openings
+- On YouTube: your position for the phrases people type, and who's #1 today
+- When someone asks an AI assistant the buyer's question: are you in the answer?
+- The openings: topics people search that nobody local owns — each one a title to film
 **EXAMPLE:** *"'Austin suburbs with new construction under $450K' — the top videos pull 12k–30k views, the
 best one is 2 years old, and no agent covers it. Nobody local owns it."*
 
@@ -185,8 +192,9 @@ your channel → competitors → gaps → next 30 days → the one move).
 - **The one move** — the single most important thing this month
 **EXAMPLE:** *">> THE ONE MOVE: Film the $450K new-construction suburbs video this week — your best pillar,
 real demand, and an empty market."*
-**The report:** verdict → scorecard → your channel → competitors → gaps → next 30 days. Saved to your
-Drive, dated, stamped.
+**The report, page by page:** read this first (the verdict, the one move, three things to do this week)
+→ your numbers at a glance → your channel → the other agents → where you show up → the openings → your
+next 30 days → the full numbers at the back. Saved to your Drive, dated, stamped.
 
 **SAY:** **DEMO** — screen-share the sample report (Downloads → "SAMPLE — YouTube Deep Dive Report").
 Scroll top to bottom: the three-sentence verdict, the scorecard, the ranked videos, the leak, the

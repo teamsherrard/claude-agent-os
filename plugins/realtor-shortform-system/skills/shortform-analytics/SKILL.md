@@ -103,37 +103,52 @@ Brain lives in their cloud workspace, located by ID/marker); only if the cloud h
 ---
 
 ## THE DEEP DIVE (the main event — run it monthly)
-**Window:** default the **last 90 days** (or what they name — "since last month" = the last ~30). Say which
-you're using, in one line, then go.
+**Window:** default the last 90 days (a month in = since the last dive). State it in one line, then go.
+**Written for a realtor, not a marketer** — the plain-language rules at the top of
+`references/deepdive-guide.md` are mandatory: every finding is *what we found · why it matters to you · do
+this · the proof*; every section opens *In plain English:*; numbers in tables, not sentences; every metric
+explained the first time it appears (the plain names in `references/metrics-guide.md`); no marketing words
+without the plain phrase; long tables in the appendix.
 
-**Follow `references/deepdive-guide.md` in full** — it is the report structure and the pull method:
-- **Part 1 — Account audit:** growth & audience (incl. the locals-vs-agents demographics read), the full
-  content inventory ranked & tagged (per-format / per-funnel-category averages), hook + reel-retention
-  analysis (real watch-time/skip-rate — name the 3 best hooks verbatim), **the funnel leak**, cadence.
-- **Part 2 — Competitor breakdown:** YouTube deep (outlier analysis — the only competitor data the connection
-  can pull), Instagram + TikTok by hand (a public-profile glance or the agent's screenshots, labelled as a
-  glance, never as their analytics) — and the positioning verdict. Seed competitors from `strategy.md`; fewer
-  than 3 → ask once for a couple of handles.
-- **Part 3 — Gaps & opportunities:** content gaps backed by evidence (real demand + weak/stale/non-local
-  coverage), format and trend openings.
-- **Part 4 — Synthesis + the 30-day plan:** top 3 strengths, top 3 fixes, and a concrete 4-3-2-1-balanced
-  content list seeded from the winning hooks/formats and the gaps.
-Interpret every metric with `references/metrics-guide.md`, weighed against
-`${CLAUDE_PLUGIN_ROOT}/shared/mike-frameworks.md` (4-3-2-1, HVC, locals-not-agents).
+**Pull everything the connection gives** (`shared/composio-data-engine.md` §7 — the full Instagram map —
+plus recipes 2, 3 and 7): profile + growth · account insights (reach, profile visits, website + profile-link
+taps, follows/unfollows, reactions) · **when your followers are online** (hourly, converted to their
+timezone) · the three audiences (followers / reached / engaged by city, age, gender) · every post's insights
+(reels: watch time + skip rate; posts: profile actions) · stories live today · comments on the top posts ·
+DMs if connected · YouTube Shorts counts · 3–5 competitors (YouTube full; Instagram/TikTok a glance) ·
+search rank · AI answer presence · trends + this week's news.
 
-**Deliver it like a coach:** lead with the 3-sentence verdict — *where they stand, the biggest strength,
-the biggest fix* — then the scannable detail underneath. End by **offering to act**: *"want me to build the
-first 4 pieces of that 30-day plan right now?"* → hand the bets to greenscreen / talkinghead / carousel.
+**Follow `references/deepdive-guide.md` in full — the report is built in this order:**
+- **READ THIS FIRST** — the 3-sentence verdict · **THE ONE MOVE** (exactly one action, never two) · **do
+  these three this week**.
+- **YOUR NUMBERS AT A GLANCE** + **what's in this report**.
+- **Part 1 — Your account:** 1.1 how you grew · 1.2 what's pulling by format and by job (vs 4-3-2-1) · 1.3
+  your best hooks (skip rate) · 1.4 who's watching (locals vs agents) · 1.5 when to post (their own
+  followers online) · 1.6 what turns into leads (link taps, profile actions, DMs) · 1.7 stories · 1.8 what
+  viewers are saying · 1.9 where views stop turning into DMs · 1.10 how often you post.
+- **Part 2 — The other agents in your market** (≤5; YouTube full, Instagram/TikTok a labelled glance).
+- **Part 3 — Where you show up when people search.**
+- **Part 4 — The openings** (3–5 four-line cards).
+- **Part 5 — Your next 30 days:** keep doing · fix · the plan on 4-3-2-1 (one post per row) · **post at**
+  the 3 best slots · **total output** vs Mike's 3/wk minimum and daily goal · THE ONE MOVE repeated.
+- **Appendix — the full numbers.**
 
-**Save + seed:**
+**Deliver it like a coach:** in chat, lead with the 3-sentence verdict and the one move, then the Drive
+link. End by **offering to act**: *"want me to build the first 4 pieces of that 30-day plan right now?"* →
+hand the bets to greenscreen / talkinghead / carousel.
+
+**Save + seed — then say what you saved (hard gate: never end a dive without this line):**
 1. Build the report on the **Deep Dive Report shape** (`${CLAUDE_PLUGIN_ROOT}/shared/output-standard.md`
-   §5b — the verdict · scorecard · your account · competitors · gaps · next 30 days, one video per row) with
-   the byline + footer line `Powered by Mike Sherrard Coaching Inc Frameworks` (a flagship deliverable —
-   never inside copy the agent pastes out). Render to a styled `.docx` (`render_doc.py`) → `[Agent Name]
-   — Short-Form System/Performance/`, named `Deep Dive · [Month YYYY]`. Share the link.
-2. **Seed `memory/performance.md`** with a dated block: best format, best hook styles, the funnel leak, the
-   competitor gap to attack, and today's follower/sub counts. Push the Brain to Drive — the content
+   §5b) with the byline + footer line `Powered by Mike Sherrard Coaching Inc Frameworks` (a flagship
+   deliverable — never inside copy the agent pastes out). Render to a styled `.docx` (`render_doc.py`) →
+   `[Agent Name] — Short-Form System/Performance/`, named `Deep Dive · [Month YYYY]`.
+2. **Seed `memory/performance.md`** with a dated block: follower and subscriber counts (the baseline), best
+   format + job, best hook styles with skip rates, the 3 best posting slots, the one break in the path to
+   DMs, the opening to attack, today's link-tap and DM counts. Push the Brain to Drive — the content
    workflows read this, so the whole system inherits what the dive found.
+3. **The closing line, always:** *"Saved to your Drive → Performance / Deep Dive · [Month] (link) · your
+   follower baseline is stored · your Brain is updated · live data: active."* If any of those didn't happen,
+   say which and why — never imply a save that didn't run.
 
 ## QUICK READ (any scoped question, anytime)
 For "how did this post do," "analyze my last 10 posts," "analyze my ads," "how's my growth," "run my
@@ -159,12 +174,16 @@ For "how did this post do," "analyze my last 10 posts," "analyze my ads," "how's
 - **Encourage.** Growth is slow; point at real progress.
 
 ## Quality checklist
+- [ ] Step 0 connector check ran first; the sign-in was offered once (or the connector clicks given) — never at setup
 - [ ] Answer sized to the ask — deep dive only when they asked for the full picture (offered, never forced)
-- [ ] Pulled real numbers (or the screenshot fallback) — never invented; empties called unavailable
-- [ ] Deepest source used — live connection reel watch-time/skip-rate for hook judgment where available
-- [ ] Numbers joined to what each post WAS (format/category/hook from `content-log.md`)
-- [ ] Growth computed against the prior counts in `performance.md`; today's counts stored back
-- [ ] DEEP DIVE: all 4 parts · the funnel leak named · competitors honestly labelled by depth · gaps
-      evidence-backed · ends in the 4-3-2-1-balanced 30-day plan + the offer to build the first pieces
-- [ ] Report saved to Drive as a styled `.docx`; findings seeded to `memory/performance.md`
-- [ ] Led with plain-English insight + the why; ended with a recommendation; encouraging throughout
+- [ ] Pulled everything §7 gives: growth · account insights · followers online → posting slots · the three
+      audiences · every post's insights (skip rate, watch time, profile actions) · stories · comments · DMs if on
+      · ≤5 competitors · search rank · AI answer presence · trends/news
+- [ ] Every number real and sourced; empties "not available"; the agent's own median is the benchmark
+- [ ] Written for a realtor: four-line findings · "In plain English" openers · numbers in tables · every metric
+      explained once · no unexplained marketing words · long tables in the appendix
+- [ ] READ THIS FIRST has the 3-sentence verdict, exactly ONE move, and three actions for this week
+- [ ] 1.4 answers locals-vs-agents plainly; 1.5 gives 3 posting slots in their timezone; 1.9 names the one break
+- [ ] Part 5: the 4-3-2-1 plan one post per row + post-at slots + total output vs Mike's minimum and goal
+- [ ] Report saved as a styled `.docx` in Performance/ · baseline stored · Brain seeded · the closing line said
+- [ ] Ended with the offer to build the first pieces

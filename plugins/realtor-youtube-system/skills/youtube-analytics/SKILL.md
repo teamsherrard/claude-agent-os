@@ -15,7 +15,8 @@ description: >
   "audit my channel", "analyze my channel", "full breakdown of my channel", "analyze my competitors",
   "where do I stand", "how do I compare", "how's my channel doing", "analyze my analytics", "how did my
   last video do", "review my YouTube stats", "here's my YouTube export", "audit this channel: [link]",
-  "set up my analytics", "live analytics", or any request to analyze YouTube performance or competitors.
+  "set up my analytics", "live analytics", "add my Studio numbers", "here's my Studio pack", or any request to
+  analyze YouTube performance, competitors, or where they show up in search.
 ---
 
 # YouTube Analytics — the monthly deep dive + any quick question
@@ -81,10 +82,14 @@ measured against the plan). `~/realtor-brain/` empty? Pull it with realtor-brain
    - **Tools not present at all** → Step 0 already gave them the clicks; if they chose to continue now, #2/#3.
    Never during setup or the Game Plan, never a bare "list" just to check — this skill is the connection's
    only home.
-2. **The Studio export / screenshot** — the ONLY source for private depth (CTR, average view duration,
-   retention, traffic sources, search terms). For a deep dive, ask for it once in plain words: *"for the
-   full read, grab a screenshot of YouTube Studio → Analytics → Content (or the export) and drop it here."*
-   (Export path: Studio → Analytics → Advanced mode → range → Content tab → Export → CSV.)
+2. **The Studio pack** — the ONLY source for private depth; the connection cannot read it (capability map
+   B: no click-through, watch time, retention, traffic sources, search terms, or who's watching). For a deep
+   dive, ask for it ONCE, before pulling, in plain words, and wait for the screenshots or a "skip":
+   *"For the full read I need four screenshots from YouTube Studio — takes two minutes: (1) Analytics →
+   Content, the video table; (2) Reach → Traffic source types + YouTube search terms; (3) Audience → age,
+   gender, top locations, when your viewers are on YouTube; (4) the retention graph of your top 3 videos
+   (Engagement). Drop them here — or say 'skip' and I'll run it without, and you can add them any time
+   with 'add my Studio numbers'."* Skip → run; the report says exactly what's missing.
 3. **Public channel reads** — titles, views, lengths, cadence, top performers from the channel link alone.
    Works on ANY public channel (theirs, a competitor's, a channel a coach is testing on).
 Plain-talk rule: it's "hook into live data — one sign-in," **never "connect your YouTube channel."**
@@ -97,34 +102,64 @@ dive, **`references/deepdive-guide.md` in full** (the 4-part structure and the p
 
 ## THE DEEP DIVE (the main event — run it monthly)
 **Window:** default the last 90 days (a month in = since the last dive). State it in one line, then go.
-**Follow `references/deepdive-guide.md` in full:**
-- **Part 1 — Channel audit:** growth vs. the stored count · every video ranked & tagged by pillar/content
-  type with per-type averages · packaging (CTR/title gates/§17 thumbnails) + hook-vs-middle from
-  retention · **the funnel leak** (views → clicks → watch → CTA → leads, §23.2) · cadence + pillar coverage
-  vs. the plan.
-- **Part 2 — Competitors:** 3–5 channels from the Brain (ask once if thin) → outliers by each channel's own
-  median (small local overperformers count double) → what they do that the agent doesn't → the positioning
-  verdict.
-- **Part 3 — Gaps:** demand + weak/stale/non-local coverage (evidence attached) · the starving pillar ·
-  repeat-from-new-angle plays · packaging fixes worth doing this week.
-- **Part 4 — Synthesis + 30-day plan:** top 3 strengths (with the proving number), top 3 fixes (with the
-  specific change), ~8 exact titles on the §22 mix (title gates apply) with type + week, and the one move.
+**Written for a realtor, not a marketer** — the plain-language rules at the top of
+`references/deepdive-guide.md` are mandatory: every finding is *what we found · why it matters to you · do
+this · the proof*; every section opens *In plain English:*; numbers in tables, not sentences; every metric
+explained the first time it appears (the plain names in `references/metrics-guide.md`); no marketing words
+without the plain phrase; long tables in the appendix.
 
-**Deliver it like a coach:** lead with the 3-sentence verdict — *where they stand, the biggest strength,
-the biggest fix* — then the scannable detail. End by **offering to act:** *"want me to start the first
-video on that plan right now?"* → `youtube-make-video` (new chat). The Coach reads this dive for its
-next session.
+**Pull everything the connection gives** (`shared/composio-data-engine.md` — capability map A + C, recipes
+1, 2, 3, 7 and S): the channel and every video's full record (description, tags, length, captions flag,
+publish time) → the packaging & SEO audit · your own captions for the hooks · playlists + channel sections ·
+comment threads (once; 403 → say so) · 3–5 competitors as outliers · 6–10 search phrases for rank · 5–8
+buyer questions through the AI answer engine · trends + news · the Studio pack if provided.
 
-**Save + seed:**
+**Follow `references/deepdive-guide.md` in full — the report is built in this order:**
+- **READ THIS FIRST** — the 3-sentence verdict · **THE ONE MOVE** (exactly one action — the cheapest,
+  fastest, most measurable; never two joined by "and") · **do these three this week**.
+- **YOUR NUMBERS AT A GLANCE** + **what's in this report** (pulled live · Studio pack in / not · not
+  available on this connection).
+- **Part 1 — Your channel:** 1.1 how you grew · 1.2 what's pulling by content type · 1.3 titles & thumbnails
+  (the automated packaging audit + 3 re-titles) · 1.4 your best openings (verbatim) · 1.5 where viewers come
+  from & who they are (Studio pack) · 1.6 what viewers are saying (comments) · 1.7 where views stop turning
+  into calls (the one break + the "which video made you reach out?" habit) · 1.8 how often you post & your
+  channel page.
+- **Part 2 — The other agents in your market** (≤5, each vs its own normal; never an empty row).
+- **Part 3 — Where you show up when people search** (YouTube rank · AI answer engine · what's rising + news).
+- **Part 4 — The openings** (3–5 four-line cards) + your own winners from a new angle.
+- **Part 5 — Your next 30 days:** keep doing · fix · the plan (~8 exact titles, one per row) · **cadence
+  math** (total weekly output including any standing series — trimmed to fit 2/wk; standing series count,
+  they never sit "on top") · THE ONE MOVE repeated.
+- **Appendix — the full numbers** (every video · the packaging check · the search results).
+
+**Deliver it like a coach:** in chat, lead with the 3-sentence verdict and the one move, then the Drive
+link. End by **offering to act:** *"want me to start the first video on that plan right now?"* →
+`youtube-make-video` (new chat). The Coach reads this dive for its next session.
+
+**Save + seed — then say what you saved (hard gate: never end a dive without this line):**
 1. Render the report on the **Deep Dive Report skeleton** (`${CLAUDE_PLUGIN_ROOT}/shared/doc-format.md`) via
    `render_doc.py` — stamped (house rules #9) — and save as **`Deep Dive · [Month YYYY]`** in the
    workspace's **`Performance/`** folder (create it the first time; resolve per
-   `${CLAUDE_PLUGIN_ROOT}/skills/youtube-setup/references/drive-structure.md`). Share the link.
-2. **Seed `memory/performance.md`** with a dated block: subscriber count, best content type + pillar, the
-   3 best hooks, the funnel leak, the competitor gap to attack, the 30-day plan's titles. Push to Drive —
-   Ideation reads the winners; the Coach reads the leak.
+   `${CLAUDE_PLUGIN_ROOT}/skills/youtube-setup/references/drive-structure.md`).
+2. **Seed `memory/performance.md`** with a dated block: subscriber count (the baseline for next month's
+   growth), best content type + pillar, the 3 best hooks, the one break in the path to calls, the opening to
+   attack, the 30-day plan's titles, the search phrases and positions. Push to Drive — Ideation reads the
+   winners; the Coach reads the leak.
 3. If they have the **content board**, the 30-day plan's next ~2 weeks become the next cards
    (`${CLAUDE_PLUGIN_ROOT}/shared/notion-board-spec.md` window rules — dated cards only).
+4. **The closing line, always:** *"Saved to your Drive → Performance / Deep Dive · [Month] (link) · your
+   subscriber baseline is stored · your Brain is updated · live data: active."* If any of those didn't
+   happen, say which and why — never imply a save that didn't run.
+
+## STUDIO TOP-UP ("add my Studio numbers" — any time after a dive)
+The agent drops the Studio pack (any of the four) after the fact:
+1. Read the screenshots by vision; join every number to its video by title.
+2. Re-open the latest `Deep Dive · [Month YYYY]` source, fill **1.5 where viewers come from & who they
+   are**, add the CTR and watch-% columns to appendix A and the CTR verdict in 1.3, re-check the packaging
+   re-titles against real click-through, and update **what's in this report**.
+3. Re-render and re-save under the **same name** (replace), append a dated note to `memory/performance.md`,
+   and say in chat what changed: *"added your Studio numbers — the click-through verdict moved two of the
+   three re-titles; the top of the report is unchanged."*
 
 ## QUICK READ (any scoped question, anytime)
 For "how's my channel doing", "how did my last video do", "here's my export", "audit this channel: [link]":
@@ -152,11 +187,16 @@ The live data connection powers THIS skill and nothing else. Setup, the Game Pla
 comments, the channel page — all run on the classic paths and never touch it (locked after live cold-tests).
 
 ## Quality checklist
-- [ ] Answer sized to the ask — deep dive only when they asked for the full picture (offered, never forced)
-- [ ] Real numbers only, source labelled; empties called unavailable; the agent's own median is the benchmark
-- [ ] Every video joined to what it WAS (pillar / content type / hook)
-- [ ] Growth computed against the stored count; today's count stored back
-- [ ] DEEP DIVE: all 4 parts · the funnel leak named · 3 best hooks quoted · competitors by their own median ·
-      gaps evidence-backed · ~8 exact titles on the §22 mix passing the title gates · the one move
-- [ ] Report rendered on the skeleton, stamped, saved to Performance/; findings seeded to `performance.md`
-- [ ] Led with the 3-sentence verdict; ended with the offer to start the first video
+- [ ] Step 0 connector check ran first; the sign-in was offered once (or the connector clicks given) — never at setup
+- [ ] Answer sized to the ask — deep dive only when they asked for the full picture
+- [ ] The Studio pack was asked for ONCE before pulling (or "skip" recorded); nothing private invented
+- [ ] Pulled everything the connection gives: full video records → packaging audit · captions → hooks · playlists +
+      sections · comments (once) · ≤5 competitors · search rank · AI answer presence · trends/news
+- [ ] Every number real and sourced; empties "not available"; the channel's own median is the benchmark
+- [ ] Written for a realtor: four-line findings · "In plain English" openers · numbers in tables · every metric
+      explained once · no unexplained marketing words · long tables in the appendix
+- [ ] READ THIS FIRST has the 3-sentence verdict, exactly ONE move, and three actions for this week
+- [ ] 1.7 names the one break in the path to calls AND the "which video made you reach out?" habit
+- [ ] Part 5: ~8 exact titles on the §22 mix + the cadence math (standing series counted, plan fits 2/wk)
+- [ ] Report saved as a styled `.docx` in Performance/ · baseline stored · Brain seeded · the closing line said
+- [ ] Ended with the offer to start the first video

@@ -1,111 +1,107 @@
 # Short-Form Deep Dive — the full breakdown (structure + method)
 
-The most thorough read the system does: the agent's **entire** short-form presence, their **competitors**, and
-the **openings** between the two — ending in a concrete plan. This is the short-form mirror of a full YouTube
-channel audit. Interpret everything with `metrics-guide.md` + `mike-frameworks.md`; pull everything from
-`composio-data-engine.md` §7. **READ-ONLY** — never call a write / DM-send / comment tool.
+The most thorough read the system does: the agent's **entire** short-form presence, the other agents in
+their market, where they show up when people search, the openings, and a 30-day plan — once a month.
+Interpret everything with `metrics-guide.md` + `mike-frameworks.md`; pull everything from
+`composio-data-engine.md` §7 (the full Instagram map), recipes 2, 3 and 7, and recipe S for YouTube Shorts
+retention. **READ-ONLY** — never call a write / DM-send / comment / reply tool. Rendered on the **Deep Dive
+Report shape** in `shared/output-standard.md` §5b — stamped.
 
-**Scope the window:** default to the **last 90 days** (enough posts to see real patterns); honour a window the
-agent names. State the window up front.
+## Who reads this — and the plain-language rules (non-negotiable)
+The reader is a real estate agent, not a marketer. Cohort feedback, verbatim: *"it's just so much
+information that I have no idea what I'm looking at."* So:
+1. **Every finding is the same four lines:** *What we found · Why it matters to you · Do this · The proof.*
+   "Do this" is the exact post, hook, or change — nothing the agent has to translate.
+2. **Every section opens with `In plain English:`** — one sentence a friend would say across a table.
+3. **Numbers live in tables and dotted rows, not sentences.** A sentence carries at most two numbers.
+4. **Explain every metric the first time it appears**, in the same line: *"skip rate — who swiped away in the
+   first 3 seconds."* Plain names are in `metrics-guide.md`; use them.
+5. **No marketing words without the plain phrase next to them:** "the ask" not "CTA"; "where views stop
+   turning into messages" not "the funnel"; "people who saw at least one post" not "reach" on first use.
+6. **Why = outcome words** (messages, calls, clients), never metric words.
+7. **Short on purpose:** 3–5 openings, 3 strengths, 3 fixes; long tables go to the APPENDIX; page one alone
+   tells a busy agent what to do.
+8. **Detailed where it counts:** every "Do this" is exact; every "proof" carries a real number and its source.
 
-**The rule for every section: end on "so what."** This is a diagnosis to act on, not a data dump.
-
----
-
-## Part 1 — The account audit (their own short-form, in full)
-Go deeper than the everyday analytics read — this is the diagnostic, not the summary.
-
-### 1a. Growth & audience
-- Follower trend + growth rate (vs the counts stored in `performance.md`); YouTube subs trend.
-- Reach trend across the window — climbing, flat, or spiky? Tie spikes to specific posts.
-- **Demographics (IG `follower_demographics` + `reached_audience_demographics`):** age / city / country / gender
-  of both followers and the non-followers reached. The decisive question: **locals vs other agents vs
-  out-of-market.** An agent-heavy audience = the agent-bait trap (mike-frameworks §4) — the single most common
-  realtor short-form failure.
-- Profile-visit → follow conversion: are views turning into follows, or just passing through?
-
-### 1b. Content inventory (every post, ranked & tagged)
-- Pull the full window (`INSTAGRAM_GET_IG_USER_MEDIA` + YouTube list/details). Rank by views — and separately
-  by **saves**, by **shares**, and by **DMs driven**.
-- Tag each post by **format** (green screen / talking head / carousel) and **category** (reach / value / trust /
-  conversion) from `content-log.md`.
-- Compute per-format and per-category averages: which format drives **reach**, which drives **saves**, which
-  drives **DMs** (e.g. *"green screens = 3× your reach; carousels = 2× saves but near-zero DMs"*).
-- **4-3-2-1 balance check:** what the mix actually was vs Mike's target — over-indexed on selling? All reach and
-  no conversion? Name the imbalance.
-
-### 1c. Hook & retention analysis (the edge no scheduler gives)
-- Across all reels, group hooks by style (question / bold claim / contrarian / list / story) and read
-  **`reels_skip_rate`** per group → the hook styles that actually hold for THIS agent.
-- **`ig_reels_avg_watch_time` vs video length** → where videos lose people, and the ideal length for this agent.
-- Name the 3 best-performing hooks **verbatim** and say why each worked.
-
-### 1d. The funnel leak
-Walk reach → engagement → profile visits → follows → DMs/clicks and name the **single biggest leak** (e.g.
-*"strong reach, weak profile-visit-to-follow — there's no 'follow for more [city] updates' on-screen"*).
-
-### 1e. Cadence & consistency
-Posts/week vs Mike's minimum (3×/week; goal daily + daily stories). Gaps, streaks, and best days/times
-(Metricool best-time if connected — note the live connection itself doesn't provide best-time).
+## Window and data ladder
+**Window:** the last 90 days by default; honour a window the agent names. State it in one line.
+**Sources, best-first, never blocked:** the live connection (§7 — Instagram in full, YouTube counts) →
+Metricool (ads, best-time as a second opinion) → GoHighLevel statistics → screenshots. Say exactly what you
+had under **WHAT'S IN THIS REPORT**. Never invent a number the source didn't return.
 
 ---
 
-## Part 2 — The competitor breakdown (the part to make excellent)
-Identify **3–5 competitors:** start from `identity/strategy.md` (competitors they admire) and
-`identity/market.md`; if thin, ask the agent for a few handles once; optionally discover local ones via
-`YOUTUBE_SEARCH_YOU_TUBE` / `COMPOSIO_SEARCH_WEB` on the agent's city + "realtor".
+## Page one — READ THIS FIRST
+- **The verdict** — three plain sentences: where they stand · the biggest strength · the biggest fix.
+- **THE ONE MOVE** — exactly one action (never two joined by "and"): the cheapest, fastest, most measurable
+  change, visible within two weeks. Repeated word for word at the end of Part 5.
+- **DO THESE THREE THIS WEEK** — three specific actions from the fixes and openings.
+- **YOUR NUMBERS AT A GLANCE** with the plain meaning in each note; then **WHAT'S IN THIS REPORT**.
 
-### 2a. YouTube competitors — deep (public data, full support)
-Per competitor: `YOUTUBE_GET_CHANNEL_ID_BY_HANDLE` → `YOUTUBE_GET_CHANNEL_STATISTICS` (batch) →
-`YOUTUBE_LIST_CHANNEL_VIDEOS` → `YOUTUBE_GET_VIDEO_DETAILS_BATCH`. Then read:
-- **Outliers** — videos whose views are a multiple of that channel's own median = topics proven to work; a
-  small **local** channel overperforming counts double (that's a topic that works *here*, not just a big
-  channel being big).
-- Their top ~10 short-form topics + hook styles, posting cadence, and format mix.
-- **What they do that the agent doesn't** — the transferable moves.
+## Part 1 — Your account (method per section)
+- **1.1 How you grew** — followers now vs the count stored last time (`performance.md`); follows and
+  unfollows (`follows_and_unfollows`); reach and profile visits vs the previous window (pull it too). First
+  dive = baseline; say so.
+- **1.2 What's pulling — by format and by job** — every post tagged by format (green screen / talking head /
+  carousel) and job (reach / value / trust / convert) from `content-log.md`; typical reach, saves and skip
+  rate per group; the actual mix vs 4-3-2-1 → what to rebalance. End on *Keep doing / Rethink*.
+- **1.3 Your best hooks** — group reel hooks by style (question / bold claim / contrarian / list / story);
+  read `reels_skip_rate` and `ig_reels_avg_watch_time` vs length per group; quote the 3 best hooks word for
+  word with their skip rate, and the weakest opening. Hook vs middle per the metrics guide.
+- **1.4 Who's watching** — the three audiences (followers / reached / engaged) by city, age, gender. The
+  decisive question in plain words: **locals vs other agents vs out-of-market.** Agent-heavy = the agent-bait
+  trap (mike-frameworks §4) → steer to green screen + local lifestyle.
+- **1.5 When to post** — `online_followers` for the last 7 days (hourly, UTC → convert to the agent's
+  timezone) → the 3 best slots. Their own audience, not a generic chart. Metricool best-time = second
+  opinion if connected.
+- **1.6 What turns into leads** — website taps, profile-link taps (call/text/email/address), profile
+  actions per post (`profile_activity` with the action breakdown — which posts made people tap), DMs
+  started (if the messages permission is on; else "not connected yet"). Never invent a lead count.
+- **1.7 Stories** — only what's live today via the API (24 h); a month of stories = the agent's screenshots
+  of their story insights. Say which.
+- **1.8 What viewers are saying** — comments on the top posts: leads (buyer/seller intent — answer today),
+  repeated questions (→ next posts, counted), unanswered comments.
+- **1.9 Where views stop turning into DMs** — walk the path in plain words (see it → watch → visit the
+  profile → follow → message) and name the ONE place it breaks with the fix.
+- **1.10 How often you post** — posts/week vs Mike's 3 minimum and the daily goal; stories per week; gaps.
 
-### 2b. Instagram competitors — by hand (a glance, not a pull)
-The live connection cannot read other people's Instagram accounts (its Instagram toolkit runs on Instagram
-Login, which has no business-discovery edge — verified against the live toolkit 2026-09-25). So competitor
-Instagram is a **glance, not a pull**: ask the agent to open each competitor's public profile (or drop
-screenshots of it) and read what's visible — follower count, posting pace, format mix, hook styles, topics,
-and which posts beat *their own* usual likes/comments. **Be honest:** label it as a public-profile glance;
-you cannot see their reach, saves, or watch-time, and never present it as their "analytics." (A competitor's
-YouTube channel, if they have one, IS a full pull — see 2a.)
+## Part 2 — The other agents in your market
+3–5 from `identity/strategy.md` + `identity/market.md` (ask once if thin). **YouTube = a full pull** (recipe
+2: standout videos as a multiple of their own normal; small local channels count double). **Instagram and
+TikTok = a look at their public profile** (the agent opens it or drops screenshots; the connection cannot
+read other people's accounts — say so plainly; never call it their analytics). Rows labelled by source.
+Then *What they do that you don't* (move → why → how you'd do it), *What you do better*, *Where you sit*.
+Never an empty row; cap at 5.
 
-### 2c. TikTok — manual glance
-The API is authenticated-user-only, so competitor TikTok can't be pulled. If the agent cares, they eyeball 2–3
-and you analyze what they screenshot/describe. Say this plainly; don't fake a pull.
+## Part 3 — Where you show up when people search
+Recipe 7, short-form flavour: **3.1 On YouTube** (the market's local phrases — Shorts and long-form rank
+here) · **3.2 When they ask an AI assistant** (buyer/seller questions → in the answer or citations? who is?
+→ the one profile/page fix) · **3.3 What's rising** (direction of local phrases + this week's news hooks →
+green-screen posts). Say "an AI answer engine", never a brand.
 
-### 2d. Positioning verdict
-Where the agent stands vs the field — size, cadence, engagement, topic coverage. What's **saturated** (skip it)
-and what **nobody local is doing** (claim it).
+## Part 4 — The openings
+Recipe 3 logic + the format read: 3–5 four-line cards (*What we found · Why it matters to you · Do this —
+the exact hook/topic, format, job, week · The proof*). Formats competitors win with that the agent hasn't
+used are openings too. The under-posted job in 4-3-2-1 belongs in Part 5's FIX list.
 
----
+## Part 5 — Your next 30 days
+- **Keep doing** — 3 strengths with the proving number. **Fix** — 3 fixes: what's wrong · why it costs you ·
+  do this.
+- **The plan (4-3-2-1)** — a concrete post list, one per row (hook/topic · format · job · week), seeded from
+  the winning hooks/formats + the openings, ready for `shortform-greenscreen` / `shortform-talkinghead` /
+  `shortform-carousel`; **Post at:** the 3 slots from 1.5; **Total output:** posts/week + stories vs Mike's
+  minimum and goal. Offer to build the first 4 pieces now.
+- **THE ONE MOVE** — repeated word for word.
 
-## Part 3 — Gaps & opportunities
-- **Content-gap read** (recipe #3 logic): local topics with real demand + weak/stale/non-local coverage →
-  specific bets with the evidence attached (*"'moving to [city]' — top result is 2 years old and no agent
-  covers it"*).
-- **Format opportunities:** formats competitors win with that the agent underuses.
-- **Trend/audio** openings if surfaced (secondary signal).
-
----
-
-## Part 4 — Synthesis + the next-30-days plan
-- **Top 3 strengths to double down on** — each with the number that proves it.
-- **Top 3 fixes** — the leaks/weaknesses, each with the specific change to make.
-- **The 30-day plan:** a concrete content list, balanced to 4-3-2-1, seeded from the winning hooks/formats +
-  the gaps found — detailed enough to hand straight to `shortform-greenscreen` / `shortform-talkinghead` /
-  `shortform-carousel`. Offer to generate the first few right now.
-- **One sentence:** the single most important move.
-
----
+## Appendix — the full numbers
+Every post in the window (reach · saves · shares · skip % · profile actions) · the three audience tables ·
+the search results pulled. Long tables live here, never in the body.
 
 ## Honesty rules (non-negotiable)
-- Every number is real and cited ("your Instagram, pulled today"); **empty results = unavailable, never
+- Every number is real and cited ("your Instagram, pulled today"); **empty results = "not available", never
   guessed.**
-- Competitor IG/TikTok depth is limited — state it; never dress public engagement up as private analytics.
-- Compare to the agent's **own** baseline and the **named** competitors — never to invented industry benchmarks.
-- Account gates apply (Business/Creator IG for insights; ≥1,000 followers for per-media; YT = counts, not
+- Competitor Instagram/TikTok depth is a glance — state it; never dress public engagement up as analytics.
+- Compare to the agent's **own** baseline and the **named** competitors — never to invented benchmarks.
+- Account gates apply (Business/Creator; ≥1,000 followers for per-post numbers; YouTube = counts, not
   watch-time). If a gate blocks something, say so and press on with what's available.
+- Read-only always: nothing is ever posted, replied to, or sent.

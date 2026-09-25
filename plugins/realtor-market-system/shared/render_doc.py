@@ -307,6 +307,7 @@ class Doc:
                 al = 'center' if (i == 0 and len(val) <= 3) else 'left'
                 self._cell(cells[i], val, 9.5, BODY, bg=bg, align=al)
         for i, w in enumerate(widths):
+            t.columns[i].width = w
             for row in t.rows: row.cells[i].width = w
         self.d.add_paragraph().paragraph_format.space_after = Pt(2)
 
@@ -419,6 +420,12 @@ def heading_like(s):
     return sum(c.isupper() for c in letters) / len(letters) >= 0.6 and len(s) <= 80
 NUM = re.compile(r'^\s*(\d+)\s')
 SUBBAND = re.compile(r'^\s*[─═—-]{2,}\s*([^─═]{2,70}?)\s*[─═—-]{2,}\s*$')
+
+# a dotted-leader metric row: the house style ('Label ........ value') OR an indented row with a short
+# 3-dot leader ('   Leads / calls booked ... not tracked yet') — the skills sometimes write the short form
+DOTROW = re.compile(r'^\s{2,}\S.*?\s\.{3,}\s+\S')
+def _isdot(l):
+    return ('....' in l and re.match(r'^\s*\S.*\.{3,}\s*\S', l) is not None) or DOTROW.match(l) is not None
 CUE = re.compile(r'^\s*(>>|\[|FACT:|ON SCREEN|PAUSE)')
 CHAP = re.compile(r'^(PART\s+[IVXLCDM]+|CHAPTER\s+\d+)\s*[—–:\-]\s*(.+)$')
 _CHAP_PREFIX = re.compile(r'^\s*(PART\s+[IVXLCDM]+|CHAPTER\s+\d+)\s*(?:[—–:\-]\s*)?')
@@ -543,9 +550,9 @@ def _render_body(lines, i, doc, book_mode, collect=None, slug_iter=None):
             doc.table(["Week", "Video to publish", "Pillar"], rows,
                       [Inches(0.75), Inches(4.4), Inches(1.55)])
             continue
-        if '....' in raw and re.match(r'^\s*\S.*\.{3,}\s*\S', raw):
+        if _isdot(raw):
             rows = []
-            while i < n and '....' in lines[i]:
+            while i < n and _isdot(lines[i]):
                 m = re.match(r'^\s*(.+?)\s*\.{3,}\s*(.+?)\s*$', lines[i])
                 if not m: break
                 rest = m.group(2).strip(); note = ""
@@ -553,14 +560,14 @@ def _render_body(lines, i, doc, book_mode, collect=None, slug_iter=None):
                 if mm: rest, note = mm.group(1).strip(), mm.group(2).strip()
                 rows.append([m.group(1).strip(), rest, note]); i += 1
             lh = (last_head or '').upper()
-            if 'COMPETITOR' in lh:
+            if any(k in lh for k in ("COMPETITOR", "OTHER AGENTS")):
                 hdr = ["Channel", "Numbers", "Notes"]
-            elif 'SCORECARD' in lh:
+            elif any(k in lh for k in ("SCORECARD", "AT A GLANCE", "YOUR NUMBERS")):
                 hdr = ["Metric", "This window", "vs last / note"]
-            elif any(k in lh for k in ("CHANNEL", "ACCOUNT", "VIDEO", "POST", "CONTENT TYPE", "FORMAT", "CATEGORY")):
-                hdr = ["Item", "Result", "Note"]
-            else:
+            elif any(k in lh for k in ("GOAL", "MATH", "TARGET", "KPI")):
                 hdr = ["Metric", "Target", "Why it matters"]
+            else:
+                hdr = ["Item", "Result", "Note"]
             doc.table(hdr, rows, [Inches(2.1), Inches(2.25), Inches(2.35)])
             continue
 
@@ -577,8 +584,13 @@ def _render_body(lines, i, doc, book_mode, collect=None, slug_iter=None):
             if rows:
                 ncol = max(len(r) for r in rows)
                 rows = [r + [""] * (ncol - len(r)) for r in rows]
-                w = int(doc.usable / ncol)
-                doc.table(rows[0], rows[1:] if len(rows) > 1 else [], [w] * ncol)
+                # column widths follow the longest cell in each column (min 4 chars, cap 60), so a title
+                # column gets the room and a '#' or 'Views' column stays narrow; floor at 0.55in
+                lens = [max((len(str(r[c])) for r in rows), default=4) for c in range(ncol)]
+                wts = [max(4, min(l, 60)) for l in lens]; tot = float(sum(wts))
+                widths = [max(int(Inches(0.55)), int(doc.usable * w / tot)) for w in wts]
+                scale = doc.usable / float(sum(widths)); widths = [int(w * scale) for w in widths]
+                doc.table(rows[0], rows[1:] if len(rows) > 1 else [], widths)
             continue
 
         # sub-band  "──── LABEL ────"

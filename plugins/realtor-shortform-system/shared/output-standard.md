@@ -115,58 +115,182 @@ The one document that isn't content: the monthly deep dive from `shortform-analy
 this fixed shape (mirrors the YouTube System's report so the two dives read as one ritual):
 ```
 SHORT-FORM DEEP DIVE — [AGENT NAME], [CITY]  ·  [MONTH YYYY]
-Window: [dates]  ·  Sources: [live data · Metricool · screenshots]  ·  [N] posts reviewed
+Window: [dates]  ·  Sources: [live Instagram + YouTube data · Metricool · screenshots]  ·  [N] posts reviewed
 Powered by Mike Sherrard Coaching Inc Frameworks
 
-════════════════════════════════════════════
-THE VERDICT
-════════════════════════════════════════════
-{3 sentences: where they stand · biggest strength · biggest fix}
 
 ════════════════════════════════════════════
-THE SCORECARD   (this window vs last)
+READ THIS FIRST
 ════════════════════════════════════════════
-   Followers .............. {now}  ({+/- since last dive})
-   Posts published ........ {n}  ({per week} vs Mike's 3/wk minimum)
-   Avg reach / post ....... {n}  (your median: {n})
-   Reel skip rate ......... {n%}   — or "not available — needs the live data connection"
+{3 plain sentences: where you stand · your biggest strength · your biggest fix}
+
+>> THE ONE MOVE:  {one sentence — the single cheapest, fastest change that matters most this month}
+
+   ──── DO THESE THREE THIS WEEK ────
+   1.  {a specific action}
+   2.  {…}
+   3.  {…}
+
+
+════════════════════════════════════════════
+YOUR NUMBERS AT A GLANCE   (this window vs last)
+════════════════════════════════════════════
+   Followers .............. {now}  ({+/- since last dive} — or "first dive: this is your baseline")
+   Posts published ........ {n}  ({n}/wk vs Mike's 3/wk minimum)
+   Reach this window ...... {n}  (people who saw at least one post)
+   Typical post ........... {median reach}  (half your posts do better, half worse)
+   Reel skip rate ......... {n%}  (who swiped away in the first 3 seconds)   — or "not available — needs the live connection"
    Saves + shares ......... {n}
-   DMs / leads ............ {n}  (from {which posts})
+   Link taps .............. {n}  (website + profile-link taps — the lead actions)
+   DMs / leads ............ {n}  (from {which posts})   — or "DMs not connected yet"
+
+   ──── WHAT'S IN THIS REPORT ────
+   •  Pulled live:  {your Instagram · your YouTube · N other channels · N searches}
+   •  From screenshots / Metricool:  {…}
+   •  Not available on this connection:  {other people's Instagram and TikTok (a glance by hand) · Facebook · …}
+
 
 ════════════════════════════════════════════
 PART 1 — YOUR ACCOUNT
 ════════════════════════════════════════════
-   {every post ranked & tagged: format · funnel category · hook · reach · skip rate}
-   ──── PER FORMAT / PER CATEGORY ────
-   {averages}
-   ──── HOOKS & RETENTION ────
-   •  Best hooks (verbatim): "{…}" · "{…}" · "{…}" — {why each held}
-   ──── THE FUNNEL LEAK ────
-   >> {one plain sentence + the fix}
+   ──── 1.1 HOW YOU GREW ────
+   In plain English:  {one sentence}
+   Followers .............. {now vs last}  (follows {n} · unfollows {n})
+   Reach ................. {this window vs previous}
+   Profile visits ......... {n}
+   •  What this means for you:  {…}
+
+   ──── 1.2 WHAT'S PULLING — BY FORMAT AND BY JOB ────
+   In plain English:  {one sentence}
+   Green screen ({n}) ..... {typical reach}  ({saves} · {skip rate})
+   Talking head ({n}) ..... {…}
+   Carousel ({n}) ......... {…}
+   Reach posts ({n}) ...... {…}   (the 4 in 4-3-2-1)
+   Value posts ({n}) ...... {…}
+   Trust posts ({n}) ...... {…}
+   Convert posts ({n}) .... {…}
+   •  Your mix vs Mike's 4-3-2-1:  {what it actually was} → {what to rebalance}
+   •  Keep doing:  {…}   ·   Rethink:  {…}
+
+   ──── 1.3 YOUR BEST HOOKS ────
+   In plain English:  {one sentence: the first 3 seconds decide everything — here's what held}
+   •  "{hook 1, word for word}" — {skip rate} — {why it held}
+   •  "{hook 2}" — {…}
+   •  "{hook 3}" — {…}
+   •  Your weakest opening:  "{…}" — {skip rate} — {what to stop doing}
+
+   ──── 1.4 WHO'S WATCHING ────
+   In plain English:  {one sentence: are these local buyers and sellers, or other agents?}
+   Your followers ......... {top cities · age band · gender}
+   Who you reached ........ {top cities}
+   Who engaged ............ {top cities}
+   •  Locals vs agents:  {the verdict, plain}
+   •  What this means for you:  {…}
+
+   ──── 1.5 WHEN TO POST ────
+   In plain English:  {one sentence: when your own followers are online}
+   Best slots ............. {day/time 1 · day/time 2 · day/time 3}  (your timezone)
+   •  Do this:  {…}
+
+   ──── 1.6 WHAT TURNS INTO LEADS ────
+   In plain English:  {one sentence}
+   Website taps ........... {n}
+   Profile-link taps ...... {n}  (call · text · email · address)
+   Posts that drove profile actions ... "{post}" ({n}) · "{post}" ({n})
+   DMs started ............ {n}   — or "not connected yet"
+   •  What this means for you:  {…}
+
+   ──── 1.7 STORIES ────
+   {what's live today: link taps · replies · exits}   — or "no stories live today; drop screenshots of your story insights and I'll read the month"
+
+   ──── 1.8 WHAT VIEWERS ARE SAYING ────
+   •  Leads in the comments:  {n} — answer these today: "{quote}"
+   •  Questions people keep asking:  "{question}" ({n} times) → your next post: "{hook}"
+   •  Unanswered comments:  {n}
+
+   ──── 1.9 WHERE VIEWS STOP TURNING INTO DMs ────
+   In plain English:  {the path: people see it → watch → visit your profile → follow → message you}
+   >> {the one place it breaks — and the specific fix}
+
+   ──── 1.10 HOW OFTEN YOU POST ────
+   Posts per week ......... {n}  (Mike's minimum 3 · goal daily)   ·   Stories .......... {n days/wk}
+   •  What to change:  {…}
+
 
 ════════════════════════════════════════════
-PART 2 — YOUR COMPETITORS
+PART 2 — THE OTHER AGENTS IN YOUR MARKET
 ════════════════════════════════════════════
-   [Channel/handle] ........ {numbers} · outlier: "{…}"
-   •  What they do that you don't · What you do better · Positioning: {two sentences}
+   In plain English:  {one sentence: YouTube we can read in full; Instagram and TikTok are a look at their public profile}
+   [Channel A] ........ {subs} · typical video {n} · standout: "{title}" ({n} views, {x}× their normal) — YouTube
+   [Account B] ........ {followers} · {posts/wk} · what stands out — Instagram, public-profile glance
+   ──── WHAT THEY DO THAT YOU DON'T ────
+   •  {the move} — {why it works} → {how you'd do it}
+   ──── WHAT YOU DO BETTER ────
+   •  {…}
+   ──── WHERE YOU SIT ────
+   {two sentences}
+
 
 ════════════════════════════════════════════
-PART 3 — THE GAPS
+PART 3 — WHERE YOU SHOW UP WHEN PEOPLE SEARCH
 ════════════════════════════════════════════
-   •  {gap} — {evidence}
+   In plain English:  {one sentence}
+   ──── 3.1 ON YOUTUBE ────
+   | What people type | Where you are | Who's #1 today | Their views |
+   |---|---|---|---|
+   ──── 3.2 WHEN THEY ASK AN AI ASSISTANT ────
+   | The question | Are you in the answer? | Who is |
+   |---|---|---|
+   •  What gets you into the answer:  {the one profile or page fix}
+   ──── 3.3 WHAT'S RISING ────
+   •  {phrase} — {direction} → {post idea}
+   •  In the news this week:  {headline} ({source}, {date}) → {green-screen post}
+
 
 ════════════════════════════════════════════
-PART 4 — THE NEXT 30 DAYS
+PART 4 — THE OPENINGS   (what locals want that nobody local is posting)
 ════════════════════════════════════════════
-   ──── DOUBLE DOWN ────   1.  {strength} — {number}
-   ──── FIX ────           1.  {fix} — {the specific change}
+   In plain English:  {one sentence}
+   ──── OPENING 1 — {short plain name} ────
+   •  What we found:  {one sentence}
+   •  Why it matters to you:  {one sentence, in outcome words}
+   •  Do this:  post "{hook / topic}"  ({format} · {job} · {week})
+   •  The proof:  {2–3 short facts, each with one number}
+   {…3–5 openings, never more}
+
+
+════════════════════════════════════════════
+PART 5 — YOUR NEXT 30 DAYS
+════════════════════════════════════════════
+   ──── KEEP DOING (YOUR STRENGTHS) ────
+   1.  {strength} — {the number that proves it}
+   ──── FIX ────
+   1.  {what's wrong} — {why it costs you} — do this: {the specific change}
    ──── THE PLAN (4-3-2-1) ────
-   Week 1 · Post 1 — {hook/topic}   ({format · category})
+   Week 1 · Post 1 — {hook / topic}   ({format} · {job})
    …
-   >> THE ONE MOVE:  {one sentence}
+   Post at:  {your 3 best slots from 1.5}
+   Total output:  {n} posts a week + stories {n} days — {vs Mike's 3 minimum / daily goal}
+
+   >> THE ONE MOVE:  {the same sentence as page one}
+
+
+════════════════════════════════════════════
+APPENDIX — THE FULL NUMBERS
+════════════════════════════════════════════
+   ──── A. EVERY POST IN THE WINDOW, BEST TO WORST ────
+   | # | Post (hook) | Format · job | Reach | Saves | Shares | Skip % | Profile actions |
+   |---|---|---|---|---|---|---|---|
+   ──── B. YOUR AUDIENCE IN FULL ────
+   | Audience | Top cities | Age | Gender |
+   |---|---|---|---|
+   ──── C. SEARCH RESULTS WE PULLED ────
+   | Phrase | #1 | #2 | #3 | Your best |
+   |---|---|---|---|---|
+
 
 ────────────────────────────────────────────
-Sources — {…}.  Compliance — Fair Housing checked.  ✓
+Sources — live Instagram + YouTube data pulled {date} · Metricool {ads / best-time} · screenshots · {N} searches · an AI answer engine.  Compliance — Fair Housing checked.  ✓
 Powered by Mike Sherrard Coaching Inc Frameworks
 ```
 The stamp is a byline + footer only — never inside a caption or script block the agent pastes out.

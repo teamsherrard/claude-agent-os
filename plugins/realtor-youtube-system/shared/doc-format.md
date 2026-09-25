@@ -168,87 +168,197 @@ SUCCESS METRICS   (90-day milestones toward {goal})
 Powered by Mike Sherrard Coaching Inc Frameworks
 ```
 
-### Deep Dive Report (flagship — stamped; YouTube AND Short-Form use this shape)
+### Deep Dive Report (flagship — stamped; written for a realtor, not a marketer — the Short-Form plugin mirrors this shape in output-standard.md §5b)
 ```
 YOUTUBE DEEP DIVE — [AGENT NAME], [CITY]  ·  [MONTH YYYY]
-Window: [dates]  ·  Sources: [live data · Studio export · public reads]  ·  [N] videos reviewed
+Window: [dates]  ·  Sources: [live YouTube data · Studio pack · captions · public reads]  ·  [N] videos reviewed
 Powered by Mike Sherrard Coaching Inc Frameworks
 
 
 ════════════════════════════════════════════
-THE VERDICT
+READ THIS FIRST
 ════════════════════════════════════════════
-{3 sentences: where they stand · the biggest strength · the biggest fix}
+{3 plain sentences: where you stand · your biggest strength · your biggest fix — no jargon, no numbers beyond two}
+
+>> THE ONE MOVE:  {one sentence — the single cheapest, fastest change that matters most this month}
+
+   ──── DO THESE THREE THIS WEEK ────
+   1.  {a specific action: a title to film, a change to make, a thing to paste}
+   2.  {…}
+   3.  {…}
 
 
 ════════════════════════════════════════════
-THE SCORECARD   (this window vs last)
+YOUR NUMBERS AT A GLANCE   (this window vs last)
 ════════════════════════════════════════════
-   Subscribers ............ {now}  ({+/- since last dive})
-   Videos published ....... {n}  ({cadence}/wk vs plan {2}/wk)
-   Avg views / video ...... {n}  (your median: {n})
-   Click-through rate ..... {n%}  (Studio)   — or "not available — add your Studio export"
-   Avg view duration ...... {m:ss} / {% viewed}
-   Leads / calls booked ... {n}  (from {which videos})
+   Subscribers ............ {now}  ({+/- since last dive} — or "first dive: this is your baseline")
+   Videos published ....... {n}  ({n}/wk vs your plan of 2/wk)
+   Views this window ...... {n}  ({vs the previous window})
+   Typical video .......... {median views}  (half your videos do better than this, half worse)
+   Comments ............... {n}  ({where they come from})
+   Click-through rate ..... {n%}  (of the people who saw your thumbnail, how many clicked)   — or "not provided yet"
+   Watch time ............. {m:ss} / {% viewed}  (how long people stay)   — or "not provided yet"
+   Leads / calls booked ... {n}  (from {which videos})   — or "not tracked yet — ask every lead which video made them reach out"
+
+   ──── WHAT'S IN THIS REPORT ────
+   •  Pulled live:  {your channel · N other channels · N searches · captions of your top N videos}
+   •  From your Studio pack:  {in — the four screenshots} — or "not provided — say 'add my Studio numbers' any time and the click-through, watch-time, traffic and audience sections fill in"
+   •  Not available on this connection:  {comments (permission) → 'check my comments' with screenshots · …}
 
 
 ════════════════════════════════════════════
 PART 1 — YOUR CHANNEL
 ════════════════════════════════════════════
-   #    VIDEO                                            TYPE · PILLAR · VIEWS · %VIEWED
-   1    {title}                                          {market update · Pillar 2 · 4,812 · 41%}
-   …    (every video in the window, best → worst)
+   ──── 1.1 HOW YOU GREW ────
+   In plain English:  {one sentence}
+   Subscribers ............ {now vs last}
+   Views ................. {this window vs previous}
+   Uploads ............... {this window vs previous}
+   •  What this means for you:  {one or two sentences}
 
-   ──── PER CONTENT TYPE ────
-   Relocation ............ {avg views}  ({n} videos)
-   Market updates ........ {avg}  ({n})
-   {…the 6 types}
+   ──── 1.2 WHAT'S PULLING — BY CONTENT TYPE ────
+   In plain English:  {one sentence: which kind of video works for you}
+   {Content type} ......... {typical views}  ({n} videos · {share} of all views)
+   {…every type you made}
+   •  Keep doing:  {type} — {why, in outcome words}
+   •  Rethink:  {type} — {why}
 
-   ──── PACKAGING & HOOKS ────
-   •  Best packaged:  {3 titles} — {why}
-   •  Re-title / re-thumbnail:  {3 titles} — {the fix each}
-   •  Best openings (verbatim):  "{hook 1}" · "{hook 2}" · "{hook 3}" — {why each held}
+   ──── 1.3 TITLES & THUMBNAILS (PACKAGING) ────
+   In plain English:  {one sentence: are people clicking?}
+   | Check | Your videos | What to change |
+   |---|---|---|
+   | Title under 70 characters | {n of N pass} | {…} |
+   | One promise per title | {…} | {…} |
+   | Your market / the phrase people type in the title | {…} | {…} |
+   | Booking link + free guide in the first 3 lines of the description | {…} | {…} |
+   | Chapters (timestamps) | {…} | {…} |
+   | A question or comment prompt | {…} | {…} |
+   | Uploaded captions | {…} | {…} |
+   | Best publish day / time | {day, time — by typical views} | {…} |
+   •  Re-title these 3 now:  "{old}" → "{new}" · "{old}" → "{new}" · "{old}" → "{new}"
 
-   ──── THE FUNNEL LEAK ────
-   >> {one plain sentence naming the single biggest leak — and the specific fix}
+   ──── 1.4 YOUR BEST OPENINGS ────
+   In plain English:  {one sentence}
+   •  "{hook 1, word for word}" — {why it held, in plain words}
+   •  "{hook 2}" — {…}
+   •  "{hook 3}" — {…}
+   •  Use this opening style on:  {the next video}
+
+   ──── 1.5 WHERE VIEWERS COME FROM & WHO THEY ARE   (from your Studio pack) ────
+   In plain English:  {one sentence}
+   Found you by searching ... {n%}  (vs browsing {n%} · suggested {n%})
+   Top search terms ....... {term · term · term}
+   Who they are ........... {age band · gender split · top locations}
+   When they're watching .. {days / hours}
+   •  What this means for you:  {…}
+   — or:  Not provided yet. Say "add my Studio numbers" and drop the four screenshots; this section fills in.
+
+   ──── 1.6 WHAT VIEWERS ARE SAYING ────
+   In plain English:  {one sentence}
+   •  Leads in the comments:  {n} — answer these today: "{quote}" · "{quote}"
+   •  Questions people keep asking:  "{question}" ({n} times) → your next video: "{title}"
+   •  Unanswered comments:  {n}
+   — or:  Comments aren't readable on this connection. Say "check my comments" and drop screenshots.
+
+   ──── 1.7 WHERE VIEWS STOP TURNING INTO CALLS ────
+   In plain English:  {the path in one sentence: people see the video → click → watch → hear your ask → call}
+   >> {the one place it breaks, plainly — and the specific fix}
+   •  The habit that fixes tracking:  ask every new lead "which video made you reach out?" and tell me — from now on I count leads by video.
+
+   ──── 1.8 HOW OFTEN YOU POST & YOUR CHANNEL PAGE ────
+   Uploads per week ....... {n}  (longest gap {n} days)
+   Playlists .............. {n}  ({do they match your 3 pillars?})
+   Channel page ........... {featured sections — or "not set up"}
+   •  What to change:  {…}
 
 
 ════════════════════════════════════════════
-PART 2 — YOUR COMPETITORS
+PART 2 — THE OTHER AGENTS IN YOUR MARKET
 ════════════════════════════════════════════
-   [Channel A] ........ {subs} · {avg views} · outlier: "{title}" ({n} views)
-   [Channel B] ........ {…}
-   •  What they do that you don't:  {the transferable moves}
-   •  What you do better:  {…}
-   •  Positioning:  {two sentences}
+   In plain English:  {one sentence: we looked at N channels and judged each against its own normal, not against you}
+   [Channel A] ........ {subs} · typical video {n} · standout: "{title}" ({n} views, {x}× their normal)
+   [Channel B] ........ {…}   (3–5 channels, never an empty row)
+
+   ──── WHAT THEY DO THAT YOU DON'T ────
+   •  {the move} — {why it works, plain} → {how you'd do it}
+   ──── WHAT YOU DO BETTER ────
+   •  {…}
+   ──── WHERE YOU SIT ────
+   {two sentences}
 
 
 ════════════════════════════════════════════
-PART 3 — THE GAPS
+PART 3 — WHERE YOU SHOW UP WHEN PEOPLE SEARCH
 ════════════════════════════════════════════
-   •  {gap} — {the evidence: demand + who ranks + how stale}
-   •  Starving pillar:  {pillar} — {planned vs filmed}
-   •  Repeat from a new angle:  {your winner} → {2–3 new angles}
+   In plain English:  {one sentence: when someone types these into YouTube, or asks an AI assistant, this is what they find}
+
+   ──── 3.1 ON YOUTUBE ────
+   | What people type | Where you are | Who's #1 today | Their views |
+   |---|---|---|---|
+   | {phrase} | {#3 / not in the top 20} | {channel} | {n} |
+   •  Own next:  "{phrase}" — {why it's winnable}
+
+   ──── 3.2 WHEN THEY ASK AN AI ASSISTANT ────
+   | The question | Are you in the answer? | Who is |
+   |---|---|---|
+   | {question} | {yes — cited / no} | {who} |
+   •  What gets you into the answer:  {the one page or profile fix}
+
+   ──── 3.3 WHAT'S RISING ────
+   •  {phrase} — {up / flat / down over 12 months, plain} → {video idea}
+   •  In the news this month:  {headline} ({source}, {date}) → {the "news + you" video}
 
 
 ════════════════════════════════════════════
-PART 4 — THE NEXT 30 DAYS
+PART 4 — THE OPENINGS   (topics people search that nobody local owns)
 ════════════════════════════════════════════
-   ──── DOUBLE DOWN ────
-   1.  {strength} — {the number}
+   In plain English:  {one sentence: we found N openings; each is a video with proven demand and weak competition}
+
+   ──── OPENING 1 — {short plain name} ────
+   •  What we found:  {one sentence}
+   •  Why it matters to you:  {one sentence, in outcome words}
+   •  Do this:  film "{exact title}"  ({content type} · {week})
+   •  The proof:  {2–3 short facts, each with one number}
+
+   ──── OPENING 2 — {…} ────
+   {…}   (3–5 openings, never more)
+
+   ──── YOUR OWN WINNERS, FROM A NEW ANGLE ────
+   •  "{your winner}" ({n} views) → "{new title 1}" · "{new title 2}"
+
+
+════════════════════════════════════════════
+PART 5 — YOUR NEXT 30 DAYS
+════════════════════════════════════════════
+   ──── KEEP DOING (YOUR STRENGTHS) ────
+   1.  {strength} — {the number that proves it}
    ──── FIX ────
-   1.  {fix} — {the specific change}
+   1.  {what's wrong} — {why it costs you} — do this: {the specific change}
    ──── THE PLAN ────
    Week 1 · Video 1 — {exact title}   ({content type})
    Week 1 · Video 2 — {exact title}   ({content type})
    …  (~8 videos on the §22 mix, one per row)
+   Total output:  {n} videos a week including {standing series} — {fits / trims to} your {2}/wk.
 
-   >> THE ONE MOVE:  {one sentence}
+   >> THE ONE MOVE:  {the same sentence as page one}
+
+
+════════════════════════════════════════════
+APPENDIX — THE FULL NUMBERS
+════════════════════════════════════════════
+   ──── A. EVERY VIDEO IN THE WINDOW, BEST TO WORST ────
+   | # | Video | Type | Length | Views | Comments | CTR | Watch % |
+   |---|---|---|---|---|---|---|---|
+   ──── B. THE PACKAGING CHECK, VIDEO BY VIDEO ────
+   | Video | ≤70 chars | One promise | Market | Link in first 3 lines | Chapters | Captions |
+   |---|---|---|---|---|---|---|
+   ──── C. SEARCH RESULTS WE PULLED ────
+   | Phrase | #1 | #2 | #3 | Your best |
+   |---|---|---|---|---|
 
 
 ────────────────────────────────────────────
-Sources — {live data connection, pulled [date]} · {Studio export [date]} · {public reads}.
-Compliance — Fair Housing checked on every title.  ✓
+Sources — live YouTube data pulled {date} · Studio pack {in / not provided} · captions of {N} videos · {N} searches · an AI answer engine.  Compliance — Fair Housing checked.  ✓
 Powered by Mike Sherrard Coaching Inc Frameworks
 ```
 (Short-Form's dive uses the same shape with its own labels: reels/carousels per format + funnel category,

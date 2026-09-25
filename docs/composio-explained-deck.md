@@ -156,18 +156,25 @@ tells you, gives you the five clicks, and offers to run on a screenshot right no
 
 **ON SLIDE:**
 ## What comes back
-**YouTube:** subscribers and growth · every video's views, likes, length, date · your competitors'
-channels, every video · what's ranking in your market for any topic. (Click-through and watch time come
-from one YouTube Studio screenshot — they're private to Studio.)
-**Instagram:** every post's views, reach, saves, shares, comments · reels: average watch time and skip
-rate · account reach, profile visits, follower growth · who your audience is — age, gender, cities.
-**What it can't see:** other people's Instagram or TikTok numbers (nobody can — those are a glance at
-their public profile), and per-post Instagram numbers under 1,000 followers (screenshots cover it).
+**YouTube (live):** subscribers and growth · every video's views, likes, comments, length, publish time ·
+each video's title, description, tags and captions (a titles-and-thumbnails check) · your playlists and
+channel page · your competitors' channels, every video · where you rank for any phrase.
+**YouTube (your Studio pack — four screenshots, once):** click-through rate · watch time and where people
+leave · how people found you and the exact search terms · who's watching and when. YouTube keeps these
+private — no connection can read them.
+**Instagram (live):** every post's views, reach, saves, shares, comments · reels: watch time and skip
+rate · when your followers are online · link taps and profile actions · who follows you, who saw you, who
+reacted — by city and age · stories live today · your comments.
+**Plus:** an AI answer engine — do you show up when someone asks the buyer's question?
+**What it can't see:** other people's Instagram or TikTok numbers (a glance at their public profile), and
+YouTube comments on some sign-ins (screenshots cover it).
 
-**SAY:** This is real depth. On Instagram it reads the two numbers no scheduler shows you: how long
-people watched your reel, and how many swiped away in the first three seconds. And it tells you which
-cities your audience is in — so you know if you're reaching buyers or just other agents. And we're honest
-about the edges: nobody gets other people's Instagram numbers, so competitors there are a glance.
+**SAY:** This is real depth. On Instagram it reads the numbers no scheduler shows you: how long people
+watched your reel, how many swiped away in the first three seconds, when your own followers are online,
+and which posts made someone tap your link or call. On YouTube it reads every public number and checks
+every title and description — and for the four private numbers only Studio has, it asks you for four
+screenshots, once. And we're honest about the edges: nobody gets other people's Instagram numbers, so
+competitors there are a glance.
 
 ---
 
