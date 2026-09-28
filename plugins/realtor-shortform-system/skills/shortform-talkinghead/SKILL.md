@@ -9,9 +9,10 @@ description: >
   session. Text only; never films or designs.
 
   Trigger on: "talking head", "talking head ideas", "what should I talk about", "give me short-form
-  video topics", "script my talking head", "value videos", "batch my talking heads", "what short videos
-  should I make", "give me short form video ideas", or any request for talking-head topics or scripts.
-  (For long-form YouTube ideas, that's the YouTube System — this is short-form only.)
+  video topics", "script my talking head", "value videos", "batch my talking heads", or any request for
+  talking-head topics or scripts. (For a month of cross-format ideas → `shortform-ideas`; a research-driven
+  30-day plan → `shortform-video-plan`; long-form YouTube ideas → the YouTube System. This skill is
+  talking-head topics → scripts, short-form only.)
 ---
 
 # Talking-Head Workflow
