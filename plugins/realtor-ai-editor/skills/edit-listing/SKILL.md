@@ -1,6 +1,16 @@
 ---
 name: edit-listing
-description: Edit a property / home / listing tour video by directing Descript on the agent's own account. Listing tours are special — the B-roll must be of THE ACTUAL PROPERTY (the agent's own room clips, drone shots, or the listing photos as motion stills), never generic stock, which would misrepresent the home and is a compliance risk. This skill gathers whatever footage the agent has (a Google Drive B-roll folder, files they upload for this video, or the listing photos), matches each clip to the right moment (the kitchen clip on the kitchen line, the drone on the intro), and handles the cases where they have all, some, or none of the footage. Trigger on: "edit my listing video", "edit my home tour", "make a listing tour", "edit my property video", "I have a walkthrough of a home". ALSO handles RESUMING a stopped listing edit — "finish my video", "finish my tour", "pick up where we left off", "it ran out of credits" — by reading the checkpoint log and running only the passes that never landed. Usually reached through editor-navigator.
+description: >
+  Edit a property / home / listing tour video by directing Descript on the agent's own account.
+  Listing tours are special — the B-roll must be of THE ACTUAL PROPERTY (their own room clips,
+  drone shots, or the listing photos as motion stills), never generic stock, which would
+  misrepresent the home and is a compliance risk. This skill gathers whatever footage they have (a
+  Google Drive B-roll folder, files uploaded for this video, or the listing photos), matches each
+  clip to the right moment, and handles having all, some, or none of it. Trigger on: "edit my
+  listing video", "edit my home tour", "make a listing tour", "edit my property video", "I have a
+  walkthrough of a home". ALSO handles RESUMING a stopped listing edit — "finish my video",
+  "finish my tour", "pick up where we left off", "it ran out of credits" — from the checkpoint
+  log. Usually reached through editor-navigator.
 ---
 
 # Edit a listing / home tour

@@ -1,22 +1,18 @@
 ---
 name: youtube-analytics
 description: >
-  YouTube Analytics & the Monthly Deep Dive — the Realtor YouTube System's data skill, powered by the live
-  data connection (Composio; one optional sign-in, offered HERE on first use — never at setup), with the
-  agent's YouTube Studio export/screenshots and public channel reads as fallbacks so it's never blocked.
-  THE MAIN EVENT is the monthly DEEP DIVE: the full breakdown of their channel (growth, every video ranked by
-  pillar + content type, packaging + hook/retention read, the funnel leak, cadence), their COMPETITORS
-  (outlier analysis of any public channel), the content GAPS in their market, and a 30-day plan of exact
-  titles — saved as a stamped report and seeded back to the Brain so Ideation and the Coach get smarter.
-  Quick questions work anytime in the same skill ("how did my last video do", "how's my channel doing") —
-  answered at the size of the ask. This is the ONLY YouTube skill that uses the live data connection.
+  YouTube Analytics & the Monthly Deep Dive — the YouTube System's data skill, powered by the live
+  data connection (Composio; one optional sign-in offered HERE on first use, never at setup), with
+  Studio exports and public channel reads as fallbacks so it's never blocked. THE MAIN EVENT is
+  the monthly DEEP DIVE: the full breakdown of their channel (growth, every video ranked by pillar
+  and type, packaging and retention read, the funnel leak, cadence), their COMPETITORS, the
+  content GAPS in their market, and a 30-day plan of exact titles — saved as a stamped report and
+  seeded back to the Brain. The ONLY YouTube skill using the live data connection.
 
-  Trigger on: "run my YouTube deep dive" (the headline command), "run my deep dive", "run my analysis", "run my monthly analysis",
-  "audit my channel", "analyze my channel", "full breakdown of my channel", "analyze my competitors",
-  "where do I stand", "how do I compare", "how's my channel doing", "analyze my analytics", "how did my
-  last video do", "review my YouTube stats", "here's my YouTube export", "audit this channel: [link]",
-  "set up my analytics", "live analytics", "add my Studio numbers", "here's my Studio pack", or any request to
-  analyze YouTube performance, competitors, or where they show up in search.
+  Trigger on: "run my YouTube deep dive", "run my deep dive", "run my analysis", "audit my
+  channel", "analyze my channel", "analyze my competitors", "where do I stand", "how's my channel
+  doing", "how did my last video do", "here's my YouTube export", "audit this channel: [link]",
+  "add my Studio numbers".
 ---
 
 # YouTube Analytics — the monthly deep dive + any quick question

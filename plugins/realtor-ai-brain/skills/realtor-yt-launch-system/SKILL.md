@@ -1,19 +1,17 @@
 ---
 name: realtor-yt-launch-system
 description: >
-  Realtor YouTube Launch System — takes a YouTube video topic or transcript from a real estate agent
-  and generates every written deliverable needed to launch and repurpose the video. Produces a single
-  clean, formatted doc containing: YouTube SEO package (titles, description, tags), two launch emails
-  (launch-day + 3-day follow-up), 3 short-form Reel/TikTok scripts with captions, platform captions
-  for Instagram, TikTok, Facebook, and LinkedIn, and a launch checklist. Designed for real estate
-  agents who are beginners — every output is word-for-word ready to use. Reads the agent's Brain
-  automatically if present (brand, market, persona) so nothing needs to be re-entered each run.
+  Takes a YouTube video topic or transcript and generates every written deliverable needed to
+  launch and repurpose it, in one clean formatted doc: the YouTube SEO package (titles,
+  description, tags), two launch emails (launch day + 3-day follow-up), 3 short-form Reel/TikTok
+  scripts with captions, platform captions for Instagram, TikTok, Facebook, and LinkedIn, and a
+  launch checklist. Built for beginners — every output is word-for-word ready to use. Reads the
+  agent's Brain so nothing is re-entered.
 
-  Trigger on: "launch my video", "YouTube launch package", "video launch kit", or any time an agent
-  shares a video topic, outline, or transcript and wants launch content created from it. BOUNDARY: if
-  the dedicated Realtor YouTube System plugin is installed, defer to it for YouTube ideation, scripting,
-  SEO, and repurposing ("what should I film", "make this video", "repurpose this") — this skill is the
-  built-in quick launcher for agents who don't have the full YouTube System.
+  Trigger on: "launch my video", "YouTube launch package", "video launch kit", or any time an
+  agent shares a video topic, outline, or transcript and wants launch content created from it.
+  BOUNDARY: if the dedicated YouTube System plugin is installed, defer to it for ideation,
+  scripting, SEO, and repurposing — this is the built-in quick launcher for agents without it.
 ---
 
 # Realtor YouTube Launch System

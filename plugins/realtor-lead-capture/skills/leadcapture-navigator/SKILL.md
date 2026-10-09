@@ -1,22 +1,18 @@
 ---
 name: leadcapture-navigator
 description: >
-  The front door for the Lead Capture System — the ONE place a real estate agent starts. It quietly checks
-  their Brain and their offer are ready, works out whether they're starting fresh or picking up a half-built
-  campaign, then opens a fresh start with ONE personal welcome message (never a question box or a menu)
-  and routes them to the right step. For a FIRST campaign
-  it does not ask what to build — it locks the RELOCATION GUIDE, the one lead magnet that works in every
-  market, then runs a short intake (5 questions, each already pre-answered from the Brain) to gather the
-  handful of facts the guide needs, and hands the magnet skill everything it needs to write. Second campaign
-  onward, the choice opens up. It also catches the cold start — someone asking for the page before the
-  guide exists — and never bounces them.
+  The front door for the Lead Capture System — the ONE place a real estate agent starts. It checks
+  their Brain and their offer are ready, works out whether they're starting fresh or picking up a
+  half-built campaign, opens with ONE personal welcome message (never a menu), and routes them to
+  the right step. For a FIRST campaign it doesn't ask what to build — it locks the RELOCATION
+  GUIDE, runs a short intake (5 questions, each pre-answered from the Brain), and hands the magnet
+  skill what it needs. Second campaign onward, the choice opens up.
 
-  Trigger on: "launch lead capture plugin", "launch lead capture", "set up my lead capture", "build my
-  lead capture system", "start my lead capture", "lead capture", "I need a lead magnet", "I need a free guide", "I need more leads", "how do I capture leads",
-  "where do I start with lead capture", "make my relocation guide", "moving to [city] guide", "build my
-  funnel" / "opt-in page" / "landing page" when nothing has been built yet, "finish my lead magnet", "pick
-  up my lead capture", "continue my funnel", or any vague, first-time, or unclear lead-capture request.
-  This is the DEFAULT entry point for the plugin.
+  Trigger on: "launch lead capture plugin", "launch lead capture", "set up my lead capture",
+  "build my lead capture system", "lead capture", "I need a lead magnet", "I need a free guide",
+  "I need more leads", "how do I capture leads", "make my relocation guide", "moving to [city]
+  guide", "build my funnel" / "opt-in page" when nothing exists yet, "finish my lead magnet",
+  "continue my funnel". DEFAULT entry point for the plugin.
 ---
 
 # Lead Capture Navigator — the front door

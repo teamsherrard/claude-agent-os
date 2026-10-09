@@ -1,18 +1,17 @@
 ---
 name: realtor-story-bank
 description: >
-  The agent's personal story library — what makes content magnetic and un-copyable. Facts (market, offer,
-  voice) make content "sound like me"; real stories make it "could only be me." A spoken interview that mines
-  the agent's career for real anecdotes — the deal that almost died, the buyer who cried at closing, the
-  mistake that taught them everything — and files each as a STRUCTURED, tagged story (hook · story · lesson ·
-  topic tags · emotional beat) so every future script, email, and post can automatically pull the right one.
-  Targets a starter set of ~5 stories, but fully accommodates agents who have one or none (many are new) —
-  it never makes them feel short, and the library grows via Dispatch as they close deals. Client privacy is
-  protected: public use is anonymized. Feeds the Week-8 storytelling formats.
+  The agent's personal story library — what makes content magnetic and un-copyable. Facts make
+  content sound like them; real stories make it could-only-be-them. A spoken interview that mines
+  their career for real anecdotes — the deal that almost died, the buyer who cried at closing, the
+  mistake that taught them everything — and files each as a tagged story (hook · story · lesson ·
+  topic tags · emotional beat) so every future script, email, and post pulls the right one.
+  Targets a starter set of ~5 but fully accommodates agents with one or none, and grows as they
+  close deals. Client privacy protected: public use is anonymized.
 
-  Trigger on: "build my story bank", "my stories", "capture my stories", "add a story", "story library",
-  "I have a good story", "storytelling", "refresh my story bank", "mine my career", or when a content skill
-  needs a real anecdote and none is on file yet.
+  Trigger on: "build my story bank", "my stories", "capture my stories", "add a story", "story
+  library", "I have a good story", "storytelling", "refresh my story bank", "mine my career", or
+  when a content skill needs a real anecdote and none is on file yet.
 ---
 
 # Realtor Story Bank — the stories only they can tell (Brain)

@@ -5,14 +5,12 @@ description: >
   ships weekly. Reads Anthropic's official changelogs and release notes, diffs them against the
   last digest, keeps ONLY what affects the cohort's stack (Cowork, connectors, plugins, Design,
   plans/limits), and writes a plain-English digest to the Brain so every support answer stands on
-  this week's Claude, not launch-week Claude. Also runs the link-health pass over support's
-  source map (the anti-rot contract) and flags repeat questions in the support log for FAQ
-  promotion. Runs on demand, and automatically whenever support is invoked and the last digest is
-  older than 7 days. Trigger on: "what's new with Claude", "did Claude change", "did anything
-  update", "Claude seems different", "run the support refresh", or the navigator's stale-digest
-  check. NOT the door for breakage: "it worked yesterday and now it's FAILING" is
-  support-diagnose first (it reads this skill's digest as one suspect) — this lane only reports
-  what changed. Usually reached through support-navigator.
+  this week's Claude, not launch-week Claude. Also runs the link-health pass over support's source
+  map and flags repeat questions for FAQ promotion. Runs on demand, and whenever support is
+  invoked and the last digest is older than 7 days. Trigger on: "what's new with Claude", "did
+  Claude change", "did anything update", "Claude seems different", "run the support refresh". NOT
+  the door for breakage — "it worked yesterday and now it's FAILING" is support-diagnose. Usually
+  reached through support-navigator.
 ---
 
 # Support Whatsnew — the sync engine

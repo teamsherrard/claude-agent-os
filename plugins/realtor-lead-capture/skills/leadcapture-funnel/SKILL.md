@@ -1,19 +1,18 @@
 ---
 name: leadcapture-funnel
 description: >
-  Step 2 of the Lead Capture System — maps the opt-in funnel (the landing page) that gives the lead magnet
-  away. Reads the finished lead magnet so the page sells exactly what the guide delivers, then writes the
-  full page copy section by section — Hero, The Problem, The Guide, About the agent, Why Work With (offer +
-  USP), Local Market, Proof, Socials (only if they have channels), and The Opt-in — in the agent's voice,
-  built to convert. Lead capture ONLY — a pop-up opt-in form (name, email, phone) and a thank-you page with
-  the guide as an instant download; never a call booking. COPY + STRATEGY ONLY — it writes
-  the page's copy and structure (the design is a separate skill); it NEVER designs or hosts the page.
+  Step 2 of the Lead Capture System — maps the opt-in funnel (the landing page) that gives the
+  lead magnet away. Reads the finished magnet so the page sells exactly what the guide delivers,
+  then writes the full page copy section by section — Hero, The Problem, The Guide, About the
+  agent, Why Work With, Local Market, Proof, Socials, and The Opt-in — in the agent's voice, built
+  to convert. Lead capture ONLY: a pop-up opt-in (name, email, phone) and a thank-you page with
+  the guide as an instant download; never a call booking. COPY + STRATEGY ONLY — it never designs
+  or hosts the page.
 
-  Trigger on: "build my funnel", "map my funnel", "lead capture funnel", "opt-in page", "opt-in funnel",
-  "landing page copy", "build my lead capture page", "the page that gives away my lead magnet", or any
-  request to create the opt-in page for a lead magnet. (A cold "build my funnel" / "opt-in page" /
-  "landing page" when no guide exists yet goes through leadcapture-navigator — the front door — which
-  writes the guide first and comes back here on its own.)
+  Trigger on: "build my funnel", "map my funnel", "lead capture funnel", "opt-in page", "opt-in
+  funnel", "landing page copy", "build my lead capture page", "the page that gives away my lead
+  magnet". (A cold "build my funnel" when no guide exists goes through leadcapture-navigator,
+  which writes the guide first.)
 ---
 
 # Lead Capture Funnel Mapper (Step 2 — spec only)

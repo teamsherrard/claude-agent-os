@@ -1,18 +1,19 @@
 ---
 name: youtube-channel
 description: >
-  The Channel Page Kit for the Realtor YouTube System — builds the agent's actual YouTube channel PAGE so
-  it converts and ranks: the keyworded channel description + about section, the links block, channel
-  keywords, the playlist structure (their real Game Plan playlists), a banner text brief, upload defaults
-  (with the doctrine's CTA-first default description), and a channel trailer plan — delivered as a
-  paste-by-paste checklist in YouTube Studio's own order, plus a saved Channel Page Kit doc. Works for a
-  brand-new channel (week-1: page ready before the first video) or as a fix for a messy existing one (it
-  reads their real current page — they just share the link). This owns the channel PAGE only — full
-  system onboarding ("set up my YouTube system") belongs to youtube-setup.
+  The Channel Page Kit — builds the agent's actual YouTube channel PAGE so it converts and ranks:
+  the keyworded channel description and about section, the links block, channel keywords, the
+  playlist structure from their real Game Plan, a banner text brief, upload defaults (CTA-first
+  description per the doctrine), and a channel trailer plan — delivered as a paste-by-paste
+  checklist in YouTube Studio's own order, plus a saved Channel Page Kit doc. Works for a
+  brand-new channel (page ready before the first video) or as a fix for a messy existing one (it
+  reads their real current page from the link). Owns the channel PAGE only — full system
+  onboarding belongs to youtube-setup.
 
-  Triggers on "set up my channel page", "set up my youtube channel", "channel setup", "fix my channel",
-  "fix my channel page", "channel description", "about section", "optimize my channel", "my channel looks
-  empty/bad", "channel keywords", "banner", "playlists", "upload defaults", "channel trailer".
+  Triggers on "set up my channel page", "set up my youtube channel", "channel setup", "fix my
+  channel", "fix my channel page", "channel description", "about section", "optimize my channel",
+  "my channel looks empty/bad", "channel keywords", "banner", "playlists", "upload defaults",
+  "channel trailer".
 ---
 
 # Channel Page Kit — make the channel page rank and convert

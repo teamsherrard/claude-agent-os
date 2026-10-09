@@ -1,20 +1,18 @@
 ---
 name: realtor-business-plan
 description: >
-  Turns the agent's income goal into a real 90-day business plan — the money, the engine, the future. It
-  reverse-engineers their 12-month income / GCI goal into the exact number of deals (using their average sale
-  price + commission %), maps where those deals come from, and locks THREE weekly non-negotiable lead activities
-  — one of which is ALWAYS content (short-form + YouTube), because that's what the whole system is built to
-  amplify. It then breaks the plan into DAILY and WEEKLY KPIs, and delivers a premium 90-day plan book plus a
-  dashboard. Reads the Brain (goals, market, offer, content plan, capacity) so nothing is re-asked. Runs a
-  WEEKLY CHECK-IN, and — the big payoff — a CALENDAR AUDIT: because the Brain now knows their goal and KPIs, the
-  agent can ask Claude to check their Google Calendar and tell them exactly where they're off track on hitting
-  their numbers. Offered right after Brain Setup, refreshed every quarter.
+  Turns the agent's income goal into a real 90-day business plan — the money, the engine, the
+  future. Reverse-engineers their 12-month GCI goal into the exact number of deals (average sale
+  price x commission %), maps where those deals come from, and locks THREE weekly non-negotiables
+  — one always content. Breaks it into daily and weekly KPIs with a dashboard. Reads the Brain so
+  nothing is re-asked. Also runs the WEEKLY CHECK-IN and the CALENDAR AUDIT — Claude checks their
+  Google Calendar against their KPIs and says where they are off track. Captured during Brain
+  Setup (Phase 8); refreshed quarterly.
 
-  Trigger on: "build my business plan", "plan my next 90 days", "my 90-day plan", "how many deals do I need",
-  "what are my daily KPIs", "how do I hit my goal", "set my goals into a plan", "business planning", "weekly
-  check-in", "review my plan", "am I on track", "audit my calendar", "am I hitting my KPIs", "where am I off
-  track", "refresh my plan", "plan my quarter", or right after setup as the first thing to do.
+  Trigger on: "build my business plan", "plan my next 90 days", "my 90-day plan", "how many deals
+  do I need", "what are my daily KPIs", "how do I hit my goal", "business planning", "weekly
+  check-in", "review my plan", "am I on track", "audit my calendar", "am I hitting my KPIs",
+  "where am I off track", "refresh my plan", "plan my quarter".
 ---
 
 # Realtor Business Plan — the 90-day plan that makes the goal real (Brain)

@@ -2,21 +2,18 @@
 name: shortform-analytics
 description: >
   Short-Form Analytics — the ONE data skill of the Short-Form Content OS, powered by the live data
-  connection (Instagram + YouTube — the only source with reel watch-time, skip-rate, and demographics),
-  with Metricool/GoHighLevel and screenshots as fallbacks so it's never blocked. THE MAIN EVENT is the
-  monthly DEEP DIVE: the full breakdown of their entire short-form presence (growth, audience, every post
-  ranked by format + funnel category, hook + retention patterns, the funnel leak, cadence), their
-  COMPETITORS, the content GAPS nobody local is filling, and a next-30-days plan — saved as a report and
-  seeded back to the Brain so every workflow gets smarter. Quick questions work anytime in the same skill
-  ("how did this post do", "analyze my ads", "how's my follower growth") — answered at the size of the ask.
+  connection (Instagram + YouTube — the only source with reel watch-time, skip-rate, and
+  demographics), with Metricool and screenshots as fallbacks so it's never blocked. THE MAIN EVENT
+  is the monthly DEEP DIVE: the full breakdown of their short-form presence (growth, audience,
+  every post ranked by format and funnel category, hook and retention patterns, the funnel leak,
+  cadence), their COMPETITORS, the content GAPS nobody local is filling, and a next-30-days plan —
+  saved as a report and seeded back to the Brain. Quick questions work anytime, at the size of the
+  ask.
 
-  Trigger on: "run my social media deep dive" (the headline command), "run my short-form deep dive", "run my
-  instagram deep dive", "run my deep dive", "run my analysis", "run my monthly analysis", "analyze my short form",
-  "audit my short form", "full breakdown of my content", "analyze my competitors", "competitor analysis",
-  "where do I stand", "how do I compare to other agents", "analyze my posts", "analyze my last [N] posts",
-  "analyze my ads", "how did my reels do", "how's my account doing", "what's my data", "my best post",
-  "how did this post do", "follower growth", "what's working", "run my 2-week review", "review my
-  performance", or any request to analyze short-form performance, competitors, ads, or social data.
+  Trigger on: "run my social media deep dive", "run my short-form deep dive", "run my deep dive",
+  "run my analysis", "analyze my short form", "audit my short form", "analyze my competitors",
+  "where do I stand", "analyze my posts", "analyze my ads", "how did my reels do", "how's my
+  account doing", "my best post", "what's working".
 ---
 
 # Short-Form Analytics — the monthly deep dive + any quick question

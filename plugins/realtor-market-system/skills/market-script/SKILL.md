@@ -2,19 +2,17 @@
 name: market-script
 description: >
   Writes the word-for-word YouTube market update script — the words that run on this month's
-  presentation. **Optional, and built on request:** the deck already ships with talking points under
-  every slide and records on its own, so this is the safety net for agents who want exact words
-  rather than the default deliverable. It reads the deck's Slide Map and writes exactly one beat per slide, in order, with
-  [SLIDE N] cues, so the agent reads, advances one slide, and never has to think about what comes
-  next. The deck and the script are one package; this half is written against the other. Teleprompter
-  -ready, in the agent's own voice, with camera direction, section timings, the 2-CTA model, and the
-  three audience lenses. Ships with title options, thumbnail text, the hook, and a description opening
-  so the video is ready to publish, not just ready to film. Reads the month's data block — never
-  researches.
+  presentation. Optional and built on request: the deck already ships with talking points under
+  every slide and records on its own, so this is the safety net for agents who want exact words.
+  It reads the deck's Slide Map and writes exactly one beat per slide, in order, with [SLIDE N]
+  cues, so the agent reads, advances one slide, and never has to think about what comes next.
+  Teleprompter-ready, in their own voice, with camera direction, section timings, the 2-CTA model,
+  and the three audience lenses. Ships with title options, thumbnail text, the hook, and a
+  description opening. Reads the month's data block — never researches.
 
-  Trigger on: "write the script", "give me the words", "write my market update script", "my YouTube script for [month]", "script my market
-  video", "the market update video script", "write the script for my market report", or as step 2 of
-  a full monthly run.
+  Trigger on: "write the script", "give me the words", "write my market update script", "my
+  YouTube script for [month]", "script my market video", "the market update video script", or as
+  step 2 of a full monthly run.
 ---
 
 # Market Update Script

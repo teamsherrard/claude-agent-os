@@ -1,18 +1,17 @@
 ---
 name: realtor-voice-print
 description: >
-  The SPOKEN layer of the agent's voice. Written samples (voice-proof) teach Claude how the agent types —
-  but scripts get read out loud, so the Brain also needs to know how they TALK. A guided, spoken interview
-  (best in Claude voice mode on their phone, or by pasting a transcript) where the agent talks naturally, and
-  Claude analyzes it for their Voice DNA: pacing, sentence length, signature phrases, how they explain hard
-  things, their energy and humor, filler words, and the words they'd never say. Writes identity/voice-print.md,
-  which every read-aloud output (YouTube scripts, reels, market-update scripts) reads so it sounds spoken-by-them,
-  not written-by-AI. Compounds: every Dispatch voice note + voice-mode session enriches it over time. Built on
-  realtor-voice-proof (adds the spoken layer); best run in Week 1 as the agent's first voice-mode session.
+  The SPOKEN layer of the agent's voice. Written samples teach Claude how they type — but scripts
+  get read out loud, so the Brain also needs to know how they TALK. A guided spoken interview
+  (best in Claude voice mode on their phone, or by pasting a transcript) that Claude analyzes for
+  their Voice DNA: pacing, sentence length, signature phrases, how they explain hard things, their
+  energy and humor, filler words, and the words they'd never say. Writes identity/voice-print.md,
+  which every read-aloud output (YouTube scripts, reels, market-update scripts) reads so it sounds
+  spoken-by-them, not written-by-AI. Compounds with every voice note and voice-mode session.
 
-  Trigger on: "capture my speaking voice", "my voice print", "how I talk", "build my voice print", "voice mode
-  setup", "make my scripts sound like me", "refresh my voice print", "my spoken voice", or right after voice-proof
-  as the spoken layer.
+  Trigger on: "capture my speaking voice", "my voice print", "how I talk", "build my voice print",
+  "voice mode setup", "make my scripts sound like me", "refresh my voice print", "my spoken
+  voice".
 ---
 
 # Realtor Voice Print — how the agent TALKS (Brain, spoken layer of Phase 4)

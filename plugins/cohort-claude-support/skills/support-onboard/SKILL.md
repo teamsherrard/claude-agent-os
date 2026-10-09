@@ -3,18 +3,14 @@ name: support-onboard
 description: >
   The setup lane of Cohort Claude Support — the auditor that knows the full install sequence and
   exactly where a member is stuck in it. Setup is a chain (Claude plan → desktop app → Cowork →
-  Mike's plugins → the Brain → connectors → optional tools), and "I'm lost" almost always means
-  "I'm at step 3 of 7." This skill CHECKS each link with real look-only verifications, finds the
-  first missing one, and walks the member forward one step at a time — resuming, never
-  restarting, and routing each build step to the skill that owns it (brain-setup, editor-setup,
-  shortform-setup…). Also runs the post-update checkup after a big Claude or plugin update, and
-  the second-computer setup. Trigger on AUDIT-shaped asks: "am I set up right", "did I do this
-  right", "what am I missing", "check my setup", "I just joined and I'm lost", "where do I
-  start", "new computer setup", "post-update checkup", or any lost-in-setup moment. Do NOT
-  trigger when they name a system to build — "set up my brain / my AI Admin / my YouTube system /
-  my editor / my short-form" and bare first-run asks like "get me started" belong to that
-  system's own setup skill (realtor-brain-setup owns first-run onboarding); this lane audits the
-  chain around those builds. Usually reached through support-navigator.
+  Mike's plugins → the Brain → connectors → optional tools), and "I'm lost" usually means "I'm at
+  step 3 of 7." It CHECKS each link with look-only verifications, finds the first missing one, and
+  walks them forward one step at a time — resuming, never restarting — routing each build to the
+  skill that owns it. Also runs the post-update checkup and the second-computer setup. Trigger on
+  AUDIT-shaped asks: "am I set up right", "did I do this right", "what am I missing", "check my
+  setup", "I just joined and I'm lost", "where do I start", "new computer setup", "post-update
+  checkup". Do NOT trigger when they name a system to build ("set up my brain", "get me started")
+  — that belongs to that system's own setup skill. Usually reached through support-navigator.
 ---
 
 # Support Onboard — resume at the first missing step

@@ -1,20 +1,17 @@
 ---
 name: realtor-offer-usp
 description: >
-  Realtor Offer USP Skill — guides the real estate agent through a focused 10-minute
-  conversation to capture their full service offering and unique value proposition. Reads
-  the agent's Realtor AI Brain so nothing is repeated. Only asks what it doesn't already
-  know — specifically what the agent offers, what makes them different, and why someone
-  should hire them over every other agent in their market. Writes the structured offer into the Brain
-  (identity/offer.md) to power every other skill — in Brain Setup that's the ONLY output (the content
-  becomes the Business Brain Book's Offer & USP section); the polished client-facing "Why Work With Me"
-  guidebook renders ON DEMAND when the agent asks for a version to send to prospects.
+  Guides the agent through a focused 10-minute conversation capturing their full service offering
+  and unique value proposition. Reads the Brain so nothing is repeated — it asks only what it
+  doesn't already know: what they offer, what makes them different, and why someone should hire
+  them over every other agent in their market. Writes identity/offer.md, which powers every other
+  skill. In Brain Setup that file is the ONLY output (the content becomes the Business Brain
+  Book's Offer & USP chapter); the client-facing "Why Work With Me" guidebook renders ON DEMAND
+  when they ask for a version to send prospects.
 
   Trigger on: "build my offer", "create my USP", "build my offer guide", "why work with me
-  document", "create my value proposition", "offer guidebook", "build my USP file",
-  "create my offer knowledge file", "what's my offer", "build my agent offer", or any
-  "update my offer", "update my USP", "phase 2", or any request where the agent wants to document or
-  update what they offer and why someone should hire them.
+  document", "create my value proposition", "offer guidebook", "build my USP file", "what's my
+  offer", "update my offer", "update my USP", "phase 2".
 ---
 
 # Realtor Offer USP Skill

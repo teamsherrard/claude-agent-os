@@ -1,6 +1,16 @@
 ---
 name: editor-navigator
-description: The friendly front door for the Realtor AI Editor. Real estate agents don't know how to "prompt" — they give vague, messy, or contradictory requests. This skill does the translating: it turns any plain-English (or confused) request into one simple, confirmable plan, asks at most ONE easy question with a recommended answer, never overwhelms, and routes to the right editing skill. It also handles tricky moments calmly and without jargon — "just make it good", "I don't like it", asking for something Descript can't do, piling on requests, or a frustrated agent. It also PICKS UP A STOPPED EDIT — if an edit halted partway (out of Descript credits, a closed session, "I'll finish it tomorrow"), it finds the checkpoint log and resumes from the exact pass that stopped, without re-running anything already paid for. Trigger on: any vague or general video request ("edit my video", "help with my video", "make this better", "I have a video", "make me a reel", "can you fix this", "I don't know what I want"); ALSO trigger on any request to resume or finish an interrupted edit — "finish my video", "pick up where we left off", "continue my edit", "my edit stopped", "it ran out of credits", "resume my video", "carry on with my video"; or whenever a request is unclear, contradictory, or could overwhelm the agent. This is the DEFAULT entry point for the Descript editor. ENGINE TIE-BREAK: both video editors can be installed. This one owns the request when the agent says Descript, when the video lives in Descript, or when `default_engine` in ~/realtor-brain/editor/config.json is `descript` (or is missing and only Descript is connected); when they say Riverside or `default_engine` is `riverside`, the AI Editing Studio (Plugin 10, studio-navigator) owns it.
+description: >
+  The friendly front door for the Realtor AI Editor. Agents don't know how to "prompt" — they give
+  vague or contradictory requests. This skill translates: it turns any plain-English request into
+  one simple, confirmable plan, asks at most ONE easy question with a recommended answer, and
+  routes to the right editing skill. It handles tricky moments without jargon — "just make it
+  good", "I don't like it", or a request Descript can't do. It also PICKS UP A STOPPED EDIT from
+  the checkpoint log, resuming the exact pass that stopped without redoing paid work. Trigger on:
+  any vague video request ("edit my video", "help with my video", "make this better", "make me a
+  reel", "I don't know what I want"); ALSO any resume request — "finish my video", "pick up where
+  we left off", "continue my edit", "my edit stopped", "it ran out of credits". DEFAULT entry for
+  the Descript editor. TIE-BREAK: Descript here; Riverside → studio-navigator.
 ---
 
 # Editor Navigator — the front door

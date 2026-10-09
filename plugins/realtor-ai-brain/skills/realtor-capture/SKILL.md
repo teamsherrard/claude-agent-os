@@ -1,19 +1,18 @@
 ---
 name: realtor-capture
 description: >
-  The on-the-go capture layer for the whole Realtor AI Brain — the agent talks while driving, at a
-  showing, or between meetings, and whatever they say lands in the right place. Captures CONTENT IDEAS
-  (video / reel / hook / outline), WINS (closings, reviews, milestones → the proof library), STORIES
-  (real moments → the story bank), MARKET INTEL, new VENDORS, OFFER angles, and EDIT NOTES into the
-  Brain, and routes anything actionable to the AI Admin. One line in, one line back, never a lost thought. The content systems (YouTube,
-  Short-Form, Lead Capture, AI Editor) read what it captures when they plan.
+  The on-the-go capture layer for the whole Brain — the agent talks while driving, at a showing,
+  or between meetings, and whatever they say lands in the right place: content ideas, wins (into
+  the proof library), stories (into the story bank), market intel, new vendors, offer angles, and
+  edit notes; anything actionable routes to the AI Admin. One line in, one line back, never a lost
+  thought. Every content system reads what it captures when they plan.
 
-  Trigger on: "I've got a video idea", "here's a video idea", "here's a reel idea", "capture this idea", "great hook",
-  "hook idea", "outline this video", "lead magnet idea", "new offer angle", "just closed", "we just
-  closed", "just got a review / testimonial", "quick win", "add a vendor", "great lender / contractor",
-  "market note", "note for my market", "for the [video] edit add…", "remember this idea", "capture
-  this", "add to my backlog", or any on-the-go idea / win / intel / vendor the agent wants saved.
-  (Client notes, reminders, email drafts, and bookings are the AI Admin's dispatch — not this skill.)
+  Trigger on: "I've got a video idea", "here's a reel idea", "capture this idea", "great hook",
+  "hook idea", "outline this video", "lead magnet idea", "new offer angle", "just closed", "just
+  got a review / testimonial", "quick win", "add a vendor", "great lender / contractor", "market
+  note", "for the [video] edit add…", "remember this idea", "capture this", "add to my backlog",
+  or any on-the-go idea / win / intel / vendor. (Client notes, reminders, email drafts, and
+  bookings are the AI Admin's dispatch — not this skill.)
 ---
 
 # Realtor Capture — the system-wide on-the-go capture layer

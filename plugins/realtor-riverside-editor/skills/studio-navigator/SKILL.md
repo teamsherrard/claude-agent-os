@@ -1,6 +1,17 @@
 ---
 name: studio-navigator
-description: The friendly front door for the AI Editing Studio (Riverside engine) — 28 skills across five stages: Direct, Cut, Polish, Repurpose, Ship. Real estate agents don't know how to "prompt" — they give vague, messy, or contradictory requests. This skill does the translating: it turns any plain-English (or confused) request into one simple, confirmable plan, asks at most ONE easy question with a recommended answer, never overwhelms, and routes to the right Riverside editing skill. It handles tricky moments calmly — "just make it good", asking for something Riverside can't do, piling on requests, a frustrated agent. It also PICKS UP A STOPPED EDIT — if an edit halted partway (a closed session, a conflict with the agent in the editor, "I'll finish it tomorrow"), it finds the checkpoint log — or reads Riverside's own revision history — and resumes from the exact pass that stopped, without redoing anything. Trigger on: any vague or general video request ("edit my video", "help with my video", "make this better", "I have a video in Riverside", "make me a reel", "can you fix this", "I don't know what I want"); ALSO trigger on any request to resume or finish an interrupted edit — "finish my video", "pick up where we left off", "continue my edit", "my edit stopped", "resume my video", "carry on with my video"; or whenever a request is unclear, contradictory, or could overwhelm the agent. This is the DEFAULT entry point for the AI Editing Studio.
+description: >
+  The friendly front door for the AI Editing Studio (Riverside engine) — 28 skills across five
+  stages: Direct, Cut, Polish, Repurpose, Ship. Agents don't know how to "prompt" — they give
+  vague or contradictory requests. This skill translates: it turns any plain-English request into
+  one simple, confirmable plan, asks at most ONE easy question with a recommended answer, and
+  routes to the right Riverside skill. It handles tricky moments calmly — "just make it good",
+  asking for something Riverside can't do, a frustrated agent. It also PICKS UP A STOPPED EDIT
+  from the checkpoint log or Riverside's own revision history, resuming the exact pass that
+  stopped. Trigger on: any vague video request ("edit my video", "help with my video", "make this
+  better", "I have a video in Riverside", "make me a reel", "I don't know what I want"); ALSO any
+  resume request — "finish my video", "pick up where we left off", "continue my edit", "my edit
+  stopped", "resume my video". DEFAULT entry point for the AI Editing Studio.
 ---
 
 # Studio Navigator — the front door

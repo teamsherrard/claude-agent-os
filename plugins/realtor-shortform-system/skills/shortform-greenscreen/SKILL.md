@@ -1,20 +1,18 @@
 ---
 name: shortform-greenscreen
 description: >
-  The Daily Green Screen workflow for the Short-Form Content OS — Mike's #1 tool for reaching LOCALS.
-  Once a day, finds the single most timely, locally-relevant thing worth reacting to RIGHT NOW — local
-  news, "things to do this week," top lists (restaurants/cafés/events/hikes), OR real-estate/market news —
-  and delivers a ready-to-film package: the verified source + the key stat/hook to hold on screen + a
-  word-for-word HOOK +
-  4–6 KEY TALKING POINTS (not a full script, so delivery stays natural and fast) + platform-specific
-  captions/titles/tags. Reactive and daily on purpose — timeliness drives green-screen performance, so
-  this is never batched. Text only: it does NOT generate green-screen backgrounds, images, or designs —
-  the agent holds the article on their phone or builds a background separately in claude.ai/design.
+  The Daily Green Screen workflow — Mike's #1 tool for reaching LOCALS. Once a day, finds the
+  single most timely, locally-relevant thing worth reacting to RIGHT NOW — local news, "things to
+  do this week," top lists (restaurants/cafés/events/hikes), or real-estate and market news — and
+  delivers a ready-to-film package: the verified source + the key stat to hold on screen + a
+  word-for-word HOOK + 4–6 talking points (not a full script, so delivery stays natural) +
+  platform captions, titles, and tags. Reactive and daily on purpose — timeliness drives
+  green-screen performance, so this is never batched. Text only: it does NOT generate backgrounds,
+  images, or designs.
 
-  Trigger on: "green screen", "my green screen", "today's green screen", "daily green screen", "what
-  should I react to today", "find me something to film today", "what's relevant to film right now",
-  "trending article to react to", "give me my green screen for today", or any request for a daily,
-  timely article-reaction short.
+  Trigger on: "green screen", "my green screen", "today's green screen", "daily green screen",
+  "what should I react to today", "find me something to film today", "trending article to react
+  to", or any request for a daily, timely article-reaction short.
 ---
 
 # Daily Green Screen

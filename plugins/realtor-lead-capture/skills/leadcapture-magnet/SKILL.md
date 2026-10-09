@@ -1,21 +1,18 @@
 ---
 name: leadcapture-magnet
 description: >
-  Step 1 of the Lead Capture System — writes the agent's lead magnet straight from the offer in their AI
-  Brain. The FIRST one is always the relocation guide ("Moving to [City]? Start Here" — locked, never a
-  menu), built from the 5-question intake; from campaign two the shape opens up (a brand-led guide for
-  their whole audience, or a focused buyer/seller guide). Produces the full, genuinely useful guide content
-  as clean copyable text, in the agent's voice. Saves it as a clean, formatted doc (styled .docx) in the
-  campaign folder, logs it in the Brain so the other systems can point at it, then hands off to the funnel
-  that gives it away. CONTENT ONLY — it writes the guide's content (the design is a separate skill); it
-  NEVER designs the PDF.
+  Step 1 of the Lead Capture System — writes the agent's lead magnet straight from the offer in
+  their AI Brain. The FIRST one is always the relocation guide ("Moving to [City]? Start Here" —
+  locked, never a menu), built from the 5-question intake; from campaign two the shape opens up (a
+  brand-led guide, or a focused buyer/seller guide). Produces the full, genuinely useful guide in
+  the agent's voice, saves it as a clean formatted doc in the campaign folder, logs it in the
+  Brain so other systems can point at it, then hands off to the funnel. CONTENT ONLY — it never
+  designs the PDF.
 
-  Trigger on: "build my lead magnet", "create a lead magnet", "lead magnet for my offer", "make my buyer
-  guide", "make my seller guide", "make my brand guide", "I need a free guide to give away", or any request
-  to create the downloadable freebie an opt-in gives away. ("Set up my lead capture", "make my relocation
-  guide", and other system-level or first-time requests go through leadcapture-navigator — the front door —
-  which checks the offer, locks the first campaign, and runs the intake first. "Make a lead magnet for this
-  video" inside a video's chat belongs to the YouTube System's youtube-leads, not here.)
+  Trigger on: "build my lead magnet", "create a lead magnet", "lead magnet for my offer", "make my
+  buyer guide", "make my seller guide", "make my brand guide", "I need a free guide to give away".
+  ("Set up my lead capture" and first-time requests go through leadcapture-navigator; "a lead
+  magnet for this video" belongs to the YouTube System's youtube-leads.)
 ---
 
 # Lead Magnet Builder (Step 1 — spec only)

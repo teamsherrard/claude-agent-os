@@ -1,19 +1,19 @@
 ---
 name: market-routine
 description: >
-  Owns the Market Update AI Agent — the scheduled workflow that runs every month on its own. It is
-  provisioned automatically the first time the agent touches this plugin, timed to when their local
-  board actually publishes (not blindly the 1st), and it re-times itself as it learns their board's
-  real release day. When it fires it pulls the new numbers, builds the whole package — presentation,
-  PDF report, three shorts, Instagram infographic + carousel, and the distribution pack — and leaves a short note (six lines at most). This skill also teaches the monthly rhythm (the Weeks 5–6 routine) and handles
-  changing, pausing, or turning the schedule off.
+  Owns the Market Update AI Agent — the scheduled workflow that runs every month on its own.
+  Provisioned the first time the agent touches this plugin, timed to when their local board
+  actually publishes (not blindly the 1st), and it re-times itself as it learns their board's real
+  release day. When it fires it pulls the new numbers, builds the whole package — presentation,
+  PDF report, three shorts, Instagram infographic + carousel, and the distribution pack — and
+  leaves a short note. Also teaches the monthly rhythm and handles changing, pausing, or turning
+  the schedule off.
 
   Trigger on: "set up my market routine", "run my market update every month", "automate my market
-  update", "the 1st of the month agent", "market update on autopilot", "my monthly market rhythm",
-  "schedule my market update", "set up my monthly market schedule", "is my market schedule on", "when
-  does my market update run", "stop my market schedule", "turn off my market schedule", "pause my
-  market update", "change my market update day", "run my monthly market update now", or whenever the
-  agent asks anything about the monthly schedule.
+  update", "the 1st of the month agent", "market update on autopilot", "schedule my market
+  update", "is my market schedule on", "when does my market update run", "stop my market
+  schedule", "pause my market update", "change my market update day", or anything about the
+  monthly schedule.
 ---
 
 # Market Routine — the 1st-of-the-month agent

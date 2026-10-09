@@ -1,23 +1,18 @@
 ---
 name: market-ask
 description: >
-  The agent's market advisor, in chat — answers any question about their local market from the numbers
-  already on file, instantly, without re-researching. What's happening, is it a buyer's or seller's
-  market, how a specific community or price range or property type is doing, what changed since last
-  month or last quarter, what a home actually costs per month at today's rates, what a metric means.
-  And the part agents use most: getting ready for real conversations — what to tell a seller who asks
-  if now's the time, how to answer a buyer who thinks prices will crash, market talking points for
-  tomorrow's listing appointment, a text to a past client about the market. Every figure is sourced and
-  dated; it never invents a number, never values a specific home, and never sends anything.
+  The agent's market advisor, in chat — answers any question about their local market from the
+  numbers already on file, instantly, without re-researching. What's happening, buyer's or
+  seller's market, how a community or price range is doing, what changed since last month, what a
+  home costs per month at today's rates, what a metric means. And what agents use most: getting
+  ready for real conversations — what to tell a seller asking if now's the time, how to answer a
+  buyer who thinks prices will crash, talking points for tomorrow's listing appointment. Every
+  figure is sourced and dated; it never invents a number and never values a specific home.
 
   Trigger on: "what's happening in my market", "how's the market", "is it a buyer's or seller's
-  market", "how's [community] doing", "what about condos", "what's happening under [price]", "compare
-  this month to last month", "what changed", "is inventory still rising", "what does a [price] home
-  cost per month", "what does months of supply mean", "why did days on market go up", "what do I tell
-  a seller who asks about the market", "how do I answer a buyer who thinks prices will crash", "prep
-  me for my listing appointment", "market talking points for my open house", "text a client about the
-  market", "reply to this client asking how the market is", or any question about the agent's local
-  market numbers.
+  market", "how's [community] doing", "what about condos", "compare this month to last month",
+  "what changed", "what does months of supply mean", "what do I tell a seller who asks about the
+  market", "prep me for my listing appointment", "market talking points".
 ---
 
 # Market Ask

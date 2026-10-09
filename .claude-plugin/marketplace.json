@@ -9,7 +9,7 @@
     {
       "name": "realtor-ai-brain",
       "source": "./plugins/realtor-ai-brain",
-      "version": "0.59.3",
+      "version": "0.59.4",
       "description": "PLUGIN 1 — install first. The Realtor AI Brain: one shared brain (the agent's identity + memory) that powers every other system. Run 'Set up my Brain' once, and every tool already knows the agent. Plus a system-wide Capture layer: talk on the go and your ideas, wins, vendors, and market notes file themselves into the Brain."
     },
     {
@@ -21,25 +21,25 @@
     {
       "name": "realtor-youtube-system",
       "source": "./plugins/realtor-youtube-system",
-      "version": "0.18.0",
+      "version": "0.18.1",
       "description": "PLUGIN 3 — the YouTube System. Starts with a complete YouTube Game Plan (built on Mike Sherrard's frameworks) — channel audit, 3 high-intent pillars, ~50 exact titles, goal-math, and a 90-day plan — then the channel page itself (description, playlists, banner brief, upload defaults — paste-by-paste), ideation, research, SEO, scripting in the agent's own voice, lead magnets, repurposing, a monthly deep dive (your channel, your competitors, the gaps, the next 30 days — powered by the live data connection), coaching, and a comment engine (their real comments from screenshots — triage, reply drafts in their voice, leads flagged, comment-proven video ideas) — plus a live Content Dashboard in the agent's own Notion, seeded from their Game Plan, where every video card fills with the script, SEO, lead magnet, and top-3 reference videos. Requires Plugin 1 (the Brain) set up first."
     },
     {
       "name": "realtor-shortform-system",
       "source": "./plugins/realtor-shortform-system",
-      "version": "0.17.0",
+      "version": "0.17.1",
       "description": "PLUGIN 4 — the Short-Form System. A routine-based short-form OS: daily green-screen reactions, talking-head value, and carousels, each optimized for Instagram/Facebook, TikTok, and YouTube Shorts. The agent thinks in formats; Claude keeps the funnel balanced, schedules posts through their own Metricool / GoHighLevel / Buffer (bring-your-own), and reads performance from live Instagram + YouTube data — ONE analytics skill: the monthly deep dive (account + competitors + gaps + a 30-day plan) plus quick reads anytime, with reel watch-time/skip-rate hook intelligence no scheduler exposes. Shares one Notion Content Dashboard with the YouTube System (a Short-Form view of the same board). Text only — never films or designs. Requires Plugin 1 (the Brain) set up first."
     },
     {
       "name": "realtor-lead-capture",
       "source": "./plugins/realtor-lead-capture",
-      "version": "0.10.2",
+      "version": "0.10.3",
       "description": "PLUGIN 5 — the Lead Capture System. A navigator front door starts every agent the same proven way: the FIRST lead magnet is locked as the relocation guide (the #1 highest-intent search traffic in every market) with a 5-question intake pre-filled from the Brain — no overthinking; niche and brand-led guides unlock from campaign two. Then it maps the opt-in funnel that gives the guide away — two aligned documents: the page copy section by section with a proof photo strip, and a pop-up opt-in (name, email, phone) landing on a thank-you page with the guide as an instant download. Plus the local-presence layer: the complete Google Business Profile kit (description, services, seeded Q&A, a month of Google posts, review replies, and the social-links setup that puts their reels on Google Maps) and platform-optimized bios for every network — Instagram to LinkedIn to YouTube — each sized to its real character limit with one consistent entity line so AI search can find them. Text only: it writes the words and the strategy (a separate design skill builds the visuals), never hosts; lead capture only, no call booking. Requires Plugin 1 (the Brain) set up first."
     },
     {
       "name": "realtor-ai-editor",
       "source": "./plugins/realtor-ai-editor",
-      "version": "0.21.1",
+      "version": "0.21.2",
       "description": "PLUGIN 6 — the AI Editor. The agent talks in plain English; Claude directs Descript (their own account) to do the real editing — long-form and short-form in one tool — while they watch it happen live. Claude adds the multi-source B-roll Descript can't source itself (the agent's own footage, listing photos, free stock libraries), and a navigator skill turns vague or messy requests into one clear plan so the agent is never overwhelmed. Requires Plugin 1 (the Brain) set up first, plus a Descript connection."
     },
     {
@@ -51,19 +51,19 @@
     {
       "name": "realtor-market-system",
       "source": "./plugins/realtor-market-system",
-      "version": "0.6.3",
+      "version": "0.6.4",
       "description": "PLUGIN 8 — the Monthly Market System, powered by the Market Update AI Agent. It schedules itself the moment the agent installs it, times itself to when their local real estate board actually publishes (and re-times itself as it learns), then every month pulls the fresh local numbers and builds the entire package off them: the branded PRESENTATION they screen-record (talking points under every slide — no script needed), the sendable PDF market report that doubles as a green-screen asset and the lead magnet, three short-form concepts, the Instagram 1:1 infographic AND carousel, and the distribution pack with a two-CTA newsletter. It grades last month's on-camera prediction against the numbers that just landed — the ledger segment almost no agent runs — then writes the whole month onto the same Notion Content Dashboard the YouTube and Short-Form systems use, so an unattended run is actually visible. Between runs it's a market advisor in chat — ask how any community, price range, or property type is doing, what changed since last month, what a home costs per month at today's rates, or what to tell a seller who asks if now's the time, answered instantly from the numbers already on file. Every asset ships as a paste-ready Claude Design brief with the real numbers already in it. The realtor's only job is to film. Numbers are researched once into the Brain and quoted everywhere, so nothing ever disagrees; sourced and dated or it doesn't ship, with a stated fallback for markets whose board publishes nothing. Text, data, and design briefs only — it never designs, films, or publishes. Requires Plugin 1 (the Brain) set up first."
     },
     {
       "name": "cohort-claude-support",
       "source": "./plugins/cohort-claude-support",
-      "version": "0.2.13",
+      "version": "0.2.14",
       "description": "PLUGIN 9 — Cohort Claude Support. The calm support desk inside Cowork: say \"help\" and it answers every Claude question, diagnoses breakage with real checks (brain missing, connector expired, skill won't fire, Claude slow), teaches in plain English with diagrams and vetted official articles, audits setup and resumes at the first missing step, tracks the cohort week with a catch-up plan, and escalates to Mike's team with a complete pre-built ticket the member pastes straight into the support portal. Knows all 9 plugins and routes every fix to the skill that owns it — support itself never touches the member's data (READ-ONLY by constitution). Stays current by design: money/limit answers are always fetched live from official pages; a weekly digest reads the Claude Apps release notes so answers stand on this week's Claude, not launch-week Claude. Works best with Plugin 1 (the Brain); helps even without it."
     },
     {
       "name": "realtor-riverside-editor",
       "source": "./plugins/realtor-riverside-editor",
-      "version": "0.4.2",
+      "version": "0.4.3",
       "description": "PLUGIN 10: The AI Editing Studio (Riverside engine). A full-time video editor inside the agent's Claude: 28 skills across five stages: DIRECT (creative direction, record coach, transcript read, section map), CUT (remove the fluff, hook finder, rescue cut, interview edit), POLISH (audio enhance, color and look, captions, music, B-roll, B-roll library, brand graphics, energy), REPURPOSE (short-form repurpose, weekly batch, podcast, trailer), SHIP (quality check, review and revise, publish), plus setup, a plain-English navigator that also resumes any stopped edit, and three full recipes (long-form, reel, listing). Claude edits directly in the agent's own Riverside account with precise, verifiable operations: no per-edit AI credits, every change proven by a revision diff, every visual checked on real frames, and publishing to YouTube, Shorts, TikTok, Instagram, Facebook, LinkedIn, and X only on an explicit yes. One owner per output: it edits video and never writes titles, descriptions, chapter names, post captions, or designs; those come from the YouTube System, the Short-Form System, and Claude Design. Requires Plugin 1 (the Brain) and a Riverside Grow plan or higher."
     }
   ]

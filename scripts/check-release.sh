@@ -154,6 +154,44 @@ if missing:
 print(f"  ✓ v{ver}: every named file is tracked or staged")
 PY
 
+
+say "── 8. every SKILL.md description is within the 1024-character sync limit"
+python3 - <<'PYEOF' || FAIL=1
+import re, glob, sys
+def desc(path):
+    s = open(path, encoding="utf-8").read()
+    if not s.startswith("---"): return None
+    fm = s[3:s.find("\n---", 3)]
+    m = re.search(r"^description:\s*(.*)$", fm, re.M)
+    if not m: return None
+    first = m.group(1).strip()
+    if first in (">", "|", ">-", "|-", ">+", "|+"):
+        body = []
+        for ln in fm[m.end():].split("\n")[1:]:
+            if ln.strip() == "": body.append(""); continue
+            if not ln.startswith("  "): break
+            body.append(ln.strip())
+        paras, cur = [], []
+        for b in body:
+            if b == "": paras.append(" ".join(cur)); cur = []
+            else: cur.append(b)
+        if cur: paras.append(" ".join(cur))
+        return "\n".join(paras).strip()
+    return first.strip("\"'" + "'" + "\"")
+over = []
+for p in sorted(glob.glob("plugins/*/skills/*/SKILL.md")):
+    v = desc(p)
+    if v and len(v) > 1024:
+        over.append((len(v), p))
+if over:
+    print(f"  \u2717 {len(over)} skill description(s) exceed 1024 chars — the marketplace SKIPS these skills entirely:")
+    for n, p in sorted(over, reverse=True):
+        print(f"      {n:5d}  {p}")
+    print("      (members install the plugin and the skill simply is not there)")
+    sys.exit(1)
+print("  \u2713 all skill descriptions within 1024 chars")
+PYEOF
+
 say ""
 if [ "$FAIL" -ne 0 ]; then say "RELEASE BLOCKED — fix the ✗ items above."; exit 1; fi
 say "RELEASE OK — safe to commit."

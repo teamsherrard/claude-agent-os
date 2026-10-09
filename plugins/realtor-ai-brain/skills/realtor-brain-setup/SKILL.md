@@ -1,22 +1,18 @@
 ---
 name: realtor-brain-setup
 description: >
-  Realtor AI Brain — Setup. The ONE skill a real estate agent runs first. It builds their entire
-  AI Brain in a single guided session: scaffolds ~/realtor-brain/, interviews them about who they
-  are, who they serve, what they offer, and how their brand looks, writes all of it into their
-  Brain, walks them through connecting Gmail + Calendar, and hands them a finished, working Brain
-  that every other skill (AI Admin, YouTube, market updates, listings) reads automatically.
-
-  This replaces running brand-persona, then offer-usp, then brand-direction separately. One door,
-  one session, done. It is resumable — if a Brain already exists it picks up where they left off
-  or updates a single section.
+  Realtor AI Brain — Setup. The ONE skill a real estate agent runs first: one guided session that
+  interviews them (who they are, who they serve, what they offer, their brand, their 90-day plan),
+  writes it all into their Brain, walks them through connecting Gmail + Calendar, and hands back a
+  finished Brain every other skill reads automatically. Resumable — an existing Brain picks up
+  where they left off, never re-interviewed.
 
   Trigger on: "set up my brain", "set up my realtor brain", "build my AI brain", "get me started",
   "set up my system", "onboard me", "first time setup", "install my brain", "set up everything",
-  "build my realtor system", "launch my AI brain plugin", "launch the brain plugin", "open my brain",
-  "load my brain", or any first-run / onboarding request from a real estate agent. (The "launch"/"open"
-  phrases route through Step 0: NO Brain yet → the full interview; Brain already built → the READY
-  BRIEF, never a re-interview.)
+  "build my realtor system", "launch my AI brain plugin", "launch the brain plugin", "open my
+  brain", "load my brain", or any first-run / onboarding request. ("Launch"/"open" route through
+  Step 0: no Brain yet → the full interview; Brain already built → the READY BRIEF, never a
+  re-interview.)
 ---
 
 # Realtor AI Brain — Setup

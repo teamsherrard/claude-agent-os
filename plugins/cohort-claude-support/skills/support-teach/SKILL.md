@@ -5,15 +5,13 @@ description: >
   actually work, for real estate agents who never want to feel technical. Explains any concept
   (Cowork vs Chat, plugins vs skills vs connectors, the Brain, sessions and why chats disappear,
   permission prompts, models, projects, artifacts, voice mode, Claude Design), walks through any
-  how-do-I (connect Google, use voice capture, start the right chat), and teaches with the
-  screenshot-guided, one-step-at-a-time patience of a good friend at the kitchen table.
-  Trigger on: "what's the difference between", "what is / what does X mean", "how does X work", "how do I
+  how-do-I, and teaches one step at a time with the patience of a good friend at the kitchen
+  table. Trigger on: "what's the difference between", "what is X", "how does X work", "how do I
   use", "explain", "teach me", "walk me through", "I don't understand", "show me how", or any
-  conceptual/how-to question about Claude, Cowork, Design, connectors, the Brain, or the plugins
-  that isn't a breakage (that's diagnose), a purchase/limit question (that's account), or a
-  request to actually PRODUCE the thing — "show me how to make a carousel" / "walk me through my
-  market update" mean "do it with me": route to the owning skill via the stack map, which teaches
-  by doing. Usually reached through support-navigator.
+  conceptual/how-to question about Claude, Cowork, Design, connectors, the Brain, or the plugins —
+  unless it's a breakage (diagnose), a purchase/limit question (account), or a request to PRODUCE
+  the thing ("walk me through my market update" means do it with me: route to the owning skill).
+  Usually reached through support-navigator.
 ---
 
 # Support Teach — the patient explainer

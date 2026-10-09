@@ -1,17 +1,17 @@
 ---
 name: market-research
 description: >
-  The data engine of the Monthly Market System — pulls this month's live LOCAL market numbers for the
-  agent's city, communities, and niche, verifies every figure against a named source with a date, and
-  writes one clean data block to the Brain that every other market skill quotes. Covers prices, sales,
-  new listings, inventory, months of supply, days on market, sale-to-list, property-type and community
-  breakdowns, the rate environment, real affordability math, and what local buyers and sellers are
-  actually asking right now. Researches once per month so nothing downstream ever re-searches or
-  disagrees. Never estimates, never forecasts as fact.
+  The data engine of the Monthly Market System — pulls this month's live LOCAL market numbers for
+  the agent's city, communities, and niche, verifies every figure against a named source with a
+  date, and writes one clean data block to the Brain that every other market skill quotes. Covers
+  prices, sales, new listings, inventory, months of supply, days on market, sale-to-list,
+  property-type and community breakdowns, the rate environment, real affordability math, and what
+  local buyers and sellers are actually asking. Researches once per month so nothing downstream
+  re-searches or disagrees. Never estimates, never forecasts as fact.
 
-  Trigger on: "pull my market data", "get this month's numbers", "research my market", "market stats for [month]", "refresh my market data", or as the data step that runs before every other piece in a monthly run. (Questions ABOUT the
-  numbers — "what's happening in my market", "how's [community] doing" — go to **Market Ask**, which
-  answers from what's already on file and only comes here when this month hasn't been pulled yet.)
+  Trigger on: "pull my market data", "get this month's numbers", "research my market", "market
+  stats for [month]", "refresh my market data", or as the data step before every other piece in a
+  monthly run. (Questions ABOUT the numbers go to Market Ask.)
 ---
 
 # Market Research

@@ -1,24 +1,19 @@
 ---
 name: realtor-listing-content-kit
 description: >
-  Realtor Listing Content Kit — takes a new listing's details and generates a complete
-  content package for launch across YouTube and short-form platforms. Produces a YouTube
-  walkthrough script (room by room), full YouTube SEO package (title, description, tags,
-  hashtags), and 3 short-form Reel/TikTok scripts (just listed announcement, top 3 features,
-  neighbourhood angle) each with a ready-to-post caption. Everything compiled into one
-  clean, formatted doc. Agent inputs the address, key features, price, neighbourhood, and target
-  buyer type — Claude does the rest.
+  Takes a new listing's details and generates a complete content package: a room-by-room YouTube
+  walkthrough script, the full YouTube SEO package (title, description, tags, hashtags), and 3
+  short-form Reel/TikTok scripts (just-listed announcement, top 3 features, neighbourhood angle)
+  each with a ready-to-post caption — compiled into one clean, formatted doc. The agent gives the
+  address, key features, price, neighbourhood, and target buyer type.
 
   Trigger on: "listing content kit", "new listing content", "create content for my listing",
   "listing video script", "YouTube for my listing", "reels for my listing", "listing launch
-  content", "just listed content", "content for [address]", "listing content package",
-  or any request where the agent wants to create YouTube or short-form content for a
-  specific property listing.
+  content", "just listed content", "content for [address]", "listing content package".
 
-  BOUNDARY: if the dedicated Realtor Listing Launch plugin (Plugin 7) is installed, defer to it —
-  its listing-intake captures the property once, and FILM IT (listing-video), CLIP IT (listing-clips),
-  and TOUR IT (listing-tour) go further than this skill does. This is the built-in version for agents
-  who don't have Plugin 7.
+  BOUNDARY: if the Listing Launch plugin (Plugin 7) is installed, defer to it — its intake
+  captures the property once, and FILM IT / CLIP IT / TOUR IT go further. This is the built-in
+  version for agents without Plugin 7.
 ---
 
 # Realtor Listing Content Kit

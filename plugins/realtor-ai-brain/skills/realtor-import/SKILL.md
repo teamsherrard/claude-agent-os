@@ -1,18 +1,17 @@
 ---
 name: realtor-import
 description: >
-  Imports the real estate agent's EXISTING materials into their Realtor AI Brain instead of making them
-  retype everything — testimonials, reviews, a bio, past posts/emails/scripts, market reports/CMAs, lead
-  magnets, workbooks, listing presentations. Two ways in: the agent UPLOADS files to the chat, or points
-  to a Drive/OneDrive folder (or drops files in their workspace's `06 · Materials` folder; legacy: `Realtor AI Brain/intake`) and Claude reads them
-  via the Drive connector. Claude extracts what it can, maps each piece to the right Brain file, shows a
-  summary, and writes only after the agent confirms. Never crawls the whole Drive; never fabricates. Runs as
-  an optional accelerator at the START of Brain Setup, inside Voice & Proof / Offer, or anytime on demand.
+  Imports the agent's EXISTING materials into their Brain instead of making them retype everything
+  — testimonials, reviews, a bio, past posts/emails/scripts, market reports/CMAs, lead magnets,
+  workbooks, listing presentations. Two ways in: they upload files to the chat, or drop them in
+  their workspace's `06 · Materials` folder and Claude reads them via the storage connector.
+  Claude extracts what it can, maps each piece to the right Brain file, shows a summary, and
+  writes only after they confirm. Never crawls the whole Drive; never fabricates. An optional
+  accelerator at the start of Setup, inside Voice & Proof / Offer, or anytime on demand.
 
-  Trigger on: "import my materials", "import my files", "pull from my drive", "I have testimonials/reviews",
-  "I have a bio / market reports / lead magnet / workbook", "use my existing stuff", "upload my files",
-  "read my drive folder", "I already have this written", or any time the agent has existing materials to
-  pull in instead of answering from scratch.
+  Trigger on: "import my materials", "import my files", "pull from my drive", "I have
+  testimonials/reviews", "I have a bio / market reports / lead magnet / workbook", "use my
+  existing stuff", "upload my files", "read my drive folder", "I already have this written".
 ---
 
 # Realtor Import — pull existing materials into the Brain

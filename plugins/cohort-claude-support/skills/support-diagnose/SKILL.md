@@ -2,18 +2,16 @@
 name: support-diagnose
 description: >
   The fix-it lane of Cohort Claude Support. Takes any "it's broken" — a dead skill, a missing
-  brain, a connector that won't read, an error banner, slow Claude, output that doesn't sound like
-  the agent — and runs REAL checks (look, never touch) down proven decision trees until the cause
-  is found, then routes the fix to the skill that owns it. Checks Anthropic's status page FIRST
-  for anything that smells like an outage, decodes pasted errors and screenshots, and after two
-  failed fixes stops and hands off to escalation with a complete bug report. Trigger on: "it's
-  broken", "not working", "my brain isn't working", "nothing happened", "Claude is down / slow /
-  stuck", "I got an error", "it can't see my email / calendar / files", "it lost everything", "it
-  doesn't sound like me", "I don't see Cowork", "it worked yesterday and now it doesn't", or any
-  breakage/misbehavior report. EXCEPTION: a stopped EDIT ("my edit stopped in the middle",
-  "it ran out of credits", "finish my video") goes straight to editor-navigator — its resume flow
-  is trained for exactly that; this lane covers everything else stopping. Usually reached through
-  support-navigator.
+  brain, a connector that won't read, an error banner, output that doesn't sound like the agent —
+  and runs REAL checks (look, never touch) down proven decision trees until the cause is found,
+  then routes the fix to the skill that owns it. Checks Anthropic's status page FIRST for anything
+  that smells like an outage, decodes pasted errors and screenshots, and after two failed fixes
+  hands off to escalation with a complete bug report. Trigger on: "it's broken", "not working",
+  "my brain isn't working", "nothing happened", "Claude is down / slow / stuck", "I got an error",
+  "it can't see my email / calendar / files", "it lost everything", "it doesn't sound like me", "I
+  don't see Cowork", "it worked yesterday and now it doesn't". EXCEPTION: a stopped EDIT ("my edit
+  stopped", "it ran out of credits", "finish my video") goes to editor-navigator. Usually reached
+  through support-navigator.
 ---
 
 # Support Diagnose — look, find, route

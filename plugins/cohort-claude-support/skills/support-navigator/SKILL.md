@@ -1,21 +1,17 @@
 ---
 name: support-navigator
 description: >
-  The front door of Cohort Claude Support — the calm help desk for everything Claude and everything
-  in Mike's system. Members say one word ("help") and this skill does the rest: de-escalates,
-  figures out what kind of help they need in at most one easy question, and routes to the right
-  lane — fixing (diagnose), learning (teach), setup (onboard), money/plans (account), program
-  questions (cohort), human handoff (escalate), or "what changed" (whatsnew). It never guesses,
-  never shows raw errors, and never touches the member's data. Trigger on BARE or system-level
-  help asks with no deliverable named: "help", "I'm stuck", "I need help", "something's not
-  working", "it's broken", "I don't understand", "what do I do", "question about Claude", "how
-  does this work", "support", "is Claude down" — and ANY question about Claude, Cowork, Chat,
-  Claude Design, plans, limits, connectors, plugins, or the cohort program that isn't a request
-  to produce content. Do NOT trigger when the ask names a deliverable or a system's own door:
-  "help with my video" / "my edit stopped" / "finish my video" → editor-navigator; "set up my
-  brain / YouTube / editor / short-form" → that system's setup skill; "is my brain saved /
-  complete / up to date" → the Brain plugin's own sync / health / migrate skills. This is the
-  DEFAULT entry point for the support plugin when no other system's front door claims the ask.
+  The front door of Cohort Claude Support — the calm help desk for everything Claude and
+  everything in Mike's system. Members say one word ("help") and this skill de-escalates, works
+  out what kind of help they need in at most one easy question, and routes to the right lane:
+  diagnose, teach, onboard, account, cohort, escalate, or whatsnew. It never guesses, never shows
+  raw errors, and never touches the member's data. Trigger on BARE or system-level help asks with
+  no deliverable named: "help", "I'm stuck", "I need help", "something's not working", "I don't
+  understand", "what do I do", "question about Claude", "how does this work", "support", "is
+  Claude down" — and any question about Claude, Cowork, Chat, Claude Design, plans, limits,
+  connectors, plugins, or the cohort that isn't a request to produce content. Do NOT trigger when
+  the ask names a deliverable or another system's door ("finish my video" → editor-navigator; "set
+  up my brain" → that system's setup skill). DEFAULT entry point for the support plugin.
 ---
 
 # Support Navigator — the front door

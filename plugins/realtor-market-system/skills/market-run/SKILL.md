@@ -3,18 +3,17 @@ name: market-run
 description: >
   The front door of the Monthly Market System — one command, one complete monthly launch. Confirms
   which month, makes sure that month's numbers are on file (hands to the research if they aren't),
-  grades last month's prediction if there was one, then builds every piece off those exact figures in
-  order: the presentation they screen-record (talking points on every slide — no script needed), the
-  sendable PDF report, three short-form videos, the Instagram infographic and carousel, the newsletter
-  with both CTAs, and the month's cards on their content board. It sequences and hands off; it never
-  researches or writes the pieces itself. The agent's only job at the end is to film the deck.
+  grades last month's prediction, then builds every piece off those exact figures: the
+  presentation they screen-record (talking points on every slide), the sendable PDF report, three
+  short-form videos, the Instagram infographic and carousel, the newsletter with both CTAs, and
+  the month's cards on their content board. It sequences and hands off; it never researches or
+  writes the pieces itself.
 
-  Trigger on: "run my market update", "run my market update for [month]", "my monthly market update",
-  "build my market package", "market update for [month]", "do my market update", "it's the 1st — run
-  my market update", "launch market update plugin", "launch the market plugin", "launch my market
-  system", "start my market update", "open my market system", "market update plugin", or whenever the
-  agent wants the whole monthly launch rather than one single piece. This is the DEFAULT entry point
-  for the plugin — any vague or first-time market request lands here.
+  Trigger on: "run my market update", "my monthly market update", "build my market package",
+  "market update for [month]", "do my market update", "it's the 1st — run my market update",
+  "launch market update plugin", "launch the market plugin", "launch my market system", "open my
+  market system", "market update plugin", or whenever they want the whole monthly launch. DEFAULT
+  entry point for the plugin.
 ---
 
 # Run My Market Update

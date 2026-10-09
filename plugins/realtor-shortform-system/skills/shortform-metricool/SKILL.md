@@ -1,20 +1,18 @@
 ---
 name: shortform-metricool
 description: >
-  The Metricool Control Panel for the Short-Form System — the one place to CONNECT, CHECK, and MANAGE the
-  agent's posting. It is NOT a publisher and NOT a content maker. It connects Metricool to Claude and runs the
-  full health check (which brands + networks are linked, is Instagram a Business/Creator account, is Google
-  Drive linked for video, is the free-plan cap in play), shows and edits what's in the queue (move, space out,
-  or remove scheduled posts), verifies posts actually went out and explains + fixes any that failed, and sets
-  the agent's best-time posting slots. Written for Metricool (the default); the same checks apply on
-  GoHighLevel / Buffer.
+  The Metricool Control Panel for the Short-Form System — the one place to CONNECT, CHECK, and
+  MANAGE the agent's posting. It is NOT a publisher and NOT a content maker. It connects Metricool
+  to Claude and runs the full health check (which brands + networks are linked, is Instagram a
+  Business/Creator account, is Google Drive linked for video, is the free-plan cap in play), shows
+  and edits the queue (move, space out, remove), verifies posts actually went out and fixes any
+  that failed, and sets their best-time posting slots. Written for Metricool; the same checks
+  apply on GoHighLevel / Buffer.
 
-  Trigger on: "check my metricool", "is my metricool connected", "connect my metricool", "set up metricool",
-  "metricool health check", "what's scheduled", "what's in my queue", "what's going out this week", "move my
-  post", "reschedule my posts", "space out my posts", "remove that scheduled post", "did my posts go out",
-  "why did my post fail", "fix my posting", "set my best times", or any request to connect / check / manage
-  the posting queue. (Scheduling NEW content = shortform-publish; a whole month from a Drive folder =
-  shortform-batch-publish; performance / ads / the deep dive = shortform-analytics — hand off, don't duplicate.)
+  Trigger on: "check my metricool", "is my metricool connected", "connect my metricool",
+  "metricool health check", "what's scheduled", "what's in my queue", "move my post", "reschedule
+  my posts", "did my posts go out", "why did my post fail", "set my best times". (New content =
+  shortform-publish; a whole folder = shortform-batch-publish; performance = shortform-analytics.)
 ---
 
 # Metricool Control Panel

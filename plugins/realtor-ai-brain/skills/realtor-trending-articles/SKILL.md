@@ -1,19 +1,17 @@
 ---
 name: realtor-trending-articles
 description: >
-  Realtor Trending Article Skill — searches the web for the most relevant, timely real estate
-  and market news articles for the agent's specific city and audience, then delivers a batch of
-  5 ready-to-record short-form video packages. Each package includes the article link, key stats
-  extracted from the article, a word-for-word talking script, bullet points for the agent to riff
-  from, and an Instagram/TikTok caption. The agent picks the videos they want to record and hits
-  record — no research, no writing, no figuring out what to say.
+  Searches the web for the most relevant, timely real estate and market news for the agent's
+  specific city and audience, then delivers a batch of 5 ready-to-record short-form video
+  packages. Each includes the article link, the key stats pulled from it, a word-for-word talking
+  script, bullet points to riff from, and an Instagram/TikTok caption. The agent picks the videos
+  they want and hits record — no research, no writing, no figuring out what to say.
 
-  Trigger on: "find me articles to record", "give me article video ideas", "find trending real estate
-  articles", "what real estate news should I film this week", "find me content to record this week",
-  "article video batch", "find articles for my reels", "what's trending in real estate right now",
-  "find me short form video ideas from the news", "real estate news batch", "find articles for
-  [city] market", or any request where the agent wants Claude to find trending real estate news
-  articles and turn them into short-form video scripts they can record.
+  Trigger on: "find me articles to record", "give me article video ideas", "find trending real
+  estate articles", "what real estate news should I film this week", "find me content to record
+  this week", "article video batch", "find articles for my reels", "what's trending in real estate
+  right now", "find me short form video ideas from the news", "real estate news batch", "find
+  articles for [city] market".
 ---
 
 # Realtor Trending Article Skill

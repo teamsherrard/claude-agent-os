@@ -2,6 +2,27 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.135.0] — 2026-10-09
+
+### Fix: 34 skills were silently missing from every install (the 1024-character sync limit)
+Core members reported warnings on the marketplace sync. The warnings were not cosmetic: the sync was
+reporting **"these items were left out"** — 34 SKILL.md `description` fields exceeded the platform's
+1024-character limit, so those skills were **skipped entirely at install**. Members had the plugins
+without the skills, including `realtor-brain-setup` (the first skill every new agent runs), all four
+plugin navigators (editor, lead-capture, riverside, support), `realtor-business-plan`, and
+`market-run`.
+- **All 34 descriptions rewritten under the limit** across 8 plugins — every trigger phrase, boundary
+  rule, tie-break, and EXCEPTION preserved verbatim; only the prose preamble was compressed. Longest is
+  now 1019.
+- **The gate that was missing:** `scripts/check-release.sh` never measured description length (the
+  attraction repo's gate did, which is why only its two vendored skills drifted). Added as check 8 —
+  a release is now BLOCKED if any description exceeds 1024, with the offending files listed.
+- **Hyphen-fold bug caught in review** (credit: the parallel AA session): YAML folded scalars turn a
+  line break into a space, so wrapping on a hyphen inserted a space inside a hyphenated word. The
+  rewriter now wraps with `break_on_hyphens=False`; verified zero corruptions repo-wide.
+- Root cause of the regression on `realtor-brain-setup` specifically: the "launch my AI brain plugin"
+  triggers added in brain v0.58.0 pushed a 972-character description to 1210.
+
 ## [0.134.0] — 2026-09-25
 
 ### The deep dive, rebuilt on the full connection — and written for a realtor (YouTube 0.18.0 · Short-Form 0.17.0)

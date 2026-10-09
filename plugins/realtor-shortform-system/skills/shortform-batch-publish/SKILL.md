@@ -1,19 +1,18 @@
 ---
 name: shortform-batch-publish
 description: >
-  The hands-off publishing department. The agent points at a Google Drive folder of FINISHED content
-  (edited shorts, long-form videos, carousels, graphics) and this handles everything between "it's edited"
-  and "it's live": it reads each piece to know what it's actually about, writes the platform-native package
-  for each (caption, hashtags, title per platform — Instagram, Facebook, TikTok, YouTube Shorts/YouTube —
-  in the agent's voice), pulls their best times to post from Metricool, and schedules the whole batch into
-  the Metricool queue — the next 5, 10, two weeks, or a full month in one sitting. The agent reviews the
-  queue once and approves; nothing goes live without a yes. Builds on shortform-optimizer + the Metricool
-  scheduler (publishing-guide). Metricool by default; GoHighLevel / Buffer also work.
+  The hands-off publishing department. The agent points at a Google Drive folder of FINISHED
+  content (edited shorts, long-form videos, carousels, graphics) and this handles everything
+  between "it's edited" and "it's live": it reads each piece to know what it's about, writes the
+  platform-native package for each (caption, hashtags, title per platform — Instagram, Facebook,
+  TikTok, YouTube Shorts/YouTube — in their voice), pulls their best times to post from Metricool,
+  and schedules the whole batch — the next 5, 10, two weeks, or a full month in one sitting. They
+  review the queue once and approve; nothing goes live without a yes. Metricool by default;
+  GoHighLevel / Buffer also work.
 
-  Trigger on: "publish my content folder", "schedule my finished videos", "schedule everything in this
-  folder", "point at my Drive folder", "batch schedule my content", "schedule my month of content",
-  "queue up my month", "publish this batch", "hands-off publishing", "schedule my edited shorts", or any
-  request to publish/schedule a whole folder or batch of finished content at once.
+  Trigger on: "publish my content folder", "schedule my finished videos", "schedule everything in
+  this folder", "batch schedule my content", "schedule my month of content", "queue up my month",
+  "publish this batch", "hands-off publishing", "schedule my edited shorts".
 ---
 
 # Batch Publish (the publishing department)
