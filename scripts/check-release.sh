@@ -155,7 +155,7 @@ print(f"  ✓ v{ver}: every named file is tracked or staged")
 PY
 
 
-say "── 8. every SKILL.md description is within the 1024-character sync limit"
+say "── 8. SKILL.md descriptions: within the 1024-char sync limit, and no folded-scalar word splits"
 python3 - <<'PYEOF' || FAIL=1
 import re, glob, sys
 def desc(path):
@@ -177,19 +177,23 @@ def desc(path):
             else: cur.append(b)
         if cur: paras.append(" ".join(cur))
         return "\n".join(paras).strip()
-    return first.strip("\"'" + "'" + "\"")
-over = []
+    return first.strip("\"" + "'")
+over, split = [], []
 for p in sorted(glob.glob("plugins/*/skills/*/SKILL.md")):
     v = desc(p)
-    if v and len(v) > 1024:
-        over.append((len(v), p))
+    if not v: continue
+    if len(v) > 1024: over.append((len(v), p))
+    for m in re.finditer(r"(\w+)- (\w+)", v): split.append((p, m.group(0)))
 if over:
-    print(f"  \u2717 {len(over)} skill description(s) exceed 1024 chars — the marketplace SKIPS these skills entirely:")
-    for n, p in sorted(over, reverse=True):
-        print(f"      {n:5d}  {p}")
-    print("      (members install the plugin and the skill simply is not there)")
-    sys.exit(1)
-print("  \u2713 all skill descriptions within 1024 chars")
+    print(f"  \u2717 {len(over)} description(s) exceed 1024 chars — the marketplace SKIPS these skills entirely:")
+    for n, p in sorted(over, reverse=True): print(f"      {n:5d}  {p}")
+    print("      (members install the plugin and the skill is simply not there)")
+if split:
+    print(f"  \u2717 {len(split)} folded-scalar word split(s) — a line break inside a hyphenated word becomes a SPACE:")
+    for p, frag in split: print(f"      {p}  ->  {frag!r}")
+    print("      (re-wrap with textwrap break_on_hyphens=False; this corrupts skill names in hand-offs)")
+if over or split: sys.exit(1)
+print("  \u2713 all descriptions \u22641024 chars, no folded word splits")
 PYEOF
 
 say ""
