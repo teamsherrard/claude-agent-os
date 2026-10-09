@@ -213,6 +213,20 @@ if bad:
 print("  \u2713 hooks.json files carry only \"hooks\"")
 PYEOF
 
+
+say "── 10. marketplace card descriptions are within the 500-character limit"
+python3 - <<'PYEOF' || FAIL=1
+import json, sys
+d = json.load(open(".claude-plugin/marketplace.json"))
+over = [(len(p["description"]), p["name"]) for p in d["plugins"] if len(p.get("description","")) > 500]
+if over:
+    print(f"  \u2717 {len(over)} marketplace entry description(s) exceed 500 chars — these WARN on every sync:")
+    for n, name in sorted(over, reverse=True): print(f"      {n:5d}  {name}")
+    print("      (this is the per-plugin \"description\" in .claude-plugin/marketplace.json, not plugin.json)")
+    sys.exit(1)
+print(f"  \u2713 all {len(d['plugins'])} marketplace card descriptions \u2264500 chars")
+PYEOF
+
 say ""
 if [ "$FAIL" -ne 0 ]; then say "RELEASE BLOCKED — fix the ✗ items above."; exit 1; fi
 say "RELEASE OK — safe to commit."

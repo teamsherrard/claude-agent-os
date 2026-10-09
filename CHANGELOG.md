@@ -2,6 +2,23 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.138.0] — 2026-10-09
+
+### The remaining 9 warnings: a SECOND, different limit — marketplace card descriptions cap at 500
+After the skill-description fix, a core member's sync still showed warnings — and the popup named them:
+nine plugins, all "Plugin description must be at most 500 characters." That is a different field and a
+different limit from the 1024-character SKILL.md cap: it is the per-plugin `description` inside
+`.claude-plugin/marketplace.json` (the card text in the plugin browser). The Brain's card at 325 chars was
+the only one already under, which is why it alone showed a notice rather than a warning.
+- **All 9 card descriptions rewritten to fit** (longest now 489, from a worst case of 1,674). The plugin
+  number, the hook, and the "Requires Plugin 1" dependency are preserved in every one.
+- `plugin.json` descriptions are NOT held to this cap — independently confirmed by the Agent Attraction
+  session, whose nine run 660–1,150 characters with only the long marketplace entry warning. Left alone.
+- `scripts/check-release.sh` gains check 10: any card description over 500 blocks the release, offenders
+  listed. Proven by injection.
+- The "executable files or settings may differ" line on the Brain is an informational notice after a
+  hooks change, not a warning; it clears on its own.
+
 ## [0.137.0] — 2026-10-09
 
 ### brain-health and brain-migrate now obey the plain-language contract (brain 0.60.0)
