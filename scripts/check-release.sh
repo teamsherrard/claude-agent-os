@@ -196,6 +196,23 @@ if over or split: sys.exit(1)
 print("  \u2713 all descriptions \u22641024 chars, no folded word splits")
 PYEOF
 
+
+say "── 9. hooks.json carries only the \"hooks\" key (extra keys are rejected on sync)"
+python3 - <<'PYEOF' || FAIL=1
+import json, glob, sys
+bad = []
+for p in sorted(glob.glob("plugins/*/hooks/hooks.json")):
+    try: d = json.load(open(p))
+    except Exception as e: bad.append((p, f"does not parse: {e}")); continue
+    extra = [k for k in d if k != "hooks"]
+    if extra: bad.append((p, f"extra top-level key(s): {extra} — put notes in hooks/README.md"))
+if bad:
+    print(f"  \u2717 {len(bad)} hooks.json problem(s):")
+    for p, why in bad: print(f"      {p}  {why}")
+    sys.exit(1)
+print("  \u2713 hooks.json files carry only \"hooks\"")
+PYEOF
+
 say ""
 if [ "$FAIL" -ne 0 ]; then say "RELEASE BLOCKED — fix the ✗ items above."; exit 1; fi
 say "RELEASE OK — safe to commit."

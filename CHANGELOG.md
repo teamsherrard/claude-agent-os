@@ -2,6 +2,21 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.136.0] — 2026-10-09
+
+### The second sync warning: an extra key in the Brain's hooks.json (brain 0.59.5)
+Chasing the gap between the 34 over-length descriptions I fixed and the warning count on the sync popup.
+The Brain's `hooks/hooks.json` carried a `$comment` key alongside `hooks`; plugin validation rejects
+extra top-level keys there. Its own note admitted the file had been pulled from a zip test build because
+"zip validation rejected a hooks variant" — the cause was this key.
+- The explanation moved to `plugins/realtor-ai-brain/hooks/README.md`; the JSON now carries only `hooks`.
+- `scripts/check-release.sh` gains check 9: any hooks.json with an extra top-level key (or that fails to
+  parse) blocks the release. Proven by injection.
+- Audited every other validatable surface for the remaining warnings and found them clean: all 10
+  plugin.json files carry the identical 8 keys, every skill name matches its directory, the only
+  frontmatter fields in use are name and description, and there are no commands or agents anywhere in
+  the repo. If the next sync still reports warnings, the popup names them — that list is the next lead.
+
 ## [0.135.1] — 2026-10-09
 
 ### Release gate now catches folded-scalar word splits, not just over-length descriptions
