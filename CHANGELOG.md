@@ -5,9 +5,9 @@ All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`
 ## [0.135.1] — 2026-10-09
 
 ### Release gate now catches folded-scalar word splits, not just over-length descriptions
-The parallel AA session found six of these in `claude-agent-attraction-os` after I flagged the pattern —
-including one where `lm-magnet-ideas` rendered as "magnet- ideas" in a navigator's routing text, pointing
-at a skill name that does not exist. That is a routing failure, not a typo.
+The parallel Agent Attraction session found six of these in its own repo after I flagged the pattern —
+including one where a lead-magnet skill's name rendered with a space inside it in a navigator's routing
+text, so the navigator pointed at a skill name that does not exist. That is a routing failure, not a typo.
 - `scripts/check-release.sh` check 8 now fails on BOTH conditions: any description over 1024 chars, and
   any `word- word` fold split in a description. Each offender is printed with its file.
 - Verified by injection: deliberately splitting "90-day" in `realtor-brain-setup` blocks the release and
