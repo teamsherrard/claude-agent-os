@@ -2,6 +2,19 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.137.0] — 2026-10-09
+
+### brain-health and brain-migrate now obey the plain-language contract (brain 0.60.0)
+These two were locked by a parallel session when `shared/how-we-speak.md` shipped in brain 0.58.0, so they
+were the last skills still free to talk like engineers — and brain-health is precisely the skill a confused
+agent runs. It was scoring by-design files as gaps.
+- **brain-health:** the completeness bar is now the FIRST-RUN ELEVEN only. Operations, vendors,
+  voice-print, story-bank, strategy, publishing and EVERYTHING in `memory/` are never counted, never
+  called "missing" — they are unbuilt by design, and an empty memory on a new Brain is a healthy new
+  Brain. Gaps are framed as upgrades; the optional depth layers get one friendly offer, not a ⬜;
+  structure nudges go last in one line. A complete first-run Brain now scores COMPLETE.
+- **brain-migrate:** no schema numbers or file mechanics in anything the agent reads.
+
 ## [0.136.0] — 2026-10-09
 
 ### The second sync warning: an extra key in the Brain's hooks.json (brain 0.59.5)

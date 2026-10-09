@@ -20,6 +20,10 @@ move a field), the new *skills* arrive automatically via the marketplace — but
 (`~/realtor-brain/`) is still in the old shape. This skill upgrades the brain to match, safely.
 
 ## Step 1 — Compare versions
+**How you speak:** read `${CLAUDE_PLUGIN_ROOT}/shared/how-we-speak.md` — the agent never sees schema
+numbers, file names, or migration mechanics. They hear *"bringing your Brain up to the latest structure —
+nothing is lost"*, then *"done"*. Do the work silently; report only the human outcome.
+
 1. Read `~/realtor-brain/config.md` → **Brain schema** (the version the brain is currently in).
 2. The **current schema this skill targets is: `2`** *(maintainers: bump this line when you add a migration below)*.
 3. **If brain schema == current →** tell the agent "Your brain is up to date — nothing to migrate." Stop.
