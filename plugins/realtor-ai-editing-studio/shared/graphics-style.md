@@ -37,7 +37,7 @@ Graphics are placed in Riverside and kept **MINIMAL**. On a **short-form reel** 
                   {"name":"popOut","type":"out","duration":0.25,"offset":0}] } }
 ```
 
-then take the new clip's id from the op result (`data.clipId`) → `modify_position` to the format zone (below). **The `boxed` effect IS the panel.** Its colour is Riverside's default (a dark box behind white text) — **there is no panel-colour field on the connector**, so a native card carries the brand in its font and its words, not its panel. That's acceptable (dark panel + white text is exactly the contrast rule), and it's why the kit is preferred for a fully-branded look. `brand.colors.accent` never goes inside a card (single text object = one colour).
+then take the new clip's id from the op result (`data.clipId`) → `modify_position` to the format zone (below). `desiredInsertionTime` is SOURCE time: after the clean cut, place the hook card just past the last opening cut (read `syncedCuts`), or the card is clipped (live-tested 2026-11-21: 250 ms instead of 2.2 s). **The `boxed` effect IS the panel.** Its colour is Riverside's default (a dark box behind white text) — **there is no panel-colour field on the connector**, so a native card carries the brand in its font and its words, not its panel. That's acceptable (dark panel + white text is exactly the contrast rule), and it's why the kit is preferred for a fully-branded look. `brand.colors.accent` never goes inside a card (single text object = one colour).
 
 ## What to add — and ONLY this, by default
 

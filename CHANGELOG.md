@@ -2,6 +2,21 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.140.1] — 2026-11-21
+
+### Riverside engine re-verified live (realtor-ai-editing-studio 0.6.1)
+A full reel was built on the Riverside engine through the plugin's own line, pass by pass, on a 70-second
+recording: 9:16 first, FullScreen layout, pause and filler cuts, Magic Audio 0.70, karaoke captions, the colour
+lift, three zoomed scenes, a two-placement music bed, a native hook card, one 1080p export. Every one of the 49
+Riverside tools the plugin cites exists on the live connector; every batch operation it names is in Riverside's
+current editing guide; every pass was proven by `compare_revisions`.
+- One finding, fixed in the docs: `insert_text_overlay`'s `desiredInsertionTime` is SOURCE time, so a hook card
+  placed at 0.3 s landed inside the opening pause cut and played for 250 ms. `riverside-playbooks.md` and
+  `graphics-style.md` now say to read `syncedCuts` and place the card just after the last opening cut.
+- No tool-shape drift found since the September live tests. One improvement: `exports_get_export` now returns a signed
+  `downloadUrl` on a completed export, so the frame-QA ladder's rung 1 (frames from the exported file) runs from Claude
+  Code; the playbook's export line says so.
+
 ## [0.140.0] — 2026-11-21
 
 ### Plugin 10 renamed: `realtor-ai-editing-studio` (0.6.0), one AI editor with two engines
