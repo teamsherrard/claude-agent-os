@@ -1,5 +1,7 @@
 # Weekly batch — one recording in, a week of content out
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Trailer, repurpose, batch.
+
 The cohort cadence is two long-forms and several reels a week. This runs the whole line from one sentence: *"Batch this week's video."*
 
 ## What one batch produces

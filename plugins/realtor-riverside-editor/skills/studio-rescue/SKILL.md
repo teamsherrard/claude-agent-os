@@ -1,11 +1,24 @@
 ---
 name: studio-rescue
-description: Rescue Cut for the AI Editing Studio, for the recording that went badly. When an agent made the same points three times, restarted sentences, wandered off topic, and lost the thread, a normal clean-up only tightens the ramble. This skill lists the distinct points they were making, finds the best complete pass of each, and tells them honestly whether a tight video is in there, whether one line needs a thirty-second patch, or whether they should re-record using the point list as their outline. Cuts only on their yes, after saving a copy of the original. Trigger on: "this recording is a mess", "I rambled", "can you save this", "I said everything three times", "rescue this", "is this usable", "salvage my video", "I lost my train of thought in this one". Part of the CUT stage; usually reached through studio-navigator.
+description: >-
+  Rescue Cut for the AI Editing Studio, for the recording that went badly. When an agent made the
+  same points three times, restarted sentences, wandered off topic, and lost the thread, a normal
+  clean-up only tightens the ramble. This skill lists the distinct points they were making, finds
+  the best complete pass of each, and tells them honestly whether a tight video is in there,
+  whether one line needs a thirty-second patch, or whether they should re-record using the point
+  list as their outline. Cuts only on their yes, after saving a copy of the original. Trigger on:
+  "this recording is a mess", "I rambled", "can you save this", "I said everything three times",
+  "rescue this", "is this usable", "salvage my video", "I lost my train of thought in this one".
+  Part of the CUT stage; usually reached through studio-navigator.
 ---
 
 # Rescue Cut
 
 One job, done well. Run the craft contract (`${CLAUDE_PLUGIN_ROOT}/shared/craft-contract.md`), and do the work from this skill's one reference: **`${CLAUDE_PLUGIN_ROOT}/shared/rescue.md`**. Respect the ownership rules in `${CLAUDE_PLUGIN_ROOT}/shared/boundaries.md` and the house rules in `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
+
+## Engine
+
+Read `default_engine` in `~/realtor-brain/editor/config.json` (saying an engine's name in the request always wins). **`riverside`** (the default): do the work exactly as this skill's reference says. **`edits`** (Instagram Edits for Mac, driven from Claude Code on the agent's own Mac): the craft rules in this skill's reference still apply, but the moves are the ones in the Rescue cut paragraph of `${CLAUDE_PLUGIN_ROOT}/shared/edits-engine.md`.
 
 ## The job
 

@@ -1,5 +1,7 @@
 # Effects menu — what's available in Riverside, and when to use it (sparingly)
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Energy.
+
 Riverside gives you few effects. That is mostly good news: **premium = restraint**, and the connector can't tempt you into clutter. The skill is using what IS there with purpose.
 
 **But minimal ≠ bare.** A flat, static talking-head with nothing happening is *also* a bad edit. The enemy is RANDOM clutter, not creativity.

@@ -1,11 +1,25 @@
 ---
 name: studio-listing
-description: Listing Edit for the AI Editing Studio — the full line for a property or home tour video. Listing videos are special: every property moment must show THE ACTUAL PROPERTY (the agent's own room clips, drone shots, or the listing photos as gently moving stills), never generic stock, which would misrepresent the home and is a compliance risk. Gathers whatever footage exists (Riverside's media panel, uploads, a Drive folder, the listing photos), matches each clip to the line that mentions it, handles having all, some, or none, places the address, price, and call-to-action cards with compliance checked, and saves a review draft as a vertical reel or a 16:9 tour. Trigger on "edit my listing video", "edit my home tour", "edit my tour footage", "edit my property video", "I have a walkthrough of a home", and on resuming one — "finish my tour". Usually reached through studio-navigator.
+description: >-
+  Listing Edit for the AI Editing Studio — the full line for a property or home tour video.
+  Listing videos are special: every property moment must show THE ACTUAL PROPERTY (the agent's own
+  room clips, drone shots, or the listing photos as gently moving stills), never generic stock,
+  which would misrepresent the home and is a compliance risk. Gathers whatever footage exists (the
+  editor's media panel, uploads, a Drive folder, the listing photos), matches each clip to the
+  line that mentions it, handles having all, some, or none, places the address, price, and
+  call-to-action cards with compliance checked, and saves a review draft as a vertical reel or a
+  16:9 tour. Trigger on "edit my listing video", "edit my home tour", "edit my tour footage",
+  "edit my property video", "I have a walkthrough of a home", and on resuming one — "finish my
+  tour". Usually reached through studio-navigator.
 ---
 
 # Listing Edit — the director
 
 A listing tour is about one specific property, so its footage rules differ. **Read up front (only these):** `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`, `${CLAUDE_PLUGIN_ROOT}/shared/dos-and-donts.md`, `${CLAUDE_PLUGIN_ROOT}/shared/boundaries.md`, `${CLAUDE_PLUGIN_ROOT}/shared/footage-intake.md`, and `identity/compliance.md`. Format decides the line: a social listing reel follows `studio-reel`'s 4 passes; a long YouTube tour follows `studio-longform`'s line. This skill adds only what is different.
+
+## Engine
+
+Read `default_engine` in `~/realtor-brain/editor/config.json` (saying an engine's name in the request always wins). **`riverside`** (the default): do the work exactly as this skill's reference says. **`edits`** (Instagram Edits for Mac, driven from Claude Code on the agent's own Mac): the craft rules in this skill's reference still apply, but the moves are the ones in the reel or long-form line as the format demands of `${CLAUDE_PLUGIN_ROOT}/shared/edits-engine.md`.
 
 ## What is different for a listing
 

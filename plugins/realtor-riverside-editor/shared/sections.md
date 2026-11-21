@@ -1,5 +1,7 @@
 # Section map — timestamps for chapters, markers for the editor
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Direction, transcript read, section map.
+
 The Studio never names a chapter (`boundaries.md`): the YouTube System writes chapter titles inside its SEO Package. What the Studio owns is the **map**: where every section starts on the FINAL cut, with a plain note of what is said there. This craft produces that map, hands it over, and drops navigation markers onto the Riverside timeline so the agent can jump around their own edit.
 
 ## When it runs

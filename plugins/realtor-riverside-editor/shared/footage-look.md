@@ -1,5 +1,7 @@
 # Footage look & treating people well
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Colour and look.
+
 How the footage — and the people in it — should look. Subtle and flattering always beats "punchy."
 
 ## Colour grade — ALWAYS applied, subtle and natural only

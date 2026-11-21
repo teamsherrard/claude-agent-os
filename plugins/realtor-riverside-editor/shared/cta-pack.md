@@ -1,5 +1,7 @@
 # Call-to-action cards (the agent's branded CTA)
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Graphics.
+
 Read the agent's saved CTA from `~/realtor-brain/editor/config.json` (`brand.cta.text` + `brand.cta.details`, captured at setup); only ask if it's missing.
 
 ## Every video ends with their CTA

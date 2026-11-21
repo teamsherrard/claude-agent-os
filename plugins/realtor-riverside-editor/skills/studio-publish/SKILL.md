@@ -1,22 +1,26 @@
 ---
 name: studio-publish
-description: >
-  Publish for the AI Editing Studio. Posts or schedules a finished Riverside edit to the agent's
-  connected social channels — YouTube (and Shorts), TikTok, Instagram, Facebook Reels, LinkedIn, X
-  — behind a hard confirmation gate. Discovers which accounts are connected, reads each platform's
-  rules, fetches the title, description, chapters, and captions from the plugins that own them and
-  never writes them itself, checks platform limits and compliance, enforces one posting route so
-  nothing is double-posted, checks YouTube Content-ID, shows a plain-language summary of exactly
-  what goes where and when, publishes, then verifies once. Publishing is one-way, so nothing
-  happens without an explicit yes. Trigger on: "post it", "publish it", "put it on YouTube",
-  "schedule my YouTube video", "post the reel to Instagram", "send it to my channels". For reels,
-  only when `publish_route` is `riverside`. Part of SHIP; usually reached through
+description: >-
+   Publish for the AI Editing Studio. Posts or schedules a finished edit (Riverside or Instagram
+  Edits) to the agent's connected social channels — YouTube (and Shorts), TikTok, Instagram,
+  Facebook Reels, LinkedIn, X — behind a hard confirmation gate. Discovers which accounts are
+  connected, reads each platform's rules, fetches the title, description, chapters, and captions
+  from the plugins that own them, checks platform limits and compliance, enforces one posting
+  route so nothing is double-posted, checks YouTube Content-ID, shows a plain-language summary of
+  exactly what goes where and when, publishes. Publishing is one-way, so nothing happens without
+  an explicit yes. Trigger on: "post it", "publish it", "put it on YouTube", "schedule my YouTube
+  video", "post the reel to Instagram", "send it to my channels", "publish it from Edits". For
+  reels, only when `publish_route` is `riverside`. Part of SHIP; usually reached through
   studio-navigator.
 ---
 
 # Publish — post it, on their word
 
 Follow `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` and, for everything below, `${CLAUDE_PLUGIN_ROOT}/shared/publishing.md` (the gate, the copy shapes, the error table). Talk plainly (`${CLAUDE_PLUGIN_ROOT}/shared/plain-language.md`).
+
+## Engine
+
+Read `default_engine` in `~/realtor-brain/editor/config.json` (saying an engine's name in the request always wins). **`riverside`** (the default): do the work exactly as this skill's reference says. **`edits`** (Instagram Edits for Mac, driven from Claude Code on the agent's own Mac): the craft rules in this skill's reference still apply, but the moves are the ones in the Publish paragraph of `${CLAUDE_PLUGIN_ROOT}/shared/edits-engine.md`. Edits never posts: deliver the exported file and hand posting to the agent's Edits share sheet or the Short-Form System's posting tool, and never claim a post happened.
 
 ## Step 0 — Only on their word
 

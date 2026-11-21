@@ -1,5 +1,7 @@
 # The pre-flight check — read the video BEFORE you change anything
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Direction, transcript read, section map.
+
 **This runs first on EVERY edit, and it changes nothing.** Reading the transcript is free and safe; cutting is not. On a real 15-minute client video this step found **three duplicate takes and ~2 minutes of dead air** before a single change was made — it cut 3:21 off the runtime and made the plan accurate. Same step, same payoff here.
 
 It does three jobs at once: it makes the edit **better** (you plan instead of react), **faster** (you get it right the first time instead of over-correcting), and it **removes the agent's #1 anxiety** — not knowing what's about to happen to their video, or how long it'll take.

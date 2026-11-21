@@ -1,5 +1,7 @@
 # Interview edit — two or more people (Riverside's home turf)
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Interview.
+
 Riverside records each person on their own track. That makes multi-person edits cleaner here than anywhere else: the layout can follow whoever is speaking, and one person's mic never bleeds over the other.
 
 ## The recipe

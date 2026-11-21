@@ -1,5 +1,7 @@
 # Layouts & b-roll framing (vertical reels)
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § B-roll and library.
+
 Riverside has named **layouts** (`editing_list_layouts`) and **smart layouts** (`editing_apply_smart_layout`). The classic mistake is slapping a horizontal b-roll onto a vertical 9:16 frame and either over-zooming it or letting it float.
 
 ## First: get the canvas right (reels)

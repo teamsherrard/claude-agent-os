@@ -1,5 +1,7 @@
 # The craft contract — how every single-job skill runs
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Session rules.
+
 Every craft skill in the Studio (Audio Enhance, Color and Look, Music, Captions, Remove the Fluff, and the rest) does ONE job, owns ONE reference file, and runs the same seven steps. The director skills (Long-Form Edit, Reel Edit, Listing Edit, Weekly Batch) do not repeat any of this — they open the same reference files in order. One source of truth per craft.
 
 ## The seven steps

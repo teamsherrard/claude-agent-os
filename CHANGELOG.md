@@ -2,6 +2,40 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.139.0] — 2026-11-21
+
+### The AI Editing Studio gains a second engine: Instagram Edits for Mac (realtor-riverside-editor 0.5.0)
+Meta's free Edits app for Mac (released 2026-11-05) ships a built-in automation server that speaks MCP. Driven from
+Claude Code on the agent's own Mac through the open-source insta-edits bridge, it edits a reel end to end for
+zero per-edit fees. Plugin 10 is now ONE editor with two engines; the agent picks at setup (`default_engine`:
+`riverside` | `edits`) and saying an engine's name in a request always wins.
+- **Engine switch, not a second skill set.** Every craft and director skill gains an `## Engine` section that
+  points at the matching paragraph of the new `shared/edits-engine.md`; every shared craft rule carries a one-line
+  engine note. The craft doctrine (hook, captions, zooms, music, graphics, gates) is unchanged and applies to both.
+- **New shared references:** `edits-engine.md` (the reel line and every craft on Edits), `edits-tool-map.md`
+  (the 274 editor tools by job), `edits-catalogs.md` (effects, filters, transitions, text animations, presets,
+  caption styles, speed curves, fonts, music and sound-effect ids, dumped live), `edits-quirks.md` (what bites,
+  measured), `edits-grade-strategy.md` (the full Adjust panel decided from frame measurements), and the vendored
+  274-tool argument reference (MIT, iamjeeth).
+- **New scripts** under `scripts/edits/`: `build_reel.py` (plan | build | resume: the whole reel line, check
+  frames, ONE export, file verification), `edits_drive.py` (one call at a time), `render_card.swift` (transparent
+  1080×1920 cards and emoji icons, zero dependencies), `frame_stats.swift` (luminance, contrast, cast, clipping
+  for the grade), `dump_catalogs.py`.
+- **Setup** asks one new question (which engine), walks the Edits install (app, automation server, bridge, token
+  typed by the agent in a terminal, never in chat), and saves an `edits` block. **Navigator** detects the engine,
+  runs the right preflight, finds a file under `~/Movies` or a Drive link, and resumes with `build_reel.py resume`.
+- **Music on Edits, measured:** only songs whose `license.isRoyaltyFree` is true render through automation; library
+  masters are hot (≈ −14.6 LUFS) so the bed sits at −26 dB with ducking; an audition recipe (mute by element id,
+  export music-only at 720p, measure) replaces guessing. **Colour on Edits:** the Adjust panel in the panel's order
+  from measured luminance, contrast, cast and clipping, with caps. **Graphics on Edits:** kit PNGs, native pill
+  cards, emoji and icon pop-ups in the upper corners, never on the face; stock via Pexels downloads.
+- **Proven live** on a 96-second talking head: four versions, the last at 94.5 s, 1080×1920, −22 LUFS, peak −1.9 dB,
+  six zooms with whooshes, boxed word-highlight captions, three cards, a ducked guitar bed.
+- **Limits stated, not hidden:** Edits is Mac + Claude Code only (no Cowork cloud, no claude.ai), never posts
+  (the agent shares from Edits or the Short-Form System's tool takes the file), no interview layouts, no podcast
+  export, no caption position or size control; long-form on Edits runs on the same tools but is not yet proven.
+- `config/editor-config.example.json` gains the `edits` block; the Descript engine stays retired.
+
 ## [0.138.0] — 2026-10-09
 
 ### The remaining 9 warnings: a SECOND, different limit — marketplace card descriptions cap at 500

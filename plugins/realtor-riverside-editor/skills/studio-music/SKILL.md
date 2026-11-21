@@ -1,11 +1,26 @@
 ---
 name: studio-music
-description: Music for the AI Editing Studio. Every video gets a bed under the voice from Riverside's free licensed library (business, lifestyle, educational, and more, at high or low intensity), mood-matched to the content and placed at the right level: -18 dB on a reel, a quieter -22 dB on a long-form, faded at both ends and placed again if the track is shorter than the video. Long-form also gets a short section stinger at each section change, cut from the same collection, so the video feels edited and not just trimmed. A swoosh on the zooms comes only from a sound the agent has uploaded; there is no sound-effect library on this engine. Never a copyrighted song. Trigger on: "add music", "add a music bed", "music's too loud", "music's too quiet", "different music", "make it feel more produced", "add some sound to the section changes". Part of the POLISH stage; usually reached through studio-navigator or called inside a full edit.
+description: >-
+  Music for the AI Editing Studio. Every video gets a bed under the voice from a free licensed
+  library (Riverside's, or royalty-free tracks on Instagram Edits) (business, lifestyle,
+  educational, and more, at high or low intensity), mood-matched to the content and placed at the
+  right level: a set level per engine, quieter on a long-form, faded at both ends and placed again
+  if the track is shorter than the video. Long-form also gets a short section stinger at each
+  section change, cut from the same collection, so the video feels edited and not just trimmed. A
+  swoosh on the zooms comes from an uploaded sound (Riverside) or the built-in sound effects
+  (Instagram Edits). Never a copyrighted song. Trigger on: "add music", "add a music bed",
+  "music's too loud", "music's too quiet", "different music", "add music in Edits", "make it feel
+  more produced", "add some sound to the section changes". Part of the POLISH stage; usually
+  reached through studio-navigator or called inside a full edit.
 ---
 
 # Music
 
 One job, done well. Run the craft contract (`${CLAUDE_PLUGIN_ROOT}/shared/craft-contract.md`), and do the work from this skill's one reference: **`${CLAUDE_PLUGIN_ROOT}/shared/music.md`**. Respect the ownership rules in `${CLAUDE_PLUGIN_ROOT}/shared/boundaries.md` and the house rules in `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
+
+## Engine
+
+Read `default_engine` in `~/realtor-brain/editor/config.json` (saying an engine's name in the request always wins). **`riverside`** (the default): do the work exactly as this skill's reference says. **`edits`** (Instagram Edits for Mac, driven from Claude Code on the agent's own Mac): the craft rules in this skill's reference still apply, but the moves are the ones in the Music paragraph (the −26 dB level, the royalty-free render check and the audition recipe) of `${CLAUDE_PLUGIN_ROOT}/shared/edits-engine.md`.
 
 ## The job
 

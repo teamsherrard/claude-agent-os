@@ -1,5 +1,7 @@
 # Final check — run before handing back any video
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Quality check.
+
 Before you tell the agent it's ready, run this self-check. This is a GATE, not a vibe-check: it runs on EVERY version, including every revision. Work the gates IN ORDER — Gate 1 (compliance) and Gate 2 (pass/fail) first; only once both are green do you move on to the polish self-check and the delivery message. If something fails, fix it. Don't deliver broken work, and don't over-report.
 
 **When it runs relative to the ONE render:** blockers 1–9 are measured from the timeline, the transcript, and the revision diff — run them BEFORE `exports_create_export`, so a miss costs a write, not a render. Blockers 10–16 are visual: run them on the export (rung 1) or the editor preview (rung 2) after the render. A second render happens only when a visual blocker fails.

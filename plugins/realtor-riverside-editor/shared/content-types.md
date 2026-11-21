@@ -1,5 +1,7 @@
 # Content types — the recipe per video type
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § The reel line on Edits.
+
 Match the edit to the kind of video. These are the common realtor types — pull the right structure.
 
 **Graphics note:** graphics are placed in Riverside and kept OFF THE FACE — a hook banner + a CTA banner (brand-kit overlay PNGs preferred; native boxed text otherwise — `${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`). **Short-form**: ≤2–3 cards; karaoke captions carry the keyword emphasis. **Long-form**: hook + CTA + an emphasis pop-up every ~2–3 min + a lower third (no karaoke). NO count-ups (not a tool anyway). Riverside does the cut, Magic Audio, B-roll, grade, punch-ins, captions/text, and the logo; it hands the section map to the YouTube System, which names the chapters.

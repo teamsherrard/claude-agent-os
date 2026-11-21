@@ -1,17 +1,17 @@
 ---
 name: studio-navigator
-description: >
-  The friendly front door for the AI Editing Studio (Riverside engine) — 28 skills across five
-  stages: Direct, Cut, Polish, Repurpose, Ship. Agents don't know how to "prompt" — they give
-  vague or contradictory requests. This skill translates: it turns any plain-English request into
-  one simple, confirmable plan, asks at most ONE easy question with a recommended answer, and
-  routes to the right Riverside skill. It handles tricky moments calmly — "just make it good",
-  asking for something Riverside can't do, a frustrated agent. It also PICKS UP A STOPPED EDIT
-  from the checkpoint log or Riverside's own revision history, resuming the exact pass that
-  stopped. Trigger on: any vague video request ("edit my video", "help with my video", "make this
-  better", "I have a video in Riverside", "make me a reel", "I don't know what I want"); ALSO any
-  resume request — "finish my video", "pick up where we left off", "continue my edit", "my edit
-  stopped", "resume my video". DEFAULT entry point for the AI Editing Studio.
+description: >-
+  The friendly front door for the AI Editing Studio (Riverside or Instagram Edits engine): 28
+  skills across Direct, Cut, Polish, Repurpose, Ship. Agents give vague or contradictory requests;
+  this skill translates. It reads which engine they chose, turns any plain-English request into one
+  simple, confirmable plan, asks at most ONE easy question with a recommended answer, and routes to
+  the right skill. It handles tricky moments calmly: "just make it good", asking for something the
+  engine can't do, a frustrated agent. It also PICKS UP A STOPPED EDIT from the checkpoint log,
+  Riverside's revision history, or the open Edits project. Trigger on: any vague video request
+  ("edit my video", "help with my video", "make this better", "I have a video in Riverside", "edit
+  this in Edits", "make me a reel", "I don't know what I want"); ALSO any resume request: "finish
+  my video", "pick up where we left off", "continue my edit", "my edit stopped", "resume my video".
+  DEFAULT entry point for the AI Editing Studio.
 ---
 
 # Studio Navigator — the front door
@@ -20,7 +20,7 @@ Your job is to **do the translating** so the agent never has to learn how to tal
 
 ## The three things you need (get them quietly)
 
-1. **Which video?** — a recording in their Riverside (`platform_list_recordings`; match by title or "the one from this morning"). **Its `status` must not be `uploading` / processing.** If it is: *"Still uploading — give it a few minutes and say 'go'."* If it isn't in Riverside at all: *"Upload it to your Riverside project first (drag it onto the project page), then tell me."* There is no import-by-link on this engine — never promise one.
+1. **Which video?** — **Riverside:** a recording in their Riverside (`platform_list_recordings`; match by title or "the one from this morning"). **Its `status` must not be `uploading` / processing.** If it is: *"Still uploading — give it a few minutes and say 'go'."* If it isn't in Riverside at all: *"Upload it to your Riverside project first (drag it onto the project page), then tell me."* There is no import-by-link on Riverside — never promise one. **Edits:** a file under `~/Movies` (their `edits.footage_dir`; newest file wins when they say "my video"), a file they drop anywhere (copy it into the footage folder first; Edits refuses Downloads and Desktop), or an "anyone with the link" Drive link (fetch it into the footage folder with `curl -L "https://drive.google.com/uc?export=download&id=<id>&confirm=t"`). A Drive FOLDER with several clips is a batch (`studio-batch`).
 2. **Long-form or short-form?** (a YouTube-style video, or a vertical reel/clips)
 3. **What outcome?** (clean it up, make it punchy, make shorts from it, etc.)
 
@@ -34,13 +34,22 @@ Pull the Brain first (the persistence rule in `house-rules.md`; in Cowork the co
 
 ## Which engine? (read this before anything else)
 
-The Studio is the video editor. If an older config still says `default_engine: "descript"`, ignore it: the Descript editor is retired, and the Studio owns every edit. Set the key to `"riverside"` when you next save the config.
+The Studio is the video editor, on one of two engines. Read `default_engine` in `~/realtor-brain/editor/config.json`:
+- **`riverside`** — edits in the agent's Riverside account, from any Claude surface, and publishes on a yes.
+- **`edits`** — Instagram's free Edits app on the agent's Mac, driven from Claude Code on that Mac (never from Cowork's cloud or claude.ai). Every craft runs by `${CLAUDE_PLUGIN_ROOT}/shared/edits-engine.md`; a reel is `scripts/edits/build_reel.py`. It never posts.
+- Saying an engine's name in the request always wins ("edit this in Edits", "do it in Riverside"). No config = `studio-setup`. An older `"descript"` = retired: treat as unset and let setup ask.
+- **An Edits agent not on their Mac right now** (Cowork, iPad, phone): say so warmly and offer Riverside if it is set up, else *"Open Claude Code on your Mac and say 'edit my video'."* Never try to reach Edits from elsewhere.
 
 ## Connection-health preflight (one cheap check before you route)
 
-Before handing off, do **one** cheap `platform_list_studios`.
-- **Auth / not-connected / tool-not-found error** → don't show the raw error. Say: *"Looks like the editor lost its connection to Riverside — give me 60 seconds to reconnect,"* and route to `studio-setup` (Step 1).
+**Riverside:** do **one** cheap `platform_list_studios`.
+- **Auth / not-connected / tool-not-found error** → don't show the raw error. Say: *"Looks like the editor lost its connection to Riverside — give me 60 seconds to reconnect,"* and route to `studio-setup` (Step 1A).
 - **A studio comes back** = connected. Carry on. (A brand-new account has one studio and maybe only the "Welcome To Riverside!" sample recording — that's fine.)
+
+**Edits:** `~/Library/Python/3.9/bin/insta-edits doctor` (or `appState` through the `edits` tools).
+- **"Edits app installed ✗" / "Automation server ✗"** → *"Open Edits and switch on Settings › Automation › Enable Automation Server, then say 'go'."* Not installed at all → `studio-setup` (Step 1B).
+- **"Sign-in ✗ token rejected"** → the token was regenerated or pasted twice: *"Copy the token in Edits' Automation settings again and paste it once into the terminal I'll open."* (`set-token`).
+- **All ✓** = connected. Carry on. The project the script opens is the one you edit; leave Edits open.
 
 ## The one-question rule
 
@@ -88,7 +97,7 @@ If they don't answer or seem unsure, **pick the recommended default and proceed*
 | "make a trailer", "teaser for this", "something for my story the day before", "make this an ad" | `studio-trailer` |
 | "is this ready to post?", "check my video" | `studio-check` |
 | "I don't like it", "something feels off", "undo that" | `studio-review` |
-| "post it", "schedule it for Thursday" | `studio-publish` |
+| "post it", "schedule it for Thursday" | `studio-publish` (on Edits: the file + the share sheet or the Short-Form System's tool; the Studio never posts there) |
 | "set this up", "it's not connected", first run | `studio-setup` |
 | "finish my video", "pick up where we left off", "continue my edit" | the resume procedure below, then back into the original skill |
 
@@ -98,6 +107,7 @@ If they don't answer or seem unsure, **pick the recommended default and proceed*
 
 An edit can stop partway — the session closed, the agent opened the editor at the same time (a conflict), they left it till tomorrow. **We tell the agent to say "finish my video", so this must always land.** Never restart from scratch, never redo a pass.
 
+0. **Edits engine:** the project is still on their Mac. `appState`; if it says `home`, `projects` and `openProject` the newest matching name. Read the checkpoint log `~/realtor-brain/editor/jobs/ed-<projectId>.md`; say what landed in one line; then `scripts/edits/build_reel.py resume` (music → graphics → check → export) with the same hook, CTA and brand flags, or hand to the craft that stopped. An import that answers "no commit" = `closeProject` → `openProject`, then resume. Skip the Riverside steps below.
 1. **Find the video.** If they named it, use it. Otherwise `platform_list_edits` (filter `deleted`) and offer the most recently updated one in a single line: *"Picking up 'Phoenix Relocation — edit' — right one?"*
 2. **Pull the Brain, then read the checkpoint log** at `~/realtor-brain/editor/jobs/rs-<editId>.md` (the persistence rule and the log convention in `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`).
    - **Log exists** → ONE plain line about what's done — *"Audio and the first cutaways are done, so I'll finish the b-roll and the cards"* — then hand back to the matching edit skill (`studio-longform` / `studio-reel` / `studio-listing`) in **resume mode: run ONLY the passes not in the log.**
@@ -123,11 +133,11 @@ Announce the plan in one sentence, then go.
 
 - **"Just make it good" / no detail.** Propose a sensible default in one line and ask for a yes: "I'll trim the dead air, clean the audio, add captions and a bit of B-roll, and send it back for your review — sound good?"
 - **Contradictory requests.** Reflect it back plainly with a recommendation: "Those two pull against each other — for a punchy reel I'd keep the top 3. Tight or full?"
-- **Asks for something Riverside can't do** (transitions, SFX, exact-frame VFX, fake a real place, import from a link). Never a flat "can't." Use the **Out-of-scope asks** table in `${CLAUDE_PLUGIN_ROOT}/shared/dos-and-donts.md` — every row has the warm redirect.
+- **Asks for something the engine can't do.** Riverside: transitions, SFX, exact-frame VFX, fake a real place, import from a link. Edits: posting or scheduling, interviews with speaker layouts, podcast export, caption placement, anything from Cowork or claude.ai. Never a flat "can't." Use the **Out-of-scope asks** table in `${CLAUDE_PLUGIN_ROOT}/shared/dos-and-donts.md` — every row has the warm redirect — and offer the other engine when it has the thing.
 - **Vague revision** ("I don't like it"). Empathy, then 2–3 concrete guesses, then the **Repair loop** in `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md` — diagnose (diff + a frame) before any re-export, fork defect vs taste, cap at 2 rounds.
 - **Request pile-up.** Group into a short numbered plan, confirm once, do it in one batch.
 - **Overwhelmed or frustrated.** Slow down. One step. "No problem — tell me which video and I'll handle the rest."
-- **"Is my original safe?"** — "Yes — nothing I do touches your raw recording; I work on a copy inside Riverside, and any cut can be rolled back."
+- **"Is my original safe?"** — "Yes — nothing I do touches your raw recording; I work on a copy inside the editor (a Riverside edit, or an Edits project that only references your file), and any cut can be rolled back."
 
 ## Never overwhelm
 

@@ -1,8 +1,12 @@
 # Frame-QA — how this editor actually looks at the picture
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Quality check.
+
 The connector never returns a frame. That does NOT mean the editor is blind — it means you climb a ladder, and you cite which rung you used. **The frame-read rule from `final-check.md` still stands: a visual PASS with no cited, actually-viewed frame is not a PASS — it is `UNVERIFIED`, and ships only with the matching sentence in the delivery.**
 
 ## The ladder (use the highest rung you can reach)
+
+Rung 0 on Edits: `captureFrame` returns real rendered frames and `frameSheet(path)` reads the exported file: these ARE the render.
 
 ### Rung 1 — the exported file, read locally (best)
 `exports_get_export` gives an S3 key, not a link, so the file reaches you when the agent downloads it from Riverside → it lands in their **Downloads** folder. On a machine where that folder is readable and a shell exists (the Code tab), run:

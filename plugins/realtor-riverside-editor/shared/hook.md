@@ -1,5 +1,7 @@
 # The hook — open on the strongest line
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Hook.
+
 Viewers decide in the first three seconds. This craft finds the best opening and makes the video start there.
 
 ## Find it (free)

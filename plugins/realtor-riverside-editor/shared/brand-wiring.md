@@ -1,5 +1,7 @@
 # Brand wiring
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Setup.
+
 Brand is **per agent, never hardcoded.** The structure is universal; the colours/fonts always come from the current agent's brand. **One brand block, in the Brain's editor config** (`~/realtor-brain/editor/config.json`), shared by every editor plugin that reads it.
 
 ## Resolution order

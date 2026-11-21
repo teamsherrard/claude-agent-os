@@ -1,5 +1,7 @@
 # Short-form repurpose — one long video into distinct reels
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Trailer, repurpose, batch.
+
 The Studio cuts the actual clips. It does not write the posts: captions, hashtags, and the calendar belong to the Short-Form System, and written repurposing (scripts, blog, newsletter) belongs to the YouTube System's Repurposing Pack (`boundaries.md`). If that pack exists, read its short-form scripts and hooks FIRST — they tell you which moments the strategy wants.
 
 ## The seven steps

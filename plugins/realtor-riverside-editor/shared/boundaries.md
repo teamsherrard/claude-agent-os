@@ -1,5 +1,7 @@
 # Boundaries — one owner per output (READ BEFORE WRITING ANY WORDS)
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Session rules.
+
 The Studio is one employee on a team of plugins. The product only works if every output has exactly ONE owner. If two plugins each write a title, the agent gets two titles and trusts neither. **The Studio edits video. It does not write marketing.**
 
 ## Who owns what

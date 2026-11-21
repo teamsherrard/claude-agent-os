@@ -1,11 +1,24 @@
 ---
 name: studio-captions
-description: Captions for the AI Editing Studio. On reels, turns on word-by-word captions in the agent's brand look: big and phone-legible, white with an outline, the word being spoken lighting up in the brand accent, pinned below the face and inside the platform safe zones. On long-form YouTube it switches captions off, because YouTube supplies its own and emphasis pop-ups carry the on-screen words instead. Checks the spelling of the agent's name, brokerage, and city in the transcript first. Trigger on: "just add captions", "add subtitles", "make the captions bigger", "change the caption color", "move the captions", "turn the captions off", "the captions cover my face". Part of the POLISH stage; usually reached through studio-navigator or called inside a full edit.
+description: >-
+  Captions for the AI Editing Studio. On reels, turns on word-by-word captions in the agent's
+  brand look: big and phone-legible, white with an outline, the word being spoken lighting up in
+  the brand accent, pinned below the face and inside the platform safe zones. On long-form YouTube
+  it switches captions off, because YouTube supplies its own and emphasis pop-ups carry the
+  on-screen words instead. Checks the spelling of the agent's name, brokerage, and city in the
+  transcript first. Trigger on: "just add captions", "add subtitles", "make the captions bigger",
+  "change the caption color", "move the captions", "turn the captions off", "the captions cover my
+  face", "add captions in Edits". Part of the POLISH stage; usually reached through
+  studio-navigator or called inside a full edit.
 ---
 
 # Captions
 
 One job, done well. Run the craft contract (`${CLAUDE_PLUGIN_ROOT}/shared/craft-contract.md`), and do the work from this skill's one reference: **`${CLAUDE_PLUGIN_ROOT}/shared/caption-style.md`**. Respect the ownership rules in `${CLAUDE_PLUGIN_ROOT}/shared/boundaries.md` and the house rules in `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
+
+## Engine
+
+Read `default_engine` in `~/realtor-brain/editor/config.json` (saying an engine's name in the request always wins). **`riverside`** (the default): do the work exactly as this skill's reference says. **`edits`** (Instagram Edits for Mac, driven from Claude Code on the agent's own Mac): the craft rules in this skill's reference still apply, but the moves are the ones in the Captions paragraph of `${CLAUDE_PLUGIN_ROOT}/shared/edits-engine.md`.
 
 ## The job
 

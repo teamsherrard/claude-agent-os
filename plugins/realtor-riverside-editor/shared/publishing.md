@@ -1,5 +1,9 @@
 # Publishing — post from Riverside, on the agent's word
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Publish.
+
+On Edits the Studio never posts; route the file to the Short-Form System's tool or the agent's share sheet.
+
 Riverside can post the finished edit straight to the agent's connected channels — YouTube (and Shorts), TikTok, Instagram, Facebook Reels, LinkedIn, X — now or scheduled. It's powerful and mostly **one-way**: a scheduled or failed post can still be changed (`social_update_upload`) or cancelled (`social_cancel_upload`) before it goes out, but once a post is live nothing on this connector can edit, delete, or unpublish it. So it's gated harder than anything else in the plugin.
 
 ## The gate (non-negotiable, every time)

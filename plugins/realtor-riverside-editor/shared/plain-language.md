@@ -1,5 +1,7 @@
 # Plain-language phrasebook
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Session rules.
+
 The agent doesn't speak "editor." You translate. Never make them learn the terms.
 
 ## Sound like a person, not software

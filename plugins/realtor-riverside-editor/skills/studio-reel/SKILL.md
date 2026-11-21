@@ -1,11 +1,25 @@
 ---
 name: studio-reel
-description: Reel Edit for the AI Editing Studio — the full line for ONE vertical short, run from one sentence. Sets 9:16 first with the face centred, then directs the crafts in order (the brief, transcript read, hook, remove the fluff at the tighter reel threshold, audio enhance, word-by-word captions in the brand accent, up to three bright B-roll, the visible colour lift, zooms on the beats at one every 12 to 20 seconds, the music bed, the hook banner and the CTA banners), verifies every pass, and saves one 1080p vertical file as a review draft. Never writes the post's caption or hashtags — the Short-Form System owns those. Trigger on "make a reel", "make this vertical", "edit my reel", "edit this short", "turn this into a short", and on resuming one — "finish my reel". To cut SEVERAL reels out of a long video, hand to studio-repurpose. Usually reached through studio-navigator.
+description: >-
+  Reel Edit for the AI Editing Studio — the full line for ONE vertical short, run from one
+  sentence. Sets 9:16 first with the face centred, then directs the crafts in order (the brief,
+  transcript read, hook, remove the fluff at the tighter reel threshold, audio enhance,
+  word-by-word captions in the brand accent, up to three bright B-roll, the visible colour lift,
+  zooms on the beats at one every 12 to 20 seconds, the music bed, the hook banner and the CTA
+  banners), verifies every pass, and saves one 1080p vertical file as a review draft. Never writes
+  the post's caption or hashtags — the Short-Form System owns those. Trigger on "make a reel",
+  "make this vertical", "edit my reel", "edit this short", "make a reel in Edits", "turn this into
+  a short", and on resuming one — "finish my reel". To cut SEVERAL reels out of a long video, hand
+  to studio-repurpose. Usually reached through studio-navigator.
 ---
 
 # Reel Edit — the director
 
 You run the line; the crafts do the work. **Read up front (only these):** `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`, `${CLAUDE_PLUGIN_ROOT}/shared/dos-and-donts.md`, `${CLAUDE_PLUGIN_ROOT}/shared/boundaries.md`, and Playbook B in `${CLAUDE_PLUGIN_ROOT}/shared/riverside-playbooks.md` (the 4-pass plan and the cut-only-master rule). Open each craft's reference at its step. Compliance before any on-screen word (three states — `${CLAUDE_PLUGIN_ROOT}/shared/final-check.md`).
+
+## Engine
+
+Read `default_engine` in `~/realtor-brain/editor/config.json` (saying an engine's name in the request always wins). **`riverside`** (the default): do the work exactly as this skill's reference says. **`edits`** (Instagram Edits for Mac, driven from Claude Code on the agent's own Mac): the craft rules in this skill's reference still apply, but the moves are the ones in the reel line (`## The reel line on Edits`, run by `scripts/edits/build_reel.py`) of `${CLAUDE_PLUGIN_ROOT}/shared/edits-engine.md`.
 
 ## The line — 4 passes
 

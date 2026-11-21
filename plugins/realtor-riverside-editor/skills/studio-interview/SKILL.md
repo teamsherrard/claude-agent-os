@@ -1,11 +1,24 @@
 ---
 name: studio-interview
-description: Interview Edit for the AI Editing Studio: the multi-person recipe, and the format Riverside is best at because every person is recorded on their own track. Applies speaker-aware layouts that follow whoever is talking, mutes each person's mic while they listen, cleans every speaker's audio at the right strength, matches the two looks, adds a name strip for each person, and hands the topic-by-topic section map to the YouTube System. Protects question-and-answer pairs and real laughter. Trigger on: "edit my interview", "edit my podcast episode", "I had a guest on", "two-person video", "fix the layout", "switch between the cameras", "it keeps showing the wrong person". Part of the CUT stage; usually reached through studio-navigator or called inside a full edit.
+description: >-
+  Interview Edit for the AI Editing Studio: the multi-person recipe, and the format the Riverside
+  engine is best at because every person is recorded on their own track. Applies speaker-aware
+  layouts that follow whoever is talking, mutes each person's mic while they listen, cleans every
+  speaker's audio at the right strength, matches the two looks, adds a name strip for each person,
+  and hands the topic-by-topic section map to the YouTube System. Protects question-and-answer
+  pairs and real laughter. Trigger on: "edit my interview", "edit my podcast episode", "I had a
+  guest on", "two-person video", "fix the layout", "switch between the cameras", "it keeps showing
+  the wrong person". Part of the CUT stage; usually reached through studio-navigator or called
+  inside a full edit.
 ---
 
 # Interview Edit
 
 One job, done well. Run the craft contract (`${CLAUDE_PLUGIN_ROOT}/shared/craft-contract.md`), and do the work from this skill's one reference: **`${CLAUDE_PLUGIN_ROOT}/shared/interview.md`**. Respect the ownership rules in `${CLAUDE_PLUGIN_ROOT}/shared/boundaries.md` and the house rules in `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
+
+## Engine
+
+Read `default_engine` in `~/realtor-brain/editor/config.json` (saying an engine's name in the request always wins). **`riverside`** (the default): do the work exactly as this skill's reference says. **`edits`** (Instagram Edits for Mac, driven from Claude Code on the agent's own Mac): the craft rules in this skill's reference still apply, but the moves are the ones in the Interview paragraph of `${CLAUDE_PLUGIN_ROOT}/shared/edits-engine.md`. Interviews are not available on Edits (no speaker layouts through its server): say so warmly and offer the Riverside engine.
 
 ## The job
 

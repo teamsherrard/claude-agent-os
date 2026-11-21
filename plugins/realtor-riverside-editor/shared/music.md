@@ -1,5 +1,9 @@
 # Music (bed + level)
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Music.
+
+Edits level: −26 dB (its library masters are hot), ducking on, only songs whose `license.isRoyaltyFree` is true render.
+
 A reel needs a music bed, always under the voice.
 
 **Long-form gets a bed too (changed 2026-09-23; a 10-minute video with no music anywhere read as unfinished).** Long-form: an `underscore`, **Low** intensity, at **-22 dB** (quieter than a reel), placed after the cut so it spans the final length, faded at both ends. Leave it off only when the agent says so, or on a serious or legal topic where music would feel wrong; say which.

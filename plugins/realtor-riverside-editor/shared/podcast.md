@@ -1,5 +1,7 @@
 # Podcast — the same recording, audio-first
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Podcast.
+
 Many agents' long-form interviews are a podcast already; they just never published the audio.
 
 ## The recipe

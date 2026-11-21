@@ -1,11 +1,26 @@
 ---
 name: studio-trailer
-description: Trailer for the AI Editing Studio. Cuts a 15 to 25 second teaser from a long-form video's cut-only master for Stories, Reels, the YouTube community tab, and the feed the day before the video goes live: the hook line, the stake, and a tease that opens a question without answering it, with brand captions, an energetic music bed, the hook card, and a closing card that says when and where the full video lands. Built vertical first, with a 16:9 copy for the community post. On request the same build becomes a 15-second ad that ends on the agent's call to action with the compliance line on screen. Makes the video only; the Story caption and the community post belong to the Short-Form and YouTube Systems. Trigger on: "make a trailer", "teaser for this", "something for my story the day before", "promo clip for the video", "tease the video", "make this an ad". Part of the REPURPOSE stage; usually reached through studio-navigator or offered at the end of a long-form edit.
+description: >-
+  Trailer for the AI Editing Studio. Cuts a 15 to 25 second teaser from a long-form video's
+  cut-only master for Stories, Reels, the YouTube community tab, and the feed the day before the
+  video goes live: the hook line, the stake, and a tease that opens a question without answering
+  it, with brand captions, an energetic music bed, the hook card, and a closing card that says
+  when and where the full video lands. Built vertical first, with a 16:9 copy for the community
+  post. On request the same build becomes a 15-second ad that ends on the agent's call to action
+  with the compliance line on screen. Makes the video only; the Story caption and the community
+  post belong to the Short-Form and YouTube Systems. Trigger on: "make a trailer", "teaser for
+  this", "something for my story the day before", "promo clip for the video", "tease the video",
+  "make this an ad". Part of the REPURPOSE stage; usually reached through studio-navigator or
+  offered at the end of a long-form edit.
 ---
 
 # Trailer
 
 One job, done well. Run the craft contract (`${CLAUDE_PLUGIN_ROOT}/shared/craft-contract.md`), and do the work from this skill's one reference: **`${CLAUDE_PLUGIN_ROOT}/shared/trailer.md`**. Respect the ownership rules in `${CLAUDE_PLUGIN_ROOT}/shared/boundaries.md` and the house rules in `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
+
+## Engine
+
+Read `default_engine` in `~/realtor-brain/editor/config.json` (saying an engine's name in the request always wins). **`riverside`** (the default): do the work exactly as this skill's reference says. **`edits`** (Instagram Edits for Mac, driven from Claude Code on the agent's own Mac): the craft rules in this skill's reference still apply, but the moves are the ones in the Trailer, repurpose, batch paragraph of `${CLAUDE_PLUGIN_ROOT}/shared/edits-engine.md`.
 
 ## The job
 

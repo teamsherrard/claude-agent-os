@@ -1,11 +1,26 @@
 ---
 name: studio-graphics
-description: Brand Graphics for the AI Editing Studio. Places the agent's designed Video Brand Kit on the video: the hook banner, the call-to-action banners that pop up while the agent says each ask (subscribe, comment below, free guide, call, book a call, DM, link, follow), the name strip, emphasis pop-ups on key phrases, icons, and the logo, each animated in and out and positioned by format so nothing ever covers a face (top edge on vertical reels, lower third on YouTube). Designs nothing itself: the assets come from Claude Design, and when no kit is registered it builds clean plain cards and says so. Every word on screen is compliance-checked first. Trigger on: "add my hook card", "just add my CTA", "add a lower third", "add my name on screen", "add a pop-up", "put my logo on it", "use my brand kit", "my card or name strip is covering my face". Part of the POLISH stage; usually reached through studio-navigator or called inside a full edit.
+description: >-
+  Brand Graphics for the AI Editing Studio. Places the agent's designed Video Brand Kit on the
+  video: the hook banner, the call-to-action banners that pop up while the agent says each ask
+  (subscribe, comment below, free guide, call, book a call, DM, link, follow), the name strip,
+  emphasis pop-ups on key phrases, icons, and the logo, each animated in and out and positioned by
+  format so nothing ever covers a face (top edge on vertical reels, lower third on YouTube).
+  Designs nothing itself: the assets come from Claude Design, and when no kit is registered it
+  builds clean plain cards and says so. Every word on screen is compliance-checked first. Trigger
+  on: "add my hook card", "just add my CTA", "add a lower third", "add my name on screen", "add a
+  pop-up", "put my logo on it", "use my brand kit", "my card or name strip is covering my face",
+  "add my graphics in Edits". Part of the POLISH stage; usually reached through studio-navigator
+  or called inside a full edit.
 ---
 
 # Brand Graphics
 
 One job, done well. Run the craft contract (`${CLAUDE_PLUGIN_ROOT}/shared/craft-contract.md`), and do the work from this skill's one reference: **`${CLAUDE_PLUGIN_ROOT}/shared/graphics-style.md`**. Respect the ownership rules in `${CLAUDE_PLUGIN_ROOT}/shared/boundaries.md` and the house rules in `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
+
+## Engine
+
+Read `default_engine` in `~/realtor-brain/editor/config.json` (saying an engine's name in the request always wins). **`riverside`** (the default): do the work exactly as this skill's reference says. **`edits`** (Instagram Edits for Mac, driven from Claude Code on the agent's own Mac): the craft rules in this skill's reference still apply, but the moves are the ones in the Graphics paragraph (icons and emoji included) of `${CLAUDE_PLUGIN_ROOT}/shared/edits-engine.md`.
 
 ## The job
 

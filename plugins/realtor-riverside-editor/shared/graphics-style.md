@@ -1,5 +1,7 @@
 # Graphics in Riverside — minimal, clean, off the face
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Graphics.
+
 Graphics are placed in Riverside and kept **MINIMAL**. On a **short-form reel** the karaoke captions (brand-accent active word) already carry the keyword emphasis. On **long-form** there's no karaoke — the emphasis lives in **pop-up cards every ~2–3 min** + a lower third. (`${CLAUDE_PLUGIN_ROOT}/shared/cost-discipline.md` for the caps.)
 
 ## Two ways to make a card — and which one wins

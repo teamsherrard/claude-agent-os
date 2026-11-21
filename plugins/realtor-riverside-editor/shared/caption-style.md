@@ -1,5 +1,9 @@
 # Caption style (quality bar)
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Captions.
+
+Edits has no caption position or size tool; the style is one of the catalog names (Word Highlight Box by default) and the accent is set with `setCaptionHighlightColor`.
+
 ## When captions are on
 
 - **Short-form: always on.** Positioned LOW — **below the speaker's face, above the bottom ~15%** platform UI (`${CLAUDE_PLUGIN_ROOT}/shared/layouts.md` is canonical for the numbers). One line at a time (`contentPerSegment: "lines_1"` — short segments can't grow up into the face), karaoke (active word in the brand accent). **NEVER centred over the face.**

@@ -1,11 +1,26 @@
 ---
 name: studio-energy
-description: Energy for the AI Editing Studio. A flat video is one where the picture never reacts to what is being said, so this skill edits to the emotion: it reads Riverside's emotion data and the transcript for the beats (a laugh, a number, a reveal, a serious turn, the CTA), puts a hard-cut zoom on each at the format's rate (about one every minute on long-form, one every 15 seconds on a reel), sizes each zoom to the strength of the beat, steps back out for reveals, and covers every jump cut with a size change so the edit reads as deliberate. Animated entrances on cards and cutaways, and a swoosh on each zoom when the agent has a licensed one in their library. Never a tight push on anyone's face. Trigger on: "make it punchier", "add some zooms", "it feels flat", "it looks boring", "add some energy", "make it more dynamic", "edit to the emotion", "zoom in when I say something important". Part of the POLISH stage; usually reached through studio-navigator or called inside a full edit.
+description: >-
+   Energy for the AI Editing Studio. A flat video is one where the picture never reacts to what is
+  being said, so this skill edits to the emotion: it reads the emotion data (Riverside) and the
+  transcript for the beats (a laugh, a number, a reveal, a serious turn, the CTA), puts a hard-cut
+  zoom on each at the format's rate (about one every minute on long-form, one every 15 seconds on
+  a reel), sizes each zoom to the strength of the beat, steps back out for reveals, and covers
+  every jump cut with a size change. Animated entrances on cards, and a swoosh on each zoom
+  (Riverside: a licensed sound; Edits: built-in effects). Never a tight push on anyone's face.
+  Trigger on: "make it punchier", "add some zooms", "it feels flat", "it looks boring", "add some
+  energy", "make it more dynamic", "edit to the emotion", "zoom in when I say something
+  important". Part of the POLISH stage; usually reached through studio-navigator or called inside
+  a full edit.
 ---
 
 # Energy
 
 One job, done well. Run the craft contract (`${CLAUDE_PLUGIN_ROOT}/shared/craft-contract.md`), and do the work from this skill's one reference: **`${CLAUDE_PLUGIN_ROOT}/shared/effects-menu.md`** (the section "Emotion-driven energy"). Respect the ownership rules in `${CLAUDE_PLUGIN_ROOT}/shared/boundaries.md` and the house rules in `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
+
+## Engine
+
+Read `default_engine` in `~/realtor-brain/editor/config.json` (saying an engine's name in the request always wins). **`riverside`** (the default): do the work exactly as this skill's reference says. **`edits`** (Instagram Edits for Mac, driven from Claude Code on the agent's own Mac): the craft rules in this skill's reference still apply, but the moves are the ones in the Energy paragraph of `${CLAUDE_PLUGIN_ROOT}/shared/edits-engine.md`. On Edits a whoosh comes from the built-in sound-effect library, and transitions exist: a 0.2 s dissolve at most, only where two takes jar.
 
 ## The job
 

@@ -1,11 +1,26 @@
 ---
 name: studio-longform
-description: Long-Form Edit for the AI Editing Studio — the full line for a 16:9 YouTube video, run from one sentence. Directs the five stages in order by opening each craft's reference (creative direction, transcript read, remove the fluff, hook, the cut-only master, section map, audio enhance, colour, captions off, B-roll, energy, music, brand graphics, quality check), verifies every pass against the timeline, saves one 1080p file, and hands back a review draft plus the section map the YouTube System needs to name chapters. Never writes titles, descriptions, chapter names, or tags — the YouTube System owns those. Trigger on "edit my YouTube video", "edit my long video", "edit my long-form", "clean up my market update", "full edit on this". Resuming a stopped edit ("finish my video") is entered from studio-navigator, which finds the log and hands back here in resume mode. For a guest or two-person recording, hand to studio-interview. Usually reached through studio-navigator.
+description: >-
+  Long-Form Edit for the AI Editing Studio — the full line for a 16:9 YouTube video, run from one
+  sentence. Directs the five stages in order by opening each craft's reference (creative
+  direction, transcript read, remove the fluff, hook, the cut-only master, section map, audio
+  enhance, colour, captions off, B-roll, energy, music, brand graphics, quality check), verifies
+  every pass against the timeline, saves one 1080p file, and hands back a review draft plus the
+  section map the YouTube System needs to name chapters. Never writes titles, descriptions,
+  chapter names, or tags — the YouTube System owns those. Trigger on "edit my YouTube video",
+  "edit my long video", "edit my long-form", "clean up my market update", "full edit on this".
+  Resuming a stopped edit ("finish my video") is entered from studio-navigator, which finds the
+  log and hands back here in resume mode. For a guest or two-person recording, hand to
+  studio-interview. Usually reached through studio-navigator.
 ---
 
 # Long-Form Edit — the director
 
 You run the line; the crafts do the work. **Read up front (only these):** `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`, `${CLAUDE_PLUGIN_ROOT}/shared/dos-and-donts.md`, `${CLAUDE_PLUGIN_ROOT}/shared/boundaries.md`, and the pass plan in `${CLAUDE_PLUGIN_ROOT}/shared/riverside-playbooks.md` (Playbook A — tool shapes, time axes, the ≤6-pass plan). **Open each craft's reference at the step that uses it, not before.** Compliance is read before any on-screen word (the three-state rule in `${CLAUDE_PLUGIN_ROOT}/shared/final-check.md`: missing or an unfilled placeholder → no claim cards, never a stamped placeholder, deliver safely, nudge once).
+
+## Engine
+
+Read `default_engine` in `~/realtor-brain/editor/config.json` (saying an engine's name in the request always wins). **`riverside`** (the default): do the work exactly as this skill's reference says. **`edits`** (Instagram Edits for Mac, driven from Claude Code on the agent's own Mac): the craft rules in this skill's reference still apply, but the moves are the ones in the same tools at 16:9 (`setCanvas 16:9`) of `${CLAUDE_PLUGIN_ROOT}/shared/edits-engine.md`. Long-form on Edits is not yet proven end to end: say so in one line and get the yes before the first cut.
 
 ## The line (each step = one craft reference; verify with a revision diff, log, then move on)
 

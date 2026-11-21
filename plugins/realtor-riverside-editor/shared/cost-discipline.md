@@ -1,5 +1,7 @@
 # The 80/20 rule — re-based for Riverside (READ FIRST)
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Session rules.
+
 **Riverside has no per-edit credit meter** — the plan is metered by recording/upload hours and export limits, not by what Claude does to the timeline. So what are we protecting?
 
 1. **The agent's time and attention.** Dozens of tool calls happen behind the scenes; every extra pass is another thing that can go wrong and another review round for them.

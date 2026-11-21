@@ -1,5 +1,7 @@
 # Riverside playbooks (the tested recipes)
 
+> **Engines.** This is the Riverside engine pack. The Instagram Edits engine pack is `edits-engine.md` (playbooks) + `edits-tool-map.md` (tools) + `edits-catalogs.md` + `edits-quirks.md`.
+
 Claude edits directly; Riverside renders; the agent approves. These use the Riverside connector's **real tools** — names as the connector exposes them (the `editing_` / `platform_` / `exports_` / `social_` / `media_` prefixes are dropped here for readability). The job-by-job index is `${CLAUDE_PLUGIN_ROOT}/shared/tool-map.md`.
 
 ## The tools you actually call

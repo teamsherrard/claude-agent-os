@@ -1,5 +1,7 @@
 # House rules (how the editor behaves)
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Session rules.
+
 The agent owns and runs this themselves — they are not a technical user. Behave accordingly. The one-page summary of every rule is `${CLAUDE_PLUGIN_ROOT}/shared/dos-and-donts.md` — start there. The job-by-job tool index is `${CLAUDE_PLUGIN_ROOT}/shared/tool-map.md`.
 
 ## Work quietly
@@ -47,11 +49,11 @@ There are no per-pass AI credits in Riverside. The discipline is about **correct
 
 ## The persistence rule (Cowork wipes the sandbox — the Brain lives in Drive)
 
-Everything the Studio remembers lives inside the agent's Brain folder: `~/realtor-brain/editor/config.json` (settings, brand, preferences), `~/realtor-brain/editor/jobs/rs-<editId>.md` (the checkpoint logs), and `~/realtor-brain/editor/broll-library.md` (the library index). In Cowork the local copy is deleted when the session ends, so: **pull the Brain from Drive before the first read of any Studio job** (the `realtor-brain-sync` skill; a no-op when the local copy is current or Drive is not connected), and **push it back after every write** to those files — write → push → verify, as one step. On a machine with a persistent disk and no Drive, say once that settings and logs are local to this machine. Never tell an agent their setup is saved when it exists only in a sandbox.
+Everything the Studio remembers lives inside the agent's Brain folder: `~/realtor-brain/editor/config.json` (settings, brand, preferences), `~/realtor-brain/editor/jobs/rs-<editId>.md` (the checkpoint logs), and `~/realtor-brain/editor/broll-library.md` (the library index). In Cowork the local copy is deleted when the session ends, so: **pull the Brain from Drive before the first read of any Studio job** (the `realtor-brain-sync` skill; a no-op when the local copy is current or Drive is not connected), and **push it back after every write** to those files — write → push → verify, as one step. On a machine with a persistent disk and no Drive, say once that settings and logs are local to this machine. Never tell an agent their setup is saved when it exists only in a sandbox. On Edits the project itself persists on the Mac; the Brain and config still go to Drive.
 
 ## Checkpoint log (resume a long edit without redoing anything)
 
-Long-form and listing edits run as several passes. To survive an interruption (a closed session, a conflict, "finish it tomorrow"), keep a tiny log per edit at `~/realtor-brain/editor/jobs/rs-<editId>.md` (pulled before reading, pushed after writing — the persistence rule above).
+Long-form and listing edits run as several passes. To survive an interruption (a closed session, a conflict, "finish it tomorrow"), keep a tiny log per edit at `~/realtor-brain/editor/jobs/rs-<editId>.md` (pulled before reading, pushed after writing — the persistence rule above). The log is `rs-<editId>.md` on Riverside and `ed-<projectId>.md` on Edits, with `rev <n>` replaced by the export file name on Edits.
 
 - **Append ONE line per landed pass:** `<pass name> · done · rev <revision>` — only after the diff confirms it landed.
 - **At the START of a long-form / listing edit, check for this log.** If it exists, say **one** plain line — e.g. *"Picking up where we left off — audio and first cutaways are done, finishing the b-roll and cards now"* — and run **only the passes not already logged**.

@@ -1,5 +1,7 @@
 # Tool map — every editing job → the Riverside call
 
+> **Engines.** This is the Riverside engine pack. The Instagram Edits engine pack is `edits-engine.md` (playbooks) + `edits-tool-map.md` (tools) + `edits-catalogs.md` + `edits-quirks.md`.
+
 One page: what a video editor does, and the exact connector tool that does it here. **Every entry is a real tool on the Riverside connector** (verified against the connector's own editing guide, September 2026). The full recipes live in `${CLAUDE_PLUGIN_ROOT}/shared/riverside-playbooks.md`.
 
 | Job | The Riverside call |

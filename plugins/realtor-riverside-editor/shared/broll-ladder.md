@@ -1,5 +1,9 @@
 # B-roll ladder & sources
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § B-roll and library.
+
+On Edits there is no stock search inside the server; own footage under `~/Movies`, then Pexels downloads with the agent's key; icons and emoji cards go in the upper corners, never on the face.
+
 The point of going multi-source: stop recycling the same five clips. Query several free libraries together, de-duplicate, and prefer variety.
 
 **B-ROLL IS NOT OPTIONAL — every long-form / YouTube video ALWAYS gets at least some B-roll.** Even with no agent footage and no stock keys, use **Riverside's built-in stock** (`editing_get_stock_media` — Pexels, zero setup, imports server-side) for topical cutaways. Never deliver a long-form as a bare talking-head.

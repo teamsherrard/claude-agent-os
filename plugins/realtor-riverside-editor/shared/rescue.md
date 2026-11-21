@@ -1,5 +1,7 @@
 # Rescue cut — the recording that went badly
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Rescue cut.
+
 Some recordings are not a clean take with a few fillers. They are forty minutes of an agent circling the same five points, restarting, apologising to the camera, losing the thread and finding it again. A normal clean cut makes those worse: a tight version of a ramble is still a ramble. This craft finds the usable video inside the bad one, or says honestly that it is not there.
 
 It is the clean cut (`clean-cut.md`) with a harder brief and a different first step, so read that file too: every tool call, the resolver, the order of operations and the safety snapshot are the same.

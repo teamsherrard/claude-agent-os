@@ -1,5 +1,7 @@
 # Creative direction — the edit brief (decide before you touch anything)
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Direction, transcript read, section map.
+
 A human editor asks three questions before opening the timeline: who is this for, what should they feel, and what is the one thing they must remember. This craft answers them in a short **edit brief**, so every later decision (what to cut, where B-roll goes, how loud the energy is) has a reason. It changes nothing on the video.
 
 ## Build the brief from what already exists (ask almost nothing)

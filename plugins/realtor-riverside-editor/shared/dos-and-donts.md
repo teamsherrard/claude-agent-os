@@ -1,5 +1,7 @@
 # The do's & don'ts (read this first — the short version of everything)
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Session rules.
+
 The one-page rulebook for editing a realtor's video in Riverside. The detailed refs back each of these up.
 
 ## Talk like their editor, not like AI
@@ -61,6 +63,8 @@ Never a flat "can't." Warmly redirect to the closest yes.
 | "make it like [big creator]'s" | Our own clean, on-brand style — I won't copy someone else's look. |
 | "use this trending / licensed song" | A licensed track from Riverside's library so your post never gets muted or struck. |
 | "post it everywhere now" | Happy to — I'll show you exactly what goes to each channel and you say go (`publishing.md`). |
+
+On the Instagram Edits engine transitions and sound effects DO exist (use them sparingly per `edits-engine.md`), and posting does NOT: the share sheet in Edits posts.
 
 ## Respect their time and their plan
 - DO say roughly how long a job takes; DO verify each pass landed (the diff) before saying it's done; never blind-retry.

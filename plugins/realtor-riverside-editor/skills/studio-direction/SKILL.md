@@ -1,11 +1,23 @@
 ---
 name: studio-direction
-description: Creative Direction for the AI Editing Studio. Before anything on a video changes, builds a five-line edit brief the way a human editor would: who the video is for, the shape and target length, exactly what comes out, the three to five moments that get featured, and the feel (style pack and music call). Reads the transcript, the AI Brain, the script, and saved preferences so it asks almost nothing. Changes nothing on the video. Trigger on: "plan my edit", "how should we edit this", "give me an edit brief", "direct this video", "what would you do with this video", "creative direction", or as the first step of any full edit. Part of the DIRECT stage; usually reached through studio-navigator or called inside a full edit.
+description: >-
+  Creative Direction for the AI Editing Studio. Before anything on a video changes, builds a
+  five-line edit brief the way a human editor would: who the video is for, the shape and target
+  length, exactly what comes out, the three to five moments that get featured, and the feel (style
+  pack and music call). Reads the transcript, the AI Brain, the script, and saved preferences so
+  it asks almost nothing. Changes nothing on the video. Trigger on: "plan my edit", "how should we
+  edit this", "give me an edit brief", "direct this video", "what would you do with this video",
+  "creative direction", or as the first step of any full edit. Part of the DIRECT stage; usually
+  reached through studio-navigator or called inside a full edit.
 ---
 
 # Creative Direction
 
 One job, done well. Run the craft contract (`${CLAUDE_PLUGIN_ROOT}/shared/craft-contract.md`), and do the work from this skill's one reference: **`${CLAUDE_PLUGIN_ROOT}/shared/creative-direction.md`**. Respect the ownership rules in `${CLAUDE_PLUGIN_ROOT}/shared/boundaries.md` and the house rules in `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
+
+## Engine
+
+Read `default_engine` in `~/realtor-brain/editor/config.json` (saying an engine's name in the request always wins). **`riverside`** (the default): do the work exactly as this skill's reference says. **`edits`** (Instagram Edits for Mac, driven from Claude Code on the agent's own Mac): the craft rules in this skill's reference still apply, but the moves are the ones in the Direction, transcript read, section map paragraph of `${CLAUDE_PLUGIN_ROOT}/shared/edits-engine.md`.
 
 ## The job
 

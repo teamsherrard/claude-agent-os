@@ -1,11 +1,24 @@
 ---
 name: studio-transcript
-description: Transcript Read for the AI Editing Studio: the free first look. Reads every word of a recording before anything changes and reports, in one short paragraph, the length, the repeated takes and dead air it would cut (with the lines quoted), whether the hook already lands, the section map, spelling problems in names, and how long the edit will take. It is the cost-free place to catch a problem and the single yes that gates the whole edit. Counts the sections; the timestamped section map itself is studio-sections' job, run after the cut. Trigger on: "read my video", "what's in this recording", "find the repeated takes", "what would you cut", "how long will this take to edit", or as the opening step of any full edit. Part of the DIRECT stage; usually reached through studio-navigator or called inside a full edit.
+description: >-
+  Transcript Read for the AI Editing Studio: the free first look. Reads every word of a recording
+  before anything changes and reports, in one short paragraph, the length, the repeated takes and
+  dead air it would cut (with the lines quoted), whether the hook already lands, the section map,
+  spelling problems in names, and how long the edit will take. It is the cost-free place to catch
+  a problem and the single yes that gates the whole edit. Counts the sections; the timestamped
+  section map itself is studio-sections' job, run after the cut. Trigger on: "read my video",
+  "what's in this recording", "find the repeated takes", "what would you cut", "how long will this
+  take to edit", or as the opening step of any full edit. Part of the DIRECT stage; usually
+  reached through studio-navigator or called inside a full edit.
 ---
 
 # Transcript Read
 
 One job, done well. Run the craft contract (`${CLAUDE_PLUGIN_ROOT}/shared/craft-contract.md`), and do the work from this skill's one reference: **`${CLAUDE_PLUGIN_ROOT}/shared/preflight-check.md`**. Respect the ownership rules in `${CLAUDE_PLUGIN_ROOT}/shared/boundaries.md` and the house rules in `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
+
+## Engine
+
+Read `default_engine` in `~/realtor-brain/editor/config.json` (saying an engine's name in the request always wins). **`riverside`** (the default): do the work exactly as this skill's reference says. **`edits`** (Instagram Edits for Mac, driven from Claude Code on the agent's own Mac): the craft rules in this skill's reference still apply, but the moves are the ones in the Direction, transcript read, section map paragraph of `${CLAUDE_PLUGIN_ROOT}/shared/edits-engine.md`.
 
 ## The job
 

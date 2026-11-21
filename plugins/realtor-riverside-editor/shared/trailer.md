@@ -1,5 +1,7 @@
 # Trailer — the 20-second teaser for the day before
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Trailer, repurpose, batch.
+
 A trailer is not a reel. A reel stands alone and pays off; a trailer makes a promise and points at the video. It goes on Stories, the YouTube community tab, and the feed the day before the long-form goes live, and it is the cheapest thing in the Studio: one clone, three cuts, a card.
 
 ## Shape (locked)

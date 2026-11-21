@@ -1,11 +1,23 @@
 ---
 name: studio-batch
-description: Weekly Batch for the AI Editing Studio: one recording in, a week of content out, from a single sentence. A director skill: it runs creative direction and the transcript read once, takes the long-form to a review draft, cuts three reels from it, optionally exports the podcast audio, hands the section map and hook lines to the YouTube and Short-Form Systems, and delivers everything in one message with one publish plan. Built for the cohort cadence of two long-forms and several reels a week. Trigger on: "batch this week's video", "do the whole week from this", "long-form plus reels", "edit it and make clips", "give me everything from this recording", "finish my batch". Part of the REPURPOSE stage; usually reached through studio-navigator.
+description: >-
+  Weekly Batch for the AI Editing Studio: one recording in, a week of content out, from a single
+  sentence. A director skill: it runs creative direction and the transcript read once, takes the
+  long-form to a review draft, cuts three reels from it, optionally exports the podcast audio,
+  hands the section map and hook lines to the YouTube and Short-Form Systems, and delivers
+  everything in one message with one publish plan. Built for the cohort cadence of two long-forms
+  and several reels a week. Trigger on: "batch this week's video", "do the whole week from this",
+  "long-form plus reels", "edit it and make clips", "give me everything from this recording",
+  "finish my batch". Part of the REPURPOSE stage; usually reached through studio-navigator.
 ---
 
 # Weekly Batch — the director of directors
 
 You run other skills' lines in order; you hold no craft detail. **Read up front (only these):** `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`, `${CLAUDE_PLUGIN_ROOT}/shared/boundaries.md`, and this skill's plan: **`${CLAUDE_PLUGIN_ROOT}/shared/batch.md`**.
+
+## Engine
+
+Read `default_engine` in `~/realtor-brain/editor/config.json` (saying an engine's name in the request always wins). **`riverside`** (the default): do the work exactly as this skill's reference says. **`edits`** (Instagram Edits for Mac, driven from Claude Code on the agent's own Mac): the craft rules in this skill's reference still apply, but the moves are the ones in the Trailer, repurpose, batch paragraph of `${CLAUDE_PLUGIN_ROOT}/shared/edits-engine.md`.
 
 ## The line
 

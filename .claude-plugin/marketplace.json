@@ -63,8 +63,8 @@
     {
       "name": "realtor-riverside-editor",
       "source": "./plugins/realtor-riverside-editor",
-      "version": "0.4.3",
-      "description": "PLUGIN 10 — the AI Editing Studio (Riverside engine). A full-time video editor inside the agent's Claude: 28 skills across DIRECT, CUT, POLISH, REPURPOSE, and SHIP, plus a plain-English navigator that resumes any stopped edit and three full recipes (long-form, reel, listing). Claude edits in the agent's own Riverside account with verifiable operations — no per-edit AI credits, every change proven by a revision diff. Requires Plugin 1 (the Brain) and a Riverside Grow plan."
+      "version": "0.5.0",
+      "description": "PLUGIN 10 — the AI Editing Studio, on the engine the agent chooses: their Riverside account (any Claude surface, Grow plan) or Instagram's free Edits app for Mac (Claude Code on their Mac, no per-edit fees). 28 skills across DIRECT, CUT, POLISH, REPURPOSE and SHIP, a plain-English navigator that resumes any stopped edit, full recipes for long-form, reel and listing. Every change verified on real frames or a revision diff. Requires Plugin 1 (the Brain)."
     }
   ]
 }

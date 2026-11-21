@@ -1,5 +1,7 @@
 # The clean cut — remove the fluff (the single biggest quality lift)
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Remove the fluff.
+
 Filler words, dead air, false starts, repeated takes, tangents. This is the only destructive craft, so it is the only one with a hard review gate.
 
 ## Find it (free, read-only)

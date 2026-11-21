@@ -1,5 +1,7 @@
 # Recording — where quality is actually won
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Record coach.
+
 The best edit cannot rescue a bad recording, and the cheapest minute in the whole workflow is the one before the agent presses record. This craft coaches that minute. It records nothing itself.
 
 ## Why record straight into Riverside

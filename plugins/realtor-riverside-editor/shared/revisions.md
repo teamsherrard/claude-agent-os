@@ -1,5 +1,7 @@
 # Review and revise — "something feels off"
 
+> **Engines.** This file is the craft rule for both engines; the Riverside calls in it are the Riverside engine's. On the Instagram Edits engine (`default_engine: "edits"`), the same rule is carried out with the moves in `edits-engine.md` § Review and revise.
+
 Most revision notes are vague, and a vague note answered with a fresh re-edit fixes the wrong thing. This craft turns a feeling into one precise change.
 
 ## The loop
