@@ -1,0 +1,151 @@
+{
+  "_comment": "Saved to ~/realtor-brain/editor/config.json by studio-setup. ONE config for every engine: the brand block is shared so Riverside and Instagram Edits look identical. Only the chosen engine's block is required.",
+  "default_engine": "riverside",
+  "_default_engine_comment": "Which editor owns a plain 'edit my video': 'riverside' (edits in the agent's Riverside account, any Claude surface) or 'edits' (Instagram Edits for Mac, driven from Claude Code on the agent's Mac, free). Saying the engine's name in a request always wins. 'descript' is retired.",
+  "riverside": {
+    "connected_via": "mcp-oauth",
+    "note": "Connected in Claude → Settings → Connectors → Riverside. No API key is stored here.",
+    "studio_id": "",
+    "studio_name": "",
+    "production_id": "",
+    "default_project_id": "",
+    "brand_kit_written": false,
+    "caption_preset_id": "",
+    "publish_accounts": {}
+  },
+  "edits": {
+    "connected_via": "insta-edits bridge",
+    "note": "Instagram Edits for Mac + the insta-edits bridge (pip3 install --user insta-edits; token via `insta-edits set-token`; `claude mcp add --scope user --transport stdio edits -- /usr/bin/python3 -m insta_edits serve`). Mac + Claude Code only.",
+    "bridge_installed": false,
+    "footage_dir": "~/Movies/edits-footage",
+    "exports_dir": "~/Movies/edits-exports",
+    "cards_dir": "~/Movies/edits-cards",
+    "caption_style": "Word Highlight Box",
+    "music_db": -26,
+    "preferred_music": [
+      "Unplayed Guitar",
+      "Hypnotized (Instrumental)"
+    ],
+    "pexels_key": "",
+    "_pexels_comment": "Optional, free: lets the B-roll craft download bright stock clips into footage_dir. Edits' own stock panel is not reachable from the server."
+  },
+  "brand_source": "~/realtor-brain/identity/brand-visual.md",
+  "_brand_source_comment": "FALLBACK POINTER ONLY — where the brand block below gets refreshed FROM. Skills read the 'brand' block below at edit time (resolution order #1).",
+  "_brand_comment": "SINGLE SOURCE OF TRUTH for the editor's brand (both engines). Setup writes the captured colours/font here. If blank, readers fall back to the Brain's identity/brand-visual.md, then tasteful defaults. There is NO separate brand.json file.",
+  "brand": {
+    "agent_name": "",
+    "brokerage": "",
+    "brand_name": "",
+    "tagline": "",
+    "city": "",
+    "website": "",
+    "cta_url": "",
+    "cta": {
+      "text": "",
+      "details": ""
+    },
+    "colors": {
+      "primary": "",
+      "accent": "",
+      "text": "#FFFFFF",
+      "bg": ""
+    },
+    "fonts": {
+      "heading": "",
+      "body": ""
+    },
+    "logo": "",
+    "logo_media_id": "",
+    "caption": {
+      "font": "",
+      "accent": "",
+      "weight": "800",
+      "anim": "karaoke"
+    },
+    "style_pack": "bold-kinetic",
+    "assets": {
+      "dir": "",
+      "spec": "",
+      "hook_16x9": "",
+      "hook_9x16": "",
+      "cta_16x9": "",
+      "cta_9x16": "",
+      "lower_third": "",
+      "lower_third_9x16": "",
+      "emphasis_16x9": "",
+      "emphasis_9x16": "",
+      "end_card_16x9": "",
+      "end_card_9x16": "",
+      "cta_pack": {},
+      "end_screen": "",
+      "logo_sting": "",
+      "riverside_media_ids": {},
+      "icons_dir": "",
+      "animated": {
+        "end_card_16x9": "",
+        "end_card_9x16": ""
+      }
+    }
+  },
+  "own_footage": {
+    "google_drive_folder": "",
+    "local_folder": "",
+    "per_video_uploads": "ask each time",
+    "use_listing_photos_for_property_videos": true,
+    "library_index": "~/realtor-brain/editor/broll-library.md"
+  },
+  "sfx": {
+    "swoosh_media_id": "",
+    "note": "Optional. Riverside has no built-in SFX library reachable from the connector. If the agent drops a licensed swoosh (MP3/WAV) into Your Media, record its media id here and the energy pass uses it."
+  },
+  "platforms": [
+    "youtube",
+    "instagram"
+  ],
+  "_caption_style_comment": "On Edits, `edits.caption_style` (a catalog style name) wins over this Riverside look name.",
+  "caption_style": "bold-karaoke",
+  "publish": "needs-approval",
+  "expectations_shown": false,
+  "stock_sources": {
+    "riverside_stock": {
+      "enabled": true,
+      "note": "Built in (Pexels via Riverside). No key needed."
+    },
+    "pexels": {
+      "enabled": false,
+      "api_key": ""
+    },
+    "pixabay": {
+      "enabled": false,
+      "api_key": ""
+    },
+    "coverr": {
+      "enabled": false,
+      "api_key": ""
+    },
+    "unsplash": {
+      "enabled": false,
+      "api_key": ""
+    }
+  },
+  "real_place_sources": {
+    "wikimedia": {
+      "enabled": true,
+      "note": "no key needed"
+    },
+    "google_streetview": {
+      "enabled": false,
+      "api_key": ""
+    }
+  },
+  "publish_route": "riverside",
+  "_publish_route_comment": "ONE posting route per post. 'riverside' = Riverside's connected accounts (studio-publish). 'shortform-tool' = the Short-Form System's Metricool/GoHighLevel/Buffer. 'manual' = the agent shares from Edits' share sheet. Values: riverside | shortform-tool | manual. Long-form YouTube can use 'riverside' while reels use the short-form tool; never both for the same post.",
+  "preferences": {
+    "_comment": "Learned from revisions (Review and Revise, Audio Enhance). Each new video starts here.",
+    "magic_audio_mix": null,
+    "caption_font_size": null,
+    "punch_in_strength": null,
+    "music_on_longform": null,
+    "notes": []
+  }
+}

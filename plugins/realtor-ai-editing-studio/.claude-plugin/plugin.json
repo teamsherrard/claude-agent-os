@@ -1,0 +1,33 @@
+{
+  "name": "realtor-ai-editing-studio",
+  "displayName": "The AI Editing Studio (Plugin 10)",
+  "version": "0.6.0",
+  "description": "The AI Editing Studio: a full-time video editor inside the agent's Claude, on the engine they choose: their Riverside account (records, edits, publishes; any Claude surface) or Instagram's free Edits app for Mac (driven from Claude Code on their Mac; no per-edit fees). 28 skills across five stages: DIRECT (creative direction, record coach, transcript read, section map), CUT (remove the fluff, hook finder, rescue cut, interview edit), POLISH (audio enhance, color and look with a measured Adjust-panel grade, captions, music with a measured audition, B-roll, B-roll library, brand graphics with icons, energy), REPURPOSE (short-form repurpose, weekly batch, podcast, trailer), SHIP (quality check, review and revise, publish), plus setup, a plain-English navigator that resumes any stopped edit, and full recipes (long-form, reel, listing). Every change is verified: revision diffs on Riverside, rendered frames and the exported file on Edits. Publishing only on an explicit yes (Riverside); Edits exports and the agent shares. One owner per output: it never writes titles, descriptions, chapter names, post captions, or designs. Requires Plugin 1 (the Brain) and either a Riverside Grow plan or a Mac with Edits.",
+  "author": {
+    "name": "Mike Sherrard"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "audio",
+    "b-roll",
+    "captions",
+    "color",
+    "editing studio",
+    "edits",
+    "instagram edits",
+    "interview",
+    "mac",
+    "music",
+    "podcast",
+    "publishing",
+    "real estate",
+    "realtor",
+    "reels",
+    "repurpose",
+    "riverside",
+    "shorts",
+    "video editing",
+    "youtube"
+  ],
+  "homepage": "https://github.com/teamsherrard/claude-agent-os"
+}

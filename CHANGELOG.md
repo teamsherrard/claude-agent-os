@@ -2,6 +2,19 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.140.0] — 2026-11-21
+
+### Plugin 10 renamed: `realtor-ai-editing-studio` (0.6.0), one AI editor with two engines
+The editor plugin is no longer named after one engine. realtor-riverside-editor → `realtor-ai-editing-studio`,
+display name "The AI Editing Studio (Plugin 10)". Same 28 skills, same settings file; the Riverside engine and the
+Instagram Edits engine both live inside it (`default_engine`). `realtor-ai-editor` (the retired Descript plugin)
+keeps its name and stays retired.
+- **Existing installs:** uninstall realtor-riverside-editor, install `realtor-ai-editing-studio`. Nothing in
+  `~/realtor-brain/editor/config.json` changes; the checkpoint logs and the B-roll library index carry over.
+- Readiness pass on the two-engine design: a fresh-eyes audit of every skill and shared reference, with the real
+  defects fixed in this release; `scripts/edits/*.py` compile-checked and both Swift helpers built.
+- The gate, `CLAUDE.md`, the root `README.md`, and the historical build spec now carry the new name.
+
 ## [0.139.0] — 2026-11-21
 
 ### The AI Editing Studio gains a second engine: Instagram Edits for Mac (realtor-riverside-editor 0.5.0)

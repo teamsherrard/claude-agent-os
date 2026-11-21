@@ -1,4 +1,4 @@
-# The AI Editing Studio — build spec (Plugin 10, `realtor-riverside-editor`)
+# The AI Editing Studio — build spec (Plugin 10, `realtor-ai-editing-studio`, formerly `realtor-riverside-editor`; historical spec from the Riverside-only era)
 
 *Status: built as v0.2.0 on 2026-09-19. This is the design record: why it is shaped this way, what each piece owns, and what is left.*
 

@@ -116,7 +116,7 @@ import glob,re,sys
 pat=re.compile(r"ready-to-paste|ready to paste|draft the title|title \+ description|title and description \(|title options|suggest(ed)? titles?|pick one\) title",re.I)
 allow=re.compile(r"never|not |no titles|owns|boundar|SEO Package|does not|doesn't|don't|removed|NEVER",re.I)
 bad=[]
-for p in glob.glob("plugins/realtor-riverside-editor/**/*.md",recursive=True):
+for p in glob.glob("plugins/realtor-ai-editing-studio/**/*.md",recursive=True):
     for n,l in enumerate(open(p,encoding="utf-8"),1):
         if pat.search(l) and not allow.search(l): bad.append(f"{p}:{n}: {l.strip()[:110]}")
 if bad:

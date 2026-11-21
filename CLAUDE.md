@@ -20,7 +20,7 @@ This is `teamsherrard/claude-agent-os`, Team Sherrard's PUBLIC Claude Code plugi
 3. Every skill `description:` must be ≤1024 characters. Over-limit skills are SILENTLY SKIPPED at install, so this is a hard rule. Prefer a YAML block scalar (`>` or `>-`) for new or edited descriptions; some older skills still use plain scalars, which is tolerated. Marketplace card descriptions in `marketplace.json` must be ≤500 characters.
 4. Never let a folded description line split a hyphenated word. The gate checks lengths and hyphen splits; it does not check scalar style.
 5. Every skill a plugin advertises must exist and be staged in the same commit as its version bump.
-6. `plugins/realtor-ai-editor` (the Descript-based editor) is RETIRED by maintainer decision: do not develop it, wire other plugins to it, or revive it. It is still registered in `marketplace.json` and listed in `README.md` as Plugin 6 pending a cleanup release; removing or re-describing it there is a deliberate maintainer release, never a side edit. `plugins/realtor-riverside-editor` is the live editor plugin.
+6. `plugins/realtor-ai-editor` (the Descript-based editor) is RETIRED by maintainer decision: do not develop it, wire other plugins to it, or revive it. It is still registered in `marketplace.json` and listed in `README.md` as Plugin 6 pending a cleanup release; removing or re-describing it there is a deliberate maintainer release, never a side edit. `plugins/realtor-ai-editing-studio` (formerly `realtor-riverside-editor`) is the live editor plugin.
 7. This repo is public. It never contains client names, pricing, credentials, or the maintainer's private notes. Those live in the private repo `teamsherrard/claude-workspace`.
 
 ## Working from a cloud session (claude.ai/code, the Claude app, iPad)
@@ -31,7 +31,7 @@ This is `teamsherrard/claude-agent-os`, Team Sherrard's PUBLIC Claude Code plugi
 - `gh pr` and `gh issue` do not work in cloud sessions (GraphQL is blocked). Use the web UI's Create PR button or `gh api` REST calls.
 
 ## Sibling repos (never edit them from here)
-- `teamsherrard/claude-agent-attraction-os` — the agent-attraction cohort marketplace (public). Its `realtor-riverside-editor` is vendored FROM this repo; fix here, then re-vendor there.
+- `teamsherrard/claude-agent-attraction-os` — the agent-attraction cohort marketplace (public). Its editor plugin (vendored FROM this repo's `realtor-ai-editing-studio`, formerly `realtor-riverside-editor`) is fixed here, then re-vendored there.
 - `teamsherrard/claude-agent-attraction-knowledge` — private references for that cohort.
 - `teamsherrard/realtor-ai-video-editor` — private HyperFrames render engine, not part of the marketplace.
 - `teamsherrard/claude-workspace` — private: memory, demos, upload-zip skill banks, brand assets.
