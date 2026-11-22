@@ -1,7 +1,7 @@
 ---
 name: studio-energy
 description: >-
-   Energy for the AI Editing Studio. A flat video is one where the picture never reacts to what is
+  Energy for the AI Editing Studio. A flat video is one where the picture never reacts to what is
   being said, so this skill edits to the emotion: it reads the emotion data (Riverside) and the
   transcript for the beats (a laugh, a number, a reveal, a serious turn, the CTA), puts a hard-cut
   zoom on each at the format's rate (about one every minute on long-form, one every 15 seconds on

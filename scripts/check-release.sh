@@ -155,45 +155,43 @@ print(f"  ✓ v{ver}: every named file is tracked or staged")
 PY
 
 
-say "── 8. SKILL.md descriptions: within the 1024-char sync limit, and no folded-scalar word splits"
+say "── 8. SKILL.md front matter parses as YAML; descriptions within the 1024-char sync limit; no folded-scalar word splits"
 python3 - <<'PYEOF' || FAIL=1
-import re, glob, sys
-def desc(path):
+import re, glob, sys, yaml
+RETIRED = ("plugins/realtor-ai-editor/",)   # the retired Descript editor: reported, never a gate failure (its cleanup is a deliberate release)
+def front(path):
     s = open(path, encoding="utf-8").read()
-    if not s.startswith("---"): return None
-    fm = s[3:s.find("\n---", 3)]
-    m = re.search(r"^description:\s*(.*)$", fm, re.M)
-    if not m: return None
-    first = m.group(1).strip()
-    if first in (">", "|", ">-", "|-", ">+", "|+"):
-        body = []
-        for ln in fm[m.end():].split("\n")[1:]:
-            if ln.strip() == "": body.append(""); continue
-            if not ln.startswith("  "): break
-            body.append(ln.strip())
-        paras, cur = [], []
-        for b in body:
-            if b == "": paras.append(" ".join(cur)); cur = []
-            else: cur.append(b)
-        if cur: paras.append(" ".join(cur))
-        return "\n".join(paras).strip()
-    return first.strip("\"" + "'")
-over, split = [], []
+    if not s.startswith("---\n"): return None
+    end = s.find("\n---", 3)
+    return s[4:end] if end > 0 else None
+over, split, broken, retired = [], [], [], []
 for p in sorted(glob.glob("plugins/*/skills/*/SKILL.md")):
-    v = desc(p)
-    if not v: continue
+    fm = front(p)
+    try:
+        d = yaml.safe_load(fm) if fm is not None else None
+        if not isinstance(d, dict) or not d.get("name") or not isinstance(d.get("description"), str) or not d["description"].strip():
+            raise ValueError("no front matter with a name and a description")
+    except Exception as e:
+        (retired if p.startswith(RETIRED) else broken).append((p, str(e).splitlines()[0][:140])); continue
+    v = d["description"].strip()
     if len(v) > 1024: over.append((len(v), p))
     for m in re.finditer(r"(\w+)- (\w+)", v): split.append((p, m.group(0)))
+if broken:
+    print(f"  ✗ {len(broken)} SKILL.md front matter block(s) do not parse — the marketplace sync WARNS and SKIPS these skills:")
+    for p, e in broken: print(f"      {p}  ->  {e}")
+    print("      (0.7.1 shipped studio-energy with a 3-space first line under 'description: >-' and Cowork reported it on sync)")
 if over:
-    print(f"  \u2717 {len(over)} description(s) exceed 1024 chars — the marketplace SKIPS these skills entirely:")
+    print(f"  ✗ {len(over)} description(s) exceed 1024 chars — the marketplace SKIPS these skills entirely:")
     for n, p in sorted(over, reverse=True): print(f"      {n:5d}  {p}")
     print("      (members install the plugin and the skill is simply not there)")
 if split:
-    print(f"  \u2717 {len(split)} folded-scalar word split(s) — a line break inside a hyphenated word becomes a SPACE:")
+    print(f"  ✗ {len(split)} folded-scalar word split(s) — a line break inside a hyphenated word becomes a SPACE:")
     for p, frag in split: print(f"      {p}  ->  {frag!r}")
     print("      (re-wrap with textwrap break_on_hyphens=False; this corrupts skill names in hand-offs)")
-if over or split: sys.exit(1)
-print("  \u2713 all descriptions \u22641024 chars, no folded word splits")
+if retired:
+    print(f"  · {len(retired)} skill(s) in the retired Descript editor do not parse (known; fixed only in its cleanup release)")
+if broken or over or split: sys.exit(1)
+print("  ✓ all front matter parses, descriptions ≤1024 chars, no folded word splits")
 PYEOF
 
 

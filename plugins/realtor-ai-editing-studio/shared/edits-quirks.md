@@ -18,6 +18,7 @@
 
 ## Cutting
 - `trim(id, side, deltaSeconds)`: a POSITIVE delta removes that many seconds from that side. A negative delta extends and is silently a no-op when the source has nothing left. Read `elements` back.
+- A still placed with `addOverlay` lasts 3 s and a negative `trim` never extends it (a silent no-op: a still has no source to extend into). To hold a card longer, place the same PNG again at the previous piece's `endTime` (read it back from `elements`), as many times as the span needs; a static image shows no seam.
 - `trimEnd` / `trimStart` act on the SELECTED clips at the PLAYHEAD: `seek` → `selectById` → `trimEnd` → `clearSelection`.
 - `splitAt(id, times=[...])` returns `pieces` with new ids. Deleting a main-track piece closes the gap and ripples everything after it (captions, overlays, music end). Cut LAST → FIRST, and add captions/graphics AFTER the cuts.
 - `elements` returns 200 rows per page by default; pass `limit=5000`.

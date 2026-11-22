@@ -2,6 +2,25 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.142.0] — 2026-11-22
+
+### The Video Brand Kit on Instagram Edits, and an install warning fixed (realtor-ai-editing-studio 0.7.2)
+The `studio-energy` skill shipped with the first line of its description indented three spaces under a folded
+description, which ends the block early: the front matter did not parse, and a Cowork sync of 0.7.1 reported the
+skill and skipped it. Fixed. The release gate's check 8 now parses every skill's front matter with a real YAML parser,
+so a skill that cannot install cannot pass the gate (the retired Descript editor's five unparseable skills are
+reported, not failed; they go with its cleanup release).
+
+On Edits, a registered Video Brand Kit is now placed by the reel script itself: `build_reel.py` reads the brand
+assets from the editor config and places the hook banner with the agent's words typed into its empty zone, the CTA
+banner from the CTA line to the last frame, and the emphasis panel on pop-ups; with no kit (or the no-kit flag) it
+renders the cards natively as before. A still in Edits lasts three seconds and cannot be extended, so a banner that
+must hold is placed back to back, each piece starting where the last one ends. `studio-setup` now says how the kit
+files get onto the Mac (download from Claude Design or the Drive folder into the Edits cards folder under Movies)
+and what it records, the 9:16 zones included. The engine notes and the quirks file carry the same rules. Checked
+against the kit's 9:16 cards (1080×1920, transparent: the shape the live Edits test placed); the real kit has not yet
+been placed in a live Edits run.
+
 ## [0.141.1] — 2026-11-21
 
 ### The Edits reel script finds the Brain folder itself (realtor-ai-editing-studio 0.7.1)

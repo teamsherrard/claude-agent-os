@@ -8,7 +8,12 @@
 
 Options: --accent #hex (caption highlight)  --panel #hex (card pill)  --text #hex  --style Highlighter
          --pause 1.0 (min silence to cut)  --gain 3 (voice dB)  --music "title" | none  --music-db -18
-         --zooms 4  --no-cut  --no-export  --fix "CLOD=Claude;clod=Claude"  --out ~/Movies/edits-exports
+         --zooms 4  --no-cut  --no-export  --no-kit  --fix "CLOD=Claude;clod=Claude"  --out ~/Movies/edits-exports
+The Video Brand Kit: when studio-setup registered the agent's kit (config.json → brand.assets, files under ~/Movies),
+the hook banner, the CTA banner and the pop-up panels are PLACED from those PNGs — the hook/pop-up words typed into
+the panel's empty zone (brand.assets.zones.<key> = {"y": <zone centre as a fraction of the height>, "max_chars": N};
+kit v3 defaults 0.13 / 20), the CTA words baked. A still gets 3 s in Edits and is never extended, so a banner that
+must hold (the CTA, to the last frame) is placed back to back. No kit, or --no-kit: cards are rendered natively.
 The token is read by the insta-edits bridge config; it is never printed."""
 import argparse, json, os, re, subprocess, sys, time, statistics
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
@@ -26,6 +31,28 @@ def _brain_home():
 
 
 JOBS = os.path.join(_brain_home(), "editor", "jobs")
+CONFIG = os.path.join(_brain_home(), "editor", "config.json")
+def _config():
+    try:
+        with open(CONFIG, encoding="utf-8") as f: return json.load(f)
+    except (OSError, ValueError): return {}
+def _brand(): return (_config().get("brand") or {})
+def kit_assets():
+    """The agent's registered Video Brand Kit pieces that exist on this Mac (brand.assets.*, paths under ~/Movies per studio-setup).
+    Only the 9:16 pieces a reel uses; {} when no kit is registered (cards are then rendered natively)."""
+    assets = (_brand().get("assets") or {})
+    def local(p):
+        p = os.path.expanduser(p.strip()) if isinstance(p, str) and p.strip() else ""
+        return p if p and os.path.isfile(p) and p.lower().endswith((".png", ".mp4", ".mov")) else ""
+    kit = {k: local(assets.get(k)) for k in ("hook_9x16", "cta_9x16", "emphasis_9x16")}
+    kit["cta_pack"] = {k: local(v) for k, v in (assets.get("cta_pack") or {}).items() if k.endswith("_9x16") and local(v)}
+    return {k: v for k, v in kit.items() if v}
+def zone(key, default_y=0.13, default_chars=20):
+    """A kit panel's empty zone on 9:16: brand.assets.zones.<key> = {"y": <centre ÷ 1920>, "max_chars": N}; kit v3 defaults otherwise."""
+    z = ((_brand().get("assets") or {}).get("zones") or {}).get(key) or {}
+    try: y = float(z.get("y") or default_y); n = int(z.get("max_chars") or default_chars)
+    except (TypeError, ValueError): y, n = default_y, default_chars
+    return {"y": min(max(y, 0.06), 0.3), "max_chars": max(n, 8)}
 def checkpoint(pid, line):
     """Append one landed-pass line to the ed-<projectId>.md checkpoint log (the resume path reads it)."""
     try:
@@ -145,7 +172,7 @@ def main():
     ap.add_argument("--accent", default="#F5C542"); ap.add_argument("--panel", default="#1F1B2E"); ap.add_argument("--text", default="#FFFFFF")
     ap.add_argument("--style", default="Word Highlight Box"); ap.add_argument("--pause", type=float, default=1.0); ap.add_argument("--gain", type=float, default=1.5); ap.add_argument("--sfx", type=float, default=0.22); ap.add_argument("--hook-size", default="68")
     ap.add_argument("--music", default="auto"); ap.add_argument("--music-db", type=float, default=-26.0); ap.add_argument("--zooms", type=int, default=4)
-    ap.add_argument("--no-cut", action="store_true"); ap.add_argument("--no-export", action="store_true"); ap.add_argument("--fix", default="CLOD=Claude;Clod=Claude;clod=Claude")
+    ap.add_argument("--no-cut", action="store_true"); ap.add_argument("--no-export", action="store_true"); ap.add_argument("--no-kit", action="store_true", help="render the cards natively even when a Video Brand Kit is registered"); ap.add_argument("--fix", default="CLOD=Claude;Clod=Claude;clod=Claude")
     ap.add_argument("--out", default=os.path.expanduser("~/Movies/edits-exports")); ap.add_argument("--cards", default=os.path.expanduser("~/Movies/edits-cards"))
     ap.add_argument("--hook-at", type=float, default=0.25); ap.add_argument("--popups", default="", help="extra pop-up cards: 'text@phrase;text2@phrase2' (3 s each, top zone)"); ap.add_argument("--beats", default="", help="|-separated caption indexes or phrases to zoom (overrides auto)")
     a = ap.parse_args()
@@ -263,40 +290,72 @@ def main():
         else: log("music: no matching royalty-free track; skipped")
 
     # ---------- 6 GRAPHICS ----------
-    end = comp_end(c); graphics = []
+    end = comp_end(c); graphics = []; kit = {} if a.no_kit else kit_assets()
+    if kit: log("Video Brand Kit: " + ", ".join(k for k in kit if k != "cta_pack") + (f", cta_pack×{len(kit['cta_pack'])}" if kit.get("cta_pack") else ""))
     def native_card(text, at, duration, size):
         t = call(c, "addText", {"text": text, "atSeconds": at, "duration": duration}); tid = t["id"]
         call(c, "setTextStyle", {"id": tid, "size": size, "bold": True, "color": a.text, "alignment": "center"})
         call(c, "setEmphasis", {"id": tid, "style": "backgroundPill", "color": a.panel})
         call(c, "setTextAnimation", {"id": tid, "animation": "fligPop"}); call(c, "setTextPosition", {"id": tid, "x": 0.5, "y": 0.12})
         return tid
+    def overlay_at(path, at):
+        """A full-frame transparent PNG (a kit card or a rendered card) centred at scale 1 → the new element, or None."""
+        call(c, "seek", {"seconds": 0}, must=False)
+        for attempt in range(2):
+            o = call(c, "addOverlay", {"path": path, "startSeconds": at, "x": 0.5, "y": 0.5, "scale": 1.0}, must=False)
+            if isinstance(o, dict) and o.get("id"): return next((x for x in elements(c) if x["id"] == o["id"]), o)
+            time.sleep(2)
+        return None
+    def clip_to(el, stop):
+        """Shorten a placed still so it ends at `stop` (its default is 3 s)."""
+        if el.get("endTime") and el["endTime"] > stop + 0.01: call(c, "trim", {"id": el["id"], "side": "right", "deltaSeconds": el["endTime"] - stop}, must=False)
+    def hold_still(path, start, stop):
+        """Keep a still on screen from start to stop. Edits gives a still 3 s and never extends it (a negative trim is a no-op),
+        so the same file is placed back to back, each piece starting where the last ends — seamless for a still. Returns the ids."""
+        ids = []; t = start
+        while t < stop - 0.05:
+            seg = overlay_at(path, t)
+            if not seg: break
+            seg_end = seg.get("endTime") or (t + 3.0)
+            if seg_end > stop + 0.01: clip_to(seg, stop); seg_end = stop
+            ids.append(seg["id"]); t = seg_end
+        return ids
+    def words_in_zone(text, at, duration, z):
+        """The agent's own words typed into a kit panel's empty zone: one centred line, no pill (the panel IS the PNG), sized to the zone."""
+        t = call(c, "addText", {"text": text, "atSeconds": at, "duration": duration}); tid = t["id"]
+        call(c, "setTextStyle", {"id": tid, "size": 26 if len(text) <= z["max_chars"] else 22, "bold": True, "color": a.text, "alignment": "center"})
+        call(c, "setEmphasis", {"id": tid, "style": "none", "color": a.panel}, must=False); call(c, "setTextPosition", {"id": tid, "x": 0.5, "y": z["y"]})
+        return tid
     if a.hook:
-        bin_ = os.path.join(HERE, "render_card")
-        if not os.path.exists(bin_): subprocess.run(["swiftc", "-O", os.path.join(HERE, "render_card.swift"), "-o", bin_], check=False)
-        os.makedirs(a.cards, exist_ok=True); png = os.path.join(a.cards, re.sub(r"[^A-Za-z0-9]+", "-", a.name) + "-hook.png")
-        ok = os.path.exists(bin_) and subprocess.run([bin_, png, a.hook, a.hook_size, a.text, a.panel, "HelveticaNeue-Bold", "1080", "1920", "0.13"], capture_output=True).returncode == 0
-        o = None
-        if ok:
-            call(c, "seek", {"seconds": 0}, must=False)
-            for attempt in range(2):
-                o = call(c, "addOverlay", {"path": png, "startSeconds": a.hook_at, "x": 0.5, "y": 0.5, "scale": 1.0}, must=False)
-                if isinstance(o, dict) and o.get("id"): break
-                o = None; time.sleep(2)
-        if o:
-            call(c, "trim", {"id": o["id"], "side": "right", "deltaSeconds": 0.5}, must=False); graphics.append(("hook card PNG", o["id"]))
-        else:
-            graphics.append(("hook card native", native_card(a.hook, a.hook_at, 2.5, 26 if len(a.hook) <= 25 else 22)))
-    if a.cta:
+        placed = False
+        if kit.get("hook_9x16"):
+            o = overlay_at(kit["hook_9x16"], a.hook_at)
+            if o:
+                clip_to(o, a.hook_at + 2.5); words_in_zone(a.hook, a.hook_at, 2.5, zone("hook_9x16")); graphics.append(("hook: kit banner + the words", o["id"])); placed = True
+                log(f"hook: the kit banner with “{a.hook}” typed into its zone")
+        if not placed:
+            bin_ = os.path.join(HERE, "render_card")
+            if not os.path.exists(bin_): subprocess.run(["swiftc", "-O", os.path.join(HERE, "render_card.swift"), "-o", bin_], check=False)
+            os.makedirs(a.cards, exist_ok=True); png = os.path.join(a.cards, re.sub(r"[^A-Za-z0-9]+", "-", a.name) + "-hook.png")
+            ok = os.path.exists(bin_) and subprocess.run([bin_, png, a.hook, a.hook_size, a.text, a.panel, "HelveticaNeue-Bold", "1080", "1920", "0.13"], capture_output=True).returncode == 0
+            o = overlay_at(png, a.hook_at) if ok else None
+            if o: clip_to(o, a.hook_at + 2.5); graphics.append(("hook card PNG", o["id"]))
+            else: graphics.append(("hook card native", native_card(a.hook, a.hook_at, 2.5, 26 if len(a.hook) <= 25 else 22)))
+    if a.cta or kit.get("cta_9x16"):
         cta_caps = [cp for cp in caps if CTA_RE.search(cp["text"])]
         start = cta_caps[-1]["startTime"] if cta_caps else max(end - 6, 0)
-        graphics.append(("CTA", native_card(a.cta, start, max(end - start, 2.0), 26 if len(a.cta) <= 25 else 22)))
-        log(f"CTA card from {start:.1f}s to the end")
+        ids = hold_still(kit["cta_9x16"], start, end) if kit.get("cta_9x16") else []
+        if ids: graphics.append(("CTA: kit banner held to the last frame", ids[0])); log(f"CTA: the kit banner from {start:.1f}s to the end ({len(ids)} back-to-back pieces; its words are baked)")
+        elif a.cta: graphics.append(("CTA", native_card(a.cta, start, max(end - start, 2.0), 26 if len(a.cta) <= 25 else 22))); log(f"CTA card from {start:.1f}s to the end")
     for spec in [x for x in a.popups.split(";") if "@" in x]:
         txt, phrase = spec.split("@", 1)
         cp = next((cp for cp in caps if phrase.lower() in cp["text"].lower()), None)
         if not cp: log(f"  card phrase not found: {phrase}"); continue
-        graphics.append(("card " + txt[:20], native_card(txt, cp["startTime"], 3.0, 26 if len(txt) <= 25 else 22))); log(f"  card “{txt}” at {cp['startTime']:.1f}s")
-    log(f"graphics: {len(graphics)} pieces"); checkpoint(pid, f"music · {'done' if music_id else 'skipped'}"); checkpoint(pid, f"graphics · done · {len(graphics)} pieces")
+        o = overlay_at(kit["emphasis_9x16"], cp["startTime"]) if kit.get("emphasis_9x16") else None
+        if o: clip_to(o, cp["startTime"] + 3.0); words_in_zone(txt, cp["startTime"], 3.0, zone("emphasis_9x16")); graphics.append(("card (kit panel) " + txt[:20], o["id"]))
+        else: graphics.append(("card " + txt[:20], native_card(txt, cp["startTime"], 3.0, 26 if len(txt) <= 25 else 22)))
+        log(f"  card “{txt}” at {cp['startTime']:.1f}s")
+    log(f"graphics: {len(graphics)} pieces"); checkpoint(pid, f"music · {'done' if music_id else 'skipped'}"); checkpoint(pid, f"graphics · done · {len(graphics)} pieces" + (" · kit" if kit else ""))
 
     # ---------- 7 CHECK + ONE EXPORT ----------
     times = [a.hook_at + 1.0] + [z[0] + 1.0 for z in zooms][:3] + ([max(end - 2.5, 0)] if a.cta else []) + [max(end - 0.3, 0)]
