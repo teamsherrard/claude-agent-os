@@ -20,7 +20,7 @@ You run the line; the crafts do the work. **Read up front (only these):** `${CLA
 
 ## Engine
 
-Read `default_engine` in `~/realtor-brain/editor/config.json` (saying an engine's name in the request always wins). **`riverside`** (the default): do the work exactly as this skill's reference says. **`edits`** (Instagram Edits for Mac, driven from Claude Code on the agent's own Mac): the craft rules in this skill's reference still apply, but the moves are the ones in the Long-form line on Edits paragraph of `${CLAUDE_PLUGIN_ROOT}/shared/edits-engine.md`. Long-form on Edits is not yet proven end to end: say so in one line and get the yes before the first cut.
+Read `default_engine` in `~/realtor-brain/editor/config.json` (saying an engine's name in the request always wins). **`riverside`** (the default): do the work exactly as this skill's reference says. **`edits`** (Instagram Edits for Mac, the optional second engine, driven from the Code tab of the Claude desktop app on the agent's own Mac): the craft rules in this skill's reference still apply, but the moves are the ones in the Long-form line on Edits paragraph of `${CLAUDE_PLUGIN_ROOT}/shared/edits-engine.md`. Long-form on Edits is not yet proven end to end: say so in one line and get the yes before the first cut.
 
 ## The line (each step = one craft reference; verify with a revision diff, log, then move on)
 

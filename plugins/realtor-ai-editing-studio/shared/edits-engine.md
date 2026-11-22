@@ -1,6 +1,6 @@
 # The Instagram Edits engine — how every craft runs when `default_engine` is `"edits"`
 
-Edits is Meta's free video editor for Mac. Edits for Mac (November 2026) ships a built-in automation server that speaks MCP, and Claude Code on the SAME Mac drives it through the `insta-edits` bridge. The agent sees every change live in the Edits window and finishes by hand there. Measured on Edits 456 and bridge 0.1.2; Edits updates weekly, so `shared/edits-quirks.md` is the living record.
+Edits is Meta's free video editor for Mac. Edits for Mac (November 2026) ships a built-in automation server that speaks MCP, and the Code tab of the Claude desktop app (or the terminal) on the SAME Mac drives it through the `insta-edits` bridge. The agent sees every change live in the Edits window and finishes by hand there. Measured on Edits 456 and bridge 0.1.2; Edits updates weekly, so `shared/edits-quirks.md` is the living record.
 
 **Read with this file:** `edits-tool-map.md` (the 274 tools by job and the argument shapes that work), `edits-catalogs.md` (every effect, filter, transition, animation, preset, caption style, music and sound-effect name), `edits-quirks.md` (what bites), `edits-grade-strategy.md` (the Adjust panel). The craft rules (hook, captions, zooms, music, graphics, final check…) are the same files as the Riverside engine: this file only says how Edits gets there.
 
@@ -8,7 +8,7 @@ Edits is Meta's free video editor for Mac. Edits for Mac (November 2026) ships a
 
 | | Riverside engine | Edits engine |
 |---|---|---|
-| Runs where | any Claude surface, cloud included | **Claude Code on the agent's Mac** (Apple silicon, macOS 15.1+). Cowork cloud tasks and claude.ai cannot reach it. |
+| Runs where | any Claude surface, cloud included | **the Code tab of the Claude desktop app on the agent's Mac** (Apple silicon, macOS 15.1+) — the optional second engine; Riverside is the main path. Cowork cloud tasks, the web and phones cannot reach it. |
 | Cost | Grow plan or higher | **free** app, free bridge |
 | Footage in | recorded or uploaded into Riverside | any file under `~/Movies` (Edits is sandboxed: Downloads and Desktop are refused) |
 | Captions | karaoke, brand font, placed by us | 73 styles, accent colour, **no position or size control**, lower third by default |
@@ -23,9 +23,10 @@ Edits is Meta's free video editor for Mac. Edits for Mac (November 2026) ships a
 | Proven live | long-form, reel, listing, repurpose | **reel (talking head)**. Long-form 16:9 works on the same tools but is not yet proven end to end; interview layouts and podcast export are not available. |
 
 ## Setup (once per Mac) — what `studio-setup` walks them through
-1. Install Edits for Mac from Instagram's site, sign in, keep it OPEN, switch on Settings › Automation › Enable Automation Server.
-2. `pip3 install --user insta-edits`, then the agent types the token themselves: `~/Library/Python/3.9/bin/insta-edits set-token` in a terminal, pasting ONCE (the prompt is hidden; a double paste is rejected). Never in chat.
-3. `claude mcp add --scope user --transport stdio edits -- /usr/bin/python3 -m insta_edits serve`, then `insta-edits doctor` all ✓. Footage folder: `~/Movies/<something>`.
+Riverside is the main path and is set up first, from any surface. Edits is the optional second engine and is set up ONLY from the Code tab of the Claude desktop app (or the terminal) on the agent's Mac — the same app and plan, nothing extra to buy. Someone asking for Edits from Cowork is told how to get to the Code tab, never served from the cloud.
+1. Install Edits for Mac from edits.com/desktop, sign in, keep it OPEN, switch on Settings › Automation › Enable Automation Server.
+2. `pip3 install --user insta-edits`, then the agent pastes the token themselves: `/usr/bin/python3 -m insta_edits set-token` in a terminal, pasting ONCE (the prompt is hidden; a double paste is rejected). Never in chat.
+3. `claude mcp add --scope user --transport stdio edits -- /usr/bin/python3 -m insta_edits serve`, then `/usr/bin/python3 -m insta_edits doctor` all ✓. Footage folder: `~/Movies/edits-footage`.
 4. Config: `default_engine: "edits"` and an `edits` block (`bridge_installed`, `footage_dir`, `exports_dir`, `cards_dir`, `caption_style`, `music_db`, `preferred_music`, `pexels_key` optional). Brand block shared with Riverside.
 A direct `claude mcp add --transport http` to the Edits endpoint leaves Claude on the 32 home-screen tools: always the bridge. The plugin's keychain route needs an interactive `/plugin configure` the desktop app's Code tab cannot run, so the pip + `set-token` route is the one.
 

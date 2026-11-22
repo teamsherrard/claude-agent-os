@@ -2,6 +2,21 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.141.0] — 2026-11-21
+
+### Setup: Riverside is the main path; Instagram Edits is the optional second engine, from the Code tab (realtor-ai-editing-studio 0.7.0)
+Agents work in Cowork, and Cowork cannot reach an app on the agent's Mac, so the onboarding now says what is true,
+in plain words. `studio-setup` sets up Riverside first from any surface (Customize → Connectors → Riverside →
+Connect: two clicks, no key) and mentions Edits once; in the Code tab on a Mac it asks the one question (Riverside,
+Edits, or both), recommendation first. Someone in Cowork who asks for Edits is told how to get to the Code tab of the
+same Claude app (included in their plan, nothing extra to buy) instead of a failed attempt. The Edits install is five
+guided steps, four done by Claude; the token is pasted in a terminal in three numbered moves, never in chat; every
+command now uses the module form of the bridge so nothing depends on the Python version in a path.
+- `studio-navigator`, `edits-engine.md`, the plugin `README.md`, `editor-config.example.json`, the plugin description
+  and the marketplace card say the same thing in the same words; the Engine line of the 26 craft skills names the
+  Code tab instead of "Claude Code".
+- Not changed: the craft, the pass plans, the scripts, the Riverside line.
+
 ## [0.140.1] — 2026-11-21
 
 ### Riverside engine re-verified live (realtor-ai-editing-studio 0.6.1)

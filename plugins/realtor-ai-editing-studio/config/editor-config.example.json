@@ -1,7 +1,7 @@
 {
   "_comment": "Saved to ~/realtor-brain/editor/config.json by studio-setup. ONE config for every engine: the brand block is shared so Riverside and Instagram Edits look identical. Only the chosen engine's block is required.",
   "default_engine": "riverside",
-  "_default_engine_comment": "Which editor owns a plain 'edit my video': 'riverside' (edits in the agent's Riverside account, any Claude surface) or 'edits' (Instagram Edits for Mac, driven from Claude Code on the agent's Mac, free). Saying the engine's name in a request always wins. 'descript' is retired.",
+  "_default_engine_comment": "Which editor owns a plain 'edit my video': 'riverside' (edits in the agent's Riverside account, any Claude surface) or 'edits' (Instagram Edits for Mac, driven from the Code tab of the Claude desktop app on the agent's Mac, free; the optional second engine — 'riverside' is the main path). Saying the engine's name in a request always wins. 'descript' is retired.",
   "riverside": {
     "connected_via": "mcp-oauth",
     "note": "Connected in Claude → Settings → Connectors → Riverside. No API key is stored here.",
@@ -15,7 +15,7 @@
   },
   "edits": {
     "connected_via": "insta-edits bridge",
-    "note": "Instagram Edits for Mac + the insta-edits bridge (pip3 install --user insta-edits; token via `insta-edits set-token`; `claude mcp add --scope user --transport stdio edits -- /usr/bin/python3 -m insta_edits serve`). Mac + Claude Code only.",
+    "note": "Instagram Edits for Mac + the insta-edits bridge (pip3 install --user insta-edits; token via `/usr/bin/python3 -m insta_edits set-token`; `claude mcp add --scope user --transport stdio edits -- /usr/bin/python3 -m insta_edits serve`). Mac only, from the Code tab of the Claude desktop app or the terminal; the optional second engine.",
     "bridge_installed": false,
     "footage_dir": "~/Movies/edits-footage",
     "exports_dir": "~/Movies/edits-exports",

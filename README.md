@@ -41,7 +41,7 @@ In **Claude Cowork** (everything is UI — there are no commands to type):
      your own Descript account)
 5. *(Recommended)* Open the marketplace card → toggle **Sync automatically** so you get future updates
    - **Plugin 10 · The AI Editing Studio** (`realtor-ai-editing-studio`) — a 28-skill editing team in five stages
-     (Direct, Cut, Polish, Repurpose, Ship) on the engine the agent chooses: their Riverside account, or Instagram's free Edits app on their Mac. No per-edit credits on either; Riverside publishes, Edits exports.
+     (Direct, Cut, Polish, Repurpose, Ship) on Riverside, the main path (their own account; Cowork, the web, the desktop app), or, for Mac users in the Code tab of the Claude app, Instagram's free Edits app as the optional second engine. No per-edit credits on either; Riverside publishes, Edits exports.
 
 That's it — the whole system is installed.
 

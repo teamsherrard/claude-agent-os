@@ -4,7 +4,7 @@ A full-time video editor inside the agent's Claude. They record, say "edit my vi
 
 **Claude edits · the engine renders (Riverside, or Instagram's free Edits app on the agent's Mac) · the agent approves.**
 
-One editor, two engines. The agent picks at setup (`default_engine`: `riverside` or `edits`); saying an engine's name in a request always wins. The craft doctrine is identical on both; `shared/edits-engine.md` says how each craft runs on Edits, and `scripts/edits/build_reel.py` runs the whole reel line there in one command.
+One editor, two engines. Riverside is the main path (Cowork, the web, the desktop app); Instagram Edits is the optional second engine for Mac users, set up and driven from the Code tab of the Claude desktop app on that Mac. The agent picks at setup (`default_engine`: `riverside` or `edits`); saying an engine's name in a request always wins. The craft doctrine is identical on both; `shared/edits-engine.md` says how each craft runs on Edits, and `scripts/edits/build_reel.py` runs the whole reel line there in one command.
 
 ## The five stages, 28 skills
 
@@ -50,7 +50,7 @@ The Studio edits video. It does **not** write marketing. Titles, descriptions, c
 
 **Riverside engine:** Riverside Grow or higher (the Riverside connection to Claude is not available on Free or Pro). Editing, AI cleanup, captions, and exports are not metered per edit. Runs in Cowork or the Code tab of the Claude desktop app. In Cowork, Google Drive is required: the sandbox is wiped between sessions and the Brain (settings, checkpoint logs, the library index) lives in Drive and syncs each session.
 
-**Instagram Edits engine:** Instagram's free Edits app for Mac (Apple silicon, macOS 15.1+) with its Automation Server on, the free open-source `insta-edits` bridge, and Claude Code on that same Mac (the desktop app's Code tab or the terminal). No editing subscription and no per-edit fees; the only cost is the agent's Claude plan. Footage lives under `~/Movies`. Not reachable from Cowork's cloud, claude.ai, an iPad or Windows.
+**Instagram Edits engine (the optional second engine):** Instagram's free Edits app for Mac (Apple silicon, macOS 15.1+) with its Automation Server on, the free open-source `insta-edits` bridge, and the Code tab of the Claude desktop app (or the terminal) on that same Mac — included in the agent's Claude plan, nothing extra to buy. Riverside is the main path; this engine is optional. No editing subscription and no per-edit fees; the only cost is the agent's Claude plan. Footage lives under `~/Movies`. Not reachable from Cowork's cloud, claude.ai, an iPad or Windows.
 
 Settings for both live in `~/realtor-brain/editor/config.json`.
 

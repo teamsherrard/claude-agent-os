@@ -1,19 +1,22 @@
 ---
 name: studio-setup
 description: >-
-  Setup for the AI Editing Studio (Riverside or Instagram Edits engine). The first skill a real
-  estate agent runs. Asks ONE question (which engine), then connects it in a few minutes:
-  Riverside (recorder + editor + publisher, any Claude surface) or Instagram's free Edits app for
-  Mac (Claude Code on their Mac, no per-edit fees). Pulls the agent's brand from their Realtor AI
-  Brain, writes it where the engine needs it, picks the caption look, registers the Video Brand
-  Kit cards, sets the posting route, and gets them ready to edit with no technical setup. Stock
-  B-roll works out of the box; free stock keys are OPTIONAL. Trigger on: "set up my video
-  editor", "set up riverside", "connect riverside", "set up edits", "set up instagram edits",
-  "connect edits", "switch my editor to edits", "get me started editing", "onboard me to the
-  editor", "register my video brand kit", or any first-run request for the editor.
+  Setup for the AI Editing Studio. The first skill a real estate agent runs. Connects Riverside,
+  the main path (records, edits, publishes; Cowork, the web, the desktop app; Grow plan) in two
+  clicks with no key, then pulls the agent's brand from their Realtor AI Brain, writes it where
+  the engine needs it, picks the caption look, registers the Video Brand Kit cards, sets the
+  posting route, and gets them ready to edit with no technical setup. The optional second
+  engine, Instagram's free Edits app for Mac (no per-edit fees), is set up only from the Code
+  tab of the Claude desktop app on that Mac in a guided five-minute install. Stock B-roll works
+  out of the box; free stock keys are OPTIONAL. Trigger on: "set up my video editor", "set up my
+  video studio", "set up riverside", "connect riverside", "set up edits", "set up instagram
+  edits", "connect edits", "switch my editor to edits", "get me started editing", "onboard me to
+  the editor", "register my video brand kit", or any first-run request for the editor.
 ---
 
 # AI Editing Studio — Setup
+
+**Riverside is the main path** (Cowork, the web, the desktop app) and is set up first. **Instagram Edits is the optional second engine** for Mac users, set up and used only from the Code tab of the Claude desktop app on that Mac — it is included in their plan, nothing extra to buy.
 
 Goal: get the agent editing in about five minutes, with the **fewest possible steps**. Read the Realtor AI Brain first (`~/realtor-brain/`) so you never ask for anything it already knows. One step at a time, plain language, friendly. Follow `${CLAUDE_PLUGIN_ROOT}/shared/house-rules.md`.
 
@@ -24,33 +27,26 @@ Goal: get the agent editing in about five minutes, with the **fewest possible st
 Cowork wipes the local sandbox between sessions, so the Brain (and the editor config inside it) lives in **Google Drive**. Before anything else:
 
 1. **Pull the Brain down first** — run the `realtor-brain-sync` skill (or pull `realtor-brain/` from Drive). **If no Brain exists in Drive yet (a brand-new agent), skip the pull and continue.**
-2. **Idempotent re-run check.** After the pull, look for `~/realtor-brain/editor/config.json` and its `default_engine`. **Riverside: a filled `riverside.studio_id` AND `platform_list_studios` returns that studio = already set up. Edits: `edits.bridge_installed: true` AND `insta-edits doctor` is all ✓ = already set up.** Say warmly: *"Good news — you're already set up and connected to Riverside. Want me to change anything, or shall we edit?"* Do **not** re-run the questionnaire and **never** overwrite a good config. If they name ONE thing to change, touch **only that section** and save.
+2. **Idempotent re-run check.** After the pull, look for `~/realtor-brain/editor/config.json` and its `default_engine`. **Riverside: a filled `riverside.studio_id` AND `platform_list_studios` returns that studio = already set up. Edits: `edits.bridge_installed: true` AND, in the Code tab, `/usr/bin/python3 -m insta_edits doctor` all ✓ = already set up (in Cowork the block alone counts: Edits is used from the Code tab).** Say warmly, naming what is connected: *"Good news — you're already set up and connected to Riverside. Want me to change anything, or shall we edit?"* Do **not** re-run the questionnaire and **never** overwrite a good config. If they name ONE thing to change, touch **only that section** and save.
 3. Only if there's **no** engine block (or the engine's health check returns a real error) do you run the full setup below. "Switch my editor to Edits/Riverside" = run Step ½ and Step 1 for the new engine only; everything else stays.
 
-## Step ½ — Pick the engine (the one new question)
+## Step ½ — The engine (Riverside is the main path)
 
-Two engines, same editor, same brand, same craft. Decide from where they are, then confirm in one line:
-- **On a Mac, in Claude Code (this app's Code tab or the terminal)?** Offer **Instagram Edits**: *"I can edit in Instagram's free Edits app right here on your Mac, no editing subscription, no per-edit fees, and you see every change live in the app. Or in your Riverside account if you'd rather record and publish from one place. Edits?"* Recommended default on a Mac: Edits.
-- **In Cowork, on an iPad, on Windows, or not in Claude Code?** Edits cannot be reached (it only listens on the Mac it runs on): set up **Riverside** without asking, and mention once that Edits is available from Claude Code on a Mac.
+Two engines, same editor, same brand, same craft. **Riverside is the main path**: it works from Cowork, the web and the desktop app, it records, edits and publishes, and it connects in two clicks. **Instagram Edits is the optional second engine**: free, runs in Instagram's Edits app on the agent's Mac, and is driven only from the Code tab of the Claude desktop app on that Mac (the same app, the same plan, nothing extra to buy) after a guided five-minute install. Decide from where they are:
+
+- **In Cowork, on the web, on an iPad, on Windows — anywhere but the Code tab on a Mac:** set up **Riverside** (Step 1A) without asking. Once it is connected, mention Edits ONCE, in one line: *"There's also a free option, Instagram's Edits app, for Mac users who use the Code tab of this app. Whenever you want it, open the Code tab on your Mac and say 'set up Instagram Edits' — I'll walk you through it there."* `default_engine: "riverside"`.
+- **In the Code tab on a Mac:** ask the one question, recommendation first: *"Two ways to edit: your Riverside account (recommended — works everywhere, records and publishes too) or Instagram's free Edits app on this Mac. Riverside, Edits, or both?"* Riverside → Step 1A. Edits → Step 1B. Both → 1A then 1B; `default_engine` stays `"riverside"` unless they say Edits should own a plain "edit my video".
+- **Someone in Cowork asks for Edits** ("set up edits", "edit this in Edits"): never try — Edits can only be reached from the Code tab on the Mac it runs on. Say: *"Edits runs from the Code tab of this same Claude app on your Mac — it's included in your plan, nothing to buy. Open the Code tab (left sidebar → Code), pick any folder when it asks, and say 'set up Instagram Edits'. I'll walk you through it there in about five minutes. Here, I'll edit in Riverside."* If Riverside isn't set up either, set it up now.
+
 Write `default_engine: "riverside"` or `"edits"`. Saying an engine's name in any later request always wins over the config.
 
 ## Step 1 — Connect the engine (the only required connection)
 
-### Step 1B — Instagram Edits (when `default_engine` is `edits`)
+### Step 1A — Riverside (the main path)
 
-Everything is free; it takes about five minutes, and only one step needs their hands. Apple silicon Mac, macOS 15.1 or newer, Claude Code on that Mac.
-1. **Install Edits for Mac** from Instagram's Edits site (a direct download, not the App Store), open it, sign in with their Instagram account, and leave it open. In Edits: **Settings › Automation › Enable Automation Server** (port 19501). Say: *"Keep Edits open whenever we edit; it's the editor."*
-2. **The bridge** (lets Claude see all 274 editing tools; connecting Edits directly leaves Claude with 32): run `pip3 install --user insta-edits` for them.
-3. **The token, their hands only.** Open a terminal tab for them with `~/Library/Python/3.9/bin/insta-edits set-token` typed and waiting. Tell them: *"Click Copy under Access token in Edits' Automation settings, paste it into the terminal once with Cmd-V, and press Return. Nothing shows as you paste; that's normal."* Never ask for the token in chat; if it ever lands in chat, have them click Regenerate and paste the new one.
-4. **Register the engine**: `claude mcp add --scope user --transport stdio edits -- /usr/bin/python3 -m insta_edits serve`, then `insta-edits doctor`. All ✓ = connected. A ✗ on Sign-in = the token was pasted twice or regenerated: re-run `set-token`. The `mcp__edits__*` tools appear in the NEXT Claude Code session; the scripts under `${CLAUDE_PLUGIN_ROOT}/scripts/edits/` work right away.
-5. **Footage folder.** Edits only reads files under `~/Movies`. Create `~/Movies/edits-footage` and say: *"Drop any video you want edited in here (or give me a Drive link and I'll fetch it)."* Record `edits.footage_dir`, `exports_dir` (`~/Movies/edits-exports`), `cards_dir` (`~/Movies/edits-cards`), `bridge_installed: true`.
-Then skip to Step 2. Riverside is not required on this engine; if they also want Riverside for publishing or interviews, run Step 1A too.
+Riverside records, edits, and publishes, and the connection is two clicks. Walk them through it simply, one step a message:
 
-### Step 1A — Riverside (when `default_engine` is `riverside`)
-
-Riverside records, edits, and publishes. Walk them through it simply:
-
-1. In Claude: **Settings → Connectors → add "Riverside"** from the connector library. (The desktop app is best; the Code tab is the most robust for long edits.)
+1. In Claude: **Customize → Connectors** (Settings → Connectors on older builds) → find **Riverside** → **Connect**. Works the same in Cowork, on the web and in the desktop app.
 2. **Enable it for the mode you'll edit in** — the desktop app's Cowork / Code / Chat toggle. Make sure the connector is on there, not just in chat.
 3. A browser window opens → they sign in to their own Riverside account and click **Allow**. Done — no API key.
 4. Permissions: leave anything that **publishes** on **"needs approval"** (so nothing ever posts without them saying yes). Reads and edits can be "always allow."
@@ -70,6 +66,18 @@ Confirm the connection works: `platform_list_studios`. **Read the result the rig
 - **"Has it finished uploading?"** A recording still marked uploading has no transcript yet — give it a few minutes.
 
 **Tip worth giving them now:** *"The easiest workflow is to record straight into Riverside — then there's nothing to upload and I can start the moment you stop recording."*
+
+### Step 1B — Instagram Edits (the optional second engine; the Code tab on a Mac only)
+
+Run this ONLY in the Code tab (or the terminal) of the Claude desktop app on the agent's Mac. Anywhere else, give the Code-tab line from Step ½ and stop. Everything is free, it takes about five minutes, and only one step needs their hands. Needs an Apple silicon Mac on macOS 15.1 or newer. Open with one line: *"Five small steps; I do four of them. You install Edits and paste one code — that's it."*
+
+1. **Install Edits for Mac** (their hands): *"Download Edits from edits.com/desktop — a direct download, not the App Store — open it, sign in with your Instagram account, and leave it open."* Then: *"In Edits, open Settings, then Automation, and switch on 'Enable Automation Server'. A box called Access token appears, with a Copy button. Leave that window open."* Add: *"Keep Edits open whenever we edit; it's the editor."*
+2. **The bridge** (you do this; it lets Claude see all 274 editing tools, where connecting Edits directly leaves 32): run `pip3 install --user insta-edits`. If the Mac asks to install the "command line developer tools", tell them to click Install and wait, then run it again.
+3. **The access token** (their hands only). Open a terminal tab for them with `/usr/bin/python3 -m insta_edits set-token` typed and waiting. Then, step by step: *"1. In Edits' Automation settings, click Copy next to Access token. 2. Click once inside the black terminal window I opened. 3. Press Cmd-V once, then Return. Nothing appears as you paste — that's on purpose, it's a secret."* The token is like a password: never ask for it in chat and never let them paste it in chat; if it lands in chat anyway, have them click Regenerate in Edits and paste the new one in the terminal.
+4. **Connect and check** (you do this): `claude mcp add --scope user --transport stdio edits -- /usr/bin/python3 -m insta_edits serve`, then `/usr/bin/python3 -m insta_edits doctor`. All ✓ = connected: say *"You're connected to Edits!"* A ✗ on Sign-in = the token was pasted twice or regenerated: run set-token again. A ✗ on Automation server = Edits is closed or the switch is off. The `mcp__edits__*` tools appear in the NEXT Code session; the scripts under `${CLAUDE_PLUGIN_ROOT}/scripts/edits/` work right away.
+5. **Footage folder** (you do this): Edits only reads files under `~/Movies`. Create `~/Movies/edits-footage` and say: *"Drop any video you want edited in here (or give me a Drive link and I'll fetch it)."* Record `edits.footage_dir`, `exports_dir` (`~/Movies/edits-exports`), `cards_dir` (`~/Movies/edits-cards`), `bridge_installed: true`.
+
+Then go on to Step 2 (or back to Step 1A if they chose both). Edits never posts: they share from Edits' share sheet, or the Short-Form System's posting tool takes the export.
 
 ## Step 2 — Brand (pull it, don't ask)
 
@@ -142,5 +150,7 @@ Write the settings to `~/realtor-brain/editor/config.json` (template: `config/ed
 Then confirm in one friendly line:
 
 > "You're all set. Whenever you want to edit something, just say **'edit my video'** — I'll take it from there."
+
+If Edits was set up too, add: *"For Edits, say it here in the Code tab: 'edit my video in Edits'."*
 
 Route future requests through `studio-navigator`.

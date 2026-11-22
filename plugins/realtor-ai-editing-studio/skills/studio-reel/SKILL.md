@@ -19,7 +19,7 @@ You run the line; the crafts do the work. **Read up front (only these):** `${CLA
 
 ## Engine
 
-Read `default_engine` in `~/realtor-brain/editor/config.json` (saying an engine's name in the request always wins). **`riverside`** (the default): do the work exactly as this skill's reference says. **`edits`** (Instagram Edits for Mac, driven from Claude Code on the agent's own Mac): the craft rules in this skill's reference still apply, but the moves are the ones in the reel line (`## The reel line on Edits`, run by `scripts/edits/build_reel.py`) of `${CLAUDE_PLUGIN_ROOT}/shared/edits-engine.md`.
+Read `default_engine` in `~/realtor-brain/editor/config.json` (saying an engine's name in the request always wins). **`riverside`** (the default): do the work exactly as this skill's reference says. **`edits`** (Instagram Edits for Mac, the optional second engine, driven from the Code tab of the Claude desktop app on the agent's own Mac): the craft rules in this skill's reference still apply, but the moves are the ones in the reel line (`## The reel line on Edits`, run by `scripts/edits/build_reel.py`) of `${CLAUDE_PLUGIN_ROOT}/shared/edits-engine.md`.
 
 ## The line — 4 passes
 

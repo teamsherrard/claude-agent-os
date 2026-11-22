@@ -35,10 +35,10 @@ Pull the Brain first (the persistence rule in `house-rules.md`; in Cowork the co
 ## Which engine? (read this before anything else)
 
 The Studio is the video editor, on one of two engines. Read `default_engine` in `~/realtor-brain/editor/config.json`:
-- **`riverside`** — edits in the agent's Riverside account, from any Claude surface, and publishes on a yes.
-- **`edits`** — Instagram's free Edits app on the agent's Mac, driven from Claude Code on that Mac (never from Cowork's cloud or claude.ai). Every craft runs by `${CLAUDE_PLUGIN_ROOT}/shared/edits-engine.md`; a reel is `scripts/edits/build_reel.py`. It never posts.
+- **`riverside`** — the main path: edits in the agent's Riverside account, from any Claude surface (Cowork, the web, the desktop app), and publishes on a yes.
+- **`edits`** — the optional second engine: Instagram's free Edits app on the agent's Mac, driven only from the Code tab of the Claude desktop app (or the terminal) on that Mac — never from Cowork's cloud, the web or a phone. Every craft runs by `${CLAUDE_PLUGIN_ROOT}/shared/edits-engine.md`; a reel is `scripts/edits/build_reel.py`. It never posts.
 - Saying an engine's name in the request always wins ("edit this in Edits", "do it in Riverside"). An engine named that has no block in the config yet → `studio-setup` for that engine only (Step ½ + Step 1B or 1A), then continue the request. No config at all = `studio-setup`. An older `"descript"` = retired: treat as unset and let setup ask.
-- **An Edits agent not on their Mac right now** (Cowork, iPad, phone): say so warmly and offer Riverside if it is set up, else *"Open Claude Code on your Mac and say 'edit my video'."* Never try to reach Edits from elsewhere.
+- **An Edits agent not on their Mac right now** (Cowork, iPad, phone): say so warmly and offer Riverside if it is set up, else *"Edits runs from the Code tab of this same Claude app on your Mac. Open the Code tab there and say 'edit my video in Edits'."* Never try to reach Edits from elsewhere. Someone in Cowork asking to SET UP Edits gets the same line (setup's Step ½), never an attempt.
 
 ## Connection-health preflight (one cheap check before you route)
 
