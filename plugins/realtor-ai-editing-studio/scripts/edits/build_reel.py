@@ -16,7 +16,16 @@ import edits_drive as e
 
 VIDEO_TRACK = None
 def log(s): print(s, flush=True)
-JOBS = os.path.expanduser("~/realtor-brain/editor/jobs")
+def _brain_home():
+    """The agent's Brain folder: the Agent Attraction Brain when present, else the Realtor AI Brain (the Brain-home rule)."""
+    for d in ("~/attraction-brain", "~/realtor-brain"):
+        p = os.path.expanduser(d)
+        if os.path.exists(os.path.join(p, "brain.md")):
+            return p
+    return os.path.expanduser("~/realtor-brain")
+
+
+JOBS = os.path.join(_brain_home(), "editor", "jobs")
 def checkpoint(pid, line):
     """Append one landed-pass line to the ed-<projectId>.md checkpoint log (the resume path reads it)."""
     try:

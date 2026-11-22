@@ -1,7 +1,7 @@
 ---
 name: studio-publish
 description: >-
-   Publish for the AI Editing Studio. Posts or schedules a finished edit on Riverside; on Instagram Edits it hands over the
+  Publish for the AI Editing Studio. Posts or schedules a finished edit on Riverside; on Instagram Edits it hands over the
   exported file (the agent shares from Edits, or the Short-Form System's tool posts it) and never
   posts. Posts to the agent's connected social channels — YouTube (and Shorts), TikTok, Instagram,
   Facebook Reels, LinkedIn, X — behind a hard confirmation gate. Discovers which accounts are

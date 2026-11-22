@@ -2,6 +2,14 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.141.1] — 2026-11-21
+
+### The Edits reel script finds the Brain folder itself (realtor-ai-editing-studio 0.7.1)
+`build_reel.py` resolves the Brain folder at run time (the Agent Attraction Brain when present, else the Realtor AI
+Brain) instead of a fixed path, so the cohort marketplace can vendor it as a plain copy; its earlier vendored copy had
+the path placeholder inside Python. The `studio-publish` description's first line is indented like the rest of the
+block. Nothing else changed.
+
 ## [0.141.0] — 2026-11-21
 
 ### Setup: Riverside is the main path; Instagram Edits is the optional second engine, from the Code tab (realtor-ai-editing-studio 0.7.0)
