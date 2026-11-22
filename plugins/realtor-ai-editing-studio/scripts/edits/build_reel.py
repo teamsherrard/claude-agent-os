@@ -12,8 +12,9 @@ Options: --accent #hex (caption highlight)  --panel #hex (card pill)  --text #he
 The Video Brand Kit: when studio-setup registered the agent's kit (config.json → brand.assets, files under ~/Movies),
 the hook banner, the CTA banner and the pop-up panels are PLACED from those PNGs — the hook/pop-up words typed into
 the panel's empty zone (brand.assets.zones.<key> = {"y": <zone centre as a fraction of the height>, "max_chars": N};
-kit v3 defaults 0.13 / 20), the CTA words baked. A still gets 3 s in Edits and is never extended, so a banner that
-must hold (the CTA, to the last frame) is placed back to back. No kit, or --no-kit: cards are rendered natively.
+kit v3 defaults 0.13 / 20), the CTA words baked. A still gets 3 s in Edits and a negative right-side trim extends it
+(live-tested), so a banner that must hold (the CTA, to the last frame) is one element trimmed out to the end, with
+back-to-back placement as the fallback. No kit, or --no-kit: cards are rendered natively.
 The token is read by the insta-edits bridge config; it is never printed."""
 import argparse, json, os, re, subprocess, sys, time, statistics
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
@@ -310,15 +311,20 @@ def main():
         """Shorten a placed still so it ends at `stop` (its default is 3 s)."""
         if el.get("endTime") and el["endTime"] > stop + 0.01: call(c, "trim", {"id": el["id"], "side": "right", "deltaSeconds": el["endTime"] - stop}, must=False)
     def hold_still(path, start, stop):
-        """Keep a still on screen from start to stop. Edits gives a still 3 s and never extends it (a negative trim is a no-op),
-        so the same file is placed back to back, each piece starting where the last ends — seamless for a still. Returns the ids."""
-        ids = []; t = start
-        while t < stop - 0.05:
-            seg = overlay_at(path, t)
-            if not seg: break
-            seg_end = seg.get("endTime") or (t + 3.0)
-            if seg_end > stop + 0.01: clip_to(seg, stop); seg_end = stop
-            ids.append(seg["id"]); t = seg_end
+        """Keep a still on screen from start to stop. Edits gives a still 3 s; a negative right-side `trim` EXTENDS it (live-tested
+        2026-11-22: 1→4 s became 1→9 s), so one element covers the span. If the trim does not take, the same file is placed back to back."""
+        seg = overlay_at(path, start)
+        if not seg: return []
+        seg_end = seg.get("endTime") or (start + 3.0)
+        if abs(seg_end - stop) > 0.05: call(c, "trim", {"id": seg["id"], "side": "right", "deltaSeconds": seg_end - stop}, must=False)
+        seg = next((x for x in elements(c) if x["id"] == seg["id"]), seg); seg_end = seg.get("endTime") or seg_end
+        ids = [seg["id"]]; t = seg_end
+        while t < stop - 0.05:   # fallback: back to back, each piece starting where the last one ends (seamless for a still)
+            nxt = overlay_at(path, t)
+            if not nxt: break
+            nxt_end = nxt.get("endTime") or (t + 3.0)
+            if nxt_end > stop + 0.01: clip_to(nxt, stop); nxt_end = stop
+            ids.append(nxt["id"]); t = nxt_end
         return ids
     def words_in_zone(text, at, duration, z):
         """The agent's own words typed into a kit panel's empty zone: one centred line, no pill (the panel IS the PNG), sized to the zone."""
@@ -345,7 +351,7 @@ def main():
         cta_caps = [cp for cp in caps if CTA_RE.search(cp["text"])]
         start = cta_caps[-1]["startTime"] if cta_caps else max(end - 6, 0)
         ids = hold_still(kit["cta_9x16"], start, end) if kit.get("cta_9x16") else []
-        if ids: graphics.append(("CTA: kit banner held to the last frame", ids[0])); log(f"CTA: the kit banner from {start:.1f}s to the end ({len(ids)} back-to-back pieces; its words are baked)")
+        if ids: graphics.append(("CTA: kit banner held to the last frame", ids[0])); log(f"CTA: the kit banner from {start:.1f}s to the end ({len(ids)} element{'s' if len(ids) != 1 else ''}; its words are baked)")
         elif a.cta: graphics.append(("CTA", native_card(a.cta, start, max(end - start, 2.0), 26 if len(a.cta) <= 25 else 22))); log(f"CTA card from {start:.1f}s to the end")
     for spec in [x for x in a.popups.split(";") if "@" in x]:
         txt, phrase = spec.split("@", 1)

@@ -2,6 +2,18 @@
 
 All notable changes to the Realtor AI Brain. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [0.142.1] — 2026-11-22
+
+### The kit on Edits, verified live; the hold rule corrected (realtor-ai-editing-studio 0.7.3)
+The Video Brand Kit placement ran live in Edits on real footage: the hook banner lands exactly where it was designed
+with the hook line typed into its empty zone, and the CTA banner holds to the end, both off the face (check frames
+read at 2, 32 and 38.5 seconds). One belief in 0.142.0 was wrong and is corrected everywhere: a still in Edits lasts
+three seconds, but a negative right-side trim DOES extend it (1→4 s became 1→9 s), so `build_reel.py` now holds a
+banner as one element trimmed out to its end and only falls back to back-to-back placement if the trim does not
+take. The sticker call needs a catalog sticker id and cannot place a PNG; noted in the quirks. Also noted there: a
+freshly launched Edits can answer "failed to create project" with an empty project list; quitting and relaunching
+the app fixed it.
+
 ## [0.142.0] — 2026-11-22
 
 ### The Video Brand Kit on Instagram Edits, and an install warning fixed (realtor-ai-editing-studio 0.7.2)

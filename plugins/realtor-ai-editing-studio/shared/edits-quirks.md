@@ -17,8 +17,9 @@
 - `newProject` works from the editor too; the previous project is left as is.
 
 ## Cutting
+- A freshly launched Edits can sit on its home screen answering `newProject` → "failed to create project" with an EMPTY `projects` list (and `addMedia` → "editor not active"), even minutes after launch (seen 2026-11-22 on 456.0.0). Quit Edits and open it again: the list came back and `newProject` worked at once. Try that before anything else; a Mac restart is not needed.
 - `trim(id, side, deltaSeconds)`: a POSITIVE delta removes that many seconds from that side. A negative delta extends and is silently a no-op when the source has nothing left. Read `elements` back.
-- A still placed with `addOverlay` lasts 3 s and a negative `trim` never extends it (a silent no-op: a still has no source to extend into). To hold a card longer, place the same PNG again at the previous piece's `endTime` (read it back from `elements`), as many times as the span needs; a static image shows no seam.
+- A still placed with `addOverlay` lasts 3 s; a negative `trim(side right)` EXTENDS it (live-tested 2026-11-22: 1→4 s became 1→9 s), so one element holds a card for any span — read `endTime` back from `elements` to confirm. Fallback: place the same PNG again at the previous piece's `endTime`; a static image shows no seam. `addSticker(sticker, path, duration)` needs a catalog sticker id and refuses a bare path ("sticker id is empty").
 - `trimEnd` / `trimStart` act on the SELECTED clips at the PLAYHEAD: `seek` → `selectById` → `trimEnd` → `clearSelection`.
 - `splitAt(id, times=[...])` returns `pieces` with new ids. Deleting a main-track piece closes the gap and ripples everything after it (captions, overlays, music end). Cut LAST → FIRST, and add captions/graphics AFTER the cuts.
 - `elements` returns 200 rows per page by default; pass `limit=5000`.
